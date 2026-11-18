@@ -2478,7 +2478,7 @@
       "language": "zh",
       "status": "ok",
       "attempted_at": "2026-11-18T19:25:20+00:00",
-      "success_at": "2026-11-18T19:25:20+00:00",
+      "success_at": null,
       "error": null,
       "consecutive_failures": 0,
       "item_count": 4,
@@ -2518,7 +2518,7 @@
       "language": "en",
       "status": "ok",
       "attempted_at": "2026-11-18T19:25:26+00:00",
-      "success_at": "2026-11-18T19:25:26+00:00",
+      "success_at": null,
       "error": null,
       "consecutive_failures": 0,
       "item_count": 0,
@@ -2539,7 +2539,7 @@
       "feed_url": "https://www.ungeneva.org/news-media/press-releases-list/rss.xml",
       "status": "ok",
       "attempted_at": "2026-11-18T19:25:35+00:00",
-      "success_at": "2026-11-18T19:25:35+00:00",
+      "success_at": null,
       "error": null,
       "consecutive_failures": 0,
       "item_count": 3,
@@ -2560,7 +2560,7 @@
       "feed_url": "https://www.ungeneva.org/news-media/meeting-summaries-list/rss.xml",
       "status": "ok",
       "attempted_at": "2026-11-18T19:25:45+00:00",
-      "success_at": "2026-11-18T19:25:45+00:00",
+      "success_at": null,
       "error": null,
       "consecutive_failures": 0,
       "item_count": 4,
@@ -2585,7 +2585,7 @@
       "error": "信源暂未成功读取或解析。",
       "consecutive_failures": 1,
       "item_count": 0,
-      "next_attempt_at": "2026-11-18T19:40:45+00:00"
+      "next_attempt_at": null
     },
     {
       "id": "opiniojuris",
@@ -2606,7 +2606,7 @@
       "error": "信源暂未成功读取或解析。",
       "consecutive_failures": 1,
       "item_count": 0,
-      "next_attempt_at": "2026-11-18T19:40:46+00:00"
+      "next_attempt_at": null
     },
     {
       "id": "voelkerrechtsblog",
@@ -2623,7 +2623,7 @@
       "feed_url": "https://voelkerrechtsblog.org/feed/",
       "status": "ok",
       "attempted_at": "2026-11-18T19:25:57+00:00",
-      "success_at": "2026-11-18T19:25:57+00:00",
+      "success_at": null,
       "error": null,
       "consecutive_failures": 0,
       "item_count": 4,
@@ -2644,7 +2644,7 @@
       "feed_url": "https://esil-sedi.eu/feed/",
       "status": "ok",
       "attempted_at": "2026-11-18T19:26:04+00:00",
-      "success_at": "2026-11-18T19:26:04+00:00",
+      "success_at": null,
       "error": null,
       "consecutive_failures": 0,
       "item_count": 4,
@@ -2665,7 +2665,7 @@
       "feed_url": "https://www.wto.org/library/rss/latest_news_e.xml",
       "status": "ok",
       "attempted_at": "2026-11-18T19:26:06+00:00",
-      "success_at": "2026-11-18T19:26:06+00:00",
+      "success_at": null,
       "error": null,
       "consecutive_failures": 0,
       "item_count": 0,
@@ -2685,7 +2685,7 @@
       "language": "en",
       "status": "ok",
       "attempted_at": "2026-11-18T19:26:10+00:00",
-      "success_at": "2026-11-18T19:26:10+00:00",
+      "success_at": null,
       "error": null,
       "consecutive_failures": 0,
       "item_count": 0,
@@ -2705,7 +2705,7 @@
       "language": "en",
       "status": "ok",
       "attempted_at": "2026-11-18T19:26:11+00:00",
-      "success_at": "2026-11-18T19:26:11+00:00",
+      "success_at": null,
       "error": null,
       "consecutive_failures": 0,
       "item_count": 0,
@@ -2725,7 +2725,7 @@
       "language": "en",
       "status": "ok",
       "attempted_at": "2026-11-18T19:26:11+00:00",
-      "success_at": "2026-11-18T19:26:11+00:00",
+      "success_at": null,
       "error": null,
       "consecutive_failures": 0,
       "item_count": 17,
@@ -2745,7 +2745,7 @@
       "language": "en",
       "status": "ok",
       "attempted_at": "2026-11-18T19:26:12+00:00",
-      "success_at": "2026-11-18T19:26:12+00:00",
+      "success_at": null,
       "error": null,
       "consecutive_failures": 0,
       "item_count": 4,
@@ -2765,7 +2765,7 @@
       "language": "en",
       "status": "ok",
       "attempted_at": "2026-11-18T19:26:12+00:00",
-      "success_at": "2026-11-18T19:26:12+00:00",
+      "success_at": null,
       "error": null,
       "consecutive_failures": 0,
       "item_count": 16,
@@ -2830,7 +2830,7 @@
         "identity_source": "https://www.cssn.cn/skgz/202209/t20220916_5505172.shtml",
         "note": "CASS 公布的历史官网与当前采编平台需结合期刊首页核对；不使用投稿中介站。",
         "check_status": "identity_matched",
-        "checked_at": "2026-11-18T18:43:59+00:00",
+        "checked_at": null,
         "success_at": "2026-11-18T18:43:59+00:00",
         "error": null,
         "changed": false
@@ -2850,7 +2850,7 @@
         "submissions_url": "https://ilr.whu.edu.cn/",
         "note": "主办机构域名入口；官网迁移或升级时，投稿平台以编辑部最新公告为准。",
         "check_status": "error",
-        "checked_at": "2026-11-18T18:44:13+00:00",
+        "checked_at": null,
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -2870,7 +2870,7 @@
         "identity_source": "https://gjfx.cfau.edu.cn/kxyj/col2820/col2823/index.htm",
         "note": "主办院系的征稿启事，含采编系统链接；不在本站收稿。",
         "check_status": "identity_matched",
-        "checked_at": "2026-11-18T18:43:59+00:00",
+        "checked_at": null,
         "success_at": "2026-11-18T18:43:59+00:00",
         "error": null,
         "changed": false
@@ -2889,7 +2889,7 @@
         "identity_source": "https://chenanfoundation.xmu.edu.cn/info/1068/12656.htm",
         "note": "主办机构关联基金会的期刊公告，含线上审稿系统地址。",
         "check_status": "identity_matched",
-        "checked_at": "2026-11-18T18:44:01+00:00",
+        "checked_at": null,
         "success_at": "2026-11-18T18:44:01+00:00",
         "error": null,
         "changed": false
@@ -2907,7 +2907,7 @@
         "submissions_url": "https://colr.xmu.edu.cn/",
         "note": "期刊官方高校域名入口；具体稿约以首页公告为准。",
         "check_status": "identity_matched",
-        "checked_at": "2026-11-18T18:44:01+00:00",
+        "checked_at": null,
         "success_at": "2026-11-18T18:44:01+00:00",
         "error": null,
         "changed": false
@@ -2926,7 +2926,7 @@
         "submissions_url": "https://www.csil.cn/",
         "note": "学会入口；年刊征稿按届次公告核对，不推定全年收稿。",
         "check_status": "error",
-        "checked_at": "2026-11-18T18:44:01+00:00",
+        "checked_at": null,
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -2964,7 +2964,7 @@
         "submissions_url": "https://bjfyj.cupl.edu.cn/",
         "note": "高校期刊入口，具体投稿窗口以期刊公告为准。",
         "check_status": "error",
-        "checked_at": "2026-11-18T18:44:16+00:00",
+        "checked_at": null,
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3003,7 +3003,7 @@
         "submissions_url": "https://clsjp.chinalaw.org.cn/",
         "note": "学会域名入口；不据导航条目推定正在专题征稿。",
         "check_status": "identity_matched",
-        "checked_at": "2026-11-18T19:26:15+00:00",
+        "checked_at": null,
         "success_at": "2026-11-18T19:26:15+00:00",
         "error": null,
         "changed": false
@@ -3022,7 +3022,7 @@
         "identity_source": "https://www.law.pku.edu.cn/xwzx/xwdt/68028.htm",
         "note": "投稿应从编辑部官网进入，防止误入名称相近平台。",
         "check_status": "error",
-        "checked_at": "2026-11-18T18:44:16+00:00",
+        "checked_at": null,
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3040,7 +3040,7 @@
         "submissions_url": "https://qhfx.cbpt.cnki.net/",
         "note": "期刊采编平台入口，是否接受当前类型来稿以稿约为准。",
         "check_status": "error",
-        "checked_at": "2026-11-18T18:44:17+00:00",
+        "checked_at": null,
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3077,7 +3077,7 @@
         "submissions_url": "https://faxuetougao.ecupl.edu.cn/",
         "note": "高校域名采编入口。",
         "check_status": "error",
-        "checked_at": "2026-11-18T18:44:25+00:00",
+        "checked_at": null,
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3096,7 +3096,7 @@
         "homepage": "https://academic.oup.com/ejil",
         "submissions_url": "https://academic.oup.com/ejil/pages/General_Instructions",
         "check_status": "error",
-        "checked_at": "2026-11-18T18:44:16+00:00",
+        "checked_at": null,
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3114,7 +3114,7 @@
         "homepage": "https://www.cambridge.org/core/journals/american-journal-of-international-law",
         "submissions_url": "https://www.cambridge.org/core/journals/american-journal-of-international-law/information/author-instructions",
         "check_status": "identity_matched",
-        "checked_at": "2026-11-18T18:44:20+00:00",
+        "checked_at": null,
         "success_at": "2026-11-18T18:44:20+00:00",
         "error": null,
         "changed": false
@@ -3132,7 +3132,7 @@
         "homepage": "https://www.cambridge.org/core/journals/leiden-journal-of-international-law",
         "submissions_url": "https://www.cambridge.org/core/journals/leiden-journal-of-international-law/information/author-instructions",
         "check_status": "identity_matched",
-        "checked_at": "2026-11-18T18:44:22+00:00",
+        "checked_at": null,
         "success_at": "2026-11-18T18:44:22+00:00",
         "error": null,
         "changed": false
@@ -3150,7 +3150,7 @@
         "homepage": "https://www.cambridge.org/core/journals/international-and-comparative-law-quarterly",
         "submissions_url": "https://www.cambridge.org/core/journals/international-and-comparative-law-quarterly/information/author-instructions",
         "check_status": "identity_matched",
-        "checked_at": "2026-11-18T18:44:23+00:00",
+        "checked_at": null,
         "success_at": "2026-11-18T18:44:23+00:00",
         "error": null,
         "changed": false
@@ -3167,7 +3167,7 @@
         "homepage": "https://academic.oup.com/jiel",
         "submissions_url": "https://academic.oup.com/jiel/pages/General_Instructions",
         "check_status": "error",
-        "checked_at": "2026-11-18T18:44:22+00:00",
+        "checked_at": null,
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3184,7 +3184,7 @@
         "homepage": "https://academic.oup.com/jids",
         "submissions_url": "https://academic.oup.com/jids/pages/General_Instructions",
         "check_status": "error",
-        "checked_at": "2026-11-18T18:44:22+00:00",
+        "checked_at": null,
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3201,7 +3201,7 @@
         "homepage": "https://academic.oup.com/jicj",
         "submissions_url": "https://academic.oup.com/jicj/pages/General_Instructions",
         "check_status": "error",
-        "checked_at": "2026-11-18T18:44:22+00:00",
+        "checked_at": null,
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3219,7 +3219,7 @@
         "homepage": "https://academic.oup.com/chinesejil",
         "submissions_url": "https://academic.oup.com/chinesejil/pages/General_Instructions",
         "check_status": "error",
-        "checked_at": "2026-11-18T18:44:22+00:00",
+        "checked_at": null,
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3237,7 +3237,7 @@
         "homepage": "https://www.cambridge.org/core/journals/asian-journal-of-international-law",
         "submissions_url": "https://www.cambridge.org/core/journals/asian-journal-of-international-law/information/author-instructions",
         "check_status": "identity_matched",
-        "checked_at": "2026-11-18T18:44:24+00:00",
+        "checked_at": null,
         "success_at": "2026-11-18T18:44:24+00:00",
         "error": null,
         "changed": false
@@ -3255,7 +3255,7 @@
         "homepage": "https://brill.com/view/journals/jwit/jwit-overview.xml",
         "submissions_url": "https://brill.com/view/journals/jwit/jwit-overview.xml",
         "check_status": "error",
-        "checked_at": "2026-11-18T18:44:23+00:00",
+        "checked_at": null,
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3273,7 +3273,7 @@
         "homepage": "https://academic.oup.com/icsidreview",
         "submissions_url": "https://academic.oup.com/icsidreview/pages/General_Instructions",
         "check_status": "error",
-        "checked_at": "2026-11-18T18:44:23+00:00",
+        "checked_at": null,
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3290,7 +3290,7 @@
         "homepage": "https://www.cambridge.org/core/journals/transnational-environmental-law",
         "submissions_url": "https://www.cambridge.org/core/journals/transnational-environmental-law/information/author-instructions",
         "check_status": "identity_matched",
-        "checked_at": "2026-11-18T18:44:25+00:00",
+        "checked_at": null,
         "success_at": "2026-11-18T18:44:25+00:00",
         "error": null,
         "changed": false
@@ -3307,7 +3307,7 @@
         "homepage": "https://academic.oup.com/hrlr",
         "submissions_url": "https://academic.oup.com/hrlr/pages/General_Instructions",
         "check_status": "error",
-        "checked_at": "2026-11-18T18:44:24+00:00",
+        "checked_at": null,
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3325,7 +3325,7 @@
         "homepage": "https://journals.law.harvard.edu/ilj/",
         "submissions_url": "https://journals.law.harvard.edu/ilj/submissions/",
         "check_status": "identity_matched",
-        "checked_at": "2026-11-18T18:44:25+00:00",
+        "checked_at": null,
         "success_at": "2026-11-18T18:44:25+00:00",
         "error": null,
         "changed": false
@@ -3343,7 +3343,7 @@
         "homepage": "https://www.yjil.yale.edu/",
         "submissions_url": "https://www.yjil.yale.edu/submissions/",
         "check_status": "error",
-        "checked_at": "2026-11-18T18:44:25+00:00",
+        "checked_at": null,
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3361,7 +3361,7 @@
         "homepage": "https://www.jtl.columbia.edu/",
         "submissions_url": "https://www.jtl.columbia.edu/submissions",
         "check_status": "identity_matched",
-        "checked_at": "2026-11-18T18:44:25+00:00",
+        "checked_at": null,
         "success_at": "2026-11-18T18:44:25+00:00",
         "error": null,
         "changed": false
@@ -3379,7 +3379,7 @@
         "homepage": "https://www.mjilonline.org/",
         "submissions_url": "https://www.mjilonline.org/submissions/",
         "check_status": "error",
-        "checked_at": "2026-11-18T18:44:25+00:00",
+        "checked_at": null,
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3397,7 +3397,7 @@
         "homepage": "https://www.law.berkeley.edu/research/berkeley-journal-of-international-law/",
         "submissions_url": "https://www.law.berkeley.edu/research/berkeley-journal-of-international-law/",
         "check_status": "identity_matched",
-        "checked_at": "2026-11-18T18:44:27+00:00",
+        "checked_at": null,
         "success_at": "2026-11-18T18:44:27+00:00",
         "error": null,
         "changed": false
@@ -3415,7 +3415,7 @@
         "homepage": "https://law.unimelb.edu.au/mjil",
         "submissions_url": "https://law.unimelb.edu.au/mjil/submissions",
         "check_status": "error",
-        "checked_at": "2026-11-18T18:44:25+00:00",
+        "checked_at": null,
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3433,7 +3433,7 @@
         "homepage": "https://cilj.co.uk/",
         "submissions_url": "https://cilj.co.uk/submissions/",
         "check_status": "identity_matched",
-        "checked_at": "2026-11-18T18:44:26+00:00",
+        "checked_at": null,
         "success_at": "2026-11-18T18:44:26+00:00",
         "error": null,
         "changed": false
@@ -3451,7 +3451,7 @@
         "homepage": "https://www.nyujilp.org/",
         "submissions_url": "https://www.nyujilp.org/submissions/",
         "check_status": "error",
-        "checked_at": "2026-11-18T18:44:26+00:00",
+        "checked_at": null,
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3469,7 +3469,7 @@
         "homepage": "https://www.vjil.org/",
         "submissions_url": "https://www.vjil.org/submissions",
         "check_status": "identity_matched",
-        "checked_at": "2026-11-18T18:44:26+00:00",
+        "checked_at": null,
         "success_at": "2026-11-18T18:44:26+00:00",
         "error": null,
         "changed": false
