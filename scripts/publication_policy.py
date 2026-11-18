@@ -25,7 +25,7 @@ _CJK = re.compile(
     r"台北|臺北|高雄|台独|臺獨|一國兩制|一国两制|國安法|国安法|"
     r"拉萨|拉薩|驻藏|駐藏|藏南|东突|東突|港独|港獨|"
     r"达旺|達旺|屋脊|麦克马洪|麥克馬洪|强迫劳动|強迫勞動|兵团|兵團|"
-    r"港岛|港島|九龙|九龍|新界|"
+    r"港岛|港島|九龙|九龍|新界|一带一路|一帶一路|中印边境|中印邊境|中印实际控制线|中印實際控制線|"
     r"乌鲁木齐|烏魯木齊|喀什|和田|伊犁|内蒙古|內蒙古|"
     r"西沙|南沙|东沙|東沙|黄岩岛|黃岩島|仁爱礁|仁愛礁|太平岛|太平島"
 )
@@ -37,9 +37,10 @@ _MULTILINGUAL = re.compile(
     r"cross[ -]+strait|taiwan[ -]+strait|hong[ -]*kong|hongkonger\w*|hksar|kowloon|macau|macao|"
     r"xinjiang|sinkiang|uyghurs?|uighurs?|uygurs?|uigurs?|xuar|urumqi|kashgar|hotan|"
     r"east(?:ern)?[ -]+turk[ei]st[áa]n|dogu[ -]+turkistan|"
-    r"tibet(?:an|ans)?|tib[ée]tain\w*|xizang|lhasa|dharamsala|amdo|kham|"
+    r"tibet(?:an|ans)?|tib[ée]tain\w*|xizang|lhasa|dhara[ms]{1,2}sh?ala|amdo|kham|"
     r"inner[ -]+mongolia|south[ -]+mongolia|south(?:ern)?[ -]+tibet|"
-    r"arunachal[ -]+pradesh|tawang|mcmahon[ -]+line|aksai[ -]+chin|"
+    r"arunachal(?:[ -]+pradesh)?|tawang|mcmahon[ -]+line|aksai[ -]+chin|line[ -]+of[ -]+actual[ -]+control|"
+    r"belt[ -]+and[ -]+road[ -]+initiative|people.s[ -]+liberation[ -]+army|"
     r"x[pb]cc|uflpa|production[ -]+and[ -]+construction[ -]+corps|uyghur[ -]+forced[ -]+labou?r|"
     r"sino[ -]\w+|sinophone|sinic(?:ization|isation|ize|ise)|"
     r"ccp|c[. ]c[. ]p\.?|"
@@ -108,7 +109,7 @@ def regional_item(item, source, rules, reviewed):
     if source.get('kind')=='crossref':
         if not eligible_metadata(item,source) or (not reviewed and len(proof)<60):
             return False
-    elif (not article_origin(source,item['url']) or item.get('evidence_basis') not in ('原文正文核对','RSS 正文')
+    elif (not article_origin(source,item['url']) or item.get('evidence_basis')!='原文正文核对'
           or (not reviewed and len(proof)<120)):
         return False
     fields=[item['title'],item['url'],item.get('doi'),item['authors'],item['bibliography'],proof]

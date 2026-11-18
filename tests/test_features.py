@@ -163,7 +163,7 @@ class FeatureWorkflowTests(unittest.TestCase):
         with patch.object(pipeline,'http_fetch',side_effect=AssertionError('automatic fetch must stay paused')):
             pipeline.collect(self.conn,self.config,sources,force=True)
     def test_regional_origin_checks_whole_context_and_original_publisher(self):
-        from source_review import inspect_html
+        from source_review import inspect_html, verify_entries
         from publication_policy import snapshot_issues
         config,sources=pipeline.configuration()
         rules=pipeline.publication_rules()
@@ -174,14 +174,24 @@ class FeatureWorkflowTests(unittest.TestCase):
             return {'url':url,'title':title,'evidence_basis':'RSS 标题','evidence':'','authors':[]}
         foreign_item=record('https://www.ungeneva.org/example-foreign','A regional institution updates procedural rules')
         other_item=record('https://www.ungeneva.org/example-other','A second institution updates procedural rules')
+        rss_item=record('https://www.ungeneva.org/example-rss','A third institution updates procedural rules')
+        rss_item.update(evidence=body,evidence_basis='RSS 正文')
         origin=record('https://www.mfa.gov.cn/fyrbt_673021/dhdw_673027/202610/t20261010_123.shtml','外交部发言人就西藏问题答记者问')
         repost=record('https://www.mfa.gov.cn/fyrbt_673021/dhdw_673027/202610/t20261010_456.shtml','外交部发言人就藏南问题答记者问')
+        repost_header={**repost,'url':repost['url'].replace('_456','_457')}
+        missing_title={**repost,'url':repost['url'].replace('_456','_458')}
         mfa_meta='<meta name="SiteName" content="中华人民共和国外交部">'
+        with patch('source_review.validate_public_url',side_effect=OSError) as validate:
+            self.assertFalse(verify_entries([rss_item],foreign,config,rules))
+            validate.assert_called_once()
+        core.upsert_item(self.conn,rss_item,foreign,config)
         for source,entry,markup in (
             (foreign,foreign_item,f'<article>{body}</article>'),
-            (foreign,other_item,f'<article>{body} One case concerns Arunachal Pradesh.</article>'),
-            (mfa,origin,f'{mfa_meta}<article>{body}</article>'),
-            (mfa,repost,f'{mfa_meta}<meta name="ContentSource" content="Third-party wire"><article>{body}</article>'),
+            (foreign,other_item,f'<meta property="og:description" content="A case concerns Arunachal."><article>{body}</article>'),
+            (mfa,origin,f'{mfa_meta}<h1>{origin["title"]}</h1><article>{body}</article>'),
+            (mfa,repost,f'{mfa_meta}<meta name="ContentSource" content="外交部"><meta name="ContentSource" content="Third-party wire"><h1>{repost["title"]}</h1><article>{body}</article>'),
+            (mfa,repost_header,f'{mfa_meta}<header><h1>{repost["title"]}</h1><p>来源：<a>其他通讯社</a></p></header><article>{body}</article>'),
+            (mfa,missing_title,f'{mfa_meta}<article>{body}</article>'),
             (foreign,record('https://www.ungeneva.org/no-context','Context cannot be established'),'<header>Preview</header>'),
         ):
             core.upsert_item(self.conn,inspect_html(entry,source,entry['url'],markup),source,config)
@@ -190,6 +200,12 @@ class FeatureWorkflowTests(unittest.TestCase):
         self.assertFalse(snapshot_issues(release,sources,rules))
         self.assertNotIn(other_item['url'],(self.root/'dist/feed.xml').read_text(encoding='utf-8'))
         self.assertNotIn(repost['url'],(self.root/'dist/api/items.json').read_text(encoding='utf-8'))
+    def test_emergency_pause_also_skips_cfp_checks(self):
+        rules=pipeline.publication_rules()
+        rules['automatic_updates_paused']=True
+        core.write_json(self.root/'config/visibility.json',rules)
+        with patch.object(cfp,'approved_targets',side_effect=AssertionError('CFP must stay paused')):
+            self.assertEqual(cfp.refresh(self.config,force=True)['checked_this_run'],0)
     def test_output_path_restricted(self):
         path=self.root/'external-output.json';core.write_json(path,{'model':'fixture-only','calls':[self.call]})
         with self.assertRaises(ValueError):cfp.apply_updates(path)

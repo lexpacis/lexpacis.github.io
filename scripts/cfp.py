@@ -22,11 +22,14 @@ def approved_targets():
     return journals,seeds,targets
 
 def refresh(config,force=False,limit=60):
-    if strict_scope(read_json(ROOT/'config/visibility.json',{})):
+    rules = read_json(ROOT/'config/visibility.json',{})
+    if rules.get('automatic_updates_paused'):
+        return {'checked_this_run':0,'errors':0}
+    if strict_scope(rules):
         print('[cfp] 公开版只提供期刊投稿入口，未发起公告监测。')
         return {'checked_this_run':0,'errors':0}
     journals,seeds,targets=approved_targets()
-    if regional_scope(read_json(ROOT/'config/visibility.json',{})):
+    if regional_scope(rules):
         targets=[target for target in targets if target['kind']=='journal']
     state=read_json(ROOT/'runtime/cfp/state.json',{'pages':{}})
     hosts={urllib.parse.urlsplit(t['url']).hostname.lower() for t in targets}
