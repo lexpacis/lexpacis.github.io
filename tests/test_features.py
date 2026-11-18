@@ -1,8 +1,11 @@
 import copy
 from contextlib import closing
 import json
+from email.message import Message
+from io import BytesIO
 from pathlib import Path
 import socket
+from types import SimpleNamespace
 import sys
 import tempfile
 import unittest
@@ -219,6 +222,58 @@ class FeatureWorkflowTests(unittest.TestCase):
         core.write_json(self.root/'config/visibility.json',rules)
         with patch.object(cfp,'approved_targets',side_effect=AssertionError('CFP must stay paused')):
             self.assertEqual(cfp.refresh(self.config,force=True)['checked_this_run'],0)
+    def test_source_specific_body_and_rotating_review(self):
+        from source_review import verify_entries
+        _,sources=pipeline.configuration()
+        source=next(s for s in sources if s['id']=='wto')
+        source={**source,'article_checks':2}
+        body='The institution explained its programme for resolving international disputes and reviewing proposals. '*3
+        entries=[{'title':f'Procedural update number {index}','url':f'https://www.wto.org/item-{index}',
+                  'authors':[],'evidence':'','evidence_basis':'RSS 标题'} for index in range(5)]
+        requests=[]
+
+        def open_article(request,**kwargs):
+            requests.append(request.full_url)
+            response=BytesIO(f'<main id="mainContent"><h1>Official release</h1><p>{body}</p></main>'.encode())
+            response.headers=Message()
+            response.headers['Content-Type']='text/html; charset=UTF-8'
+            response.url=request.full_url
+            return response
+
+        report={}
+        rules=pipeline.publication_rules()
+        with patch('source_review.public_opener',return_value=SimpleNamespace(open=open_article)):
+            first=verify_entries(entries,source,self.config,rules,report)
+            second=verify_entries(entries,source,self.config,rules,report)
+        self.assertEqual(requests,[entries[i]['url'] for i in (0,1,0,2)])
+        self.assertEqual(report['verified'],2)
+        self.assertEqual(report['pending'],3)
+        self.assertTrue(all(x['evidence_basis']=='原文正文核对' for x in first+second))
+
+    def test_icj_pdf_requires_all_pages_and_applies_editorial_screen(self):
+        from publication_policy import regional_item
+        from source_review import inspect_icj_pdf, PDF_BASIS
+        _,sources=pipeline.configuration()
+        source=next(s for s in sources if s['id']=='icj')
+        url='https://www.icj-cij.org/sites/default/files/case-related/178/178-20261103-pre-01-00-en.pdf'
+        entry={'title':'Procedural order','url':url,'authors':[],'bibliography':{},'module':'cases','evidence':''}
+        page='International Court of Justice. The judges explained the procedure for the parties and set further deadlines. '*2
+        def mock_reader(args,**kwargs):
+            if 'pdfinfo' in args:
+                return SimpleNamespace(stdout=b'Pages: 2\n')
+            kwargs['stdout'].write((page+'\f'+mock_reader.last_page+'\f').encode())
+            return SimpleNamespace()
+        mock_reader.last_page=page
+        with patch('source_review.subprocess.run',side_effect=mock_reader):
+            checked=inspect_icj_pdf(entry,source,url,b'%PDF-fixture')
+            self.assertEqual(checked['evidence_basis'],PDF_BASIS)
+            rules=pipeline.publication_rules()
+            self.assertTrue(regional_item(checked,source,rules,False))
+            mock_reader.last_page=page+' The proceedings concern Lhasa.'
+            self.assertFalse(regional_item(inspect_icj_pdf(entry,source,url,b'%PDF-fixture'),source,rules,False))
+            mock_reader.last_page=''
+            self.assertIs(inspect_icj_pdf(entry,source,url,b'%PDF-fixture'),entry)
+            self.assertIs(inspect_icj_pdf(entry,source,url.replace('icj-cij.org','example.org'),b'%PDF-fixture'),entry)
     def test_output_path_restricted(self):
         path=self.root/'external-output.json';core.write_json(path,{'model':'fixture-only','calls':[self.call]})
         with self.assertRaises(ValueError):cfp.apply_updates(path)

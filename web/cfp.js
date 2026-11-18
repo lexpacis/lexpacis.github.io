@@ -44,12 +44,15 @@
   }
   function journalCard(j){
     const status={identity_matched:'最近读取页面包含刊名',reachable_unconfirmed:'页面可读，期刊身份待确认',error:'本次访问异常，未更新验证',unverified:'尚未运行入口检查',https_unverified:'尚无核实的 HTTPS 投稿入口'}[j.check_status]||'待确认';
+    const reason=j.check_reason||'';
+    const explanation=/^http_[45]\d\d$/.test(reason)?' · HTTP '+reason.slice(5):
+      ({network_error:' · 连接或读取失败',response_invalid:' · 响应不符合入口检查要求'}[reason]||'');
     const origin=url(j.identity_source)||url(j.homepage);
     const submission=url(j.submissions_url);
     const originLink=origin?`<a href="${origin}" target="_blank" rel="noopener noreferrer">主办 / 出版机构来源 ↗</a>`:'';
     const submissionLink=submission?`<a href="${submission}" target="_blank" rel="noopener noreferrer">${j.check_status==='identity_matched'?'稿约 / 投稿入口':'查看登记入口（待核对）'} ↗</a>`:'<span class="tool-fine">待核对 HTTPS 投稿入口，请向主办机构确认。</span>';
     const labels=(j.topics||[]).map(id=>topics.find(t=>t.id===id)?.short).filter(Boolean).join(' / ');
-    return `<article class="journal-card"><div class="journal-labels"><span>${e(languages[j.language]||j.language)}</span><span>${e(labels)}</span></div><h2>${e(j.name)}</h2><div class="journal-publisher">${e(j.publisher)}</div><div class="journal-scope">${e(j.scope)}</div>${j.note?`<p class="tool-fine" style="margin:0">${e(j.note)}</p>`:''}<div class="journal-state">${status}${j.checked_at?' · '+date(j.checked_at):''}${j.changed?' · 页面有变化，待更新稿约信息':''}<br>这是期刊入口，不表示当前有专题 CFP 或保证投稿窗口开放。</div><div class="journal-links">${originLink}${submissionLink}</div></article>`;
+    return `<article class="journal-card"><div class="journal-labels"><span>${e(languages[j.language]||j.language)}</span><span>${e(labels)}</span></div><h2>${e(j.name)}</h2><div class="journal-publisher">${e(j.publisher)}</div><div class="journal-scope">${e(j.scope)}</div>${j.note?`<p class="tool-fine" style="margin:0">${e(j.note)}</p>`:''}<div class="journal-state">${status}${e(explanation)}${j.checked_at?' · '+date(j.checked_at):''}${j.changed?' · 页面有变化，待更新稿约信息':''}<br>这是期刊入口，不表示当前有专题 CFP 或保证投稿窗口开放。</div><div class="journal-links">${originLink}${submissionLink}</div></article>`;
   }
   function callCard(call){
     const j=source.journals.find(j=>j.id===call.journal_id);

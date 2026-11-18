@@ -10,12 +10,13 @@ import re
 import shutil
 import sys
 import urllib.error
+import xml.etree.ElementTree as ET
 import uuid
 import webbrowser
 from core import ROOT, UTC, atomic_write, database, fingerprint, http_fetch, log, now, parse_crossref, parse_date, parse_feed, parse_listing, plain, read_json, run_lock, safe_url, upsert_item, write_json
 from publication_policy import (SCOPE_REVISION, eligible_metadata, managed_scope, original_publisher,
                                 regional_item, regional_scope, restricted_content, source_paused, strict_scope)
-from source_review import verify_entries
+from source_review import clean_review, verify_entries
 
 def configuration():
     return read_json(ROOT/'config/site.json'),read_json(ROOT/'config/sources.json')
@@ -59,22 +60,46 @@ def collect(conn,config,sources,force=False):
                 age=(dt.datetime.now(UTC)-dt.datetime.fromisoformat(state['success_at'])).total_seconds()
                 if age<source['poll_hours']*3600: stats['skipped']+=1; continue
         print(f"[collect] {source['id']} ...",flush=True)
+        previous=conn.execute('SELECT metrics FROM source_reviews WHERE id=?',(source['id'],)).fetchone()
+        report=clean_review(json.loads(previous['metrics'])) if previous else {}
+        report.pop('failure',None)
+        report.pop('fallback',None)
         try:
             data,headers=http_fetch(source,config,state)
+            cache=ROOT/'runtime'/'cache'/source['id']
+            if data is None and regional_scope(rules) and source['kind']!='crossref' and (cache/'latest.response').is_file():
+                # Keep rotating through stable listings even when their validators return 304.
+                data=(cache/'latest.response').read_bytes()
+                headers={'ETag':state['etag'],'Last-Modified':state['last_modified']}
             if data is None:
                 conn.execute("UPDATE source_state SET attempted_at=?,success_at=?,status='ok',error=NULL,failures=0,next_attempt_at=NULL WHERE id=?",(now(),now(),source['id']))
                 conn.commit(); stats['successes']+=1; continue
-            if source['kind']=='rss': entries=parse_feed(data,source)
+            if source['kind']=='rss':
+                try:
+                    entries=parse_feed(data,source)
+                except ET.ParseError:
+                    if not source.get('rss_listing_url'):
+                        raise
+                    fallback={**source,'url':source['rss_listing_url'],'link_pattern':source['rss_listing_pattern']}
+                    data,_=http_fetch(fallback,config)
+                    entries=parse_listing(data,fallback)
+                    headers={}
+                    report['fallback']=True
             elif source['kind']=='crossref': entries=parse_crossref(data,source)
             elif source['kind']=='html': entries=parse_listing(data,source)
             else: raise ValueError('不支持的采集器类型')
             if not entries: raise ValueError('没有解析到条目；请检查信源结构，未覆盖旧数据')
             # Keep source evidence private. Raw responses never enter dist/.
-            cache=ROOT/'runtime'/'cache'/source['id']; cache.mkdir(parents=True,exist_ok=True)
+            cache.mkdir(parents=True,exist_ok=True)
             (cache/'latest.response').write_bytes(data)
             candidates=entries[:config['max_entries_per_source']]
             if regional_scope(rules):
-                candidates=verify_entries(candidates,source,config,rules)
+                candidates=verify_entries(candidates,source,config,rules,report)
+                if source['kind']!='crossref':
+                    conn.execute('INSERT OR REPLACE INTO source_reviews VALUES(?,?)',(source['id'],json.dumps(clean_review(report))))
+                    print('[review] '+source['id']+' '+json.dumps({k:v for k,v in clean_review(report).items() if k!='cursor'}),flush=True)
+                else:
+                    conn.execute('DELETE FROM source_reviews WHERE id=?',(source['id'],))
             for entry in candidates:
                 # Future publication dates are valid index metadata, not current events.
                 result=upsert_item(conn,entry,source,config)
@@ -103,6 +128,16 @@ def collect(conn,config,sources,force=False):
                 VALUES(?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET attempted_at=excluded.attempted_at,
                 status=excluded.status,error=excluded.error,failures=excluded.failures,next_attempt_at=excluded.next_attempt_at''',
                 (source['id'],now(),'error',message,failures,retry_at))
+            if isinstance(error,urllib.error.HTTPError):
+                failure=f'http_{error.code}'
+            elif isinstance(error,ET.ParseError):
+                failure='invalid_xml'
+            elif isinstance(error,OSError):
+                failure='network_error'
+            else:
+                failure='parse_failed'
+            conn.execute('INSERT OR REPLACE INTO source_reviews VALUES(?,?)',
+                         (source['id'],json.dumps(clean_review({'failure':failure,'cursor':report.get('cursor')}))))
             conn.commit(); stats['failures']+=1
             log('source_failure',source=source['id'],error=message,retry_at=retry_at)
             # Job logs are public. Store diagnostics only in the temporary runtime.
@@ -295,6 +330,9 @@ def public_data(conn,config,sources):
         if paused:
             info['enabled']=False
             state=None
+        metrics=conn.execute('SELECT metrics FROM source_reviews WHERE id=?',(source['id'],)).fetchone() if not paused else None
+        if metrics:
+            info['review']=clean_review(json.loads(metrics['metrics']))
         if source['kind']=='rss' and not paused:info['feed_url']=source['url']
         info.update(status='paused' if paused else state['status'] if state else ('unverified' if source['enabled'] else 'candidate'),
                     attempted_at=state['attempted_at'] if state else None,

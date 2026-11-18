@@ -81,7 +81,10 @@ def refresh(config,force=False,limit=60):
             return target['id'],record
         except Exception as error:
             old=state['pages'].get(target['id'],{})
-            return target['id'],{**old,'id':target['id'],'url':target['url'],'checked_at':now(),'status':'error','error':str(error)[:250]}
+            reason=(f'http_{error.code}' if isinstance(error,urllib.error.HTTPError) else
+                    'network_error' if isinstance(error,OSError) else 'response_invalid')
+            return target['id'],{**old,'id':target['id'],'url':target['url'],'checked_at':now(),
+                                 'status':'error','error':str(error)[:250],'check_reason':reason}
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
         for key,record in pool.map(fetch,due[:limit]):
             state['pages'][key]=record
@@ -126,7 +129,11 @@ def public_data(conn,main_items):
         page={} if strict_scope(rules) else state['pages'].get('journal:'+journal['id'],{})
         if urllib.parse.urlsplit(journal['submissions_url']).scheme!='https':
             page={'status':'https_unverified'}
+        reason=page.get('check_reason') or ''
+        if not re.fullmatch(r'http_[45]\d{2}|network_error|response_invalid',reason):
+            reason=None
         journal_output.append({**journal,'check_status':page.get('status','unverified'),'checked_at':page.get('checked_at'),
+                               'check_reason':reason,
                                'success_at':page.get('success_at'),'error':'投稿入口暂未成功读取。' if page.get('error') else None,'changed':page.get('changed',False)})
     if strict_scope(rules):
         return {'journals':journal_output,'calls':[],'updated_at':None,

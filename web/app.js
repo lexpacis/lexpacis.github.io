@@ -58,7 +58,7 @@
     if (source.status === 'ok' && source.success_at && (Date.now() - Date.parse(source.success_at)) > Math.max(source.poll_hours * 3, 48) * 3600000) return 'stale';
     return source.status;
   };
-  const statusName = status => ({ok:'最近采集成功',error:'访问异常',candidate:'候选入口',unverified:'尚未验证',stale:'等待刷新',paused:'暂停采集'}[status] || '未验证');
+  const statusName = status => ({ok:'目录已读取',error:'访问异常',candidate:'候选入口',unverified:'尚未验证',stale:'等待刷新',paused:'暂停采集'}[status] || '未验证');
   const empty = (heading, text, button = '') => `<div class="empty-state"><div class="empty-symbol">⌁</div><h3>${e(heading)}</h3><p>${e(text)}</p>${button}</div>`;
   const saveButton = item => `<button class="save-button ${saved.has(item.id) ? 'saved' : ''}" data-save="${e(item.id)}" aria-label="${saved.has(item.id) ? '取消收藏' : '收藏条目'}：${e(title(item))}" aria-pressed="${saved.has(item.id)}">${icon}</button>`;
   const dateChips = item => ['event','deadline'].map(key => item[key] ? `<span class="event-date-chip">${key === 'event' ? '活动' : '截止'} ${e(shortDate(item[key].date))}</span>` : '').join('');
@@ -333,10 +333,24 @@
   function topicDirectory() {
     return heading('循专题而行','RESEARCH PATHWAYS','把不同来源的文献、案件和评论放回同一研究脉络。')+`<div class="topic-grid">${data.topics.map((topic,index)=>`<a class="topic-large" href="${link('topic',{id:topic.id})}"><span class="topic-number">0${index+1} / RESEARCH TOPIC</span><h2>${e(topic.name)}</h2><div class="topic-meta"><span>${countTopic(topic.id)} 条相关资料</span><span>进入专题 ↗</span></div></a>`).join('')}</div>`;
   }
+  function sourceReview(source) {
+    const review=source.review;
+    if (!review) return source.error?`<p class="source-error">最近异常：${e(source.error)}</p>`:'';
+    const failure=review.failure;
+    if (failure) {
+      const reason={invalid_xml:'订阅内容无法解析为 XML',parse_failed:'目录未解析到可用条目',network_error:'连接或读取失败'}[failure]
+        || (/^http_[45]\d\d$/.test(failure)?'来源返回 HTTP '+failure.slice(5):'信源检查异常');
+      return `<p class="source-error">${e(reason)}</p>`;
+    }
+    const reasons=[['pending','后续轮次待核验'],['china_hold','命中涉华筛查'],['origin_hold','链接或来源待确认'],
+      ['body_hold','正文或原发证据不足'],['access_hold','原文请求失败'],['unsupported_hold','响应格式不符'],['pdf_hold','PDF 文本核验未通过']];
+    const details=reasons.filter(([key])=>review[key]>0).map(([key,label])=>`<li>${label} ${e(review[key])} 条</li>`).join('');
+    return `<details class="source-review"><summary>本轮原文核验 ${e(review.checked??0)} 条 · 通过 ${e(review.verified??0)} 条</summary>${review.fallback?'<p>RSS 解析失败，本轮读取同站官方首页。</p>':''}${details?`<ul>${details}</ul>`:''}</details>`;
+  }
   function sourcesPage() {
     const enabled=data.sources.filter(s=>s.enabled).length;
     const good=data.sources.filter(s=>sourceStatus(s)==='ok').length;
-    return heading('信源目录','','查看来源机构、收录范围及最近访问状态。')+`<div class="source-summary"><div class="metric-block"><strong>${enabled}</strong><span>已启用入口</span></div><div class="metric-block"><strong>${good}</strong><span>最近采集成功</span></div><div class="metric-block"><strong>${data.sources.filter(s=>sourceStatus(s)==='error').length}</strong><span>最近访问异常</span></div><div class="metric-block"><strong>${data.sources.filter(s=>!s.enabled).length}</strong><span>候选或暂停</span></div></div><div class="source-grid">${data.sources.map(s=>{const status=sourceStatus(s);return `<article class="source-card"><div class="source-card-top"><h3>${e(s.name)}</h3><span class="status-pill ${e(status)}">${statusName(status)}</span></div><div class="organization">${e(s.organization)}</div><p>${e(s.scope)}</p><dl><dt>来源类型</dt><dd>${e({official_institution:'官方机构',official_news_service:'官方机构新闻服务',china_government:'中国政府原发',china_official_media:'中国官方媒体',academic_commentary:'学术评论平台',academic_society:'学术团体',scholarly_index:'学术元数据索引'}[s.authority]||s.authority)}</dd><dt>采集方式</dt><dd>${e(s.kind.toUpperCase())} · ${s.poll_hours} 小时最短间隔</dd><dt>当前收录</dt><dd>${s.item_count} 条</dd><dt>最近尝试</dt><dd>${e(localTime(s.attempted_at))}</dd><dt>最近成功</dt><dd>${e(localTime(s.success_at))}</dd></dl>${s.error?`<p class="source-error">最近异常：${e(s.error)}</p>`:''}<a class="text-button" href="${href(s.homepage)}" target="_blank" rel="noopener noreferrer">访问原始网站 ↗</a></article>`}).join('')}</div>`;
+    return heading('信源目录','','查看来源机构、收录范围及最近访问状态。')+`<div class="source-summary"><div class="metric-block"><strong>${enabled}</strong><span>已启用入口</span></div><div class="metric-block"><strong>${good}</strong><span>目录已读取</span></div><div class="metric-block"><strong>${data.sources.filter(s=>sourceStatus(s)==='error').length}</strong><span>最近访问异常</span></div><div class="metric-block"><strong>${data.sources.filter(s=>!s.enabled).length}</strong><span>候选或暂停</span></div></div><div class="source-grid">${data.sources.map(s=>{const status=sourceStatus(s);return `<article class="source-card"><div class="source-card-top"><h3>${e(s.name)}</h3><span class="status-pill ${e(status)}">${statusName(status)}</span></div><div class="organization">${e(s.organization)}</div><p>${e(s.scope)}</p><dl><dt>来源类型</dt><dd>${e({official_institution:'官方机构',official_news_service:'官方机构新闻服务',china_government:'中国政府原发',china_official_media:'中国官方媒体',academic_commentary:'学术评论平台',academic_society:'学术团体',scholarly_index:'学术元数据索引'}[s.authority]||s.authority)}</dd><dt>采集方式</dt><dd>${e(s.kind.toUpperCase())} · ${s.poll_hours} 小时最短间隔</dd><dt>当前收录</dt><dd>${s.item_count} 条</dd><dt>最近尝试</dt><dd>${e(localTime(s.attempted_at))}</dd><dt>最近成功</dt><dd>${e(localTime(s.success_at))}</dd></dl>${sourceReview(s)}<a class="text-button" href="${href(s.homepage)}" target="_blank" rel="noopener noreferrer">访问原始网站 ↗</a></article>`}).join('')}</div>`;
   }
   function aboutPage() {
     return heading('收录范围、隐私与纠错','','')+`<div class="about-layout">

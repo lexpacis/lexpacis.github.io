@@ -30,6 +30,13 @@ jobs:
           persist-credentials: false
       - name: Check supported runtime
         run: python3 -c 'import sys; assert sys.version_info >= (3,10)'
+      - name: Ensure the Ubuntu PDF reader is available
+        run: |
+          if ! command -v pdftotext >/dev/null || ! command -v pdfinfo >/dev/null; then
+            sudo apt-get -q update
+            sudo apt-get -q install --no-install-recommends -y poppler-utils
+          fi
+          command -v prlimit
       - name: Verify pipeline and public artifacts
         run: python3 -m unittest discover -s tests -q
       - name: Collect and build without any model

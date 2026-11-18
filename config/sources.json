@@ -42,14 +42,17 @@
     "name": "EJIL: Talk!",
     "organization": "European Journal of International Law",
     "url": "https://www.ejiltalk.org/feed/",
+    "rss_listing_url": "https://www.ejiltalk.org/",
+    "rss_listing_pattern": "^/[a-z0-9][a-z0-9-]{24,}/$",
     "homepage": "https://www.ejiltalk.org/",
     "kind": "rss",
     "module": "commentary",
     "authority": "academic_commentary",
     "enabled": true,
     "poll_hours": 6,
+    "article_checks": 6,
     "topics": [],
-    "scope": "RSS 最新条目，标题与链接；不代表期刊论文全覆盖",
+    "scope": "RSS 最新条目，订阅解析失败时读取同站官方首页，原文逐条核验",
     "reuse": "metadata_only",
     "language": "en"
   },
@@ -80,6 +83,7 @@
     "authority": "academic_commentary",
     "enabled": true,
     "poll_hours": 6,
+    "article_checks": 8,
     "topics": [],
     "scope": "RSS 最新条目；多语种学术评论",
     "reuse": "metadata_only",
@@ -113,6 +117,7 @@
     "authority": "official_institution",
     "enabled": true,
     "poll_hours": 6,
+    "article_checks": 8,
     "topics": [
       "economic"
     ],
@@ -134,6 +139,7 @@
     "authority": "official_institution",
     "enabled": true,
     "poll_hours": 12,
+    "article_checks": 8,
     "topics": [
       "disputes"
     ],
@@ -154,6 +160,7 @@
     "authority": "official_institution",
     "enabled": true,
     "poll_hours": 12,
+    "article_checks": 8,
     "topics": [
       "disputes"
     ],

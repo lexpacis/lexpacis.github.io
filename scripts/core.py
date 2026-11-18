@@ -304,6 +304,8 @@ def database(root=ROOT):
         id TEXT PRIMARY KEY, attempted_at TEXT, success_at TEXT, status TEXT, error TEXT,
         etag TEXT, last_modified TEXT, item_count INTEGER DEFAULT 0, failures INTEGER DEFAULT 0,
         next_attempt_at TEXT);
+      CREATE TABLE IF NOT EXISTS source_reviews (
+        id TEXT PRIMARY KEY, metrics TEXT NOT NULL);
       CREATE TABLE IF NOT EXISTS enrichments (
         item_id TEXT PRIMARY KEY, content_hash TEXT, payload TEXT, model TEXT, created_at TEXT);
       CREATE TABLE IF NOT EXISTS publication_reviews (

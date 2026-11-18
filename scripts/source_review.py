@@ -1,11 +1,13 @@
 """Check the original article for topic context and the issuing publisher."""
 from html.parser import HTMLParser
 import re
+import subprocess
+import tempfile
 import urllib.error
 import urllib.request
 from urllib.parse import urljoin, urlsplit
 
-from core import parse_date, plain
+from core import identity, parse_date, plain
 from network_policy import public_opener
 from publication_policy import OFFICIAL_SOURCES, article_origin, official_origin, restricted_content
 
@@ -19,10 +21,29 @@ _CONTEXT_META = {'articletitle','og:title','twitter:title','description','og:des
 _ATTRIBUTION = re.compile(r'(?:来\s*源\s*[:：]|转\s*载\s*(?:自|于))\s*([^\n]*)')
 _BODY = re.compile(r'\b(?:entry-content|post-content|article-content|article__body|article-body|'
                    r'news-details|trs_ueditor|field--name-body|articletext|newscontent|news-content|artibody)\b',re.I)
+_ICJ_PDF = re.compile(r'/sites/default/files/(?:press-releases|case-related)/\d+/\d+-\d{8}-pre-\d+-\d+-en\.pdf')
+PDF_BASIS = '官方 PDF 正文核对'
+REVIEW_COUNTS = ('candidates','checked','verified','china_hold','origin_hold','body_hold',
+                 'access_hold','unsupported_hold','pdf_hold','pending')
+
+
+def clean_review(value):
+    if not isinstance(value,dict):
+        return {}
+    result={name:value[name] for name in REVIEW_COUNTS if type(value.get(name)) is int and 0<=value[name]<=10000}
+    cursor=value.get('cursor','')
+    if isinstance(cursor,str) and re.fullmatch('[a-f0-9]{20}',cursor):
+        result['cursor']=cursor
+    failure=value.get('failure','')
+    if isinstance(failure,str) and re.fullmatch(r'http_[45]\d{2}|invalid_xml|parse_failed|network_error',failure):
+        result['failure']=failure
+    if value.get('fallback') is True:
+        result['fallback']=True
+    return result
 
 
 class ArticleEvidence(HTMLParser):
-    def __init__(self):
+    def __init__(self, source_id=None):
         super().__init__(convert_charrefs=True)
         self.stack = []
         self.bodies = []
@@ -32,6 +53,7 @@ class ArticleEvidence(HTMLParser):
         self.page_text = []
         self.sources = []
         self.metadata_context = []
+        self.source_id = source_id
 
     def handle_starttag(self, tag, attrs):
         fields = dict(attrs)
@@ -51,7 +73,11 @@ class ArticleEvidence(HTMLParser):
         if tag in _VOID:
             return
         candidate = None
-        if tag == 'article' or _BODY.search(' '.join((fields.get('class') or '',fields.get('id') or ''))):
+        official_body = (
+            (self.source_id == 'wto' and fields.get('id') == 'mainContent')
+            or (self.source_id == 'pca' and (tag == 'main' or fields.get('role') == 'main'))
+        )
+        if tag == 'article' or official_body or _BODY.search(' '.join((fields.get('class') or '',fields.get('id') or ''))):
             candidate = []
             self.bodies.append(candidate)
         self.stack.append((tag,candidate))
@@ -89,7 +115,7 @@ class ArticleEvidence(HTMLParser):
 
 
 def inspect_html(entry, source, url, markup):
-    parse = ArticleEvidence()
+    parse = ArticleEvidence(source['id'])
     parse.feed(markup)
     canonical = urljoin(url,parse.canonical) if parse.canonical else url
     if not article_origin(source,canonical):
@@ -124,46 +150,108 @@ def inspect_html(entry, source, url, markup):
             'evidence_basis':basis,'bibliography':bibliography}
 
 
-def verify_entries(entries, source, config, rules):
+def icj_pdf_url(source,url):
+    parsed=urlsplit(url)
+    return (source['id']=='icj' and article_origin(source,url) and not parsed.query
+            and bool(_ICJ_PDF.fullmatch(parsed.path)))
+
+
+def inspect_icj_pdf(entry,source,url,raw):
+    if not icj_pdf_url(source,url) or not raw.startswith(b'%PDF-'):
+        return entry
+    # Use the standard Ubuntu reader, without running document actions or scripts.
+    # Scan the entire short press release, with bounded size, page count and runtime.
+    prefix=['prlimit','--as=268435456','--fsize=2000000','--','env','LC_ALL=C']
+    try:
+        info=subprocess.run([*prefix,'pdfinfo','-'],input=raw,capture_output=True,check=True,timeout=4).stdout
+        pages=re.search(rb'(?m)^Pages:\s+(\d+)\s*$',info)
+        if not pages or not 1<=int(pages[1])<=12:
+            return entry
+        with tempfile.TemporaryFile() as output:
+            subprocess.run([*prefix,'pdftotext','-enc','UTF-8','-','-'],input=raw,
+                           stdout=output,stderr=subprocess.DEVNULL,check=True,timeout=5)
+            output.seek(0)
+            text=output.read(2_000_000).decode('utf-8')
+    except (OSError,subprocess.SubprocessError,UnicodeError):
+        return entry
+    leafs=text.split('\f')
+    if leafs[-1].strip()=='':
+        leafs.pop()
+    if len(leafs)!=int(pages[1]) or any(len(page.strip())<100 for page in leafs):
+        return entry
+    body=' '.join(text.split())
+    if not re.search(r'international court of justice|cour internationale de justice',body,re.I):
+        return entry
+    evidence=' '.join((entry['title'],entry.get('evidence') or '',body))
+    return {**entry,'evidence':evidence,'evidence_basis':PDF_BASIS}
+
+
+def verify_entries(entries, source, config, rules, report=None):
     if source['kind']=='crossref':
         return entries
-    reviewed=[]
+    if report is None:
+        report={}
+    cursor=report.get('cursor','')
+    report.update(dict.fromkeys(REVIEW_COUNTS,0))
+    report['candidates']=len(entries)
+    reviewed,eligible=[],[]
     official=source['id'] in OFFICIAL_SOURCES
-    requests_left=config.get('max_article_checks_per_source',4)
-    blocked_hosts=set()
     for entry in entries:
         url=entry['url']
         if not article_origin(source,url):
+            report['origin_hold']+=1
             continue
         if not official and restricted_content((entry['title'],url,entry.get('evidence')),rules):
+            report['china_hold']+=1
             reviewed.append(entry)
             continue
+        eligible.append(entry)
+    backfill=eligible[1:]
+    offset=next((i+1 for i,e in enumerate(backfill) if identity(e['url'])==cursor),0)
+    budget=source.get('article_checks',config.get('max_article_checks_per_source',4))
+    blocked_hosts=set()
+    for index,entry in enumerate(eligible[:1]+backfill[offset:]+backfill[:offset]):
+        url=entry['url']
         hostname=urlsplit(url).hostname
-        if requests_left<=0 or hostname in blocked_hosts:
+        if report['checked']>=budget or hostname in blocked_hosts:
             continue
-        requests_left-=1
+        report['checked']+=1
+        if index:
+            report['cursor']=identity(url)
+        pdf=icj_pdf_url(source,url)
+        accept='application/pdf' if pdf else 'text/html'
+        limit=3_000_000 if pdf else 1_500_000
         try:
             opener=public_opener({hostname})
-            request=urllib.request.Request(url,headers={'User-Agent':config['user_agent'],'Accept':'text/html'})
+            request=urllib.request.Request(url,headers={'User-Agent':config['user_agent'],'Accept':accept})
             with opener.open(request,timeout=min(config['fetch_timeout_seconds'],7)) as response:
-                if 'html' not in response.headers.get('Content-Type',''):
+                content=response.headers.get_content_type()
+                if content not in (('application/pdf',) if pdf else ('text/html','application/xhtml+xml')):
+                    report['unsupported_hold']+=1
                     reviewed.append(entry)
                     continue
-                raw=response.read(1_500_001)
-                final=response.url
-                if len(raw)>1_500_000 or not article_origin(source,final):
+                raw=response.read(limit+1)
+                if len(raw)>limit or response.url!=url:
+                    report['origin_hold']+=1
                     reviewed.append(entry)
                     continue
-                markup=raw.decode(response.headers.get_content_charset() or 'utf-8',errors='replace')
-            result=inspect_html(entry,source,final,markup)
-            if result['url']!=entry['url']:
-                # Keep a single permanent URL so an old entry cannot survive
-                # a later decision to hold the redirected record.
-                result=entry
+                encoding=response.headers.get_content_charset() or 'utf-8'
+            if pdf:
+                result=inspect_icj_pdf(entry,source,url,raw)
+            else:
+                result=inspect_html(entry,source,url,raw.decode(encoding,errors='replace'))
+            if result is entry:
+                report['pdf_hold' if pdf else 'body_hold']+=1
+            elif not official and restricted_content(result['evidence'],rules):
+                report['china_hold']+=1
+            else:
+                report['verified']+=1
             reviewed.append(result)
         except urllib.error.HTTPError as exc:
+            report['access_hold']+=1
             if exc.code in (401,403,429,503):
                 blocked_hosts.add(hostname)
-        except (OSError,ValueError):
-            continue
+        except (OSError,ValueError,LookupError):
+            report['access_hold']+=1
+    report['pending']=len(eligible)-report['checked']
     return reviewed

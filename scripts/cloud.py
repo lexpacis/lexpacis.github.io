@@ -14,6 +14,7 @@ from core import ROOT, database, identity, now, plain, project_file, read_json, 
 from publication_policy import SCOPE_REVISION, managed_scope, snapshot_issues, strict_scope
 import pipeline
 from rendering import web_files
+from source_review import clean_review
 
 
 SOURCE_FILES = {
@@ -59,6 +60,9 @@ def restore_snapshot(conn, snapshot, config, sources):
         failures=max(0,min(failures,999)) if isinstance(failures,int) else 0
         conn.execute('INSERT OR REPLACE INTO source_state(id,attempted_at,success_at,status,error,item_count,next_attempt_at,failures) VALUES(?,?,?,?,?,?,?,?)',
                      (source['id'],source.get('attempted_at'),source.get('success_at'),source.get('status','unverified'),source.get('error'),source.get('item_count',0),source.get('next_attempt_at'),failures))
+        review=clean_review(source.get('review'))
+        if review:
+            conn.execute('INSERT OR REPLACE INTO source_reviews VALUES(?,?)',(source['id'],json.dumps(review)))
     conn.commit()
 
 
@@ -106,7 +110,8 @@ def restore_monitors(snapshot):
         key='journal:'+row['id']
         if key in approved and row.get('submissions_url')==approved[key]['url']:
             pages[key]={'id':key,'url':approved[key]['url'],'checked_at':row.get('checked_at'),
-                        'success_at':row.get('success_at'),'status':row.get('check_status','unverified'),'error':row.get('error')}
+                        'success_at':row.get('success_at'),'status':row.get('check_status','unverified'),
+                        'error':row.get('error'),'check_reason':row.get('check_reason')}
     for row in public.get('calls',[]):
         key='call:'+row['id']
         if key in approved:
