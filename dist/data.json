@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-18T20:04:10+00:00",
+  "generated_at": "2026-11-18T20:09:35+00:00",
   "site": {
     "name": "法域前沿",
     "english_name": "Lexpacis",
@@ -75,6 +75,274 @@
   ],
   "items": [
     {
+      "id": "8c8212c23672825c4b84",
+      "source_id": "icj-pending",
+      "title": "Arbitral Award of 3 October 1899 (Guyana v. Venezuela)",
+      "url": "https://www.icj-cij.org/case/171",
+      "doi": "",
+      "module": "cases",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T20:09:35+00:00",
+      "updated_at": "2026-11-18T20:09:35+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "e1019906f5ad314598b47b1dd9ab0aff57aff7a055116827a473071c75c671e2",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "国际法院待审案件页",
+      "provenance": [
+        {
+          "source_id": "icj-pending",
+          "url": "https://www.icj-cij.org/case/171",
+          "seen_at": "2026-11-18T20:09:35+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "af86e710795743a0995913846bcb5d179051563b3e5c846adb382bcf81817671"
+    },
+    {
+      "id": "4c92c6555fbf7303e9f3",
+      "source_id": "icj-pending",
+      "title": "Application of the Convention on the Prevention and Punishment of the Crime of Genocide (The Gambia v. Myanmar: 11 States intervening)",
+      "url": "https://www.icj-cij.org/case/178",
+      "doi": "",
+      "module": "cases",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T20:09:35+00:00",
+      "updated_at": "2026-11-18T20:09:35+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "25f95b230aaaabfb734146e31cb221aef3304bc054d47b57aa58347714ed8217",
+      "topics": [
+        "disputes",
+        "rights"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "国际法院待审案件页",
+      "provenance": [
+        {
+          "source_id": "icj-pending",
+          "url": "https://www.icj-cij.org/case/178",
+          "seen_at": "2026-11-18T20:09:35+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "af86e710795743a0995913846bcb5d179051563b3e5c846adb382bcf81817671"
+    },
+    {
+      "id": "82ec2ff03e29fdd02eaf",
+      "source_id": "icj-pending",
+      "title": "Alleged Breaches of Certain International Obligations in respect of the Occupied Palestinian Territory (Nicaragua v. Germany)",
+      "url": "https://www.icj-cij.org/case/193",
+      "doi": "",
+      "module": "cases",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T20:09:35+00:00",
+      "updated_at": "2026-11-18T20:09:35+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "185d3c991c09345f549ed710de713ee80e5cc3d2553e899a33acfde30492d996",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "国际法院待审案件页",
+      "provenance": [
+        {
+          "source_id": "icj-pending",
+          "url": "https://www.icj-cij.org/case/193",
+          "seen_at": "2026-11-18T20:09:35+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "af86e710795743a0995913846bcb5d179051563b3e5c846adb382bcf81817671"
+    },
+    {
+      "id": "a51e26d58d2e632e70df",
+      "source_id": "icj-pending",
+      "title": "Gabčíkovo-Nagymaros Project (Hungary/Slovakia)",
+      "url": "https://www.icj-cij.org/case/92",
+      "doi": "",
+      "module": "cases",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T20:09:35+00:00",
+      "updated_at": "2026-11-18T20:09:35+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "8909f6910990c467a7297686cb4e8c301e07a31cd08f5419892007252a14ead6",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "国际法院待审案件页",
+      "provenance": [
+        {
+          "source_id": "icj-pending",
+          "url": "https://www.icj-cij.org/case/92",
+          "seen_at": "2026-11-18T20:09:35+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "af86e710795743a0995913846bcb5d179051563b3e5c846adb382bcf81817671"
+    },
+    {
+      "id": "2ea146e2d6ffcb94f5eb",
+      "source_id": "icj-pending",
+      "title": "Certain Iranian Assets (Islamic Republic of Iran v. United States of America)",
+      "url": "https://www.icj-cij.org/case/164",
+      "doi": "",
+      "module": "cases",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T20:09:35+00:00",
+      "updated_at": "2026-11-18T20:09:35+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "06bbd142c53cf878d0c42efb57a226506dd7a84c469a39ed9a44febe316babeb",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "国际法院待审案件页",
+      "provenance": [
+        {
+          "source_id": "icj-pending",
+          "url": "https://www.icj-cij.org/case/164",
+          "seen_at": "2026-11-18T20:09:35+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "af86e710795743a0995913846bcb5d179051563b3e5c846adb382bcf81817671"
+    },
+    {
+      "id": "314cb807935a9eea4b64",
+      "source_id": "icj-pending",
+      "title": "Alleged Violations of the 1955 Treaty of Amity, Economic Relations, and Consular Rights (Islamic Republic of Iran v. United States of America)",
+      "url": "https://www.icj-cij.org/case/175",
+      "doi": "",
+      "module": "cases",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T20:09:35+00:00",
+      "updated_at": "2026-11-18T20:09:35+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "59462e121c01d9f90f48ab0d4357646417447b570a0fc76e7b35d974a8926501",
+      "topics": [
+        "disputes",
+        "economic",
+        "institutions"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "国际法院待审案件页",
+      "provenance": [
+        {
+          "source_id": "icj-pending",
+          "url": "https://www.icj-cij.org/case/175",
+          "seen_at": "2026-11-18T20:09:35+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "af86e710795743a0995913846bcb5d179051563b3e5c846adb382bcf81817671"
+    },
+    {
+      "id": "4f1863e39862bcb45a08",
+      "source_id": "icj-pending",
+      "title": "Relocation of the United States Embassy to Jerusalem (Palestine v. United States of America)",
+      "url": "https://www.icj-cij.org/case/176",
+      "doi": "",
+      "module": "cases",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T20:09:35+00:00",
+      "updated_at": "2026-11-18T20:09:35+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "a718c7d3d1a5621429d4a03c134965cd923fe42bf7c5c8290ed40f405c4ff42b",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "国际法院待审案件页",
+      "provenance": [
+        {
+          "source_id": "icj-pending",
+          "url": "https://www.icj-cij.org/case/176",
+          "seen_at": "2026-11-18T20:09:35+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "af86e710795743a0995913846bcb5d179051563b3e5c846adb382bcf81817671"
+    },
+    {
+      "id": "b7acab2fdf6c1f7410b2",
+      "source_id": "icj-pending",
+      "title": "Guatemala's Territorial, Insular and Maritime Claim (Guatemala/Belize)",
+      "url": "https://www.icj-cij.org/case/177",
+      "doi": "",
+      "module": "cases",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T20:09:35+00:00",
+      "updated_at": "2026-11-18T20:09:35+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "3b32abddf4c99662ad0de3ef60695b201e9d99365b7afd0caf4e63a146ceb5d2",
+      "topics": [
+        "disputes",
+        "ocean-climate"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "国际法院待审案件页",
+      "provenance": [
+        {
+          "source_id": "icj-pending",
+          "url": "https://www.icj-cij.org/case/177",
+          "seen_at": "2026-11-18T20:09:35+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "af86e710795743a0995913846bcb5d179051563b3e5c846adb382bcf81817671"
+    },
+    {
       "id": "303ab6a936b8cdcc61ad",
       "source_id": "wto",
       "title": "Trade Policy Review: Peru",
@@ -98,6 +366,39 @@
           "source_id": "wto",
           "url": "https://www.wto.org/english/tratop_e/tpr_e/tpr_per_18nov26_e.htm",
           "seen_at": "2026-11-18T20:03:40+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "af86e710795743a0995913846bcb5d179051563b3e5c846adb382bcf81817671"
+    },
+    {
+      "id": "c5e484ce087251f94cad",
+      "source_id": "pca",
+      "title": "PCA Press Release – PCA Case No. 2026-35: Conciliation between the Kingdom of Cambodia and the Kingdom of Thailand",
+      "url": "https://pca-cpa.org/en/news/pca-press-release-pca-case-no-2026-35-conciliation-between-the-kingdom-of-cambodia-and-the-kingdom-of-thailand-5/",
+      "doi": "",
+      "module": "cases",
+      "published_at": "2026-11-18",
+      "date_precision": "day",
+      "discovered_at": "2026-11-18T20:09:32+00:00",
+      "updated_at": "2026-11-18T20:09:32+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "21f7a57be468d718b4630e85e44f3e870a8cda59a18a51ddce0dd99ae0b1ffef",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "机构公告索引",
+      "provenance": [
+        {
+          "source_id": "pca",
+          "url": "https://pca-cpa.org/en/news/pca-press-release-pca-case-no-2026-35-conciliation-between-the-kingdom-of-cambodia-and-the-kingdom-of-thailand-5/",
+          "seen_at": "2026-11-18T20:09:32+00:00"
         }
       ],
       "title_zh": "",
@@ -530,6 +831,39 @@
       "screened_policy": "af86e710795743a0995913846bcb5d179051563b3e5c846adb382bcf81817671"
     },
     {
+      "id": "06682c519c7e758b9682",
+      "source_id": "pca",
+      "title": "PCA Press Release – PCA Case No. 2019-28: Dispute concerning the Detention of Ukrainian Naval Vessels and Servicemen (Ukraine v. The Russian Federation)",
+      "url": "https://pca-cpa.org/en/news/pca-press-release-pca-case-no-2019-28-dispute-concerning-the-detention-of-ukrainian-naval-vessels-and-servicemen-ukraine-v-the-russian-federation-5/",
+      "doi": "",
+      "module": "cases",
+      "published_at": "2026-11-12",
+      "date_precision": "day",
+      "discovered_at": "2026-11-18T20:09:32+00:00",
+      "updated_at": "2026-11-18T20:09:32+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "2951c02672cee41eb0886a443e6cb596991da947db322afef2955937b0e65367",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "机构公告索引",
+      "provenance": [
+        {
+          "source_id": "pca",
+          "url": "https://pca-cpa.org/en/news/pca-press-release-pca-case-no-2019-28-dispute-concerning-the-detention-of-ukrainian-naval-vessels-and-servicemen-ukraine-v-the-russian-federation-5/",
+          "seen_at": "2026-11-18T20:09:32+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "af86e710795743a0995913846bcb5d179051563b3e5c846adb382bcf81817671"
+    },
+    {
       "id": "9c8b144cd5b0180fc2b5",
       "source_id": "ejiltalk",
       "title": "Fair Share Obligations in Climate Change Litigation: Towards a Global Carbon Approach?",
@@ -687,6 +1021,39 @@
           "source_id": "un-geneva-press",
           "url": "https://www.ungeneva.org/en/news-media/press-release/2026/11/seventh-review-conference-high-contracting-parties-convention",
           "seen_at": "2026-11-18T20:02:45+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "af86e710795743a0995913846bcb5d179051563b3e5c846adb382bcf81817671"
+    },
+    {
+      "id": "6f10456a74fcbe982dd8",
+      "source_id": "pca",
+      "title": "PCA Press Release – Permanent Court of Arbitration enters into Host Country Agreement with the Republic of Poland",
+      "url": "https://pca-cpa.org/en/news/pca-press-release-permanent-court-of-arbitration-enters-into-host-country-agreement-with-the-republic-of-poland/",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-11-10",
+      "date_precision": "day",
+      "discovered_at": "2026-11-18T20:09:32+00:00",
+      "updated_at": "2026-11-18T20:09:32+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "3bbf975952b97514f9a704abd6bd73286ccf621f600915bdf9c7856a656d0649",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "机构公告索引",
+      "provenance": [
+        {
+          "source_id": "pca",
+          "url": "https://pca-cpa.org/en/news/pca-press-release-permanent-court-of-arbitration-enters-into-host-country-agreement-with-the-republic-of-poland/",
+          "seen_at": "2026-11-18T20:09:32+00:00"
         }
       ],
       "title_zh": "",
@@ -1185,6 +1552,39 @@
       "screened_policy": "af86e710795743a0995913846bcb5d179051563b3e5c846adb382bcf81817671"
     },
     {
+      "id": "1edc7b39c5af2cb6c2ed",
+      "source_id": "pca",
+      "title": "Memorandum of Understanding between the Slovak MFA and the Slovak Bar Association in connection with PCA Host Country Agreement",
+      "url": "https://pca-cpa.org/en/news/memorandum-of-understanding-between-the-slovak-mfa-and-the-slovak-bar-association-in-connection-with-pca-host-country-agreement/",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-10-23",
+      "date_precision": "day",
+      "discovered_at": "2026-11-18T20:09:32+00:00",
+      "updated_at": "2026-11-18T20:09:32+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "6b6556754941d5d944087099b490385d371c93b20dee3a120a516ee6b71da306",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "机构公告索引",
+      "provenance": [
+        {
+          "source_id": "pca",
+          "url": "https://pca-cpa.org/en/news/memorandum-of-understanding-between-the-slovak-mfa-and-the-slovak-bar-association-in-connection-with-pca-host-country-agreement/",
+          "seen_at": "2026-11-18T20:09:32+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "af86e710795743a0995913846bcb5d179051563b3e5c846adb382bcf81817671"
+    },
+    {
       "id": "dec29474d93b3ee4381d",
       "source_id": "crossref-ljil",
       "title": "International heritage law as resistance to occupation",
@@ -1272,6 +1672,39 @@
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s0922156526100971",
           "seen_at": "2026-11-18T20:03:46+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "af86e710795743a0995913846bcb5d179051563b3e5c846adb382bcf81817671"
+    },
+    {
+      "id": "53cb4b7e3f07009f49ec",
+      "source_id": "pca",
+      "title": "PCA Press Release – PCA Case No. 2026-35: Conciliation between the Kingdom of Cambodia and the Kingdom of Thailand",
+      "url": "https://pca-cpa.org/en/news/pca-press-release-pca-case-no-2026-35-conciliation-between-the-kingdom-of-cambodia-and-the-kingdom-of-thailand-4/",
+      "doi": "",
+      "module": "cases",
+      "published_at": "2026-10-19",
+      "date_precision": "day",
+      "discovered_at": "2026-11-18T20:09:32+00:00",
+      "updated_at": "2026-11-18T20:09:32+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "9e86070f1ab0838b5d27bb282fcbeab64b70a639a504a4d3b21806ab3989e68a",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "机构公告索引",
+      "provenance": [
+        {
+          "source_id": "pca",
+          "url": "https://pca-cpa.org/en/news/pca-press-release-pca-case-no-2026-35-conciliation-between-the-kingdom-of-cambodia-and-the-kingdom-of-thailand-4/",
+          "seen_at": "2026-11-18T20:09:32+00:00"
         }
       ],
       "title_zh": "",
@@ -1491,6 +1924,39 @@
       "screened_policy": "af86e710795743a0995913846bcb5d179051563b3e5c846adb382bcf81817671"
     },
     {
+      "id": "57a1662feaceafe30c58",
+      "source_id": "pca",
+      "title": "PCA Press Release – PCA Case No. 2026-35: Conciliation between the Kingdom of Cambodia and the Kingdom of Thailand",
+      "url": "https://pca-cpa.org/en/news/pca-press-release-pca-case-no-2026-35-conciliation-between-the-kingdom-of-cambodia-and-the-kingdom-of-thailand-3/",
+      "doi": "",
+      "module": "cases",
+      "published_at": "2026-10-09",
+      "date_precision": "day",
+      "discovered_at": "2026-11-18T20:09:32+00:00",
+      "updated_at": "2026-11-18T20:09:32+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "65d5332362baf6f7c468bee404994203202e619ddfc985a3595a98dd8517c302",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "机构公告索引",
+      "provenance": [
+        {
+          "source_id": "pca",
+          "url": "https://pca-cpa.org/en/news/pca-press-release-pca-case-no-2026-35-conciliation-between-the-kingdom-of-cambodia-and-the-kingdom-of-thailand-3/",
+          "seen_at": "2026-11-18T20:09:32+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "af86e710795743a0995913846bcb5d179051563b3e5c846adb382bcf81817671"
+    },
+    {
       "id": "53e155f352b2451f8676",
       "source_id": "un-geneva-press",
       "title": "Human Rights Council Concludes Sixty-Third Regular Session after Adopting 34 Resolutions, Two Decisions and One President’s Statement",
@@ -1516,6 +1982,39 @@
           "source_id": "un-geneva-press",
           "url": "https://www.ungeneva.org/en/news-media/press-release/2026/10/le-conseil-des-droits-de-lhomme-clos-les-travaux-de-sa-soixante",
           "seen_at": "2026-11-18T20:02:45+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "af86e710795743a0995913846bcb5d179051563b3e5c846adb382bcf81817671"
+    },
+    {
+      "id": "cbd8bbfe19a7a44f1722",
+      "source_id": "pca",
+      "title": "PCA Press Release – Visit of H.E. the Minister of Foreign Affairs of the Republic of Bulgaria",
+      "url": "https://pca-cpa.org/en/news/pca-press-release-visit-of-h-e-the-minister-of-foreign-affairs-of-the-republic-of-bulgaria/",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-10-05",
+      "date_precision": "day",
+      "discovered_at": "2026-11-18T20:09:32+00:00",
+      "updated_at": "2026-11-18T20:09:32+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "7bacd6c619bee76aa60368cfde92119afd22cd7c755b0cc9242dc54375ecb05f",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "机构公告索引",
+      "provenance": [
+        {
+          "source_id": "pca",
+          "url": "https://pca-cpa.org/en/news/pca-press-release-visit-of-h-e-the-minister-of-foreign-affairs-of-the-republic-of-bulgaria/",
+          "seen_at": "2026-11-18T20:09:32+00:00"
         }
       ],
       "title_zh": "",
@@ -2097,6 +2596,39 @@
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag036",
           "seen_at": "2026-11-18T20:03:46+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "af86e710795743a0995913846bcb5d179051563b3e5c846adb382bcf81817671"
+    },
+    {
+      "id": "a3f98d33ae0dfa013497",
+      "source_id": "pca",
+      "title": "PCA Press Release – PCA Case No. 2026-35: Conciliation between the Kingdom of Cambodia and the Kingdom of Thailand",
+      "url": "https://pca-cpa.org/en/news/pca-press-release-pca-case-no-2026-35-conciliation-between-the-kingdom-of-cambodia-and-the-kingdom-of-thailand-2/",
+      "doi": "",
+      "module": "cases",
+      "published_at": "2026-09-16",
+      "date_precision": "day",
+      "discovered_at": "2026-11-18T20:09:32+00:00",
+      "updated_at": "2026-11-18T20:09:32+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "d71e6610abb27f4fda8a53ceecc090370c2eb10382e614cc5c89580228466e89",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "机构公告索引",
+      "provenance": [
+        {
+          "source_id": "pca",
+          "url": "https://pca-cpa.org/en/news/pca-press-release-pca-case-no-2026-35-conciliation-between-the-kingdom-of-cambodia-and-the-kingdom-of-thailand-2/",
+          "seen_at": "2026-11-18T20:09:32+00:00"
         }
       ],
       "title_zh": "",
@@ -3389,22 +3921,24 @@
       "review": {
         "candidates": 10,
         "checked": 8,
-        "verified": 0,
+        "verified": 8,
         "china_hold": 0,
         "origin_hold": 0,
-        "body_hold": 8,
+        "body_hold": 0,
         "access_hold": 0,
         "unsupported_hold": 0,
         "pdf_hold": 0,
         "pending": 2,
-        "cursor": "2c158db411c4223b4288"
+        "directory_count": 10,
+        "first_http_status": 0,
+        "cursor": "57a1662feaceafe30c58"
       },
       "status": "ok",
-      "attempted_at": "2026-11-18T20:03:45+00:00",
-      "success_at": null,
+      "attempted_at": "2026-11-18T20:09:32+00:00",
+      "success_at": "2026-11-18T20:09:32+00:00",
       "error": null,
       "consecutive_failures": 0,
-      "item_count": 0,
+      "item_count": 8,
       "next_attempt_at": null
     },
     {
@@ -3429,14 +3963,51 @@
         "access_hold": 1,
         "unsupported_hold": 0,
         "pdf_hold": 0,
-        "pending": 29
+        "pending": 29,
+        "directory_count": 395,
+        "first_http_status": 403
       },
       "status": "ok",
-      "attempted_at": "2026-11-18T20:03:45+00:00",
-      "success_at": null,
+      "attempted_at": "2026-11-18T20:09:32+00:00",
+      "success_at": "2026-11-18T20:09:32+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 0,
+      "next_attempt_at": null
+    },
+    {
+      "id": "icj-pending",
+      "name": "国际法院 ICJ · 待审案件",
+      "organization": "International Court of Justice",
+      "homepage": "https://www.icj-cij.org/",
+      "kind": "html",
+      "module": "cases",
+      "authority": "official_institution",
+      "enabled": true,
+      "poll_hours": 12,
+      "scope": "官方待审案件页与文书目录，发布日期和裁判结论以相关原始文书为准",
+      "language": "en",
+      "review": {
+        "candidates": 24,
+        "checked": 8,
+        "verified": 8,
+        "china_hold": 0,
+        "origin_hold": 0,
+        "body_hold": 0,
+        "access_hold": 0,
+        "unsupported_hold": 0,
+        "pdf_hold": 0,
+        "pending": 16,
+        "directory_count": 24,
+        "first_http_status": 0,
+        "cursor": "b7acab2fdf6c1f7410b2"
+      },
+      "status": "ok",
+      "attempted_at": "2026-11-18T20:09:35+00:00",
+      "success_at": "2026-11-18T20:09:35+00:00",
+      "error": null,
+      "consecutive_failures": 0,
+      "item_count": 8,
       "next_attempt_at": null
     },
     {
@@ -4279,32 +4850,32 @@
         "topics": []
       }
     ],
-    "updated_at": "2026-11-18T20:04:10+00:00",
+    "updated_at": "2026-11-18T20:09:35+00:00",
     "coverage_note": "人工建立的期刊入口目录 + 程序定期检查 + 已接通信源中的征稿线索。目录不是排名，不等于已覆盖各刊全部征稿；主页可读也不等于当前正在收稿。"
   },
   "operations": {
     "last_run": {
       "id": 1,
-      "started_at": "2026-11-18T20:02:29+00:00",
-      "finished_at": "2026-11-18T20:03:46+00:00",
-      "successes": 13,
-      "failures": 1,
-      "added": 65,
-      "changed": 15
+      "started_at": "2026-11-18T20:09:26+00:00",
+      "finished_at": "2026-11-18T20:09:35+00:00",
+      "successes": 3,
+      "failures": 0,
+      "added": 16,
+      "changed": 0
     },
     "scheduler_enabled": true,
     "scheduled_run_verified": false,
     "last_effective_run": {
       "id": 1,
-      "started_at": "2026-11-18T20:02:29+00:00",
-      "finished_at": "2026-11-18T20:03:46+00:00",
-      "successes": 13,
-      "failures": 1,
-      "added": 65,
-      "changed": 15
+      "started_at": "2026-11-18T20:09:26+00:00",
+      "finished_at": "2026-11-18T20:09:35+00:00",
+      "successes": 3,
+      "failures": 0,
+      "added": 16,
+      "changed": 0
     },
-    "scheduler_note": "最近一次云端运行：2026-11-18T20:04:10+00:00；触发方式：push。信源成功时间单独显示。",
-    "total_archived": 74,
-    "visible_in_export": 74
+    "scheduler_note": "最近一次云端运行：2026-11-18T20:09:35+00:00；触发方式：push。信源成功时间单独显示。",
+    "total_archived": 90,
+    "visible_in_export": 90
   }
 }
