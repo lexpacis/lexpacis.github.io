@@ -124,9 +124,9 @@ def regional_item(item, source, rules, reviewed):
         if not eligible_metadata(item,source) or (not reviewed and len(proof)<60):
             return False
     else:
-        from source_review import PDF_BASIS, case_pdf_issuer
+        from source_review import PDF_BASIS, official_pdf_issuer
         basis=item.get('evidence_basis')
-        verified_format=(basis=='原文正文核对' or (basis==PDF_BASIS and case_pdf_issuer(source,item['url'])))
+        verified_format=(basis=='原文正文核对' or (basis==PDF_BASIS and official_pdf_issuer(source,item['url'])))
         if not article_origin(source,item['url']) or not verified_format or (not reviewed and len(proof)<120):
             return False
     if item.get('module')=='cfp':

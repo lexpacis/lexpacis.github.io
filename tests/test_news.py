@@ -75,7 +75,7 @@ class NewsTests(unittest.TestCase):
                          ['https://news.un.org/en/story/2026/11/1168824'])
 
     def test_only_specific_court_pdf_routes_are_accepted(self):
-        from source_review import case_pdf_issuer
+        from source_review import official_pdf_issuer
         source=next(s for s in self.sources if s['id']=='echr-press')
         xml=b"""<rss><channel><item><title>Court release</title>
         <link>https://hudoc.echr.coe.int/eng-press?i=003-123-456</link></item>
@@ -84,9 +84,9 @@ class NewsTests(unittest.TestCase):
         entries=core.parse_feed(xml,source)
         self.assertEqual(len(entries),1)
         url=entries[0]['url']
-        self.assertTrue(case_pdf_issuer(source,url))
-        self.assertIsNone(case_pdf_issuer(source,url+'&redirect=x'))
-        self.assertIsNone(case_pdf_issuer(source,url.replace('hudoc.echr.coe.int','example.org')))
+        self.assertTrue(official_pdf_issuer(source,url))
+        self.assertIsNone(official_pdf_issuer(source,url+'&redirect=x'))
+        self.assertIsNone(official_pdf_issuer(source,url.replace('hudoc.echr.coe.int','example.org')))
 
     def test_court_press_details_use_their_own_row(self):
         source=next(s for s in self.sources if s['id']=='iacthr-press')
@@ -97,5 +97,19 @@ class NewsTests(unittest.TestCase):
         entries=core.parse_listing(html,source)
         self.assertEqual([(r['title'],r['published_at']) for r in entries],
                          [('Public hearing in a case','2026-11-09')])
+
+    def test_depositary_notice_preserves_the_instrument_and_action(self):
+        from source_review import official_pdf_issuer
+        source=next(s for s in self.sources if s['id']=='un-depositary')
+        html=b"""<li><a href="../doc/Publication/CN/2026/CN.4.2026-Eng.pdf">CN.4.2026</a>
+        <span id="fixture_lblDate"> - 16/11/2026</span>
+        <span id="fixture_lblData" title="State - Accession"> - State - Accession - </span>
+        <a id="fixture_lnkMTDSG" title="Example Convention" href="/example">XI-2</a></li>"""
+        [item]=core.parse_listing(html,source)
+        self.assertEqual(item['title'],'Example Convention · State - Accession (CN.4.2026)')
+        self.assertEqual(item['published_at'],'2026-11-16')
+        self.assertEqual(item['bibliography']['number'],'CN.4.2026')
+        self.assertTrue(official_pdf_issuer(source,item['url']))
+        self.assertIsNone(official_pdf_issuer(source,item['url'].replace('CN.4.2026','CN.4.2025')))
 
 if __name__=='__main__':unittest.main()

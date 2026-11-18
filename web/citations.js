@@ -57,10 +57,10 @@
   function hash(s){let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619);}return (h>>>0).toString(16);}
   function fromItem(item){
     const b=item.bibliography||{};
-    const type=b.type==='book'?'book':b.type==='report'||item.source_id==='icj'?'report':item.module==='research'?'article-journal':'webpage';
-    const date=item.published_at?.slice(0,10).split('-').map(Number);
+    const type=['book','treaty'].includes(b.type)?b.type:b.type==='report'||item.source_id==='icj'?'report':item.module==='research'?'article-journal':'webpage';
+    const date=(b.adopted||item.published_at)?.slice(0,10).split('-').map(Number);
     return cleanRecord({type,title:item.title,author:(item.authors||[]).map(n=>parseName(n)),DOI:item.doi,URL:item.url,language:/[\u3400-\u9fff]/.test(item.title)?'zh-CN':'en',
-      'container-title':(b['container-title']||[])[0],volume:b.volume,issue:b.issue,page:b.page,publisher:b.publisher,ISBN:b.ISBN,issued:date?{'date-parts':[date]}:undefined});
+      'container-title':(b['container-title']||[])[0],volume:b.volume,issue:b.issue,page:b.page,publisher:b.publisher,number:b.number,ISBN:b.ISBN,issued:date?{'date-parts':[date]}:undefined});
   }
   function parseName(n){n=text(n,300);if(n.includes(',')){const [family,...rest]=n.split(',');return {family:family.trim(),given:rest.join(',').trim()};}if(/[\u3400-\u9fff]/.test(n))return {literal:n};const bits=n.split(/\s+/);return bits.length>1?{family:bits.pop(),given:bits.join(' ')}:{literal:n};}
   function names(v){return v.split(/[;；\n]/).map(s=>s.trim()).filter(Boolean).map(parseName);}

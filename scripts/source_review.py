@@ -9,7 +9,7 @@ from urllib.parse import urljoin, urlsplit
 
 from core import identity, parse_date, plain
 from network_policy import public_opener
-from notice_dates import EXACT_DAY, event_date, structured_events, submission_deadline
+from notice_dates import EXACT_DAY, day, event_date, structured_events, submission_deadline
 from publication_policy import OFFICIAL_SOURCES, article_origin, official_origin, restricted_content
 
 
@@ -25,7 +25,8 @@ _BODY = re.compile(r'\b(?:entry-content|post-content|article-content|article__bo
 _ICJ_PDF = re.compile(r'/sites/default/files/(?:press-releases|case-related)/\d+/\d+-\d{8}-pre-\d+-\d+-en\.pdf')
 _WIX_EVENTS = {'afsil-events','sladi-events','ccil-events'}
 _EXACT_ARTICLE_PATHS = _WIX_EVENTS | {'asiansil-events','jsil-events','itlos-docket','ilc-reports','cambridge-books',
-                                    'afronomics-analysis','asil-insights','un-news-global','opcw-news','afchpr-cases'}
+                                    'afronomics-analysis','asil-insights','un-news-global','opcw-news','afchpr-cases',
+                                    'au-treaties','ila-events'}
 PDF_BASIS = '官方 PDF 正文核对'
 REVIEW_COUNTS = ('candidates','checked','verified','china_hold','origin_hold','body_hold',
                  'access_hold','unsupported_hold','pdf_hold','pending','directory_count','first_http_status')
@@ -91,12 +92,14 @@ class ArticleEvidence(HTMLParser):
             or (self.source_id in _WIX_EVENTS and tag == 'main' and fields.get('id') == 'PAGES_CONTAINER')
             or (self.source_id == 'itlos-docket' and 'fs-content-container' in (fields.get('class') or '').split())
             or (self.source_id == 'ilc-reports' and fields.get('id') == 'content')
+            or (self.source_id == 'au-treaties' and fields.get('id') == 'block-au-main-content')
             or (self.source_id == 'un-news-global' and fields.get('id') in {
                 'block-views-block-content-fields-block-lead','block-views-block-content-fields-block-body'})
             or (self.source_id == 'cambridge-books' and tag == 'section' and 'book-overview' in (fields.get('class') or '').split())
             or (self.source_id and self.source_id.startswith('cambridge-cfp-') and fields.get('id')=='MAIN_CONTENT')
         )
-        if tag == 'article' or official_body or _BODY.search(' '.join((fields.get('class') or '',fields.get('id') or ''))):
+        generic_body=tag=='article' or _BODY.search(' '.join((fields.get('class') or '',fields.get('id') or '')))
+        if official_body or (self.source_id!='au-treaties' and generic_body):
             candidate = []
             self.bodies.append(candidate)
         self.stack.append((tag,candidate))
@@ -119,7 +122,8 @@ class ArticleEvidence(HTMLParser):
     def handle_data(self, data):
         if not any(tag in _HIDDEN for tag,_ in self.stack):
             self.page_text.append(re.sub(r'\s+',' ',data))
-        if any(tag in _SKIP and not (tag=='form' and self.source_id=='anzsil-events') for tag,_ in self.stack):
+        allowed={'form'} if self.source_id=='anzsil-events' else {'aside'} if self.source_id=='au-treaties' else ()
+        if any(tag in _SKIP and tag not in allowed for tag,_ in self.stack):
             return
         if self.pca_after_title and any(tag=='p' for tag,_ in self.stack):
             self.pca_paragraphs.append(data)
@@ -170,6 +174,14 @@ def inspect_html(entry, source, url, markup):
         page_title=entry['title']
     if source_id=='un-news-global':
         page_title=parse.meta.get('og:title') or entry['title']
+    if source_id=='ila-events' and not parse.headline:
+        return entry
+    if source_id=='au-treaties':
+        value=re.search(r'\bDate of Adoption</div>\s*<div[^>]*>\s*<time datetime="(\d{4}-\d{2}-\d{2})',markup)
+        adopted=day(value[1]) if value else None
+        if not adopted or not page_title:
+            return entry
+        bibliography.update(type='treaty',adopted=adopted,publisher='African Union')
     if source.get('notice_kind')=='journal':
         page_title=entry['title']
     if source_id=='ilc-reports':
@@ -226,6 +238,8 @@ def inspect_html(entry, source, url, markup):
                 if m1.lower() in months and m2.lower() in months:
                     structured=[{'startDate':f'{year}-{months.index(m1.lower())+1:02d}-{int(first):02d}',
                                  'endDate':f'{year}-{months.index(m2.lower())+1:02d}-{int(last):02d}'}]
+        if source_id=='ila-events':
+            date_candidates.extend(match[1] for match in re.finditer(r'\bDate:\s*(\d{1,2}\s+[A-Za-z]+\s+20\d{2})\b',body))
         if source['id']=='anzsil-events':
             calendar_fields={}
             for part in ('Start','End'):
@@ -259,7 +273,7 @@ def inspect_html(entry, source, url, markup):
             'evidence_basis':basis,'bibliography':bibliography,'authors':authors}
 
 
-def case_pdf_issuer(source,url):
+def official_pdf_issuer(source,url):
     parsed=urlsplit(url)
     if not article_origin(source,url):
         return None
@@ -272,11 +286,14 @@ def case_pdf_issuer(source,url):
     if (source['id']=='iacthr-press' and parsed.netloc=='www.corteidh.or.cr' and not parsed.query
         and re.fullmatch(r'/docs/comunicados/cp_\d+_20\d{2}_ENG\.pdf',parsed.path)):
         return r'inter.american court of human rights|corte interamericana de derechos humanos'
+    if (source['id']=='un-depositary' and parsed.netloc=='treaties.un.org' and not parsed.query
+        and re.fullmatch(r'/doc/Publication/CN/(20\d{2})/CN\.\d+\.\1-Eng\.pdf',parsed.path)):
+        return r'united nations.{0,120}depositary|depositary.{0,120}united nations'
     return None
 
 
-def inspect_case_pdf(entry,source,url,raw):
-    issuer=case_pdf_issuer(source,url)
+def inspect_official_pdf(entry,source,url,raw):
+    issuer=official_pdf_issuer(source,url)
     if not issuer or not raw.startswith(b'%PDF-'):
         return entry
     # Use the standard Ubuntu reader, without running document actions or scripts.
@@ -338,7 +355,7 @@ def verify_entries(entries, source, config, rules, report=None):
         report['checked']+=1
         if index:
             report['cursor']=identity(url)
-        pdf=case_pdf_issuer(source,url) is not None
+        pdf=official_pdf_issuer(source,url) is not None
         accept='application/pdf' if pdf else 'text/html'
         limit=3_000_000 if pdf else 1_500_000
         try:
@@ -357,7 +374,7 @@ def verify_entries(entries, source, config, rules, report=None):
                     continue
                 encoding=response.headers.get_content_charset() or 'utf-8'
             if pdf:
-                result=inspect_case_pdf(entry,source,url,raw)
+                result=inspect_official_pdf(entry,source,url,raw)
             else:
                 result=inspect_html(entry,source,url,raw.decode(encoding,errors='replace'))
             if result is entry:

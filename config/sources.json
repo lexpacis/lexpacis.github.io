@@ -1019,5 +1019,67 @@
     "scope": "法院英语新闻稿目录，核对案件、咨询意见和听证短 PDF 公告原文",
     "reuse": "metadata_only",
     "language": "en"
+  },
+  {
+    "id": "un-depositary",
+    "name": "联合国条约汇编 · 保存人通知",
+    "organization": "United Nations Treaty Collection",
+    "url": "https://treaties.un.org/pages/Home.aspx?lang=en",
+    "homepage": "https://treaties.un.org/pages/Home.aspx?lang=en",
+    "kind": "html",
+    "adapter": "un_depositary",
+    "module": "official",
+    "authority": "official_institution",
+    "enabled": true,
+    "poll_hours": 12,
+    "article_checks": 5,
+    "topics": [
+      "institutions"
+    ],
+    "scope": "联合国秘书长作为保存人发布的最新通知，核对公告编号、事项、日期和原始 PDF",
+    "reuse": "metadata_only",
+    "language": "en"
+  },
+  {
+    "id": "au-treaties",
+    "name": "非洲联盟 · 条约登记",
+    "organization": "African Union",
+    "url": "https://au.int/en/treaties",
+    "homepage": "https://au.int/en/treaties",
+    "kind": "html",
+    "link_pattern": "^/en/treaties/[a-z][a-z0-9-]+$",
+    "min_title_length": 10,
+    "module": "official",
+    "authority": "official_institution",
+    "enabled": true,
+    "poll_hours": 24,
+    "article_checks": 7,
+    "entry_window": 100,
+    "topics": [
+      "institutions"
+    ],
+    "scope": "非洲联盟条约登记逐项原页，保留通过日和文本导航",
+    "reuse": "metadata_only",
+    "language": "en"
+  },
+  {
+    "id": "ila-events",
+    "name": "国际法协会 · 各地活动",
+    "organization": "International Law Association",
+    "url": "https://www.ila-hq.org/en/events",
+    "homepage": "https://www.ila-hq.org/en/events",
+    "kind": "html",
+    "link_pattern": "^/en/events/[a-z0-9-]+$",
+    "min_title_length": 20,
+    "module": "events",
+    "authority": "academic_society",
+    "enabled": true,
+    "poll_hours": 24,
+    "article_checks": 6,
+    "notice_kind": "event",
+    "topics": [],
+    "scope": "总会或各地分会在国际法协会发布的会议与学术活动原页",
+    "reuse": "metadata_only",
+    "language": "en"
   }
 ]

@@ -240,11 +240,15 @@ def parse_listing(data, source):
         return parse_news_listing(data,source)
     if source.get('adapter')=='iacthr_press':
         return parse_iacthr_press(data,source)
+    if source.get('adapter')=='un_depositary':
+        return parse_un_depositary(data,source)
     parser=LinkParser(); parser.feed(data.decode('utf-8',errors='replace'))
     result=[]; seen=set()
     pattern=re.compile(source['link_pattern'])
     for link in parser.links:
         url=safe_url(link['href'],source['url']); title=link['title']
+        if source.get('id')=='ila-events' and url and title.casefold()=='read more':
+            title=urllib.parse.urlsplit(url).path.rsplit('/',1)[-1].replace('-',' ')
         if not url or not pattern.search(urllib.parse.urlsplit(url).path) or len(title)<source.get('min_title_length',35) or url in seen: continue
         if re.search(r'privacy|cookies|read more|next page',title,re.I): continue
         seen.add(url)
@@ -252,7 +256,31 @@ def parse_listing(data, source):
         date,precision=parse_date(found[-1] if found else '')
         result.append({'title':title,'url':url,'published_at':date,'date_precision':precision,
                        'authors':[],'evidence':'','evidence_basis':'官方目录标题','doi':''})
+    if source.get('id')=='au-treaties':
+        result.reverse()
     return result
+
+def parse_un_depositary(data,source):
+    markup=data.decode('utf-8',errors='replace')
+    links=re.compile(
+        r'href="([^"]+/doc/Publication/CN/20\d{2}/CN\.\d+\.20\d{2}-Eng\.pdf)"[^>]*>'
+        r'(CN\.\d+\.20\d{2})</a>\s*<span[^>]*_lblDate"[^>]*>\s*-?\s*(\d{2}/\d{2}/20\d{2})'
+        r'\s*</span>\s*<span[^>]*_lblData"\s+title="([^"]{1,200})"[^>]*>[^<]*</span>'
+        r'\s*<a[^>]*_lnkMTDSG"\s+title="([^"]{1,350})"',re.I)
+    rows=[]
+    for href,number,value,action,instrument in links.findall(markup):
+        url=safe_url(href,source['url'])
+        if not url:
+            continue
+        try:
+            date=dt.datetime.strptime(value,'%d/%m/%Y').date().isoformat()
+        except ValueError:
+            continue
+        title=f'{plain(instrument)} · {plain(action)} ({number})'
+        rows.append({'title':title,'url':url,'published_at':date,'date_precision':'day','authors':[],
+                     'bibliography':{'type':'report','number':number,'publisher':'United Nations'},
+                     'evidence':'','evidence_basis':'条约保存人通知目录','doi':''})
+    return rows
 
 def parse_iacthr_press(data,source):
     markup=data.decode('utf-8',errors='replace')

@@ -99,7 +99,7 @@ def collect(conn,config,sources,force=False):
             # Keep source evidence private. Raw responses never enter dist/.
             cache.mkdir(parents=True,exist_ok=True)
             (cache/'latest.response').write_bytes(data)
-            candidates=entries[:config['max_entries_per_source']]
+            candidates=entries[:source.get('entry_window',config['max_entries_per_source'])]
             if regional_scope(rules):
                 candidates=verify_entries(candidates,source,config,rules,report)
                 if source['kind']!='crossref':
@@ -316,6 +316,7 @@ def public_data(conn,config,sources):
                                'afchpr-cases':'非洲人权和民族权法院案件公告','echr-press':'欧洲人权法院新闻稿',
                                'iacthr-press':'美洲人权法院官方新闻稿',
                                'cambridge-books':'出版商图书书目','opcw-news':'禁止化学武器组织官方公告',
+                               'au-treaties':'非洲联盟条约登记页','un-depositary':'联合国条约保存人通知',
                                'pca':'机构公告索引','esil':'学会公告'}.get(row['source_id'],
                               '书目元数据' if row['source_id'].startswith('crossref-') else '官方机构新闻报道' if next((s.get('authority') for s in sources if s['id']==row['source_id']),None)=='official_news_service' else '学术平台文章')
         provenance=[dict(p) for p in conn.execute('SELECT source_id,url,seen_at FROM provenance WHERE item_id=?',(row['id'],))]
