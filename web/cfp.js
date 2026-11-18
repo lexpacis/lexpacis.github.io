@@ -17,6 +17,7 @@
     topics=data.topics;
     const directoryOnly=data.publication_scope==='academic_metadata';
     if (directoryOnly) view='directory';
+    if (view==='journal'&&!source.calls.some(call=>['journal_special','journal_notice'].includes(call.kind))) view='directory';
     return `<section class="cfp-workbench">
       ${directoryOnly?'':`<div class="cfp-nav" role="group" aria-label="CFP 分类">
         ${views.map(([value,label])=>`<button type="button" data-cfp-view="${value}" aria-pressed="${view===value}" class="${view===value?'active':''}">${label}</button>`).join('')}

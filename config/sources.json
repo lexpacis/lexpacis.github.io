@@ -1,5 +1,22 @@
 [
   {
+    "id":"china-mfa-statements","name":"中华人民共和国外交部 · 发言人表态",
+    "organization":"中华人民共和国外交部",
+    "url":"https://www.mfa.gov.cn/fyrbt_673021/dhdw_673027/","homepage":"https://www.mfa.gov.cn/",
+    "kind":"html","link_pattern":"^/fyrbt_673021/dhdw_673027/20[0-9]{4}/t[0-9]{8}_[0-9]+\\.shtml$",
+    "min_title_length":8,"module":"news","authority":"china_government","enabled":true,
+    "poll_hours":12,"topics":[],"scope":"外交部发言人原发答问的标题、日期和原文入口",
+    "reuse":"metadata_only","language":"zh"
+  },
+  {
+    "id":"china-xinhua-politics","name":"新华网 · 时政","organization":"新华社 / 新华网",
+    "url":"https://www.news.cn/politics/","homepage":"https://www.news.cn/",
+    "kind":"html","link_pattern":"^/politics/(?:20[0-9]{6}/[a-f0-9]{32}/c\\.html|20[0-9]{2}-[0-9]{2}/[0-9]{2}/c_[0-9]+\\.htm)$",
+    "min_title_length":8,"module":"news","authority":"china_official_media","enabled":false,
+    "poll_hours":24,"topics":[],"scope":"新华网原发来源核验；启用前需确认允许的稿源使用范围",
+    "reuse":"metadata_only","language":"zh","terms_url":"https://www.news.cn/xinhua_copyright.htm"
+  },
+  {
     "id":"un-geneva-news","name":"联合国日内瓦 · 国际新闻","organization":"United Nations Office at Geneva / UN News",
     "url":"https://www.ungeneva.org/en/news-media/news","homepage":"https://www.ungeneva.org/",
     "kind":"html","adapter":"un_geneva_news","module":"news","authority":"official_news_service","enabled":true,

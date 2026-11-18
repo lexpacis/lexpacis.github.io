@@ -12,7 +12,8 @@ APPROVED_JOURNALS = {
     'crossref-ajil': '0002-9300',
     'crossref-ljil': '0922-1565',
 }
-SCOPE_REVISION = hashlib.sha256(Path(__file__).read_text(encoding='utf-8').encode()).hexdigest()
+SCOPE_REVISION = hashlib.sha256(''.join(Path(__file__).with_name(name).read_text(encoding='utf-8')
+                                     for name in ('publication_policy.py','source_review.py')).encode()).hexdigest()
 DOI = re.compile(r'10\.\d{4,9}/[a-z0-9._;()/:-]+', re.I)
 
 
@@ -23,6 +24,7 @@ _CJK = re.compile(
     r"北京|上海|深圳|广州|廣州|大陆|大陸|澎湖|金门|金門|马祖|馬祖|"
     r"台北|臺北|高雄|台独|臺獨|一國兩制|一国两制|國安法|国安法|"
     r"拉萨|拉薩|驻藏|駐藏|藏南|东突|東突|港独|港獨|"
+    r"达旺|達旺|屋脊|麦克马洪|麥克馬洪|强迫劳动|強迫勞動|兵团|兵團|"
     r"港岛|港島|九龙|九龍|新界|"
     r"乌鲁木齐|烏魯木齊|喀什|和田|伊犁|内蒙古|內蒙古|"
     r"西沙|南沙|东沙|東沙|黄岩岛|黃岩島|仁爱礁|仁愛礁|太平岛|太平島"
@@ -36,7 +38,9 @@ _MULTILINGUAL = re.compile(
     r"xinjiang|sinkiang|uyghurs?|uighurs?|uygurs?|uigurs?|xuar|urumqi|kashgar|hotan|"
     r"east(?:ern)?[ -]+turk[ei]st[áa]n|dogu[ -]+turkistan|"
     r"tibet(?:an|ans)?|tib[ée]tain\w*|xizang|lhasa|dharamsala|amdo|kham|"
-    r"inner[ -]+mongolia|south[ -]+mongolia|"
+    r"inner[ -]+mongolia|south[ -]+mongolia|south(?:ern)?[ -]+tibet|"
+    r"arunachal[ -]+pradesh|tawang|mcmahon[ -]+line|aksai[ -]+chin|"
+    r"x[pb]cc|uflpa|production[ -]+and[ -]+construction[ -]+corps|uyghur[ -]+forced[ -]+labou?r|"
     r"sino[ -]\w+|sinophone|sinic(?:ization|isation|ize|ise)|"
     r"ccp|c[. ]c[. ]p\.?|"
     r"senkaku|diaoyu|spratlys?|paracels?|scarborough[ -]+shoal|second[ -]+thomas[ -]+shoal|"
@@ -53,6 +57,62 @@ _OTHER_SCRIPTS = re.compile(r"الصين|تايوان|هونغ كونغ|التب
 
 def strict_scope(rules):
     return rules.get('publication_scope') == 'academic_metadata'
+
+
+def regional_scope(rules):
+    return rules.get('publication_scope') == 'verified_origins'
+
+
+def managed_scope(rules):
+    return strict_scope(rules) or regional_scope(rules)
+
+
+OFFICIAL_SOURCES = {
+    'china-mfa-statements': ('china_government','www.mfa.gov.cn','/fyrbt_673021/dhdw_673027/'),
+    'china-xinhua-politics': ('china_official_media','www.news.cn','/politics/'),
+}
+
+
+def official_origin(source, url):
+    rule = OFFICIAL_SOURCES.get(source['id'])
+    if not rule:
+        return False
+    authority, host, path = rule
+    listing, article = urlsplit(source['url']), urlsplit(url)
+    return (source.get('authority') == authority and listing.scheme == article.scheme == 'https'
+            and listing.netloc == article.netloc == host and listing.path == path
+            and article.path.startswith(path) and bool(re.fullmatch(source['link_pattern'],article.path)))
+
+
+def original_publisher(source, item):
+    issuer = item['bibliography'].get('original_issuer')
+    expected = {'china-mfa-statements':{'中华人民共和国外交部'},
+                'china-xinhua-politics':{'新华社','新华网'}}
+    return (item.get('evidence_basis')=='官方原发页面核对' and official_origin(source,item['url'])
+            and issuer in expected.get(source['id'],()))
+
+
+def article_origin(source, url):
+    listing, article = urlsplit(source['url']), urlsplit(url)
+    return (article.scheme=='https' and not article.username and not article.password
+            and article.netloc in {listing.netloc, *source.get('article_hosts',())}
+            and bool(article.path.strip('/')))
+
+
+def regional_item(item, source, rules, reviewed):
+    if not source.get('enabled') or source_paused(source,rules) or not item['title'].strip():
+        return False
+    proof = item.get('evidence') or ''
+    if source['id'] in OFFICIAL_SOURCES:
+        return bool(original_publisher(source,item) and (reviewed or len(proof)>=80))
+    if source.get('kind')=='crossref':
+        if not eligible_metadata(item,source) or (not reviewed and len(proof)<60):
+            return False
+    elif (not article_origin(source,item['url']) or item.get('evidence_basis') not in ('原文正文核对','RSS 正文')
+          or (not reviewed and len(proof)<120)):
+        return False
+    fields=[item['title'],item['url'],item.get('doi'),item['authors'],item['bibliography'],proof]
+    return not restricted_content(fields,rules)
 
 
 def approved_source(source):
@@ -76,6 +136,8 @@ def eligible_metadata(item, source):
 
 
 def snapshot_issues(data, sources, rules):
+    if regional_scope(rules):
+        return regional_snapshot_issues(data,sources,rules)
     if not strict_scope(rules):
         return []
     if not isinstance(data, dict) or data.get('publication_scope') != 'academic_metadata':
@@ -99,6 +161,25 @@ def snapshot_issues(data, sources, rules):
     return issues
 
 
+def regional_snapshot_issues(data, sources, rules):
+    if not isinstance(data,dict) or data.get('publication_scope')!='verified_origins':
+        return ['公开快照缺少当前来源核验规则']
+    registries={source['id']:source for source in sources}
+    items={}
+    for item in data['items']:
+        source=registries.get(item['source_id'])
+        if (not source or item.get('screened_policy')!=SCOPE_REVISION or not regional_item(item,source,rules,True)
+            or item['id'] in rules.get('hidden_items',()) or 'evidence' in item
+            or any(item.get(key) for key in ('title_zh','summary_zh','ai','event','deadline'))):
+            return ['公开快照含未通过来源核验的条目']
+        items[item['id']]=item
+    for call in data['cfp']['calls']:
+        parent=items.get(call.get('parent_item_id'))
+        if not parent or call['url']!=parent['url'] or restricted_content(call,rules):
+            return ['公开快照含未通过来源核验的征稿线索']
+    return []
+
+
 def source_paused(source, rules):
     return (source['id'] in rules.get('paused_sources', ())
             or source['id'] in rules.get('hidden_sources', ())
@@ -119,7 +200,7 @@ def _normalized(value):
 
 def restricted_content(value, rules):
     """Inspect full accessible text and nested metadata, independently of presentation."""
-    if not (strict_scope(rules) or rules.get('screen_china_related_materials')):
+    if not (managed_scope(rules) or rules.get('screen_china_related_materials')):
         return False
     if isinstance(value, str):
         normalized = _normalized(value)

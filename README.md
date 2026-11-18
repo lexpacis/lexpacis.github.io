@@ -2,7 +2,7 @@
 
 Lexpacis（法域前沿）是面向高校师生与研究者的国际法资料索引。[打开网站](https://lexpacis.github.io/)
 
-- [浏览书目与专题](docs/LEXPACIS_MANUAL.md#浏览与检索)
+- [浏览资料与专题](docs/LEXPACIS_MANUAL.md#浏览与检索)
 - [收藏、备份与导出 Zotero](docs/LEXPACIS_MANUAL.md#收藏与书目导出)
 - [生成脚注](docs/LEXPACIS_MANUAL.md#引注转换)
 - [查找投稿入口与订阅](docs/LEXPACIS_MANUAL.md#投稿导航与订阅)

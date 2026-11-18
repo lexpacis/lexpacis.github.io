@@ -1,8 +1,8 @@
 {
   "hidden_items": [],
   "hidden_sources": [],
-  "publication_scope": "academic_metadata",
-  "paused_modules": ["news", "official", "cases", "commentary", "events"],
+  "publication_scope": "verified_origins",
+  "paused_modules": [],
   "paused_sources": [],
   "automatic_updates_paused": false,
   "screen_china_related_materials": true,

@@ -10,7 +10,7 @@ import urllib.parse
 import urllib.request
 from core import ROOT, UTC, LinkParser, identity, log, now, parse_date, plain, read_json, safe_url, write_json
 from network_policy import validate_public_url, RestrictedRedirect
-from publication_policy import restricted_content, strict_scope
+from publication_policy import regional_scope, restricted_content, strict_scope
 
 KINDS={'journal_special','journal_notice','conference'}
 
@@ -26,6 +26,8 @@ def refresh(config,force=False,limit=60):
         print('[cfp] 公开版只提供期刊投稿入口，未发起公告监测。')
         return {'checked_this_run':0,'errors':0}
     journals,seeds,targets=approved_targets()
+    if regional_scope(read_json(ROOT/'config/visibility.json',{})):
+        targets=[target for target in targets if target['kind']=='journal']
     state=read_json(ROOT/'runtime/cfp/state.json',{'pages':{}})
     hosts={urllib.parse.urlsplit(t['url']).hostname.lower() for t in targets}
     hosts.update(urllib.parse.urlsplit(j['homepage']).hostname.lower() for j in journals)
@@ -121,6 +123,8 @@ def public_data(conn,main_items):
                 'coverage_note':'期刊目录提供出版机构或编辑部的投稿入口。征稿主题、范围与时间以期刊原始公告为准。'}
     calls=[]
     updates=read_json(ROOT/'runtime/cfp/accepted-calls.json',[])
+    if regional_scope(rules):
+        seeds,updates=[],[]
     by_id={s['id']:s for s in seeds}
     by_id.update({s['id']:s for s in updates})
     hidden=rules.get('hidden_items',[])
@@ -139,6 +143,7 @@ def public_data(conn,main_items):
         seen_urls.add(seed['url'])
     for item in main_items:
         if 'cfp-item-'+item['id'] in hidden:continue
+        if regional_scope(rules) and restricted_content(item,rules):continue
         if item['url'] in seen_urls or not re.search(r'call for (?:papers|abstracts|contributions|submissions)|征稿|征文',item['title'],re.I):continue
         calls.append({'id':'cfp-item-'+item['id'],'parent_item_id':item['id'],'title':item.get('title_zh') or item['title'],'original_title':item['title'],
                       'kind':'discovery','journal_id':None,'organization':item['source_id'],'language':'zh' if re.search(r'[\u3400-\u9fff]',item['title']) else 'en',

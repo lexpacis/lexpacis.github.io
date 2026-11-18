@@ -100,7 +100,7 @@ class FeatureWorkflowTests(unittest.TestCase):
         self.assertEqual([item['id'] for item in data['items']],[core.identity('https://example.org/keep')])
         self.assertNotIn(self.call['id'],[call['id'] for call in data['cfp']['calls']])
         self.assertEqual({s['id'] for s in data['sources'] if s['status']=='paused'},
-                         {'wto','un-geneva-news','un-geneva-press','un-geneva-meetings'})
+                         {'wto','un-geneva-news','un-geneva-press','un-geneva-meetings','china-mfa-statements','china-xinhua-politics'})
         rendering.write_release(data)
         for relative in ('data.js','api/items.json','feed.xml','feeds/modules/news.xml','sitemap.xml','calendar.ics','cfp.ics','api/cfp.json'):
             payload=(self.root/'dist'/relative).read_text(encoding='utf-8')
@@ -111,6 +111,7 @@ class FeatureWorkflowTests(unittest.TestCase):
     def test_strict_scope_requires_context_and_recognizes_regional_names(self):
         import cloud
         from publication_policy import snapshot_issues
+        core.write_json(self.root/'config/visibility.json',{'publication_scope':'academic_metadata'})
         sources=core.read_json(self.root/'config/sources.json')
         source=next(s for s in sources if s['id']=='crossref-ejil')
         acknowledged={'title':'Methods of interpreting treaty reservations','doi':'10.1234/article',
@@ -148,6 +149,7 @@ class FeatureWorkflowTests(unittest.TestCase):
             self.assertEqual(pipeline.public_data(next_run,self.config,sources)['items'],[])
     def test_strict_collection_never_requests_unapproved_sources(self):
         sources=core.read_json(self.root/'config/sources.json')
+        core.write_json(self.root/'config/visibility.json',{'publication_scope':'academic_metadata'})
         called=[]
         def fetch(source,config,state):
             called.append(source['id'])
@@ -160,6 +162,34 @@ class FeatureWorkflowTests(unittest.TestCase):
         core.write_json(self.root/'config/visibility.json',rules)
         with patch.object(pipeline,'http_fetch',side_effect=AssertionError('automatic fetch must stay paused')):
             pipeline.collect(self.conn,self.config,sources,force=True)
+    def test_regional_origin_checks_whole_context_and_original_publisher(self):
+        from source_review import inspect_html
+        from publication_policy import snapshot_issues
+        config,sources=pipeline.configuration()
+        rules=pipeline.publication_rules()
+        mfa=next(s for s in sources if s['id']=='china-mfa-statements')
+        foreign=next(s for s in sources if s['id']=='un-geneva-press')
+        body='A public report on procedural reforms of a regional institution and upcoming events affecting its jurisdiction. '*3
+        def record(url,title):
+            return {'url':url,'title':title,'evidence_basis':'RSS 标题','evidence':'','authors':[]}
+        foreign_item=record('https://www.ungeneva.org/example-foreign','A regional institution updates procedural rules')
+        other_item=record('https://www.ungeneva.org/example-other','A second institution updates procedural rules')
+        origin=record('https://www.mfa.gov.cn/fyrbt_673021/dhdw_673027/202610/t20261010_123.shtml','外交部发言人就西藏问题答记者问')
+        repost=record('https://www.mfa.gov.cn/fyrbt_673021/dhdw_673027/202610/t20261010_456.shtml','外交部发言人就藏南问题答记者问')
+        mfa_meta='<meta name="SiteName" content="中华人民共和国外交部">'
+        for source,entry,markup in (
+            (foreign,foreign_item,f'<article>{body}</article>'),
+            (foreign,other_item,f'<article>{body} One case concerns Arunachal Pradesh.</article>'),
+            (mfa,origin,f'{mfa_meta}<article>{body}</article>'),
+            (mfa,repost,f'{mfa_meta}<meta name="ContentSource" content="Third-party wire"><article>{body}</article>'),
+            (foreign,record('https://www.ungeneva.org/no-context','Context cannot be established'),'<header>Preview</header>'),
+        ):
+            core.upsert_item(self.conn,inspect_html(entry,source,entry['url'],markup),source,config)
+        release=pipeline.build(self.conn,config,sources)
+        self.assertEqual({i['url'] for i in release['items']},{foreign_item['url'],origin['url']})
+        self.assertFalse(snapshot_issues(release,sources,rules))
+        self.assertNotIn(other_item['url'],(self.root/'dist/feed.xml').read_text(encoding='utf-8'))
+        self.assertNotIn(repost['url'],(self.root/'dist/api/items.json').read_text(encoding='utf-8'))
     def test_output_path_restricted(self):
         path=self.root/'external-output.json';core.write_json(path,{'model':'fixture-only','calls':[self.call]})
         with self.assertRaises(ValueError):cfp.apply_updates(path)

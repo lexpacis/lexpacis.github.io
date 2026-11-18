@@ -3,6 +3,7 @@
   'use strict';
   const data = window.LEXATLAS_DATA;
   const academicOnly = data?.publication_scope === 'academic_metadata';
+  const verifiedOrigins = data?.publication_scope === 'verified_origins';
   const page = document.getElementById('page-content');
   if (!data || !Array.isArray(data.items)) {
     page.textContent = '资讯数据未能加载。请确认 data.js 与网页位于同一目录，或重新运行 build。';
@@ -341,7 +342,7 @@
     return heading('收录范围、隐私与纠错','','')+`<div class="about-layout">
       <article class="prose">
         <h2>资料范围</h2>
-        <p>${e(data.site.name)}面向高校师生和研究者。当前提供指定国际法期刊的书目索引、期刊投稿导航和引注工具。引用前请核对原始来源。</p>
+        <p>${e(data.site.name)}面向高校师生和研究者，提供国际法资料索引、投稿导航和引注工具。${verifiedOrigins?'涉华资讯仅索引经过核验的中国政府或中国官方媒体原发页面。来源或主题无法核实的条目暂不展示。':''}引用前请核对原始来源。</p>
         <h3>隐私与外部服务</h3>
         <p>浏览无需账号。收藏、引注清单和本地导入文件留在当前浏览器。你主动查 DOI 时，浏览器会向 Crossref 发送该 DOI。托管服务 GitHub Pages 会为安全目的记录访客 IP。</p>
         <p><a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection" target="_blank" rel="noopener noreferrer">GitHub Pages 数据收集说明 ↗</a></p>

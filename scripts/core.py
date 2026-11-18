@@ -155,11 +155,14 @@ def parse_feed(data, source):
         if not title or not url: continue
         date,precision=parse_date(child_text(item,('pubDate','published','date','updated')))
         author=plain(child_text(item,('creator','author')))
-        excerpt=plain(child_text(item,('description','summary','encoded','content')))[:4500]
+        full=plain(child_text(item,('encoded',)))
+        detail=plain(child_text(item,('description','summary','content')))[:4500]
+        excerpt=' '.join(filter(None,(detail,full))) if full else detail
         if source.get('excerpt_policy')=='title_only' or re.fullmatch(r'The post .+ appeared first on .+\.?',excerpt):
             excerpt=''
         result.append({'title':title,'url':url,'published_at':date,'date_precision':precision,
-                       'authors':[author] if author else [],'evidence':excerpt,'evidence_basis':'RSS 摘录' if excerpt else 'RSS 标题', 'doi':''})
+                       'authors':[author] if author else [],'evidence':excerpt,
+                       'evidence_basis':'RSS 正文' if full and excerpt else 'RSS 摘录' if excerpt else 'RSS 标题', 'doi':''})
     counts={}
     for item in result:
         if item['evidence']: counts[item['evidence']]=counts.get(item['evidence'],0)+1
@@ -218,7 +221,7 @@ def parse_listing(data, source):
     pattern=re.compile(source['link_pattern'])
     for link in parser.links:
         url=safe_url(link['href'],source['url']); title=link['title']
-        if not url or not pattern.search(urllib.parse.urlsplit(url).path) or len(title)<35 or url in seen: continue
+        if not url or not pattern.search(urllib.parse.urlsplit(url).path) or len(title)<source.get('min_title_length',35) or url in seen: continue
         if re.search(r'privacy|cookies|read more|next page',title,re.I): continue
         seen.add(url)
         found=re.findall(r'\b(?:\d{1,2}\s+[A-Z][a-z]+\s+20\d{2}|20\d{2}-\d{2}-\d{2})\b',link['context'])

@@ -11,7 +11,7 @@ import subprocess
 import tarfile
 import zipfile
 from core import ROOT, database, identity, now, plain, read_json, run_lock, safe_url, upsert_item, write_json
-from publication_policy import SCOPE_REVISION, snapshot_issues, strict_scope
+from publication_policy import SCOPE_REVISION, managed_scope, snapshot_issues, strict_scope
 import pipeline
 
 
@@ -33,7 +33,7 @@ def restore_snapshot(conn, snapshot, config, sources):
         revision=item.get('source_revision')
         if isinstance(revision,str) and re.fullmatch(r'[0-9a-f]{64}',revision):
             conn.execute('UPDATE items SET content_hash=? WHERE id=?',(revision,item['id']))
-            if snapshot.get('publication_scope')=='academic_metadata' and item.get('screened_policy')==SCOPE_REVISION:
+            if managed_scope(snapshot) and item.get('screened_policy')==SCOPE_REVISION:
                 conn.execute('INSERT INTO publication_reviews VALUES(?,?,?)',(item['id'],revision,SCOPE_REVISION))
         for provenance in item.get('provenance',[]):
             if provenance.get('source_id') in by_source and safe_url(provenance.get('url','')) and provenance.get('seen_at'):
@@ -115,7 +115,7 @@ def run(offline=False):
     rules=pipeline.publication_rules()
     strict=strict_scope(rules)
     if not isinstance(snapshot.get('items'),list):raise ValueError('缺少已发布的公开资料快照')
-    if not offline and not strict:raise ValueError('正式发布需要启用学术书目收录规则')
+    if not offline and not managed_scope(rules):raise ValueError('正式发布需要有效的来源核验规则')
     repository=os.environ.get('GITHUB_REPOSITORY','')
     if not offline:config['base_url']=github_base_url(repository)
     with run_lock():
@@ -128,7 +128,7 @@ def run(offline=False):
                 from cfp import refresh
                 stats=pipeline.collect(conn,config,sources)
                 if not strict: refresh(config,limit=40)
-            if not strict: retain_translations(conn,snapshot,config,sources)
+            if not managed_scope(rules): retain_translations(conn,snapshot,config,sources)
             previous=snapshot.get('operations',{})
             last=previous.get('last_effective_run') or previous.get('last_run')
             if not last or not (last.get('successes') or last.get('failures')):last=None
@@ -185,7 +185,7 @@ def commit_public_release():
     if not token:raise ValueError('缺少 GitHub 自动提供的任务令牌')
     _,sources=pipeline.configuration()
     rules=pipeline.publication_rules()
-    if not strict_scope(rules) or snapshot_issues(read_json(ROOT/'dist/data.json'),sources,rules):
+    if not managed_scope(rules) or snapshot_issues(read_json(ROOT/'dist/data.json'),sources,rules):
         raise ValueError('公开快照未通过当前发布规则')
     def git(*args,env=None):return subprocess.run(['git',*args],cwd=ROOT,env=env,check=True,capture_output=True,text=True)
     snapshot='dist/data.json'

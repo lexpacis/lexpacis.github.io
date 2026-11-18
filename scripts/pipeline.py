@@ -13,7 +13,9 @@ import urllib.error
 import uuid
 import webbrowser
 from core import ROOT, UTC, atomic_write, database, fingerprint, http_fetch, log, now, parse_crossref, parse_date, parse_feed, parse_listing, plain, read_json, run_lock, safe_url, upsert_item, write_json
-from publication_policy import SCOPE_REVISION, eligible_metadata, restricted_content, source_paused, strict_scope
+from publication_policy import (SCOPE_REVISION, eligible_metadata, managed_scope, original_publisher,
+                                regional_item, regional_scope, restricted_content, source_paused, strict_scope)
+from source_review import verify_entries
 
 def configuration():
     return read_json(ROOT/'config/site.json'),read_json(ROOT/'config/sources.json')
@@ -33,6 +35,8 @@ def visible(row, sources, rules, reviewed=False):
     record=dict(row)
     record['bibliography']=json.loads(row['bibliography'])
     record['authors']=json.loads(row['authors'])
+    if regional_scope(rules):
+        return regional_item(record,source,rules,reviewed)
     if strict_scope(rules):
         evidence=row['evidence'] or ''
         if not eligible_metadata(record,source) or (not reviewed and len(evidence.strip())<60):
@@ -68,7 +72,10 @@ def collect(conn,config,sources,force=False):
             # Keep source evidence private. Raw responses never enter dist/.
             cache=ROOT/'runtime'/'cache'/source['id']; cache.mkdir(parents=True,exist_ok=True)
             (cache/'latest.response').write_bytes(data)
-            for entry in entries[:config['max_entries_per_source']]:
+            candidates=entries[:config['max_entries_per_source']]
+            if regional_scope(rules):
+                candidates=verify_entries(candidates,source,config,rules)
+            for entry in candidates:
                 # Future publication dates are valid index metadata, not current events.
                 result=upsert_item(conn,entry,source,config)
                 if result in stats: stats[result]+=1
@@ -107,7 +114,7 @@ def collect(conn,config,sources,force=False):
 
 def prepare(conn,config,sources):
     rules=publication_rules()
-    if strict_scope(rules):
+    if managed_scope(rules):
         print('[prepare] 当前公开版只发布经筛查的原始书目，未生成模型任务。')
         return None
     active=conn.execute("SELECT * FROM batches WHERE status IN ('pending','partial') ORDER BY created_at DESC LIMIT 1").fetchone()
@@ -245,6 +252,7 @@ def apply(conn,config,sources,path):
 def public_data(conn,config,sources):
     rules=publication_rules()
     strict=strict_scope(rules)
+    regional=regional_scope(rules)
     paused_sources={s['id'] for s in sources if source_paused(s,rules)}
     items=[]
     rows=conn.execute('''SELECT items.*, publication_reviews.policy_revision AS reviewed_policy
@@ -259,17 +267,22 @@ def public_data(conn,config,sources):
         item['material_type']={'wto':'官方新闻','icj':'官方新闻稿索引','pca':'机构公告索引','esil':'学会公告'}.get(row['source_id'],
                               '书目元数据' if row['source_id'].startswith('crossref-') else '官方机构新闻报道' if next((s.get('authority') for s in sources if s['id']==row['source_id']),None)=='official_news_service' else '学术平台文章')
         provenance=[dict(p) for p in conn.execute('SELECT source_id,url,seen_at FROM provenance WHERE item_id=?',(row['id'],))]
-        if restricted_content(provenance,rules): continue
+        if regional:
+            provenance=[p for p in provenance if p['source_id']==row['source_id'] and p['url']==row['url']]
+        source=next(s for s in sources if s['id']==row['source_id'])
+        original=regional and original_publisher(source,item)
+        if original: item['material_type']='中国政府原发信息' if source['authority']=='china_government' else '中国官方媒体原发信息'
+        if not original and restricted_content(provenance,rules): continue
         item['provenance']=[p for p in provenance if p['source_id'] not in paused_sources]
         enrichment=conn.execute('SELECT * FROM enrichments WHERE item_id=? AND content_hash=?',(row['id'],row['content_hash'])).fetchone()
         item.update(title_zh='',summary_zh='',ai=None,event=None,deadline=None)
-        if enrichment and not strict:
+        if enrichment and not managed_scope(rules):
             enriched=json.loads(enrichment['payload'])
             if restricted_content(enriched,rules): continue
             item.update({key:enriched.get(key) for key in ('title_zh','summary_zh','module','topics','event','deadline')})
             item['ai']={'model':enrichment['model'],'processed_at':enrichment['created_at'],'basis':row['evidence_basis']}
-        if item['module'] not in rules.get('paused_modules',[]) and not restricted_content(item,rules):
-            if strict: item['screened_policy']=SCOPE_REVISION
+        if item['module'] not in rules.get('paused_modules',[]) and (original or not restricted_content(item,rules)):
+            if managed_scope(rules): item['screened_policy']=SCOPE_REVISION
             items.append(item)
     source_info=[]
     for source in sources:
@@ -297,7 +310,7 @@ def public_data(conn,config,sources):
             'topics':[{k:t[k] for k in ('id','name','short')} for t in config['topics']],
             'modules':config['modules'],'items':items[:config['max_public_items']],
             'paused_modules':rules.get('paused_modules',[]),'publication_scope':rules.get('publication_scope'),
-            'sources':source_info,'cfp':cfp_public_data(conn,items),'operations':{'last_run':dict(last_run) if last_run else None,
+            'sources':source_info,'cfp':cfp_public_data(conn,items[:config['max_public_items']]),'operations':{'last_run':dict(last_run) if last_run else None,
             'scheduler_enabled':bool(cloud_run),
             'scheduled_run_verified':bool(cloud_run and (cloud.get('event')=='schedule' or cloud.get('scheduled_run_verified'))),
             'last_effective_run':(dict(last_run) if last_run and (last_run['successes'] or last_run['failures']) else cloud.get('previous_effective_run')),

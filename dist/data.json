@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-18T18:13:35+00:00",
+  "generated_at": "2026-11-18T18:40:11+00:00",
   "site": {
     "name": "法域前沿",
     "english_name": "Lexpacis",
     "tagline": "追踪国际法，连接研究的下一步。",
-    "description": "面向高校师生与研究者的国际法期刊书目、投稿导航与引注工具。",
+    "description": "面向高校师生和研究者的国际法资料索引、学术活动、投稿导航与引注工具。",
     "base_url": "https://lexpacis.github.io",
     "timezone": "Asia/Shanghai"
   },
@@ -83,8 +83,8 @@
       "module": "research",
       "published_at": "2026-11-17",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "26da1b06c367816e52c44ade2369a859107c2c934c477e985c4c88a2c3c63515",
       "topics": [],
@@ -110,7 +110,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag047",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -118,7 +118,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "39a995fd5059920382b9",
@@ -129,8 +129,8 @@
       "module": "research",
       "published_at": "2026-11-02",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "e3e0f3e1731a1d9ab9bbff82a975cb6f4a9d06d22542d7555ca907e7ac90f085",
       "topics": [],
@@ -157,7 +157,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag038",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -165,7 +165,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "c122c6cc812fa110ad72",
@@ -176,8 +176,8 @@
       "module": "research",
       "published_at": "2026-10-26",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "133fe6eddb74995a06ef1ec6a22f594c195981f1f517d798eb59ad5b903fb909",
       "topics": [
@@ -205,7 +205,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag042",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -213,7 +213,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "dec29474d93b3ee4381d",
@@ -224,8 +224,8 @@
       "module": "research",
       "published_at": "2026-10-22",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "7c3d6fd84696fee4ace9bf6043cb2d63d74c0d12760e13cc5ae96e431d872a5e",
       "topics": [],
@@ -252,7 +252,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s0922156526101009",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -260,7 +260,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "b8e7957895857448475e",
@@ -271,8 +271,8 @@
       "module": "research",
       "published_at": "2026-10-22",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "b1b4c20fd355f3e7d13e26c74d15959ef6a287aed8daa1f3336c51e274bdd921",
       "topics": [
@@ -302,7 +302,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s0922156526100971",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -310,7 +310,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "5ca9d6417e982941a7d2",
@@ -321,8 +321,8 @@
       "module": "research",
       "published_at": "2026-10-16",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "564ca88e22814f126b58c14b8a5307b487843b5af09220d5e59d82140109d523",
       "topics": [],
@@ -348,7 +348,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag041",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -356,7 +356,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "a5e2e1e33f643e9dc348",
@@ -367,8 +367,8 @@
       "module": "research",
       "published_at": "2026-10-14",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "ffe63ba5b68fa8030619d601293e582b54df88c8032655f2f007260215073c1b",
       "topics": [
@@ -396,7 +396,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s0922156526100995",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -404,7 +404,40 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
+    },
+    {
+      "id": "7bdcde6b6ac49a9c9b28",
+      "source_id": "china-mfa-statements",
+      "title": "外交部发言人就巴拿马发生7.6级地震答记者问",
+      "url": "https://www.mfa.gov.cn/fyrbt_673021/dhdw_673027/202610/t20261010_12038194.shtml",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-10-10",
+      "date_precision": "day",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
+      "evidence_basis": "官方原发页面核对",
+      "source_revision": "54f38c788b1d27777d96e629aa6e4c089c4cc596fd021c3c7fb2d4e374576e9e",
+      "topics": [],
+      "authors": [],
+      "bibliography": {
+        "original_issuer": "中华人民共和国外交部"
+      },
+      "material_type": "中国政府原发信息",
+      "provenance": [
+        {
+          "source_id": "china-mfa-statements",
+          "url": "https://www.mfa.gov.cn/fyrbt_673021/dhdw_673027/202610/t20261010_12038194.shtml",
+          "seen_at": "2026-11-18T18:40:11+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "250a1d7ce892ef012afc",
@@ -415,8 +448,8 @@
       "module": "research",
       "published_at": "2026-10-10",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "9f2c4620670b47e8fb1f2e9420e5ec71dde057cf597bdcccf037ffccb17aa6af",
       "topics": [
@@ -445,7 +478,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag034",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -453,7 +486,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "01647563facdb92a9874",
@@ -464,8 +497,8 @@
       "module": "research",
       "published_at": "2026-10-01",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "bbe50bc7e6a12950001a43f806621008400ac96f13865205fdc41e0f011e116e",
       "topics": [],
@@ -491,7 +524,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s0922156526100922",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -499,7 +532,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "834876b9178ff58404b9",
@@ -510,8 +543,8 @@
       "module": "research",
       "published_at": "2026-10",
       "date_precision": "month",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "dc3c4012e2711b297c014ef0e58348c5ebedbbf85679d60d01fc38be7d99a5e5",
       "topics": [],
@@ -538,7 +571,7 @@
         {
           "source_id": "crossref-ajil",
           "url": "https://doi.org/10.1017/ajil.2026.10185",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -546,7 +579,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "5dc6331b6b20f6c26cf0",
@@ -557,8 +590,8 @@
       "module": "research",
       "published_at": "2026-10",
       "date_precision": "month",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "07a7d35000a2da7a83a4d8d3aaa37d4fc0676be9675547cd2d492d468af6c2c9",
       "topics": [],
@@ -584,7 +617,7 @@
         {
           "source_id": "crossref-ajil",
           "url": "https://doi.org/10.1017/ajil.2026.10188",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -592,7 +625,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "ea8e00e656a9434eacf2",
@@ -603,8 +636,8 @@
       "module": "research",
       "published_at": "2026-10",
       "date_precision": "month",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "d4db5a4b50007e3d44e6504397fadf05edd4a9bcfa64c55215ea2d196e5353f5",
       "topics": [
@@ -633,7 +666,7 @@
         {
           "source_id": "crossref-ajil",
           "url": "https://doi.org/10.1017/ajil.2026.10190",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -641,7 +674,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "309736753f3428283e30",
@@ -652,8 +685,8 @@
       "module": "research",
       "published_at": "2026-10",
       "date_precision": "month",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "0fc585f5c4b9eab2ddff741cdabf9d0c89c53efec22a93e8a1cf571b393bc1f6",
       "topics": [],
@@ -680,7 +713,7 @@
         {
           "source_id": "crossref-ajil",
           "url": "https://doi.org/10.1017/ajil.2026.10193",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -688,7 +721,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "f415bcf6fa89fd56168b",
@@ -699,8 +732,8 @@
       "module": "research",
       "published_at": "2026-09-29",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "95c851e0f801f21279388282c71e8787a9feb54e20517e60e1a6afd2b3eee01c",
       "topics": [],
@@ -726,7 +759,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s0922156526100983",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -734,7 +767,40 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
+    },
+    {
+      "id": "38e6e04d18fcddf01a26",
+      "source_id": "china-mfa-statements",
+      "title": "外交部发言人就人工智能问题答记者问",
+      "url": "https://www.mfa.gov.cn/fyrbt_673021/dhdw_673027/202609/t20260926_12031638.shtml",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-09-26",
+      "date_precision": "day",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
+      "evidence_basis": "官方原发页面核对",
+      "source_revision": "41e40bedbc206010bab5ed12f61ce56ad3ddecac97a9f92cebf72ba2118ddbd8",
+      "topics": [],
+      "authors": [],
+      "bibliography": {
+        "original_issuer": "中华人民共和国外交部"
+      },
+      "material_type": "中国政府原发信息",
+      "provenance": [
+        {
+          "source_id": "china-mfa-statements",
+          "url": "https://www.mfa.gov.cn/fyrbt_673021/dhdw_673027/202609/t20260926_12031638.shtml",
+          "seen_at": "2026-11-18T18:40:11+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "e5e21b2fde56dba8051c",
@@ -745,8 +811,8 @@
       "module": "research",
       "published_at": "2026-09-25",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "0a48c0691cb4a9c105cfdb770ab474e125cd80f625cedb2bbcc8b1a8fff64292",
       "topics": [],
@@ -772,7 +838,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s0922156526100934",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -780,7 +846,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "9304436275015c8da86d",
@@ -791,8 +857,8 @@
       "module": "research",
       "published_at": "2026-09-23",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "b6432238295cdc72f6f08c10740b9ec1ba22e315373e50d2e2b4bc343985c865",
       "topics": [],
@@ -818,7 +884,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag033",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -826,7 +892,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "5a6935a326535666028f",
@@ -837,8 +903,8 @@
       "module": "research",
       "published_at": "2026-09-22",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "e400f2c64ebb9e37e63fb25717c8fffca87bed273a96cf634983d5954df1e8d5",
       "topics": [],
@@ -864,7 +930,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag031",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -872,7 +938,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "db59a3c7cbf3b07944bf",
@@ -883,8 +949,8 @@
       "module": "research",
       "published_at": "2026-09-22",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "aa95da82609585518905eaeb95a5383cae3765c2d30f433c20b4067910c5d206",
       "topics": [
@@ -912,7 +978,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag039",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -920,7 +986,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "5cd8ce9c95fe7d2028de",
@@ -931,8 +997,8 @@
       "module": "research",
       "published_at": "2026-09-19",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "b2ac68b06121a28963ab7b5f0b6cc9c7ed88e1774851bb456e1060402cc75eb1",
       "topics": [
@@ -960,7 +1026,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag036",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -968,7 +1034,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "2d6068bfd79fc8b08d57",
@@ -979,8 +1045,8 @@
       "module": "research",
       "published_at": "2026-09-15",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "36f128da2263ee317d3df2d76d130a9a0750279fa1a5252230bfa59fa628b01c",
       "topics": [],
@@ -1007,7 +1073,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag037",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -1015,7 +1081,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "84bd3d90f181d917693f",
@@ -1026,8 +1092,8 @@
       "module": "research",
       "published_at": "2026-09-14",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "2bf583f964e73a76152dfa66166e4729b771aaf4d2732f1318f9b6b398775b17",
       "topics": [],
@@ -1053,7 +1119,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s0922156526100958",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -1061,7 +1127,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "fbe78e2f57d7b26d8749",
@@ -1072,8 +1138,8 @@
       "module": "research",
       "published_at": "2026-08-07",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "2cdefa1854f87ae0bb7919ae3579f36ea25794db0c4aa095ea196db84b1195bc",
       "topics": [],
@@ -1099,7 +1165,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag027",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -1107,7 +1173,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "e51a1742b8d6871fd31b",
@@ -1118,8 +1184,8 @@
       "module": "research",
       "published_at": "2026-08-07",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "18366f79e696046a36d20c315b0b1aecf9692d94781409d6c3d6b871e9877099",
       "topics": [],
@@ -1145,7 +1211,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag028",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -1153,7 +1219,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "130a6dbb1f145f9d280c",
@@ -1164,8 +1230,8 @@
       "module": "research",
       "published_at": "2026-08-07",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "c11041bf3812dc3f4a43b4bddfa1c44f0f3fef0f125b80a22df3665299b71398",
       "topics": [],
@@ -1191,7 +1257,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag029",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -1199,7 +1265,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "6eb42859fb100abdd256",
@@ -1210,8 +1276,8 @@
       "module": "research",
       "published_at": "2026-07-29",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "2e315a5f0ee4d11feece8c3b43690507f2b810998b761fbc187038337dd78a30",
       "topics": [],
@@ -1237,7 +1303,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s0922156526100867",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -1245,7 +1311,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "2c5553c6e438d80e75f9",
@@ -1256,8 +1322,8 @@
       "module": "research",
       "published_at": "2026-07-17",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "7eadb42e67bb2d74a8639ee66b0c28cca5516bc129a7fcd5350493be0906be55",
       "topics": [
@@ -1285,7 +1351,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s0922156526100879",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -1293,7 +1359,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "b85444b057df5f5e4397",
@@ -1304,8 +1370,8 @@
       "module": "research",
       "published_at": "2026-07-17",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "e99be08edbf17b936a0e9a0b4f2f1421368f7d31497d5fe215f519b2d4cd222a",
       "topics": [
@@ -1333,7 +1399,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s0922156526100892",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -1341,7 +1407,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "717776dfda46f8bb7c12",
@@ -1352,8 +1418,8 @@
       "module": "research",
       "published_at": "2026-07-15",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "0083b66100b9a82011337e32b475ffd94fb8073cdb4f0d46b6612a3409f5851d",
       "topics": [
@@ -1381,7 +1447,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s0922156526100855",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -1389,7 +1455,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "c232da472b3710af63fa",
@@ -1400,8 +1466,8 @@
       "module": "research",
       "published_at": "2026-07-15",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "e31b432424769eaaa6b81568bc94f35e82bb979380d75142294e0a2f49a73032",
       "topics": [
@@ -1430,7 +1496,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s0922156526100880",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -1438,7 +1504,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "63cbabef78b4f3a7b98b",
@@ -1449,8 +1515,8 @@
       "module": "research",
       "published_at": "2026-06-16",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "4ce019714cad9e3d35af6d1641f47447f4b4514f97ddb1ee569d83db181a35d1",
       "topics": [],
@@ -1476,7 +1542,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s092215652610082x",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -1484,7 +1550,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "e43f0227dfa188d3e07e",
@@ -1495,8 +1561,8 @@
       "module": "research",
       "published_at": "2026-06",
       "date_precision": "month",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "70f83b3e7a7e04e8fae3d3fcbcea4b99800cdf5f99ae6227f62f34318b82c1ba",
       "topics": [],
@@ -1522,7 +1588,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s0922156526100788",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -1530,7 +1596,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "e3b286b7b8f769254e7e",
@@ -1541,8 +1607,8 @@
       "module": "research",
       "published_at": "2026-05-25",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "c4733fb1abe8713d1e097e210566e80b2bfc0b31af9efcad624a316269a7dc2c",
       "topics": [
@@ -1571,7 +1637,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s0922156526100806",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -1579,7 +1645,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "43a8236554a034cc15b7",
@@ -1590,8 +1656,8 @@
       "module": "research",
       "published_at": "2026-05-24",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "452bbc6b699661bc78aa85c7c7b6055012dab3a97c7c56b54b765695a457788f",
       "topics": [
@@ -1619,7 +1685,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag022",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -1627,7 +1693,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "ebfcfcd520b172c74cf1",
@@ -1638,8 +1704,8 @@
       "module": "research",
       "published_at": "2026-05-05",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "c482469621100bb4f0d30306f2f333c5911793cca36bbeeac957ee1b8b6cb19f",
       "topics": [
@@ -1668,7 +1734,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag019",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -1676,7 +1742,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "99bec7307ef1f275ab56",
@@ -1687,8 +1753,8 @@
       "module": "research",
       "published_at": "2026-04-28",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "1947922fabcd66ca00d0241e3794e6f37ad315341bf738db1097fa497d641b14",
       "topics": [],
@@ -1714,7 +1780,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag011",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -1722,7 +1788,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "ba64064c11b39a63ad43",
@@ -1733,8 +1799,8 @@
       "module": "research",
       "published_at": "2026-04-20",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "d6665d06d59c2c7053f6ce90431e2057637b4dd5e29a1e6b4ee991113611dc98",
       "topics": [
@@ -1762,7 +1828,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s0922156526100752",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -1770,7 +1836,7 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     },
     {
       "id": "dc94552829356e93d109",
@@ -1781,8 +1847,8 @@
       "module": "research",
       "published_at": "2026-02-01",
       "date_precision": "day",
-      "discovered_at": "2026-11-18T18:04:30+00:00",
-      "updated_at": "2026-11-18T18:04:30+00:00",
+      "discovered_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T18:40:11+00:00",
       "evidence_basis": "书目元数据",
       "source_revision": "a0b3bc8e35d93356f08b54866bb5cf83595f955690e13c205211ecb8b36b259c",
       "topics": [
@@ -1811,7 +1877,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag012",
-          "seen_at": "2026-11-18T18:13:35+00:00"
+          "seen_at": "2026-11-18T18:40:11+00:00"
         }
       ],
       "title_zh": "",
@@ -1819,18 +1885,259 @@
       "ai": null,
       "event": null,
       "deadline": null,
-      "screened_policy": "b027cc82310f11bc43f84df9aac83ca8488e3038469099cbd63521503f4be246"
+      "screened_policy": "b5205147afe7528cfe211f72fcdc7e3fb631c4b24f0c3ccfd676fffaaa281a28"
     }
   ],
-  "paused_modules": [
-    "news",
-    "official",
-    "cases",
-    "commentary",
-    "events"
-  ],
-  "publication_scope": "academic_metadata",
+  "paused_modules": [],
+  "publication_scope": "verified_origins",
   "sources": [
+    {
+      "id": "china-mfa-statements",
+      "name": "中华人民共和国外交部 · 发言人表态",
+      "organization": "中华人民共和国外交部",
+      "homepage": "https://www.mfa.gov.cn/",
+      "kind": "html",
+      "module": "news",
+      "authority": "china_government",
+      "enabled": true,
+      "poll_hours": 12,
+      "scope": "外交部发言人原发答问的标题、日期和原文入口",
+      "language": "zh",
+      "status": "unverified",
+      "attempted_at": null,
+      "success_at": null,
+      "error": null,
+      "consecutive_failures": 0,
+      "item_count": 2,
+      "next_attempt_at": null
+    },
+    {
+      "id": "china-xinhua-politics",
+      "name": "新华网 · 时政",
+      "organization": "新华社 / 新华网",
+      "homepage": "https://www.news.cn/",
+      "kind": "html",
+      "module": "news",
+      "authority": "china_official_media",
+      "enabled": false,
+      "poll_hours": 24,
+      "scope": "新华网原发来源核验；启用前需确认允许的稿源使用范围",
+      "language": "zh",
+      "status": "candidate",
+      "attempted_at": null,
+      "success_at": null,
+      "error": null,
+      "consecutive_failures": 0,
+      "item_count": 0,
+      "next_attempt_at": null
+    },
+    {
+      "id": "un-geneva-news",
+      "name": "联合国日内瓦 · 国际新闻",
+      "organization": "United Nations Office at Geneva / UN News",
+      "homepage": "https://www.ungeneva.org/",
+      "kind": "html",
+      "module": "news",
+      "authority": "official_news_service",
+      "enabled": true,
+      "poll_hours": 6,
+      "scope": "官方新闻目录标题、日期及原文链接；机构报道不等于司法认定，不抓取新闻全文",
+      "language": "en",
+      "status": "unverified",
+      "attempted_at": null,
+      "success_at": null,
+      "error": null,
+      "consecutive_failures": 0,
+      "item_count": 0,
+      "next_attempt_at": null
+    },
+    {
+      "id": "un-geneva-press",
+      "name": "联合国日内瓦 · 新闻发布",
+      "organization": "United Nations Office at Geneva",
+      "homepage": "https://www.ungeneva.org/",
+      "kind": "rss",
+      "module": "news",
+      "authority": "official_news_service",
+      "enabled": true,
+      "poll_hours": 6,
+      "scope": "官方 RSS 新闻发布入口；保留报道来源，不将其作为裁判结论",
+      "language": "en",
+      "feed_url": "https://www.ungeneva.org/news-media/press-releases-list/rss.xml",
+      "status": "unverified",
+      "attempted_at": null,
+      "success_at": null,
+      "error": null,
+      "consecutive_failures": 0,
+      "item_count": 0,
+      "next_attempt_at": null
+    },
+    {
+      "id": "un-geneva-meetings",
+      "name": "联合国日内瓦 · 会议报道",
+      "organization": "United Nations Office at Geneva",
+      "homepage": "https://www.ungeneva.org/",
+      "kind": "rss",
+      "module": "news",
+      "authority": "official_news_service",
+      "enabled": true,
+      "poll_hours": 6,
+      "scope": "官方 RSS 会议报道入口；区别于学术活动及正式会议文件",
+      "language": "en",
+      "feed_url": "https://www.ungeneva.org/news-media/meeting-summaries-list/rss.xml",
+      "status": "unverified",
+      "attempted_at": null,
+      "success_at": null,
+      "error": null,
+      "consecutive_failures": 0,
+      "item_count": 0,
+      "next_attempt_at": null
+    },
+    {
+      "id": "ejiltalk",
+      "name": "EJIL: Talk!",
+      "organization": "European Journal of International Law",
+      "homepage": "https://www.ejiltalk.org/",
+      "kind": "rss",
+      "module": "commentary",
+      "authority": "academic_commentary",
+      "enabled": true,
+      "poll_hours": 6,
+      "scope": "RSS 最新条目，标题与链接；不代表期刊论文全覆盖",
+      "language": "en",
+      "feed_url": "https://www.ejiltalk.org/feed/",
+      "status": "unverified",
+      "attempted_at": null,
+      "success_at": null,
+      "error": null,
+      "consecutive_failures": 0,
+      "item_count": 0,
+      "next_attempt_at": null
+    },
+    {
+      "id": "opiniojuris",
+      "name": "Opinio Juris",
+      "organization": "Opinio Juris",
+      "homepage": "https://opiniojuris.org/",
+      "kind": "rss",
+      "module": "commentary",
+      "authority": "academic_commentary",
+      "enabled": true,
+      "poll_hours": 6,
+      "scope": "RSS 最新条目，包含学术评论与活动公告",
+      "language": "en",
+      "feed_url": "https://opiniojuris.org/feed/",
+      "status": "unverified",
+      "attempted_at": null,
+      "success_at": null,
+      "error": null,
+      "consecutive_failures": 0,
+      "item_count": 0,
+      "next_attempt_at": null
+    },
+    {
+      "id": "voelkerrechtsblog",
+      "name": "Völkerrechtsblog",
+      "organization": "Völkerrechtsblog",
+      "homepage": "https://voelkerrechtsblog.org/",
+      "kind": "rss",
+      "module": "commentary",
+      "authority": "academic_commentary",
+      "enabled": true,
+      "poll_hours": 6,
+      "scope": "RSS 最新条目；多语种学术评论",
+      "language": "mixed",
+      "feed_url": "https://voelkerrechtsblog.org/feed/",
+      "status": "unverified",
+      "attempted_at": null,
+      "success_at": null,
+      "error": null,
+      "consecutive_failures": 0,
+      "item_count": 0,
+      "next_attempt_at": null
+    },
+    {
+      "id": "esil",
+      "name": "欧洲国际法学会 ESIL",
+      "organization": "European Society of International Law",
+      "homepage": "https://esil-sedi.eu/",
+      "kind": "rss",
+      "module": "events",
+      "authority": "academic_society",
+      "enabled": true,
+      "poll_hours": 12,
+      "scope": "学会 RSS 公告；当前描述字段含重复过期模板，仅使用标题，明确日期后才进入日历",
+      "language": "en",
+      "feed_url": "https://esil-sedi.eu/feed/",
+      "status": "unverified",
+      "attempted_at": null,
+      "success_at": null,
+      "error": null,
+      "consecutive_failures": 0,
+      "item_count": 0,
+      "next_attempt_at": null
+    },
+    {
+      "id": "wto",
+      "name": "WTO news",
+      "organization": "World Trade Organization",
+      "homepage": "https://www.wto.org/",
+      "kind": "rss",
+      "module": "official",
+      "authority": "official_institution",
+      "enabled": true,
+      "poll_hours": 6,
+      "scope": "WTO 官方新闻，并非全部 WTO 文件或争端记录",
+      "language": "en",
+      "feed_url": "https://www.wto.org/library/rss/latest_news_e.xml",
+      "status": "unverified",
+      "attempted_at": null,
+      "success_at": null,
+      "error": null,
+      "consecutive_failures": 0,
+      "item_count": 0,
+      "next_attempt_at": null
+    },
+    {
+      "id": "pca",
+      "name": "常设仲裁法院 PCA",
+      "organization": "Permanent Court of Arbitration",
+      "homepage": "https://pca-cpa.org/",
+      "kind": "html",
+      "module": "cases",
+      "authority": "official_institution",
+      "enabled": true,
+      "poll_hours": 12,
+      "scope": "公开新闻及案件公告；机构活动单独标为官方动态",
+      "language": "en",
+      "status": "unverified",
+      "attempted_at": null,
+      "success_at": null,
+      "error": null,
+      "consecutive_failures": 0,
+      "item_count": 0,
+      "next_attempt_at": null
+    },
+    {
+      "id": "icj",
+      "name": "国际法院 ICJ",
+      "organization": "International Court of Justice",
+      "homepage": "https://www.icj-cij.org/",
+      "kind": "html",
+      "module": "cases",
+      "authority": "official_institution",
+      "enabled": true,
+      "poll_hours": 12,
+      "scope": "公开新闻稿入口；访问受限时保留失败状态，不绕过限制",
+      "language": "en",
+      "status": "unverified",
+      "attempted_at": null,
+      "success_at": null,
+      "error": null,
+      "consecutive_failures": 0,
+      "item_count": 0,
+      "next_attempt_at": null
+    },
     {
       "id": "crossref-ejil",
       "name": "EJIL · Crossref",
@@ -1843,9 +2150,9 @@
       "poll_hours": 24,
       "scope": "European Journal of International Law 的 Crossref 元数据；不保证即时完整",
       "language": "en",
-      "status": "ok",
-      "attempted_at": "2026-11-18T18:13:35+00:00",
-      "success_at": "2026-11-18T18:13:35+00:00",
+      "status": "unverified",
+      "attempted_at": null,
+      "success_at": null,
       "error": null,
       "consecutive_failures": 0,
       "item_count": 17,
@@ -1863,9 +2170,9 @@
       "poll_hours": 24,
       "scope": "American Journal of International Law 的 Crossref 元数据；不抓付费全文",
       "language": "en",
-      "status": "ok",
-      "attempted_at": "2026-11-18T18:13:35+00:00",
-      "success_at": "2026-11-18T18:13:35+00:00",
+      "status": "unverified",
+      "attempted_at": null,
+      "success_at": null,
       "error": null,
       "consecutive_failures": 0,
       "item_count": 4,
@@ -1883,12 +2190,52 @@
       "poll_hours": 24,
       "scope": "Leiden Journal of International Law 的 Crossref 元数据",
       "language": "en",
-      "status": "ok",
-      "attempted_at": "2026-11-18T18:13:35+00:00",
-      "success_at": "2026-11-18T18:13:35+00:00",
+      "status": "unverified",
+      "attempted_at": null,
+      "success_at": null,
       "error": null,
       "consecutive_failures": 0,
       "item_count": 16,
+      "next_attempt_at": null
+    },
+    {
+      "id": "ilc",
+      "name": "联合国国际法委员会 ILC",
+      "organization": "United Nations",
+      "homepage": "https://legal.un.org/ilc/",
+      "kind": "html",
+      "module": "official",
+      "authority": "official_institution",
+      "enabled": false,
+      "poll_hours": 24,
+      "scope": "待开发专用文号与报告解析器；当前仅收录导航",
+      "language": "en",
+      "status": "candidate",
+      "attempted_at": null,
+      "success_at": null,
+      "error": null,
+      "consecutive_failures": 0,
+      "item_count": 0,
+      "next_attempt_at": null
+    },
+    {
+      "id": "itlos",
+      "name": "国际海洋法法庭 ITLOS",
+      "organization": "International Tribunal for the Law of the Sea",
+      "homepage": "https://www.itlos.org/",
+      "kind": "html",
+      "module": "cases",
+      "authority": "official_institution",
+      "enabled": false,
+      "poll_hours": 12,
+      "scope": "待验证新闻稿解析器；当前仅收录导航",
+      "language": "en",
+      "status": "candidate",
+      "attempted_at": null,
+      "success_at": null,
+      "error": null,
+      "consecutive_failures": 0,
+      "item_count": 0,
       "next_attempt_at": null
     }
   ],
@@ -2557,31 +2904,15 @@
     ],
     "calls": [],
     "updated_at": null,
-    "coverage_note": "期刊目录提供出版机构或编辑部的投稿入口。征稿主题、范围与时间以期刊原始公告为准。"
+    "coverage_note": "人工建立的期刊入口目录 + 程序定期检查 + 已接通信源中的征稿线索。目录不是排名，不等于已覆盖各刊全部征稿；主页可读也不等于当前正在收稿。"
   },
   "operations": {
-    "last_run": {
-      "id": 1,
-      "started_at": "2026-11-18T18:13:34+00:00",
-      "finished_at": "2026-11-18T18:13:35+00:00",
-      "successes": 3,
-      "failures": 0,
-      "added": 35,
-      "changed": 0
-    },
-    "scheduler_enabled": true,
+    "last_run": null,
+    "scheduler_enabled": false,
     "scheduled_run_verified": false,
-    "last_effective_run": {
-      "id": 1,
-      "started_at": "2026-11-18T18:13:34+00:00",
-      "finished_at": "2026-11-18T18:13:35+00:00",
-      "successes": 3,
-      "failures": 0,
-      "added": 35,
-      "changed": 0
-    },
-    "scheduler_note": "最近一次云端运行：2026-11-18T18:13:35+00:00；触发方式：push。信源成功时间单独显示。",
-    "total_archived": 37,
-    "visible_in_export": 37
+    "last_effective_run": null,
+    "scheduler_note": "云端定时流程已准备；尚未连接账户或验证实际定时运行。",
+    "total_archived": 39,
+    "visible_in_export": 39
   }
 }

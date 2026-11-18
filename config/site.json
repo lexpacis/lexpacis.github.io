@@ -2,7 +2,7 @@
   "name": "法域前沿",
   "english_name": "Lexpacis",
   "tagline": "追踪国际法，连接研究的下一步。",
-  "description": "面向高校师生与研究者的国际法期刊书目、投稿导航与引注工具。",
+  "description": "面向高校师生和研究者的国际法资料索引、学术活动、投稿导航与引注工具。",
   "base_url": "https://lexpacis.github.io",
   "timezone": "Asia/Shanghai",
   "ai_batch_size": 12,
