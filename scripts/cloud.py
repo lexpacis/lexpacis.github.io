@@ -11,6 +11,7 @@ import subprocess
 import tarfile
 import zipfile
 from core import ROOT, database, identity, now, plain, read_json, run_lock, safe_url, upsert_item, write_json
+from publication_policy import SCOPE_REVISION, snapshot_issues, strict_scope
 import pipeline
 
 
@@ -19,7 +20,7 @@ def restore_snapshot(conn, snapshot, config, sources):
     if conn.execute('SELECT COUNT(*) FROM items').fetchone()[0]:
         raise ValueError('云端恢复只能写入空数据库，不能覆盖本机运营状态')
     by_source={s['id']:s for s in sources}
-    if not isinstance(snapshot,dict) or len(snapshot.get('items',[]))>config['max_public_items']:
+    if not isinstance(snapshot,dict) or not isinstance(snapshot.get('items'),list) or len(snapshot['items'])>config['max_public_items']:
         raise ValueError('公开快照格式或大小异常')
     for item in snapshot.get('items',[]):
         source=by_source.get(item.get('source_id'))
@@ -32,6 +33,8 @@ def restore_snapshot(conn, snapshot, config, sources):
         revision=item.get('source_revision')
         if isinstance(revision,str) and re.fullmatch(r'[0-9a-f]{64}',revision):
             conn.execute('UPDATE items SET content_hash=? WHERE id=?',(revision,item['id']))
+            if snapshot.get('publication_scope')=='academic_metadata' and item.get('screened_policy')==SCOPE_REVISION:
+                conn.execute('INSERT INTO publication_reviews VALUES(?,?,?)',(item['id'],revision,SCOPE_REVISION))
         for provenance in item.get('provenance',[]):
             if provenance.get('source_id') in by_source and safe_url(provenance.get('url','')) and provenance.get('seen_at'):
                 conn.execute('INSERT OR REPLACE INTO provenance VALUES(?,?,?,?)',
@@ -109,20 +112,23 @@ def run(offline=False):
         raise ValueError('此命令的联网模式用于 GitHub 云端；本机验收请用 --offline，不修改本机网络设置')
     config,sources=pipeline.configuration();config=copy.deepcopy(config)
     snapshot=read_json(ROOT/'dist/data.json',{})
-    if not snapshot.get('items'):raise ValueError('缺少已发布的公开资料快照')
+    rules=pipeline.publication_rules()
+    strict=strict_scope(rules)
+    if not isinstance(snapshot.get('items'),list):raise ValueError('缺少已发布的公开资料快照')
+    if not offline and not strict:raise ValueError('正式发布需要启用学术书目收录规则')
     repository=os.environ.get('GITHUB_REPOSITORY','')
     if not offline:config['base_url']=github_base_url(repository)
     with run_lock():
         conn=database(ROOT)
         try:
             restore_snapshot(conn,snapshot,config,sources)
-            restore_monitors(snapshot)
+            if not strict: restore_monitors(snapshot)
             stats={'successes':0,'failures':0,'offline_validation':True}
             if not offline:
                 from cfp import refresh
                 stats=pipeline.collect(conn,config,sources)
-                refresh(config,limit=40)
-            retain_translations(conn,snapshot,config,sources)
+                if not strict: refresh(config,limit=40)
+            if not strict: retain_translations(conn,snapshot,config,sources)
             previous=snapshot.get('operations',{})
             last=previous.get('last_effective_run') or previous.get('last_run')
             if not last or not (last.get('successes') or last.get('failures')):last=None
@@ -148,6 +154,9 @@ def run(offline=False):
 
 def export_source():
     """New ZIP without git history, local state, credentials or original hosting identity."""
+    _,sources=pipeline.configuration()
+    issues=snapshot_issues(read_json(ROOT/'dist/data.json'),sources,pipeline.publication_rules())
+    if issues:raise ValueError('请先构建符合当前规则的发布目录。'+'；'.join(issues))
     folders=('scripts','config','web','tests','docs','dist','.github')
     singles=('README.md','package.json','.gitignore')
     output=ROOT/'artifacts/LexAtlas-云端部署源码.zip';output.parent.mkdir(exist_ok=True)
@@ -159,7 +168,8 @@ def export_source():
                 name=path.relative_to(ROOT).as_posix()
                 if '/.openai/' in name or path.name.startswith('.env'):continue
                 if folder=='docs' and name!='docs/LEXPACIS_MANUAL.md':continue
-                if name=='config/news-initial.json':continue
+                if name in ('config/news-initial.json','config/cfp-seeds.json'):continue
+                if folder=='dist' and name!='dist/data.json':continue
                 archive.write(path,name);names.append(name)
         for name in singles:
             if (ROOT/name).exists():archive.write(ROOT/name,name);names.append(name)
@@ -173,6 +183,10 @@ def commit_public_release():
     if os.environ.get('GITHUB_ACTIONS')!='true':raise ValueError('仅供 GitHub 云端使用')
     token=os.environ.get('GITHUB_TOKEN','');repository=os.environ.get('GITHUB_REPOSITORY','');github_base_url(repository)
     if not token:raise ValueError('缺少 GitHub 自动提供的任务令牌')
+    _,sources=pipeline.configuration()
+    rules=pipeline.publication_rules()
+    if not strict_scope(rules) or snapshot_issues(read_json(ROOT/'dist/data.json'),sources,rules):
+        raise ValueError('公开快照未通过当前发布规则')
     def git(*args,env=None):return subprocess.run(['git',*args],cwd=ROOT,env=env,check=True,capture_output=True,text=True)
     snapshot='dist/data.json'
     git('add','--',snapshot)

@@ -5,11 +5,17 @@ import shutil
 import subprocess
 import zipfile
 from core import ROOT, log, now, read_json, run_lock, write_json
+from publication_policy import snapshot_issues
 
 def verify_release(folder=None):
     folder=folder or ROOT/'dist'
     manifest=read_json(folder/'release.json')
     if not manifest: raise ValueError('发布前请先运行 build；缺少 release.json')
+    rules=read_json(ROOT/'config/visibility.json')
+    if not isinstance(rules,dict):
+        raise ValueError('缺少有效发布规则，请重新构建')
+    issues=snapshot_issues(read_json(folder/'data.json'),read_json(ROOT/'config/sources.json',[]),rules)
+    if issues: raise ValueError('需要在当前规则下重新构建。'+'；'.join(issues))
     actual={str(p.relative_to(folder)).replace('\\','/') for p in folder.rglob('*') if p.is_file()}
     if actual!=set(manifest['files'])|{'release.json'}:
         raise ValueError('发布目录包含未登记文件或缺少文件，请重新 build')

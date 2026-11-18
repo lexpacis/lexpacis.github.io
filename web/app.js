@@ -2,6 +2,7 @@
 (() => {
   'use strict';
   const data = window.LEXATLAS_DATA;
+  const academicOnly = data?.publication_scope === 'academic_metadata';
   const page = document.getElementById('page-content');
   if (!data || !Array.isArray(data.items)) {
     page.textContent = '资讯数据未能加载。请确认 data.js 与网页位于同一目录，或重新运行 build。';
@@ -301,6 +302,13 @@
     if (focusNext) output.children[limit-pageSize]?.querySelector('.article-title')?.focus();
   }
   function rail() {
+    if (academicOnly) {
+      return `<aside class="rail research-rail" aria-label="研究工具">
+        <section class="rail-section"><div class="rail-heading"><h2>投稿导航</h2><a href="#/cfp">浏览 ↗</a></div><p>${data.cfp.journals.length} 种期刊的投稿入口</p></section>
+        <section class="rail-section"><div class="rail-heading"><h2>引注转换</h2><a href="#/cite">打开 ↗</a></div><p>由书目信息生成脚注</p></section>
+        <section class="rail-section rail-resource"><div class="rail-heading"><h2>来源与订阅</h2></div><a href="#/sources">书目信源 ↗</a><a href="feed.xml">订阅资料 RSS ↗</a></section>
+      </aside>`;
+    }
     const today=siteDay();
     const calls=(data.cfp?.calls||[]).filter(call=>call.kind!=='discovery'&&call.deadline>=today);
     calls.sort((a,b)=>a.deadline.localeCompare(b.deadline));
@@ -330,10 +338,24 @@
     return heading('信源目录','','查看来源机构、收录范围及最近访问状态。')+`<div class="source-summary"><div class="metric-block"><strong>${enabled}</strong><span>已启用入口</span></div><div class="metric-block"><strong>${good}</strong><span>最近采集成功</span></div><div class="metric-block"><strong>${data.sources.filter(s=>sourceStatus(s)==='error').length}</strong><span>最近访问异常</span></div><div class="metric-block"><strong>${data.sources.filter(s=>!s.enabled).length}</strong><span>候选或暂停</span></div></div><div class="source-grid">${data.sources.map(s=>{const status=sourceStatus(s);return `<article class="source-card"><div class="source-card-top"><h3>${e(s.name)}</h3><span class="status-pill ${status}">${statusName(status)}</span></div><div class="organization">${e(s.organization)}</div><p>${e(s.scope)}</p><dl><dt>来源类型</dt><dd>${e({official_institution:'官方机构',official_news_service:'官方机构新闻服务',academic_commentary:'学术评论平台',academic_society:'学术团体',scholarly_index:'学术元数据索引'}[s.authority]||s.authority)}</dd><dt>采集方式</dt><dd>${e(s.kind.toUpperCase())} · ${s.poll_hours} 小时最短间隔</dd><dt>当前收录</dt><dd>${s.item_count} 条</dd><dt>最近尝试</dt><dd>${e(localTime(s.attempted_at))}</dd><dt>最近成功</dt><dd>${e(localTime(s.success_at))}</dd></dl>${s.error?`<p class="source-error">最近异常：${e(s.error)}</p>`:''}<a class="text-button" href="${href(s.homepage)}" target="_blank" rel="noopener noreferrer">访问原始网站 ↗</a></article>`}).join('')}</div>`;
   }
   function aboutPage() {
-    const run=data.operations.last_run;
-    const effective=data.operations.last_effective_run;
-    const attempted=run&&(run.successes||run.failures);
-    return heading('为研究，建立清晰的起点。','ABOUT '+data.site.english_name.toUpperCase(),'一份可追溯的国际法资讯索引，也是一张持续生长的研究地图。')+`<div class="about-layout"><article class="prose"><h2>在分散的信息之间，找到联系。</h2><p>${e(data.site.name)}面向高校师生与学术研究者，连接国际法文献、官方资料、案件公告、学术评论与活动信息。平台保留原始标题、出处、时间与资料类型，帮助读者发现线索并回到原始来源。</p><h3>我们收录什么</h3><p>当前版本采集已配置期刊的 Crossref 元数据、学术平台 RSS 和部分官方新闻目录。不同来源的覆盖范围、最新成功时间与访问异常，可在信源目录逐一查看。本平台不承诺全球论文、全部判例或所有机构文件的完整覆盖。</p><h3>原文、元数据与 AI 整理</h3><p>标题、作者、DOI 等书目信息按来源保留。没有足够文本依据的条目，仅提供索引。AI 整理会明确标注依据；程序检查字段、证据片段和日期，但这些检查不能保证语义完全正确，也不替代原文核查。学者观点、官方主张与裁判认定应分别理解。</p><h3>时间如何理解</h3><p>原始发布日期与平台首次发现时间分开保存。来源只提供年份或月份时，保留该精度；日期未知时明确标注。活动公告的发布日期不作为活动日期，截止日期不被虚构为某个时区的午夜。</p><h3>自动运营与可迁移</h3><p>网站阅读、搜索与筛选不调用模型。采集、去重、构建与发布由独立程序完成；翻译和摘要可交给 WorkBuddy 或其他工具。模型额度不足时，元数据仍可更新，AI 任务等待后续处理。</p><h3>你的研究清单</h3><p>收藏保存在当前浏览器，不上传服务器，不会跨设备自动同步。你可以在“我的收藏”导出当前收藏的 JSON 文件。清除浏览器数据可能丢失收藏。</p><h3>公开输出</h3><p><a href="feed.xml">RSS 订阅</a> · <a href="calendar.ics">学术日历 ICS</a> · <a href="api/items.json">资料 JSON</a> · <a href="api/sources.json">信源状态 JSON</a>。这些输出与网页使用同一份发布数据；撤下条目后需重新发布，已被他人下载的副本无法自动收回。</p><h3>设计参考</h3><p>自动采集、筛选与摘要流程参考 <a href="https://github.com/KKKKhazix/AIHOT" target="_blank" rel="noopener noreferrer">AIHOT</a> 的思路。本版本为便于免费静态托管与跨工具交接，使用独立实现，不依赖其运行服务。</p></article><aside class="status-panel"><h3>本次发布状态</h3><p><strong>页面数据生成</strong>${e(localTime(data.generated_at))}</p><p><strong>最近一次采集结束</strong>${e(localTime(run?.finished_at))}</p><p><strong>本轮采集</strong>${attempted?`成功 ${run.successes} · 异常 ${run.failures}`:run?'本轮没有到期信源':'尚未运行'}</p>${!attempted&&effective?`<p><strong>上次实际采集</strong>${e(localTime(effective.finished_at))} · 成功 ${effective.successes} · 异常 ${effective.failures}</p>`:''}<p><strong>归档资料总数</strong>${data.operations.total_archived}</p><p><strong>当前导出上限</strong>${data.operations.visible_in_export} 条</p><p><strong>定时运营</strong>${e(data.operations.scheduler_note)}</p><p><strong>模型依赖</strong>阅读不消耗额度；日常更新可完全脱离 Codex。</p><a class="secondary-button" href="#/sources">查看信源详情 ↗</a></aside></div>`;
+    return heading('收录范围、隐私与纠错','','')+`<div class="about-layout">
+      <article class="prose">
+        <h2>资料范围</h2>
+        <p>${e(data.site.name)}面向高校师生和研究者。当前提供指定国际法期刊的书目索引、期刊投稿导航和引注工具。引用前请核对原始来源。</p>
+        <h3>隐私与外部服务</h3>
+        <p>浏览无需账号。收藏、引注清单和本地导入文件留在当前浏览器。你主动查 DOI 时，浏览器会向 Crossref 发送该 DOI。托管服务 GitHub Pages 会为安全目的记录访客 IP。</p>
+        <p><a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection" target="_blank" rel="noopener noreferrer">GitHub Pages 数据收集说明 ↗</a></p>
+        <h3>纠错与权利通知</h3>
+        <p>书目或链接有误，可报告本站条目地址或 DOI。公开工单请只填写必要的书目信息。涉及个人信息、保密材料或权利证明时，请使用托管方的私下报告渠道。</p>
+        <p><a href="https://github.com/lexpacis/lexpacis.github.io/issues/new" target="_blank" rel="noopener noreferrer">提交书目纠错 ↗</a> · <a href="https://support.github.com/contact/report-abuse" target="_blank" rel="noopener noreferrer">向托管方报告 ↗</a> · <a href="https://docs.github.com/en/site-policy/content-removal-policies/dmca-takedown-policy" target="_blank" rel="noopener noreferrer">版权通知 ↗</a></p>
+      </article>
+      <aside class="status-panel">
+        <h3>发布状态</h3>
+        <p><strong>数据生成时间</strong>${e(localTime(data.generated_at))}</p>
+        <p><strong>当前公开书目</strong>${data.items.length} 条</p>
+        <a class="secondary-button" href="#/sources">查看信源状态 ↗</a>
+      </aside>
+    </div>`;
   }
   function calendarView(result) {
     const start=new Date(calendarMonth.getFullYear(),calendarMonth.getMonth(),1);
@@ -369,19 +391,23 @@
         +'<div id="cite-module"><p role="status">正在加载本地引注组件…</p></div>';
       pageTitle='引注转换';
     }
-    else if(route==='cfp'){html=heading('CFP 征稿','','查看征稿公告、截止日期和中英文期刊投稿入口。')+'<div id="cfp-module">'+window.CFPWorkbench.render(data)+'</div>';pageTitle='CFP 征稿';}
+    else if(route==='cfp'){
+      pageTitle=academicOnly?'期刊投稿导航':'CFP 征稿';
+      const description=academicOnly?'查找中英文期刊的原始投稿入口。':'查看征稿公告、截止日期和中英文期刊投稿入口。';
+      html=heading(pageTitle,'',description)+'<div id="cfp-module">'+window.CFPWorkbench.render(data)+'</div>';
+    }
     else if(route==='sources'){html=sourcesPage();pageTitle='信源目录';}
     else if(route==='about'){html=aboutPage();pageTitle='关于与更新状态';}
     else if(route==='topics'){html=topicDirectory();pageTitle='研究专题';}
     else {
-      const descriptions={latest:'检索国际法文献、司法资料与学术活动。',research:'查看论文和著作的题名、作者、DOI 与出版信息。',events:'浏览会议、论坛和学术活动公告。',official:'查看原始机构公告和官方资料。',cases:'查看国际司法与仲裁机构发布的案件资料。',commentary:'查看学术平台的评论和讨论。',saved:'清除网站数据会删除收藏，清理前请先备份。'};
+      const descriptions={latest:academicOnly?'检索国际法期刊书目，使用投稿导航和引注工具。':'检索国际法文献、司法资料与学术活动。',research:'查看论文的题名、作者、DOI 与出版信息。',events:'浏览会议、论坛和学术活动公告。',official:'查看原始机构公告和官方资料。',cases:'查看国际司法与仲裁机构发布的案件资料。',commentary:'查看学术平台的评论和讨论。',saved:'清除网站数据会删除收藏，清理前请先备份。'};
       pageTitle=moduleNames[route] || (route==='saved'?'我的收藏':route==='topic'?(topicNames[params.get('id')] || '研究专题'):'国际法资料库');
       const calendar=params.get('view')==='calendar';
       const extra=route==='events'?`<div class="view-switch" role="group" aria-label="活动视图"><button data-view="list" aria-pressed="${!calendar}" class="${!calendar?'active':''}">公告列表</button><button data-view="calendar" aria-pressed="${calendar}" class="${calendar?'active':''}">学术日历</button></div>`:'';
       html=heading(pageTitle,'',descriptions[route] || '',extra);
       if(data.paused_modules?.includes(route)){
         html=heading(pageTitle,'','本站目前收录国际法学术资料。');
-        html+=empty('此栏目暂停发布','你仍可浏览学术文献、征稿与司法资料。','<a class="secondary-button" href="#/research">浏览学术文献 ↗</a>');
+        html+=empty('此栏目暂停发布','仍可使用书目检索、期刊投稿导航和引注工具。','<a class="secondary-button" href="#/research">浏览学术书目 ↗</a>');
         page.innerHTML=html;
         document.title=`${pageTitle} — ${data.site.name} ${data.site.english_name}`;
         return;
@@ -413,7 +439,11 @@
 
   document.getElementById('topic-nav').innerHTML=data.topics.map(t=>`<a href="${link('topic',{id:t.id})}" data-topic="${e(t.id)}"><span class="topic-dot"></span>${e(t.short)}</a>`).join('');
   document.getElementById('saved-count').textContent=saved.size;
-  document.querySelector('#main-nav [data-route="news"]').hidden=data.paused_modules?.includes('news')??false;
+  for (const link of document.querySelectorAll('[data-route]')) {
+    if (Object.hasOwn(moduleNames,link.dataset.route)) link.hidden=data.paused_modules?.includes(link.dataset.route)??false;
+    if (academicOnly&&link.dataset.route==='cfp') link.lastChild.textContent='投稿导航';
+  }
+  document.querySelector('[data-calendar-subscribe]').hidden=academicOnly;
   document.getElementById('footer-updated').textContent='数据生成 '+localTime(data.generated_at)+' · 原始资料版权归各来源';
   const navToggle=document.getElementById('nav-toggle');
   function setNavigation(open) {

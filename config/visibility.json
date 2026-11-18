@@ -1,8 +1,10 @@
 {
   "hidden_items": [],
   "hidden_sources": [],
-  "paused_modules": ["news"],
-  "paused_sources": ["wto"],
+  "publication_scope": "academic_metadata",
+  "paused_modules": ["news", "official", "cases", "commentary", "events"],
+  "paused_sources": [],
+  "automatic_updates_paused": false,
   "screen_china_related_materials": true,
   "note": "需撤下资料时填写条目 ID 或信源 ID，然后重新 build 和 publish。首页、详情、RSS、ICS、JSON 将同步排除；本地数据库保留以便追溯。"
 }

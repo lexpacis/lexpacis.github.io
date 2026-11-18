@@ -18,7 +18,21 @@ class CloudTests(unittest.TestCase):
         (self.root/'scripts').mkdir();(self.root/'scripts/safe.py').write_text('# source')
         self.patches=[patch.object(m,'ROOT',self.root) for m in (core,cloud,pipeline,cfp,rendering,security_audit)]
         for p in self.patches:p.start()
-        self.config,self.sources=pipeline.configuration();self.snapshot=core.read_json(self.root/'dist/data.json')
+        self.config,self.sources=pipeline.configuration()
+        rules=core.read_json(self.root/'config/visibility.json')
+        rules.pop('publication_scope',None)
+        rules['paused_modules']=['news']
+        core.write_json(self.root/'config/visibility.json',rules)
+        url='https://esil-sedi.eu/seminar-fixture'
+        self.snapshot={'items':[{
+            'id':core.identity(url),'source_id':'esil','title':'Seminar on treaty interpretation',
+            'url':url,'doi':'','module':'events','title_zh':'条约解释研讨会',
+            'summary_zh':'','authors':[],'bibliography':{},'topics':[],
+            'source_revision':'a'*64,'evidence_basis':'来源公告标题',
+            'published_at':'2026-03-14','date_precision':'day',
+            'discovered_at':'2026-03-14T00:00:00+00:00','updated_at':'2026-03-14T00:00:00+00:00',
+        }]}
+        core.write_json(self.root/'dist/data.json',self.snapshot)
     def tearDown(self):
         for p in reversed(self.patches):p.stop()
         self.temp.cleanup()

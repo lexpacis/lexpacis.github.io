@@ -185,8 +185,9 @@ def parse_crossref(data, source):
                 date,precision=date_from_parts(parts); break
         authors=[' '.join(filter(None,[a.get('given'),a.get('family')])) or a.get('name','') for a in item.get('author',[])]
         result.append({'title':title,'url':url,'doi':doi,'published_at':date,'date_precision':precision,
-                       'authors':[a for a in authors if a], 'evidence':'', 'evidence_basis':'书目元数据',
-                       'bibliography':{k:item.get(k) for k in ('container-title','volume','issue','page','type','publisher')}})
+                       'authors':[a for a in authors if a], 'evidence':plain(item.get('abstract')),
+                       'evidence_basis':'书目元数据',
+                       'bibliography':{k:item.get(k) for k in ('container-title','volume','issue','page','type','publisher','ISSN')}})
     return result
 
 class LinkParser(HTMLParser):
@@ -297,6 +298,8 @@ def database(root=ROOT):
         next_attempt_at TEXT);
       CREATE TABLE IF NOT EXISTS enrichments (
         item_id TEXT PRIMARY KEY, content_hash TEXT, payload TEXT, model TEXT, created_at TEXT);
+      CREATE TABLE IF NOT EXISTS publication_reviews (
+        item_id TEXT PRIMARY KEY, content_hash TEXT NOT NULL, policy_revision TEXT NOT NULL);
       CREATE TABLE IF NOT EXISTS attempts (
         item_id TEXT, batch_id TEXT, attempted_at TEXT, status TEXT, reason TEXT);
       CREATE TABLE IF NOT EXISTS batches (

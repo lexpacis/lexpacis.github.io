@@ -15,11 +15,13 @@
   function render(data) {
     source=data.cfp||{calls:[],journals:[]};
     topics=data.topics;
+    const directoryOnly=data.publication_scope==='academic_metadata';
+    if (directoryOnly) view='directory';
     return `<section class="cfp-workbench">
-      <div class="cfp-nav" role="group" aria-label="CFP 分类">
+      ${directoryOnly?'':`<div class="cfp-nav" role="group" aria-label="CFP 分类">
         ${views.map(([value,label])=>`<button type="button" data-cfp-view="${value}" aria-pressed="${view===value}" class="${view===value?'active':''}">${label}</button>`).join('')}
         <a class="text-button cfp-calendar-link" href="cfp.ics">截止日期 ICS ↗</a>
-      </div>
+      </div>`}
       <div class="cfp-toolbar">
         <label class="search-box"><span aria-hidden="true">⌕</span>
           <input id="cfp-search" type="search" aria-label="搜索期刊和征稿" placeholder="搜索刊名、主题或机构" value="${e(query)}">

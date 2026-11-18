@@ -10,7 +10,7 @@ import urllib.parse
 import urllib.request
 from core import ROOT, UTC, LinkParser, identity, log, now, parse_date, plain, read_json, safe_url, write_json
 from network_policy import validate_public_url, RestrictedRedirect
-from publication_policy import restricted_content
+from publication_policy import restricted_content, strict_scope
 
 KINDS={'journal_special','journal_notice','conference'}
 
@@ -22,6 +22,9 @@ def approved_targets():
     return journals,seeds,targets
 
 def refresh(config,force=False,limit=60):
+    if strict_scope(read_json(ROOT/'config/visibility.json',{})):
+        print('[cfp] 公开版只提供期刊投稿入口，未发起公告监测。')
+        return {'checked_this_run':0,'errors':0}
     journals,seeds,targets=approved_targets()
     state=read_json(ROOT/'runtime/cfp/state.json',{'pages':{}})
     hosts={urllib.parse.urlsplit(t['url']).hostname.lower() for t in targets}
@@ -110,9 +113,12 @@ def public_data(conn,main_items):
     journal_output=[]
     for journal in journals:
         if 'journal:'+journal['id'] in rules.get('hidden_items',[]):continue
-        page=state['pages'].get('journal:'+journal['id'],{})
+        page={} if strict_scope(rules) else state['pages'].get('journal:'+journal['id'],{})
         journal_output.append({**journal,'check_status':page.get('status','unverified'),'checked_at':page.get('checked_at'),
                                'success_at':page.get('success_at'),'error':'投稿入口暂未成功读取。' if page.get('error') else None,'changed':page.get('changed',False)})
+    if strict_scope(rules):
+        return {'journals':journal_output,'calls':[],'updated_at':None,
+                'coverage_note':'期刊目录提供出版机构或编辑部的投稿入口。征稿主题、范围与时间以期刊原始公告为准。'}
     calls=[]
     updates=read_json(ROOT/'runtime/cfp/accepted-calls.json',[])
     by_id={s['id']:s for s in seeds}

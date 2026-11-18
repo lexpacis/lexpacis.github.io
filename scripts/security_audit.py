@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import re
 from core import ROOT, read_json
+from publication_policy import snapshot_issues
 
 class AssetParser(HTMLParser):
     def __init__(self):super().__init__();self.errors=[]
@@ -33,6 +34,8 @@ def audit():
     except (ValueError,KeyError,OSError):issues.append('无法验证引注样式包')
     dist=ROOT/'dist'
     if not (dist/'index.html').exists():issues.append('尚未构建网站')
+    issues.extend(snapshot_issues(read_json(dist/'data.json'),read_json(ROOT/'config/sources.json',[]),
+                                 read_json(ROOT/'config/visibility.json',{})))
     for path in dist.rglob('*'):
         if path.is_symlink():
             issues.append('发布目录存在符号链接')

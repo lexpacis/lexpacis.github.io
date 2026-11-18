@@ -38,6 +38,7 @@ class NewsTests(unittest.TestCase):
     def test_import_is_idempotent_and_not_fetch_success(self):
         with tempfile.TemporaryDirectory(dir=ROOT/'runtime/test-temp') as temporary:
             root=Path(temporary);(root/'config').mkdir()
+            core.write_json(root/'config/visibility.json',{})
             core.write_json(root/'config/news-initial.json',{
                 'checked_method':'official_listing_read',
                 'listing_url':'https://www.ungeneva.org/en/news-media/news',

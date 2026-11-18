@@ -1,4 +1,5 @@
 import copy
+from contextlib import closing
 import json
 from pathlib import Path
 import socket
@@ -69,6 +70,8 @@ class FeatureWorkflowTests(unittest.TestCase):
         self.assertNotIn('cfp-ljil-law-society-2027',(self.root/'dist/cfp.ics').read_text(encoding='utf-8'))
         self.assertNotIn('cfp-ljil-law-society-2027',(self.root/'dist/api/cfp.json').read_text(encoding='utf-8'))
     def test_editorial_policy_covers_all_public_exports(self):
+        core.write_json(self.root/'config/visibility.json',{'paused_modules':['news'],'paused_sources':['wto'],
+                        'screen_china_related_materials':True})
         sources=core.read_json(self.root/'config/sources.json')
         by_id={source['id']:source for source in sources}
         entries=[
@@ -105,6 +108,57 @@ class FeatureWorkflowTests(unittest.TestCase):
                 self.assertNotIn(item_id,payload)
         for item_id in restricted_ids:
             self.assertFalse((self.root/'dist/items'/f'{item_id}.html').exists())
+    def test_strict_scope_requires_context_and_recognizes_regional_names(self):
+        import cloud
+        from publication_policy import snapshot_issues
+        sources=core.read_json(self.root/'config/sources.json')
+        source=next(s for s in sources if s['id']=='crossref-ejil')
+        acknowledged={'title':'Methods of interpreting treaty reservations','doi':'10.1234/article',
+                      'url':'https://doi.org/10.1234/article','authors':['A. Scholar'],'published_at':'2026-02-01',
+                      'evidence':'The article assesses interpretive methods used to evaluate the effects of multilateral treaty reservations.',
+                      'bibliography':{'type':'journal-article','ISSN':['0938-5428'],'container-title':['Academic journal']}}
+        cases=[
+            ('allowed',source,{}),
+            ('no-abstract',source,{'evidence':''}),
+            ('insufficient-context',source,{'evidence':'Abstract'}),
+            ('unlisted-context',source,{'evidence':acknowledged['evidence']+' The case concerns Kowloon.'}),
+            ('alternate-place-name',source,{'title':'Arbitration and public institutions in Lhasa'}),
+            ('traditional',source,{'title':'金門公法研究'}),
+            ('non-journal',source,{'bibliography':{'type':'report','ISSN':['0938-5428'],'container-title':['Academic journal']}}),
+            ('blog',next(s for s in sources if s['id']=='ejiltalk'),{}),
+            ('news',next(s for s in sources if s['id']=='un-geneva-press'),{}),
+            ('institution',next(s for s in sources if s['id']=='icj'),{}),
+        ]
+        for name,origin,overrides in cases:
+            doi='10.1234/'+name
+            core.upsert_item(self.conn,{**acknowledged,'doi':doi,'url':'https://doi.org/'+doi,**overrides},origin,self.config)
+        data=pipeline.build(self.conn,self.config,sources)
+        self.assertEqual([item['doi'] for item in data['items']],['10.1234/allowed'])
+        self.assertFalse(data['cfp']['calls'])
+        self.assertFalse(snapshot_issues(data,sources,pipeline.publication_rules()))
+        self.assertNotIn(acknowledged['evidence'],(self.root/'dist/data.js').read_text(encoding='utf-8'))
+        for path in ('feed.xml','sitemap.xml','api/items.json','api/cfp.json','calendar.ics','cfp.ics'):
+            exported=(self.root/'dist'/path).read_text(encoding='utf-8')
+            self.assertFalse(any('10.1234/'+name in exported for name,_,_ in cases[1:]))
+        with closing(core.database(self.root/'next-run')) as next_run:
+            cloud.restore_snapshot(next_run,data,self.config,sources)
+            self.assertEqual(len(pipeline.public_data(next_run,self.config,sources)['items']),1)
+            next_run.execute("UPDATE items SET content_hash=? WHERE id=?",('a'*64,data['items'][0]['id']))
+            self.assertEqual(pipeline.public_data(next_run,self.config,sources)['items'],[])
+    def test_strict_collection_never_requests_unapproved_sources(self):
+        sources=core.read_json(self.root/'config/sources.json')
+        called=[]
+        def fetch(source,config,state):
+            called.append(source['id'])
+            return b'{"message":{"items":[]}}',{}
+        with patch.object(pipeline,'http_fetch',side_effect=fetch):
+            pipeline.collect(self.conn,self.config,sources)
+        self.assertEqual(called,['crossref-ejil','crossref-ajil','crossref-ljil'])
+        rules=pipeline.publication_rules()
+        rules['automatic_updates_paused']=True
+        core.write_json(self.root/'config/visibility.json',rules)
+        with patch.object(pipeline,'http_fetch',side_effect=AssertionError('automatic fetch must stay paused')):
+            pipeline.collect(self.conn,self.config,sources,force=True)
     def test_output_path_restricted(self):
         path=self.root/'external-output.json';core.write_json(path,{'model':'fixture-only','calls':[self.call]})
         with self.assertRaises(ValueError):cfp.apply_updates(path)
