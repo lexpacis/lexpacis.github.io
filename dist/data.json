@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-18T20:22:03+00:00",
+  "generated_at": "2026-11-18T20:42:44+00:00",
   "site": {
     "name": "法域前沿",
     "english_name": "Lexpacis",
@@ -53,6 +53,11 @@
       "en": "ACADEMIC EVENTS"
     },
     {
+      "id": "cfp",
+      "name": "征稿公告",
+      "en": "CALLS FOR PAPERS"
+    },
+    {
       "id": "official",
       "name": "官方资料",
       "en": "OFFICIAL MATERIALS"
@@ -74,6 +79,862 @@
     }
   ],
   "items": [
+    {
+      "id": "50bbeb58a2b5e6791152",
+      "source_id": "anzsil-events",
+      "title": "ANZSIL Postgraduate Research Students Workshop 2027",
+      "url": "https://anzsil.org/event-6909014",
+      "doi": "",
+      "module": "events",
+      "published_at": "2027-02-11",
+      "date_precision": "day",
+      "discovered_at": "2026-11-18T20:42:33+00:00",
+      "updated_at": "2026-11-18T20:42:33+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "3ee46b7b068ff3962c49ebbb7ad86194666738cbb59a9b4af7418988192db8f0",
+      "topics": [],
+      "authors": [],
+      "bibliography": {
+        "notice_dates": {
+          "event": {
+            "date": "2027-06-29",
+            "date_text": "2027-06-29",
+            "label": "活动日期"
+          },
+          "deadline": null
+        }
+      },
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "anzsil-events",
+          "url": "https://anzsil.org/event-6909014",
+          "seen_at": "2026-11-18T20:42:33+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": {
+        "date": "2027-06-29",
+        "date_text": "2027-06-29",
+        "label": "活动日期"
+      },
+      "deadline": null,
+      "screened_policy": "1a76a4d6a785643ea6b030207dea69c0c49554e20b0fe61c53a600131687cbc7"
+    },
+    {
+      "id": "7d875416b9040c632227",
+      "source_id": "anzsil-events",
+      "title": "2027 ANZSIL IPSIG Annual Workshop | New Frontiers in International Peace and Security Law",
+      "url": "https://anzsil.org/event-6908964",
+      "doi": "",
+      "module": "events",
+      "published_at": "2026-12-15",
+      "date_precision": "day",
+      "discovered_at": "2026-11-18T20:42:33+00:00",
+      "updated_at": "2026-11-18T20:42:33+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "a5577cdd5ae114400b4fa6cc068ac3fcc8343cb004696f0b02d04c71262a9ece",
+      "topics": [],
+      "authors": [],
+      "bibliography": {
+        "notice_dates": {
+          "event": {
+            "date": "2027-02-11",
+            "date_text": "2027-02-11",
+            "label": "活动日期",
+            "end_date": "2027-02-12"
+          },
+          "deadline": {
+            "date": "2026-12-08",
+            "date_text": "2026-12-08",
+            "label": "投稿截止"
+          }
+        }
+      },
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "anzsil-events",
+          "url": "https://anzsil.org/event-6908964",
+          "seen_at": "2026-11-18T20:42:33+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": {
+        "date": "2027-02-11",
+        "date_text": "2027-02-11",
+        "label": "活动日期",
+        "end_date": "2027-02-12"
+      },
+      "deadline": {
+        "date": "2026-12-08",
+        "date_text": "2026-12-08",
+        "label": "投稿截止"
+      },
+      "screened_policy": "1a76a4d6a785643ea6b030207dea69c0c49554e20b0fe61c53a600131687cbc7"
+    },
+    {
+      "id": "99f9c795ff4d59efd5ef",
+      "source_id": "anzsil-events",
+      "title": "Transnational Legal Process, Cognition, and Context: ANZSIL Publication Prize Seminar",
+      "url": "https://anzsil.org/event-6887920",
+      "doi": "",
+      "module": "events",
+      "published_at": "2026-12-10",
+      "date_precision": "day",
+      "discovered_at": "2026-11-18T20:42:33+00:00",
+      "updated_at": "2026-11-18T20:42:33+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "7cc89f486c0e9764f4305dc9d3571d0516575a9f4afcb678582d0cc014391e52",
+      "topics": [],
+      "authors": [],
+      "bibliography": {
+        "notice_dates": {
+          "event": {
+            "date": "2026-12-10",
+            "date_text": "2026-12-10",
+            "label": "活动日期"
+          },
+          "deadline": null
+        }
+      },
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "anzsil-events",
+          "url": "https://anzsil.org/event-6887920",
+          "seen_at": "2026-11-18T20:42:33+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": {
+        "date": "2026-12-10",
+        "date_text": "2026-12-10",
+        "label": "活动日期"
+      },
+      "deadline": null,
+      "screened_policy": "1a76a4d6a785643ea6b030207dea69c0c49554e20b0fe61c53a600131687cbc7"
+    },
+    {
+      "id": "e64b8ea1a82ddfdcdd17",
+      "source_id": "anzsil-events",
+      "title": "ANZSIL Doctoral Network Webinar: Writing a Strong Abstract",
+      "url": "https://anzsil.org/event-6911454",
+      "doi": "",
+      "module": "events",
+      "published_at": "2026-12-10",
+      "date_precision": "day",
+      "discovered_at": "2026-11-18T20:42:33+00:00",
+      "updated_at": "2026-11-18T20:42:33+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "f201d01d3478b492f37eb06d9752700d2adff6acb52881ebc75b649b77f81482",
+      "topics": [],
+      "authors": [],
+      "bibliography": {
+        "notice_dates": {
+          "event": {
+            "date": "2026-12-15",
+            "date_text": "2026-12-15",
+            "label": "活动日期"
+          },
+          "deadline": null
+        }
+      },
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "anzsil-events",
+          "url": "https://anzsil.org/event-6911454",
+          "seen_at": "2026-11-18T20:42:33+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": {
+        "date": "2026-12-15",
+        "date_text": "2026-12-15",
+        "label": "活动日期"
+      },
+      "deadline": null,
+      "screened_policy": "1a76a4d6a785643ea6b030207dea69c0c49554e20b0fe61c53a600131687cbc7"
+    },
+    {
+      "id": "f514b3d4fe1c5dd1e2c3",
+      "source_id": "anzsil-events",
+      "title": "ANZSIL History and Theory of International Law Interest Group Workshop",
+      "url": "https://anzsil.org/event-6691480",
+      "doi": "",
+      "module": "events",
+      "published_at": "2026-11-27",
+      "date_precision": "day",
+      "discovered_at": "2026-11-18T20:42:33+00:00",
+      "updated_at": "2026-11-18T20:42:33+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "2bb5b348eb101f47d6021155238dba5bcf8d43b28cc4ccb55f733030069c13dd",
+      "topics": [
+        "theory"
+      ],
+      "authors": [],
+      "bibliography": {
+        "notice_dates": {
+          "event": {
+            "date": "2026-12-10",
+            "date_text": "2026-12-10",
+            "label": "活动日期"
+          },
+          "deadline": null
+        }
+      },
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "anzsil-events",
+          "url": "https://anzsil.org/event-6691480",
+          "seen_at": "2026-11-18T20:42:33+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": {
+        "date": "2026-12-10",
+        "date_text": "2026-12-10",
+        "label": "活动日期"
+      },
+      "deadline": null,
+      "screened_policy": "1a76a4d6a785643ea6b030207dea69c0c49554e20b0fe61c53a600131687cbc7"
+    },
+    {
+      "id": "e491583d83248a819b59",
+      "source_id": "cambridge-cfp-tel",
+      "title": "Transnational Environmental Law",
+      "url": "https://www.cambridge.org/core/journals/transnational-environmental-law/announcements/call-for-papers/the-future-of-transnational-environmental-law",
+      "doi": "",
+      "module": "cfp",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T20:42:44+00:00",
+      "updated_at": "2026-11-18T20:42:44+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "eab9ed3f8399df31ce69be6132b72185284fb917cdcde08e6127471aef3f9580",
+      "topics": [
+        "ocean-climate"
+      ],
+      "authors": [],
+      "bibliography": {
+        "notice_dates": {
+          "event": null,
+          "deadline": {
+            "date": "2026-04-13",
+            "date_text": "2026-04-13",
+            "label": "投稿截止"
+          }
+        }
+      },
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "cambridge-cfp-tel",
+          "url": "https://www.cambridge.org/core/journals/transnational-environmental-law/announcements/call-for-papers/the-future-of-transnational-environmental-law",
+          "seen_at": "2026-11-18T20:42:44+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": {
+        "date": "2026-04-13",
+        "date_text": "2026-04-13",
+        "label": "投稿截止"
+      },
+      "screened_policy": "1a76a4d6a785643ea6b030207dea69c0c49554e20b0fe61c53a600131687cbc7"
+    },
+    {
+      "id": "bb8ead59225dd73f2a87",
+      "source_id": "anzsil-events",
+      "title": "ANZSIL International Economic Law Interest Group Workshop",
+      "url": "https://anzsil.org/event-6824605",
+      "doi": "",
+      "module": "events",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T20:42:33+00:00",
+      "updated_at": "2026-11-18T20:42:33+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "b01ad6e68fb7bcaa406994798a22ab61282b182e84093354b8a2026ab13b0eb3",
+      "topics": [
+        "economic"
+      ],
+      "authors": [],
+      "bibliography": {
+        "notice_dates": {
+          "event": {
+            "date": "2026-11-27",
+            "date_text": "2026-11-27",
+            "label": "活动日期"
+          },
+          "deadline": null
+        }
+      },
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "anzsil-events",
+          "url": "https://anzsil.org/event-6824605",
+          "seen_at": "2026-11-18T20:42:33+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": {
+        "date": "2026-11-27",
+        "date_text": "2026-11-27",
+        "label": "活动日期"
+      },
+      "deadline": null,
+      "screened_policy": "1a76a4d6a785643ea6b030207dea69c0c49554e20b0fe61c53a600131687cbc7"
+    },
+    {
+      "id": "95bf9c0e74eaeacd4c9a",
+      "source_id": "mpil-events",
+      "title": "Fifth European Law Group Conference for Early Career Scholars 2026 Programme",
+      "url": "https://www.mpil.de/en/pub/news/conferences-workshops/fifth-european-law-group-confe.cfm",
+      "doi": "",
+      "module": "events",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T20:42:31+00:00",
+      "updated_at": "2026-11-18T20:42:31+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "21bc189f35c2b8078c205218c35b6c3d9f5a6b45dbb7b21dfd822de033f26240",
+      "topics": [],
+      "authors": [],
+      "bibliography": {
+        "notice_dates": {
+          "event": {
+            "date": "2026-09-17",
+            "date_text": "2026-09-17",
+            "label": "活动日期",
+            "end_date": "2026-09-18"
+          },
+          "deadline": null
+        }
+      },
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "mpil-events",
+          "url": "https://www.mpil.de/en/pub/news/conferences-workshops/fifth-european-law-group-confe.cfm",
+          "seen_at": "2026-11-18T20:42:31+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": {
+        "date": "2026-09-17",
+        "date_text": "2026-09-17",
+        "label": "活动日期",
+        "end_date": "2026-09-18"
+      },
+      "deadline": null,
+      "screened_policy": "1a76a4d6a785643ea6b030207dea69c0c49554e20b0fe61c53a600131687cbc7"
+    },
+    {
+      "id": "7229e972007e0e5044be",
+      "source_id": "mpil-events",
+      "title": "Refracting Lotus: Jurisdiction as a Kaleidoscope of International Law",
+      "url": "https://www.mpil.de/en/pub/news/conferences-workshops/refracting-lotus-jurisdiction.cfm",
+      "doi": "",
+      "module": "events",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T20:42:31+00:00",
+      "updated_at": "2026-11-18T20:42:31+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "994ae7d114cf34b4aa26bc9e3d0adc76aebd8ab276acb8c18859927fd8e1d518",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {
+        "notice_dates": {
+          "event": {
+            "date": "2027-02-25",
+            "date_text": "2027-02-25",
+            "label": "活动日期",
+            "end_date": "2027-02-26"
+          },
+          "deadline": {
+            "date": "2026-07-31",
+            "date_text": "2026-07-31",
+            "label": "投稿截止"
+          }
+        }
+      },
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "mpil-events",
+          "url": "https://www.mpil.de/en/pub/news/conferences-workshops/refracting-lotus-jurisdiction.cfm",
+          "seen_at": "2026-11-18T20:42:31+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": {
+        "date": "2027-02-25",
+        "date_text": "2027-02-25",
+        "label": "活动日期",
+        "end_date": "2027-02-26"
+      },
+      "deadline": {
+        "date": "2026-07-31",
+        "date_text": "2026-07-31",
+        "label": "投稿截止"
+      },
+      "screened_policy": "1a76a4d6a785643ea6b030207dea69c0c49554e20b0fe61c53a600131687cbc7"
+    },
+    {
+      "id": "080870a4e4e8d09031d8",
+      "source_id": "mpil-events",
+      "title": "Human Rights: Rising under Distress? The African Court at 20",
+      "url": "https://www.mpil.de/en/pub/news/conferences-workshops/human-rights-rising-under-dis.cfm",
+      "doi": "",
+      "module": "events",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T20:42:31+00:00",
+      "updated_at": "2026-11-18T20:42:31+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "1a254ab1dd69ccc1d5e590e80b76252e287d5f7da94e56ba1049a1867e09e2b3",
+      "topics": [
+        "rights"
+      ],
+      "authors": [],
+      "bibliography": {
+        "notice_dates": {
+          "event": {
+            "date": "2026-10-14",
+            "date_text": "2026-10-14",
+            "label": "活动日期"
+          },
+          "deadline": null
+        }
+      },
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "mpil-events",
+          "url": "https://www.mpil.de/en/pub/news/conferences-workshops/human-rights-rising-under-dis.cfm",
+          "seen_at": "2026-11-18T20:42:31+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": {
+        "date": "2026-10-14",
+        "date_text": "2026-10-14",
+        "label": "活动日期"
+      },
+      "deadline": null,
+      "screened_policy": "1a76a4d6a785643ea6b030207dea69c0c49554e20b0fe61c53a600131687cbc7"
+    },
+    {
+      "id": "2c9201b67819fded80ee",
+      "source_id": "mpil-events",
+      "title": "International Law and Emotions: Recovering Universality?",
+      "url": "https://www.mpil.de/en/pub/news/conferences-workshops/international-law-and-emotions.cfm",
+      "doi": "",
+      "module": "events",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T20:42:31+00:00",
+      "updated_at": "2026-11-18T20:42:31+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "1036dde4ece59ca8c5c5a466e51762a3e4c611c71e95903f7cd724b7d672f323",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "mpil-events",
+          "url": "https://www.mpil.de/en/pub/news/conferences-workshops/international-law-and-emotions.cfm",
+          "seen_at": "2026-11-18T20:42:31+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1a76a4d6a785643ea6b030207dea69c0c49554e20b0fe61c53a600131687cbc7"
+    },
+    {
+      "id": "8c6daf1708165ca6b2d9",
+      "source_id": "asil-events",
+      "title": "The Future of Indigenous Peoples’ Rights in the Twenty-First Century and the Rights of Nature in the Inter-American Legal Order",
+      "url": "https://asil.org/event/the-future-of-indigenous-peoples-rights-in-the-twenty-first-century-and-the-rights-of-nature-in-the-inter-american-legal-order/",
+      "doi": "",
+      "module": "events",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T20:42:27+00:00",
+      "updated_at": "2026-11-18T20:42:27+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "4f3ba7eff2f66064b109b712b9e98c0f331d98c49090e5aee0b300fb5d949080",
+      "topics": [],
+      "authors": [],
+      "bibliography": {
+        "notice_dates": {
+          "event": {
+            "date": "2026-11-18",
+            "date_text": "2026-11-18",
+            "label": "活动日期"
+          },
+          "deadline": null
+        }
+      },
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "asil-events",
+          "url": "https://asil.org/event/the-future-of-indigenous-peoples-rights-in-the-twenty-first-century-and-the-rights-of-nature-in-the-inter-american-legal-order/",
+          "seen_at": "2026-11-18T20:42:27+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": {
+        "date": "2026-11-18",
+        "date_text": "2026-11-18",
+        "label": "活动日期"
+      },
+      "deadline": null,
+      "screened_policy": "1a76a4d6a785643ea6b030207dea69c0c49554e20b0fe61c53a600131687cbc7"
+    },
+    {
+      "id": "7e2fa161326add85d252",
+      "source_id": "asil-events",
+      "title": "How States comply with ISDS awards: presentation of 2026 Compliance Report",
+      "url": "https://asil.org/event/2e0bff75/",
+      "doi": "",
+      "module": "events",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T20:42:27+00:00",
+      "updated_at": "2026-11-18T20:42:27+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "d64969c7dfc5ae8be2960f33b2c4151573a8fca272eece226f1fba2cd307947c",
+      "topics": [],
+      "authors": [],
+      "bibliography": {
+        "notice_dates": {
+          "event": {
+            "date": "2026-11-18",
+            "date_text": "2026-11-18",
+            "label": "活动日期"
+          },
+          "deadline": null
+        }
+      },
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "asil-events",
+          "url": "https://asil.org/event/2e0bff75/",
+          "seen_at": "2026-11-18T20:42:27+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": {
+        "date": "2026-11-18",
+        "date_text": "2026-11-18",
+        "label": "活动日期"
+      },
+      "deadline": null,
+      "screened_policy": "1a76a4d6a785643ea6b030207dea69c0c49554e20b0fe61c53a600131687cbc7"
+    },
+    {
+      "id": "04e2a24116d377b44348",
+      "source_id": "asil-events",
+      "title": "The U.S. Foreign Sovereign Immunities Act at 50: For Better or For Worse?",
+      "url": "https://asil.org/event/the-u-s-foreign-sovereign-immunities-act-at-50-for-better-or-for-worse/",
+      "doi": "",
+      "module": "events",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T20:42:27+00:00",
+      "updated_at": "2026-11-18T20:42:27+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "6f116fa83f3d19b377acac6a9090d1feb7246557eb21f2304d4a272373a8f97b",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {
+        "notice_dates": {
+          "event": {
+            "date": "2026-11-19",
+            "date_text": "2026-11-19",
+            "label": "活动日期"
+          },
+          "deadline": null
+        }
+      },
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "asil-events",
+          "url": "https://asil.org/event/the-u-s-foreign-sovereign-immunities-act-at-50-for-better-or-for-worse/",
+          "seen_at": "2026-11-18T20:42:27+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": {
+        "date": "2026-11-19",
+        "date_text": "2026-11-19",
+        "label": "活动日期"
+      },
+      "deadline": null,
+      "screened_policy": "1a76a4d6a785643ea6b030207dea69c0c49554e20b0fe61c53a600131687cbc7"
+    },
+    {
+      "id": "f7274b7e375d86b615a9",
+      "source_id": "asil-events",
+      "title": "Regulating Today’s Non-International Armed Conflicts: From Law to Practice: Launch of the book ‘The International Law of Non-International Armed Conflict’",
+      "url": "https://asil.org/event/regulating-todays-non-international-armed-conflicts-from-law-to-practice-launch-of-the-book-the-international-law-of-non-international-armed-conflict/",
+      "doi": "",
+      "module": "events",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T20:42:27+00:00",
+      "updated_at": "2026-11-18T20:42:27+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "47f76ab2278e66dbc785a31e96cfdc38321e0ba4f9b4232fdb3941a4cb918c87",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "asil-events",
+          "url": "https://asil.org/event/regulating-todays-non-international-armed-conflicts-from-law-to-practice-launch-of-the-book-the-international-law-of-non-international-armed-conflict/",
+          "seen_at": "2026-11-18T20:42:27+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1a76a4d6a785643ea6b030207dea69c0c49554e20b0fe61c53a600131687cbc7"
+    },
+    {
+      "id": "c9d5d7417b20a0da59ba",
+      "source_id": "asil-events",
+      "title": "International IP in Motion: Breaking Deadlocks in Traditional Knowledge and Copyright Reform",
+      "url": "https://asil.org/event/international-ip-in-motion-breaking-deadlocks-in-traditional-knowledge-and-copyright-reform/",
+      "doi": "",
+      "module": "events",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T20:42:27+00:00",
+      "updated_at": "2026-11-18T20:42:27+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "95f3a89246d7c2bcfae620d490a185306b756965cd4337f3752f3b94bdb46ab0",
+      "topics": [],
+      "authors": [],
+      "bibliography": {
+        "notice_dates": {
+          "event": {
+            "date": "2026-11-25",
+            "date_text": "2026-11-25",
+            "label": "活动日期"
+          },
+          "deadline": null
+        }
+      },
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "asil-events",
+          "url": "https://asil.org/event/international-ip-in-motion-breaking-deadlocks-in-traditional-knowledge-and-copyright-reform/",
+          "seen_at": "2026-11-18T20:42:27+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": {
+        "date": "2026-11-25",
+        "date_text": "2026-11-25",
+        "label": "活动日期"
+      },
+      "deadline": null,
+      "screened_policy": "1a76a4d6a785643ea6b030207dea69c0c49554e20b0fe61c53a600131687cbc7"
+    },
+    {
+      "id": "d32e5fc9f535be25980f",
+      "source_id": "asil-events",
+      "title": "Adventures and Misadventures in International Justice: A Discussion with Professor Michael Scharf",
+      "url": "https://asil.org/event/ad82140c/",
+      "doi": "",
+      "module": "events",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T20:42:27+00:00",
+      "updated_at": "2026-11-18T20:42:27+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "7ac7ec4e1503b87f33563b5eb764fffa56e21b0b86d1bb9e96db62a801cbfda3",
+      "topics": [],
+      "authors": [],
+      "bibliography": {
+        "notice_dates": {
+          "event": {
+            "date": "2026-12-01",
+            "date_text": "2026-12-01",
+            "label": "活动日期"
+          },
+          "deadline": null
+        }
+      },
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "asil-events",
+          "url": "https://asil.org/event/ad82140c/",
+          "seen_at": "2026-11-18T20:42:27+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": {
+        "date": "2026-12-01",
+        "date_text": "2026-12-01",
+        "label": "活动日期"
+      },
+      "deadline": null,
+      "screened_policy": "1a76a4d6a785643ea6b030207dea69c0c49554e20b0fe61c53a600131687cbc7"
+    },
+    {
+      "id": "d56c8b613a4aea255222",
+      "source_id": "esil-conferences",
+      "title": "2026 ESIL Annual Conference | “International Law and Conflict: An Enduring Tension?” | Registration now open",
+      "url": "https://esil-sedi.eu/2026-esil-annual-conference-registration/",
+      "doi": "",
+      "module": "events",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T20:42:10+00:00",
+      "updated_at": "2026-11-18T20:42:10+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "80140bb735db953e11b9db968f19ac5a865a43f2634da366bf49461914fb42b6",
+      "topics": [],
+      "authors": [],
+      "bibliography": {
+        "notice_dates": {
+          "event": {
+            "date": "2026-09-03",
+            "date_text": "2026-09-03",
+            "label": "活动日期",
+            "end_date": "2026-09-05"
+          },
+          "deadline": null
+        }
+      },
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "esil-conferences",
+          "url": "https://esil-sedi.eu/2026-esil-annual-conference-registration/",
+          "seen_at": "2026-11-18T20:42:10+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": {
+        "date": "2026-09-03",
+        "date_text": "2026-09-03",
+        "label": "活动日期",
+        "end_date": "2026-09-05"
+      },
+      "deadline": null,
+      "screened_policy": "1a76a4d6a785643ea6b030207dea69c0c49554e20b0fe61c53a600131687cbc7"
+    },
+    {
+      "id": "bbf8c349f690e4a2865b",
+      "source_id": "esil-conferences",
+      "title": "2026 ESIL Annual Conference on “International Law and Conflict: An Enduring Tension?” – Website and Call for submissions now available",
+      "url": "https://esil-sedi.eu/2026-esil-annual-conference-on-international-law-and-conflicts-an-enduring-tension-cfp/",
+      "doi": "",
+      "module": "events",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T20:42:10+00:00",
+      "updated_at": "2026-11-18T20:42:10+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "ee5f4b6d3df4eb83d2b44c64b32f1d0c75de447aa815a7ba8800b21ab81f5e68",
+      "topics": [],
+      "authors": [],
+      "bibliography": {
+        "notice_dates": {
+          "event": {
+            "date": "2026-09-03",
+            "date_text": "2026-09-03",
+            "label": "活动日期",
+            "end_date": "2026-09-05"
+          },
+          "deadline": {
+            "date": "2026-01-31",
+            "date_text": "2026-01-31",
+            "label": "摘要提交截止"
+          }
+        }
+      },
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "esil-conferences",
+          "url": "https://esil-sedi.eu/2026-esil-annual-conference-on-international-law-and-conflicts-an-enduring-tension-cfp/",
+          "seen_at": "2026-11-18T20:42:10+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": {
+        "date": "2026-09-03",
+        "date_text": "2026-09-03",
+        "label": "活动日期",
+        "end_date": "2026-09-05"
+      },
+      "deadline": {
+        "date": "2026-01-31",
+        "date_text": "2026-01-31",
+        "label": "摘要提交截止"
+      },
+      "screened_policy": "1a76a4d6a785643ea6b030207dea69c0c49554e20b0fe61c53a600131687cbc7"
+    },
     {
       "id": "8c8212c23672825c4b84",
       "source_id": "icj-pending",
@@ -582,7 +1443,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/esilrrr3dec/",
-          "seen_at": "2026-11-18T20:03:38+00:00"
+          "seen_at": "2026-11-18T20:41:58+00:00"
         }
       ],
       "title_zh": "",
@@ -1552,6 +2413,39 @@
       "screened_policy": "1a76a4d6a785643ea6b030207dea69c0c49554e20b0fe61c53a600131687cbc7"
     },
     {
+      "id": "3a44e7f9d4490121246c",
+      "source_id": "esil",
+      "title": "FAO International Law Day | 29 October 2026",
+      "url": "https://esil-sedi.eu/faointlawday/",
+      "doi": "",
+      "module": "events",
+      "published_at": "2026-10-23T06:48:11+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-18T20:41:58+00:00",
+      "updated_at": "2026-11-18T20:41:58+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "663b5d051c4ab04676e94ac4935284021f55b7506bc0d667708f0957ad50cc2e",
+      "topics": [],
+      "authors": [
+        "Walter Ilardi"
+      ],
+      "bibliography": {},
+      "material_type": "学会公告",
+      "provenance": [
+        {
+          "source_id": "esil",
+          "url": "https://esil-sedi.eu/faointlawday/",
+          "seen_at": "2026-11-18T20:41:58+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1a76a4d6a785643ea6b030207dea69c0c49554e20b0fe61c53a600131687cbc7"
+    },
+    {
       "id": "1edc7b39c5af2cb6c2ed",
       "source_id": "pca",
       "title": "Memorandum of Understanding between the Slovak MFA and the Slovak Bar Association in connection with PCA Host Country Agreement",
@@ -1770,27 +2664,50 @@
       "published_at": "2026-10-14T10:05:04+00:00",
       "date_precision": "instant",
       "discovered_at": "2026-11-18T18:43:53+00:00",
-      "updated_at": "2026-11-18T20:03:38+00:00",
+      "updated_at": "2026-11-18T20:41:58+00:00",
       "evidence_basis": "原文正文核对",
-      "source_revision": "f9dfb624e04b6cb2f07680f28ab4e4acb8510e504c65e88a77989ef818d9bc6a",
+      "source_revision": "65b3ecc2249adf7570b37a05e596a589330d1ec6873f1aadf57768e2763e0733",
       "topics": [],
       "authors": [
         "Walter Ilardi"
       ],
-      "bibliography": {},
+      "bibliography": {
+        "notice_dates": {
+          "event": {
+            "date": "2027-09-09",
+            "date_text": "2027-09-09",
+            "label": "活动日期",
+            "end_date": "2027-09-11"
+          },
+          "deadline": {
+            "date": "2027-01-31",
+            "date_text": "2027-01-31",
+            "label": "摘要提交截止"
+          }
+        }
+      },
       "material_type": "学会公告",
       "provenance": [
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/2027-esil-annual-conference/",
-          "seen_at": "2026-11-18T20:03:38+00:00"
+          "seen_at": "2026-11-18T20:41:58+00:00"
         }
       ],
       "title_zh": "",
       "summary_zh": "",
       "ai": null,
-      "event": null,
-      "deadline": null,
+      "event": {
+        "date": "2027-09-09",
+        "date_text": "2027-09-09",
+        "label": "活动日期",
+        "end_date": "2027-09-11"
+      },
+      "deadline": {
+        "date": "2027-01-31",
+        "date_text": "2027-01-31",
+        "label": "摘要提交截止"
+      },
       "screened_policy": "1a76a4d6a785643ea6b030207dea69c0c49554e20b0fe61c53a600131687cbc7"
     },
     {
@@ -2025,6 +2942,87 @@
       "screened_policy": "1a76a4d6a785643ea6b030207dea69c0c49554e20b0fe61c53a600131687cbc7"
     },
     {
+      "id": "f018f0240a34862c9125",
+      "source_id": "esil",
+      "title": "Call for Papers | International Law as a Strategic Weapon in Current Conflicts | 30 October 2026",
+      "url": "https://esil-sedi.eu/univalsev30oct/",
+      "doi": "",
+      "module": "events",
+      "published_at": "2026-10-02T08:54:49+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-18T20:41:58+00:00",
+      "updated_at": "2026-11-18T20:41:58+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "48139dbb72655890e559559285033ae7d9251c9b521154100671766308908db5",
+      "topics": [],
+      "authors": [
+        "Walter Ilardi"
+      ],
+      "bibliography": {
+        "notice_dates": {
+          "event": null,
+          "deadline": {
+            "date": "2026-10-30",
+            "date_text": "2026-10-30",
+            "label": "投稿截止"
+          }
+        }
+      },
+      "material_type": "学会公告",
+      "provenance": [
+        {
+          "source_id": "esil",
+          "url": "https://esil-sedi.eu/univalsev30oct/",
+          "seen_at": "2026-11-18T20:41:58+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": {
+        "date": "2026-10-30",
+        "date_text": "2026-10-30",
+        "label": "投稿截止"
+      },
+      "screened_policy": "1a76a4d6a785643ea6b030207dea69c0c49554e20b0fe61c53a600131687cbc7"
+    },
+    {
+      "id": "c1ad9892a30fe06beed9",
+      "source_id": "esil",
+      "title": "NUS Centre for International Law | The Right to a Safe, Stable and Healthy Climate: From Recognition to Realisation | 8 October 2026",
+      "url": "https://esil-sedi.eu/nus-event-8-oct/",
+      "doi": "",
+      "module": "events",
+      "published_at": "2026-10-02T08:10:40+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-18T20:41:58+00:00",
+      "updated_at": "2026-11-18T20:41:58+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "cc833856ad0c19c7b697c642c913d7c28014d7d63a8fbbf3bb4cced0cd19c88a",
+      "topics": [
+        "ocean-climate"
+      ],
+      "authors": [
+        "Walter Ilardi"
+      ],
+      "bibliography": {},
+      "material_type": "学会公告",
+      "provenance": [
+        {
+          "source_id": "esil",
+          "url": "https://esil-sedi.eu/nus-event-8-oct/",
+          "seen_at": "2026-11-18T20:41:58+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1a76a4d6a785643ea6b030207dea69c0c49554e20b0fe61c53a600131687cbc7"
+    },
+    {
       "id": "49074ec6ac9f9a26a633",
       "source_id": "esil",
       "title": "Join or renew your ESIL membership for 2027",
@@ -2047,7 +3045,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/join-or-renew-your-esil-membership-for-2027/",
-          "seen_at": "2026-11-18T20:03:38+00:00"
+          "seen_at": "2026-11-18T20:41:58+00:00"
         }
       ],
       "title_zh": "",
@@ -2732,6 +3730,39 @@
       "screened_policy": "1a76a4d6a785643ea6b030207dea69c0c49554e20b0fe61c53a600131687cbc7"
     },
     {
+      "id": "d85e448e3b23897df49f",
+      "source_id": "esil",
+      "title": "Brill | Nijhoff | Publications",
+      "url": "https://esil-sedi.eu/brill-nijhoff-publications/",
+      "doi": "",
+      "module": "events",
+      "published_at": "2026-08-29T15:27:25+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-18T20:41:58+00:00",
+      "updated_at": "2026-11-18T20:41:58+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "4ba549bd2fadaa95bd1f4814664fc1fd83612cb9876ebf713634728ed87a7524",
+      "topics": [],
+      "authors": [
+        "Walter Ilardi"
+      ],
+      "bibliography": {},
+      "material_type": "学会公告",
+      "provenance": [
+        {
+          "source_id": "esil",
+          "url": "https://esil-sedi.eu/brill-nijhoff-publications/",
+          "seen_at": "2026-11-18T20:41:58+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1a76a4d6a785643ea6b030207dea69c0c49554e20b0fe61c53a600131687cbc7"
+    },
+    {
       "id": "24101db62da1435239b2",
       "source_id": "china-mfa-statements",
       "title": "外交部发言人就日本政要参拜供奉甲级战犯的靖国神社答记者问",
@@ -3373,27 +4404,50 @@
       "published_at": "2026-05-12T08:44:52+00:00",
       "date_precision": "instant",
       "discovered_at": "2026-11-18T18:43:53+00:00",
-      "updated_at": "2026-11-18T20:03:38+00:00",
+      "updated_at": "2026-11-18T20:41:58+00:00",
       "evidence_basis": "原文正文核对",
-      "source_revision": "8e8fe50d1b219dbff4e8d068923023a54844f3a0ee81401cf2db66a2d6ad7c6f",
+      "source_revision": "76169dbb6cd04b55d8299e31a640f3dfee0a7ffd38717d690b2bab91a9266333",
       "topics": [],
       "authors": [
         "Walter Ilardi"
       ],
-      "bibliography": {},
+      "bibliography": {
+        "notice_dates": {
+          "event": {
+            "date": "2027-04-22",
+            "date_text": "2027-04-22",
+            "label": "活动日期",
+            "end_date": "2027-04-23"
+          },
+          "deadline": {
+            "date": "2026-09-30",
+            "date_text": "2026-09-30",
+            "label": "投稿截止"
+          }
+        }
+      },
       "material_type": "学会公告",
       "provenance": [
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/esilrf-2027/",
-          "seen_at": "2026-11-18T20:03:38+00:00"
+          "seen_at": "2026-11-18T20:41:58+00:00"
         }
       ],
       "title_zh": "",
       "summary_zh": "",
       "ai": null,
-      "event": null,
-      "deadline": null,
+      "event": {
+        "date": "2027-04-22",
+        "date_text": "2027-04-22",
+        "label": "活动日期",
+        "end_date": "2027-04-23"
+      },
+      "deadline": {
+        "date": "2026-09-30",
+        "date_text": "2026-09-30",
+        "label": "投稿截止"
+      },
       "screened_policy": "1a76a4d6a785643ea6b030207dea69c0c49554e20b0fe61c53a600131687cbc7"
     },
     {
@@ -3863,7 +4917,113 @@
       "language": "en",
       "review": {
         "candidates": 30,
+        "checked": 8,
+        "verified": 8,
+        "china_hold": 1,
+        "origin_hold": 0,
+        "body_hold": 0,
+        "access_hold": 0,
+        "unsupported_hold": 0,
+        "pdf_hold": 0,
+        "pending": 21,
+        "directory_count": 30,
+        "first_http_status": 0,
+        "cursor": "c1ad9892a30fe06beed9"
+      },
+      "feed_url": "https://esil-sedi.eu/feed/",
+      "status": "ok",
+      "attempted_at": "2026-11-18T20:41:58+00:00",
+      "success_at": "2026-11-18T20:41:58+00:00",
+      "error": null,
+      "consecutive_failures": 0,
+      "item_count": 8,
+      "next_attempt_at": null
+    },
+    {
+      "id": "esil-conferences",
+      "name": "欧洲国际法学会 · 年会与征文",
+      "organization": "European Society of International Law",
+      "homepage": "https://esil-sedi.eu/category/esil-annual-conferences/",
+      "kind": "html",
+      "module": "events",
+      "authority": "academic_society",
+      "enabled": true,
+      "poll_hours": 24,
+      "scope": "学会年会官方目录和原发征文，保留公告中的日期",
+      "language": "en",
+      "review": {
+        "candidates": 11,
         "checked": 4,
+        "verified": 3,
+        "china_hold": 0,
+        "origin_hold": 0,
+        "body_hold": 1,
+        "access_hold": 0,
+        "unsupported_hold": 0,
+        "pdf_hold": 0,
+        "pending": 7,
+        "directory_count": 11,
+        "first_http_status": 0,
+        "cursor": "bbf8c349f690e4a2865b"
+      },
+      "status": "ok",
+      "attempted_at": "2026-11-18T20:42:10+00:00",
+      "success_at": "2026-11-18T20:42:10+00:00",
+      "error": null,
+      "consecutive_failures": 0,
+      "item_count": 2,
+      "next_attempt_at": null
+    },
+    {
+      "id": "asil-events",
+      "name": "美国国际法学会 · 官方活动",
+      "organization": "American Society of International Law",
+      "homepage": "https://asil.org/events/",
+      "kind": "html",
+      "module": "events",
+      "authority": "academic_society",
+      "enabled": true,
+      "poll_hours": 12,
+      "scope": "学会活动目录，核对学会活动原页的日期和内容",
+      "language": "en",
+      "review": {
+        "candidates": 11,
+        "checked": 6,
+        "verified": 6,
+        "china_hold": 0,
+        "origin_hold": 0,
+        "body_hold": 0,
+        "access_hold": 0,
+        "unsupported_hold": 0,
+        "pdf_hold": 0,
+        "pending": 5,
+        "directory_count": 11,
+        "first_http_status": 0,
+        "cursor": "d32e5fc9f535be25980f"
+      },
+      "status": "ok",
+      "attempted_at": "2026-11-18T20:42:27+00:00",
+      "success_at": "2026-11-18T20:42:27+00:00",
+      "error": null,
+      "consecutive_failures": 0,
+      "item_count": 6,
+      "next_attempt_at": null
+    },
+    {
+      "id": "mpil-events",
+      "name": "海德堡马克斯·普朗克研究所 · 活动",
+      "organization": "Max Planck Institute for Comparative Public Law and International Law",
+      "homepage": "https://www.mpil.de/en/pub/news/conferences-workshops.cfm",
+      "kind": "html",
+      "module": "events",
+      "authority": "academic_society",
+      "enabled": true,
+      "poll_hours": 24,
+      "scope": "研究所原发会议与工作坊，原文有明确日期才加入日历",
+      "language": "en",
+      "review": {
+        "candidates": 7,
+        "checked": 5,
         "verified": 4,
         "china_hold": 1,
         "origin_hold": 0,
@@ -3871,15 +5031,155 @@
         "access_hold": 0,
         "unsupported_hold": 0,
         "pdf_hold": 0,
-        "pending": 25
+        "pending": 2,
+        "directory_count": 7,
+        "first_http_status": 0,
+        "cursor": "2c9201b67819fded80ee"
       },
-      "feed_url": "https://esil-sedi.eu/feed/",
       "status": "ok",
-      "attempted_at": "2026-11-18T20:03:38+00:00",
-      "success_at": null,
+      "attempted_at": "2026-11-18T20:42:31+00:00",
+      "success_at": "2026-11-18T20:42:31+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 4,
+      "next_attempt_at": null
+    },
+    {
+      "id": "anzsil-events",
+      "name": "澳大利亚和新西兰国际法学会 · 活动",
+      "organization": "Australian and New Zealand Society of International Law",
+      "homepage": "https://anzsil.org/events",
+      "kind": "html",
+      "module": "events",
+      "authority": "academic_society",
+      "enabled": true,
+      "poll_hours": 12,
+      "scope": "学会自己的活动和会议征文，核对原页活动日期及截止日期",
+      "language": "en",
+      "review": {
+        "candidates": 6,
+        "checked": 6,
+        "verified": 6,
+        "china_hold": 0,
+        "origin_hold": 0,
+        "body_hold": 0,
+        "access_hold": 0,
+        "unsupported_hold": 0,
+        "pdf_hold": 0,
+        "pending": 0,
+        "directory_count": 6,
+        "first_http_status": 0,
+        "cursor": "50bbeb58a2b5e6791152"
+      },
+      "status": "ok",
+      "attempted_at": "2026-11-18T20:42:33+00:00",
+      "success_at": "2026-11-18T20:42:33+00:00",
+      "error": null,
+      "consecutive_failures": 0,
+      "item_count": 6,
+      "next_attempt_at": null
+    },
+    {
+      "id": "cambridge-cfp-ljil",
+      "name": "Leiden Journal of International Law · 征稿",
+      "organization": "Cambridge University Press",
+      "homepage": "https://www.cambridge.org/core/journals/leiden-journal-of-international-law/announcements/call-for-papers",
+      "kind": "html",
+      "module": "cfp",
+      "authority": "academic_society",
+      "enabled": true,
+      "poll_hours": 24,
+      "scope": "期刊出版商正式征稿原文",
+      "language": "en",
+      "review": {
+        "candidates": 1,
+        "checked": 1,
+        "verified": 0,
+        "china_hold": 1,
+        "origin_hold": 0,
+        "body_hold": 0,
+        "access_hold": 0,
+        "unsupported_hold": 0,
+        "pdf_hold": 0,
+        "pending": 0,
+        "directory_count": 1,
+        "first_http_status": 0
+      },
+      "status": "ok",
+      "attempted_at": "2026-11-18T20:42:35+00:00",
+      "success_at": "2026-11-18T20:42:35+00:00",
+      "error": null,
+      "consecutive_failures": 0,
+      "item_count": 0,
+      "next_attempt_at": null
+    },
+    {
+      "id": "cambridge-cfp-ajil",
+      "name": "American Journal of International Law · 征稿",
+      "organization": "Cambridge University Press",
+      "homepage": "https://www.cambridge.org/core/journals/american-journal-of-international-law/announcements/call-for-papers",
+      "kind": "html",
+      "module": "cfp",
+      "authority": "academic_society",
+      "enabled": true,
+      "poll_hours": 24,
+      "scope": "出版商原发的 AJIL 与 AJIL Unbound 征稿",
+      "language": "en",
+      "review": {
+        "candidates": 2,
+        "checked": 2,
+        "verified": 1,
+        "china_hold": 1,
+        "origin_hold": 0,
+        "body_hold": 0,
+        "access_hold": 0,
+        "unsupported_hold": 0,
+        "pdf_hold": 0,
+        "pending": 0,
+        "directory_count": 2,
+        "first_http_status": 0,
+        "cursor": "fae3cec9df2f65e75009"
+      },
+      "status": "ok",
+      "attempted_at": "2026-11-18T20:42:43+00:00",
+      "success_at": "2026-11-18T20:42:43+00:00",
+      "error": null,
+      "consecutive_failures": 0,
+      "item_count": 0,
+      "next_attempt_at": null
+    },
+    {
+      "id": "cambridge-cfp-tel",
+      "name": "Transnational Environmental Law · 征稿",
+      "organization": "Cambridge University Press",
+      "homepage": "https://www.cambridge.org/core/journals/transnational-environmental-law/announcements/call-for-papers",
+      "kind": "html",
+      "module": "cfp",
+      "authority": "academic_society",
+      "enabled": true,
+      "poll_hours": 24,
+      "scope": "出版商的正式征稿与专题原文",
+      "language": "en",
+      "review": {
+        "candidates": 1,
+        "checked": 1,
+        "verified": 1,
+        "china_hold": 0,
+        "origin_hold": 0,
+        "body_hold": 0,
+        "access_hold": 0,
+        "unsupported_hold": 0,
+        "pdf_hold": 0,
+        "pending": 0,
+        "directory_count": 1,
+        "first_http_status": 0
+      },
+      "status": "ok",
+      "attempted_at": "2026-11-18T20:42:44+00:00",
+      "success_at": "2026-11-18T20:42:44+00:00",
+      "error": null,
+      "consecutive_failures": 0,
+      "item_count": 1,
       "next_attempt_at": null
     },
     {
@@ -4822,22 +6122,146 @@
     ],
     "calls": [
       {
-        "id": "cfp-item-b851d1f0ec639010b20e",
-        "parent_item_id": "b851d1f0ec639010b20e",
-        "title": "2027 ESIL Annual Conference on “International Law and Future(s)” | Call for Papers and Website",
-        "original_title": "2027 ESIL Annual Conference on “International Law and Future(s)” | Call for Papers and Website",
+        "id": "cfp-item-7d875416b9040c632227",
+        "parent_item_id": "7d875416b9040c632227",
+        "title": "2027 ANZSIL IPSIG Annual Workshop | New Frontiers in International Peace and Security Law",
+        "original_title": "2027 ANZSIL IPSIG Annual Workshop | New Frontiers in International Peace and Security Law",
+        "kind": "conference",
+        "journal_id": null,
+        "organization": "Australian and New Zealand Society of International Law",
+        "language": "en",
+        "url": "https://anzsil.org/event-6908964",
+        "description": "截止日期来自原始公告，请在提交前核对主办方的时区和最新要求。",
+        "deadline": "2026-12-08",
+        "deadline_text": "2026-12-08",
+        "deadline_label": "投稿截止",
+        "deadline_timezone": null,
+        "event_date": "2027-02-11",
+        "checked_at": "2026-11-18T20:42:33+00:00",
+        "verification": "primary_notice",
+        "topics": []
+      },
+      {
+        "id": "cfp-item-e491583d83248a819b59",
+        "parent_item_id": "e491583d83248a819b59",
+        "title": "Transnational Environmental Law",
+        "original_title": "Transnational Environmental Law",
+        "kind": "journal_special",
+        "journal_id": "tel",
+        "organization": "Cambridge University Press",
+        "language": "en",
+        "url": "https://www.cambridge.org/core/journals/transnational-environmental-law/announcements/call-for-papers/the-future-of-transnational-environmental-law",
+        "description": "截止日期来自原始公告，请在提交前核对主办方的时区和最新要求。",
+        "deadline": "2026-04-13",
+        "deadline_text": "2026-04-13",
+        "deadline_label": "投稿截止",
+        "deadline_timezone": null,
+        "event_date": null,
+        "checked_at": "2026-11-18T20:42:44+00:00",
+        "verification": "primary_notice",
+        "topics": [
+          "ocean-climate"
+        ]
+      },
+      {
+        "id": "cfp-item-7229e972007e0e5044be",
+        "parent_item_id": "7229e972007e0e5044be",
+        "title": "Refracting Lotus: Jurisdiction as a Kaleidoscope of International Law",
+        "original_title": "Refracting Lotus: Jurisdiction as a Kaleidoscope of International Law",
+        "kind": "conference",
+        "journal_id": null,
+        "organization": "Max Planck Institute for Comparative Public Law and International Law",
+        "language": "en",
+        "url": "https://www.mpil.de/en/pub/news/conferences-workshops/refracting-lotus-jurisdiction.cfm",
+        "description": "截止日期来自原始公告，请在提交前核对主办方的时区和最新要求。",
+        "deadline": "2026-07-31",
+        "deadline_text": "2026-07-31",
+        "deadline_label": "投稿截止",
+        "deadline_timezone": null,
+        "event_date": "2027-02-25",
+        "checked_at": "2026-11-18T20:42:31+00:00",
+        "verification": "primary_notice",
+        "topics": [
+          "disputes"
+        ]
+      },
+      {
+        "id": "cfp-item-bbf8c349f690e4a2865b",
+        "parent_item_id": "bbf8c349f690e4a2865b",
+        "title": "2026 ESIL Annual Conference on “International Law and Conflict: An Enduring Tension?” – Website and Call for submissions now available",
+        "original_title": "2026 ESIL Annual Conference on “International Law and Conflict: An Enduring Tension?” – Website and Call for submissions now available",
+        "kind": "conference",
+        "journal_id": null,
+        "organization": "European Society of International Law",
+        "language": "en",
+        "url": "https://esil-sedi.eu/2026-esil-annual-conference-on-international-law-and-conflicts-an-enduring-tension-cfp/",
+        "description": "截止日期来自原始公告，请在提交前核对主办方的时区和最新要求。",
+        "deadline": "2026-01-31",
+        "deadline_text": "2026-01-31",
+        "deadline_label": "摘要提交截止",
+        "deadline_timezone": null,
+        "event_date": "2026-09-03",
+        "checked_at": "2026-11-18T20:42:10+00:00",
+        "verification": "primary_notice",
+        "topics": []
+      },
+      {
+        "id": "cfp-item-023f5f16b369251ae665",
+        "parent_item_id": "023f5f16b369251ae665",
+        "title": "Announcements: CfP Polar Law Symposium; CfS International Water Law; CfP ANZSIL Annual Conference; CfA Vox Legis; CfP Informal International Law and Foreign Relations Law",
+        "original_title": "Announcements: CfP Polar Law Symposium; CfS International Water Law; CfP ANZSIL Annual Conference; CfA Vox Legis; CfP Informal International Law and Foreign Relations Law",
         "kind": "discovery",
         "journal_id": null,
-        "organization": "esil",
+        "organization": "ejiltalk",
         "language": "en",
-        "url": "https://esil-sedi.eu/2027-esil-annual-conference/",
+        "url": "https://www.ejiltalk.org/announcements-cfp-polar-law-symposium-cfs-international-water-law-cfp-anzsil-annual-conference-cfa-vox-legis-cfp-informal-international-law-and-foreign-relations-law/",
         "description": "来自已接通信源的征稿线索；尚未核对征稿对象、期限与出版安排。",
         "deadline": null,
         "deadline_text": null,
         "deadline_timezone": null,
         "event_date": null,
-        "checked_at": "2026-11-18T18:43:53+00:00",
+        "checked_at": "2026-11-18T20:03:04+00:00",
         "verification": "discovered_title",
+        "topics": []
+      },
+      {
+        "id": "cfp-item-b851d1f0ec639010b20e",
+        "parent_item_id": "b851d1f0ec639010b20e",
+        "title": "2027 ESIL Annual Conference on “International Law and Future(s)” | Call for Papers and Website",
+        "original_title": "2027 ESIL Annual Conference on “International Law and Future(s)” | Call for Papers and Website",
+        "kind": "conference",
+        "journal_id": null,
+        "organization": "European Society of International Law",
+        "language": "en",
+        "url": "https://esil-sedi.eu/2027-esil-annual-conference/",
+        "description": "截止日期来自原始公告，请在提交前核对主办方的时区和最新要求。",
+        "deadline": "2027-01-31",
+        "deadline_text": "2027-01-31",
+        "deadline_label": "摘要提交截止",
+        "deadline_timezone": null,
+        "event_date": "2027-09-09",
+        "checked_at": "2026-11-18T20:41:58+00:00",
+        "verification": "primary_notice",
+        "topics": []
+      },
+      {
+        "id": "cfp-item-f018f0240a34862c9125",
+        "parent_item_id": "f018f0240a34862c9125",
+        "title": "Call for Papers | International Law as a Strategic Weapon in Current Conflicts | 30 October 2026",
+        "original_title": "Call for Papers | International Law as a Strategic Weapon in Current Conflicts | 30 October 2026",
+        "kind": "conference",
+        "journal_id": null,
+        "organization": "European Society of International Law",
+        "language": "en",
+        "url": "https://esil-sedi.eu/univalsev30oct/",
+        "description": "截止日期来自原始公告，请在提交前核对主办方的时区和最新要求。",
+        "deadline": "2026-10-30",
+        "deadline_text": "2026-10-30",
+        "deadline_label": "投稿截止",
+        "deadline_timezone": null,
+        "event_date": null,
+        "checked_at": "2026-11-18T20:41:58+00:00",
+        "verification": "primary_notice",
         "topics": []
       },
       {
@@ -4845,47 +6269,48 @@
         "parent_item_id": "178c3d7f9b0e2157938e",
         "title": "2027 ESIL Research Forum | “The European Union, the Council of Europe, and Other Regional Organisations in a Changing World” | Call for Papers is now available",
         "original_title": "2027 ESIL Research Forum | “The European Union, the Council of Europe, and Other Regional Organisations in a Changing World” | Call for Papers is now available",
-        "kind": "discovery",
+        "kind": "conference",
         "journal_id": null,
-        "organization": "esil",
+        "organization": "European Society of International Law",
         "language": "en",
         "url": "https://esil-sedi.eu/esilrf-2027/",
-        "description": "来自已接通信源的征稿线索；尚未核对征稿对象、期限与出版安排。",
-        "deadline": null,
-        "deadline_text": null,
+        "description": "截止日期来自原始公告，请在提交前核对主办方的时区和最新要求。",
+        "deadline": "2026-09-30",
+        "deadline_text": "2026-09-30",
+        "deadline_label": "投稿截止",
         "deadline_timezone": null,
-        "event_date": null,
-        "checked_at": "2026-11-18T18:43:53+00:00",
-        "verification": "discovered_title",
+        "event_date": "2027-04-22",
+        "checked_at": "2026-11-18T20:41:58+00:00",
+        "verification": "primary_notice",
         "topics": []
       }
     ],
-    "updated_at": "2026-11-18T20:22:03+00:00",
-    "coverage_note": "人工建立的期刊入口目录 + 程序定期检查 + 已接通信源中的征稿线索。目录不是排名，不等于已覆盖各刊全部征稿；主页可读也不等于当前正在收稿。"
+    "updated_at": "2026-11-18T20:42:44+00:00",
+    "coverage_note": "常设投稿目录与正式征稿分别展示。程序逐条核对已接通信源的正式公告，无法确认的日期不会填入截止日。"
   },
   "operations": {
     "last_run": {
       "id": 1,
-      "started_at": "2026-11-18T20:22:02+00:00",
-      "finished_at": "2026-11-18T20:22:03+00:00",
-      "successes": 1,
+      "started_at": "2026-11-18T20:41:36+00:00",
+      "finished_at": "2026-11-18T20:42:44+00:00",
+      "successes": 8,
       "failures": 0,
-      "added": 1,
-      "changed": 0
+      "added": 29,
+      "changed": 2
     },
     "scheduler_enabled": true,
     "scheduled_run_verified": false,
     "last_effective_run": {
       "id": 1,
-      "started_at": "2026-11-18T20:22:02+00:00",
-      "finished_at": "2026-11-18T20:22:03+00:00",
-      "successes": 1,
+      "started_at": "2026-11-18T20:41:36+00:00",
+      "finished_at": "2026-11-18T20:42:44+00:00",
+      "successes": 8,
       "failures": 0,
-      "added": 1,
-      "changed": 0
+      "added": 29,
+      "changed": 2
     },
-    "scheduler_note": "最近一次云端运行：2026-11-18T20:22:03+00:00；触发方式：push。信源成功时间单独显示。",
-    "total_archived": 90,
-    "visible_in_export": 90
+    "scheduler_note": "最近一次云端运行：2026-11-18T20:42:44+00:00；触发方式：push。信源成功时间单独显示。",
+    "total_archived": 113,
+    "visible_in_export": 113
   }
 }
