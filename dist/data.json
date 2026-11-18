@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-18T21:22:29+00:00",
+  "generated_at": "2026-11-18T21:31:49+00:00",
   "site": {
     "name": "法域前沿",
     "english_name": "Lexpacis",
@@ -498,6 +498,403 @@
         "date_text": "2026-12-10",
         "label": "活动日期"
       },
+      "deadline": null,
+      "screened_policy": "69900c8fd6fbe5758e56d4dd411ea136c4f293de4cf43d9288b4c2c9a35ff25c"
+    },
+    {
+      "id": "3e184cff0fcdb0589d10",
+      "source_id": "ila-events",
+      "title": "International Law Weekend 2026",
+      "url": "https://www.ila-hq.org/en/events/international-law-weekend-2026",
+      "doi": "",
+      "module": "events",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T21:31:49+00:00",
+      "updated_at": "2026-11-18T21:31:49+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "e6393ce17f4fca16ea33c8c915721f8f411395da254880ebb8759e399c2276c5",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "ila-events",
+          "url": "https://www.ila-hq.org/en/events/international-law-weekend-2026",
+          "seen_at": "2026-11-18T21:31:49+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "69900c8fd6fbe5758e56d4dd411ea136c4f293de4cf43d9288b4c2c9a35ff25c"
+    },
+    {
+      "id": "a35b9b896b3237df15b7",
+      "source_id": "ila-events",
+      "title": "Careers in International Law: From Strategy to Success with Prof. Anna Spain Bradley",
+      "url": "https://www.ila-hq.org/en/events/careers-in-international-law-from-strategy-to-success-with-prof-anna-spain-bradley",
+      "doi": "",
+      "module": "events",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T21:31:49+00:00",
+      "updated_at": "2026-11-18T21:31:49+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "b9294a7f0d830454b622a433a7ed1a2c3653260ab6c91aac9a0fdb123b636472",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "ila-events",
+          "url": "https://www.ila-hq.org/en/events/careers-in-international-law-from-strategy-to-success-with-prof-anna-spain-bradley",
+          "seen_at": "2026-11-18T21:31:49+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "69900c8fd6fbe5758e56d4dd411ea136c4f293de4cf43d9288b4c2c9a35ff25c"
+    },
+    {
+      "id": "46f5853373d38fb0948d",
+      "source_id": "ila-events",
+      "title": "Official Presentation of the Kazakhstan Branch of the International Law Association",
+      "url": "https://www.ila-hq.org/en/events/official-presentation-of-the-kazakhstan-branch-of-the-international-law-association",
+      "doi": "",
+      "module": "events",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T21:31:49+00:00",
+      "updated_at": "2026-11-18T21:31:49+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "143e15f6547f8122d41de7c64b5527971fe71067d7da15f57b8cf84313e16e7b",
+      "topics": [],
+      "authors": [],
+      "bibliography": {
+        "notice_dates": {
+          "event": {
+            "date": "2026-09-10",
+            "date_text": "2026-09-10",
+            "label": "活动日期"
+          },
+          "deadline": null
+        }
+      },
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "ila-events",
+          "url": "https://www.ila-hq.org/en/events/official-presentation-of-the-kazakhstan-branch-of-the-international-law-association",
+          "seen_at": "2026-11-18T21:31:49+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": {
+        "date": "2026-09-10",
+        "date_text": "2026-09-10",
+        "label": "活动日期"
+      },
+      "deadline": null,
+      "screened_policy": "69900c8fd6fbe5758e56d4dd411ea136c4f293de4cf43d9288b4c2c9a35ff25c"
+    },
+    {
+      "id": "fbd794e5ccdc8ea46f36",
+      "source_id": "ila-events",
+      "title": "Conference: \"Evidence Matters Before Regional Human Rights Courts - The African Court in Critical and Comparative Perspective\"",
+      "url": "https://www.ila-hq.org/en/events/conference-evidence-matters-before-regional-human-rights-courts-the-african-court-in-critical-and-comparative-perspective",
+      "doi": "",
+      "module": "events",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T21:31:49+00:00",
+      "updated_at": "2026-11-18T21:31:49+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "10fbdbdd8cd5de3ad34373aca39e2fdc72e602c31eee54383e56a961fe28cd79",
+      "topics": [
+        "rights"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "ila-events",
+          "url": "https://www.ila-hq.org/en/events/conference-evidence-matters-before-regional-human-rights-courts-the-african-court-in-critical-and-comparative-perspective",
+          "seen_at": "2026-11-18T21:31:49+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "69900c8fd6fbe5758e56d4dd411ea136c4f293de4cf43d9288b4c2c9a35ff25c"
+    },
+    {
+      "id": "61f9c0200138787d3a6e",
+      "source_id": "ila-events",
+      "title": "Webinaire conjoint - \"Le discours de Davos du premier ministre Carney: quelles conséquences pour le droit international?\"",
+      "url": "https://www.ila-hq.org/en/events/webinaire-conjoint-le-discours-de-davos-du-premier-ministre-carney-quelles-consequences-pour-le-droit-international",
+      "doi": "",
+      "module": "events",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T21:31:49+00:00",
+      "updated_at": "2026-11-18T21:31:49+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "e48f8b6249c680bb85ae102edca701b12cde14be71cc39b996c33c438bde6f31",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "ila-events",
+          "url": "https://www.ila-hq.org/en/events/webinaire-conjoint-le-discours-de-davos-du-premier-ministre-carney-quelles-consequences-pour-le-droit-international",
+          "seen_at": "2026-11-18T21:31:49+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "69900c8fd6fbe5758e56d4dd411ea136c4f293de4cf43d9288b4c2c9a35ff25c"
+    },
+    {
+      "id": "96343fa2b1ba4484f60c",
+      "source_id": "au-treaties",
+      "title": "Protocol to the Agreement Establishing the African Continental Free Trade Area on Competition Policy",
+      "url": "https://au.int/en/treaties/protocol-agreement-establishing-african-continental-free-trade-area-competition-policy",
+      "doi": "",
+      "module": "official",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T21:31:44+00:00",
+      "updated_at": "2026-11-18T21:31:44+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "75f41a06913bfa12ce0c9ba060a310b88b6377d78e77854e20dbaf31e485b1e9",
+      "topics": [
+        "institutions",
+        "economic"
+      ],
+      "authors": [],
+      "bibliography": {
+        "type": "treaty",
+        "adopted": "2023-02-19",
+        "publisher": "African Union"
+      },
+      "material_type": "非洲联盟条约登记页",
+      "provenance": [
+        {
+          "source_id": "au-treaties",
+          "url": "https://au.int/en/treaties/protocol-agreement-establishing-african-continental-free-trade-area-competition-policy",
+          "seen_at": "2026-11-18T21:31:44+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "69900c8fd6fbe5758e56d4dd411ea136c4f293de4cf43d9288b4c2c9a35ff25c"
+    },
+    {
+      "id": "da696ebdd1534af0711e",
+      "source_id": "au-treaties",
+      "title": "Protocol to the Agreement Establishing the African Continental Free Trade Area on Digital Trade",
+      "url": "https://au.int/en/treaties/protocol-agreement-establishing-african-continental-free-trade-area-digital-trade-0",
+      "doi": "",
+      "module": "official",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T21:31:44+00:00",
+      "updated_at": "2026-11-18T21:31:44+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "fa0c0779b2d743ed6dec6d5e48677657f15cbb804c19994b875a1021c63b7297",
+      "topics": [
+        "institutions",
+        "economic"
+      ],
+      "authors": [],
+      "bibliography": {
+        "type": "treaty",
+        "adopted": "2024-02-18",
+        "publisher": "African Union"
+      },
+      "material_type": "非洲联盟条约登记页",
+      "provenance": [
+        {
+          "source_id": "au-treaties",
+          "url": "https://au.int/en/treaties/protocol-agreement-establishing-african-continental-free-trade-area-digital-trade-0",
+          "seen_at": "2026-11-18T21:31:44+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "69900c8fd6fbe5758e56d4dd411ea136c4f293de4cf43d9288b4c2c9a35ff25c"
+    },
+    {
+      "id": "97ade651afe01f3102b3",
+      "source_id": "au-treaties",
+      "title": "Protocol to the Agreement Establishing the African Continental Free Trade Area on Investment",
+      "url": "https://au.int/en/treaties/protocol-agreement-establishing-african-continental-free-trade-area-investment",
+      "doi": "",
+      "module": "official",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T21:31:44+00:00",
+      "updated_at": "2026-11-18T21:31:44+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "8fd11800fda91c5b78227b3c4bf6bf58f011cf89f2b88bbe3230603c12e8edf9",
+      "topics": [
+        "institutions",
+        "economic"
+      ],
+      "authors": [],
+      "bibliography": {
+        "type": "treaty",
+        "adopted": "2023-02-19",
+        "publisher": "African Union"
+      },
+      "material_type": "非洲联盟条约登记页",
+      "provenance": [
+        {
+          "source_id": "au-treaties",
+          "url": "https://au.int/en/treaties/protocol-agreement-establishing-african-continental-free-trade-area-investment",
+          "seen_at": "2026-11-18T21:31:44+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "69900c8fd6fbe5758e56d4dd411ea136c4f293de4cf43d9288b4c2c9a35ff25c"
+    },
+    {
+      "id": "6c31633b55bf6f13d48f",
+      "source_id": "au-treaties",
+      "title": "Protocol to the Agreement Establishing the African Continental Free Trade Area on Intellectual Property Rights",
+      "url": "https://au.int/en/treaties/protocol-agreement-establishing-african-continental-free-trade-area-intellectual-property",
+      "doi": "",
+      "module": "official",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T21:31:44+00:00",
+      "updated_at": "2026-11-18T21:31:44+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "70df2cfa3b2fb0029be7fbabc5e6d14bbb5242acda4c5a9bb30d968603e9b3f2",
+      "topics": [
+        "institutions",
+        "economic"
+      ],
+      "authors": [],
+      "bibliography": {
+        "type": "treaty",
+        "adopted": "2023-02-19",
+        "publisher": "African Union"
+      },
+      "material_type": "非洲联盟条约登记页",
+      "provenance": [
+        {
+          "source_id": "au-treaties",
+          "url": "https://au.int/en/treaties/protocol-agreement-establishing-african-continental-free-trade-area-intellectual-property",
+          "seen_at": "2026-11-18T21:31:44+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "69900c8fd6fbe5758e56d4dd411ea136c4f293de4cf43d9288b4c2c9a35ff25c"
+    },
+    {
+      "id": "6de12e46f64ff055671b",
+      "source_id": "au-treaties",
+      "title": "Protocol to the Agreement Establishing the African Continental Free Trade Area on Women and Youth in Trade",
+      "url": "https://au.int/en/treaties/protocol-agreement-establishing-african-continental-free-trade-area-women-and-youth-trade",
+      "doi": "",
+      "module": "official",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T21:31:44+00:00",
+      "updated_at": "2026-11-18T21:31:44+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "4c7c6b23347aa363e8852767f30cab5ea3a30e959cd0758b58b9b5bae8fd1349",
+      "topics": [
+        "institutions",
+        "economic"
+      ],
+      "authors": [],
+      "bibliography": {
+        "type": "treaty",
+        "adopted": "2024-02-18",
+        "publisher": "African Union"
+      },
+      "material_type": "非洲联盟条约登记页",
+      "provenance": [
+        {
+          "source_id": "au-treaties",
+          "url": "https://au.int/en/treaties/protocol-agreement-establishing-african-continental-free-trade-area-women-and-youth-trade",
+          "seen_at": "2026-11-18T21:31:44+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "69900c8fd6fbe5758e56d4dd411ea136c4f293de4cf43d9288b4c2c9a35ff25c"
+    },
+    {
+      "id": "2a66ea9f85598c747279",
+      "source_id": "au-treaties",
+      "title": "African Union Convention on Ending Violence Against Women and Girls.",
+      "url": "https://au.int/en/treaties/african-union-convention-ending-violence-against-women-and-girls",
+      "doi": "",
+      "module": "official",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-18T21:31:44+00:00",
+      "updated_at": "2026-11-18T21:31:44+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "ed27df9044620ce20691576deb23e6ea18e35a40e090ced376934b3ed41b559c",
+      "topics": [
+        "institutions"
+      ],
+      "authors": [],
+      "bibliography": {
+        "type": "treaty",
+        "adopted": "2025-02-10",
+        "publisher": "African Union"
+      },
+      "material_type": "非洲联盟条约登记页",
+      "provenance": [
+        {
+          "source_id": "au-treaties",
+          "url": "https://au.int/en/treaties/african-union-convention-ending-violence-against-women-and-girls",
+          "seen_at": "2026-11-18T21:31:44+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
       "deadline": null,
       "screened_policy": "69900c8fd6fbe5758e56d4dd411ea136c4f293de4cf43d9288b4c2c9a35ff25c"
     },
@@ -3165,6 +3562,43 @@
       "screened_policy": "69900c8fd6fbe5758e56d4dd411ea136c4f293de4cf43d9288b4c2c9a35ff25c"
     },
     {
+      "id": "32cf0b6107154b822256",
+      "source_id": "un-depositary",
+      "title": "International Covenant on Civil and Political Rights · Switzerland - Objection (CN.500.2026)",
+      "url": "https://treaties.un.org/doc/Publication/CN/2026/CN.500.2026-Eng.pdf",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-11-16",
+      "date_precision": "day",
+      "discovered_at": "2026-11-18T21:31:39+00:00",
+      "updated_at": "2026-11-18T21:31:39+00:00",
+      "evidence_basis": "官方 PDF 正文核对",
+      "source_revision": "a9789026bf71cdf6183bd968dd36f91fd7db516210cc0bee235e594c03c88679",
+      "topics": [
+        "institutions"
+      ],
+      "authors": [],
+      "bibliography": {
+        "type": "report",
+        "number": "CN.500.2026",
+        "publisher": "United Nations"
+      },
+      "material_type": "联合国条约保存人通知",
+      "provenance": [
+        {
+          "source_id": "un-depositary",
+          "url": "https://treaties.un.org/doc/Publication/CN/2026/CN.500.2026-Eng.pdf",
+          "seen_at": "2026-11-18T21:31:39+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "69900c8fd6fbe5758e56d4dd411ea136c4f293de4cf43d9288b4c2c9a35ff25c"
+    },
+    {
       "id": "689699f5b1547fd831d9",
       "source_id": "ejiltalk",
       "title": "Two Weeks in Review: 2—13 November 2026",
@@ -3448,6 +3882,117 @@
           "source_id": "cambridge-books",
           "url": "https://www.cambridge.org/core/books/corporate-war-profiteering-and-international-law/A2CD8C72A1A1F0227ACF8FEAC713EF18",
           "seen_at": "2026-11-18T21:21:27+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "69900c8fd6fbe5758e56d4dd411ea136c4f293de4cf43d9288b4c2c9a35ff25c"
+    },
+    {
+      "id": "b3803f1d62439f074fa0",
+      "source_id": "un-depositary",
+      "title": "Amendments to Articles 25 and 26 of the Convention on the Protection and Use of Transboundary Watercourses and International Lakes · Lesotho - Acceptance (CN.499.2026)",
+      "url": "https://treaties.un.org/doc/Publication/CN/2026/CN.499.2026-Eng.pdf",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-11-13",
+      "date_precision": "day",
+      "discovered_at": "2026-11-18T21:31:39+00:00",
+      "updated_at": "2026-11-18T21:31:39+00:00",
+      "evidence_basis": "官方 PDF 正文核对",
+      "source_revision": "84738f2038cda722ae21bc2b6be2e38404a526c75278e8b57399809710c9204f",
+      "topics": [
+        "institutions"
+      ],
+      "authors": [],
+      "bibliography": {
+        "type": "report",
+        "number": "CN.499.2026",
+        "publisher": "United Nations"
+      },
+      "material_type": "联合国条约保存人通知",
+      "provenance": [
+        {
+          "source_id": "un-depositary",
+          "url": "https://treaties.un.org/doc/Publication/CN/2026/CN.499.2026-Eng.pdf",
+          "seen_at": "2026-11-18T21:31:39+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "69900c8fd6fbe5758e56d4dd411ea136c4f293de4cf43d9288b4c2c9a35ff25c"
+    },
+    {
+      "id": "47bb504ec80800d72be8",
+      "source_id": "un-depositary",
+      "title": "Convention on the Protection and Use of Transboundary Watercourses and International Lakes · Lesotho - Accession (CN.498.2026)",
+      "url": "https://treaties.un.org/doc/Publication/CN/2026/CN.498.2026-Eng.pdf",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-11-13",
+      "date_precision": "day",
+      "discovered_at": "2026-11-18T21:31:39+00:00",
+      "updated_at": "2026-11-18T21:31:39+00:00",
+      "evidence_basis": "官方 PDF 正文核对",
+      "source_revision": "4d60b36dca875583e01eb0c5eaac23847aa6c5195aecde5b0c3594856e50f610",
+      "topics": [
+        "institutions"
+      ],
+      "authors": [],
+      "bibliography": {
+        "type": "report",
+        "number": "CN.498.2026",
+        "publisher": "United Nations"
+      },
+      "material_type": "联合国条约保存人通知",
+      "provenance": [
+        {
+          "source_id": "un-depositary",
+          "url": "https://treaties.un.org/doc/Publication/CN/2026/CN.498.2026-Eng.pdf",
+          "seen_at": "2026-11-18T21:31:39+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "69900c8fd6fbe5758e56d4dd411ea136c4f293de4cf43d9288b4c2c9a35ff25c"
+    },
+    {
+      "id": "df0d6e2b6ace205ae607",
+      "source_id": "un-depositary",
+      "title": "Convention on the measurement of inland navigation vessels · Formality - Acceptance of amendments (CN.492.2026)",
+      "url": "https://treaties.un.org/doc/Publication/CN/2026/CN.492.2026-Eng.pdf",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-11-13",
+      "date_precision": "day",
+      "discovered_at": "2026-11-18T21:31:39+00:00",
+      "updated_at": "2026-11-18T21:31:39+00:00",
+      "evidence_basis": "官方 PDF 正文核对",
+      "source_revision": "d52d1646cf79d946acc34be4315b7d3bab524b0359d70a1ac46d4c51bb4b2937",
+      "topics": [
+        "institutions"
+      ],
+      "authors": [],
+      "bibliography": {
+        "type": "report",
+        "number": "CN.492.2026",
+        "publisher": "United Nations"
+      },
+      "material_type": "联合国条约保存人通知",
+      "provenance": [
+        {
+          "source_id": "un-depositary",
+          "url": "https://treaties.un.org/doc/Publication/CN/2026/CN.492.2026-Eng.pdf",
+          "seen_at": "2026-11-18T21:31:39+00:00"
         }
       ],
       "title_zh": "",
@@ -3762,6 +4307,43 @@
           "source_id": "crossref-asianjil",
           "url": "https://doi.org/10.1017/s2044251326101337",
           "seen_at": "2026-11-18T21:20:45+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "69900c8fd6fbe5758e56d4dd411ea136c4f293de4cf43d9288b4c2c9a35ff25c"
+    },
+    {
+      "id": "ae5a5bdda188a0a22e7f",
+      "source_id": "un-depositary",
+      "title": "International Convention for the Suppression of the Financing of Terrorism · Canada - Objection (CN.494.2026)",
+      "url": "https://treaties.un.org/doc/Publication/CN/2026/CN.494.2026-Eng.pdf",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-11-10",
+      "date_precision": "day",
+      "discovered_at": "2026-11-18T21:31:39+00:00",
+      "updated_at": "2026-11-18T21:31:39+00:00",
+      "evidence_basis": "官方 PDF 正文核对",
+      "source_revision": "d4f7e1b4a94d6ba187c6fea064ea31005dae15f8367d99a3a1ba874993a5a4da",
+      "topics": [
+        "institutions"
+      ],
+      "authors": [],
+      "bibliography": {
+        "type": "report",
+        "number": "CN.494.2026",
+        "publisher": "United Nations"
+      },
+      "material_type": "联合国条约保存人通知",
+      "provenance": [
+        {
+          "source_id": "un-depositary",
+          "url": "https://treaties.un.org/doc/Publication/CN/2026/CN.494.2026-Eng.pdf",
+          "seen_at": "2026-11-18T21:31:39+00:00"
         }
       ],
       "title_zh": "",
@@ -10822,6 +11404,37 @@
       "screened_policy": "69900c8fd6fbe5758e56d4dd411ea136c4f293de4cf43d9288b4c2c9a35ff25c"
     },
     {
+      "id": "3c01f5594bc89eaaf740",
+      "source_id": "ila-events",
+      "title": "Joint Webinar - \"Prime Minister Carney’s Davos Speech: Implications for International Law\"",
+      "url": "https://www.ila-hq.org/en/events/joint-webinar-prime-minister-carneys-davos-speech-implications-for-international-law",
+      "doi": "",
+      "module": "events",
+      "published_at": "2026-03-25",
+      "date_precision": "day",
+      "discovered_at": "2026-11-18T21:31:49+00:00",
+      "updated_at": "2026-11-18T21:31:49+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "85fe1f6802bce5499d290d8c610fb77876d133ed5fcf2fb52d6b6f18ad14a216",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "ila-events",
+          "url": "https://www.ila-hq.org/en/events/joint-webinar-prime-minister-carneys-davos-speech-implications-for-international-law",
+          "seen_at": "2026-11-18T21:31:49+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "69900c8fd6fbe5758e56d4dd411ea136c4f293de4cf43d9288b4c2c9a35ff25c"
+    },
+    {
       "id": "6240080b31d8bbd5228d",
       "source_id": "crossref-amdi",
       "title": "Cadena global de los cuidados. Cuando lo personal se convirtió en global",
@@ -14022,6 +14635,111 @@
       "consecutive_failures": 1,
       "item_count": 0,
       "next_attempt_at": "2026-11-18T21:37:19+00:00"
+    },
+    {
+      "id": "un-depositary",
+      "name": "联合国条约汇编 · 保存人通知",
+      "organization": "United Nations Treaty Collection",
+      "homepage": "https://treaties.un.org/pages/Home.aspx?lang=en",
+      "kind": "html",
+      "module": "official",
+      "authority": "official_institution",
+      "enabled": true,
+      "poll_hours": 12,
+      "scope": "联合国秘书长作为保存人发布的最新通知，核对公告编号、事项、日期和原始 PDF",
+      "language": "en",
+      "review": {
+        "candidates": 5,
+        "checked": 5,
+        "verified": 5,
+        "china_hold": 0,
+        "origin_hold": 0,
+        "body_hold": 0,
+        "access_hold": 0,
+        "unsupported_hold": 0,
+        "pdf_hold": 0,
+        "pending": 0,
+        "directory_count": 5,
+        "first_http_status": 0,
+        "cursor": "ae5a5bdda188a0a22e7f"
+      },
+      "status": "ok",
+      "attempted_at": "2026-11-18T21:31:39+00:00",
+      "success_at": "2026-11-18T21:31:39+00:00",
+      "error": null,
+      "consecutive_failures": 0,
+      "item_count": 5,
+      "next_attempt_at": null
+    },
+    {
+      "id": "au-treaties",
+      "name": "非洲联盟 · 条约登记",
+      "organization": "African Union",
+      "homepage": "https://au.int/en/treaties",
+      "kind": "html",
+      "module": "official",
+      "authority": "official_institution",
+      "enabled": true,
+      "poll_hours": 24,
+      "scope": "非洲联盟条约登记逐项原页，保留通过日和文本导航",
+      "language": "en",
+      "review": {
+        "candidates": 80,
+        "checked": 7,
+        "verified": 6,
+        "china_hold": 0,
+        "origin_hold": 0,
+        "body_hold": 1,
+        "access_hold": 0,
+        "unsupported_hold": 0,
+        "pdf_hold": 0,
+        "pending": 73,
+        "directory_count": 80,
+        "first_http_status": 0,
+        "cursor": "2a66ea9f85598c747279"
+      },
+      "status": "ok",
+      "attempted_at": "2026-11-18T21:31:44+00:00",
+      "success_at": "2026-11-18T21:31:44+00:00",
+      "error": null,
+      "consecutive_failures": 0,
+      "item_count": 6,
+      "next_attempt_at": null
+    },
+    {
+      "id": "ila-events",
+      "name": "国际法协会 · 各地活动",
+      "organization": "International Law Association",
+      "homepage": "https://www.ila-hq.org/en/events",
+      "kind": "html",
+      "module": "events",
+      "authority": "academic_society",
+      "enabled": true,
+      "poll_hours": 24,
+      "scope": "总会或各地分会在国际法协会发布的会议与学术活动原页",
+      "language": "en",
+      "review": {
+        "candidates": 6,
+        "checked": 6,
+        "verified": 6,
+        "china_hold": 0,
+        "origin_hold": 0,
+        "body_hold": 0,
+        "access_hold": 0,
+        "unsupported_hold": 0,
+        "pdf_hold": 0,
+        "pending": 0,
+        "directory_count": 6,
+        "first_http_status": 0,
+        "cursor": "61f9c0200138787d3a6e"
+      },
+      "status": "ok",
+      "attempted_at": "2026-11-18T21:31:49+00:00",
+      "success_at": "2026-11-18T21:31:49+00:00",
+      "error": null,
+      "consecutive_failures": 0,
+      "item_count": 6,
+      "next_attempt_at": null
     }
   ],
   "cfp": {
@@ -15066,32 +15784,32 @@
         "topics": []
       }
     ],
-    "updated_at": "2026-11-18T21:22:29+00:00",
+    "updated_at": "2026-11-18T21:31:49+00:00",
     "coverage_note": "常设投稿目录与正式征稿分别展示。程序逐条核对已接通信源的正式公告，无法确认的日期不会填入截止日。"
   },
   "operations": {
     "last_run": {
       "id": 1,
-      "started_at": "2026-11-18T21:20:45+00:00",
-      "finished_at": "2026-11-18T21:22:19+00:00",
-      "successes": 27,
-      "failures": 1,
-      "added": 253,
+      "started_at": "2026-11-18T21:31:36+00:00",
+      "finished_at": "2026-11-18T21:31:49+00:00",
+      "successes": 3,
+      "failures": 0,
+      "added": 18,
       "changed": 0
     },
     "scheduler_enabled": true,
     "scheduled_run_verified": false,
     "last_effective_run": {
       "id": 1,
-      "started_at": "2026-11-18T21:20:45+00:00",
-      "finished_at": "2026-11-18T21:22:19+00:00",
-      "successes": 27,
-      "failures": 1,
-      "added": 253,
+      "started_at": "2026-11-18T21:31:36+00:00",
+      "finished_at": "2026-11-18T21:31:49+00:00",
+      "successes": 3,
+      "failures": 0,
+      "added": 18,
       "changed": 0
     },
-    "scheduler_note": "最近一次云端运行：2026-11-18T21:22:29+00:00；触发方式：push。信源成功时间单独显示。",
-    "total_archived": 291,
-    "visible_in_export": 291
+    "scheduler_note": "最近一次云端运行：2026-11-18T21:31:49+00:00；触发方式：push。信源成功时间单独显示。",
+    "total_archived": 308,
+    "visible_in_export": 308
   }
 }
