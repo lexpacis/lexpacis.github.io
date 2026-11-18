@@ -28,11 +28,21 @@
     }).catch(error=>{engineLoad=null;throw error;});
     return engineLoad;
   }
-  try{const stored=JSON.parse(localStorage.getItem('lexatlas.citations.v1')||'null');if(stored&&Array.isArray(stored.notes)){notes=stored.notes.slice(0,80).map(n=>({record:cleanRecord(n.record),locator:String(n.locator||'').slice(0,100),label:['page','paragraph','section','chapter','article'].includes(n.label)?n.label:'page'}));if(styles[stored.style])style=stored.style;}}catch{/* Corrupt or unavailable local storage does not block reading. */}
-  function text(v,max=4000){if(typeof v!=='string'&&typeof v!=='number')return '';const doc=new DOMParser().parseFromString(String(v),'text/html');return (doc.body.textContent||'').replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f]/g,'').trim().slice(0,max);}
+  try{const stored=JSON.parse(localStorage.getItem('lexatlas.citations.v1')||'null');if(stored&&Array.isArray(stored.notes)){notes=stored.notes.slice(0,80).map(n=>({record:cleanRecord(n.record),locator:String(n.locator||'').slice(0,100),label:['page','paragraph','section','chapter','article'].includes(n.label)?n.label:'page'}));if(Object.hasOwn(styles,stored.style))style=stored.style;}}catch{/* Corrupt or unavailable local storage does not block reading. */}
+  function markupTemplate(value){
+    const template=document.createElement('template');
+    template.innerHTML=value;
+    return template;
+  }
+  function text(v,max=4000){
+    if(typeof v!=='string'&&typeof v!=='number')return '';
+    const template=markupTemplate(String(v));
+    template.content.querySelectorAll('script,style,iframe').forEach(node=>node.remove());
+    return (template.content.textContent||'').replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f]/g,'').trim().slice(0,max);
+  }
   function cleanRecord(raw){
     if(!raw||typeof raw!=='object'||Array.isArray(raw))throw Error('每条书目需为 CSL JSON 对象。');
-    const out={type:types[raw.type]?raw.type:'article-journal'};
+    const out={type:Object.hasOwn(types,raw.type)?raw.type:'article-journal'};
     for(const key of ['title','container-title','container-title-short','title-short','volume','issue','page','publisher','publisher-place','edition','DOI','URL','language','number','authority','genre','status','collection-title','collection-number'])if(raw[key]!==undefined)out[key]=text(raw[key]);
     for(const role of ['author','editor','translator'])if(Array.isArray(raw[role]))out[role]=raw[role].slice(0,80).map(p=>{if(!p||typeof p!=='object')return {literal:''};const n={};for(const k of ['family','given','literal','suffix','non-dropping-particle'])if(p[k])n[k]=text(p[k],300);return n;}).filter(n=>n.family||n.literal||n.given);
     for(const key of ['issued','accessed']){
@@ -67,12 +77,12 @@
     return validDateParts(parts)?{'date-parts':[parts]}:undefined;
   }
   function sanitize(html){
-    const doc=new DOMParser().parseFromString(html,'text/html');
+    const template=markupTemplate(html);
     const allowed=new Set(['I','B','EM','STRONG','SPAN','SUP','SUB','SMALL','DIV']);
-    function visit(parent){for(const child of [...parent.children]){if(!allowed.has(child.tagName)){child.replaceWith(doc.createTextNode(child.textContent||''));continue;}const style=child.getAttribute('style')||'';for(const attr of [...child.attributes])child.removeAttribute(attr.name);if(style){const accepted=style.split(';').filter(s=>/^\s*(font-style\s*:\s*(italic|normal)|font-weight\s*:\s*(bold|normal)|font-variant\s*:\s*small-caps|vertical-align\s*:\s*(super|sub))\s*$/i.test(s));if(accepted.length)child.setAttribute('style',accepted.join(';'));}visit(child);}}
-    visit(doc.body);return doc.body.innerHTML;
+    function visit(parent){for(const child of [...parent.children]){if(!allowed.has(child.tagName)){child.replaceWith(document.createTextNode(child.textContent||''));continue;}const style=child.getAttribute('style')||'';for(const attr of [...child.attributes])child.removeAttribute(attr.name);if(style){const accepted=style.split(';').filter(s=>/^\s*(font-style\s*:\s*(italic|normal)|font-weight\s*:\s*(bold|normal)|font-variant\s*:\s*small-caps|vertical-align\s*:\s*(super|sub))\s*$/i.test(s));if(accepted.length)child.setAttribute('style',accepted.join(';'));}visit(child);}}
+    visit(template.content);return template.innerHTML;
   }
-  function plain(html){return new DOMParser().parseFromString(html,'text/html').body.textContent||'';}
+  function plain(html){return markupTemplate(html).content.textContent||'';}
   function format(list,styleId=style,first=start){
     if(!window.CSL||!window.LEXATLAS_CSL)throw Error('本地引注引擎未加载。请保留 vendor 文件夹。');
     const records={},ids=[],registry=new Map();

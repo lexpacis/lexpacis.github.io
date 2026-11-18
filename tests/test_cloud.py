@@ -85,12 +85,20 @@ class CloudTests(unittest.TestCase):
         for folder in ('runtime','.git','.openai'):
             (self.root/folder).mkdir(exist_ok=True);(self.root/folder/'private-secret.txt').write_text('fixture secret')
         (self.root/'.env').write_text('SECRET=fixture')
+        for folder,name in (('scripts','notes.py'),('config','notes.json'),('web/vendor','notes.txt')):
+            (self.root/folder/name).write_text('fixture secret')
         archive=cloud.export_source()
         with zipfile.ZipFile(archive) as z:
             names=z.namelist()
             self.assertIn('.github/workflows/metadata.yml',names)
             self.assertFalse(any(n.startswith(('runtime/','.git/','.openai/')) or n=='.env' for n in names))
             self.assertFalse(any('fixture secret' in z.read(n).decode('utf-8',errors='ignore') for n in names))
+    def test_build_ignores_unlisted_web_files(self):
+        (self.root/'web/vendor/private-notes.txt').write_text('fixture secret')
+        (self.root/'web/.env.local').write_text('fixture secret')
+        cloud.run(offline=True)
+        for path in ('vendor/private-notes.txt','.env.local'):
+            self.assertFalse((self.root/'dist'/path).exists())
     def test_pages_url_validation(self):
         self.assertEqual(cloud.github_base_url('Example/lexatlas'),'https://example.github.io/lexatlas')
         self.assertEqual(cloud.github_base_url('Example/Example.github.io'),'https://example.github.io')

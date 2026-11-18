@@ -105,7 +105,9 @@ def collect(conn,config,sources,force=False):
                 (source['id'],now(),'error',message,failures,retry_at))
             conn.commit(); stats['failures']+=1
             log('source_failure',source=source['id'],error=message,retry_at=retry_at)
-            print(f'  FAILED {message}',flush=True)
+            # Job logs are public. Store diagnostics only in the temporary runtime.
+            category=f'HTTP {error.code}' if isinstance(error,urllib.error.HTTPError) else type(error).__name__
+            print(f'  FAILED {category}',flush=True)
     conn.execute('INSERT INTO runs(started_at,finished_at,successes,failures,added,changed) VALUES(?,?,?,?,?,?)',
                  (started,now(),stats['successes'],stats['failures'],stats['added'],stats['changed']))
     conn.commit(); log('collection_complete',**stats)

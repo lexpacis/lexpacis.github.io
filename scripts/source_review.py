@@ -6,7 +6,7 @@ import urllib.request
 from urllib.parse import urljoin, urlsplit
 
 from core import parse_date, plain
-from network_policy import RestrictedRedirect, validate_public_url
+from network_policy import public_opener
 from publication_policy import OFFICIAL_SOURCES, article_origin, official_origin, restricted_content
 
 
@@ -143,8 +143,7 @@ def verify_entries(entries, source, config, rules):
             continue
         requests_left-=1
         try:
-            validate_public_url(url,{hostname})
-            opener=urllib.request.build_opener(urllib.request.ProxyHandler({}),RestrictedRedirect({hostname}))
+            opener=public_opener({hostname})
             request=urllib.request.Request(url,headers={'User-Agent':config['user_agent'],'Accept':'text/html'})
             with opener.open(request,timeout=min(config['fetch_timeout_seconds'],7)) as response:
                 if 'html' not in response.headers.get('Content-Type',''):

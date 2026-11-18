@@ -8,7 +8,11 @@ from pathlib import Path
 import sqlite3
 import tempfile
 import zipfile
-from core import ROOT, now, run_lock, write_json
+from core import ROOT, now, project_file, run_lock, write_json
+
+_PRIVATE_DIRS={'.git','.qa','.codex','.openai','.agents','.aws','__pycache__','node_modules','.venv',
+               'runtime','artifacts','dist.previous','.sites-workflow','.wrangler'}
+_PRIVATE_EXTENSIONS={'.pyc','.log','.zip','.pem','.key','.pfx','.p12'}
 
 def create_archive(state_only=False):
     output=ROOT/'artifacts';output.mkdir(exist_ok=True)
@@ -17,7 +21,7 @@ def create_archive(state_only=False):
     with run_lock(), tempfile.TemporaryDirectory(prefix='handoff-',dir=ROOT/'runtime') as temporary:
         snapshot=Path(temporary)/'lexatlas.sqlite3'
         source=ROOT/'runtime/lexatlas.sqlite3'
-        if source.exists():
+        if project_file(ROOT,source):
             with closing(sqlite3.connect(source)) as live, closing(sqlite3.connect(snapshot)) as backup:
                 live.backup(backup)
                 for batch,path in backup.execute('SELECT id,path FROM batches').fetchall():
@@ -29,18 +33,19 @@ def create_archive(state_only=False):
         with zipfile.ZipFile(destination,'w',zipfile.ZIP_DEFLATED) as archive:
             prefix=Path('lexatlas')
             if not state_only:
-                excluded={'.git','.qa','__pycache__','node_modules','.venv','runtime','artifacts','dist.previous','.sites-workflow','.wrangler'}
                 for path in ROOT.rglob('*'):
                     relative=path.relative_to(ROOT)
-                    if not path.is_file() or any(part in excluded or part.startswith('.dist-stage-') for part in relative.parts):continue
-                    if path.name.startswith('.env') or path.suffix in ('.pyc','.log','.zip') or path.name.endswith('.tar.gz'):continue
+                    if any(part in _PRIVATE_DIRS or part.startswith('.dist-stage-') for part in relative.parts):continue
+                    if path.name.startswith('.env') or path.suffix.lower() in _PRIVATE_EXTENSIONS or path.name.endswith('.tar.gz'):continue
+                    if not project_file(ROOT,path):continue
                     archive.write(path,str(prefix/relative))
             if snapshot.exists():archive.write(snapshot,str(prefix/'runtime/lexatlas.sqlite3'))
             for folder in ('workbuddy','cache','logs','cfp'):
                 directory=ROOT/'runtime'/folder
                 if directory.exists():
                     for path in directory.rglob('*'):
-                        if path.is_file():archive.write(path,str(prefix/path.relative_to(ROOT)))
+                        if project_file(ROOT,path) and not path.name.startswith('.env') and path.suffix.lower() not in _PRIVATE_EXTENSIONS:
+                            archive.write(path,str(prefix/path.relative_to(ROOT)))
             marker={'created_at':now(),'private_state_included':True,'codex_runtime_required':False,
                     'notice':'包含本机数据库、来源证据与模型任务，仅交付网站所有者；不要当作公开网站上传。'}
             archive.writestr(str(prefix/'HANDOFF-MANIFEST.json'),json.dumps(marker,ensure_ascii=False,indent=2))

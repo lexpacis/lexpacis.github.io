@@ -43,6 +43,11 @@ def atomic_write(path, content):
 def write_json(path, data):
     atomic_write(path, json.dumps(data, ensure_ascii=False, indent=2)+'\n')
 
+def project_file(root, path):
+    """Select a regular project file without following symbolic links."""
+    return (path.is_file() and path.resolve().is_relative_to(root.resolve())
+            and not any(parent.is_symlink() for parent in (path,*path.parents) if parent.is_relative_to(root)))
+
 def log(event, **data):
     folder = ROOT/'runtime'/'logs'
     folder.mkdir(parents=True, exist_ok=True)
@@ -338,16 +343,15 @@ def upsert_item(conn, entry, source, config):
     return 'changed' if existing else 'added'
 
 def http_fetch(source, config, state=None):
-    from network_policy import validate_public_url, RestrictedRedirect
+    from network_policy import public_opener
     hosts={urllib.parse.urlsplit(source['url']).hostname.lower(),*source.get('allowed_redirect_hosts',[])}
-    validate_public_url(source['url'],hosts)
     headers={'User-Agent':config['user_agent'],'Accept':'application/rss+xml, application/atom+xml, application/json, text/html;q=0.8, */*;q=0.5'}
     if state:
         if state['etag']: headers['If-None-Match']=state['etag']
         if state['last_modified']: headers['If-Modified-Since']=state['last_modified']
     request=urllib.request.Request(source['url'],headers=headers)
     try:
-        opener=urllib.request.build_opener(urllib.request.ProxyHandler({}),RestrictedRedirect(hosts))
+        opener=public_opener(hosts)
         with opener.open(request,timeout=config['fetch_timeout_seconds']) as response:
             if not safe_url(response.url): raise ValueError('不支持的重定向地址')
             data=response.read(config['max_fetch_bytes']+1)

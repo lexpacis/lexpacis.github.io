@@ -28,6 +28,19 @@ class NetworkPolicyTests(unittest.TestCase):
     def test_https_downgrade_rejected(self):
         request=urllib.request.Request('https://journal.example/')
         with self.assertRaises(ValueError):network_policy.RestrictedRedirect({'journal.example'}).redirect_request(request,None,302,'',{},'http://journal.example/')
+    def test_connection_uses_checked_socket_address(self):
+        addresses=self.result('8.8.8.8')
+        with patch.object(network_policy.socket,'getaddrinfo',return_value=addresses) as resolve:
+            with patch.object(network_policy.socket,'socket') as open_socket:
+                link=network_policy._connect_public(('journal.example',443),7,None)
+                link.connect.assert_called_once_with(('8.8.8.8',443))
+                open_socket.assert_called_once_with(socket.AF_INET,socket.SOCK_STREAM,6)
+            resolve.assert_called_once()
+    def test_collectors_reject_plaintext_before_dns(self):
+        with patch.object(network_policy.socket,'getaddrinfo') as resolve:
+            with self.assertRaises(ValueError):
+                network_policy.public_opener({'journal.example'}).open('http://journal.example/')
+            resolve.assert_not_called()
 
 class FeatureWorkflowTests(unittest.TestCase):
     def setUp(self):
@@ -181,7 +194,7 @@ class FeatureWorkflowTests(unittest.TestCase):
         repost_header={**repost,'url':repost['url'].replace('_456','_457')}
         missing_title={**repost,'url':repost['url'].replace('_456','_458')}
         mfa_meta='<meta name="SiteName" content="中华人民共和国外交部">'
-        with patch('source_review.validate_public_url',side_effect=OSError) as validate:
+        with patch('source_review.public_opener',side_effect=OSError) as validate:
             self.assertFalse(verify_entries([rss_item],foreign,config,rules))
             validate.assert_called_once()
         core.upsert_item(self.conn,rss_item,foreign,config)

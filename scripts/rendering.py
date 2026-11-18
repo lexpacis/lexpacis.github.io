@@ -8,9 +8,24 @@ from pathlib import Path
 import shutil
 import uuid
 import xml.etree.ElementTree as ET
-from core import ROOT, UTC, atomic_write, now, write_json
+from core import ROOT, UTC, atomic_write, now, project_file, read_json, write_json
 
 CONTENT_POLICY="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://api.crossref.org; object-src 'none'; base-uri 'none'; form-action 'none'"
+WEB_TEMPLATES=('index.html','cfp-policy.html','citation-credits.html','favicon.svg','app.js',
+               'citations.js','cfp.js','styles.css','tools.css','workspace.css','vendor/citation-styles.js')
+
+def web_files(root):
+    web=root/'web'
+    paths=[web/name for name in WEB_TEMPLATES]
+    for asset in read_json(root/'config/citation-assets.json',[]):
+        path=web/asset['file']
+        if not path.resolve().is_relative_to((web/'vendor').resolve()):
+            raise ValueError('引注依赖必须位于 vendor')
+        paths.append(path)
+    for path in paths:
+        if not project_file(root,path):
+            raise ValueError('缺少已登记的网页文件，或文件指向项目外')
+    return paths
 
 def x(value): return html.escape(str(value or ''),quote=True)
 
@@ -96,10 +111,10 @@ def safe_remove_release(path):
 def write_release(data):
     stage=ROOT/('.dist-stage-'+uuid.uuid4().hex[:8]); stage.mkdir()
     try:
-        for path in (ROOT/'web').iterdir():
-            if path.is_symlink():raise ValueError('网页资产不得使用符号链接')
-            if path.is_dir():shutil.copytree(path,stage/path.name)
-            elif path.is_file():shutil.copyfile(path,stage/path.name)
+        for path in web_files(ROOT):
+            target=stage/path.relative_to(ROOT/'web')
+            target.parent.mkdir(parents=True,exist_ok=True)
+            shutil.copyfile(path,target)
         replacements={'SITE_NAME':data['site']['name'],'ENGLISH_NAME':data['site']['english_name'],'TAGLINE':data['site']['tagline'],'DESCRIPTION':data['site']['description'],'BRAND_MARK':(data['site']['english_name'] or data['site']['name'])[0]}
         for html_file in stage.glob('*.html'):
             template=html_file.read_text(encoding='utf-8')

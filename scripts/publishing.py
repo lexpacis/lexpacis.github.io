@@ -4,7 +4,7 @@ import json
 import shutil
 import subprocess
 import zipfile
-from core import ROOT, log, now, read_json, run_lock, write_json
+from core import ROOT, log, now, project_file, read_json, run_lock, write_json
 from publication_policy import snapshot_issues
 
 def verify_release(folder=None):
@@ -20,8 +20,8 @@ def verify_release(folder=None):
     if actual!=set(manifest['files'])|{'release.json'}:
         raise ValueError('发布目录包含未登记文件或缺少文件，请重新 build')
     for name,expected in manifest['files'].items():
-        path=(folder/name).resolve()
-        if not path.is_relative_to(folder.resolve()) or not path.is_file(): raise ValueError('发布文件缺失或越界：'+name)
+        path=folder/name
+        if not project_file(folder,path): raise ValueError('发布文件缺失或越界：'+name)
         if hashlib.sha256(path.read_bytes()).hexdigest()!=expected: raise ValueError('发布文件发生变化，请重新 build：'+name)
     return manifest
 

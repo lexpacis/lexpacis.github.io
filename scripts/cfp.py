@@ -9,7 +9,7 @@ import threading
 import urllib.parse
 import urllib.request
 from core import ROOT, UTC, LinkParser, identity, log, now, parse_date, plain, read_json, safe_url, write_json
-from network_policy import validate_public_url, RestrictedRedirect
+from network_policy import public_opener
 from publication_policy import regional_scope, restricted_content, strict_scope
 
 KINDS={'journal_special','journal_notice','conference'}
@@ -31,9 +31,9 @@ def refresh(config,force=False,limit=60):
     journals,seeds,targets=approved_targets()
     if regional_scope(rules):
         targets=[target for target in targets if target['kind']=='journal']
+    targets=[target for target in targets if urllib.parse.urlsplit(target['url']).scheme=='https']
     state=read_json(ROOT/'runtime/cfp/state.json',{'pages':{}})
-    hosts={urllib.parse.urlsplit(t['url']).hostname.lower() for t in targets}
-    hosts.update(urllib.parse.urlsplit(j['homepage']).hostname.lower() for j in journals)
+    hosts={urllib.parse.urlsplit(t['url']).hostname for t in targets}
     due=[]
     for target in targets:
         old=state['pages'].get(target['id'],{})
@@ -47,8 +47,7 @@ def refresh(config,force=False,limit=60):
         url=target['url'];host=urllib.parse.urlsplit(url).hostname.lower()
         try:
             with locks[host]:
-                validate_public_url(url,hosts)
-                opener=urllib.request.build_opener(urllib.request.ProxyHandler({}),RestrictedRedirect(hosts))
+                opener=public_opener({host})
                 request=urllib.request.Request(url,headers={'User-Agent':config['user_agent'],'Accept':'text/html,application/xhtml+xml'})
                 with opener.open(request,timeout=min(config['fetch_timeout_seconds'],14)) as response:
                     content_type=response.headers.get('Content-Type','')
@@ -71,7 +70,9 @@ def refresh(config,force=False,limit=60):
             links=[]
             for link in parser.links:
                 candidate=safe_url(link['href'],url)
-                if candidate and urllib.parse.urlsplit(candidate).hostname.lower() in hosts and re.search(r'call for (?:paper|contribution|abstract)|special issue|征稿|征文|专题',link['title'],re.I):
+                if (candidate and urllib.parse.urlsplit(candidate).scheme=='https'
+                    and urllib.parse.urlsplit(candidate).hostname==host
+                    and re.search(r'call for (?:paper|contribution|abstract)|special issue|征稿|征文|专题',link['title'],re.I)):
                     links.append({'title':link['title'],'url':candidate})
             excerpt=text[:14000]
             record={'id':target['id'],'journal_id':target.get('journal_id'),'url':url,'checked_at':now(),'success_at':now(),'status':'identity_matched' if identified else 'reachable_unconfirmed',
@@ -90,7 +91,11 @@ def refresh(config,force=False,limit=60):
     follow=[];seen=set()
     for key,page in list(state['pages'].items()):
         if key not in parent_by_id or page.get('status')!='identity_matched':continue
+        origin=urllib.parse.urlsplit(parent_by_id[key]['url'])
         for link in page.get('links',[]):
+            destination=urllib.parse.urlsplit(link['url'])
+            if destination.scheme!='https' or destination.hostname!=origin.hostname:
+                continue
             link_id='discovered:'+identity(link['url'])
             previous=state['pages'].get(link_id,{})
             if link_id in seen or (not force and previous.get('checked_at') and previous['checked_at']>(dt.datetime.now(UTC)-dt.timedelta(days=7)).isoformat()):continue
@@ -119,6 +124,8 @@ def public_data(conn,main_items):
     for journal in journals:
         if 'journal:'+journal['id'] in rules.get('hidden_items',[]):continue
         page={} if strict_scope(rules) else state['pages'].get('journal:'+journal['id'],{})
+        if urllib.parse.urlsplit(journal['submissions_url']).scheme!='https':
+            page={'status':'https_unverified'}
         journal_output.append({**journal,'check_status':page.get('status','unverified'),'checked_at':page.get('checked_at'),
                                'success_at':page.get('success_at'),'error':'投稿入口暂未成功读取。' if page.get('error') else None,'changed':page.get('changed',False)})
     if strict_scope(rules):

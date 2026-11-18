@@ -10,9 +10,23 @@ import re
 import subprocess
 import tarfile
 import zipfile
-from core import ROOT, database, identity, now, plain, read_json, run_lock, safe_url, upsert_item, write_json
+from core import ROOT, database, identity, now, plain, project_file, read_json, run_lock, safe_url, upsert_item, write_json
 from publication_policy import SCOPE_REVISION, managed_scope, snapshot_issues, strict_scope
 import pipeline
+from rendering import web_files
+
+
+SOURCE_FILES = {
+    '.': ('README.md','package.json','.gitignore'),
+    '.github/workflows': ('metadata.yml',),
+    'config': ('cfp-output.schema.json','citation-assets.json','enrichment.schema.json','journals.json',
+               'site.json','sources.json','visibility.json'),
+    'docs': ('LEXPACIS_MANUAL.md',),
+    'dist': ('data.json',),
+    'scripts': ('cfp.py','cloud.py','core.py','handoff.py','manage.py','network_policy.py','news.py',
+                'pipeline.py','probe.py','publication_policy.py','publishing.py','rendering.py','security_audit.py','source_review.py'),
+    'tests': ('test_cloud.py','test_features.py','test_news.py','test_pipeline.py'),
+}
 
 
 def restore_snapshot(conn, snapshot, config, sources):
@@ -90,7 +104,7 @@ def restore_monitors(snapshot):
     public=snapshot.get('cfp',{})
     for row in public.get('journals',[]):
         key='journal:'+row['id']
-        if key in approved:
+        if key in approved and row.get('submissions_url')==approved[key]['url']:
             pages[key]={'id':key,'url':approved[key]['url'],'checked_at':row.get('checked_at'),
                         'success_at':row.get('success_at'),'status':row.get('check_status','unverified'),'error':row.get('error')}
     for row in public.get('calls',[]):
@@ -157,22 +171,16 @@ def export_source():
     _,sources=pipeline.configuration()
     issues=snapshot_issues(read_json(ROOT/'dist/data.json'),sources,pipeline.publication_rules())
     if issues:raise ValueError('请先构建符合当前规则的发布目录。'+'；'.join(issues))
-    folders=('scripts','config','web','tests','docs','dist','.github')
-    singles=('README.md','package.json','.gitignore')
     output=ROOT/'artifacts/LexAtlas-云端部署源码.zip';output.parent.mkdir(exist_ok=True)
     names=[]
+    paths=web_files(ROOT)
+    paths.extend(ROOT/folder/name for folder, files in SOURCE_FILES.items() for name in files)
     with zipfile.ZipFile(output,'w',zipfile.ZIP_DEFLATED) as archive:
-        for folder in folders:
-            for path in sorted((ROOT/folder).rglob('*')):
-                if not path.is_file() or path.is_symlink() or '__pycache__' in path.parts or path.suffix=='.pyc':continue
-                name=path.relative_to(ROOT).as_posix()
-                if '/.openai/' in name or path.name.startswith('.env'):continue
-                if folder=='docs' and name!='docs/LEXPACIS_MANUAL.md':continue
-                if name in ('config/news-initial.json','config/cfp-seeds.json'):continue
-                if folder=='dist' and name!='dist/data.json':continue
-                archive.write(path,name);names.append(name)
-        for name in singles:
-            if (ROOT/name).exists():archive.write(ROOT/name,name);names.append(name)
+        for path in paths:
+            if not project_file(ROOT,path):
+                continue
+            name=path.relative_to(ROOT).as_posix()
+            archive.write(path,name);names.append(name)
     digest=hashlib.sha256(output.read_bytes()).hexdigest()
     write_json(output.with_suffix('.sha256.json'),{'sha256':digest,'files':len(names),'private_runtime_included':False,'git_history_included':False})
     print(json.dumps({'archive':str(output),'sha256':digest,'files':len(names)},ensure_ascii=True));return output
