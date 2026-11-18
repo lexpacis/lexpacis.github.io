@@ -152,6 +152,11 @@ main#main { padding: 34px clamp(22px, 3.3vw, 48px) 0; }
 }
 .catalog-topics a { color: var(--ink); padding-block: 3px; text-decoration: underline; text-underline-offset: 3px; }
 .catalog-topics a:hover { color: var(--accent); }
+.event-source-picker { margin-top: 10px; color: var(--muted); font-size: 12px; }
+.event-source-picker summary { cursor: pointer; width: fit-content; padding-block: 3px; }
+.event-source-picker summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.event-source-picker .catalog-topics { margin-top: 4px; }
+.event-source-picker a[aria-current="true"] { color: var(--accent); font-weight: 600; }
 .catalog-filters {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(120px, 45%), 1fr));

@@ -10,6 +10,7 @@ import re
 import shutil
 import sys
 import urllib.error
+from urllib.parse import urlsplit
 import xml.etree.ElementTree as ET
 import uuid
 import webbrowser
@@ -51,8 +52,13 @@ def collect(conn,config,sources,force=False):
     rules=publication_rules()
     if rules.get('automatic_updates_paused'):
         return stats
+    rate_limited=set()
     for source in sources:
         if not source.get('enabled') or source_paused(source,rules): continue
+        host=urlsplit(source['url']).hostname
+        if host in rate_limited:
+            stats['skipped']+=1
+            continue
         state=conn.execute('SELECT * FROM source_state WHERE id=?',(source['id'],)).fetchone()
         if state and not force:
             if state['next_attempt_at'] and state['next_attempt_at']>now():
@@ -119,6 +125,8 @@ def collect(conn,config,sources,force=False):
             failures=(state['failures'] if state else 0)+1
             delay=min(24*3600,900*2**min(failures-1,6))
             if isinstance(error,urllib.error.HTTPError):
+                if error.code==429:
+                    rate_limited.add(host)
                 retry=error.headers.get('Retry-After','')
                 if retry.isdigit(): delay=max(delay,min(int(retry),7*86400))
                 else:
@@ -304,6 +312,10 @@ def public_data(conn,config,sources):
         item['source_revision']=row['content_hash']
         item.update(topics=json.loads(row['topics']),authors=json.loads(row['authors']),bibliography=json.loads(row['bibliography']))
         item['material_type']={'wto':'官方新闻','icj':'官方新闻稿索引','icj-pending':'国际法院待审案件页',
+                               'itlos-docket':'海洋法法庭案件页','ilc-reports':'国际法委员会年度报告目录',
+                               'afchpr-cases':'非洲人权和民族权法院案件公告','echr-press':'欧洲人权法院新闻稿',
+                               'iacthr-press':'美洲人权法院官方新闻稿',
+                               'cambridge-books':'出版商图书书目','opcw-news':'禁止化学武器组织官方公告',
                                'pca':'机构公告索引','esil':'学会公告'}.get(row['source_id'],
                               '书目元数据' if row['source_id'].startswith('crossref-') else '官方机构新闻报道' if next((s.get('authority') for s in sources if s['id']==row['source_id']),None)=='official_news_service' else '学术平台文章')
         provenance=[dict(p) for p in conn.execute('SELECT source_id,url,seen_at FROM provenance WHERE item_id=?',(row['id'],))]

@@ -222,6 +222,15 @@
       ${route==='latest'? `<nav class="catalog-topics" aria-label="浏览专题"><span>按专题浏览</span>
         ${data.topics.map(topic=>`<a href="${link('topic',{id:topic.id})}">${e(topic.short)}</a>`).join('')}
       </nav>`:''}
+      ${route==='events'&&sourcesInView.length>1?`<details class="event-source-picker">
+        <summary>按主办机构浏览 · ${sourcesInView.length} 个来源</summary>
+        <nav class="catalog-topics" aria-label="活动主办机构">
+          ${sourcesInView.map(source=>{
+            const selected=params.get('source')===source.id;
+            return `<a href="${link('events',{...Object.fromEntries(params),source:selected?'':source.id})}"${selected?' aria-current="true"':''}>${e(source.name.replace(/ · (?:官方)?活动$/, ''))}</a>`;
+          }).join('')}
+        </nav>
+      </details>`:''}
       <button type="button" class="catalog-filter-toggle" id="catalog-filter-toggle" aria-expanded="false" aria-controls="catalog-filter-panel">筛选与排序 <span aria-hidden="true">⌄</span></button>
       <div class="catalog-filters" id="catalog-filter-panel">
         <label>信源<select id="source-filter" class="filter-select">${options([['','全部信源'],...sourcesInView.map(s=>[s.id,s.name])],params.get('source')||'')}</select></label>

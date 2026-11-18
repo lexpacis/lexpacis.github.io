@@ -10,6 +10,7 @@ MONTH = (r'Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:
          r'Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?')
 DAY = rf'(?:20\d{{2}}-\d{{2}}-\d{{2}}|20\d{{2}}年\s*\d{{1,2}}月\s*\d{{1,2}}日|\d{{1,2}}\s+(?:{MONTH})\.?\s+20\d{{2}}|(?:{MONTH})\.?\s+\d{{1,2}},?\s+20\d{{2}})'
 SPAN = re.compile(rf'(?<!\d)(\d{{1,2}})\s*[-–—]\s*(\d{{1,2}})\s+({MONTH})\.?\s+(20\d{{2}})(?!\d)',re.I)
+MONTH_FIRST_SPAN = re.compile(rf'({MONTH})\.?\s+(\d{{1,2}})\s*[-–—]\s*(\d{{1,2}}),?\s+(20\d{{2}})',re.I)
 EXACT_DAY = re.compile(rf'(?<![\w/]){DAY}(?![\w/])',re.I)
 SUBMISSION = re.compile(r'call for (?:papers|abstracts|contributions|submissions)\b|\bCfP\b|征稿|征文',re.I)
 CANCELLED = re.compile(r'\b(?:event|conference|webinar|workshop)\s+(?:has been |is )?(?:cancelled|canceled|postponed)\b|活动取消|会议取消|活动延期|会议延期',re.I)
@@ -72,6 +73,11 @@ def event_date(body, structured=(), visible=()):
             date,end=day(f'{first} {month} {year}'),day(f'{last} {month} {year}')
             if date and end:
                 text_dates.add((date,end))
+        elif span:=MONTH_FIRST_SPAN.search(value):
+            month,first,last,year=span.groups()
+            date,end=day(f'{first} {month} {year}'),day(f'{last} {month} {year}')
+            if date and end:
+                text_dates.add((date,end))
         else:
             for match in EXACT_DAY.finditer(value):
                 date=day(match[0])
@@ -126,7 +132,7 @@ def submission_deadline(title,body):
     if not SUBMISSION.search(title+' '+body):
         return None
     abstract=(r'(?:abstract|proposal)s?\s+submission\s+deadline|(?:abstract|proposal)s?\s+must\s+be\s+submitted\s+by|'
-              r'(?:deadline\s+for\s+)?submission\s+of\s+(?:abstract|proposal)s?(?:\s*\([^)]{1,70}\))?|'
+              r'(?:deadline\s+for\s+)?submission\s+of\s+(?:an?\s+(?:\d{2,4}[- ]word\s+)?)?(?:abstract|proposal)s?(?:\s*\([^)]{1,70}\)|\s+for either articles or case notes)?|'
               r'(?:abstract|proposal)s?\s+(?:are\s+)?due|(?:摘要|提案)(?:提交|投稿)?截止(?:日期|时间)?')
     general=(r'submissions?\s+deadline|deadline\s+for\s+submissions|'
              r'submissions?\s+(?:should|must)\s+be\s+(?:emailed|sent)\s+to\s+[\w.+-]+@[\w.-]+\s+by(?:\s+no\s+later\s+than)?|'

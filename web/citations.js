@@ -7,6 +7,7 @@
     'chinese-law':{name:'《法学引注手册》第二版 · 社区 CSL',note:'采用 Zotero 中文社区的多语言、完整重复引注、标注页码样式。中文文献请选 zh-CN；英文文献选 en。社区实现不等于官方认证，复杂判例等仍需对照原规范。',url:'https://zotero-chinese.com/styles/法学引注手册（第二版，多语言，重复引用不省略，标注页码）/'},
     oscola:{name:'OSCOLA 第 4 版 · CSL',note:'这是已固定的第 4 版样式。牛津已发布第 5 版；本工具不把旧样式冒称为第 5 版。若目标刊物要求第 5 版，请对照其现行规范。',url:'https://www.law.ox.ac.uk/oscola'},
     bluebook:{name:'Bluebook Law Review · CSL',note:'使用公开 CSL 的 Bluebook Law Review 实现。复杂司法辖区、法律缩写和目标期刊的特殊要求需要复核；不声称完整实现某一版 Bluebook。',url:'https://github.com/citation-style-language/styles/blob/master/bluebook-law-review.csl'},
+    aglc:{name:'AGLC 第 4 版 · CSL',note:'采用澳大利亚法律引注指南第 4 版的社区样式。判例及条约引注请对照原指南核对。',url:'https://law.unimelb.edu.au/mulr/aglc/about'},
     chicago:{name:'Chicago 第 18 版 · 脚注与书目',note:'采用公开 CSL 的 Chicago 18th notes and bibliography 样式。清单按实际顺序计算再引，不自动将论文起始页当作你引用的具体页码。',url:'https://github.com/citation-style-language/styles/blob/master/chicago-notes-bibliography.csl'}
   };
   const fresh=()=>({type:'article-journal',language:'en',author:[],title:''});
@@ -43,7 +44,7 @@
   function cleanRecord(raw){
     if(!raw||typeof raw!=='object'||Array.isArray(raw))throw Error('每条书目需为 CSL JSON 对象。');
     const out={type:Object.hasOwn(types,raw.type)?raw.type:'article-journal'};
-    for(const key of ['title','container-title','container-title-short','title-short','volume','issue','page','publisher','publisher-place','edition','DOI','URL','language','number','authority','genre','status','collection-title','collection-number'])if(raw[key]!==undefined)out[key]=text(raw[key]);
+    for(const key of ['title','container-title','container-title-short','title-short','volume','issue','page','publisher','publisher-place','edition','DOI','ISBN','URL','language','number','authority','genre','status','collection-title','collection-number'])if(raw[key]!==undefined)out[key]=text(raw[key]);
     for(const role of ['author','editor','translator'])if(Array.isArray(raw[role]))out[role]=raw[role].slice(0,80).map(p=>{if(!p||typeof p!=='object')return {literal:''};const n={};for(const k of ['family','given','literal','suffix','non-dropping-particle'])if(p[k])n[k]=text(p[k],300);return n;}).filter(n=>n.family||n.literal||n.given);
     for(const key of ['issued','accessed']){
       const parts=raw[key]?.['date-parts']?.[0];
@@ -55,10 +56,11 @@
   }
   function hash(s){let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619);}return (h>>>0).toString(16);}
   function fromItem(item){
-    const b=item.bibliography||{};let type=item.module==='research'?'article-journal':item.source_id==='icj'?'report':'webpage';
+    const b=item.bibliography||{};
+    const type=b.type==='book'?'book':b.type==='report'||item.source_id==='icj'?'report':item.module==='research'?'article-journal':'webpage';
     const date=item.published_at?.slice(0,10).split('-').map(Number);
     return cleanRecord({type,title:item.title,author:(item.authors||[]).map(n=>parseName(n)),DOI:item.doi,URL:item.url,language:/[\u3400-\u9fff]/.test(item.title)?'zh-CN':'en',
-      'container-title':(b['container-title']||[])[0],volume:b.volume,issue:b.issue,page:b.page,publisher:b.publisher,issued:date?{'date-parts':[date]}:undefined});
+      'container-title':(b['container-title']||[])[0],volume:b.volume,issue:b.issue,page:b.page,publisher:b.publisher,ISBN:b.ISBN,issued:date?{'date-parts':[date]}:undefined});
   }
   function parseName(n){n=text(n,300);if(n.includes(',')){const [family,...rest]=n.split(',');return {family:family.trim(),given:rest.join(',').trim()};}if(/[\u3400-\u9fff]/.test(n))return {literal:n};const bits=n.split(/\s+/);return bits.length>1?{family:bits.pop(),given:bits.join(' ')}:{literal:n};}
   function names(v){return v.split(/[;；\n]/).map(s=>s.trim()).filter(Boolean).map(parseName);}

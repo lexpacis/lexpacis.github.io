@@ -160,6 +160,21 @@ def parse_feed(data, source):
         if not title or not url: continue
         if source.get('feed_article_host') and urllib.parse.urlsplit(url).netloc!=source['feed_article_host']:
             continue
+        if source['id']=='un-news-global':
+            parts=urllib.parse.urlsplit(url)
+            path=re.fullmatch(r'(?:/feed/view)?(/en/story/20\d{2}/\d{2}/\d+)',parts.path)
+            if not path or parts.scheme!='https' or parts.netloc!='news.un.org':
+                continue
+            # The official RSS article links redirect to the same canonical story.
+            url='https://news.un.org'+path[1]
+        if source['id']=='echr-press':
+            parts=urllib.parse.urlsplit(url)
+            identifier=re.fullmatch(r'i=(003-\d+-\d+)',parts.query)
+            if parts.netloc!='hudoc.echr.coe.int' or parts.path!='/eng-press' or not identifier:
+                continue
+            url='https://hudoc.echr.coe.int/app/conversion/pdf/?id='+identifier[1]+'&library=ECHR'
+        if source.get('link_pattern') and not re.fullmatch(source['link_pattern'],urllib.parse.urlsplit(url).path):
+            continue
         date,precision=parse_date(child_text(item,('pubDate','published','date','updated')))
         author=plain(child_text(item,('creator','author')))
         full=plain(child_text(item,('encoded',)))
@@ -223,6 +238,8 @@ def parse_listing(data, source):
         return parse_icj(data,source)
     if source.get('adapter')=='un_geneva_news':
         return parse_news_listing(data,source)
+    if source.get('adapter')=='iacthr_press':
+        return parse_iacthr_press(data,source)
     parser=LinkParser(); parser.feed(data.decode('utf-8',errors='replace'))
     result=[]; seen=set()
     pattern=re.compile(source['link_pattern'])
@@ -236,6 +253,25 @@ def parse_listing(data, source):
         result.append({'title':title,'url':url,'published_at':date,'date_precision':precision,
                        'authors':[],'evidence':'','evidence_basis':'官方目录标题','doi':''})
     return result
+
+def parse_iacthr_press(data,source):
+    markup=data.decode('utf-8',errors='replace')
+    sections=re.split(r'<h4\b[^>]*>(.*?)</h4>',markup,flags=re.I|re.S)
+    entries=[]
+    for title,row in zip(sections[1::2],sections[2::2]):
+        title=plain(title)
+        link=re.search(r'href="(docs/comunicados/cp_\d+_20\d{2}_ENG\.pdf)"',row)
+        if not link or not re.search(r'\bcases?\b|\bjudgments?\b|advisory opinion|regular session|public hearing',title,re.I):
+            continue
+        url=safe_url(link[1],source['url'])
+        if not url:
+            continue
+        snippet=plain(row[:link.start()])
+        match=re.search(r'\b[A-Z][a-z]+ \d{1,2}, 20\d{2}\b',snippet)
+        date,precision=parse_date(match[0] if match else '')
+        entries.append({'title':title,'url':url,'published_at':date,'date_precision':precision,
+                        'authors':[],'evidence':snippet,'evidence_basis':'法院公告目录','doi':''})
+    return entries
 
 def parse_news_listing(data,source):
     """Use isolated article cards for dates; otherwise retain undated title/link metadata."""

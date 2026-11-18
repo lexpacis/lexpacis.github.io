@@ -64,4 +64,38 @@ class NewsTests(unittest.TestCase):
         result={'id':'test','content_hash':'hash','title_zh':'新闻标题','summary_zh':'','topics':[],'module':'cases','evidence_quotes':[]}
         with self.assertRaises(ValueError):pipeline.validate_enrichment(result,item,self.config)
 
+    def test_un_global_feed_uses_same_host_canonical_stories(self):
+        source=next(s for s in self.sources if s['id']=='un-news-global')
+        xml=b"""<rss><channel>
+        <item><title>First</title><link>https://news.un.org/feed/view/en/story/2026/11/1168824</link></item>
+        <item><title>Second</title><link>https://news.un.org/about</link></item>
+        <item><title>Third</title><link>https://example.org/en/story/2026/11/1168823</link></item>
+        </channel></rss>"""
+        self.assertEqual([item['url'] for item in core.parse_feed(xml,source)],
+                         ['https://news.un.org/en/story/2026/11/1168824'])
+
+    def test_only_specific_court_pdf_routes_are_accepted(self):
+        from source_review import case_pdf_issuer
+        source=next(s for s in self.sources if s['id']=='echr-press')
+        xml=b"""<rss><channel><item><title>Court release</title>
+        <link>https://hudoc.echr.coe.int/eng-press?i=003-123-456</link></item>
+        <item><title>Extra arguments</title>
+        <link>https://hudoc.echr.coe.int/eng-press?i=003-123-457&amp;redirect=x</link></item></channel></rss>"""
+        entries=core.parse_feed(xml,source)
+        self.assertEqual(len(entries),1)
+        url=entries[0]['url']
+        self.assertTrue(case_pdf_issuer(source,url))
+        self.assertIsNone(case_pdf_issuer(source,url+'&redirect=x'))
+        self.assertIsNone(case_pdf_issuer(source,url.replace('hudoc.echr.coe.int','example.org')))
+
+    def test_court_press_details_use_their_own_row(self):
+        source=next(s for s in self.sources if s['id']=='iacthr-press')
+        html=b"""<h4>Public hearing in a case</h4>
+        <p>San Jose, November 9, 2026.</p><a href="docs/comunicados/cp_81_2026_ENG.pdf">English version</a>
+        <h4>Training course</h4><p>October 2, 2026.</p>
+        <a href="docs/comunicados/cp_80_2026_ENG.pdf">English version</a>"""
+        entries=core.parse_listing(html,source)
+        self.assertEqual([(r['title'],r['published_at']) for r in entries],
+                         [('Public hearing in a case','2026-11-09')])
+
 if __name__=='__main__':unittest.main()

@@ -23,6 +23,9 @@ _ATTRIBUTION = re.compile(r'(?:来\s*源\s*[:：]|转\s*载\s*(?:自|于))\s*([^
 _BODY = re.compile(r'\b(?:entry-content|post-content|article-content|article__body|article-body|'
                    r'news-details|trs_ueditor|field--name-body|articletext|newscontent|news-content|artibody)\b',re.I)
 _ICJ_PDF = re.compile(r'/sites/default/files/(?:press-releases|case-related)/\d+/\d+-\d{8}-pre-\d+-\d+-en\.pdf')
+_WIX_EVENTS = {'afsil-events','sladi-events','ccil-events'}
+_EXACT_ARTICLE_PATHS = _WIX_EVENTS | {'asiansil-events','jsil-events','itlos-docket','ilc-reports','cambridge-books',
+                                    'afronomics-analysis','asil-insights','un-news-global','opcw-news','afchpr-cases'}
 PDF_BASIS = '官方 PDF 正文核对'
 REVIEW_COUNTS = ('candidates','checked','verified','china_hold','origin_hold','body_hold',
                  'access_hold','unsupported_hold','pdf_hold','pending','directory_count','first_http_status')
@@ -57,6 +60,7 @@ class ArticleEvidence(HTMLParser):
         self.source_id = source_id
         self.pca_after_title = False
         self.pca_paragraphs = []
+        self.citation_authors = []
 
     def handle_starttag(self, tag, attrs):
         fields = dict(attrs)
@@ -69,6 +73,8 @@ class ArticleEvidence(HTMLParser):
                     self.sources.append(value)
                 if name in _CONTEXT_META:
                     self.metadata_context.append(value)
+                if name == 'citation_author':
+                    self.citation_authors.append(value)
         if tag == 'link' and (fields.get('rel') or '').lower() == 'canonical':
             self.canonical = fields.get('href') or ''
         if tag in _BLOCK:
@@ -82,6 +88,12 @@ class ArticleEvidence(HTMLParser):
             or (self.source_id == 'icj-pending' and fields.get('id') == 'block-icj-content')
             or (self.source_id == 'mpil-events' and 'article' in (fields.get('class') or '').split())
             or (self.source_id == 'anzsil-events' and 'WaGadgetEventsStateDetails' in (fields.get('class') or '').split())
+            or (self.source_id in _WIX_EVENTS and tag == 'main' and fields.get('id') == 'PAGES_CONTAINER')
+            or (self.source_id == 'itlos-docket' and 'fs-content-container' in (fields.get('class') or '').split())
+            or (self.source_id == 'ilc-reports' and fields.get('id') == 'content')
+            or (self.source_id == 'un-news-global' and fields.get('id') in {
+                'block-views-block-content-fields-block-lead','block-views-block-content-fields-block-body'})
+            or (self.source_id == 'cambridge-books' and tag == 'section' and 'book-overview' in (fields.get('class') or '').split())
             or (self.source_id and self.source_id.startswith('cambridge-cfp-') and fields.get('id')=='MAIN_CONTENT')
         )
         if tag == 'article' or official_body or _BODY.search(' '.join((fields.get('class') or '',fields.get('id') or ''))):
@@ -126,10 +138,16 @@ class ArticleEvidence(HTMLParser):
 
 
 def inspect_html(entry, source, url, markup):
-    parse = ArticleEvidence(source['id'])
+    source_id=source['id']
+    parse = ArticleEvidence(source_id)
     parse.feed(markup)
     canonical = urljoin(url,parse.canonical) if parse.canonical else url
     if not article_origin(source,canonical):
+        return entry
+    if source_id in _EXACT_ARTICLE_PATHS and any(not re.fullmatch(source['link_pattern'],urlsplit(link).path)
+                                                 for link in (url,canonical)):
+        return entry
+    if source_id in _EXACT_ARTICLE_PATHS and urlsplit(url).path!=urlsplit(canonical).path:
         return entry
     body = parse.context()
     head = ' '.join(parse.headline).strip() or parse.meta.get('og:title','')
@@ -145,6 +163,37 @@ def inspect_html(entry, source, url, markup):
     date,precision = parse_date(parse.meta.get('pubdate') or parse.meta.get('article:published_time') or '')
     basis = '原文正文核对'
     bibliography = dict(entry.get('bibliography',{}))
+    authors=entry.get('authors',[])
+    if source_id in _WIX_EVENTS:
+        page_title=parse.meta.get('og:title','').split(' | ')[0] or entry['title']
+    if source_id=='jsil-events':
+        page_title=entry['title']
+    if source_id=='un-news-global':
+        page_title=parse.meta.get('og:title') or entry['title']
+    if source.get('notice_kind')=='journal':
+        page_title=entry['title']
+    if source_id=='ilc-reports':
+        report=re.search(r'<h3>(Report on the work of the[^<]{1,140})</h3>',markup)
+        year=urlsplit(url).path.strip('/').rsplit('/',1)[-1]
+        if not report or not report[1].endswith(f'({year})'):
+            return entry
+        page_title='International Law Commission · '+plain(report[1])
+        bibliography['type']='report'
+        date,precision=parse_date(year)
+    if source_id=='cambridge-books':
+        page_title=plain(parse.meta.get('citation_title',''))
+        publisher=parse.meta.get('citation_publisher','')
+        authors=list(dict.fromkeys(plain(name) for name in parse.citation_authors if plain(name)))
+        specs={}
+        for matched in re.finditer(r'<dt\b[^>]*>\s*(Publication date|ISBN):\s*</dt>((?:\s*<dd\b[^>]*>[^<>]{0,55}</dd>){1,5})',markup,re.I):
+            specs.setdefault(matched[1].lower(),[]).extend(plain(value) for value in re.findall(r'<dd\b[^>]*>([^<>]*)</dd>',matched[2],re.I))
+        isbn=next((value for value in specs.get('isbn',[]) if re.fullmatch(r'97[89]\d{10}',value)),None)
+        dates=sorted({parsed for value in specs.get('publication date',[]) if (parsed:=parse_date(value)[0])})
+        if not (page_title and authors and isbn and dates and publisher=='Cambridge University Press'):
+            return entry
+        date,precision=parse_date(dates[0])
+        bibliography.update(type='book',publisher=publisher,ISBN=isbn)
+        body+=' '+parse.meta.get('citation_abstract','')
     if source.get('notice_kind') in ('event','journal'):
         date_candidates=[]
         if source['id']=='mpil-events':
@@ -154,7 +203,29 @@ def inspect_html(entry, source, url, markup):
                 date_candidates.append(plain(sidebar[1]))
         if source['id']=='asil-events' and not re.search(r'\bASIL Event\b',body,re.I):
             return entry
-        structured=structured_events(markup,page_title) if source['id']=='asil-events' else ()
+        structured=structured_events(markup,page_title) if source_id in _WIX_EVENTS | {'asil-events','asiansil-events'} else ()
+        if source_id=='ccil-events' and re.fullmatch(r'/wm\d+-20\d{2}',urlsplit(url).path):
+            if match:=re.search(r'\b(?:venue|Québec City)\s*(?:[|·:/]\s*)?([A-Za-z]+ \d{1,2}\s*[-–]\s*\d{1,2},? 20\d{2})',body,re.I):
+                date_candidates.append(match[1])
+        if source_id in {'afsil-events','asiansil-events'}:
+            match=re.search(r'(?:Annual Conference in [^.!?]{1,75},\s*on|conference will be hosted by [^.!?]{1,90} on)\s+(\d{1,2}(?:\s*[-–—]\s*\d{1,2})?\s+[A-Za-z]+\s+20\d{2})',body,re.I)
+            if match:
+                date_candidates.append(match[1])
+        if source_id=='jsil-events':
+            match=re.search(r'〔日時〕\s*(20\d{2})年\s*(\d{1,2})月\s*(\d{1,2})日[（(][^）)]{1,5}[）)](?:・\d{1,2}日[（(][^）)]{1,5}[）)])*',body)
+            if match:
+                year,month,start=map(int,match.groups())
+                last=int(re.findall(r'(\d{1,2})日',match[0])[-1])
+                structured=[{'startDate':f'{year:04d}-{month:02d}-{start:02d}',
+                             'endDate':f'{year:04d}-{month:02d}-{last:02d}'}]
+        if source_id=='sladi-events':
+            match=re.search(r'conferencia bienal del (\d{1,2}) de ([a-z]+) al (\d{1,2}) de ([a-z]+) de (20\d{2})\b',body,re.I)
+            if match and not re.search(r'conferencia\s+(?:cancelada|aplazada|pospuesta)',body,re.I):
+                months='enero febrero marzo abril mayo junio julio agosto septiembre octubre noviembre diciembre'.split()
+                first,m1,last,m2,year=match.groups()
+                if m1.lower() in months and m2.lower() in months:
+                    structured=[{'startDate':f'{year}-{months.index(m1.lower())+1:02d}-{int(first):02d}',
+                                 'endDate':f'{year}-{months.index(m2.lower())+1:02d}-{int(last):02d}'}]
         if source['id']=='anzsil-events':
             calendar_fields={}
             for part in ('Start','End'):
@@ -185,17 +256,28 @@ def inspect_html(entry, source, url, markup):
     evidence = ' '.join((entry['title'],entry.get('evidence') or '',head,body,*parse.metadata_context))
     return {**entry,'url':url,'title':plain(page_title) or entry['title'],'evidence':evidence,
             'published_at':date or entry.get('published_at'),'date_precision':precision if date else entry.get('date_precision','unknown'),
-            'evidence_basis':basis,'bibliography':bibliography}
+            'evidence_basis':basis,'bibliography':bibliography,'authors':authors}
 
 
-def icj_pdf_url(source,url):
+def case_pdf_issuer(source,url):
     parsed=urlsplit(url)
-    return (source['id']=='icj' and article_origin(source,url) and not parsed.query
-            and bool(_ICJ_PDF.fullmatch(parsed.path)))
+    if not article_origin(source,url):
+        return None
+    if (source['id']=='icj' and parsed.netloc=='www.icj-cij.org' and not parsed.query
+        and _ICJ_PDF.fullmatch(parsed.path)):
+        return r'international court of justice|cour internationale de justice'
+    if (source['id']=='echr-press' and parsed.netloc=='hudoc.echr.coe.int'
+        and parsed.path=='/app/conversion/pdf/' and re.fullmatch(r'id=003-\d+-\d+&library=ECHR',parsed.query)):
+        return r'european court of human rights|cour europ[ée]enne des droits de l.homme'
+    if (source['id']=='iacthr-press' and parsed.netloc=='www.corteidh.or.cr' and not parsed.query
+        and re.fullmatch(r'/docs/comunicados/cp_\d+_20\d{2}_ENG\.pdf',parsed.path)):
+        return r'inter.american court of human rights|corte interamericana de derechos humanos'
+    return None
 
 
-def inspect_icj_pdf(entry,source,url,raw):
-    if not icj_pdf_url(source,url) or not raw.startswith(b'%PDF-'):
+def inspect_case_pdf(entry,source,url,raw):
+    issuer=case_pdf_issuer(source,url)
+    if not issuer or not raw.startswith(b'%PDF-'):
         return entry
     # Use the standard Ubuntu reader, without running document actions or scripts.
     # Scan the entire short press release, with bounded size, page count and runtime.
@@ -218,7 +300,7 @@ def inspect_icj_pdf(entry,source,url,raw):
     if len(leafs)!=int(pages[1]) or any(len(page.strip())<100 for page in leafs):
         return entry
     body=' '.join(text.split())
-    if not re.search(r'international court of justice|cour internationale de justice',body,re.I):
+    if not re.search(issuer,body,re.I):
         return entry
     evidence=' '.join((entry['title'],entry.get('evidence') or '',body))
     return {**entry,'evidence':evidence,'evidence_basis':PDF_BASIS}
@@ -256,7 +338,7 @@ def verify_entries(entries, source, config, rules, report=None):
         report['checked']+=1
         if index:
             report['cursor']=identity(url)
-        pdf=icj_pdf_url(source,url)
+        pdf=case_pdf_issuer(source,url) is not None
         accept='application/pdf' if pdf else 'text/html'
         limit=3_000_000 if pdf else 1_500_000
         try:
@@ -275,7 +357,7 @@ def verify_entries(entries, source, config, rules, report=None):
                     continue
                 encoding=response.headers.get_content_charset() or 'utf-8'
             if pdf:
-                result=inspect_icj_pdf(entry,source,url,raw)
+                result=inspect_case_pdf(entry,source,url,raw)
             else:
                 result=inspect_html(entry,source,url,raw.decode(encoding,errors='replace'))
             if result is entry:

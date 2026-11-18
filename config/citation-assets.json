@@ -64,5 +64,11 @@
     "url": "https://github.com/citation-style-language/locales/blob/21a175a1d84cc1792dd73f5a627de004fba5b207/locales-zh-CN.xml",
     "license": "CC-BY-SA-3.0",
     "sha256": "95cebc667f2da8fb5b9864e49941e3f867d59f79feba929bc58e8ed6bfd4d582"
+  },
+  {
+    "file": "vendor/aglc.csl",
+    "url": "https://github.com/citation-style-language/styles/blob/05313ce3dd6ff91ced8a1ce1dfaa708c65c65ec4/australian-guide-to-legal-citation.csl",
+    "license": "CC-BY-SA-3.0",
+    "sha256": "670ea6a3b1ab7c72bbb9b23d5d870e66630cdf1e34353fc229eedf4a87725163"
   }
 ]

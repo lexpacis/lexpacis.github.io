@@ -12,6 +12,20 @@ APPROVED_JOURNALS = {
     'crossref-ajil': '0002-9300',
     'crossref-ljil': '0922-1565',
 }
+REGIONAL_JOURNALS = {
+    **APPROVED_JOURNALS,
+    'crossref-iclq': '0020-5893',
+    'crossref-asianjil': '2044-2513',
+    'crossref-jiel': '1369-3034',
+    'crossref-wtr': '1474-7456',
+    'crossref-cyil': '0069-0058',
+    'crossref-aybil': '0084-7658',
+    'crossref-ajicl': '0954-8890',
+    'crossref-amdi': '1870-4654',
+    'crossref-ijmcl': '0927-3522',
+    'crossref-irrc': '1816-3831',
+    'crossref-icsidreview': '0258-3690',
+}
 SCOPE_REVISION = hashlib.sha256(''.join(Path(__file__).with_name(name).read_text(encoding='utf-8')
                                      for name in ('publication_policy.py','source_review.py','notice_dates.py')).encode()).hexdigest()
 DOI = re.compile(r'10\.\d{4,9}/[a-z0-9._;()/:-]+', re.I)
@@ -110,9 +124,9 @@ def regional_item(item, source, rules, reviewed):
         if not eligible_metadata(item,source) or (not reviewed and len(proof)<60):
             return False
     else:
-        from source_review import PDF_BASIS, icj_pdf_url
+        from source_review import PDF_BASIS, case_pdf_issuer
         basis=item.get('evidence_basis')
-        verified_format=(basis=='原文正文核对' or (basis==PDF_BASIS and icj_pdf_url(source,item['url'])))
+        verified_format=(basis=='原文正文核对' or (basis==PDF_BASIS and case_pdf_issuer(source,item['url'])))
         if not article_origin(source,item['url']) or not verified_format or (not reviewed and len(proof)<120):
             return False
     if item.get('module')=='cfp':
@@ -124,7 +138,7 @@ def regional_item(item, source, rules, reviewed):
 
 
 def approved_source(source):
-    issn = APPROVED_JOURNALS.get(source['id'])
+    issn = REGIONAL_JOURNALS.get(source['id'])
     url = urlsplit(source['url'])
     return bool(issn and source['kind'] == 'crossref' and source['authority'] == 'scholarly_index'
                 and source['module'] == 'research' and url.scheme == 'https'
@@ -139,7 +153,7 @@ def eligible_metadata(item, source):
                 and item['module'] == 'research' and item['title'].strip()
                 and item['authors'] and item['published_at']
                 and bibliography.get('type') == 'journal-article'
-                and APPROVED_JOURNALS[source['id']] in (bibliography.get('ISSN') or ())
+                and REGIONAL_JOURNALS[source['id']] in (bibliography.get('ISSN') or ())
                 and bibliography.get('container-title'))
 
 
@@ -205,7 +219,7 @@ def source_paused(source, rules):
     return (source['id'] in rules.get('paused_sources', ())
             or source['id'] in rules.get('hidden_sources', ())
             or source['module'] in rules.get('paused_modules', ())
-            or (strict_scope(rules) and not approved_source(source)))
+            or (strict_scope(rules) and (source['id'] not in APPROVED_JOURNALS or not approved_source(source))))
 
 
 def _normalized(value):

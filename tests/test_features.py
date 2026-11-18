@@ -116,7 +116,7 @@ class FeatureWorkflowTests(unittest.TestCase):
         self.assertEqual([item['id'] for item in data['items']],[core.identity('https://example.org/keep')])
         self.assertNotIn(self.call['id'],[call['id'] for call in data['cfp']['calls']])
         self.assertEqual({s['id'] for s in data['sources'] if s['status']=='paused'},
-                         {'wto','un-geneva-news','un-geneva-press','un-geneva-meetings','china-mfa-statements','china-xinhua-politics'})
+                         {'wto','un-geneva-news','un-geneva-press','un-geneva-meetings','un-news-global','china-mfa-statements','china-xinhua-politics'})
         rendering.write_release(data)
         for relative in ('data.js','api/items.json','feed.xml','feeds/modules/news.xml','sitemap.xml','calendar.ics','cfp.ics','api/cfp.json'):
             payload=(self.root/'dist'/relative).read_text(encoding='utf-8')
@@ -252,7 +252,7 @@ class FeatureWorkflowTests(unittest.TestCase):
 
     def test_icj_pdf_requires_all_pages_and_applies_editorial_screen(self):
         from publication_policy import regional_item
-        from source_review import inspect_icj_pdf, PDF_BASIS
+        from source_review import inspect_case_pdf, PDF_BASIS
         _,sources=pipeline.configuration()
         source=next(s for s in sources if s['id']=='icj')
         url='https://www.icj-cij.org/sites/default/files/case-related/178/178-20261103-pre-01-00-en.pdf'
@@ -265,15 +265,15 @@ class FeatureWorkflowTests(unittest.TestCase):
             return SimpleNamespace()
         mock_reader.last_page=page
         with patch('source_review.subprocess.run',side_effect=mock_reader):
-            checked=inspect_icj_pdf(entry,source,url,b'%PDF-fixture')
+            checked=inspect_case_pdf(entry,source,url,b'%PDF-fixture')
             self.assertEqual(checked['evidence_basis'],PDF_BASIS)
             rules=pipeline.publication_rules()
             self.assertTrue(regional_item(checked,source,rules,False))
             mock_reader.last_page=page+' The proceedings concern Lhasa.'
-            self.assertFalse(regional_item(inspect_icj_pdf(entry,source,url,b'%PDF-fixture'),source,rules,False))
+            self.assertFalse(regional_item(inspect_case_pdf(entry,source,url,b'%PDF-fixture'),source,rules,False))
             mock_reader.last_page=''
-            self.assertIs(inspect_icj_pdf(entry,source,url,b'%PDF-fixture'),entry)
-            self.assertIs(inspect_icj_pdf(entry,source,url.replace('icj-cij.org','example.org'),b'%PDF-fixture'),entry)
+            self.assertIs(inspect_case_pdf(entry,source,url,b'%PDF-fixture'),entry)
+            self.assertIs(inspect_case_pdf(entry,source,url.replace('icj-cij.org','example.org'),b'%PDF-fixture'),entry)
 
     def test_case_pages_require_source_specific_body_and_matching_pca_heading(self):
         from source_review import inspect_html
@@ -343,7 +343,7 @@ class FeatureWorkflowTests(unittest.TestCase):
         with self.assertRaises(ValueError):manage.rename('<script>alert(1)</script>')
     def test_cfp_directory_scope(self):
         public=cfp.public_data(self.conn,[])
-        self.assertEqual(len(public['journals']),36)
+        self.assertEqual(len(public['journals']),41)
         self.assertEqual(sum(j['language'] in ('zh','bilingual') for j in public['journals']),14)
         self.assertTrue(all(j.get('submissions_url') for j in public['journals']))
 

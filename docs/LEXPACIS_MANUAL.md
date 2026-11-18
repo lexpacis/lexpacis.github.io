@@ -22,7 +22,11 @@
 2. 核对题名、作者、期刊或机构和出版日期。在引文定位栏填写实际引用的页码或段落。
 3. 选择样式并预览。可复制到 Word 脚注，也可加入清单、调整顺序或起始编号后批量导出。
 
-当前可选《法学引注手册》第二版社区 CSL、OSCOLA 第 4 版 CSL、Bluebook Law Review CSL 和 Chicago 第 18 版脚注与书目。复杂判例、条约和期刊专用规则请用目标规范复核。[牛津 OSCOLA 说明](https://www.law.ox.ac.uk/oscola)
+当前可选《法学引注手册》第二版社区 CSL、OSCOLA 第 4 版 CSL、Bluebook Law Review CSL、澳大利亚 AGLC 第 4 版 CSL 和 Chicago 第 18 版脚注与书目。复杂判例、条约和期刊专用规则请用目标规范复核。[牛津 OSCOLA 说明](https://www.law.ox.ac.uk/oscola)
+
+## 活动浏览与订阅
+
+- 在「学术活动」展开「按主办机构浏览」，可直接查看指定机构的公告。进入日历后可按原文确认的活动日期查看，也可下载 ICS。
 
 ## 投稿导航与订阅
 
