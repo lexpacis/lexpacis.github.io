@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-18T20:09:35+00:00",
+  "generated_at": "2026-11-18T20:17:46+00:00",
   "site": {
     "name": "法域前沿",
     "english_name": "Lexpacis",
@@ -3784,25 +3784,24 @@
       "id": "opiniojuris",
       "name": "Opinio Juris",
       "organization": "Opinio Juris",
-      "homepage": "https://opiniojuris.org/",
-      "kind": "rss",
+      "homepage": "https://opiniojuris.org/blog/",
+      "kind": "html",
       "module": "commentary",
       "authority": "academic_commentary",
       "enabled": true,
       "poll_hours": 6,
-      "scope": "RSS 最新条目，包含学术评论与活动公告",
+      "scope": "官网 Recent Posts 列表，逐条核验站内原文；包含学术评论与活动公告",
       "language": "en",
       "review": {
         "failure": "http_403"
       },
-      "feed_url": "https://opiniojuris.org/feed/",
       "status": "error",
-      "attempted_at": "2026-11-18T20:03:05+00:00",
+      "attempted_at": "2026-11-18T20:17:46+00:00",
       "success_at": null,
       "error": "信源暂未成功读取或解析。",
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "item_count": 0,
-      "next_attempt_at": null
+      "next_attempt_at": "2026-11-18T20:47:46+00:00"
     },
     {
       "id": "voelkerrechtsblog",
@@ -4850,31 +4849,31 @@
         "topics": []
       }
     ],
-    "updated_at": "2026-11-18T20:09:35+00:00",
+    "updated_at": "2026-11-18T20:17:46+00:00",
     "coverage_note": "人工建立的期刊入口目录 + 程序定期检查 + 已接通信源中的征稿线索。目录不是排名，不等于已覆盖各刊全部征稿；主页可读也不等于当前正在收稿。"
   },
   "operations": {
     "last_run": {
       "id": 1,
-      "started_at": "2026-11-18T20:09:26+00:00",
-      "finished_at": "2026-11-18T20:09:35+00:00",
-      "successes": 3,
-      "failures": 0,
-      "added": 16,
+      "started_at": "2026-11-18T20:17:45+00:00",
+      "finished_at": "2026-11-18T20:17:46+00:00",
+      "successes": 0,
+      "failures": 1,
+      "added": 0,
       "changed": 0
     },
     "scheduler_enabled": true,
     "scheduled_run_verified": false,
     "last_effective_run": {
       "id": 1,
-      "started_at": "2026-11-18T20:09:26+00:00",
-      "finished_at": "2026-11-18T20:09:35+00:00",
-      "successes": 3,
-      "failures": 0,
-      "added": 16,
+      "started_at": "2026-11-18T20:17:45+00:00",
+      "finished_at": "2026-11-18T20:17:46+00:00",
+      "successes": 0,
+      "failures": 1,
+      "added": 0,
       "changed": 0
     },
-    "scheduler_note": "最近一次云端运行：2026-11-18T20:09:35+00:00；触发方式：push。信源成功时间单独显示。",
+    "scheduler_note": "最近一次云端运行：2026-11-18T20:17:46+00:00；触发方式：push。信源成功时间单独显示。",
     "total_archived": 90,
     "visible_in_export": 90
   }
