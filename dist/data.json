@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-18T16:44:14+00:00",
+  "generated_at": "2026-11-18T17:44:16+00:00",
   "site": {
     "name": "法域前沿",
     "english_name": "Lexpacis",
@@ -7077,12 +7077,12 @@
       "language": "en",
       "feed_url": "https://opiniojuris.org/feed/",
       "status": "error",
-      "attempted_at": "2026-11-18T16:30:54+00:00",
+      "attempted_at": "2026-11-18T17:44:16+00:00",
       "success_at": "2026-11-18T10:18:54+00:00",
       "error": "信源暂未成功读取或解析。",
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "item_count": 14,
-      "next_attempt_at": "2026-11-18T16:45:54+00:00"
+      "next_attempt_at": "2026-11-18T18:14:16+00:00"
     },
     {
       "id": "voelkerrechtsblog",
@@ -8051,7 +8051,7 @@
       {
         "id": "cfp-item-b851d1f0ec639010b20e",
         "parent_item_id": "b851d1f0ec639010b20e",
-        "title": "2027 ESIL Annual Conference on “International Law and Future(s)” | Call for Papers and Website",
+        "title": "2027 年 ESIL 年会“国际法与未来”｜征稿启事与会议网站",
         "original_title": "2027 ESIL Annual Conference on “International Law and Future(s)” | Call for Papers and Website",
         "kind": "discovery",
         "journal_id": null,
@@ -8070,7 +8070,7 @@
       {
         "id": "cfp-item-f018f0240a34862c9125",
         "parent_item_id": "f018f0240a34862c9125",
-        "title": "Call for Papers | International Law as a Strategic Weapon in Current Conflicts | 30 October 2026",
+        "title": "征稿｜当代冲突中的国际法作为战略武器｜2026 年 10 月 30 日",
         "original_title": "Call for Papers | International Law as a Strategic Weapon in Current Conflicts | 30 October 2026",
         "kind": "discovery",
         "journal_id": null,
@@ -8106,16 +8106,16 @@
         "topics": []
       }
     ],
-    "updated_at": "2026-11-18T16:44:14+00:00",
+    "updated_at": "2026-11-18T17:44:16+00:00",
     "coverage_note": "人工建立的期刊入口目录 + 程序定期检查 + 已接通信源中的征稿线索。目录不是排名，不等于已覆盖各刊全部征稿；主页可读也不等于当前正在收稿。"
   },
   "operations": {
     "last_run": {
       "id": 1,
-      "started_at": "2026-11-18T16:44:14+00:00",
-      "finished_at": "2026-11-18T16:44:14+00:00",
+      "started_at": "2026-11-18T17:44:15+00:00",
+      "finished_at": "2026-11-18T17:44:16+00:00",
       "successes": 0,
-      "failures": 0,
+      "failures": 1,
       "added": 0,
       "changed": 0
     },
@@ -8123,14 +8123,14 @@
     "scheduled_run_verified": false,
     "last_effective_run": {
       "id": 1,
-      "started_at": "2026-11-18T16:30:53+00:00",
-      "finished_at": "2026-11-18T16:30:56+00:00",
-      "successes": 1,
+      "started_at": "2026-11-18T17:44:15+00:00",
+      "finished_at": "2026-11-18T17:44:16+00:00",
+      "successes": 0,
       "failures": 1,
       "added": 0,
       "changed": 0
     },
-    "scheduler_note": "最近一次云端运行：2026-11-18T16:44:14+00:00；触发方式：push。信源成功时间单独显示。",
+    "scheduler_note": "最近一次云端运行：2026-11-18T17:44:16+00:00；触发方式：push。信源成功时间单独显示。",
     "total_archived": 192,
     "visible_in_export": 192
   }
