@@ -3802,7 +3802,7 @@
       "error": "信源暂未成功读取或解析。",
       "consecutive_failures": 1,
       "item_count": 0,
-      "next_attempt_at": "2026-11-18T20:18:05+00:00"
+      "next_attempt_at": null
     },
     {
       "id": "voelkerrechtsblog",
