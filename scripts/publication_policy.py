@@ -22,7 +22,8 @@ _CJK = re.compile(
     r"新疆|西藏|藏区|藏區|维吾尔|維吾爾|南海|东海|東海|钓鱼岛|釣魚島|"
     r"北京|上海|深圳|广州|廣州|大陆|大陸|澎湖|金门|金門|马祖|馬祖|"
     r"台北|臺北|高雄|台独|臺獨|一國兩制|一国两制|國安法|国安法|"
-    r"拉萨|拉薩|驻藏|駐藏|东突|東突|港独|港獨|"
+    r"拉萨|拉薩|驻藏|駐藏|藏南|东突|東突|港独|港獨|"
+    r"港岛|港島|九龙|九龍|新界|"
     r"乌鲁木齐|烏魯木齊|喀什|和田|伊犁|内蒙古|內蒙古|"
     r"西沙|南沙|东沙|東沙|黄岩岛|黃岩島|仁爱礁|仁愛礁|太平岛|太平島"
 )
@@ -32,13 +33,15 @@ _MULTILINGUAL = re.compile(
     r"prc|p[. ]r[. ]c\.?|beijing|peking|shanghai|shenzhen|guangzhou|cantonese|"
     r"taiwan(?:ese)?|taipei|formos(?:a|an)|kaohsiung|kinmen|quemoy|matsu(?:[ -]+islands?)?|penghu|pescadores|roc|"
     r"cross[ -]+strait|taiwan[ -]+strait|hong[ -]*kong|hongkonger\w*|hksar|kowloon|macau|macao|"
-    r"xinjiang|sinkiang|uyghurs?|uighurs?|u[yï]ghur\w*|xuar|urumqi|kashgar|hotan|"
-    r"east(?:ern)?[ -]+turkest[áa]n|tibet(?:an|ans)?|tib[ée]tain\w*|xizang|lhasa|dharamsala|"
+    r"xinjiang|sinkiang|uyghurs?|uighurs?|uygurs?|uigurs?|xuar|urumqi|kashgar|hotan|"
+    r"east(?:ern)?[ -]+turk[ei]st[áa]n|dogu[ -]+turkistan|"
+    r"tibet(?:an|ans)?|tib[ée]tain\w*|xizang|lhasa|dharamsala|amdo|kham|"
     r"inner[ -]+mongolia|south[ -]+mongolia|"
     r"sino[ -]\w+|sinophone|sinic(?:ization|isation|ize|ise)|"
     r"ccp|c[. ]c[. ]p\.?|"
     r"senkaku|diaoyu|spratlys?|paracels?|scarborough[ -]+shoal|second[ -]+thomas[ -]+shoal|"
-    r"pratas(?:[ -]+islands?)?|nine[ -]+dash|(?:dotted|u[ -]+shaped)[ -]+line|"
+    r"pratas(?:[ -]+islands?)?|(?:nine|ten|eleven|9|10|11)[ -]+dash(?:ed)?|"
+    r"(?:dotted|u[ -]+shaped)[ -]+line|"
     r"dalai[ -]+lama|one[ -]+country[ -]+two[ -]+systems|"
     r"кита[йяею]|китайск\w*|тайван\w*|гонконг\w*"
     r")(?![^\W\d_])"
@@ -104,9 +107,8 @@ def source_paused(source, rules):
 
 
 def _normalized(value):
-    value = html.unescape(value)
     for _ in range(3):
-        decoded = unquote(value)
+        decoded = html.unescape(unquote(value))
         if decoded == value: break
         value = decoded
     value = unicodedata.normalize('NFKC', value).casefold()

@@ -123,6 +123,7 @@ class FeatureWorkflowTests(unittest.TestCase):
             ('insufficient-context',source,{'evidence':'Abstract'}),
             ('unlisted-context',source,{'evidence':acknowledged['evidence']+' The case concerns Kowloon.'}),
             ('alternate-place-name',source,{'title':'Arbitration and public institutions in Lhasa'}),
+            ('maritime-reference',source,{'title':'Contemporary approaches to the 9-dash line'}),
             ('traditional',source,{'title':'金門公法研究'}),
             ('non-journal',source,{'bibliography':{'type':'report','ISSN':['0938-5428'],'container-title':['Academic journal']}}),
             ('blog',next(s for s in sources if s['id']=='ejiltalk'),{}),
