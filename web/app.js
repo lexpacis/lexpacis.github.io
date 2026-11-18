@@ -374,7 +374,7 @@
     else if(route==='about'){html=aboutPage();pageTitle='关于与更新状态';}
     else if(route==='topics'){html=topicDirectory();pageTitle='研究专题';}
     else {
-      const descriptions={latest:'检索国际法文献、司法资料与学术活动。',research:'查看论文和著作的题名、作者、DOI 与出版信息。',events:'浏览会议、论坛和学术活动公告。',official:'查看原始机构公告和官方资料。',cases:'查看国际司法与仲裁机构发布的案件资料。',commentary:'查看学术平台的评论和讨论。',saved:'收藏保存在当前浏览器，可以备份和恢复。'};
+      const descriptions={latest:'检索国际法文献、司法资料与学术活动。',research:'查看论文和著作的题名、作者、DOI 与出版信息。',events:'浏览会议、论坛和学术活动公告。',official:'查看原始机构公告和官方资料。',cases:'查看国际司法与仲裁机构发布的案件资料。',commentary:'查看学术平台的评论和讨论。',saved:'清除网站数据会删除收藏，清理前请先备份。'};
       pageTitle=moduleNames[route] || (route==='saved'?'我的收藏':route==='topic'?(topicNames[params.get('id')] || '研究专题'):'国际法资料库');
       const calendar=params.get('view')==='calendar';
       const extra=route==='events'?`<div class="view-switch" role="group" aria-label="活动视图"><button data-view="list" aria-pressed="${!calendar}" class="${!calendar?'active':''}">公告列表</button><button data-view="calendar" aria-pressed="${calendar}" class="${calendar?'active':''}">学术日历</button></div>`:'';
