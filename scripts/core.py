@@ -158,6 +158,8 @@ def parse_feed(data, source):
                 url=child.attrib['href']; break
         url=safe_url(url,source['homepage'])
         if not title or not url: continue
+        if source.get('feed_article_host') and urllib.parse.urlsplit(url).netloc!=source['feed_article_host']:
+            continue
         date,precision=parse_date(child_text(item,('pubDate','published','date','updated')))
         author=plain(child_text(item,('creator','author')))
         full=plain(child_text(item,('encoded',)))

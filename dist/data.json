@@ -3801,7 +3801,7 @@
       "error": "信源暂未成功读取或解析。",
       "consecutive_failures": 2,
       "item_count": 0,
-      "next_attempt_at": "2026-11-18T20:47:46+00:00"
+      "next_attempt_at": null
     },
     {
       "id": "voelkerrechtsblog",
