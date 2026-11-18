@@ -169,6 +169,25 @@
     "language": "en"
   },
   {
+    "id": "icj-pending",
+    "name": "国际法院 ICJ · 待审案件",
+    "organization": "International Court of Justice",
+    "url": "https://www.icj-cij.org/pending-cases",
+    "homepage": "https://www.icj-cij.org/",
+    "kind": "html",
+    "link_pattern": "^/case/[0-9]+/?$",
+    "min_title_length": 15,
+    "module": "cases",
+    "authority": "official_institution",
+    "enabled": true,
+    "poll_hours": 12,
+    "article_checks": 8,
+    "topics": ["disputes"],
+    "scope": "官方待审案件页与文书目录，发布日期和裁判结论以相关原始文书为准",
+    "reuse": "metadata_only",
+    "language": "en"
+  },
+  {
     "id": "crossref-ejil",
     "name": "EJIL · Crossref",
     "organization": "Oxford University Press / Crossref metadata",

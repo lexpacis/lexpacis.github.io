@@ -24,7 +24,7 @@ _BODY = re.compile(r'\b(?:entry-content|post-content|article-content|article__bo
 _ICJ_PDF = re.compile(r'/sites/default/files/(?:press-releases|case-related)/\d+/\d+-\d{8}-pre-\d+-\d+-en\.pdf')
 PDF_BASIS = '官方 PDF 正文核对'
 REVIEW_COUNTS = ('candidates','checked','verified','china_hold','origin_hold','body_hold',
-                 'access_hold','unsupported_hold','pdf_hold','pending')
+                 'access_hold','unsupported_hold','pdf_hold','pending','directory_count','first_http_status')
 
 
 def clean_review(value):
@@ -54,6 +54,8 @@ class ArticleEvidence(HTMLParser):
         self.sources = []
         self.metadata_context = []
         self.source_id = source_id
+        self.pca_after_title = False
+        self.pca_paragraphs = []
 
     def handle_starttag(self, tag, attrs):
         fields = dict(attrs)
@@ -76,6 +78,7 @@ class ArticleEvidence(HTMLParser):
         official_body = (
             (self.source_id == 'wto' and fields.get('id') == 'mainContent')
             or (self.source_id == 'pca' and (tag == 'main' or fields.get('role') == 'main'))
+            or (self.source_id == 'icj-pending' and fields.get('id') == 'block-icj-content')
         )
         if tag == 'article' or official_body or _BODY.search(' '.join((fields.get('class') or '',fields.get('id') or ''))):
             candidate = []
@@ -88,6 +91,8 @@ class ArticleEvidence(HTMLParser):
             self.handle_endtag(tag)
 
     def handle_endtag(self, tag):
+        if self.source_id == 'pca' and tag == 'h1':
+            self.pca_after_title = True
         if tag in _BLOCK:
             self.page_text.append('\n')
         for index in range(len(self.stack)-1,-1,-1):
@@ -100,6 +105,8 @@ class ArticleEvidence(HTMLParser):
             self.page_text.append(re.sub(r'\s+',' ',data))
         if any(tag in _SKIP for tag,_ in self.stack):
             return
+        if self.pca_after_title and any(tag=='p' for tag,_ in self.stack):
+            self.pca_paragraphs.append(data)
         for tag,text in self.stack:
             if text is not None:
                 text.append(data)
@@ -121,10 +128,16 @@ def inspect_html(entry, source, url, markup):
     if not article_origin(source,canonical):
         return entry
     body = parse.context()
-    if len(body)<120:
-        return entry
     head = ' '.join(parse.headline).strip() or parse.meta.get('og:title','')
     page_title = parse.meta.get('articletitle','') or head
+    if len(body)<120 and source['id']=='pca':
+        clean=lambda value: re.sub(r'[^\w]+',' ',plain(value).casefold()).strip()
+        if head and clean(head)==clean(entry['title']):
+            paragraphs=' '.join(' '.join(parse.pca_paragraphs).split())
+            if re.search(r'permanent court of arbitration|arbitrat\w+|conciliation',paragraphs,re.I):
+                body=paragraphs
+    if len(body)<120:
+        return entry
     date,precision = parse_date(parse.meta.get('pubdate') or parse.meta.get('article:published_time') or '')
     basis = '原文正文核对'
     bibliography = dict(entry.get('bibliography',{}))
@@ -249,6 +262,8 @@ def verify_entries(entries, source, config, rules, report=None):
             reviewed.append(result)
         except urllib.error.HTTPError as exc:
             report['access_hold']+=1
+            if not report['first_http_status']:
+                report['first_http_status']=exc.code
             if exc.code in (401,403,429,503):
                 blocked_hosts.add(hostname)
         except (OSError,ValueError,LookupError):

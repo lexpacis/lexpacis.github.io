@@ -274,6 +274,21 @@ class FeatureWorkflowTests(unittest.TestCase):
             mock_reader.last_page=''
             self.assertIs(inspect_icj_pdf(entry,source,url,b'%PDF-fixture'),entry)
             self.assertIs(inspect_icj_pdf(entry,source,url.replace('icj-cij.org','example.org'),b'%PDF-fixture'),entry)
+
+    def test_case_pages_require_source_specific_body_and_matching_pca_heading(self):
+        from source_review import inspect_html
+        _,sources=pipeline.configuration()
+        body='The Permanent Court of Arbitration described the procedure followed by the tribunal and explained the decisions recorded in the case file. '*3
+        pca=next(s for s in sources if s['id']=='pca')
+        entry={'title':'Arbitral proceedings update','url':'https://pca-cpa.org/en/news/procedure-update/','evidence':''}
+        markup=f'<h1>{entry["title"]}</h1><div><p>{body}</p></div>'
+        checked=inspect_html(entry,pca,entry['url'],markup)
+        self.assertEqual(checked['evidence_basis'],'原文正文核对')
+        self.assertIs(inspect_html(entry,pca,entry['url'],markup.replace(entry['title'],'Page not found')),entry)
+        icj=next(s for s in sources if s['id']=='icj-pending')
+        record={'title':'Pending proceedings','url':'https://www.icj-cij.org/case/178'}
+        markup=f'<h1>Pending proceedings</h1><div id="block-icj-content"><p>{body}</p></div>'
+        self.assertEqual(inspect_html(record,icj,record['url'],markup)['evidence_basis'],'原文正文核对')
     def test_output_path_restricted(self):
         path=self.root/'external-output.json';core.write_json(path,{'model':'fixture-only','calls':[self.call]})
         with self.assertRaises(ValueError):cfp.apply_updates(path)

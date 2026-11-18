@@ -96,6 +96,7 @@ def collect(conn,config,sources,force=False):
             if regional_scope(rules):
                 candidates=verify_entries(candidates,source,config,rules,report)
                 if source['kind']!='crossref':
+                    report['directory_count']=len(entries)
                     conn.execute('INSERT OR REPLACE INTO source_reviews VALUES(?,?)',(source['id'],json.dumps(clean_review(report))))
                     print('[review] '+source['id']+' '+json.dumps({k:v for k,v in clean_review(report).items() if k!='cursor'}),flush=True)
                 else:
@@ -301,7 +302,8 @@ def public_data(conn,config,sources):
         item={k:row[k] for k in ('id','source_id','title','url','doi','module','published_at','date_precision','discovered_at','updated_at','evidence_basis')}
         item['source_revision']=row['content_hash']
         item.update(topics=json.loads(row['topics']),authors=json.loads(row['authors']),bibliography=json.loads(row['bibliography']))
-        item['material_type']={'wto':'官方新闻','icj':'官方新闻稿索引','pca':'机构公告索引','esil':'学会公告'}.get(row['source_id'],
+        item['material_type']={'wto':'官方新闻','icj':'官方新闻稿索引','icj-pending':'国际法院待审案件页',
+                               'pca':'机构公告索引','esil':'学会公告'}.get(row['source_id'],
                               '书目元数据' if row['source_id'].startswith('crossref-') else '官方机构新闻报道' if next((s.get('authority') for s in sources if s['id']==row['source_id']),None)=='official_news_service' else '学术平台文章')
         provenance=[dict(p) for p in conn.execute('SELECT source_id,url,seen_at FROM provenance WHERE item_id=?',(row['id'],))]
         if regional:

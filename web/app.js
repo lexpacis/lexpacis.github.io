@@ -344,8 +344,12 @@
     }
     const reasons=[['pending','后续轮次待核验'],['china_hold','命中涉华筛查'],['origin_hold','链接或来源待确认'],
       ['body_hold','正文或原发证据不足'],['access_hold','原文请求失败'],['unsupported_hold','响应格式不符'],['pdf_hold','PDF 文本核验未通过']];
-    const details=reasons.filter(([key])=>review[key]>0).map(([key,label])=>`<li>${label} ${e(review[key])} 条</li>`).join('');
-    return `<details class="source-review"><summary>本轮原文核验 ${e(review.checked??0)} 条 · 通过 ${e(review.verified??0)} 条</summary>${review.fallback?'<p>RSS 解析失败，本轮读取同站官方首页。</p>':''}${details?`<ul>${details}</ul>`:''}</details>`;
+    const details=reasons.filter(([key])=>review[key]>0).map(([key,label])=>{
+      const status=key==='access_hold'&&review.first_http_status?`（首个 HTTP ${e(review.first_http_status)}）`:'';
+      return `<li>${label} ${e(review[key])} 条${status}</li>`;
+    }).join('');
+    const directory=review.directory_count?'<p>目录解析 '+e(review.directory_count)+' 条，本轮选取前 '+e(review.candidates)+' 条。</p>':'';
+    return `<details class="source-review"><summary>本轮原文核验 ${e(review.checked??0)} 条 · 通过 ${e(review.verified??0)} 条</summary>${directory}${review.fallback?'<p>RSS 解析失败，本轮读取同站官方首页。</p>':''}${details?`<ul>${details}</ul>`:''}</details>`;
   }
   function sourcesPage() {
     const enabled=data.sources.filter(s=>s.enabled).length;
