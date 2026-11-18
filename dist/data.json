@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-18T19:59:13+00:00",
+  "generated_at": "2026-11-18T20:04:10+00:00",
   "site": {
     "name": "法域前沿",
     "english_name": "Lexpacis",
@@ -75,6 +75,107 @@
   ],
   "items": [
     {
+      "id": "303ab6a936b8cdcc61ad",
+      "source_id": "wto",
+      "title": "Trade Policy Review: Peru",
+      "url": "https://www.wto.org/english/tratop_e/tpr_e/tpr_per_18nov26_e.htm",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-11-18T00:00:00+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-18T20:03:40+00:00",
+      "updated_at": "2026-11-18T20:03:40+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "05e2a4a647219208aeb4d6eb9f76470b002bf3a08442d321686b278cd84d782e",
+      "topics": [
+        "economic"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻",
+      "provenance": [
+        {
+          "source_id": "wto",
+          "url": "https://www.wto.org/english/tratop_e/tpr_e/tpr_per_18nov26_e.htm",
+          "seen_at": "2026-11-18T20:03:40+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "a17c127856b5d6e0201462d2734f652f6ac753c78365273dd5db4c4abdac9cd6"
+    },
+    {
+      "id": "1241a1a2e793d760fd7e",
+      "source_id": "ejiltalk",
+      "title": "Electing the Fourth ICC Prosecutor: Preliminary Observations on the Process",
+      "url": "https://www.ejiltalk.org/electing-the-fourth-icc-prosecutor-preliminary-observations-on-the-process/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-11-17T08:00:15+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-18T20:03:04+00:00",
+      "updated_at": "2026-11-18T20:03:04+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "d87fa3d1952fe95cb51285ee4c146840a75ecf9550a0258ae8fcc65f13165a0d",
+      "topics": [
+        "rights"
+      ],
+      "authors": [
+        "Ezequiel Jimenez Martinez"
+      ],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "ejiltalk",
+          "url": "https://www.ejiltalk.org/electing-the-fourth-icc-prosecutor-preliminary-observations-on-the-process/",
+          "seen_at": "2026-11-18T20:03:04+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "a17c127856b5d6e0201462d2734f652f6ac753c78365273dd5db4c4abdac9cd6"
+    },
+    {
+      "id": "0b16f1e1940bd7ba3d92",
+      "source_id": "wto",
+      "title": "New trade-restrictive measures surge but WTO members step up trade facilitation efforts",
+      "url": "https://www.wto.org/english/news_e/news26_e/tmwto_17nov26_552_e.htm",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-11-17T00:00:00+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-18T20:03:40+00:00",
+      "updated_at": "2026-11-18T20:03:40+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "28f8c954e8b634a07b06184f54b33ca38ed7042c284e411a6beb576c6095d829",
+      "topics": [
+        "economic"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻",
+      "provenance": [
+        {
+          "source_id": "wto",
+          "url": "https://www.wto.org/english/news_e/news26_e/tmwto_17nov26_552_e.htm",
+          "seen_at": "2026-11-18T20:03:40+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "a17c127856b5d6e0201462d2734f652f6ac753c78365273dd5db4c4abdac9cd6"
+    },
+    {
       "id": "65c9ca1392d9dcdad001",
       "source_id": "crossref-ejil",
       "title": "Industrial Policy, Conflicting National Interests and the Future of the Multilateral Trading System",
@@ -110,7 +211,42 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag047",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "a17c127856b5d6e0201462d2734f652f6ac753c78365273dd5db4c4abdac9cd6"
+    },
+    {
+      "id": "97a37eb28d058be862b6",
+      "source_id": "ejiltalk",
+      "title": "Pre-Trial Chamber II of the ICC Closes (or Attempts to Close?) the Afghanistan Investigation",
+      "url": "https://www.ejiltalk.org/pre-trial-chamber-ii-of-the-icc-closes-or-attempts-to-close-the-afghanistan-investigation/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-11-16T08:00:19+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-18T20:03:04+00:00",
+      "updated_at": "2026-11-18T20:03:04+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "85a1bfb0c396667ecb362fd286f0cabc4dd3ecbe4d3994c0eca8ccecdf21bcc2",
+      "topics": [
+        "rights"
+      ],
+      "authors": [
+        "Priya Urs"
+      ],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "ejiltalk",
+          "url": "https://www.ejiltalk.org/pre-trial-chamber-ii-of-the-icc-closes-or-attempts-to-close-the-afghanistan-investigation/",
+          "seen_at": "2026-11-18T20:03:04+00:00"
         }
       ],
       "title_zh": "",
@@ -130,9 +266,9 @@
       "published_at": "2026-11-16T06:21:02+00:00",
       "date_precision": "instant",
       "discovered_at": "2026-11-18T18:43:53+00:00",
-      "updated_at": "2026-11-18T18:43:53+00:00",
+      "updated_at": "2026-11-18T20:03:38+00:00",
       "evidence_basis": "原文正文核对",
-      "source_revision": "464fcc7d0e7d351017ce6194312db8a810d91efdf442f29cec6357227c23dba2",
+      "source_revision": "006edfe62c3cc0f7f6f6b9dd92a0dd6a3c453f6916935aee0accc160d6fa4b80",
       "topics": [
         "disputes"
       ],
@@ -145,7 +281,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/esilrrr3dec/",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:38+00:00"
         }
       ],
       "title_zh": "",
@@ -165,9 +301,9 @@
       "published_at": "2026-11-16",
       "date_precision": "day",
       "discovered_at": "2026-11-18T18:43:35+00:00",
-      "updated_at": "2026-11-18T18:43:35+00:00",
+      "updated_at": "2026-11-18T20:02:53+00:00",
       "evidence_basis": "原文正文核对",
-      "source_revision": "82b0d95e3c2c164f184a9761b309611589c32fdfdebd8923d09117044926d641",
+      "source_revision": "afa044291c723d6d8854221aa6f058f187ae995c70d7031e124d7c3a3e169da6",
       "topics": [
         "institutions"
       ],
@@ -180,7 +316,141 @@
         {
           "source_id": "un-geneva-meetings",
           "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/le-comite-contre-la-torture-ouvre-les-travaux-de-sa-85e-session",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:02:53+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "a17c127856b5d6e0201462d2734f652f6ac753c78365273dd5db4c4abdac9cd6"
+    },
+    {
+      "id": "689699f5b1547fd831d9",
+      "source_id": "ejiltalk",
+      "title": "Two Weeks in Review: 2—13 November 2026",
+      "url": "https://www.ejiltalk.org/two-weeks-in-review-2-13-november-2026/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-11-15T12:00:23+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-18T20:03:04+00:00",
+      "updated_at": "2026-11-18T20:03:04+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "811ac3d46842d52df2d8f72805071ee9a8ad39fb6834d340abf1807e63b73793",
+      "topics": [],
+      "authors": [
+        "Sebastian von Massow"
+      ],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "ejiltalk",
+          "url": "https://www.ejiltalk.org/two-weeks-in-review-2-13-november-2026/",
+          "seen_at": "2026-11-18T20:03:04+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "a17c127856b5d6e0201462d2734f652f6ac753c78365273dd5db4c4abdac9cd6"
+    },
+    {
+      "id": "023f5f16b369251ae665",
+      "source_id": "ejiltalk",
+      "title": "Announcements: CfP Polar Law Symposium; CfS International Water Law; CfP ANZSIL Annual Conference; CfA Vox Legis; CfP Informal International Law and Foreign Relations Law",
+      "url": "https://www.ejiltalk.org/announcements-cfp-polar-law-symposium-cfs-international-water-law-cfp-anzsil-annual-conference-cfa-vox-legis-cfp-informal-international-law-and-foreign-relations-law/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-11-15T10:00:36+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-18T20:03:04+00:00",
+      "updated_at": "2026-11-18T20:03:04+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "5da2c1f38a08338148b4668b8b56039c5cfe0f97bdce27f2f8135edbb979b47f",
+      "topics": [],
+      "authors": [
+        "Mary Guest"
+      ],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "ejiltalk",
+          "url": "https://www.ejiltalk.org/announcements-cfp-polar-law-symposium-cfs-international-water-law-cfp-anzsil-annual-conference-cfa-vox-legis-cfp-informal-international-law-and-foreign-relations-law/",
+          "seen_at": "2026-11-18T20:03:04+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "a17c127856b5d6e0201462d2734f652f6ac753c78365273dd5db4c4abdac9cd6"
+    },
+    {
+      "id": "61950c019053cb41dfae",
+      "source_id": "ejiltalk",
+      "title": "Splitting the ICC’s Afghanistan Investigation: Judicial Oversight or Overreach?",
+      "url": "https://www.ejiltalk.org/splitting-the-iccs-afghanistan-investigation-judicial-oversight-or-overreach/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-11-13T08:00:08+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-18T20:03:04+00:00",
+      "updated_at": "2026-11-18T20:03:04+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "026370ca8f76fb5aeb0c11193ee71e60eae61097b9033397785e44e032c3bdcd",
+      "topics": [
+        "rights"
+      ],
+      "authors": [
+        "Miles Jackson"
+      ],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "ejiltalk",
+          "url": "https://www.ejiltalk.org/splitting-the-iccs-afghanistan-investigation-judicial-oversight-or-overreach/",
+          "seen_at": "2026-11-18T20:03:04+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "a17c127856b5d6e0201462d2734f652f6ac753c78365273dd5db4c4abdac9cd6"
+    },
+    {
+      "id": "080aaba7cc81ba9b2dac",
+      "source_id": "wto",
+      "title": "Ireland contributes EUR 200,000 to strengthen trade opportunities in developing countries",
+      "url": "https://www.wto.org/english/news_e/pres26_e/pr998_551_e.htm",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-11-13T00:00:00+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-18T20:03:40+00:00",
+      "updated_at": "2026-11-18T20:03:40+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "32a487c7d4f01abc9da9cf58c8eaf40d668cf46bfb03796205df6a9216e9b7d9",
+      "topics": [
+        "economic"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻",
+      "provenance": [
+        {
+          "source_id": "wto",
+          "url": "https://www.wto.org/english/news_e/pres26_e/pr998_551_e.htm",
+          "seen_at": "2026-11-18T20:03:40+00:00"
         }
       ],
       "title_zh": "",
@@ -200,9 +470,9 @@
       "published_at": "2026-11-13",
       "date_precision": "day",
       "discovered_at": "2026-11-18T18:43:35+00:00",
-      "updated_at": "2026-11-18T18:43:35+00:00",
+      "updated_at": "2026-11-18T20:02:53+00:00",
       "evidence_basis": "原文正文核对",
-      "source_revision": "b2a0044866aded8db72ba85ee2be7bb441e2d663a0e47a00c3af23afca366144",
+      "source_revision": "f56f904d923ee3c9514485d8b28fc84292b6dccee4427e42a163a4cc9ebfc04a",
       "topics": [
         "institutions",
         "economic"
@@ -216,7 +486,174 @@
         {
           "source_id": "un-geneva-meetings",
           "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/le-comite-des-droits-economiques-sociaux-et-culturels-acheve-sa",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:02:53+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "a17c127856b5d6e0201462d2734f652f6ac753c78365273dd5db4c4abdac9cd6"
+    },
+    {
+      "id": "bf09293c27d871bec48b",
+      "source_id": "wto",
+      "title": "Members review LDC support, discuss public health and small business IP assistance",
+      "url": "https://www.wto.org/english/news_e/news26_e/trip_12nov26_553_e.htm",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-11-12T00:00:00+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-18T20:03:40+00:00",
+      "updated_at": "2026-11-18T20:03:40+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "bcdadf62fb2d05ecff82ede2a30e9d4ff9a4aeb7a5777686f33bda519bad8914",
+      "topics": [
+        "economic"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻",
+      "provenance": [
+        {
+          "source_id": "wto",
+          "url": "https://www.wto.org/english/news_e/news26_e/trip_12nov26_553_e.htm",
+          "seen_at": "2026-11-18T20:03:40+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "a17c127856b5d6e0201462d2734f652f6ac753c78365273dd5db4c4abdac9cd6"
+    },
+    {
+      "id": "9c8b144cd5b0180fc2b5",
+      "source_id": "ejiltalk",
+      "title": "Fair Share Obligations in Climate Change Litigation: Towards a Global Carbon Approach?",
+      "url": "https://www.ejiltalk.org/fair-share-obligations-in-climate-change-litigation-towards-a-global-carbon-approach/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-11-11T08:00:00+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-18T20:03:04+00:00",
+      "updated_at": "2026-11-18T20:03:04+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "5b5458045967102f6bf1f9f07c33599904421157608d87d882eb913199c80d65",
+      "topics": [
+        "ocean-climate"
+      ],
+      "authors": [
+        "Rebecca Walker"
+      ],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "ejiltalk",
+          "url": "https://www.ejiltalk.org/fair-share-obligations-in-climate-change-litigation-towards-a-global-carbon-approach/",
+          "seen_at": "2026-11-18T20:03:04+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "a17c127856b5d6e0201462d2734f652f6ac753c78365273dd5db4c4abdac9cd6"
+    },
+    {
+      "id": "15c72f2aa450bf852a93",
+      "source_id": "wto",
+      "title": "South Africa notifies launch of safeguard investigation into certain non-wired float glass products",
+      "url": "https://www.wto.org/english/news_e/news26_e/safe_zaf_11nov26_546_e.htm",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-11-11T00:00:00+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-18T20:03:40+00:00",
+      "updated_at": "2026-11-18T20:03:40+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "d4c900923dc226897cb1229b914992ab573142a0033b5d26345bb12a675070b6",
+      "topics": [
+        "economic"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻",
+      "provenance": [
+        {
+          "source_id": "wto",
+          "url": "https://www.wto.org/english/news_e/news26_e/safe_zaf_11nov26_546_e.htm",
+          "seen_at": "2026-11-18T20:03:40+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "a17c127856b5d6e0201462d2734f652f6ac753c78365273dd5db4c4abdac9cd6"
+    },
+    {
+      "id": "c8188d6de02c22604b42",
+      "source_id": "wto",
+      "title": "Director-General praises work of Technical Barriers to Trade Committee at 100th meeting",
+      "url": "https://www.wto.org/english/news_e/news26_e/tbt_10nov26_554_e.htm",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-11-10T00:00:00+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-18T20:03:40+00:00",
+      "updated_at": "2026-11-18T20:03:40+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "70f3d8864ca3a57121b8c48c26e067cb8ab92b9de7a0ca3bdc1ffc1a368ef272",
+      "topics": [
+        "economic"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻",
+      "provenance": [
+        {
+          "source_id": "wto",
+          "url": "https://www.wto.org/english/news_e/news26_e/tbt_10nov26_554_e.htm",
+          "seen_at": "2026-11-18T20:03:40+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "a17c127856b5d6e0201462d2734f652f6ac753c78365273dd5db4c4abdac9cd6"
+    },
+    {
+      "id": "766e345a0627451bd4e7",
+      "source_id": "wto",
+      "title": "Ethiopia's accession maintains momentum as WTO members review progress",
+      "url": "https://www.wto.org/english/news_e/news26_e/acc_10nov26_550_e.htm",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-11-10T00:00:00+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-18T20:03:40+00:00",
+      "updated_at": "2026-11-18T20:03:40+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "be508ae447c683b3ab3cf3967271a81b1e37d23b2dd70af0dde9fcf8413851ab",
+      "topics": [
+        "economic"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻",
+      "provenance": [
+        {
+          "source_id": "wto",
+          "url": "https://www.wto.org/english/news_e/news26_e/acc_10nov26_550_e.htm",
+          "seen_at": "2026-11-18T20:03:40+00:00"
         }
       ],
       "title_zh": "",
@@ -236,9 +673,9 @@
       "published_at": "2026-11-10",
       "date_precision": "day",
       "discovered_at": "2026-11-18T18:43:28+00:00",
-      "updated_at": "2026-11-18T18:43:28+00:00",
+      "updated_at": "2026-11-18T20:02:45+00:00",
       "evidence_basis": "原文正文核对",
-      "source_revision": "3b1a881c155b2485293df8249be9347cc4f6d68c26c528dd86fe10eb2e282f3e",
+      "source_revision": "d3c4d77c132498e679009bcb04089266f1e55ab887753e2c796f1f46e55e0718",
       "topics": [],
       "authors": [
         "ungeneva.org"
@@ -249,7 +686,7 @@
         {
           "source_id": "un-geneva-press",
           "url": "https://www.ungeneva.org/en/news-media/press-release/2026/11/seventh-review-conference-high-contracting-parties-convention",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:02:45+00:00"
         }
       ],
       "title_zh": "",
@@ -282,7 +719,40 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/symposium/state-responsibility-in-crisis/",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:32+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "a17c127856b5d6e0201462d2734f652f6ac753c78365273dd5db4c4abdac9cd6"
+    },
+    {
+      "id": "40b205ef5f120649762e",
+      "source_id": "wto",
+      "title": "Germany contributes EUR 500,000 to strengthen developing economies' trade capacity",
+      "url": "https://www.wto.org/english/news_e/news26_e/tech_09nov26_543_e.htm",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-11-09T00:00:00+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-18T20:03:40+00:00",
+      "updated_at": "2026-11-18T20:03:40+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "f70f20bf0e3000c2bc6af192d6b4ab67dacfa43981acee24efb471e174432b68",
+      "topics": [
+        "economic"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻",
+      "provenance": [
+        {
+          "source_id": "wto",
+          "url": "https://www.wto.org/english/news_e/news26_e/tech_09nov26_543_e.htm",
+          "seen_at": "2026-11-18T20:03:40+00:00"
         }
       ],
       "title_zh": "",
@@ -302,9 +772,9 @@
       "published_at": "2026-11-06",
       "date_precision": "day",
       "discovered_at": "2026-11-18T18:43:35+00:00",
-      "updated_at": "2026-11-18T18:43:35+00:00",
+      "updated_at": "2026-11-18T20:02:53+00:00",
       "evidence_basis": "原文正文核对",
-      "source_revision": "823fda08a8a4dbf590042c4e717b1033f7611cf93e99afb3ba895d4a11c97a0f",
+      "source_revision": "6ba85639799e0ec95d55f2f4ccdc71288d19c4fde1a32df783684510342ffcec",
       "topics": [
         "institutions",
         "economic",
@@ -319,7 +789,7 @@
         {
           "source_id": "un-geneva-meetings",
           "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/le-comite-des-droits-economiques-sociaux-et-culturels-et-le",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:02:53+00:00"
         }
       ],
       "title_zh": "",
@@ -339,9 +809,9 @@
       "published_at": "2026-11-06",
       "date_precision": "day",
       "discovered_at": "2026-11-18T18:43:35+00:00",
-      "updated_at": "2026-11-18T18:43:35+00:00",
+      "updated_at": "2026-11-18T20:02:53+00:00",
       "evidence_basis": "原文正文核对",
-      "source_revision": "197eb753df877867c735b3a24d508c8c5e9581f2f59cd34911db7c089e06b719",
+      "source_revision": "2896bbaca97d78d44c030023e6420caa40e6fc9ccedda1d213db342839eebcea",
       "topics": [
         "institutions",
         "economic"
@@ -355,7 +825,7 @@
         {
           "source_id": "un-geneva-meetings",
           "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/examen-de-lautriche-au-comite-des-droits-economiques-sociaux-et",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:02:53+00:00"
         }
       ],
       "title_zh": "",
@@ -386,7 +856,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/calls-for-papers/edited-volume-on-battlefield-forensics/",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:32+00:00"
         }
       ],
       "title_zh": "",
@@ -433,7 +903,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag038",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -464,7 +934,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/symposium/open-ended-symposium-on-genai-and-the-future-of-international-legal-scholarship/",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:32+00:00"
         }
       ],
       "title_zh": "",
@@ -497,7 +967,133 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/calls-for-papers/call-for-blogs-centre-for-research-in-environmental-law/",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:32+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "a17c127856b5d6e0201462d2734f652f6ac753c78365273dd5db4c4abdac9cd6"
+    },
+    {
+      "id": "ab128537110250717b65",
+      "source_id": "voelkerrechtsblog",
+      "title": "Online Certificate Course on Trademark Law",
+      "url": "https://voelkerrechtsblog.org/events/online-certificate-course-on-trademark-law/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-10-30T09:27:11+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-18T20:03:32+00:00",
+      "updated_at": "2026-11-18T20:03:32+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "5c25374284a760b1b13168d81cc84ae1c60f7581dd933775cf84976ed7dae9af",
+      "topics": [
+        "economic"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "voelkerrechtsblog",
+          "url": "https://voelkerrechtsblog.org/events/online-certificate-course-on-trademark-law/",
+          "seen_at": "2026-11-18T20:03:32+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "a17c127856b5d6e0201462d2734f652f6ac753c78365273dd5db4c4abdac9cd6"
+    },
+    {
+      "id": "644fb4f05d80effd5ca3",
+      "source_id": "voelkerrechtsblog",
+      "title": "NLUO Student Law Journal Volume IX",
+      "url": "https://voelkerrechtsblog.org/calls-for-papers/nluo-student-law-journal-volume-ix/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-10-30T09:11:39+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-18T20:03:32+00:00",
+      "updated_at": "2026-11-18T20:03:32+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "23bf6d4b25b9e1b97d0ed0d69478adf4ce5c212a20691a0172c8ce229c076e15",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "voelkerrechtsblog",
+          "url": "https://voelkerrechtsblog.org/calls-for-papers/nluo-student-law-journal-volume-ix/",
+          "seen_at": "2026-11-18T20:03:32+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "a17c127856b5d6e0201462d2734f652f6ac753c78365273dd5db4c4abdac9cd6"
+    },
+    {
+      "id": "58a7de54615e4be0132d",
+      "source_id": "voelkerrechtsblog",
+      "title": "Digital Dual Use – Interdisziplinäre Konferenz",
+      "url": "https://voelkerrechtsblog.org/events/digital-dual-use-interdisziplinare-konferenz/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-10-30T08:51:06+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-18T20:03:32+00:00",
+      "updated_at": "2026-11-18T20:03:32+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "899cec9f608a49db75972f4d7293d1aaa5d4717718ed0bfd6ec9235480955413",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "voelkerrechtsblog",
+          "url": "https://voelkerrechtsblog.org/events/digital-dual-use-interdisziplinare-konferenz/",
+          "seen_at": "2026-11-18T20:03:32+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "a17c127856b5d6e0201462d2734f652f6ac753c78365273dd5db4c4abdac9cd6"
+    },
+    {
+      "id": "813998a9499fe3a185d1",
+      "source_id": "voelkerrechtsblog",
+      "title": "Ko-Abteilungsleitung für die Abteilung Monitoring-Stelle UN-Behindertenrechtskonvention (100%)",
+      "url": "https://voelkerrechtsblog.org/jobs/ko-abteilungsleitung-fur-die-abteilung-monitoring-stelle-un-behindertenrechtskonvention-100/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-10-30T08:38:16+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-18T20:03:32+00:00",
+      "updated_at": "2026-11-18T20:03:32+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "67e7108b02f90b45935337573625ed07bd637b7a1b14aa4663439d3ee606695b",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "voelkerrechtsblog",
+          "url": "https://voelkerrechtsblog.org/jobs/ko-abteilungsleitung-fur-die-abteilung-monitoring-stelle-un-behindertenrechtskonvention-100/",
+          "seen_at": "2026-11-18T20:03:32+00:00"
         }
       ],
       "title_zh": "",
@@ -517,9 +1113,9 @@
       "published_at": "2026-10-29",
       "date_precision": "day",
       "discovered_at": "2026-11-18T18:43:28+00:00",
-      "updated_at": "2026-11-18T18:43:28+00:00",
+      "updated_at": "2026-11-18T20:02:45+00:00",
       "evidence_basis": "原文正文核对",
-      "source_revision": "040db1820201efc7814aac63df540e6330fbbf6465fb3721eecc0c560fcdbb44",
+      "source_revision": "8a2b1e744c713c931041f5f2030204c498f1274f54f53aca50dc69bcf32f2700",
       "topics": [],
       "authors": [
         "ungeneva.org"
@@ -530,7 +1126,7 @@
         {
           "source_id": "un-geneva-press",
           "url": "https://www.ungeneva.org/en/news-media/press-release/2026/10/un-geneva-unveils-sustainable-new-uniforms-tour-guides-through",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:02:45+00:00"
         }
       ],
       "title_zh": "",
@@ -578,7 +1174,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag042",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -625,7 +1221,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s0922156526101009",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -675,7 +1271,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s0922156526100971",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -721,7 +1317,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag041",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -741,9 +1337,9 @@
       "published_at": "2026-10-14T10:05:04+00:00",
       "date_precision": "instant",
       "discovered_at": "2026-11-18T18:43:53+00:00",
-      "updated_at": "2026-11-18T18:43:53+00:00",
+      "updated_at": "2026-11-18T20:03:38+00:00",
       "evidence_basis": "原文正文核对",
-      "source_revision": "00d8574131f7efd49cc2b7769d0f53917fd1a721a17767a2d039f83e0454b815",
+      "source_revision": "f9dfb624e04b6cb2f07680f28ab4e4acb8510e504c65e88a77989ef818d9bc6a",
       "topics": [],
       "authors": [
         "Walter Ilardi"
@@ -754,7 +1350,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/2027-esil-annual-conference/",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:38+00:00"
         }
       ],
       "title_zh": "",
@@ -802,7 +1398,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s0922156526100995",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -851,7 +1447,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag034",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -871,9 +1467,9 @@
       "published_at": "2026-10-10",
       "date_precision": "day",
       "discovered_at": "2026-11-18T18:40:11+00:00",
-      "updated_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T20:02:32+00:00",
       "evidence_basis": "官方原发页面核对",
-      "source_revision": "0cb3019c7aaa5925bf4650638060d72d98037bf1b8393f46f8b152182164a161",
+      "source_revision": "82508fd623e6e6e487b5fc107fbddaad18cf5496293da712d7fc09a0849f9889",
       "topics": [],
       "authors": [],
       "bibliography": {
@@ -884,7 +1480,7 @@
         {
           "source_id": "china-mfa-statements",
           "url": "https://www.mfa.gov.cn/fyrbt_673021/dhdw_673027/202610/t20261010_12038194.shtml",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:02:32+00:00"
         }
       ],
       "title_zh": "",
@@ -904,9 +1500,9 @@
       "published_at": "2026-10-07",
       "date_precision": "day",
       "discovered_at": "2026-11-18T18:43:28+00:00",
-      "updated_at": "2026-11-18T18:43:28+00:00",
+      "updated_at": "2026-11-18T20:02:45+00:00",
       "evidence_basis": "原文正文核对",
-      "source_revision": "d5a75bb0db1ee393cbb08d7f5d6e6290d5cccd4c71eab183df2cc38234b39562",
+      "source_revision": "db6d54c76d04c4a8d21880a89c0f4e173de05f4aa78e7c04092783f2cd9e63c4",
       "topics": [
         "rights"
       ],
@@ -919,7 +1515,7 @@
         {
           "source_id": "un-geneva-press",
           "url": "https://www.ungeneva.org/en/news-media/press-release/2026/10/le-conseil-des-droits-de-lhomme-clos-les-travaux-de-sa-soixante",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:02:45+00:00"
         }
       ],
       "title_zh": "",
@@ -939,9 +1535,9 @@
       "published_at": "2026-10-01T10:06:11+00:00",
       "date_precision": "instant",
       "discovered_at": "2026-11-18T18:43:53+00:00",
-      "updated_at": "2026-11-18T18:43:53+00:00",
+      "updated_at": "2026-11-18T20:03:38+00:00",
       "evidence_basis": "原文正文核对",
-      "source_revision": "ee9fe1f31482caf18e421ea4f8b76bbbf9ac88065f73d18ad659aebb584564bc",
+      "source_revision": "08cbe8b77ae750ae650cd385375b04e84fe52ecb8f564cae4b7f0a48ee86268a",
       "topics": [],
       "authors": [
         "Walter Ilardi"
@@ -952,7 +1548,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/join-or-renew-your-esil-membership-for-2027/",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:38+00:00"
         }
       ],
       "title_zh": "",
@@ -998,7 +1594,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s0922156526100922",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -1045,7 +1641,7 @@
         {
           "source_id": "crossref-ajil",
           "url": "https://doi.org/10.1017/ajil.2026.10185",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -1091,7 +1687,7 @@
         {
           "source_id": "crossref-ajil",
           "url": "https://doi.org/10.1017/ajil.2026.10188",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -1140,7 +1736,7 @@
         {
           "source_id": "crossref-ajil",
           "url": "https://doi.org/10.1017/ajil.2026.10190",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -1187,7 +1783,7 @@
         {
           "source_id": "crossref-ajil",
           "url": "https://doi.org/10.1017/ajil.2026.10193",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -1233,7 +1829,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s0922156526100983",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -1253,9 +1849,9 @@
       "published_at": "2026-09-26",
       "date_precision": "day",
       "discovered_at": "2026-11-18T18:40:11+00:00",
-      "updated_at": "2026-11-18T18:40:11+00:00",
+      "updated_at": "2026-11-18T20:02:32+00:00",
       "evidence_basis": "官方原发页面核对",
-      "source_revision": "145001d06deb6e7734ebefd0a0d039e9841230e7cab6655e4c1b69854e7665ad",
+      "source_revision": "ba3dfb9da4165985c82257d6d7d13de9418a0f118086c48f937f6f48f5203e03",
       "topics": [],
       "authors": [],
       "bibliography": {
@@ -1266,7 +1862,7 @@
         {
           "source_id": "china-mfa-statements",
           "url": "https://www.mfa.gov.cn/fyrbt_673021/dhdw_673027/202609/t20260926_12031638.shtml",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:02:32+00:00"
         }
       ],
       "title_zh": "",
@@ -1312,7 +1908,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s0922156526100934",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -1358,7 +1954,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag033",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -1404,7 +2000,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag031",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -1452,7 +2048,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag039",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -1500,7 +2096,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag036",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -1547,7 +2143,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag037",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -1593,7 +2189,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s0922156526100958",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -1613,9 +2209,9 @@
       "published_at": "2026-08-15",
       "date_precision": "day",
       "discovered_at": "2026-11-18T18:43:16+00:00",
-      "updated_at": "2026-11-18T18:43:16+00:00",
+      "updated_at": "2026-11-18T20:02:32+00:00",
       "evidence_basis": "官方原发页面核对",
-      "source_revision": "33b3e00f061fa3a1c35777f0b8e06aef28fb509868a15ab0fc0aebdeefc3a71b",
+      "source_revision": "321adaad330f55de18be93d491f63af195aea8b8c7d1882733255bb032e9595d",
       "topics": [],
       "authors": [],
       "bibliography": {
@@ -1626,7 +2222,7 @@
         {
           "source_id": "china-mfa-statements",
           "url": "https://www.mfa.gov.cn/fyrbt_673021/dhdw_673027/202608/t20260815_12004727.shtml",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:02:32+00:00"
         }
       ],
       "title_zh": "",
@@ -1646,9 +2242,9 @@
       "published_at": "2026-08-14",
       "date_precision": "day",
       "discovered_at": "2026-11-18T18:43:16+00:00",
-      "updated_at": "2026-11-18T18:43:16+00:00",
+      "updated_at": "2026-11-18T20:02:32+00:00",
       "evidence_basis": "官方原发页面核对",
-      "source_revision": "61ae401d87a7d79d16a212381b93d94af42eacdeb83f6d071c3ad453776b79d1",
+      "source_revision": "7e253c0479d65b5a014556c2a49c95faff1697655f0d1316ab016f7819975396",
       "topics": [],
       "authors": [],
       "bibliography": {
@@ -1659,7 +2255,7 @@
         {
           "source_id": "china-mfa-statements",
           "url": "https://www.mfa.gov.cn/fyrbt_673021/dhdw_673027/202608/t20260814_12004005.shtml",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:02:32+00:00"
         }
       ],
       "title_zh": "",
@@ -1705,7 +2301,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag027",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -1751,7 +2347,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag028",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -1797,7 +2393,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag029",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -1843,7 +2439,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s0922156526100867",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -1891,7 +2487,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s0922156526100879",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -1939,7 +2535,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s0922156526100892",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -1987,7 +2583,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s0922156526100855",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -2036,7 +2632,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s0922156526100880",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -2082,7 +2678,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s092215652610082x",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -2128,7 +2724,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s0922156526100788",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -2177,7 +2773,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s0922156526100806",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -2225,7 +2821,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag022",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -2245,9 +2841,9 @@
       "published_at": "2026-05-12T08:44:52+00:00",
       "date_precision": "instant",
       "discovered_at": "2026-11-18T18:43:53+00:00",
-      "updated_at": "2026-11-18T18:43:53+00:00",
+      "updated_at": "2026-11-18T20:03:38+00:00",
       "evidence_basis": "原文正文核对",
-      "source_revision": "743409eab01a6558092239b0864f80b21af301875b0130f8fb996005decbe616",
+      "source_revision": "8e8fe50d1b219dbff4e8d068923023a54844f3a0ee81401cf2db66a2d6ad7c6f",
       "topics": [],
       "authors": [
         "Walter Ilardi"
@@ -2258,7 +2854,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/esilrf-2027/",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:38+00:00"
         }
       ],
       "title_zh": "",
@@ -2307,7 +2903,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag019",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -2353,7 +2949,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag011",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -2401,7 +2997,7 @@
         {
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s0922156526100752",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -2450,7 +3046,7 @@
         {
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag012",
-          "seen_at": "2026-11-18T19:59:13+00:00"
+          "seen_at": "2026-11-18T20:03:46+00:00"
         }
       ],
       "title_zh": "",
@@ -2476,9 +3072,22 @@
       "poll_hours": 12,
       "scope": "外交部发言人原发答问的标题、日期和原文入口",
       "language": "zh",
-      "status": "unverified",
-      "attempted_at": null,
-      "success_at": null,
+      "review": {
+        "candidates": 30,
+        "checked": 4,
+        "verified": 4,
+        "china_hold": 0,
+        "origin_hold": 0,
+        "body_hold": 0,
+        "access_hold": 0,
+        "unsupported_hold": 0,
+        "pdf_hold": 0,
+        "pending": 26,
+        "cursor": "f0590260ca8ee0cb3020"
+      },
+      "status": "ok",
+      "attempted_at": "2026-11-18T20:02:32+00:00",
+      "success_at": "2026-11-18T20:02:32+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 4,
@@ -2516,9 +3125,22 @@
       "poll_hours": 6,
       "scope": "官方新闻目录标题、日期及原文链接；机构报道不等于司法认定，不抓取新闻全文",
       "language": "en",
-      "status": "unverified",
-      "attempted_at": null,
-      "success_at": null,
+      "review": {
+        "candidates": 7,
+        "checked": 4,
+        "verified": 0,
+        "china_hold": 0,
+        "origin_hold": 0,
+        "body_hold": 0,
+        "access_hold": 4,
+        "unsupported_hold": 0,
+        "pdf_hold": 0,
+        "pending": 3,
+        "cursor": "da68ec34f54ceba4eb5d"
+      },
+      "status": "ok",
+      "attempted_at": "2026-11-18T20:02:37+00:00",
+      "success_at": "2026-11-18T20:02:37+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 0,
@@ -2536,10 +3158,23 @@
       "poll_hours": 6,
       "scope": "官方 RSS 新闻发布入口；保留报道来源，不将其作为裁判结论",
       "language": "en",
+      "review": {
+        "candidates": 10,
+        "checked": 4,
+        "verified": 3,
+        "china_hold": 1,
+        "origin_hold": 0,
+        "body_hold": 0,
+        "access_hold": 0,
+        "unsupported_hold": 0,
+        "pdf_hold": 0,
+        "pending": 6,
+        "cursor": "d352a4ea0d47e285cbb6"
+      },
       "feed_url": "https://www.ungeneva.org/news-media/press-releases-list/rss.xml",
-      "status": "unverified",
-      "attempted_at": null,
-      "success_at": null,
+      "status": "ok",
+      "attempted_at": "2026-11-18T20:02:45+00:00",
+      "success_at": "2026-11-18T20:02:45+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 3,
@@ -2557,10 +3192,23 @@
       "poll_hours": 6,
       "scope": "官方 RSS 会议报道入口；区别于学术活动及正式会议文件",
       "language": "en",
+      "review": {
+        "candidates": 10,
+        "checked": 4,
+        "verified": 4,
+        "china_hold": 0,
+        "origin_hold": 0,
+        "body_hold": 0,
+        "access_hold": 0,
+        "unsupported_hold": 0,
+        "pdf_hold": 0,
+        "pending": 6,
+        "cursor": "bd9bda36139d654a3626"
+      },
       "feed_url": "https://www.ungeneva.org/news-media/meeting-summaries-list/rss.xml",
-      "status": "unverified",
-      "attempted_at": null,
-      "success_at": null,
+      "status": "ok",
+      "attempted_at": "2026-11-18T20:02:53+00:00",
+      "success_at": "2026-11-18T20:02:53+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 4,
@@ -2578,13 +3226,26 @@
       "poll_hours": 6,
       "scope": "RSS 最新条目，订阅解析失败时读取同站官方首页，原文逐条核验",
       "language": "en",
+      "review": {
+        "candidates": 10,
+        "checked": 6,
+        "verified": 6,
+        "china_hold": 1,
+        "origin_hold": 0,
+        "body_hold": 0,
+        "access_hold": 0,
+        "unsupported_hold": 0,
+        "pdf_hold": 0,
+        "pending": 3,
+        "cursor": "9c8b144cd5b0180fc2b5"
+      },
       "feed_url": "https://www.ejiltalk.org/feed/",
-      "status": "unverified",
-      "attempted_at": null,
-      "success_at": null,
+      "status": "ok",
+      "attempted_at": "2026-11-18T20:03:04+00:00",
+      "success_at": "2026-11-18T20:03:04+00:00",
       "error": null,
       "consecutive_failures": 0,
-      "item_count": 0,
+      "item_count": 6,
       "next_attempt_at": null
     },
     {
@@ -2599,14 +3260,17 @@
       "poll_hours": 6,
       "scope": "RSS 最新条目，包含学术评论与活动公告",
       "language": "en",
+      "review": {
+        "failure": "http_403"
+      },
       "feed_url": "https://opiniojuris.org/feed/",
-      "status": "unverified",
-      "attempted_at": null,
+      "status": "error",
+      "attempted_at": "2026-11-18T20:03:05+00:00",
       "success_at": null,
-      "error": null,
-      "consecutive_failures": 0,
+      "error": "信源暂未成功读取或解析。",
+      "consecutive_failures": 1,
       "item_count": 0,
-      "next_attempt_at": null
+      "next_attempt_at": "2026-11-18T20:18:05+00:00"
     },
     {
       "id": "voelkerrechtsblog",
@@ -2620,13 +3284,26 @@
       "poll_hours": 6,
       "scope": "RSS 最新条目；多语种学术评论",
       "language": "mixed",
+      "review": {
+        "candidates": 30,
+        "checked": 8,
+        "verified": 8,
+        "china_hold": 0,
+        "origin_hold": 0,
+        "body_hold": 0,
+        "access_hold": 0,
+        "unsupported_hold": 0,
+        "pdf_hold": 0,
+        "pending": 22,
+        "cursor": "813998a9499fe3a185d1"
+      },
       "feed_url": "https://voelkerrechtsblog.org/feed/",
-      "status": "unverified",
-      "attempted_at": null,
-      "success_at": null,
+      "status": "ok",
+      "attempted_at": "2026-11-18T20:03:32+00:00",
+      "success_at": "2026-11-18T20:03:32+00:00",
       "error": null,
       "consecutive_failures": 0,
-      "item_count": 4,
+      "item_count": 8,
       "next_attempt_at": null
     },
     {
@@ -2641,10 +3318,23 @@
       "poll_hours": 12,
       "scope": "学会 RSS 公告；当前描述字段含重复过期模板，仅使用标题，明确日期后才进入日历",
       "language": "en",
+      "review": {
+        "candidates": 30,
+        "checked": 4,
+        "verified": 4,
+        "china_hold": 1,
+        "origin_hold": 0,
+        "body_hold": 0,
+        "access_hold": 0,
+        "unsupported_hold": 0,
+        "pdf_hold": 0,
+        "pending": 25,
+        "cursor": "77febc8622fc71310352"
+      },
       "feed_url": "https://esil-sedi.eu/feed/",
-      "status": "unverified",
-      "attempted_at": null,
-      "success_at": null,
+      "status": "ok",
+      "attempted_at": "2026-11-18T20:03:38+00:00",
+      "success_at": "2026-11-18T20:03:38+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 4,
@@ -2662,13 +3352,26 @@
       "poll_hours": 6,
       "scope": "WTO 官方新闻，并非全部 WTO 文件或争端记录",
       "language": "en",
+      "review": {
+        "candidates": 10,
+        "checked": 8,
+        "verified": 8,
+        "china_hold": 1,
+        "origin_hold": 0,
+        "body_hold": 0,
+        "access_hold": 0,
+        "unsupported_hold": 0,
+        "pdf_hold": 0,
+        "pending": 1,
+        "cursor": "40b205ef5f120649762e"
+      },
       "feed_url": "https://www.wto.org/library/rss/latest_news_e.xml",
-      "status": "unverified",
-      "attempted_at": null,
-      "success_at": null,
+      "status": "ok",
+      "attempted_at": "2026-11-18T20:03:40+00:00",
+      "success_at": "2026-11-18T20:03:40+00:00",
       "error": null,
       "consecutive_failures": 0,
-      "item_count": 0,
+      "item_count": 8,
       "next_attempt_at": null
     },
     {
@@ -2683,9 +3386,22 @@
       "poll_hours": 12,
       "scope": "公开新闻及案件公告；机构活动单独标为官方动态",
       "language": "en",
-      "status": "unverified",
-      "attempted_at": null,
-      "success_at": null,
+      "review": {
+        "candidates": 10,
+        "checked": 8,
+        "verified": 0,
+        "china_hold": 0,
+        "origin_hold": 0,
+        "body_hold": 8,
+        "access_hold": 0,
+        "unsupported_hold": 0,
+        "pdf_hold": 0,
+        "pending": 2,
+        "cursor": "2c158db411c4223b4288"
+      },
+      "status": "ok",
+      "attempted_at": "2026-11-18T20:03:45+00:00",
+      "success_at": "2026-11-18T20:03:45+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 0,
@@ -2703,9 +3419,21 @@
       "poll_hours": 12,
       "scope": "公开新闻稿入口；访问受限时保留失败状态，不绕过限制",
       "language": "en",
-      "status": "unverified",
-      "attempted_at": null,
-      "success_at": null,
+      "review": {
+        "candidates": 30,
+        "checked": 1,
+        "verified": 0,
+        "china_hold": 0,
+        "origin_hold": 0,
+        "body_hold": 0,
+        "access_hold": 1,
+        "unsupported_hold": 0,
+        "pdf_hold": 0,
+        "pending": 29
+      },
+      "status": "ok",
+      "attempted_at": "2026-11-18T20:03:45+00:00",
+      "success_at": "2026-11-18T20:03:45+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 0,
@@ -2723,9 +3451,9 @@
       "poll_hours": 24,
       "scope": "European Journal of International Law 的 Crossref 元数据；不保证即时完整",
       "language": "en",
-      "status": "unverified",
-      "attempted_at": null,
-      "success_at": null,
+      "status": "ok",
+      "attempted_at": "2026-11-18T20:03:46+00:00",
+      "success_at": "2026-11-18T20:03:46+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 17,
@@ -2743,9 +3471,9 @@
       "poll_hours": 24,
       "scope": "American Journal of International Law 的 Crossref 元数据；不抓付费全文",
       "language": "en",
-      "status": "unverified",
-      "attempted_at": null,
-      "success_at": null,
+      "status": "ok",
+      "attempted_at": "2026-11-18T20:03:46+00:00",
+      "success_at": "2026-11-18T20:03:46+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 4,
@@ -2763,9 +3491,9 @@
       "poll_hours": 24,
       "scope": "Leiden Journal of International Law 的 Crossref 元数据",
       "language": "en",
-      "status": "unverified",
-      "attempted_at": null,
-      "success_at": null,
+      "status": "ok",
+      "attempted_at": "2026-11-18T20:03:46+00:00",
+      "success_at": "2026-11-18T20:03:46+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 16,
@@ -2830,9 +3558,9 @@
         "identity_source": "https://www.cssn.cn/skgz/202209/t20220916_5505172.shtml",
         "note": "CASS 公布的历史官网与当前采编平台需结合期刊首页核对；不使用投稿中介站。",
         "check_status": "identity_matched",
-        "checked_at": null,
+        "checked_at": "2026-11-18T20:03:48+00:00",
         "check_reason": null,
-        "success_at": "2026-11-18T18:43:59+00:00",
+        "success_at": "2026-11-18T20:03:48+00:00",
         "error": null,
         "changed": false
       },
@@ -2851,8 +3579,8 @@
         "submissions_url": "https://ilr.whu.edu.cn/",
         "note": "主办机构域名入口；官网迁移或升级时，投稿平台以编辑部最新公告为准。",
         "check_status": "error",
-        "checked_at": null,
-        "check_reason": null,
+        "checked_at": "2026-11-18T20:04:01+00:00",
+        "check_reason": "network_error",
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -2872,9 +3600,9 @@
         "identity_source": "https://gjfx.cfau.edu.cn/kxyj/col2820/col2823/index.htm",
         "note": "主办院系的征稿启事，含采编系统链接；不在本站收稿。",
         "check_status": "identity_matched",
-        "checked_at": null,
+        "checked_at": "2026-11-18T20:03:48+00:00",
         "check_reason": null,
-        "success_at": "2026-11-18T18:43:59+00:00",
+        "success_at": "2026-11-18T20:03:48+00:00",
         "error": null,
         "changed": false
       },
@@ -2892,9 +3620,9 @@
         "identity_source": "https://chenanfoundation.xmu.edu.cn/info/1068/12656.htm",
         "note": "主办机构关联基金会的期刊公告，含线上审稿系统地址。",
         "check_status": "identity_matched",
-        "checked_at": null,
+        "checked_at": "2026-11-18T20:03:50+00:00",
         "check_reason": null,
-        "success_at": "2026-11-18T18:44:01+00:00",
+        "success_at": "2026-11-18T20:03:50+00:00",
         "error": null,
         "changed": false
       },
@@ -2911,9 +3639,9 @@
         "submissions_url": "https://colr.xmu.edu.cn/",
         "note": "期刊官方高校域名入口；具体稿约以首页公告为准。",
         "check_status": "identity_matched",
-        "checked_at": null,
+        "checked_at": "2026-11-18T20:03:50+00:00",
         "check_reason": null,
-        "success_at": "2026-11-18T18:44:01+00:00",
+        "success_at": "2026-11-18T20:03:50+00:00",
         "error": null,
         "changed": false
       },
@@ -2931,8 +3659,8 @@
         "submissions_url": "https://www.csil.cn/",
         "note": "学会入口；年刊征稿按届次公告核对，不推定全年收稿。",
         "check_status": "error",
-        "checked_at": null,
-        "check_reason": null,
+        "checked_at": "2026-11-18T20:03:50+00:00",
+        "check_reason": "network_error",
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -2971,8 +3699,8 @@
         "submissions_url": "https://bjfyj.cupl.edu.cn/",
         "note": "高校期刊入口，具体投稿窗口以期刊公告为准。",
         "check_status": "error",
-        "checked_at": null,
-        "check_reason": null,
+        "checked_at": "2026-11-18T20:04:04+00:00",
+        "check_reason": "network_error",
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3011,10 +3739,10 @@
         "homepage": "https://clsjp.chinalaw.org.cn/",
         "submissions_url": "https://clsjp.chinalaw.org.cn/",
         "note": "学会域名入口；不据导航条目推定正在专题征稿。",
-        "check_status": "unverified",
-        "checked_at": null,
+        "check_status": "identity_matched",
+        "checked_at": "2026-11-18T20:03:52+00:00",
         "check_reason": null,
-        "success_at": null,
+        "success_at": "2026-11-18T20:03:52+00:00",
         "error": null,
         "changed": false
       },
@@ -3032,8 +3760,8 @@
         "identity_source": "https://www.law.pku.edu.cn/xwzx/xwdt/68028.htm",
         "note": "投稿应从编辑部官网进入，防止误入名称相近平台。",
         "check_status": "error",
-        "checked_at": null,
-        "check_reason": null,
+        "checked_at": "2026-11-18T20:03:53+00:00",
+        "check_reason": "http_567",
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3051,8 +3779,8 @@
         "submissions_url": "https://qhfx.cbpt.cnki.net/",
         "note": "期刊采编平台入口，是否接受当前类型来稿以稿约为准。",
         "check_status": "error",
-        "checked_at": null,
-        "check_reason": null,
+        "checked_at": "2026-11-18T20:03:54+00:00",
+        "check_reason": "response_invalid",
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3090,8 +3818,8 @@
         "submissions_url": "https://faxuetougao.ecupl.edu.cn/",
         "note": "高校域名采编入口。",
         "check_status": "error",
-        "checked_at": null,
-        "check_reason": null,
+        "checked_at": "2026-11-18T20:03:57+00:00",
+        "check_reason": "http_403",
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3110,8 +3838,8 @@
         "homepage": "https://academic.oup.com/ejil",
         "submissions_url": "https://academic.oup.com/ejil/pages/General_Instructions",
         "check_status": "error",
-        "checked_at": null,
-        "check_reason": null,
+        "checked_at": "2026-11-18T20:03:57+00:00",
+        "check_reason": "http_403",
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3129,9 +3857,9 @@
         "homepage": "https://www.cambridge.org/core/journals/american-journal-of-international-law",
         "submissions_url": "https://www.cambridge.org/core/journals/american-journal-of-international-law/information/author-instructions",
         "check_status": "identity_matched",
-        "checked_at": null,
+        "checked_at": "2026-11-18T20:03:59+00:00",
         "check_reason": null,
-        "success_at": "2026-11-18T18:44:20+00:00",
+        "success_at": "2026-11-18T20:03:59+00:00",
         "error": null,
         "changed": false
       },
@@ -3148,9 +3876,9 @@
         "homepage": "https://www.cambridge.org/core/journals/leiden-journal-of-international-law",
         "submissions_url": "https://www.cambridge.org/core/journals/leiden-journal-of-international-law/information/author-instructions",
         "check_status": "identity_matched",
-        "checked_at": null,
+        "checked_at": "2026-11-18T20:04:00+00:00",
         "check_reason": null,
-        "success_at": "2026-11-18T18:44:22+00:00",
+        "success_at": "2026-11-18T20:04:00+00:00",
         "error": null,
         "changed": false
       },
@@ -3167,9 +3895,9 @@
         "homepage": "https://www.cambridge.org/core/journals/international-and-comparative-law-quarterly",
         "submissions_url": "https://www.cambridge.org/core/journals/international-and-comparative-law-quarterly/information/author-instructions",
         "check_status": "identity_matched",
-        "checked_at": null,
+        "checked_at": "2026-11-18T20:04:02+00:00",
         "check_reason": null,
-        "success_at": "2026-11-18T18:44:23+00:00",
+        "success_at": "2026-11-18T20:04:02+00:00",
         "error": null,
         "changed": false
       },
@@ -3185,8 +3913,8 @@
         "homepage": "https://academic.oup.com/jiel",
         "submissions_url": "https://academic.oup.com/jiel/pages/General_Instructions",
         "check_status": "error",
-        "checked_at": null,
-        "check_reason": null,
+        "checked_at": "2026-11-18T20:04:01+00:00",
+        "check_reason": "http_403",
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3203,8 +3931,8 @@
         "homepage": "https://academic.oup.com/jids",
         "submissions_url": "https://academic.oup.com/jids/pages/General_Instructions",
         "check_status": "error",
-        "checked_at": null,
-        "check_reason": null,
+        "checked_at": "2026-11-18T20:04:01+00:00",
+        "check_reason": "http_403",
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3221,8 +3949,8 @@
         "homepage": "https://academic.oup.com/jicj",
         "submissions_url": "https://academic.oup.com/jicj/pages/General_Instructions",
         "check_status": "error",
-        "checked_at": null,
-        "check_reason": null,
+        "checked_at": "2026-11-18T20:04:01+00:00",
+        "check_reason": "http_403",
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3240,8 +3968,8 @@
         "homepage": "https://academic.oup.com/chinesejil",
         "submissions_url": "https://academic.oup.com/chinesejil/pages/General_Instructions",
         "check_status": "error",
-        "checked_at": null,
-        "check_reason": null,
+        "checked_at": "2026-11-18T20:04:01+00:00",
+        "check_reason": "http_403",
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3259,9 +3987,9 @@
         "homepage": "https://www.cambridge.org/core/journals/asian-journal-of-international-law",
         "submissions_url": "https://www.cambridge.org/core/journals/asian-journal-of-international-law/information/author-instructions",
         "check_status": "identity_matched",
-        "checked_at": null,
+        "checked_at": "2026-11-18T20:04:03+00:00",
         "check_reason": null,
-        "success_at": "2026-11-18T18:44:24+00:00",
+        "success_at": "2026-11-18T20:04:03+00:00",
         "error": null,
         "changed": false
       },
@@ -3278,8 +4006,8 @@
         "homepage": "https://brill.com/view/journals/jwit/jwit-overview.xml",
         "submissions_url": "https://brill.com/view/journals/jwit/jwit-overview.xml",
         "check_status": "error",
-        "checked_at": null,
-        "check_reason": null,
+        "checked_at": "2026-11-18T20:04:02+00:00",
+        "check_reason": "http_403",
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3297,8 +4025,8 @@
         "homepage": "https://academic.oup.com/icsidreview",
         "submissions_url": "https://academic.oup.com/icsidreview/pages/General_Instructions",
         "check_status": "error",
-        "checked_at": null,
-        "check_reason": null,
+        "checked_at": "2026-11-18T20:04:02+00:00",
+        "check_reason": "http_403",
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3315,9 +4043,9 @@
         "homepage": "https://www.cambridge.org/core/journals/transnational-environmental-law",
         "submissions_url": "https://www.cambridge.org/core/journals/transnational-environmental-law/information/author-instructions",
         "check_status": "identity_matched",
-        "checked_at": null,
+        "checked_at": "2026-11-18T20:04:04+00:00",
         "check_reason": null,
-        "success_at": "2026-11-18T18:44:25+00:00",
+        "success_at": "2026-11-18T20:04:04+00:00",
         "error": null,
         "changed": false
       },
@@ -3333,8 +4061,8 @@
         "homepage": "https://academic.oup.com/hrlr",
         "submissions_url": "https://academic.oup.com/hrlr/pages/General_Instructions",
         "check_status": "error",
-        "checked_at": null,
-        "check_reason": null,
+        "checked_at": "2026-11-18T20:04:03+00:00",
+        "check_reason": "http_403",
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3352,9 +4080,9 @@
         "homepage": "https://journals.law.harvard.edu/ilj/",
         "submissions_url": "https://journals.law.harvard.edu/ilj/submissions/",
         "check_status": "identity_matched",
-        "checked_at": null,
+        "checked_at": "2026-11-18T20:04:04+00:00",
         "check_reason": null,
-        "success_at": "2026-11-18T18:44:25+00:00",
+        "success_at": "2026-11-18T20:04:04+00:00",
         "error": null,
         "changed": false
       },
@@ -3371,8 +4099,8 @@
         "homepage": "https://www.yjil.yale.edu/",
         "submissions_url": "https://www.yjil.yale.edu/submissions/",
         "check_status": "error",
-        "checked_at": null,
-        "check_reason": null,
+        "checked_at": "2026-11-18T20:04:04+00:00",
+        "check_reason": "response_invalid",
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3390,9 +4118,9 @@
         "homepage": "https://www.jtl.columbia.edu/",
         "submissions_url": "https://www.jtl.columbia.edu/submissions",
         "check_status": "identity_matched",
-        "checked_at": null,
+        "checked_at": "2026-11-18T20:04:04+00:00",
         "check_reason": null,
-        "success_at": "2026-11-18T18:44:25+00:00",
+        "success_at": "2026-11-18T20:04:04+00:00",
         "error": null,
         "changed": false
       },
@@ -3409,8 +4137,8 @@
         "homepage": "https://www.mjilonline.org/",
         "submissions_url": "https://www.mjilonline.org/submissions/",
         "check_status": "error",
-        "checked_at": null,
-        "check_reason": null,
+        "checked_at": "2026-11-18T20:04:04+00:00",
+        "check_reason": "response_invalid",
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3428,9 +4156,9 @@
         "homepage": "https://www.law.berkeley.edu/research/berkeley-journal-of-international-law/",
         "submissions_url": "https://www.law.berkeley.edu/research/berkeley-journal-of-international-law/",
         "check_status": "identity_matched",
-        "checked_at": null,
+        "checked_at": "2026-11-18T20:04:06+00:00",
         "check_reason": null,
-        "success_at": "2026-11-18T18:44:27+00:00",
+        "success_at": "2026-11-18T20:04:06+00:00",
         "error": null,
         "changed": false
       },
@@ -3447,8 +4175,8 @@
         "homepage": "https://law.unimelb.edu.au/mjil",
         "submissions_url": "https://law.unimelb.edu.au/mjil/submissions",
         "check_status": "error",
-        "checked_at": null,
-        "check_reason": null,
+        "checked_at": "2026-11-18T20:04:04+00:00",
+        "check_reason": "http_403",
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3466,9 +4194,9 @@
         "homepage": "https://cilj.co.uk/",
         "submissions_url": "https://cilj.co.uk/submissions/",
         "check_status": "identity_matched",
-        "checked_at": null,
+        "checked_at": "2026-11-18T20:04:05+00:00",
         "check_reason": null,
-        "success_at": "2026-11-18T18:44:26+00:00",
+        "success_at": "2026-11-18T20:04:05+00:00",
         "error": null,
         "changed": false
       },
@@ -3485,8 +4213,8 @@
         "homepage": "https://www.nyujilp.org/",
         "submissions_url": "https://www.nyujilp.org/submissions/",
         "check_status": "error",
-        "checked_at": null,
-        "check_reason": null,
+        "checked_at": "2026-11-18T20:04:05+00:00",
+        "check_reason": "response_invalid",
         "success_at": null,
         "error": "投稿入口暂未成功读取。",
         "changed": false
@@ -3504,9 +4232,9 @@
         "homepage": "https://www.vjil.org/",
         "submissions_url": "https://www.vjil.org/submissions",
         "check_status": "identity_matched",
-        "checked_at": null,
+        "checked_at": "2026-11-18T20:04:06+00:00",
         "check_reason": null,
-        "success_at": "2026-11-18T18:44:26+00:00",
+        "success_at": "2026-11-18T20:04:06+00:00",
         "error": null,
         "changed": false
       }
@@ -3551,24 +4279,32 @@
         "topics": []
       }
     ],
-    "updated_at": "2026-11-18T18:44:30+00:00",
+    "updated_at": "2026-11-18T20:04:10+00:00",
     "coverage_note": "人工建立的期刊入口目录 + 程序定期检查 + 已接通信源中的征稿线索。目录不是排名，不等于已覆盖各刊全部征稿；主页可读也不等于当前正在收稿。"
   },
   "operations": {
-    "last_run": null,
-    "scheduler_enabled": false,
+    "last_run": {
+      "id": 1,
+      "started_at": "2026-11-18T20:02:29+00:00",
+      "finished_at": "2026-11-18T20:03:46+00:00",
+      "successes": 13,
+      "failures": 1,
+      "added": 65,
+      "changed": 15
+    },
+    "scheduler_enabled": true,
     "scheduled_run_verified": false,
     "last_effective_run": {
       "id": 1,
-      "started_at": "2026-11-18T18:43:14+00:00",
-      "finished_at": "2026-11-18T18:43:58+00:00",
-      "successes": 12,
-      "failures": 2,
-      "added": 63,
-      "changed": 0
+      "started_at": "2026-11-18T20:02:29+00:00",
+      "finished_at": "2026-11-18T20:03:46+00:00",
+      "successes": 13,
+      "failures": 1,
+      "added": 65,
+      "changed": 15
     },
-    "scheduler_note": "云端定时流程已准备；尚未连接账户或验证实际定时运行。",
-    "total_archived": 56,
-    "visible_in_export": 56
+    "scheduler_note": "最近一次云端运行：2026-11-18T20:04:10+00:00；触发方式：push。信源成功时间单独显示。",
+    "total_archived": 74,
+    "visible_in_export": 74
   }
 }
