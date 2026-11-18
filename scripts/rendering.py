@@ -76,13 +76,15 @@ def calendar(data):
             value=item.get(key)
             if not value: continue
             date=dt.date.fromisoformat(value['date'])
+            end=dt.date.fromisoformat(value.get('end_date',value['date']))
             label='截止' if key=='deadline' else '活动'
             # Stable UID + LAST-MODIFIED; day-only values are never invented time instants.
-            modified=dt.datetime.fromisoformat(item['ai']['processed_at']).astimezone(UTC).strftime('%Y%m%dT%H%M%SZ')
+            changed=(item.get('ai') or {}).get('processed_at') or item.get('updated_at') or data['generated_at']
+            modified=dt.datetime.fromisoformat(changed).astimezone(UTC).strftime('%Y%m%dT%H%M%SZ')
             lines+=['BEGIN:VEVENT','UID:'+item['id']+'-'+key+'@lexatlas',
                     'DTSTAMP:'+stamp,'LAST-MODIFIED:'+modified,
                     'DTSTART;VALUE=DATE:'+date.strftime('%Y%m%d'),
-                    'DTEND;VALUE=DATE:'+(date+dt.timedelta(days=1)).strftime('%Y%m%d'),
+                    'DTEND;VALUE=DATE:'+(end+dt.timedelta(days=1)).strftime('%Y%m%d'),
                     'SUMMARY:'+ics_escape('['+label+'] '+(item.get('title_zh') or item['title'])),
                     'URL:'+ics_escape(item['url']),
                     'DESCRIPTION:'+ics_escape(value['label']+'；原文日期：'+value['date_text']+'。日期来自公开公告，请以原文为准。'),

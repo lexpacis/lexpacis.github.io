@@ -17,6 +17,7 @@ from core import ROOT, UTC, atomic_write, database, fingerprint, http_fetch, log
 from publication_policy import (SCOPE_REVISION, eligible_metadata, managed_scope, original_publisher,
                                 regional_item, regional_scope, restricted_content, source_paused, strict_scope)
 from source_review import clean_review, verify_entries
+from notice_dates import item_notices
 
 def configuration():
     return read_json(ROOT/'config/site.json'),read_json(ROOT/'config/sources.json')
@@ -315,6 +316,8 @@ def public_data(conn,config,sources):
         item['provenance']=[p for p in provenance if p['source_id'] not in paused_sources]
         enrichment=conn.execute('SELECT * FROM enrichments WHERE item_id=? AND content_hash=?',(row['id'],row['content_hash'])).fetchone()
         item.update(title_zh='',summary_zh='',ai=None,event=None,deadline=None)
+        if regional:
+            item['event'],item['deadline']=item_notices(item)
         if enrichment and not managed_scope(rules):
             enriched=json.loads(enrichment['payload'])
             if restricted_content(enriched,rules): continue

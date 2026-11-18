@@ -61,7 +61,7 @@
   const statusName = status => ({ok:'目录已读取',error:'访问异常',candidate:'候选入口',unverified:'尚未验证',stale:'等待刷新',paused:'暂停采集'}[status] || '未验证');
   const empty = (heading, text, button = '') => `<div class="empty-state"><div class="empty-symbol">⌁</div><h3>${e(heading)}</h3><p>${e(text)}</p>${button}</div>`;
   const saveButton = item => `<button class="save-button ${saved.has(item.id) ? 'saved' : ''}" data-save="${e(item.id)}" aria-label="${saved.has(item.id) ? '取消收藏' : '收藏条目'}：${e(title(item))}" aria-pressed="${saved.has(item.id)}">${icon}</button>`;
-  const dateChips = item => ['event','deadline'].map(key => item[key] ? `<span class="event-date-chip">${key === 'event' ? '活动' : '截止'} ${e(shortDate(item[key].date))}</span>` : '').join('');
+  const dateChips = item => ['event','deadline'].map(key => item[key] ? `<span class="event-date-chip">${key === 'event' ? '活动' : '截止'} ${e(shortDate(item[key].date))}${item[key].end_date?' – '+e(shortDate(item[key].end_date)):''}</span>` : '').join('');
   const normalizedSearch = value => String(value ?? '').normalize('NFKC').toLowerCase();
   const searchIndex = new Map(data.items.map(item => {
     const titles=normalizedSearch([item.title,item.title_zh].join(' '));
@@ -381,7 +381,16 @@
     const offset=(start.getDay()+6)%7;
     const first=new Date(start); first.setDate(1-offset);
     const dated=[];
-    result.forEach(item=>['event','deadline'].forEach(key=>{if(item[key])dated.push({item,key,date:item[key].date});}));
+    result.forEach(item=>['event','deadline'].forEach(key=>{
+      const value=item[key];
+      if(!value)return;
+      const last=value.end_date||value.date;
+      const [year,month,date]=value.date.split('-').map(Number);
+      const day=new Date(year,month-1,date);
+      for(let count=0;count<15&&isoDay(day)<=last;count++,day.setDate(day.getDate()+1)){
+        dated.push({item,key,date:isoDay(day)});
+      }
+    }));
     const dayMap=new Map(); dated.forEach(value=>{if(!dayMap.has(value.date))dayMap.set(value.date,[]);dayMap.get(value.date).push(value);});
     const today=siteDay();
     const cells=Array.from({length:42},(_,index)=>{const day=new Date(first);day.setDate(first.getDate()+index);const iso=isoDay(day);const entries=dayMap.get(iso)||[];return `<button class="calendar-day ${day.getMonth()!==start.getMonth()?'outside':''} ${iso===today?'today':''} ${iso===selectedDay?'selected':''}" data-day="${iso}" aria-pressed="${iso===selectedDay}" aria-label="${iso}，${entries.length} 项活动或截止日期"><span class="day-number">${day.getDate()}</span>${entries.length?`<span class="day-events">${entries.length} 项 ${entries.some(i=>i.key==='deadline')?'· 截止':''}</span>`:''}</button>`;}).join('');

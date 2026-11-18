@@ -13,7 +13,7 @@ APPROVED_JOURNALS = {
     'crossref-ljil': '0922-1565',
 }
 SCOPE_REVISION = hashlib.sha256(''.join(Path(__file__).with_name(name).read_text(encoding='utf-8')
-                                     for name in ('publication_policy.py','source_review.py')).encode()).hexdigest()
+                                     for name in ('publication_policy.py','source_review.py','notice_dates.py')).encode()).hexdigest()
 DOI = re.compile(r'10\.\d{4,9}/[a-z0-9._;()/:-]+', re.I)
 
 
@@ -115,6 +115,10 @@ def regional_item(item, source, rules, reviewed):
         verified_format=(basis=='原文正文核对' or (basis==PDF_BASIS and icj_pdf_url(source,item['url'])))
         if not article_origin(source,item['url']) or not verified_format or (not reviewed and len(proof)<120):
             return False
+    if item.get('module')=='cfp':
+        from notice_dates import item_notices
+        if source.get('notice_kind')!='journal' or not source.get('journal_id') or not item_notices(item)[1]:
+            return False
     fields=[item['title'],item['url'],item.get('doi'),item['authors'],item['bibliography'],proof]
     return not restricted_content(fields,rules)
 
@@ -169,18 +173,31 @@ def regional_snapshot_issues(data, sources, rules):
     if not isinstance(data,dict) or data.get('publication_scope')!='verified_origins':
         return ['公开快照缺少当前来源核验规则']
     registries={source['id']:source for source in sources}
+    from notice_dates import item_notices
     items={}
     for item in data['items']:
         source=registries.get(item['source_id'])
         if (not source or item.get('screened_policy')!=SCOPE_REVISION or not regional_item(item,source,rules,True)
             or item['id'] in rules.get('hidden_items',()) or 'evidence' in item
-            or any(item.get(key) for key in ('title_zh','summary_zh','ai','event','deadline'))):
+            or any(item.get(key) for key in ('title_zh','summary_zh','ai'))
+            or (item.get('event'),item.get('deadline'))!=item_notices(item)):
             return ['公开快照含未通过来源核验的条目']
         items[item['id']]=item
     for call in data['cfp']['calls']:
         parent=items.get(call.get('parent_item_id'))
         if not parent or call['url']!=parent['url'] or restricted_content(call,rules):
             return ['公开快照含未通过来源核验的征稿线索']
+        if call.get('verification')=='primary_notice':
+            source=registries[parent['source_id']]
+            deadline=item_notices(parent)[1]
+            expected='journal_special' if parent['module']=='cfp' else 'conference'
+            journal_id=source.get('journal_id') if expected=='journal_special' else None
+            if (not deadline or call.get('kind')!=expected or call.get('journal_id')!=journal_id
+                or (call.get('deadline'),call.get('deadline_text'),call.get('deadline_label'))!=
+                   (deadline['date'],deadline['date_text'],deadline['label'])):
+                return ['公开快照含未经核验的征稿截止日']
+        elif call.get('deadline') or call.get('kind')!='discovery':
+            return ['公开快照含未经核验的征稿公告']
     return []
 
 

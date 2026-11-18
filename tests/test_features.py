@@ -289,6 +289,45 @@ class FeatureWorkflowTests(unittest.TestCase):
         record={'title':'Pending proceedings','url':'https://www.icj-cij.org/case/178'}
         markup=f'<h1>Pending proceedings</h1><div id="block-icj-content"><p>{body}</p></div>'
         self.assertEqual(inspect_html(record,icj,record['url'],markup)['evidence_basis'],'原文正文核对')
+
+    def test_dates_preserve_original_calendar_range_and_submission_stage(self):
+        from notice_dates import event_date, submission_deadline
+        from rendering import calendar
+        event=event_date('Conference dates: 9–11 September 2027. Published 10 March 2026.')
+        self.assertEqual((event['date'],event['end_date']),('2027-09-09','2027-09-11'))
+        self.assertIsNone(event_date('Conference dates: March 2027. Published 10 March 2026.'))
+        self.assertIsNone(event_date('The workshop has been postponed. Event date: 7 December 2026.'))
+        text=('Call for Papers. Abstract submission deadline: 8 December 2026. '
+              'Full paper submission deadline: 15 July 2027. Attendance registration closes 8 January 2027.')
+        deadline=submission_deadline('Call for Papers',text)
+        self.assertEqual((deadline['date'],deadline['label']),('2026-12-08','摘要提交截止'))
+        self.assertIsNone(submission_deadline('Call for Papers','Full paper submission deadline: 15 July 2027.'))
+        self.assertIsNone(submission_deadline('Call for Papers','Abstracts due 8 December 2026. Abstracts due 9 December 2026.'))
+        data={'site':{'name':'Lexpacis'},'generated_at':'2026-11-19T00:00:00+00:00',
+              'items':[{'id':'fixture','title':'Conference','url':'https://example.org/','event':event,'ai':None}]}
+        ics=calendar(data)
+        self.assertIn('DTSTART;VALUE=DATE:20270909',ics)
+        self.assertIn('DTEND;VALUE=DATE:20270912',ics)
+
+    def test_verified_cfp_requires_original_notice_and_agrees_with_parent(self):
+        from publication_policy import snapshot_issues
+        from source_review import inspect_html
+        config,sources=pipeline.configuration()
+        source=next(s for s in sources if s['id']=='cambridge-cfp-ljil')
+        entry={'title':'Special issue on international institutions','url':source['url']+'/fixture',
+               'authors':[],'published_at':None,'evidence':''}
+        fragment='Call for Papers. Research on international institutions is invited. '*4
+        markup=f'<h1>{entry["title"]}</h1><div id="MAIN_CONTENT">{fragment}Submission of Abstracts: 10 January 2027.</div>'
+        checked=inspect_html(entry,source,entry['url'],markup)
+        core.upsert_item(self.conn,checked,source,config)
+        public=pipeline.public_data(self.conn,config,sources)
+        row=public['items'][0]
+        self.assertEqual(row['module'],'cfp')
+        self.assertEqual(public['cfp']['calls'][0]['deadline'],'2027-01-10')
+        self.assertEqual(public['cfp']['calls'][0]['verification'],'primary_notice')
+        self.assertFalse(snapshot_issues(public,sources,pipeline.publication_rules()))
+        public['cfp']['calls'][0]['deadline']='2027-01-11'
+        self.assertTrue(snapshot_issues(public,sources,pipeline.publication_rules()))
     def test_output_path_restricted(self):
         path=self.root/'external-output.json';core.write_json(path,{'model':'fixture-only','calls':[self.call]})
         with self.assertRaises(ValueError):cfp.apply_updates(path)

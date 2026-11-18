@@ -24,7 +24,7 @@ SOURCE_FILES = {
                'site.json','sources.json','visibility.json'),
     'docs': ('LEXPACIS_MANUAL.md',),
     'dist': ('data.json',),
-    'scripts': ('cfp.py','cloud.py','core.py','handoff.py','manage.py','network_policy.py','news.py',
+    'scripts': ('cfp.py','cloud.py','core.py','handoff.py','manage.py','network_policy.py','news.py','notice_dates.py',
                 'pipeline.py','probe.py','publication_policy.py','publishing.py','rendering.py','security_audit.py','source_review.py'),
     'tests': ('test_cloud.py','test_features.py','test_news.py','test_pipeline.py'),
 }

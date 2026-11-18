@@ -126,7 +126,7 @@ def date_from_parts(parts):
 def classify(title, source, config):
     text = title.lower()
     module = source['module']
-    if module!='news' and re.search(r'call for (?:papers|abstracts)|webinar|workshop|research forum|summer school|events and announcements|upcoming conference|conference announcement|征稿|研讨会|学术会议',text):
+    if module not in ('news','cfp') and re.search(r'call for (?:papers|abstracts)|webinar|workshop|research forum|summer school|events and announcements|upcoming conference|conference announcement|征稿|研讨会|学术会议',text):
         module='events'
     if source['id']=='pca' and not re.search(r'case no|arbitrat(?:ion|ral) proceedings|award|conciliation|hearing|v\.',text):
         module='official'

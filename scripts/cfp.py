@@ -10,6 +10,7 @@ import urllib.parse
 import urllib.request
 from core import ROOT, UTC, LinkParser, identity, log, now, parse_date, plain, read_json, safe_url, write_json
 from network_policy import public_opener
+from notice_dates import SUBMISSION
 from publication_policy import regional_scope, restricted_content, strict_scope
 
 KINDS={'journal_special','journal_notice','conference'}
@@ -158,17 +159,36 @@ def public_data(conn,main_items):
                       'monitor_status':page.get('status','not_checked_by_fetcher'),'last_monitor_at':page.get('checked_at'),
                       'source_changed':page.get('changed',False)})
         seen_urls.add(seed['url'])
+    registry={source['id']:source for source in read_json(ROOT/'config/sources.json',[])}
     for item in main_items:
         if 'cfp-item-'+item['id'] in hidden:continue
         if regional_scope(rules) and restricted_content(item,rules):continue
-        if item['url'] in seen_urls or not re.search(r'call for (?:papers|abstracts|contributions|submissions)|征稿|征文',item['title'],re.I):continue
+        if item['url'] in seen_urls:continue
+        if regional_scope(rules) and item.get('deadline'):
+            source=registry.get(item['source_id'])
+            if not source:
+                continue
+            journal_id=source.get('journal_id') if item['module']=='cfp' else None
+            if journal_id and ('journal:'+journal_id in hidden or not any(j['id']==journal_id for j in journal_output)):
+                continue
+            deadline=item['deadline']
+            calls.append({'id':'cfp-item-'+item['id'],'parent_item_id':item['id'],'title':item['title'],
+                          'original_title':item['title'],'kind':'journal_special' if journal_id else 'conference',
+                          'journal_id':journal_id,'organization':source['organization'],
+                          'language':'zh' if re.search(r'[\u3400-\u9fff]',item['title']) else 'en',
+                          'url':item['url'],'description':'截止日期来自原始公告，请在提交前核对主办方的时区和最新要求。',
+                          'deadline':deadline['date'],'deadline_text':deadline['date_text'],'deadline_label':deadline['label'],
+                          'deadline_timezone':None,'event_date':(item.get('event') or {}).get('date'),
+                          'checked_at':item['updated_at'],'verification':'primary_notice','topics':item['topics']})
+            continue
+        if not SUBMISSION.search(item['title']):continue
         calls.append({'id':'cfp-item-'+item['id'],'parent_item_id':item['id'],'title':item.get('title_zh') or item['title'],'original_title':item['title'],
                       'kind':'discovery','journal_id':None,'organization':item['source_id'],'language':'zh' if re.search(r'[\u3400-\u9fff]',item['title']) else 'en',
                       'url':item['url'],'description':'来自已接通信源的征稿线索；尚未核对征稿对象、期限与出版安排。',
                       'deadline':None,'deadline_text':None,'deadline_timezone':None,'event_date':None,
                       'checked_at':item['discovered_at'],'verification':'discovered_title','topics':item['topics']})
     return {'journals':journal_output,'calls':calls,'updated_at':state.get('updated_at'),
-            'coverage_note':'人工建立的期刊入口目录 + 程序定期检查 + 已接通信源中的征稿线索。目录不是排名，不等于已覆盖各刊全部征稿；主页可读也不等于当前正在收稿。'}
+            'coverage_note':'常设投稿目录与正式征稿分别展示。程序逐条核对已接通信源的正式公告，无法确认的日期不会填入截止日。'}
 
 def apply_updates(path):
     from pathlib import Path

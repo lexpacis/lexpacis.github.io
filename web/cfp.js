@@ -3,7 +3,7 @@
   'use strict';
   const e=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const url=v=>{try{const u=new URL(v);return u.protocol==='https:'&&!u.username&&!u.password?e(u.href):'';}catch{return '#';}};
-  let host,source,topics,view='journal',language='',topic='',query='',dateFilter='upcoming';
+  let host,source,topics,view='',language='',topic='',query='',dateFilter='upcoming';
   const kindName={journal_special:'期刊专题征稿',journal_notice:'常规征稿公告',conference:'会议征文',discovery:'待确认线索'};
   const date=v=>v?v.slice(0,10).replaceAll('-','.'):'';
   const today=()=>new Date().toLocaleDateString('en-CA',{timeZone:'Asia/Shanghai'});
@@ -17,7 +17,11 @@
     topics=data.topics;
     const directoryOnly=data.publication_scope==='academic_metadata';
     if (directoryOnly) view='directory';
-    if (view==='journal'&&!source.calls.some(call=>['journal_special','journal_notice'].includes(call.kind))) view='directory';
+    if (!view) {
+      const upcoming=source.calls.filter(call=>call.deadline&&!isPast(call));
+      view=upcoming.some(call=>['journal_special','journal_notice'].includes(call.kind))?'journal':
+        upcoming.some(call=>call.kind==='conference')?'conference':'directory';
+    }
     return `<section class="cfp-workbench">
       ${directoryOnly?'':`<div class="cfp-nav" role="group" aria-label="CFP 分类">
         ${views.map(([value,label])=>`<button type="button" data-cfp-view="${value}" aria-pressed="${view===value}" class="${view===value?'active':''}">${label}</button>`).join('')}
@@ -57,7 +61,7 @@
   function callCard(call){
     const j=source.journals.find(j=>j.id===call.journal_id);
     const state=call.deadline?(isPast(call)?'已过公告截止日':'公告截止日未到'):'原文未注明固定截止日';
-    return `<article class="cfp-call"><div class="cfp-call-top"><span class="cfp-kind">${kindName[call.kind]||'征稿公告'} · ${e(languages[call.language]||call.language)}</span><span class="cfp-state ${isPast(call)?'past':''}">${state}</span></div><h2>${e(call.title)}</h2>${call.original_title!==call.title?`<p class="cfp-original">${e(call.original_title)}</p>`:''}<p>${e(call.description)}</p><div class="cfp-deadline">${call.deadline?`${e(call.deadline_label||'截止日期')}：${date(call.deadline)}`:'未把发布日期或会议日期当作投稿截止日'}</div><div class="cfp-call-meta">${call.deadline_timezone?`原文时区：${e(call.deadline_timezone)}<br>`:call.deadline?'原文未给出精确时区；不提供精确到小时的倒计时。<br>':''}${e(j?.name||call.organization||'已接通信源')}<br>${call.verification==='discovered_title'?'尚未核对完整公告':'依据原始公告整理'} · ${date(call.checked_at)}${call.source_changed?' · 来源页面有变化，请核对最新版':''}</div><div class="cfp-call-actions"><a class="text-button" href="${url(call.url)}" target="_blank" rel="noopener noreferrer">阅读原始公告 ↗</a>${call.kind==='conference'?'<span class="tool-fine" style="margin:0">参会不等于期刊录用</span>':''}</div></article>`;
+    return `<article class="cfp-call"><div class="cfp-call-top"><span class="cfp-kind">${kindName[call.kind]||'征稿公告'} · ${e(languages[call.language]||call.language)}</span><span class="cfp-state ${isPast(call)?'past':''}">${state}</span></div><h2>${e(call.title)}</h2>${call.original_title!==call.title?`<p class="cfp-original">${e(call.original_title)}</p>`:''}<p>${e(call.description)}</p><div class="cfp-deadline">${call.deadline?`${e(call.deadline_label||'截止日期')}：${date(call.deadline)}`:'未把发布日期或会议日期当作投稿截止日'}</div><div class="cfp-call-meta">${call.deadline_timezone?`原文时区：${e(call.deadline_timezone)}<br>`:call.deadline?'原文未给出精确时区；不提供精确到小时的倒计时。<br>':''}${e(j?.name||call.organization||'已接通信源')}<br>${call.verification==='discovered_title'?'尚未核对完整公告':'已核对原始公告'} · ${date(call.checked_at)}${call.source_changed?' · 来源页面有变化，请核对最新版':''}</div><div class="cfp-call-actions"><a class="text-button" href="${url(call.url)}" target="_blank" rel="noopener noreferrer">阅读原始公告 ↗</a>${call.kind==='conference'?'<span class="tool-fine" style="margin:0">参会不等于期刊录用</span>':''}</div></article>`;
   }
   function refresh() {
     const output=host.querySelector('#cfp-results');

@@ -9,6 +9,7 @@ from urllib.parse import urljoin, urlsplit
 
 from core import identity, parse_date, plain
 from network_policy import public_opener
+from notice_dates import EXACT_DAY, event_date, structured_events, submission_deadline
 from publication_policy import OFFICIAL_SOURCES, article_origin, official_origin, restricted_content
 
 
@@ -79,6 +80,9 @@ class ArticleEvidence(HTMLParser):
             (self.source_id == 'wto' and fields.get('id') == 'mainContent')
             or (self.source_id == 'pca' and (tag == 'main' or fields.get('role') == 'main'))
             or (self.source_id == 'icj-pending' and fields.get('id') == 'block-icj-content')
+            or (self.source_id == 'mpil-events' and 'article' in (fields.get('class') or '').split())
+            or (self.source_id == 'anzsil-events' and 'WaGadgetEventsStateDetails' in (fields.get('class') or '').split())
+            or (self.source_id and self.source_id.startswith('cambridge-cfp-') and fields.get('id')=='MAIN_CONTENT')
         )
         if tag == 'article' or official_body or _BODY.search(' '.join((fields.get('class') or '',fields.get('id') or ''))):
             candidate = []
@@ -103,7 +107,7 @@ class ArticleEvidence(HTMLParser):
     def handle_data(self, data):
         if not any(tag in _HIDDEN for tag,_ in self.stack):
             self.page_text.append(re.sub(r'\s+',' ',data))
-        if any(tag in _SKIP for tag,_ in self.stack):
+        if any(tag in _SKIP and not (tag=='form' and self.source_id=='anzsil-events') for tag,_ in self.stack):
             return
         if self.pca_after_title and any(tag=='p' for tag,_ in self.stack):
             self.pca_paragraphs.append(data)
@@ -141,6 +145,27 @@ def inspect_html(entry, source, url, markup):
     date,precision = parse_date(parse.meta.get('pubdate') or parse.meta.get('article:published_time') or '')
     basis = '原文正文核对'
     bibliography = dict(entry.get('bibliography',{}))
+    if source.get('notice_kind') in ('event','journal'):
+        date_candidates=[]
+        if source['id']=='mpil-events':
+            sidebar=re.search(r'<div\b[^>]*\bclass=["\x27][^"\x27]*\bgreenBackground\b[^"\x27]*["\x27][^>]*>.{0,1800}?<strong>(.{1,140}?)</strong>',
+                              markup,re.I|re.S)
+            if sidebar:
+                date_candidates.append(plain(sidebar[1]))
+        if source['id']=='asil-events' and not re.search(r'\bASIL Event\b',body,re.I):
+            return entry
+        structured=structured_events(markup,page_title) if source['id']=='asil-events' else ()
+        if source['id']=='anzsil-events':
+            calendar_fields={}
+            for part in ('Start','End'):
+                block=re.search(rf'class=["\x27]eventInfo{part}Date["\x27][^>]*>(.{{0,900}}?)</li>',markup,re.I|re.S)
+                if block and (match:=EXACT_DAY.search(plain(block[1]))):
+                    calendar_fields[part.lower()+'Date']=match[0]
+            structured=[calendar_fields]
+        calendar=event_date(body,structured,date_candidates) if source['notice_kind']=='event' else None
+        deadline=submission_deadline(entry['title'],body)
+        if calendar or deadline:
+            bibliography['notice_dates']={'event':calendar,'deadline':deadline}
     if source['id'] in OFFICIAL_SOURCES:
         if not (official_origin(source,url) and official_origin(source,canonical)):
             return entry

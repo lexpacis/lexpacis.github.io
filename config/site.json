@@ -141,6 +141,11 @@
       "en": "ACADEMIC EVENTS"
     },
     {
+      "id": "cfp",
+      "name": "征稿公告",
+      "en": "CALLS FOR PAPERS"
+    },
+    {
       "id": "official",
       "name": "官方资料",
       "en": "OFFICIAL MATERIALS"
