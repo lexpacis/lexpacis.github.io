@@ -542,9 +542,13 @@
           "seen_at": "2026-11-18T14:50:49+00:00"
         }
       ],
-      "title_zh": "",
+      "title_zh": "活动与公告：2026 年 11 月 15 日",
       "summary_zh": "",
-      "ai": null,
+      "ai": {
+        "model": "DeepSeek-V4.1-Flash",
+        "processed_at": "2026-11-18T16:57:21+00:00",
+        "basis": "RSS 摘录"
+      },
       "event": null,
       "deadline": null
     },
@@ -950,9 +954,13 @@
           "seen_at": "2026-11-18T14:50:49+00:00"
         }
       ],
-      "title_zh": "",
+      "title_zh": "ESIL 通讯——2026 年秋季",
       "summary_zh": "",
-      "ai": null,
+      "ai": {
+        "model": "DeepSeek-V4.1-Flash",
+        "processed_at": "2026-11-18T16:57:21+00:00",
+        "basis": "RSS 标题"
+      },
       "event": null,
       "deadline": null
     },
@@ -1250,9 +1258,13 @@
           "seen_at": "2026-11-18T15:13:25+00:00"
         }
       ],
-      "title_zh": "",
+      "title_zh": "公告：征集“和平委员会”在国际法中的作用研究；美洲人权判例法新研究工具；征集“损害的赔偿”论文；数字双重用途会议；海洋自由会议；征集社会法律研究协会会议论文；艺术与文化遗产暑期学校；《未写就的期刊》播客；《莱顿国际法杂志》征稿；伦敦大学学院法学院活动；国际纽伦堡原则学院对话；人权论文奖征稿",
       "summary_zh": "",
-      "ai": null,
+      "ai": {
+        "model": "DeepSeek-V4.1-Flash",
+        "processed_at": "2026-11-18T16:57:21+00:00",
+        "basis": "RSS 摘录"
+      },
       "event": null,
       "deadline": null
     },
@@ -1284,9 +1296,13 @@
           "seen_at": "2026-11-18T14:50:49+00:00"
         }
       ],
-      "title_zh": "",
+      "title_zh": "ESIL 参加海牙司法周｜国际法院百年：对世界法院未来二十年的现实期待｜2026 年 11 月 17 日",
       "summary_zh": "",
-      "ai": null,
+      "ai": {
+        "model": "DeepSeek-V4.1-Flash",
+        "processed_at": "2026-11-18T16:57:21+00:00",
+        "basis": "RSS 标题"
+      },
       "event": null,
       "deadline": null
     },
@@ -1783,9 +1799,13 @@
           "seen_at": "2026-11-18T14:50:49+00:00"
         }
       ],
-      "title_zh": "",
+      "title_zh": "和平与安全兴趣小组｜国际追诉与过渡时期司法：实务视角｜2026 年 11 月 11 日",
       "summary_zh": "",
-      "ai": null,
+      "ai": {
+        "model": "DeepSeek-V4.1-Flash",
+        "processed_at": "2026-11-18T16:57:21+00:00",
+        "basis": "RSS 标题"
+      },
       "event": null,
       "deadline": null
     },
@@ -1931,9 +1951,13 @@
           "seen_at": "2026-11-18T14:50:49+00:00"
         }
       ],
-      "title_zh": "",
+      "title_zh": "联合国粮农组织国际法日｜2026 年 10 月 29 日",
       "summary_zh": "",
-      "ai": null,
+      "ai": {
+        "model": "DeepSeek-V4.1-Flash",
+        "processed_at": "2026-11-18T16:57:21+00:00",
+        "basis": "RSS 标题"
+      },
       "event": null,
       "deadline": null
     },
@@ -2218,9 +2242,13 @@
           "seen_at": "2026-11-18T14:50:49+00:00"
         }
       ],
-      "title_zh": "",
+      "title_zh": "ESIL 快速回应圆桌｜压力之下的国际刑事法院：美国制裁与国际刑事司法的未来｜2026 年 10 月 22 日",
       "summary_zh": "",
-      "ai": null,
+      "ai": {
+        "model": "DeepSeek-V4.1-Flash",
+        "processed_at": "2026-11-18T16:57:21+00:00",
+        "basis": "RSS 标题"
+      },
       "event": null,
       "deadline": null
     },
@@ -2250,9 +2278,13 @@
           "seen_at": "2026-11-18T14:50:49+00:00"
         }
       ],
-      "title_zh": "",
+      "title_zh": "欧洲国际法学会最热烈祝贺 2026 年诺贝尔和平奖得主纳维·皮莱",
       "summary_zh": "",
-      "ai": null,
+      "ai": {
+        "model": "DeepSeek-V4.1-Flash",
+        "processed_at": "2026-11-18T16:57:21+00:00",
+        "basis": "RSS 标题"
+      },
       "event": null,
       "deadline": null
     },
@@ -2282,9 +2314,13 @@
           "seen_at": "2026-11-18T14:50:49+00:00"
         }
       ],
-      "title_zh": "",
+      "title_zh": "2027 年 ESIL 年会“国际法与未来”｜征稿启事与会议网站",
       "summary_zh": "",
-      "ai": null,
+      "ai": {
+        "model": "DeepSeek-V4.1-Flash",
+        "processed_at": "2026-11-18T16:57:21+00:00",
+        "basis": "RSS 标题"
+      },
       "event": null,
       "deadline": null
     },
@@ -2653,9 +2689,13 @@
           "seen_at": "2026-11-18T14:50:49+00:00"
         }
       ],
-      "title_zh": "",
+      "title_zh": "国际法院和法庭兴趣小组｜谁来监督法官？司法独立与国际司法机构的不均衡架构｜2026 年 10 月 22 日",
       "summary_zh": "",
-      "ai": null,
+      "ai": {
+        "model": "DeepSeek-V4.1-Flash",
+        "processed_at": "2026-11-18T16:57:21+00:00",
+        "basis": "RSS 标题"
+      },
       "event": null,
       "deadline": null
     },
@@ -2717,9 +2757,13 @@
           "seen_at": "2026-11-18T14:50:49+00:00"
         }
       ],
-      "title_zh": "",
+      "title_zh": "征稿｜当代冲突中的国际法作为战略武器｜2026 年 10 月 30 日",
       "summary_zh": "",
-      "ai": null,
+      "ai": {
+        "model": "DeepSeek-V4.1-Flash",
+        "processed_at": "2026-11-18T16:57:21+00:00",
+        "basis": "RSS 标题"
+      },
       "event": null,
       "deadline": null
     },
@@ -2751,9 +2795,13 @@
           "seen_at": "2026-11-18T14:50:49+00:00"
         }
       ],
-      "title_zh": "",
+      "title_zh": "新加坡国立大学国际法中心｜享有安全、稳定和健康气候的权利：从承认到实现｜2026 年 10 月 8 日",
       "summary_zh": "",
-      "ai": null,
+      "ai": {
+        "model": "DeepSeek-V4.1-Flash",
+        "processed_at": "2026-11-18T16:57:21+00:00",
+        "basis": "RSS 标题"
+      },
       "event": null,
       "deadline": null
     },
