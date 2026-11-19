@@ -112,13 +112,34 @@ def parse_date(value):
     except ValueError:
         try: parsed = email.utils.parsedate_to_datetime(value)
         except (ValueError,TypeError):
-            for fmt in ('%d %B %Y','%B %d, %Y','%d %b %Y','%B %d %Y','%Y年%m月%d日'):
+            for fmt in ('%d %B %Y','%B %d, %Y','%b %d, %Y','%d %b %Y','%B %d %Y','%b %d %Y','%Y年%m月%d日'):
                 try: return dt.datetime.strptime(value,fmt).date().isoformat(),'day'
+                except ValueError: pass
+            for fmt in ('%B %Y','%b %Y','%Y年%m月'):
+                try: return dt.datetime.strptime(value,fmt).date().isoformat()[:7],'month'
                 except ValueError: pass
             return None,'unknown'
     if parsed.tzinfo is None:
         return parsed.date().isoformat(),'day'
     return parsed.astimezone(UTC).isoformat(timespec='seconds'),'instant'
+
+# Listing pages publish dates in several shapes. Only the date written on the page
+# is used; nothing is inferred from the link or from today's date.
+LISTING_DATE_PATTERNS = (
+    r'\b20\d{2}-\d{2}-\d{2}\b',
+    r'\b\d{1,2}\s+[A-Z][a-z]+\s+20\d{2}\b',
+    r'\b[A-Z][a-z]+\s+\d{1,2},?\s+20\d{2}\b',
+    r'\b\d{1,2}\s+[A-Z][a-z]{2,4}\.?,?\s+20\d{2}\b',
+    r'\b[A-Z][a-z]+\s+20\d{2}\b',
+)
+
+def listing_date(text):
+    """Return the date printed on the listing page, most specific pattern first."""
+    for pattern in LISTING_DATE_PATTERNS:
+        for raw in reversed(re.findall(pattern, text)):
+            value, precision = parse_date(raw)
+            if value: return value, precision
+    return None, 'unknown'
 
 def date_from_parts(parts):
     if not parts: return None,'unknown'
@@ -226,16 +247,27 @@ def parse_crossref(data, source):
 class LinkParser(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=True)
-        self.links=[]; self.anchor=None; self.recent=''; self.time_depth=0
+        self.links=[]; self.anchor=None; self.recent=''; self.time_depth=0; self.tail=0
     def handle_starttag(self,tag,attrs):
         attrs=dict(attrs)
         if tag=='a' and attrs.get('href'):
             self.anchor={'href':attrs['href'],'parts':[], 'context':self.recent[-220:]}
+            self.tail=0
         if tag=='time' and attrs.get('datetime'):
+            if self.anchor is not None:
+                self.anchor['context']+=' '+attrs['datetime']+' '
+            elif self.links and self.tail<160:
+                # Card layouts print the date after the headline, still inside the card
+                # and before the next link; that window is bounded to the same card.
+                self.links[-1]['context']+=' '+attrs['datetime']+' '
+                self.tail+=len(attrs['datetime'])+2
             self.recent+=' '+attrs['datetime']+' '
     def handle_data(self,data):
         self.recent=(self.recent+' '+data)[-1000:]
         if self.anchor is not None: self.anchor['parts'].append(data)
+        elif self.links and self.tail<160:
+            self.links[-1]['context']+=' '+data
+            self.tail+=len(data)+1
     def handle_endtag(self,tag):
         if tag=='a' and self.anchor is not None:
             self.anchor['title']=plain(' '.join(self.anchor.pop('parts')))
@@ -262,8 +294,7 @@ def parse_listing(data, source):
         if not url or not pattern.search(urllib.parse.urlsplit(url).path) or len(title)<source.get('min_title_length',35) or url in seen: continue
         if re.search(r'privacy|cookies|read more|next page',title,re.I): continue
         seen.add(url)
-        found=re.findall(r'\b(?:\d{1,2}\s+[A-Z][a-z]+\s+20\d{2}|20\d{2}-\d{2}-\d{2})\b',link['context'])
-        date,precision=parse_date(found[-1] if found else '')
+        date,precision=listing_date(link['context'])
         result.append({'title':title,'url':url,'published_at':date,'date_precision':precision,
                        'authors':[],'evidence':'','evidence_basis':'官方目录标题','doi':''})
     if source.get('id')=='au-treaties':

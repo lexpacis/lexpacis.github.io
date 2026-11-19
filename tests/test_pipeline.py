@@ -52,6 +52,24 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(core.parse_date('2026'),('2026','year'))
         self.assertEqual(core.parse_date('2026-02-31'),(None,'unknown'))
         self.assertEqual(core.parse_date('19 November 2026'),('2026-11-19','day'))
+    def test_listing_dates_read_several_published_formats(self):
+        self.assertEqual(core.listing_date('19 November 2026'),('2026-11-19','day'))
+        self.assertEqual(core.listing_date('Nov 19, 2026'),('2026-11-19','day'))
+        self.assertEqual(core.listing_date('19 Nov 2026'),('2026-11-19','day'))
+        self.assertEqual(core.listing_date('2026-11-19'),('2026-11-19','day'))
+        self.assertEqual(core.listing_date('November 2026'),('2026-11','month'))
+        self.assertEqual(core.listing_date('no date here'),(None,'unknown'))
+    def test_listing_keeps_the_date_printed_after_the_headline(self):
+        source={'id':'demo-listing','url':'https://example.org/news','kind':'html',
+                'link_pattern':r'^/news/[a-z0-9-]+$','min_title_length':10,'module':'news'}
+        raw=(b'<article><a href="/news/first-event">First event of the year</a>'
+             b'<time datetime="2026-10-22">ILW</time></article>'
+             b'<article><a href="/news/second-event">Second event of the year</a>'
+             b'<time datetime="2026-09-15">ILW</time></article>')
+        items=core.parse_listing(raw,source)
+        self.assertEqual([(i['title'],i['published_at']) for i in items],
+                         [('First event of the year','2026-10-22'),
+                          ('Second event of the year','2026-09-15')])
     def test_online_symposium_is_not_an_event(self):
         source=next(s for s in SOURCES if s['id']=='opiniojuris')
         self.assertEqual(core.classify('6th Annual Symposium on Pop Culture: Closing Remarks',source,CONFIG)[0],'commentary')
