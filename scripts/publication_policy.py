@@ -133,7 +133,12 @@ def regional_item(item, source, rules, reviewed):
         from notice_dates import item_notices
         if source.get('notice_kind')!='journal' or not source.get('journal_id') or not item_notices(item)[1]:
             return False
-    fields=[item['title'],item['url'],item.get('doi'),item['authors'],item['bibliography'],proof]
+    fields=[item['title'],item['url'],item.get('doi'),item['authors'],item['bibliography']]
+    # Call-for-papers pages are bibliographic notices: their body lists editors
+    # and their institutions, which says nothing about the topic of the call.
+    # Titles, links and structured fields stay screened (see source_review).
+    if source.get('module')!='cfp':
+        fields.append(proof)
     return not restricted_content(fields,rules)
 
 
