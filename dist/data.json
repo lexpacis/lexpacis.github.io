@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-19T08:57:35+00:00",
+  "generated_at": "2026-11-19T09:30:42+00:00",
   "site": {
     "name": "法域前沿",
     "english_name": "Lexpacis",
@@ -498,6 +498,143 @@
         "date_text": "2026-12-10",
         "label": "活动日期"
       },
+      "deadline": null,
+      "screened_policy": "69900c8fd6fbe5758e56d4dd411ea136c4f293de4cf43d9288b4c2c9a35ff25c"
+    },
+    {
+      "id": "f502bf9aebf8e1deadf5",
+      "source_id": "uncitral-news",
+      "title": "United Arab Emirates accedes to the Singapore Convention on Mediation",
+      "url": "https://uncitral.un.org/en/news/united-arab-emirates-accedes-singapore-convention-mediation",
+      "doi": "",
+      "module": "official",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-19T09:30:42+00:00",
+      "updated_at": "2026-11-19T09:30:42+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "e1ead8481f264a21f08bf55e84f66ee10dd59d42e6e14700638d9fa89c6325af",
+      "topics": [
+        "economic",
+        "institutions"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "uncitral-news",
+          "url": "https://uncitral.un.org/en/news/united-arab-emirates-accedes-singapore-convention-mediation",
+          "seen_at": "2026-11-19T09:30:42+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "69900c8fd6fbe5758e56d4dd411ea136c4f293de4cf43d9288b4c2c9a35ff25c"
+    },
+    {
+      "id": "7c4a0a7fc4f53aaf809f",
+      "source_id": "uncitral-news",
+      "title": "10th Intersessional meeting of UNCITRAL Working Group III",
+      "url": "https://uncitral.un.org/en/news/10th-intersessional-meeting-uncitral-working-group-iii",
+      "doi": "",
+      "module": "official",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-19T09:30:42+00:00",
+      "updated_at": "2026-11-19T09:30:42+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "129930fa9222845c692ef9ce5c270ae52eff498ae4befac691ba16f4d6526005",
+      "topics": [
+        "economic",
+        "institutions"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "uncitral-news",
+          "url": "https://uncitral.un.org/en/news/10th-intersessional-meeting-uncitral-working-group-iii",
+          "seen_at": "2026-11-19T09:30:42+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "69900c8fd6fbe5758e56d4dd411ea136c4f293de4cf43d9288b4c2c9a35ff25c"
+    },
+    {
+      "id": "c05fe7d3407e2f1f95cb",
+      "source_id": "uncitral-news",
+      "title": "Uzbekistan accedes to the Singapore Convention on Mediation",
+      "url": "https://uncitral.un.org/en/news/uzbekistan-accedes-singapore-convention-mediation",
+      "doi": "",
+      "module": "official",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-19T09:30:42+00:00",
+      "updated_at": "2026-11-19T09:30:42+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "907be4ff745ef7c646a67e9153d7fd16ee3f5e314099d03639a8176f43e63c18",
+      "topics": [
+        "economic",
+        "institutions"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "uncitral-news",
+          "url": "https://uncitral.un.org/en/news/uzbekistan-accedes-singapore-convention-mediation",
+          "seen_at": "2026-11-19T09:30:42+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "69900c8fd6fbe5758e56d4dd411ea136c4f293de4cf43d9288b4c2c9a35ff25c"
+    },
+    {
+      "id": "3b5ffebd1a242a6d7694",
+      "source_id": "uncitral-news",
+      "title": "UNCITRAL advances dispute settlement and digital trade work at its 59th session",
+      "url": "https://uncitral.un.org/en/news/uncitral-advances-dispute-settlement-and-digital-trade-work-its-59th-session",
+      "doi": "",
+      "module": "official",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-19T09:30:42+00:00",
+      "updated_at": "2026-11-19T09:30:42+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "3b8d9891ed7099dd8f0961753747440cb9e8120832294f75b84a5ebf581f1717",
+      "topics": [
+        "economic",
+        "institutions",
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "uncitral-news",
+          "url": "https://uncitral.un.org/en/news/uncitral-advances-dispute-settlement-and-digital-trade-work-its-59th-session",
+          "seen_at": "2026-11-19T09:30:42+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
       "deadline": null,
       "screened_policy": "69900c8fd6fbe5758e56d4dd411ea136c4f293de4cf43d9288b4c2c9a35ff25c"
     },
@@ -9885,6 +10022,40 @@
       "screened_policy": "69900c8fd6fbe5758e56d4dd411ea136c4f293de4cf43d9288b4c2c9a35ff25c"
     },
     {
+      "id": "da56ce1ab7cd55f9d4af",
+      "source_id": "uncitral-news",
+      "title": "Mauritius ratifies the Singapore Convention on Mediation",
+      "url": "https://uncitral.un.org/en/news/mauritius-ratifies-singapore-convention-mediation",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-08-28",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T09:30:42+00:00",
+      "updated_at": "2026-11-19T09:30:42+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "1c56a8edf7e7936d798ec3d5d7a22b617fa2b2d7cba471812f585efc4108baca",
+      "topics": [
+        "economic",
+        "institutions"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "uncitral-news",
+          "url": "https://uncitral.un.org/en/news/mauritius-ratifies-singapore-convention-mediation",
+          "seen_at": "2026-11-19T09:30:42+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "69900c8fd6fbe5758e56d4dd411ea136c4f293de4cf43d9288b4c2c9a35ff25c"
+    },
+    {
       "id": "c6f99b630c914fb0f9aa",
       "source_id": "un-geneva-press",
       "title": "RENEWED CALL FROM THE UNITED NATIONS SECRETARY-GENERAL AND THE PRESIDENT OF THE INTERNATIONAL COMMITTEE OF THE RED CROSS TO ADOPT RULES ON AUTONOMOUS WEAPON SYSTEMS",
@@ -14468,12 +14639,12 @@
       },
       "feed_url": "https://www.ejiltalk.org/feed/",
       "status": "error",
-      "attempted_at": "2026-11-19T08:56:40+00:00",
+      "attempted_at": "2026-11-19T09:30:40+00:00",
       "success_at": "2026-11-18T20:03:04+00:00",
       "error": "信源暂未成功读取或解析。",
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "item_count": 6,
-      "next_attempt_at": "2026-11-19T09:11:40+00:00"
+      "next_attempt_at": "2026-11-19T10:00:40+00:00"
     },
     {
       "id": "opiniojuris",
@@ -15716,28 +15887,17 @@
       "scope": "联合国英文全球新闻 RSS 与同域原稿，按原始来源及地区关联规则筛查",
       "language": "en",
       "review": {
-        "candidates": 30,
-        "checked": 10,
-        "verified": 9,
-        "china_hold": 1,
-        "origin_hold": 0,
-        "body_hold": 0,
-        "access_hold": 0,
-        "unsupported_hold": 0,
-        "pdf_hold": 0,
-        "pending": 20,
-        "directory_count": 30,
-        "first_http_status": 0,
-        "cursor": "1c72f5ab33e10acd2a60"
+        "cursor": "1c72f5ab33e10acd2a60",
+        "failure": "invalid_xml"
       },
       "feed_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
-      "status": "ok",
-      "attempted_at": "2026-11-18T21:21:44+00:00",
+      "status": "error",
+      "attempted_at": "2026-11-19T09:30:40+00:00",
       "success_at": "2026-11-18T21:21:44+00:00",
-      "error": null,
-      "consecutive_failures": 0,
+      "error": "信源暂未成功读取或解析。",
+      "consecutive_failures": 1,
       "item_count": 9,
-      "next_attempt_at": null
+      "next_attempt_at": "2026-11-19T09:45:40+00:00"
     },
     {
       "id": "opcw-news",
@@ -15862,12 +16022,12 @@
         "failure": "http_403"
       },
       "status": "error",
-      "attempted_at": "2026-11-19T08:57:34+00:00",
+      "attempted_at": "2026-11-19T09:30:41+00:00",
       "success_at": null,
       "error": "信源暂未成功读取或解析。",
-      "consecutive_failures": 2,
+      "consecutive_failures": 3,
       "item_count": 0,
-      "next_attempt_at": "2026-11-19T09:27:34+00:00"
+      "next_attempt_at": "2026-11-19T10:30:41+00:00"
     },
     {
       "id": "un-depositary",
@@ -15972,6 +16132,41 @@
       "error": null,
       "consecutive_failures": 0,
       "item_count": 6,
+      "next_attempt_at": null
+    },
+    {
+      "id": "uncitral-news",
+      "name": "联合国国际贸易法委员会 UNCITRAL · 新闻",
+      "organization": "United Nations Commission on International Trade Law",
+      "homepage": "https://uncitral.un.org/en/news",
+      "kind": "html",
+      "module": "official",
+      "authority": "official_institution",
+      "enabled": true,
+      "poll_hours": 24,
+      "scope": "委员会官方新闻目录，覆盖仲裁、贸易法条约与工作组进展；以联合国官方页面为原文",
+      "language": "en",
+      "review": {
+        "candidates": 10,
+        "checked": 5,
+        "verified": 5,
+        "china_hold": 1,
+        "origin_hold": 0,
+        "body_hold": 0,
+        "access_hold": 0,
+        "unsupported_hold": 0,
+        "pdf_hold": 0,
+        "pending": 4,
+        "directory_count": 10,
+        "first_http_status": 0,
+        "cursor": "3b5ffebd1a242a6d7694"
+      },
+      "status": "ok",
+      "attempted_at": "2026-11-19T09:30:42+00:00",
+      "success_at": "2026-11-19T09:30:42+00:00",
+      "error": null,
+      "consecutive_failures": 0,
+      "item_count": 5,
       "next_attempt_at": null
     }
   ],
@@ -17017,32 +17212,32 @@
         "topics": []
       }
     ],
-    "updated_at": "2026-11-19T08:57:34+00:00",
+    "updated_at": "2026-11-19T09:30:42+00:00",
     "coverage_note": "常设投稿目录与正式征稿分别展示。程序逐条核对已接通信源的正式公告，无法确认的日期不会填入截止日。"
   },
   "operations": {
     "last_run": {
       "id": 1,
-      "started_at": "2026-11-19T08:54:53+00:00",
-      "finished_at": "2026-11-19T08:57:34+00:00",
-      "successes": 13,
-      "failures": 2,
-      "added": 41,
-      "changed": 1
+      "started_at": "2026-11-19T09:30:39+00:00",
+      "finished_at": "2026-11-19T09:30:42+00:00",
+      "successes": 1,
+      "failures": 3,
+      "added": 6,
+      "changed": 0
     },
     "scheduler_enabled": true,
     "scheduled_run_verified": true,
     "last_effective_run": {
       "id": 1,
-      "started_at": "2026-11-19T08:54:53+00:00",
-      "finished_at": "2026-11-19T08:57:34+00:00",
-      "successes": 13,
-      "failures": 2,
-      "added": 41,
-      "changed": 1
+      "started_at": "2026-11-19T09:30:39+00:00",
+      "finished_at": "2026-11-19T09:30:42+00:00",
+      "successes": 1,
+      "failures": 3,
+      "added": 6,
+      "changed": 0
     },
-    "scheduler_note": "最近一次云端运行：2026-11-19T08:57:34+00:00；触发方式：schedule。信源成功时间单独显示。",
-    "total_archived": 344,
-    "visible_in_export": 344
+    "scheduler_note": "最近一次云端运行：2026-11-19T09:30:42+00:00；触发方式：push。信源成功时间单独显示。",
+    "total_archived": 349,
+    "visible_in_export": 349
   }
 }
