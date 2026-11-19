@@ -363,6 +363,7 @@ def public_data(conn,config,sources):
     last_run=conn.execute('SELECT * FROM runs ORDER BY id DESC LIMIT 1').fetchone()
     from cfp import public_data as cfp_public_data
     cloud=read_json(ROOT/'runtime/cloud/operation.json',{})
+    schedule=read_json(ROOT/'config/scheduler.json',{})
     cloud_run=cloud.get('runner')=='github-actions' and bool(cloud.get('last_cloud_run'))
     return {'schema_version':2,'generated_at':now(),'site':{k:config[k] for k in ('name','english_name','tagline','description','base_url','timezone')},
             'topics':[{k:t[k] for k in ('id','name','short')} for t in config['topics']],
@@ -370,7 +371,7 @@ def public_data(conn,config,sources):
             'paused_modules':rules.get('paused_modules',[]),'publication_scope':rules.get('publication_scope'),
             'sources':source_info,'cfp':cfp_public_data(conn,items[:config['max_public_items']]),'operations':{'last_run':dict(last_run) if last_run else None,
             'scheduler_enabled':bool(cloud_run),
-            'scheduled_run_verified':bool(cloud_run and (cloud.get('event')=='schedule' or cloud.get('scheduled_run_verified'))),
+            'scheduled_run_verified':bool(cloud.get('event')=='schedule' or cloud.get('scheduled_run_verified') or schedule.get('last_schedule_event_at')),
             'last_effective_run':(dict(last_run) if last_run and (last_run['successes'] or last_run['failures']) else cloud.get('previous_effective_run')),
             'scheduler_note':('最近一次云端运行：'+cloud['last_cloud_run']+'；触发方式：'+cloud.get('event','unknown')+'。信源成功时间单独显示。') if cloud_run else '云端定时流程已准备；尚未连接账户或验证实际定时运行。',
             'total_archived':len(items),'visible_in_export':min(len(items),config['max_public_items'])}}

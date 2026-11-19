@@ -10,8 +10,10 @@ on:
       - 'dist/data.json'
   workflow_dispatch:
   schedule:
-    # UTC 01:17 / 10:17 = Asia/Shanghai 09:17 / 18:17; avoid the hour boundary.
-    - cron: '17 1,10 * * *'
+    # UTC 01:17 / 05:17 / 10:17 / 14:17 = Asia/Shanghai 09:17 / 13:17 / 18:17 / 22:17.
+    # GitHub runs scheduled jobs on a best-effort basis and can delay or drop a slot;
+    # the extra midday and late slots keep a missed run from leaving the site stale for a day.
+    - cron: '17 1,5,10,14 * * *'
 permissions:
   contents: read
 concurrency:
@@ -33,8 +35,10 @@ jobs:
       - name: Ensure the Ubuntu PDF reader is available
         run: |
           if ! command -v pdftotext >/dev/null || ! command -v pdfinfo >/dev/null; then
-            sudo apt-get -q -o Acquire::Retries=5 -o Acquire::http::Timeout=30 update
-            sudo apt-get -q install --no-install-recommends -y poppler-utils
+            sudo apt-get -q -o Acquire::Retries=5 -o Acquire::http::Timeout=30 update ||
+              sudo apt-get -q -o Acquire::Retries=5 -o Acquire::http::Timeout=30 update
+            sudo apt-get -q -o Acquire::Retries=5 -o Acquire::http::Timeout=30 install --no-install-recommends -y poppler-utils ||
+              echo "::warning::PDF reader unavailable this run; PDF-only entries stay unpublished and recover on the next run."
           fi
           command -v prlimit
       - name: Verify pipeline and public artifacts

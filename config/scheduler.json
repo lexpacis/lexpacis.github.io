@@ -1,0 +1,5 @@
+{
+  "last_schedule_event_at": "2026-11-19T08:53:04Z",
+  "run_id": 44491407268,
+  "note": "GitHub Actions 定时触发（event=schedule）首次成功运行的记录。用于公开状态页的长期状态，不随单次推送运行的字段重置。"
+}
