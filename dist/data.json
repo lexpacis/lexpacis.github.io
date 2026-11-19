@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-19T12:41:36+00:00",
+  "generated_at": "2026-11-19T13:12:46+00:00",
   "site": {
     "name": "法域前沿",
     "english_name": "Lexpacis",
@@ -16938,12 +16938,12 @@
         "failure": "http_403"
       },
       "status": "error",
-      "attempted_at": "2026-11-19T10:59:17+00:00",
+      "attempted_at": "2026-11-19T13:12:46+00:00",
       "success_at": null,
       "error": "信源暂未成功读取或解析。",
-      "consecutive_failures": 4,
+      "consecutive_failures": 5,
       "item_count": 0,
-      "next_attempt_at": "2026-11-19T12:59:17+00:00"
+      "next_attempt_at": "2026-11-19T17:12:46+00:00"
     },
     {
       "id": "un-depositary",
@@ -18289,31 +18289,31 @@
         "topics": []
       }
     ],
-    "updated_at": "2026-11-19T12:41:36+00:00",
+    "updated_at": "2026-11-19T13:12:46+00:00",
     "coverage_note": "常设投稿目录与正式征稿分别展示。程序逐条核对已接通信源的正式公告，无法确认的日期不会填入截止日。"
   },
   "operations": {
     "last_run": {
       "id": 1,
-      "started_at": "2026-11-19T12:41:36+00:00",
-      "finished_at": "2026-11-19T12:41:36+00:00",
+      "started_at": "2026-11-19T13:12:45+00:00",
+      "finished_at": "2026-11-19T13:12:46+00:00",
       "successes": 0,
-      "failures": 0,
+      "failures": 1,
       "added": 0,
       "changed": 0
     },
     "scheduler_enabled": true,
-    "scheduled_run_verified": false,
+    "scheduled_run_verified": true,
     "last_effective_run": {
       "id": 1,
-      "started_at": "2026-11-19T12:29:00+00:00",
-      "finished_at": "2026-11-19T12:29:10+00:00",
-      "successes": 3,
+      "started_at": "2026-11-19T13:12:45+00:00",
+      "finished_at": "2026-11-19T13:12:46+00:00",
+      "successes": 0,
       "failures": 1,
-      "added": 6,
+      "added": 0,
       "changed": 0
     },
-    "scheduler_note": "最近一次云端运行：2026-11-19T12:41:36+00:00；触发方式：push。信源成功时间单独显示。",
+    "scheduler_note": "最近一次云端运行：2026-11-19T13:12:46+00:00；触发方式：push。信源成功时间单独显示。",
     "total_archived": 374,
     "visible_in_export": 374
   }
