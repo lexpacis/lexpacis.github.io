@@ -259,7 +259,7 @@
     "journal_id": "ljil",
     "authority": "academic_society",
     "enabled": true,
-    "poll_hours": 24,
+    "poll_hours": 12,
     "article_checks": 5,
     "topics": [
       "theory"
@@ -282,7 +282,7 @@
     "journal_id": "ajil",
     "authority": "academic_society",
     "enabled": true,
-    "poll_hours": 24,
+    "poll_hours": 12,
     "article_checks": 5,
     "topics": [
       "theory"
@@ -305,7 +305,7 @@
     "journal_id": "tel",
     "authority": "academic_society",
     "enabled": true,
-    "poll_hours": 24,
+    "poll_hours": 12,
     "article_checks": 5,
     "topics": [
       "ocean-climate"
@@ -886,7 +886,7 @@
     "module": "cfp",
     "authority": "academic_society",
     "enabled": true,
-    "poll_hours": 24,
+    "poll_hours": 12,
     "article_checks": 5,
     "topics": [
       "rights"
@@ -909,7 +909,7 @@
     "module": "cfp",
     "authority": "academic_society",
     "enabled": true,
-    "poll_hours": 24,
+    "poll_hours": 12,
     "article_checks": 5,
     "topics": [
       "institutions"
@@ -1148,6 +1148,30 @@
       "economic"
     ],
     "scope": "中心案件数据库最新登记页与逐案详情页；仅取最近登记的案件",
+    "reuse": "metadata_only",
+    "language": "en"
+  },
+  {
+    "id": "echr-judgments",
+    "name": "欧洲人权法院 · 判决与决定",
+    "organization": "European Court of Human Rights",
+    "url": "https://hudoc.echr.coe.int/app/transform/rss?library=echreng&query=contentsitename:ECHR%20AND%20doctype=JUD&sort=kpdate%20Descending&start=0&length=20&rankingModelId=11111111-0000-0000-0000-000000000000",
+    "homepage": "https://hudoc.echr.coe.int/",
+    "kind": "rss",
+    "module": "cases",
+    "authority": "official_institution",
+    "enabled": true,
+    "poll_hours": 24,
+    "article_checks": 2,
+    "max_pdf_pages": 80,
+    "max_pdf_bytes": 8000000,
+    "max_pdf_fetch_bytes": 8000000,
+    "max_pdf_seconds": 20,
+    "topics": [
+      "human-rights",
+      "disputes"
+    ],
+    "scope": "HUDOC 英文判决订阅与判决 PDF 全文；仅取个案（001-）文书",
     "reuse": "metadata_only",
     "language": "en"
   }

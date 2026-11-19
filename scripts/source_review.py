@@ -293,8 +293,8 @@ def official_pdf_issuer(source,url):
     if (source['id']=='icj' and parsed.netloc=='www.icj-cij.org' and not parsed.query
         and _ICJ_PDF.fullmatch(parsed.path)):
         return r'international court of justice|cour internationale de justice'
-    if (source['id']=='echr-press' and parsed.netloc=='hudoc.echr.coe.int'
-        and parsed.path=='/app/conversion/pdf/' and re.fullmatch(r'id=003-\d+-\d+&library=ECHR',parsed.query)):
+    if (source['id'] in ('echr-press','echr-judgments') and parsed.netloc=='hudoc.echr.coe.int'
+        and parsed.path=='/app/conversion/pdf/' and re.fullmatch(r'id=00[13]-\d+(?:-\d+)?&library=ECHR',parsed.query)):
         return r'european court of human rights|cour europ[ée]enne des droits de l.homme'
     if (source['id']=='iacthr-press' and parsed.netloc=='www.corteidh.or.cr' and not parsed.query
         and re.fullmatch(r'/docs/comunicados/cp_\d+_20\d{2}_ENG\.pdf',parsed.path)):

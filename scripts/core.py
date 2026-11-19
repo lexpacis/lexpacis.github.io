@@ -175,6 +175,12 @@ def parse_feed(data, source):
             if parts.netloc!='hudoc.echr.coe.int' or parts.path!='/eng-press' or not identifier:
                 continue
             url='https://hudoc.echr.coe.int/app/conversion/pdf/?id='+identifier[1]+'&library=ECHR'
+        if source['id']=='echr-judgments':
+            parts=urllib.parse.urlsplit(url)
+            identifier=re.fullmatch(r'i=(001-\d+)',parts.query)
+            if parts.netloc!='hudoc.echr.coe.int' or parts.path!='/eng' or not identifier:
+                continue
+            url='https://hudoc.echr.coe.int/app/conversion/pdf/?library=ECHR&id='+identifier[1]
         if source.get('link_pattern') and not re.fullmatch(source['link_pattern'],urllib.parse.urlsplit(url).path):
             continue
         date,precision=parse_date(child_text(item,('pubDate','published','date','updated')))
