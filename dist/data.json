@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-19T14:54:38+00:00",
+  "generated_at": "2026-11-19T15:26:38+00:00",
   "site": {
     "name": "法域前沿",
     "english_name": "Lexpacis",
@@ -536,6 +536,70 @@
       "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
     },
     {
+      "id": "d3fe6863d9f24537ec23",
+      "source_id": "mpil-events",
+      "title": "International Law and Peace in Ukraine",
+      "url": "https://www.mpil.de/en/pub/news/conferences-workshops/international-law-and-peace-in.cfm",
+      "doi": "",
+      "module": "events",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-19T15:26:34+00:00",
+      "updated_at": "2026-11-19T15:26:34+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "d13c5a1b8a42b92c4a2a14e66368b3c11188e8f6d68666b5fd4c54efa5de10e1",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "mpil-events",
+          "url": "https://www.mpil.de/en/pub/news/conferences-workshops/international-law-and-peace-in.cfm",
+          "seen_at": "2026-11-19T15:26:34+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "5ea0182af2d22bb663fd",
+      "source_id": "mpil-events",
+      "title": "Human Rights under Challenge and the Reconfiguration of International Law",
+      "url": "https://www.mpil.de/en/pub/news/conferences-workshops/human-rights-under-challenge.cfm",
+      "doi": "",
+      "module": "events",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-19T15:26:34+00:00",
+      "updated_at": "2026-11-19T15:26:34+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "0679196d3a4368fbacb31bafc10cad26249f63872e21b3f7bfd9bebbffd6eca8",
+      "topics": [
+        "rights"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "mpil-events",
+          "url": "https://www.mpil.de/en/pub/news/conferences-workshops/human-rights-under-challenge.cfm",
+          "seen_at": "2026-11-19T15:26:34+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
       "id": "70af1d75cdafef31973a",
       "source_id": "opiniojuris",
       "title": "This is Not South Africa’s Definition: A New Report on Apartheid in the Draft Crimes Against Humanity Treaty",
@@ -776,40 +840,6 @@
       "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
     },
     {
-      "id": "f502bf9aebf8e1deadf5",
-      "source_id": "uncitral-news",
-      "title": "United Arab Emirates accedes to the Singapore Convention on Mediation",
-      "url": "https://uncitral.un.org/en/news/united-arab-emirates-accedes-singapore-convention-mediation",
-      "doi": "",
-      "module": "official",
-      "published_at": null,
-      "date_precision": "unknown",
-      "discovered_at": "2026-11-19T09:30:42+00:00",
-      "updated_at": "2026-11-19T09:30:42+00:00",
-      "evidence_basis": "原文正文核对",
-      "source_revision": "e1ead8481f264a21f08bf55e84f66ee10dd59d42e6e14700638d9fa89c6325af",
-      "topics": [
-        "economic",
-        "institutions"
-      ],
-      "authors": [],
-      "bibliography": {},
-      "material_type": "学术平台文章",
-      "provenance": [
-        {
-          "source_id": "uncitral-news",
-          "url": "https://uncitral.un.org/en/news/united-arab-emirates-accedes-singapore-convention-mediation",
-          "seen_at": "2026-11-19T09:30:42+00:00"
-        }
-      ],
-      "title_zh": "",
-      "summary_zh": "",
-      "ai": null,
-      "event": null,
-      "deadline": null,
-      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
-    },
-    {
       "id": "7c4a0a7fc4f53aaf809f",
       "source_id": "uncitral-news",
       "title": "10th Intersessional meeting of UNCITRAL Working Group III",
@@ -833,7 +863,7 @@
         {
           "source_id": "uncitral-news",
           "url": "https://uncitral.un.org/en/news/10th-intersessional-meeting-uncitral-working-group-iii",
-          "seen_at": "2026-11-19T09:30:42+00:00"
+          "seen_at": "2026-11-19T15:26:38+00:00"
         }
       ],
       "title_zh": "",
@@ -867,7 +897,7 @@
         {
           "source_id": "uncitral-news",
           "url": "https://uncitral.un.org/en/news/uzbekistan-accedes-singapore-convention-mediation",
-          "seen_at": "2026-11-19T09:30:42+00:00"
+          "seen_at": "2026-11-19T15:26:38+00:00"
         }
       ],
       "title_zh": "",
@@ -902,7 +932,7 @@
         {
           "source_id": "uncitral-news",
           "url": "https://uncitral.un.org/en/news/uncitral-advances-dispute-settlement-and-digital-trade-work-its-59th-session",
-          "seen_at": "2026-11-19T09:30:42+00:00"
+          "seen_at": "2026-11-19T15:26:38+00:00"
         }
       ],
       "title_zh": "",
@@ -1437,176 +1467,6 @@
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/case-related/178/178-20261119-pre-01-00-en.pdf",
           "seen_at": "2026-11-19T14:54:38+00:00"
-        }
-      ],
-      "title_zh": "",
-      "summary_zh": "",
-      "ai": null,
-      "event": null,
-      "deadline": null,
-      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
-    },
-    {
-      "id": "3e184cff0fcdb0589d10",
-      "source_id": "ila-events",
-      "title": "International Law Weekend 2026",
-      "url": "https://www.ila-hq.org/en/events/international-law-weekend-2026",
-      "doi": "",
-      "module": "events",
-      "published_at": null,
-      "date_precision": "unknown",
-      "discovered_at": "2026-11-18T21:31:49+00:00",
-      "updated_at": "2026-11-18T21:31:49+00:00",
-      "evidence_basis": "原文正文核对",
-      "source_revision": "e6393ce17f4fca16ea33c8c915721f8f411395da254880ebb8759e399c2276c5",
-      "topics": [],
-      "authors": [],
-      "bibliography": {},
-      "material_type": "学术平台文章",
-      "provenance": [
-        {
-          "source_id": "ila-events",
-          "url": "https://www.ila-hq.org/en/events/international-law-weekend-2026",
-          "seen_at": "2026-11-18T21:31:49+00:00"
-        }
-      ],
-      "title_zh": "",
-      "summary_zh": "",
-      "ai": null,
-      "event": null,
-      "deadline": null,
-      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
-    },
-    {
-      "id": "a35b9b896b3237df15b7",
-      "source_id": "ila-events",
-      "title": "Careers in International Law: From Strategy to Success with Prof. Anna Spain Bradley",
-      "url": "https://www.ila-hq.org/en/events/careers-in-international-law-from-strategy-to-success-with-prof-anna-spain-bradley",
-      "doi": "",
-      "module": "events",
-      "published_at": null,
-      "date_precision": "unknown",
-      "discovered_at": "2026-11-18T21:31:49+00:00",
-      "updated_at": "2026-11-18T21:31:49+00:00",
-      "evidence_basis": "原文正文核对",
-      "source_revision": "b9294a7f0d830454b622a433a7ed1a2c3653260ab6c91aac9a0fdb123b636472",
-      "topics": [],
-      "authors": [],
-      "bibliography": {},
-      "material_type": "学术平台文章",
-      "provenance": [
-        {
-          "source_id": "ila-events",
-          "url": "https://www.ila-hq.org/en/events/careers-in-international-law-from-strategy-to-success-with-prof-anna-spain-bradley",
-          "seen_at": "2026-11-18T21:31:49+00:00"
-        }
-      ],
-      "title_zh": "",
-      "summary_zh": "",
-      "ai": null,
-      "event": null,
-      "deadline": null,
-      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
-    },
-    {
-      "id": "46f5853373d38fb0948d",
-      "source_id": "ila-events",
-      "title": "Official Presentation of the Kazakhstan Branch of the International Law Association",
-      "url": "https://www.ila-hq.org/en/events/official-presentation-of-the-kazakhstan-branch-of-the-international-law-association",
-      "doi": "",
-      "module": "events",
-      "published_at": null,
-      "date_precision": "unknown",
-      "discovered_at": "2026-11-18T21:31:49+00:00",
-      "updated_at": "2026-11-18T21:31:49+00:00",
-      "evidence_basis": "原文正文核对",
-      "source_revision": "143e15f6547f8122d41de7c64b5527971fe71067d7da15f57b8cf84313e16e7b",
-      "topics": [],
-      "authors": [],
-      "bibliography": {
-        "notice_dates": {
-          "event": {
-            "date": "2026-09-10",
-            "date_text": "2026-09-10",
-            "label": "活动日期"
-          },
-          "deadline": null
-        }
-      },
-      "material_type": "学术平台文章",
-      "provenance": [
-        {
-          "source_id": "ila-events",
-          "url": "https://www.ila-hq.org/en/events/official-presentation-of-the-kazakhstan-branch-of-the-international-law-association",
-          "seen_at": "2026-11-18T21:31:49+00:00"
-        }
-      ],
-      "title_zh": "",
-      "summary_zh": "",
-      "ai": null,
-      "event": {
-        "date": "2026-09-10",
-        "date_text": "2026-09-10",
-        "label": "活动日期"
-      },
-      "deadline": null,
-      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
-    },
-    {
-      "id": "fbd794e5ccdc8ea46f36",
-      "source_id": "ila-events",
-      "title": "Conference: \"Evidence Matters Before Regional Human Rights Courts - The African Court in Critical and Comparative Perspective\"",
-      "url": "https://www.ila-hq.org/en/events/conference-evidence-matters-before-regional-human-rights-courts-the-african-court-in-critical-and-comparative-perspective",
-      "doi": "",
-      "module": "events",
-      "published_at": null,
-      "date_precision": "unknown",
-      "discovered_at": "2026-11-18T21:31:49+00:00",
-      "updated_at": "2026-11-18T21:31:49+00:00",
-      "evidence_basis": "原文正文核对",
-      "source_revision": "10fbdbdd8cd5de3ad34373aca39e2fdc72e602c31eee54383e56a961fe28cd79",
-      "topics": [
-        "rights"
-      ],
-      "authors": [],
-      "bibliography": {},
-      "material_type": "学术平台文章",
-      "provenance": [
-        {
-          "source_id": "ila-events",
-          "url": "https://www.ila-hq.org/en/events/conference-evidence-matters-before-regional-human-rights-courts-the-african-court-in-critical-and-comparative-perspective",
-          "seen_at": "2026-11-18T21:31:49+00:00"
-        }
-      ],
-      "title_zh": "",
-      "summary_zh": "",
-      "ai": null,
-      "event": null,
-      "deadline": null,
-      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
-    },
-    {
-      "id": "61f9c0200138787d3a6e",
-      "source_id": "ila-events",
-      "title": "Webinaire conjoint - \"Le discours de Davos du premier ministre Carney: quelles conséquences pour le droit international?\"",
-      "url": "https://www.ila-hq.org/en/events/webinaire-conjoint-le-discours-de-davos-du-premier-ministre-carney-quelles-consequences-pour-le-droit-international",
-      "doi": "",
-      "module": "events",
-      "published_at": null,
-      "date_precision": "unknown",
-      "discovered_at": "2026-11-18T21:31:49+00:00",
-      "updated_at": "2026-11-18T21:31:49+00:00",
-      "evidence_basis": "原文正文核对",
-      "source_revision": "e48f8b6249c680bb85ae102edca701b12cde14be71cc39b996c33c438bde6f31",
-      "topics": [],
-      "authors": [],
-      "bibliography": {},
-      "material_type": "学术平台文章",
-      "provenance": [
-        {
-          "source_id": "ila-events",
-          "url": "https://www.ila-hq.org/en/events/webinaire-conjoint-le-discours-de-davos-du-premier-ministre-carney-quelles-consequences-pour-le-droit-international",
-          "seen_at": "2026-11-18T21:31:49+00:00"
         }
       ],
       "title_zh": "",
@@ -2868,7 +2728,7 @@
         {
           "source_id": "mpil-events",
           "url": "https://www.mpil.de/en/pub/news/conferences-workshops/fifth-european-law-group-confe.cfm",
-          "seen_at": "2026-11-18T20:42:31+00:00"
+          "seen_at": "2026-11-19T15:26:34+00:00"
         }
       ],
       "title_zh": "",
@@ -2920,7 +2780,7 @@
         {
           "source_id": "mpil-events",
           "url": "https://www.mpil.de/en/pub/news/conferences-workshops/refracting-lotus-jurisdiction.cfm",
-          "seen_at": "2026-11-18T20:42:31+00:00"
+          "seen_at": "2026-11-19T15:26:34+00:00"
         }
       ],
       "title_zh": "",
@@ -2971,7 +2831,7 @@
         {
           "source_id": "mpil-events",
           "url": "https://www.mpil.de/en/pub/news/conferences-workshops/human-rights-rising-under-dis.cfm",
-          "seen_at": "2026-11-18T20:42:31+00:00"
+          "seen_at": "2026-11-19T15:26:34+00:00"
         }
       ],
       "title_zh": "",
@@ -3006,7 +2866,7 @@
         {
           "source_id": "mpil-events",
           "url": "https://www.mpil.de/en/pub/news/conferences-workshops/international-law-and-emotions.cfm",
-          "seen_at": "2026-11-18T20:42:31+00:00"
+          "seen_at": "2026-11-19T15:26:34+00:00"
         }
       ],
       "title_zh": "",
@@ -3830,7 +3690,7 @@
         {
           "source_id": "wto",
           "url": "https://www.wto.org/english/tratop_e/tpr_e/tpr_per_18nov26_e.htm",
-          "seen_at": "2026-11-19T08:57:27+00:00"
+          "seen_at": "2026-11-19T15:26:36+00:00"
         }
       ],
       "title_zh": "",
@@ -4060,6 +3920,42 @@
           "source_id": "un-geneva-news",
           "url": "https://www.ungeneva.org/en/news-media/news/2026/11/124979/cop31-deadlock-persists-countries-launch-new-climate-reality-check",
           "seen_at": "2026-11-19T14:54:37+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "32d8dae2fcf95a324cab",
+      "source_id": "un-geneva-meetings",
+      "title": "In Dialogue with the Republic of Moldova, Experts of the Committee against Torture Praise Protection Measures for Ukrainian Refugees, Ask about the Accommodation of Asylum Seekers and Prison Overcrowding",
+      "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/examen-de-la-republique-de-moldova-au-comite-contre-la-torture",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-11-18",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T15:26:14+00:00",
+      "updated_at": "2026-11-19T15:26:14+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "3e18c12979e9d2a04f00b8f19f440bbd18119ef2916acbddd345846e6fcfea8e",
+      "topics": [
+        "institutions",
+        "rights"
+      ],
+      "authors": [
+        "ungeneva.org"
+      ],
+      "bibliography": {},
+      "material_type": "官方机构新闻报道",
+      "provenance": [
+        {
+          "source_id": "un-geneva-meetings",
+          "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/examen-de-la-republique-de-moldova-au-comite-contre-la-torture",
+          "seen_at": "2026-11-19T15:26:14+00:00"
         }
       ],
       "title_zh": "",
@@ -4381,7 +4277,7 @@
         {
           "source_id": "wto",
           "url": "https://www.wto.org/english/news_e/news26_e/tmwto_17nov26_552_e.htm",
-          "seen_at": "2026-11-19T08:57:27+00:00"
+          "seen_at": "2026-11-19T15:26:36+00:00"
         }
       ],
       "title_zh": "",
@@ -5183,7 +5079,7 @@
         {
           "source_id": "un-geneva-meetings",
           "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/le-comite-contre-la-torture-ouvre-les-travaux-de-sa-85e-session",
-          "seen_at": "2026-11-19T08:56:38+00:00"
+          "seen_at": "2026-11-19T15:26:14+00:00"
         }
       ],
       "title_zh": "",
@@ -5555,7 +5451,7 @@
         {
           "source_id": "wto",
           "url": "https://www.wto.org/english/news_e/pres26_e/pr998_551_e.htm",
-          "seen_at": "2026-11-19T08:57:27+00:00"
+          "seen_at": "2026-11-19T15:26:36+00:00"
         }
       ],
       "title_zh": "",
@@ -5591,7 +5487,7 @@
         {
           "source_id": "un-geneva-meetings",
           "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/le-comite-des-droits-economiques-sociaux-et-culturels-acheve-sa",
-          "seen_at": "2026-11-18T20:02:53+00:00"
+          "seen_at": "2026-11-19T15:26:14+00:00"
         }
       ],
       "title_zh": "",
@@ -5892,7 +5788,7 @@
         {
           "source_id": "wto",
           "url": "https://www.wto.org/english/news_e/news26_e/trip_12nov26_553_e.htm",
-          "seen_at": "2026-11-19T08:57:27+00:00"
+          "seen_at": "2026-11-19T15:26:36+00:00"
         }
       ],
       "title_zh": "",
@@ -6026,7 +5922,7 @@
         {
           "source_id": "wto",
           "url": "https://www.wto.org/english/news_e/news26_e/safe_zaf_11nov26_546_e.htm",
-          "seen_at": "2026-11-19T08:57:27+00:00"
+          "seen_at": "2026-11-19T15:26:36+00:00"
         }
       ],
       "title_zh": "",
@@ -6092,7 +5988,7 @@
         {
           "source_id": "wto",
           "url": "https://www.wto.org/english/news_e/news26_e/tbt_10nov26_554_e.htm",
-          "seen_at": "2026-11-19T08:57:27+00:00"
+          "seen_at": "2026-11-19T15:26:36+00:00"
         }
       ],
       "title_zh": "",
@@ -6125,7 +6021,7 @@
         {
           "source_id": "wto",
           "url": "https://www.wto.org/english/news_e/news26_e/acc_10nov26_550_e.htm",
-          "seen_at": "2026-11-19T08:57:27+00:00"
+          "seen_at": "2026-11-19T15:26:36+00:00"
         }
       ],
       "title_zh": "",
@@ -6158,7 +6054,7 @@
         {
           "source_id": "un-geneva-press",
           "url": "https://www.ungeneva.org/en/news-media/press-release/2026/11/seventh-review-conference-high-contracting-parties-convention",
-          "seen_at": "2026-11-19T08:56:04+00:00"
+          "seen_at": "2026-11-19T15:26:06+00:00"
         }
       ],
       "title_zh": "",
@@ -6377,7 +6273,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/symposium/state-responsibility-in-crisis/",
-          "seen_at": "2026-11-19T08:57:05+00:00"
+          "seen_at": "2026-11-19T15:26:31+00:00"
         }
       ],
       "title_zh": "",
@@ -6410,7 +6306,7 @@
         {
           "source_id": "wto",
           "url": "https://www.wto.org/english/news_e/news26_e/tech_09nov26_543_e.htm",
-          "seen_at": "2026-11-18T20:03:40+00:00"
+          "seen_at": "2026-11-19T15:26:36+00:00"
         }
       ],
       "title_zh": "",
@@ -6582,7 +6478,7 @@
         {
           "source_id": "un-geneva-meetings",
           "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/le-comite-des-droits-economiques-sociaux-et-culturels-et-le",
-          "seen_at": "2026-11-18T20:02:53+00:00"
+          "seen_at": "2026-11-19T15:26:14+00:00"
         }
       ],
       "title_zh": "",
@@ -6618,7 +6514,7 @@
         {
           "source_id": "un-geneva-meetings",
           "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/examen-de-lautriche-au-comite-des-droits-economiques-sociaux-et",
-          "seen_at": "2026-11-18T20:02:53+00:00"
+          "seen_at": "2026-11-19T15:26:14+00:00"
         }
       ],
       "title_zh": "",
@@ -6890,7 +6786,7 @@
         {
           "source_id": "un-geneva-meetings",
           "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/examen-du-mexique-au-comite-des-droits-economiques-sociaux-et",
-          "seen_at": "2026-11-19T08:56:38+00:00"
+          "seen_at": "2026-11-19T15:26:14+00:00"
         }
       ],
       "title_zh": "",
@@ -6926,7 +6822,7 @@
         {
           "source_id": "un-geneva-meetings",
           "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/human-rights-committee-adopts-reports-follow-concluding",
-          "seen_at": "2026-11-19T08:56:38+00:00"
+          "seen_at": "2026-11-19T15:26:14+00:00"
         }
       ],
       "title_zh": "",
@@ -7009,6 +6905,42 @@
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/press-releases/0/000-20261104-pre-01-00-en.pdf",
           "seen_at": "2026-11-19T14:54:38+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "a6e6a1056ee566ad7d86",
+      "source_id": "un-geneva-meetings",
+      "title": "In Dialogue with Pakistan, Experts of the Committee on Economic, Social and Cultural Rights Welcome Law Raising the Age of Marriage to 18, Ask about Bonded Labour and Rebuilding Efforts after the 2022 and 2025 Floods",
+      "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/dialogue-pakistan-experts-committee-economic-social-and-cultural",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-11-04",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T15:26:14+00:00",
+      "updated_at": "2026-11-19T15:26:14+00:00",
+      "evidence_basis": "RSS 标题",
+      "source_revision": "7e7c40e2b8525aa3acb3357f5bed3a302d6dbd88a9bf3cc1f6cacadd8c642b48",
+      "topics": [
+        "institutions",
+        "economic"
+      ],
+      "authors": [
+        "ungeneva.org"
+      ],
+      "bibliography": {},
+      "material_type": "官方机构新闻报道",
+      "provenance": [
+        {
+          "source_id": "un-geneva-meetings",
+          "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/dialogue-pakistan-experts-committee-economic-social-and-cultural",
+          "seen_at": "2026-11-19T15:26:14+00:00"
         }
       ],
       "title_zh": "",
@@ -7234,6 +7166,42 @@
       "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
     },
     {
+      "id": "394f6faff8d15e63b744",
+      "source_id": "un-geneva-meetings",
+      "title": "Committee on Economic, Social and Cultural Rights Commends Eswatini’s HIV Response, Raises Questions on the 2021 Civil Unrest and High Rates of Youth Unemployment",
+      "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/committee-economic-social-and-cultural-rights-commends-eswatinis",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-11-03",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T15:26:14+00:00",
+      "updated_at": "2026-11-19T15:26:14+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "67ddc106333acf66c53fbe523237d698f5bc33d6e1755be1907d950f675fd56d",
+      "topics": [
+        "institutions",
+        "economic"
+      ],
+      "authors": [
+        "ungeneva.org"
+      ],
+      "bibliography": {},
+      "material_type": "官方机构新闻报道",
+      "provenance": [
+        {
+          "source_id": "un-geneva-meetings",
+          "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/committee-economic-social-and-cultural-rights-commends-eswatinis",
+          "seen_at": "2026-11-19T15:26:14+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
       "id": "526bc4931d9a467115a8",
       "source_id": "voelkerrechtsblog",
       "title": "Edited Volume on Battlefield Forensics",
@@ -7254,7 +7222,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/calls-for-papers/edited-volume-on-battlefield-forensics/",
-          "seen_at": "2026-11-18T20:03:32+00:00"
+          "seen_at": "2026-11-19T15:26:31+00:00"
         }
       ],
       "title_zh": "",
@@ -7465,6 +7433,42 @@
       "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
     },
     {
+      "id": "2e129af8678bdf5f6ac2",
+      "source_id": "un-geneva-meetings",
+      "title": "Committee on Economic, Social and Cultural Rights Opens Eightieth Session",
+      "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/le-comite-des-droits-economiques-sociaux-et-culturels-ouvre-sa",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-11-02",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T15:26:14+00:00",
+      "updated_at": "2026-11-19T15:26:14+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "c05e6f6166f6cf2a2e7c711392ef664ce941dbbca8ea5c84f1348fc2c21900d4",
+      "topics": [
+        "institutions",
+        "economic"
+      ],
+      "authors": [
+        "ungeneva.org"
+      ],
+      "bibliography": {},
+      "material_type": "官方机构新闻报道",
+      "provenance": [
+        {
+          "source_id": "un-geneva-meetings",
+          "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/le-comite-des-droits-economiques-sociaux-et-culturels-ouvre-sa",
+          "seen_at": "2026-11-19T15:26:14+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
       "id": "ffa80107d7f9c243fc09",
       "source_id": "voelkerrechtsblog",
       "title": "Open-Ended Symposium on GenAI and the Future of (International Legal) Scholarship",
@@ -7485,7 +7489,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/symposium/open-ended-symposium-on-genai-and-the-future-of-international-legal-scholarship/",
-          "seen_at": "2026-11-18T20:03:32+00:00"
+          "seen_at": "2026-11-19T15:26:31+00:00"
         }
       ],
       "title_zh": "",
@@ -7518,7 +7522,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/calls-for-papers/call-for-blogs-centre-for-research-in-environmental-law/",
-          "seen_at": "2026-11-18T20:03:32+00:00"
+          "seen_at": "2026-11-19T15:26:31+00:00"
         }
       ],
       "title_zh": "",
@@ -7551,7 +7555,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/events/online-certificate-course-on-trademark-law/",
-          "seen_at": "2026-11-18T20:03:32+00:00"
+          "seen_at": "2026-11-19T15:26:31+00:00"
         }
       ],
       "title_zh": "",
@@ -7582,7 +7586,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/calls-for-papers/nluo-student-law-journal-volume-ix/",
-          "seen_at": "2026-11-18T20:03:32+00:00"
+          "seen_at": "2026-11-19T15:26:31+00:00"
         }
       ],
       "title_zh": "",
@@ -7613,7 +7617,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/events/digital-dual-use-interdisziplinare-konferenz/",
-          "seen_at": "2026-11-18T20:03:32+00:00"
+          "seen_at": "2026-11-19T15:26:31+00:00"
         }
       ],
       "title_zh": "",
@@ -7644,7 +7648,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/jobs/ko-abteilungsleitung-fur-die-abteilung-monitoring-stelle-un-behindertenrechtskonvention-100/",
-          "seen_at": "2026-11-18T20:03:32+00:00"
+          "seen_at": "2026-11-19T15:26:31+00:00"
         }
       ],
       "title_zh": "",
@@ -7675,7 +7679,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/symposium/reflections-on-digital-empires/",
-          "seen_at": "2026-11-19T08:57:05+00:00"
+          "seen_at": "2026-11-19T15:26:31+00:00"
         }
       ],
       "title_zh": "",
@@ -7754,7 +7758,7 @@
         {
           "source_id": "un-geneva-press",
           "url": "https://www.ungeneva.org/en/news-media/press-release/2026/10/un-geneva-unveils-sustainable-new-uniforms-tour-guides-through",
-          "seen_at": "2026-11-18T20:02:45+00:00"
+          "seen_at": "2026-11-19T15:26:06+00:00"
         }
       ],
       "title_zh": "",
@@ -8445,6 +8449,37 @@
       "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
     },
     {
+      "id": "3e184cff0fcdb0589d10",
+      "source_id": "ila-events",
+      "title": "International Law Weekend 2026",
+      "url": "https://www.ila-hq.org/en/events/international-law-weekend-2026",
+      "doi": "",
+      "module": "events",
+      "published_at": "2026-10-22",
+      "date_precision": "day",
+      "discovered_at": "2026-11-18T21:31:49+00:00",
+      "updated_at": "2026-11-19T15:26:37+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "1857fd456f780ae60e98d33d5448d58ac33f46b8824a0adb3339d991b378ca3a",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "ila-events",
+          "url": "https://www.ila-hq.org/en/events/international-law-weekend-2026",
+          "seen_at": "2026-11-19T15:26:37+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
       "id": "b78c04996667b1f796d7",
       "source_id": "voelkerrechtsblog",
       "title": "Wissenschaftliche*r Mitarbeiter*in zur Habilitation",
@@ -8465,7 +8500,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/jobs/wissenschaftlicher-mitarbeiterin-zur-habilitation-m-w-d/",
-          "seen_at": "2026-11-19T08:57:05+00:00"
+          "seen_at": "2026-11-19T15:26:31+00:00"
         }
       ],
       "title_zh": "",
@@ -8496,7 +8531,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/calls-for-papers/13th-annual-junior-scholars-conference/",
-          "seen_at": "2026-11-19T08:57:05+00:00"
+          "seen_at": "2026-11-19T15:26:31+00:00"
         }
       ],
       "title_zh": "",
@@ -8747,7 +8782,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/events/community-interests-in-international-law-theory-adjudication-and-human-rights/",
-          "seen_at": "2026-11-19T08:57:05+00:00"
+          "seen_at": "2026-11-19T15:26:31+00:00"
         }
       ],
       "title_zh": "",
@@ -8778,7 +8813,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/calls-for-papers/lex-terra-webzine/",
-          "seen_at": "2026-11-19T08:57:05+00:00"
+          "seen_at": "2026-11-19T15:26:31+00:00"
         }
       ],
       "title_zh": "",
@@ -8809,7 +8844,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/jobs/studienplatze-im-doktorandenprogramm-im-bereich-der-rechtswissenschaft/",
-          "seen_at": "2026-11-19T08:57:05+00:00"
+          "seen_at": "2026-11-19T15:26:31+00:00"
         }
       ],
       "title_zh": "",
@@ -8843,7 +8878,38 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/calls-for-papers/community-interests-in-international-law-theory-adjudication-and-human-rights/",
-          "seen_at": "2026-11-19T08:57:05+00:00"
+          "seen_at": "2026-11-19T15:26:31+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "0c2eea6472a6b7e2461b",
+      "source_id": "voelkerrechtsblog",
+      "title": "Trends in Intellectual Property Research (Vol. 4 Issue 4, 2026)",
+      "url": "https://voelkerrechtsblog.org/calls-for-papers/call-for-papers-trends-in-intellectual-property-research-volume-4-issue-4-2026/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-10-14T08:04:35+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-19T15:26:31+00:00",
+      "updated_at": "2026-11-19T15:26:31+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "b30659f1e8de38e6a13ebde3e5b3681ffa34463a0fe3ecf0f9cc28f17e440a31",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "voelkerrechtsblog",
+          "url": "https://voelkerrechtsblog.org/calls-for-papers/call-for-papers-trends-in-intellectual-property-research-volume-4-issue-4-2026/",
+          "seen_at": "2026-11-19T15:26:31+00:00"
         }
       ],
       "title_zh": "",
@@ -9458,6 +9524,40 @@
       "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
     },
     {
+      "id": "f502bf9aebf8e1deadf5",
+      "source_id": "uncitral-news",
+      "title": "United Arab Emirates accedes to the Singapore Convention on Mediation",
+      "url": "https://uncitral.un.org/en/news/united-arab-emirates-accedes-singapore-convention-mediation",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-10-09",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T09:30:42+00:00",
+      "updated_at": "2026-11-19T15:26:38+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "6afee616bb483e11cdf40357ac2d3fc0e8434520b7eedb051399a3cde5aa3c5a",
+      "topics": [
+        "economic",
+        "institutions"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "uncitral-news",
+          "url": "https://uncitral.un.org/en/news/united-arab-emirates-accedes-singapore-convention-mediation",
+          "seen_at": "2026-11-19T15:26:38+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
       "id": "ef40190fec2a0c44a90b",
       "source_id": "crossref-ijmcl",
       "title": "The Transformative Potential of Rights of Nature and Its Relationship to Indigenous Peoples’ Approaches to Ocean Law",
@@ -9532,7 +9632,7 @@
         {
           "source_id": "un-geneva-press",
           "url": "https://www.ungeneva.org/en/news-media/press-release/2026/10/le-conseil-des-droits-de-lhomme-clos-les-travaux-de-sa-soixante",
-          "seen_at": "2026-11-18T20:02:45+00:00"
+          "seen_at": "2026-11-19T15:26:06+00:00"
         }
       ],
       "title_zh": "",
@@ -10532,6 +10632,37 @@
       "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
     },
     {
+      "id": "5399a71758b8f945d4c1",
+      "source_id": "voelkerrechtsblog",
+      "title": "CNLU Law Journal",
+      "url": "https://voelkerrechtsblog.org/calls-for-papers/cnlu-law-journal-cnlulj/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-09-30T07:28:48+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-19T15:26:31+00:00",
+      "updated_at": "2026-11-19T15:26:31+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "3ace49c30b042e917242337885062ad1a711bd023db314b559bc06acce3f1e4a",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "voelkerrechtsblog",
+          "url": "https://voelkerrechtsblog.org/calls-for-papers/cnlu-law-journal-cnlulj/",
+          "seen_at": "2026-11-19T15:26:31+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
       "id": "f415bcf6fa89fd56168b",
       "source_id": "crossref-ljil",
       "title": "Why international law is failing as a discipline: Geopolitics, legality without order, and the limits of cartographic vision",
@@ -11106,6 +11237,37 @@
       "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
     },
     {
+      "id": "71cee93da805a45c8478",
+      "source_id": "voelkerrechtsblog",
+      "title": "The Rooms We Wanted",
+      "url": "https://voelkerrechtsblog.org/symposium/the-rooms-we-wanted/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-09-21T07:00:18+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-19T15:26:31+00:00",
+      "updated_at": "2026-11-19T15:26:31+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "db5f72fa9c85e397942abf84a3a4a059ed86e868dfdf4809a0037edfae769863",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "voelkerrechtsblog",
+          "url": "https://voelkerrechtsblog.org/symposium/the-rooms-we-wanted/",
+          "seen_at": "2026-11-19T15:26:31+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
       "id": "5cd8ce9c95fe7d2028de",
       "source_id": "crossref-ejil",
       "title": "Colonial Echoes in the Abyss: Sponsorships of Convenience in the Deep Seabed Mining Regime",
@@ -11273,6 +11435,99 @@
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag037",
           "seen_at": "2026-11-18T20:03:46+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "a35b9b896b3237df15b7",
+      "source_id": "ila-events",
+      "title": "Careers in International Law: From Strategy to Success with Prof. Anna Spain Bradley",
+      "url": "https://www.ila-hq.org/en/events/careers-in-international-law-from-strategy-to-success-with-prof-anna-spain-bradley",
+      "doi": "",
+      "module": "events",
+      "published_at": "2026-09-15",
+      "date_precision": "day",
+      "discovered_at": "2026-11-18T21:31:49+00:00",
+      "updated_at": "2026-11-19T15:26:37+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "836ee9c1b3f070528d292ed07dc94716560d988e65a0dee22541f7e411585863",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "ila-events",
+          "url": "https://www.ila-hq.org/en/events/careers-in-international-law-from-strategy-to-success-with-prof-anna-spain-bradley",
+          "seen_at": "2026-11-19T15:26:37+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "91dff04152c056e38716",
+      "source_id": "voelkerrechtsblog",
+      "title": "Director at the Max Planck Institute for Comparative Public Law and International Law",
+      "url": "https://voelkerrechtsblog.org/jobs/director-at-the-max-planck-institute-for-comparative-public-law-and-international-law/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-09-14T16:13:47+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-19T15:26:31+00:00",
+      "updated_at": "2026-11-19T15:26:31+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "c3106d29a38a999c15434a7f73e116707cde82e0f3baac67a46a85f0ab863e1e",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "voelkerrechtsblog",
+          "url": "https://voelkerrechtsblog.org/jobs/director-at-the-max-planck-institute-for-comparative-public-law-and-international-law/",
+          "seen_at": "2026-11-19T15:26:31+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "cf63b2ce4cf1586918ca",
+      "source_id": "voelkerrechtsblog",
+      "title": "Teaching International Law Vol. 1",
+      "url": "https://voelkerrechtsblog.org/symposium/teaching-international-law-vol-1/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-09-14T07:00:18+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-19T15:26:31+00:00",
+      "updated_at": "2026-11-19T15:26:31+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "87c97151057f42914d7660be34998428e463ba0203166dd589af696cb2fe72b7",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "voelkerrechtsblog",
+          "url": "https://voelkerrechtsblog.org/symposium/teaching-international-law-vol-1/",
+          "seen_at": "2026-11-19T15:26:31+00:00"
         }
       ],
       "title_zh": "",
@@ -11552,6 +11807,50 @@
       "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
     },
     {
+      "id": "46f5853373d38fb0948d",
+      "source_id": "ila-events",
+      "title": "Official Presentation of the Kazakhstan Branch of the International Law Association",
+      "url": "https://www.ila-hq.org/en/events/official-presentation-of-the-kazakhstan-branch-of-the-international-law-association",
+      "doi": "",
+      "module": "events",
+      "published_at": "2026-09-10",
+      "date_precision": "day",
+      "discovered_at": "2026-11-18T21:31:49+00:00",
+      "updated_at": "2026-11-19T15:26:37+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "a205814fe22256d5fe1442a875f7045785f0bb4a726aba91315788ab3bed270b",
+      "topics": [],
+      "authors": [],
+      "bibliography": {
+        "notice_dates": {
+          "event": {
+            "date": "2026-09-10",
+            "date_text": "2026-09-10",
+            "label": "活动日期"
+          },
+          "deadline": null
+        }
+      },
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "ila-events",
+          "url": "https://www.ila-hq.org/en/events/official-presentation-of-the-kazakhstan-branch-of-the-international-law-association",
+          "seen_at": "2026-11-19T15:26:37+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": {
+        "date": "2026-09-10",
+        "date_text": "2026-09-10",
+        "label": "活动日期"
+      },
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
       "id": "1816a7a799680ca527f2",
       "source_id": "crossref-jiel",
       "title": "Conceptual difficulties in the economic governance of AI bioprospecting for marine genetic resources",
@@ -11637,6 +11936,41 @@
           "source_id": "crossref-iclq",
           "url": "https://doi.org/10.1017/s0020589326101675",
           "seen_at": "2026-11-18T21:20:45+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "d352a4ea0d47e285cbb6",
+      "source_id": "un-geneva-press",
+      "title": "Human Rights Council to Hold its Sixty-Third Regular Session from 7 September to 7 October 2026",
+      "url": "https://www.ungeneva.org/en/news-media/press-release/2026/09/human-rights-council-hold-its-sixty-third-regular-session-7",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-09-02",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T15:26:06+00:00",
+      "updated_at": "2026-11-19T15:26:06+00:00",
+      "evidence_basis": "RSS 标题",
+      "source_revision": "21dea27895f7d90dfe215f556e119d6422c3609bfcd3073a14c1bd36157c1c67",
+      "topics": [
+        "rights"
+      ],
+      "authors": [
+        "ungeneva.org"
+      ],
+      "bibliography": {},
+      "material_type": "官方机构新闻报道",
+      "provenance": [
+        {
+          "source_id": "un-geneva-press",
+          "url": "https://www.ungeneva.org/en/news-media/press-release/2026/09/human-rights-council-hold-its-sixty-third-regular-session-7",
+          "seen_at": "2026-11-19T15:26:06+00:00"
         }
       ],
       "title_zh": "",
@@ -11917,7 +12251,7 @@
         {
           "source_id": "uncitral-news",
           "url": "https://uncitral.un.org/en/news/mauritius-ratifies-singapore-convention-mediation",
-          "seen_at": "2026-11-19T09:30:42+00:00"
+          "seen_at": "2026-11-19T15:26:38+00:00"
         }
       ],
       "title_zh": "",
@@ -11952,7 +12286,7 @@
         {
           "source_id": "un-geneva-press",
           "url": "https://www.ungeneva.org/en/news-media/press-release/2026/08/renewed-call-united-nations-secretary-general-and-president",
-          "seen_at": "2026-11-19T08:56:04+00:00"
+          "seen_at": "2026-11-19T15:26:06+00:00"
         }
       ],
       "title_zh": "",
@@ -12661,6 +12995,70 @@
       "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
     },
     {
+      "id": "da8a2dd63fdb34e0be8a",
+      "source_id": "voelkerrechtsblog",
+      "title": "Rights, Platforms, and Algorithms: Human Rights in the Digital Age (JILPAC Vol. 1, 2027)",
+      "url": "https://voelkerrechtsblog.org/calls-for-papers/journal-of-international-law-of-peace-and-armed-conflict-jilpac/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-07-27T13:50:50+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-19T15:26:31+00:00",
+      "updated_at": "2026-11-19T15:26:31+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "2814cf3977d4d59208716750d05b8ce2b3017e8e5dbc143b7cea6110eb461d8b",
+      "topics": [
+        "rights"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "voelkerrechtsblog",
+          "url": "https://voelkerrechtsblog.org/calls-for-papers/journal-of-international-law-of-peace-and-armed-conflict-jilpac/",
+          "seen_at": "2026-11-19T15:26:31+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "9fa59cb4476b85b376fc",
+      "source_id": "voelkerrechtsblog",
+      "title": "Might Makes Right, Again? – Inquiries in the Current Shaping of Global Governance",
+      "url": "https://voelkerrechtsblog.org/calls-for-papers/board-of-peace-might-makes-right-again-inquiries-in-the-current-shaping-of-global-governance/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-07-27T13:25:33+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-19T15:26:31+00:00",
+      "updated_at": "2026-11-19T15:26:31+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "b90ea08bc4d3880c91e16688ef7a9ab4acc32aa963cbd42444cf57e8815f716b",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "voelkerrechtsblog",
+          "url": "https://voelkerrechtsblog.org/calls-for-papers/board-of-peace-might-makes-right-again-inquiries-in-the-current-shaping-of-global-governance/",
+          "seen_at": "2026-11-19T15:26:31+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
       "id": "d9b8f284db4c9cc4e4ad",
       "source_id": "crossref-asianjil",
       "title": "The South Africa v. Israel Case: Examining Security Council Mechanisms for Enforcing Provisional Measures",
@@ -13288,7 +13686,139 @@
         {
           "source_id": "un-geneva-press",
           "url": "https://www.ungeneva.org/en/news-media/press-release/2026/07/human-rights-council-concludes-sixty-second-regular-session-after",
-          "seen_at": "2026-11-19T08:56:04+00:00"
+          "seen_at": "2026-11-19T15:26:06+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "8061d6bba023530a7991",
+      "source_id": "uncitral-news",
+      "title": "UNCITRAL adopts key texts to facilitate use of arbitral awards and notices of arbitration in electronic form",
+      "url": "https://uncitral.un.org/en/news/uncitral-adopts-key-texts-facilitate-use-arbitral-awards-and-notices-arbitration-electronic",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-07-07",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T15:26:38+00:00",
+      "updated_at": "2026-11-19T15:26:38+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "93cbe3928e3da1aa496371610c6634272e06160165e12a546b13777b2ae8bb5c",
+      "topics": [
+        "economic",
+        "institutions",
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "uncitral-news",
+          "url": "https://uncitral.un.org/en/news/uncitral-adopts-key-texts-facilitate-use-arbitral-awards-and-notices-arbitration-electronic",
+          "seen_at": "2026-11-19T15:26:38+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "0426087c5753c93639d2",
+      "source_id": "voelkerrechtsblog",
+      "title": "Die Friedens-Warte I/2027: Eine Krise der völkerrechtsbasierten Ordnung?",
+      "url": "https://voelkerrechtsblog.org/calls-for-papers/die-friedens-warte-i/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-07-06T13:16:20+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-19T15:26:31+00:00",
+      "updated_at": "2026-11-19T15:26:31+00:00",
+      "evidence_basis": "RSS 标题",
+      "source_revision": "f1ad3a5e46e685e5210b496fffa816441fd11c2bfaf5517296db8cf40d79fd5a",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "voelkerrechtsblog",
+          "url": "https://voelkerrechtsblog.org/calls-for-papers/die-friedens-warte-i/",
+          "seen_at": "2026-11-19T15:26:31+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "69faa472c322d513dfa0",
+      "source_id": "voelkerrechtsblog",
+      "title": "Arms Exports Unbound? The German Federal Constitutional Court’s Gaza Case in Perspective",
+      "url": "https://voelkerrechtsblog.org/symposium/arms-exports-unbound-the-german-federal-constitutional-courts-gaza-case-in-perspective/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-07-06T12:30:20+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-19T15:26:31+00:00",
+      "updated_at": "2026-11-19T15:26:31+00:00",
+      "evidence_basis": "RSS 标题",
+      "source_revision": "353c695aed494f27ad0abc864e73e767eb0adfde2b9b57b86a2f72c68ba6dcf8",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "voelkerrechtsblog",
+          "url": "https://voelkerrechtsblog.org/symposium/arms-exports-unbound-the-german-federal-constitutional-courts-gaza-case-in-perspective/",
+          "seen_at": "2026-11-19T15:26:31+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "f571ef472c1f36227b39",
+      "source_id": "uncitral-news",
+      "title": "Significant investor-State dispute settlement reforms agreed by UNCITRAL",
+      "url": "https://uncitral.un.org/en/news/significant-investor-state-dispute-settlement-reforms-agreed-uncitral",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-07-03",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T15:26:38+00:00",
+      "updated_at": "2026-11-19T15:26:38+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "14bdf7dfc126ac6ccb2cf8a56361a42fc7381968b8610f481be90fda42bb862a",
+      "topics": [
+        "economic",
+        "institutions",
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "uncitral-news",
+          "url": "https://uncitral.un.org/en/news/significant-investor-state-dispute-settlement-reforms-agreed-uncitral",
+          "seen_at": "2026-11-19T15:26:38+00:00"
         }
       ],
       "title_zh": "",
@@ -13449,6 +13979,39 @@
       "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
     },
     {
+      "id": "1cff108ec51917580c51",
+      "source_id": "voelkerrechtsblog",
+      "title": "International Criminal Law in Turmoil: Charting New Paths as They Unfold",
+      "url": "https://voelkerrechtsblog.org/symposium/international-criminal-law-in-turmoil-charting-new-paths-as-they-unfold/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-06-22T10:55:22+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-19T15:26:31+00:00",
+      "updated_at": "2026-11-19T15:26:31+00:00",
+      "evidence_basis": "RSS 标题",
+      "source_revision": "e1c5014a17336cd2cb3bb015fd502c049279e3a14396f00106a53aeb6492df6a",
+      "topics": [
+        "rights"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "voelkerrechtsblog",
+          "url": "https://voelkerrechtsblog.org/symposium/international-criminal-law-in-turmoil-charting-new-paths-as-they-unfold/",
+          "seen_at": "2026-11-19T15:26:31+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
       "id": "534648fe762442091204",
       "source_id": "china-mfa-statements",
       "title": "外交部发言人就韩国外交部官员完整公开重申中韩建交联合公报涉台表述答记者问",
@@ -13588,7 +14151,7 @@
         {
           "source_id": "un-geneva-press",
           "url": "https://www.ungeneva.org/en/news-media/press-release/2026/06/senior-oversight-leaders-discuss-role-and-evolution-independent",
-          "seen_at": "2026-11-19T08:56:04+00:00"
+          "seen_at": "2026-11-19T15:26:06+00:00"
         }
       ],
       "title_zh": "",
@@ -13635,6 +14198,40 @@
           "source_id": "crossref-ljil",
           "url": "https://doi.org/10.1017/s092215652610082x",
           "seen_at": "2026-11-18T20:03:46+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "d49e2c8ef2e2778f27bf",
+      "source_id": "uncitral-news",
+      "title": "UNCITRAL Working Group III Workshop on the Implementation of ISDS Reform for African States",
+      "url": "https://uncitral.un.org/en/news/uncitral-working-group-iii-workshop-implementation-isds-reform-african-states",
+      "doi": "",
+      "module": "events",
+      "published_at": "2026-06-03",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T15:26:38+00:00",
+      "updated_at": "2026-11-19T15:26:38+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "2ffb073c6407e8433a12b926854c7fcc4f4c1618e9743346c25811c4cebebb6d",
+      "topics": [
+        "economic",
+        "institutions"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "uncitral-news",
+          "url": "https://uncitral.un.org/en/news/uncitral-working-group-iii-workshop-implementation-isds-reform-african-states",
+          "seen_at": "2026-11-19T15:26:38+00:00"
         }
       ],
       "title_zh": "",
@@ -14452,6 +15049,40 @@
       "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
     },
     {
+      "id": "f131d7e412c5fe2a23ef",
+      "source_id": "uncitral-news",
+      "title": "Azerbaijan signs the Singapore Convention on Mediation",
+      "url": "https://uncitral.un.org/en/news/azerbaijan-signs-singapore-convention-mediation",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-04-28",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T15:26:38+00:00",
+      "updated_at": "2026-11-19T15:26:38+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "3d87ec73edc46c13dd8769965a0b07bea0dde747da5b1dc802a9193546e75b0e",
+      "topics": [
+        "economic",
+        "institutions"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "uncitral-news",
+          "url": "https://uncitral.un.org/en/news/azerbaijan-signs-singapore-convention-mediation",
+          "seen_at": "2026-11-19T15:26:38+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
       "id": "8cc44dbb71858d0c3faf",
       "source_id": "esil",
       "title": "ESIL Newsletter – Winter 2026",
@@ -14533,6 +15164,39 @@
       "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
     },
     {
+      "id": "c173c26104d27e62c815",
+      "source_id": "voelkerrechtsblog",
+      "title": "From Incarceration to Erasure: Palestinian Prisoners in the Architecture of Genocide, Apartheid, and Torture",
+      "url": "https://voelkerrechtsblog.org/symposium/from-incarceration-to-erasure-palestinian-prisoners-in-the-architecture-of-genocide-apartheid-and-torture/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-04-17T06:47:46+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-19T15:26:31+00:00",
+      "updated_at": "2026-11-19T15:26:31+00:00",
+      "evidence_basis": "RSS 标题",
+      "source_revision": "7065102bb957050d978fc78ed2df0372ba752737f972a92090ccca525b303bd7",
+      "topics": [
+        "rights"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "voelkerrechtsblog",
+          "url": "https://voelkerrechtsblog.org/symposium/from-incarceration-to-erasure-palestinian-prisoners-in-the-architecture-of-genocide-apartheid-and-torture/",
+          "seen_at": "2026-11-19T15:26:31+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
       "id": "e58387ba3f8533a5a103",
       "source_id": "icj",
       "title": "Solemn commemorative sitting held at the Peace Palace to mark the eightieth anniversary of the International Court of Justice",
@@ -14593,6 +15257,37 @@
           "source_id": "cambridge-books",
           "url": "https://www.cambridge.org/core/books/classical-doctrine-of-civil-war-in-international-law/5BF10BDB7B99396B5CE7C197C7C33AA3",
           "seen_at": "2026-11-18T21:21:27+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "1ff893cf024b1d232d57",
+      "source_id": "voelkerrechtsblog",
+      "title": "The Pathology of Plenty: Natural Resources in International Law",
+      "url": "https://voelkerrechtsblog.org/symposium/pathology-of-plenty-natural-resources-in-international-law/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-04-13T10:00:51+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-19T15:26:31+00:00",
+      "updated_at": "2026-11-19T15:26:31+00:00",
+      "evidence_basis": "RSS 标题",
+      "source_revision": "8f6bbdbfcfc1fa8887ca34aae335c1c3d1b9af12699346e49559c1dabca21597",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "voelkerrechtsblog",
+          "url": "https://voelkerrechtsblog.org/symposium/pathology-of-plenty-natural-resources-in-international-law/",
+          "seen_at": "2026-11-19T15:26:31+00:00"
         }
       ],
       "title_zh": "",
@@ -15061,7 +15756,71 @@
         {
           "source_id": "ila-events",
           "url": "https://www.ila-hq.org/en/events/joint-webinar-prime-minister-carneys-davos-speech-implications-for-international-law",
-          "seen_at": "2026-11-18T21:31:49+00:00"
+          "seen_at": "2026-11-19T15:26:37+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "fbd794e5ccdc8ea46f36",
+      "source_id": "ila-events",
+      "title": "Conference: \"Evidence Matters Before Regional Human Rights Courts - The African Court in Critical and Comparative Perspective\"",
+      "url": "https://www.ila-hq.org/en/events/conference-evidence-matters-before-regional-human-rights-courts-the-african-court-in-critical-and-comparative-perspective",
+      "doi": "",
+      "module": "events",
+      "published_at": "2026-03-25",
+      "date_precision": "day",
+      "discovered_at": "2026-11-18T21:31:49+00:00",
+      "updated_at": "2026-11-19T15:26:37+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "c51476032f26c4a24daee9828831d7c924d2a0d9a081b1984f5055dbe17beaf8",
+      "topics": [
+        "rights"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "ila-events",
+          "url": "https://www.ila-hq.org/en/events/conference-evidence-matters-before-regional-human-rights-courts-the-african-court-in-critical-and-comparative-perspective",
+          "seen_at": "2026-11-19T15:26:37+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "61f9c0200138787d3a6e",
+      "source_id": "ila-events",
+      "title": "Webinaire conjoint - \"Le discours de Davos du premier ministre Carney: quelles conséquences pour le droit international?\"",
+      "url": "https://www.ila-hq.org/en/events/webinaire-conjoint-le-discours-de-davos-du-premier-ministre-carney-quelles-consequences-pour-le-droit-international",
+      "doi": "",
+      "module": "events",
+      "published_at": "2026-03-25",
+      "date_precision": "day",
+      "discovered_at": "2026-11-18T21:31:49+00:00",
+      "updated_at": "2026-11-19T15:26:37+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "88aad069259aa4c738f543b8ac3e6b83a09d3bd1238b563eff2a5cdb7d738ccd",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "ila-events",
+          "url": "https://www.ila-hq.org/en/events/webinaire-conjoint-le-discours-de-davos-du-premier-ministre-carney-quelles-consequences-pour-le-droit-international",
+          "seen_at": "2026-11-19T15:26:37+00:00"
         }
       ],
       "title_zh": "",
@@ -15173,6 +15932,39 @@
       "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
     },
     {
+      "id": "6e234ebb0525cc38926b",
+      "source_id": "un-geneva-press",
+      "title": "Celebrating the 20-Year Legacy of the International Convention for the Protection of All Persons from Enforced Disappearance",
+      "url": "https://www.ungeneva.org/en/news-media/press-release/2026/03/celebrating-20-year-legacy-international-convention-protection-all",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-03-06",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T15:26:06+00:00",
+      "updated_at": "2026-11-19T15:26:06+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "1a13e9065b6c8baa7dcf7ebea6ef2738ecde94ef9954f2f6798d38f684b9a520",
+      "topics": [],
+      "authors": [
+        "ungeneva.org"
+      ],
+      "bibliography": {},
+      "material_type": "官方机构新闻报道",
+      "provenance": [
+        {
+          "source_id": "un-geneva-press",
+          "url": "https://www.ungeneva.org/en/news-media/press-release/2026/03/celebrating-20-year-legacy-international-convention-protection-all",
+          "seen_at": "2026-11-19T15:26:06+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
       "id": "2da651a0fe419956bca7",
       "source_id": "icj",
       "title": "Sovereignty over the Sapodilla Cayes/Cayos Zapotillos (Belize v. Honduras) - Guatemala’s Application for permission to intervene in the case - The Court to deliver its Judgment on Thursday 19 March 2026 at 3 p.m.",
@@ -15263,6 +16055,37 @@
           "source_id": "esil",
           "url": "https://esil-sedi.eu/unileidensurvey/",
           "seen_at": "2026-11-19T08:57:16+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "48beacefb3fc2e673351",
+      "source_id": "voelkerrechtsblog",
+      "title": "Women in International Law Vol. 5",
+      "url": "https://voelkerrechtsblog.org/symposium/women-in-international-law-vol-5/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-03-02T06:55:51+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-19T15:26:31+00:00",
+      "updated_at": "2026-11-19T15:26:31+00:00",
+      "evidence_basis": "RSS 标题",
+      "source_revision": "556868451947da6fa9b2fd2ae40b5f2affd707b0579bf5c966497116fd7965f7",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "voelkerrechtsblog",
+          "url": "https://voelkerrechtsblog.org/symposium/women-in-international-law-vol-5/",
+          "seen_at": "2026-11-19T15:26:31+00:00"
         }
       ],
       "title_zh": "",
@@ -15388,6 +16211,39 @@
           "source_id": "crossref-amdi",
           "url": "https://doi.org/10.22201/iij.24487872e.2026.26.20166",
           "seen_at": "2026-11-18T21:20:46+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "22be1f0d636ec805c268",
+      "source_id": "voelkerrechtsblog",
+      "title": "Joint Book Review Symposium on International Organizations",
+      "url": "https://voelkerrechtsblog.org/symposium/joint-book-review-symposium-on-international-organizations/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-02-16T07:00:07+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-19T15:26:31+00:00",
+      "updated_at": "2026-11-19T15:26:31+00:00",
+      "evidence_basis": "RSS 标题",
+      "source_revision": "0ad583bf837dcd9869c0357ca4d89491a6c60514ec12e164d3053586667c3d81",
+      "topics": [
+        "institutions"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "voelkerrechtsblog",
+          "url": "https://voelkerrechtsblog.org/symposium/joint-book-review-symposium-on-international-organizations/",
+          "seen_at": "2026-11-19T15:26:31+00:00"
         }
       ],
       "title_zh": "",
@@ -15769,6 +16625,37 @@
           "source_id": "crossref-amdi",
           "url": "https://doi.org/10.22201/iij.24487872e.2026.26.20058",
           "seen_at": "2026-11-18T21:20:46+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "9d23997f93c32a84aaaa",
+      "source_id": "voelkerrechtsblog",
+      "title": "Post-Hegemonic International Law?",
+      "url": "https://voelkerrechtsblog.org/symposium/post-hegemonic-international-law/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2025-11-28T15:00:18+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-19T15:26:31+00:00",
+      "updated_at": "2026-11-19T15:26:31+00:00",
+      "evidence_basis": "RSS 标题",
+      "source_revision": "0882024af9191ae23578db3b2a5fc796eeb42462966a64f9938e6db4d1e55f45",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "voelkerrechtsblog",
+          "url": "https://voelkerrechtsblog.org/symposium/post-hegemonic-international-law/",
+          "seen_at": "2026-11-19T15:26:31+00:00"
         }
       ],
       "title_zh": "",
@@ -17137,25 +18024,26 @@
       "review": {
         "candidates": 10,
         "checked": 4,
-        "verified": 4,
-        "china_hold": 0,
+        "verified": 2,
+        "china_hold": 2,
         "origin_hold": 0,
         "body_hold": 0,
         "access_hold": 0,
         "unsupported_hold": 0,
         "pdf_hold": 0,
+        "title_fallback": 6,
         "pending": 6,
         "directory_count": 10,
         "first_http_status": 0,
-        "cursor": "2f3839dc4ad4e0fa2578"
+        "cursor": "6a460d2861df06bf22b3"
       },
       "feed_url": "https://www.ungeneva.org/news-media/press-releases-list/rss.xml",
       "status": "ok",
-      "attempted_at": "2026-11-19T08:56:04+00:00",
-      "success_at": "2026-11-19T08:56:04+00:00",
+      "attempted_at": "2026-11-19T15:26:06+00:00",
+      "success_at": "2026-11-19T15:26:06+00:00",
       "error": null,
       "consecutive_failures": 0,
-      "item_count": 6,
+      "item_count": 8,
       "next_attempt_at": null
     },
     {
@@ -17173,25 +18061,26 @@
       "review": {
         "candidates": 10,
         "checked": 4,
-        "verified": 3,
-        "china_hold": 1,
+        "verified": 4,
+        "china_hold": 0,
         "origin_hold": 0,
         "body_hold": 0,
         "access_hold": 0,
         "unsupported_hold": 0,
         "pdf_hold": 0,
+        "title_fallback": 6,
         "pending": 6,
         "directory_count": 10,
         "first_http_status": 0,
-        "cursor": "a6e6a1056ee566ad7d86"
+        "cursor": "87b72a98e354f438e222"
       },
       "feed_url": "https://www.ungeneva.org/news-media/meeting-summaries-list/rss.xml",
       "status": "ok",
-      "attempted_at": "2026-11-19T08:56:38+00:00",
-      "success_at": "2026-11-19T08:56:38+00:00",
+      "attempted_at": "2026-11-19T15:26:14+00:00",
+      "success_at": "2026-11-19T15:26:14+00:00",
       "error": null,
       "consecutive_failures": 0,
-      "item_count": 6,
+      "item_count": 10,
       "next_attempt_at": null
     },
     {
@@ -17288,18 +18177,19 @@
         "access_hold": 0,
         "unsupported_hold": 0,
         "pdf_hold": 0,
+        "title_fallback": 22,
         "pending": 22,
         "directory_count": 99,
         "first_http_status": 0,
-        "cursor": "13ecbe8121c93b4be9f5"
+        "cursor": "9fa59cb4476b85b376fc"
       },
       "feed_url": "https://voelkerrechtsblog.org/feed/",
       "status": "ok",
-      "attempted_at": "2026-11-19T08:57:05+00:00",
-      "success_at": "2026-11-19T08:57:05+00:00",
+      "attempted_at": "2026-11-19T15:26:31+00:00",
+      "success_at": "2026-11-19T15:26:31+00:00",
       "error": null,
       "consecutive_failures": 0,
-      "item_count": 15,
+      "item_count": 30,
       "next_attempt_at": null
     },
     {
@@ -17430,17 +18320,18 @@
         "access_hold": 0,
         "unsupported_hold": 0,
         "pdf_hold": 0,
+        "title_fallback": 2,
         "pending": 2,
         "directory_count": 7,
         "first_http_status": 0,
-        "cursor": "2c9201b67819fded80ee"
+        "cursor": "6922032072f87bc57ac5"
       },
-      "status": "unverified",
-      "attempted_at": "2026-11-18T20:42:31+00:00",
-      "success_at": null,
+      "status": "ok",
+      "attempted_at": "2026-11-19T15:26:34+00:00",
+      "success_at": "2026-11-19T15:26:34+00:00",
       "error": null,
       "consecutive_failures": 0,
-      "item_count": 4,
+      "item_count": 6,
       "next_attempt_at": null
     },
     {
@@ -17596,22 +18487,23 @@
       "review": {
         "candidates": 10,
         "checked": 8,
-        "verified": 8,
-        "china_hold": 1,
+        "verified": 7,
+        "china_hold": 2,
         "origin_hold": 0,
         "body_hold": 0,
         "access_hold": 0,
         "unsupported_hold": 0,
         "pdf_hold": 0,
+        "title_fallback": 1,
         "pending": 1,
         "directory_count": 10,
         "first_http_status": 0,
-        "cursor": "766e345a0627451bd4e7"
+        "cursor": "c8188d6de02c22604b42"
       },
       "feed_url": "https://www.wto.org/library/rss/latest_news_e.xml",
       "status": "ok",
-      "attempted_at": "2026-11-19T08:57:27+00:00",
-      "success_at": "2026-11-19T08:57:27+00:00",
+      "attempted_at": "2026-11-19T15:26:36+00:00",
+      "success_at": "2026-11-19T15:26:36+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 9,
@@ -18733,14 +19625,15 @@
         "access_hold": 0,
         "unsupported_hold": 0,
         "pdf_hold": 0,
+        "title_fallback": 0,
         "pending": 0,
         "directory_count": 6,
         "first_http_status": 0,
         "cursor": "61f9c0200138787d3a6e"
       },
-      "status": "unverified",
-      "attempted_at": "2026-11-18T21:31:49+00:00",
-      "success_at": null,
+      "status": "ok",
+      "attempted_at": "2026-11-19T15:26:37+00:00",
+      "success_at": "2026-11-19T15:26:37+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 6,
@@ -18768,17 +19661,18 @@
         "access_hold": 0,
         "unsupported_hold": 0,
         "pdf_hold": 0,
+        "title_fallback": 4,
         "pending": 4,
         "directory_count": 10,
         "first_http_status": 0,
-        "cursor": "3b5ffebd1a242a6d7694"
+        "cursor": "f131d7e412c5fe2a23ef"
       },
-      "status": "unverified",
-      "attempted_at": "2026-11-19T09:30:42+00:00",
-      "success_at": null,
+      "status": "ok",
+      "attempted_at": "2026-11-19T15:26:38+00:00",
+      "success_at": "2026-11-19T15:26:38+00:00",
       "error": null,
       "consecutive_failures": 0,
-      "item_count": 5,
+      "item_count": 9,
       "next_attempt_at": null
     },
     {
@@ -19985,32 +20879,32 @@
         "topics": []
       }
     ],
-    "updated_at": "2026-11-19T14:54:38+00:00",
+    "updated_at": "2026-11-19T15:26:38+00:00",
     "coverage_note": "常设投稿目录与正式征稿分别展示。程序逐条核对已接通信源的正式公告，无法确认的日期不会填入截止日。"
   },
   "operations": {
     "last_run": {
       "id": 1,
-      "started_at": "2026-11-19T14:54:33+00:00",
-      "finished_at": "2026-11-19T14:54:38+00:00",
-      "successes": 3,
+      "started_at": "2026-11-19T15:25:59+00:00",
+      "finished_at": "2026-11-19T15:26:38+00:00",
+      "successes": 7,
       "failures": 0,
-      "added": 52,
-      "changed": 0
+      "added": 33,
+      "changed": 6
     },
     "scheduler_enabled": true,
     "scheduled_run_verified": true,
     "last_effective_run": {
       "id": 1,
-      "started_at": "2026-11-19T14:54:33+00:00",
-      "finished_at": "2026-11-19T14:54:38+00:00",
-      "successes": 3,
+      "started_at": "2026-11-19T15:25:59+00:00",
+      "finished_at": "2026-11-19T15:26:38+00:00",
+      "successes": 7,
       "failures": 0,
-      "added": 52,
-      "changed": 0
+      "added": 33,
+      "changed": 6
     },
-    "scheduler_note": "最近一次云端运行：2026-11-19T14:54:38+00:00；触发方式：push。信源成功时间单独显示。",
-    "total_archived": 425,
-    "visible_in_export": 425
+    "scheduler_note": "最近一次云端运行：2026-11-19T15:26:38+00:00；触发方式：push。信源成功时间单独显示。",
+    "total_archived": 452,
+    "visible_in_export": 452
   }
 }
