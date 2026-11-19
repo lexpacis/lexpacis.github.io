@@ -48,8 +48,12 @@ def rss(data,items,label=None):
         guid=ET.SubElement(node,'guid',isPermaLink='false'); guid.text='lexatlas:'+item['id']
         description=item.get('summary_zh') or '原始来源索引；请访问原文。'
         element(node,'description',description+' 来源：'+sources[item['source_id']]['name'])
-        if item['published_at'] and item['date_precision']=='instant':
-            element(node,'pubDate',email.utils.format_datetime(dt.datetime.fromisoformat(item['published_at'])))
+        if item['published_at'] and item['date_precision'] in ('instant','day'):
+            moment=dt.datetime.fromisoformat(item['published_at'])
+            if item['date_precision']=='day':
+                # A printed calendar day is published as midnight UTC; no clock time is invented.
+                moment=moment.replace(tzinfo=UTC)
+            element(node,'pubDate',email.utils.format_datetime(moment))
         source=sources[item['source_id']]
         ET.SubElement(node,'source',url=source.get('feed_url') or source['homepage']).text=source['name']
     return ET.tostring(root,encoding='unicode',xml_declaration=True)
@@ -100,9 +104,11 @@ def detail_page(data,item):
     basis='AI 自动整理 · 基于'+item['evidence_basis'] if item.get('ai') else '来源元数据 · 尚无 AI 摘要'
     topics=' / '.join(t['name'] for t in data['topics'] if t['id'] in item['topics']) or '综合国际法'
     authors='、'.join(item['authors']) or '原文未提供作者'
+    verified=item['evidence_basis'] in ('原文正文核对','官方 PDF 正文核对')
+    verified_note='已核对原文正文' if verified else '本平台未核验全文'
     canonical=data['site']['base_url'].rstrip('/')+'/items/'+item['id']+'.html'
     name=x(data['site']['name']);english=x(data['site']['english_name']);mark=x((data['site']['english_name'] or data['site']['name'])[0])
-    return f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">{security_meta()}<meta name="viewport" content="width=device-width,initial-scale=1"><title>{x(title)} — {name}</title><meta name="description" content="{x(description[:160])}"><link rel="canonical" href="{x(canonical)}"><link rel="stylesheet" href="../styles.css"><link rel="icon" href="../favicon.svg"></head><body class="detail-document"><header class="document-header"><a class="brand" href="../index.html"><span class="brand-mark">{mark}<span>↗</span></span><span>{name}<small>{english}</small></span></a><a class="back-link" href="../index.html#/{item['module']}">← 返回{module}</a></header><main class="document-main"><div class="eyebrow">{x(module)} / {x(source['name'])}</div><h1>{x(title)}</h1>{f'<p class="original-title">{x(item["title"])}</p>' if item.get('title_zh') else ''}<div class="document-meta">{x(item['published_at'] or '原始发布日期未知')} · {x(authors)}</div><p class="basis-badge">{x(basis)}</p><p class="document-summary">{x(description)}</p><dl class="facts"><dt>专题</dt><dd>{x(topics)}</dd><dt>原始机构</dt><dd>{x(source['organization'])}</dd><dt>首次发现</dt><dd>{x(item['discovered_at'])}</dd><dt>资料依据</dt><dd>{x(item['evidence_basis'])}；本平台未核验全文</dd><dt>DOI</dt><dd>{x(item['doi'] or '未提供')}</dd></dl><div class="detail-actions"><a class="primary-button" href="{x(item['url'])}" target="_blank" rel="noopener noreferrer">访问原始来源 ↗</a><a class="secondary-button" href="../index.html#/cite?item={item['id']}">生成引注 ↗</a></div><p class="fine-print">学术索引与自动整理内容，不代表原机构立场。实质法律判断请核查原始文件和上下文。</p></main><footer class="document-footer">{name} · {x(data['site']['tagline'])}</footer></body></html>'''
+    return f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">{security_meta()}<meta name="viewport" content="width=device-width,initial-scale=1"><title>{x(title)} — {name}</title><meta name="description" content="{x(description[:160])}"><link rel="canonical" href="{x(canonical)}"><link rel="stylesheet" href="../styles.css"><link rel="icon" href="../favicon.svg"></head><body class="detail-document"><header class="document-header"><a class="brand" href="../index.html"><span class="brand-mark">{mark}<span>↗</span></span><span>{name}<small>{english}</small></span></a><a class="back-link" href="../index.html#/{item['module']}">← 返回{module}</a></header><main class="document-main"><div class="eyebrow">{x(module)} / {x(source['name'])}</div><h1>{x(title)}</h1>{f'<p class="original-title">{x(item["title"])}</p>' if item.get('title_zh') else ''}<div class="document-meta">{x(item['published_at'] or '原始发布日期未知')} · {x(authors)}</div><p class="basis-badge">{x(basis)}</p><p class="document-summary">{x(description)}</p><dl class="facts"><dt>专题</dt><dd>{x(topics)}</dd><dt>原始机构</dt><dd>{x(source['organization'])}</dd><dt>首次发现</dt><dd>{x(item['discovered_at'])}</dd><dt>资料依据</dt><dd>{x(item['evidence_basis'])}；{verified_note}</dd><dt>DOI</dt><dd>{x(item['doi'] or '未提供')}</dd></dl><div class="detail-actions"><a class="primary-button" href="{x(item['url'])}" target="_blank" rel="noopener noreferrer">访问原始来源 ↗</a><a class="secondary-button" href="../index.html#/cite?item={item['id']}">生成引注 ↗</a></div><p class="fine-print">学术索引与自动整理内容，不代表原机构立场。实质法律判断请核查原始文件和上下文。</p></main><footer class="document-footer">{name} · {x(data['site']['tagline'])}</footer></body></html>'''
 
 def safe_remove_release(path):
     path=Path(path).resolve()

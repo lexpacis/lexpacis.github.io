@@ -14,7 +14,7 @@ from urllib.parse import urlsplit
 import xml.etree.ElementTree as ET
 import uuid
 import webbrowser
-from core import ROOT, UTC, atomic_write, database, fingerprint, http_fetch, log, now, parse_crossref, parse_date, parse_feed, parse_listing, plain, read_json, run_lock, safe_url, upsert_item, write_json
+from core import ROOT, UTC, atomic_write, database, fingerprint, http_fetch, identity, log, now, parse_crossref, parse_date, parse_feed, parse_listing, plain, read_json, run_lock, safe_url, upsert_item, write_json
 from publication_policy import (SCOPE_REVISION, eligible_metadata, managed_scope, original_publisher,
                                 regional_item, regional_scope, restricted_content, source_paused, strict_scope)
 from source_review import clean_review, verify_entries
@@ -112,6 +112,15 @@ def collect(conn,config,sources,force=False):
                 # Future publication dates are valid index metadata, not current events.
                 result=upsert_item(conn,entry,source,config)
                 if result in stats: stats[result]+=1
+                if managed_scope(rules):
+                    key=identity(entry['url'],entry.get('doi',''))
+                    row=conn.execute('SELECT content_hash,module FROM items WHERE id=?',(key,)).fetchone()
+                    if row and regional_item({**entry,'id':key,'module':row['module'],
+                                              'bibliography':entry.get('bibliography',{})},source,rules,True):
+                        # Record this run's screen so the item is not held back for lacking a
+                        # historical review row; a later run refreshes it like any other.
+                        conn.execute('INSERT OR REPLACE INTO publication_reviews VALUES(?,?,?)',
+                                     (key,row['content_hash'],SCOPE_REVISION))
             conn.execute('''INSERT INTO source_state VALUES(?,?,?,?,?,?,?,?,?,?)
                 ON CONFLICT(id) DO UPDATE SET attempted_at=excluded.attempted_at,success_at=excluded.success_at,
                 status=excluded.status,error=NULL,etag=excluded.etag,last_modified=excluded.last_modified,

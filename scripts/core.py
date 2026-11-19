@@ -6,6 +6,7 @@ import email.utils
 import gzip
 import hashlib
 import html
+import io
 from html.parser import HTMLParser
 import json
 import os
@@ -142,9 +143,16 @@ def listing_date(text):
     return None, 'unknown'
 
 def date_from_parts(parts):
-    if not parts: return None,'unknown'
-    raw = '-'.join([str(parts[0])] + [f'{int(x):02}' for x in parts[1:3]])
-    return parse_date(raw)
+    if not isinstance(parts,list) or not parts or parts[0] in (None,''): return None,'unknown'
+    values=[]
+    try:
+        values.append(int(parts[0]))
+        for value in parts[1:3]:
+            if value in (None,''): break
+            values.append(int(value))
+    except (TypeError,ValueError):
+        return None,'unknown'
+    return parse_date('-'.join([str(values[0])]+[f'{v:02}' for v in values[1:]]))
 
 def classify(title, source, config):
     text = title.lower()
@@ -483,6 +491,26 @@ def upsert_item(conn, entry, source, config):
     conn.execute('INSERT OR REPLACE INTO items VALUES('+','.join('?'*17)+')',values)
     return 'changed' if existing else 'added'
 
+def inflate_gzip(data,limit):
+    """Decompress with a hard ceiling: a small body must not expand without bound."""
+    with gzip.GzipFile(fileobj=io.BytesIO(data)) as stream:
+        out=stream.read(limit+1)
+    if len(out)>limit: raise ValueError('信源解压后超过大小限制')
+    return out
+
+
+def inflate_deflate(data,limit):
+    for wbits in (zlib.MAX_WBITS,-zlib.MAX_WBITS):
+        try:
+            stream=zlib.decompressobj(wbits)
+            out=stream.decompress(data,limit+1)
+        except zlib.error:
+            continue
+        if len(out)>limit or stream.unconsumed_tail: raise ValueError('信源解压后超过大小限制')
+        return out
+    raise ValueError('无法解压信源响应')
+
+
 def http_fetch(source, config, state=None):
     from network_policy import public_opener
     hosts={urllib.parse.urlsplit(source['url']).hostname.lower(),*source.get('allowed_redirect_hosts',[])}
@@ -499,12 +527,12 @@ def http_fetch(source, config, state=None):
             if len(data)>config['max_fetch_bytes']: raise ValueError('信源响应超过大小限制')
             # Some publishers compress unconditionally, even without Accept-Encoding.
             encoding=(response.headers.get('Content-Encoding') or '').strip().lower()
+            limit=config['max_fetch_bytes']*4
             if encoding=='gzip' or data[:2]==b'\x1f\x8b':
-                data=gzip.decompress(data)
+                data=inflate_gzip(data,limit)
             elif encoding=='deflate':
-                try: data=zlib.decompress(data)
-                except zlib.error: data=zlib.decompress(data,-zlib.MAX_WBITS)
-            if len(data)>config['max_fetch_bytes']*4: raise ValueError('信源解压后超过大小限制')
+                data=inflate_deflate(data,limit)
+            if len(data)>limit: raise ValueError('信源解压后超过大小限制')
             return data, response.headers
     except urllib.error.HTTPError as error:
         if error.code==304: return None,error.headers
