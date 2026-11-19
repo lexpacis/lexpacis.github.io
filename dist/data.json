@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-19T12:20:23+00:00",
+  "generated_at": "2026-11-19T12:29:10+00:00",
   "site": {
     "name": "法域前沿",
     "english_name": "Lexpacis",
@@ -533,6 +533,144 @@
         "label": "活动日期"
       },
       "deadline": null,
+      "screened_policy": "3bd1a198b4479e6c06219fc5f75055fc69f1fbf60bd24574d7ad6611e04b5c43"
+    },
+    {
+      "id": "2ed37bad934f838dcfae",
+      "source_id": "cambridge-cfp-irrc",
+      "title": "Protection of Civilians and International Humanitarian Law in the Age of Artificial Intelligence",
+      "url": "https://www.cambridge.org/core/journals/international-review-of-the-red-cross/announcements/call-for-papers/humanitarian-law-in-the-age-of-artificial-intelligence",
+      "doi": "",
+      "module": "cfp",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-19T12:29:10+00:00",
+      "updated_at": "2026-11-19T12:29:10+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "7ab683807bae39073377be9f22fe65aac1c6c00d78dd56a903ebf717a23931f6",
+      "topics": [
+        "rights"
+      ],
+      "authors": [],
+      "bibliography": {
+        "notice_dates": {
+          "event": null,
+          "deadline": {
+            "date": "2026-09-01",
+            "date_text": "2026-09-01",
+            "label": "摘要提交截止"
+          }
+        }
+      },
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "cambridge-cfp-irrc",
+          "url": "https://www.cambridge.org/core/journals/international-review-of-the-red-cross/announcements/call-for-papers/humanitarian-law-in-the-age-of-artificial-intelligence",
+          "seen_at": "2026-11-19T12:29:10+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": {
+        "date": "2026-09-01",
+        "date_text": "2026-09-01",
+        "label": "摘要提交截止"
+      },
+      "screened_policy": "3bd1a198b4479e6c06219fc5f75055fc69f1fbf60bd24574d7ad6611e04b5c43"
+    },
+    {
+      "id": "45408681e88ffbe08f9a",
+      "source_id": "cambridge-cfp-irrc",
+      "title": "Safeguarding Essential Services",
+      "url": "https://www.cambridge.org/core/journals/international-review-of-the-red-cross/announcements/call-for-papers/safeguarding-essential-services",
+      "doi": "",
+      "module": "cfp",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-19T12:29:10+00:00",
+      "updated_at": "2026-11-19T12:29:10+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "8650477c7e3f7a2bf8fbdd03dba7ebd90cd34e2da5b907fd0420734e556cd095",
+      "topics": [
+        "rights"
+      ],
+      "authors": [],
+      "bibliography": {
+        "notice_dates": {
+          "event": null,
+          "deadline": {
+            "date": "2027-02-15",
+            "date_text": "2027-02-15",
+            "label": "摘要提交截止"
+          }
+        }
+      },
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "cambridge-cfp-irrc",
+          "url": "https://www.cambridge.org/core/journals/international-review-of-the-red-cross/announcements/call-for-papers/safeguarding-essential-services",
+          "seen_at": "2026-11-19T12:29:10+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": {
+        "date": "2027-02-15",
+        "date_text": "2027-02-15",
+        "label": "摘要提交截止"
+      },
+      "screened_policy": "3bd1a198b4479e6c06219fc5f75055fc69f1fbf60bd24574d7ad6611e04b5c43"
+    },
+    {
+      "id": "33e1edd04e02958bdc56",
+      "source_id": "cambridge-cfp-ljil",
+      "title": "International Law and Society",
+      "url": "https://www.cambridge.org/core/journals/leiden-journal-of-international-law/announcements/call-for-papers/international-law-and-society",
+      "doi": "",
+      "module": "cfp",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-19T12:29:02+00:00",
+      "updated_at": "2026-11-19T12:29:02+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "ffd6144c514d7aca56313e506b5ef8fb20075c664d945a4414764614df1da040",
+      "topics": [
+        "theory"
+      ],
+      "authors": [],
+      "bibliography": {
+        "notice_dates": {
+          "event": null,
+          "deadline": {
+            "date": "2027-01-10",
+            "date_text": "2027-01-10",
+            "label": "摘要提交截止"
+          }
+        }
+      },
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "cambridge-cfp-ljil",
+          "url": "https://www.cambridge.org/core/journals/leiden-journal-of-international-law/announcements/call-for-papers/international-law-and-society",
+          "seen_at": "2026-11-19T12:29:02+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": {
+        "date": "2027-01-10",
+        "date_text": "2027-01-10",
+        "label": "摘要提交截止"
+      },
       "screened_policy": "3bd1a198b4479e6c06219fc5f75055fc69f1fbf60bd24574d7ad6611e04b5c43"
     },
     {
@@ -15672,11 +15810,11 @@
         "first_http_status": 0
       },
       "status": "ok",
-      "attempted_at": "2026-11-19T11:47:39+00:00",
-      "success_at": null,
+      "attempted_at": "2026-11-19T12:29:02+00:00",
+      "success_at": "2026-11-19T12:29:02+00:00",
       "error": null,
       "consecutive_failures": 0,
-      "item_count": 0,
+      "item_count": 1,
       "next_attempt_at": null
     },
     {
@@ -15707,8 +15845,8 @@
         "cursor": "fae3cec9df2f65e75009"
       },
       "status": "ok",
-      "attempted_at": "2026-11-19T11:47:43+00:00",
-      "success_at": null,
+      "attempted_at": "2026-11-19T12:29:05+00:00",
+      "success_at": "2026-11-19T12:29:05+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 0,
@@ -16599,11 +16737,11 @@
         "cursor": "45408681e88ffbe08f9a"
       },
       "status": "ok",
-      "attempted_at": "2026-11-19T11:47:56+00:00",
-      "success_at": null,
+      "attempted_at": "2026-11-19T12:29:10+00:00",
+      "success_at": "2026-11-19T12:29:10+00:00",
       "error": null,
       "consecutive_failures": 0,
-      "item_count": 0,
+      "item_count": 2,
       "next_attempt_at": null
     },
     {
@@ -17035,12 +17173,12 @@
       },
       "feed_url": "https://hudoc.echr.coe.int/app/transform/rss?library=echreng&query=contentsitename:ECHR%20AND%20doctype=JUD&sort=kpdate%20Descending&start=0&length=20&rankingModelId=11111111-0000-0000-0000-000000000000",
       "status": "error",
-      "attempted_at": "2026-11-19T11:48:01+00:00",
+      "attempted_at": "2026-11-19T12:29:10+00:00",
       "success_at": null,
       "error": "信源暂未成功读取或解析。",
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "item_count": 0,
-      "next_attempt_at": "2026-11-19T12:03:01+00:00"
+      "next_attempt_at": "2026-11-19T12:59:10+00:00"
     }
   ],
   "cfp": {
@@ -17855,6 +17993,72 @@
         "topics": []
       },
       {
+        "id": "cfp-item-2ed37bad934f838dcfae",
+        "parent_item_id": "2ed37bad934f838dcfae",
+        "title": "Protection of Civilians and International Humanitarian Law in the Age of Artificial Intelligence",
+        "original_title": "Protection of Civilians and International Humanitarian Law in the Age of Artificial Intelligence",
+        "kind": "journal_special",
+        "journal_id": "irrc",
+        "organization": "Cambridge University Press",
+        "language": "en",
+        "url": "https://www.cambridge.org/core/journals/international-review-of-the-red-cross/announcements/call-for-papers/humanitarian-law-in-the-age-of-artificial-intelligence",
+        "description": "截止日期来自原始公告，请在提交前核对主办方的时区和最新要求。",
+        "deadline": "2026-09-01",
+        "deadline_text": "2026-09-01",
+        "deadline_label": "摘要提交截止",
+        "deadline_timezone": null,
+        "event_date": null,
+        "checked_at": "2026-11-19T12:29:10+00:00",
+        "verification": "primary_notice",
+        "topics": [
+          "rights"
+        ]
+      },
+      {
+        "id": "cfp-item-45408681e88ffbe08f9a",
+        "parent_item_id": "45408681e88ffbe08f9a",
+        "title": "Safeguarding Essential Services",
+        "original_title": "Safeguarding Essential Services",
+        "kind": "journal_special",
+        "journal_id": "irrc",
+        "organization": "Cambridge University Press",
+        "language": "en",
+        "url": "https://www.cambridge.org/core/journals/international-review-of-the-red-cross/announcements/call-for-papers/safeguarding-essential-services",
+        "description": "截止日期来自原始公告，请在提交前核对主办方的时区和最新要求。",
+        "deadline": "2027-02-15",
+        "deadline_text": "2027-02-15",
+        "deadline_label": "摘要提交截止",
+        "deadline_timezone": null,
+        "event_date": null,
+        "checked_at": "2026-11-19T12:29:10+00:00",
+        "verification": "primary_notice",
+        "topics": [
+          "rights"
+        ]
+      },
+      {
+        "id": "cfp-item-33e1edd04e02958bdc56",
+        "parent_item_id": "33e1edd04e02958bdc56",
+        "title": "International Law and Society",
+        "original_title": "International Law and Society",
+        "kind": "journal_special",
+        "journal_id": "ljil",
+        "organization": "Cambridge University Press",
+        "language": "en",
+        "url": "https://www.cambridge.org/core/journals/leiden-journal-of-international-law/announcements/call-for-papers/international-law-and-society",
+        "description": "截止日期来自原始公告，请在提交前核对主办方的时区和最新要求。",
+        "deadline": "2027-01-10",
+        "deadline_text": "2027-01-10",
+        "deadline_label": "摘要提交截止",
+        "deadline_timezone": null,
+        "event_date": null,
+        "checked_at": "2026-11-19T12:29:02+00:00",
+        "verification": "primary_notice",
+        "topics": [
+          "theory"
+        ]
+      },
+      {
         "id": "cfp-item-41d2167b91f0309a7b7b",
         "parent_item_id": "41d2167b91f0309a7b7b",
         "title": "Call for Papers: Consequences of decentering the State in international law: a comparison in the field of cultural heritage",
@@ -18085,24 +18289,32 @@
         "topics": []
       }
     ],
-    "updated_at": "2026-11-19T11:48:01+00:00",
+    "updated_at": "2026-11-19T12:29:10+00:00",
     "coverage_note": "常设投稿目录与正式征稿分别展示。程序逐条核对已接通信源的正式公告，无法确认的日期不会填入截止日。"
   },
   "operations": {
-    "last_run": null,
-    "scheduler_enabled": false,
+    "last_run": {
+      "id": 1,
+      "started_at": "2026-11-19T12:29:00+00:00",
+      "finished_at": "2026-11-19T12:29:10+00:00",
+      "successes": 3,
+      "failures": 1,
+      "added": 6,
+      "changed": 0
+    },
+    "scheduler_enabled": true,
     "scheduled_run_verified": false,
     "last_effective_run": {
       "id": 1,
-      "started_at": "2026-11-19T11:47:35+00:00",
-      "finished_at": "2026-11-19T11:48:01+00:00",
-      "successes": 5,
+      "started_at": "2026-11-19T12:29:00+00:00",
+      "finished_at": "2026-11-19T12:29:10+00:00",
+      "successes": 3,
       "failures": 1,
       "added": 6,
-      "changed": 1
+      "changed": 0
     },
-    "scheduler_note": "云端定时流程已准备；尚未连接账户或验证实际定时运行。",
-    "total_archived": 371,
-    "visible_in_export": 371
+    "scheduler_note": "最近一次云端运行：2026-11-19T12:29:10+00:00；触发方式：push。信源成功时间单独显示。",
+    "total_archived": 374,
+    "visible_in_export": 374
   }
 }
