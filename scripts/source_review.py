@@ -28,8 +28,25 @@ _EXACT_ARTICLE_PATHS = _WIX_EVENTS | {'asiansil-events','jsil-events','itlos-doc
                                     'afronomics-analysis','asil-insights','un-news-global','opcw-news','afchpr-cases',
                                     'au-treaties','ila-events'}
 PDF_BASIS = '官方 PDF 正文核对'
+# Bases that mean "we have the official title and link, but not a machine-checked body".
+# Such records are publishable: the platform only indexes official bibliographic notices,
+# and a missing abstract or a blocked full text is disclosed on the item page.
+TITLE_BASES = ('RSS 标题','官方目录标题','官方案件目录','法院公告目录','官方新闻目录元数据')
 REVIEW_COUNTS = ('candidates','checked','verified','china_hold','origin_hold','body_hold',
-                 'access_hold','unsupported_hold','pdf_hold','pending','directory_count','first_http_status')
+                 'access_hold','unsupported_hold','pdf_hold','title_fallback','pending',
+                 'directory_count','first_http_status')
+
+
+def title_record(entry, source):
+    """Return the entry as a title-level record when the full text cannot be read."""
+    basis = entry.get('evidence_basis') or ''
+    if basis in TITLE_BASES:
+        keep = basis
+    elif basis.startswith('RSS'):
+        keep = 'RSS 标题'
+    else:
+        keep = '官方目录标题'
+    return {**entry, 'evidence': entry.get('evidence') or '', 'evidence_basis': keep}
 
 
 def review_exempt(source):
@@ -353,6 +370,15 @@ def verify_entries(entries, source, config, rules, report=None):
     report['candidates']=len(entries)
     reviewed,eligible=[],[]
     official=source['id'] in OFFICIAL_SOURCES
+    def fallback(entry):
+        # Title-level publication still screens everything we can read: the title,
+        # the link and any feed excerpt. Only the unread full text is unexamined.
+        if not official and not review_exempt(source) and restricted_content(
+                (entry['title'],entry['url'],entry.get('evidence')),rules):
+            report['china_hold']+=1
+            return None
+        report['title_fallback']+=1
+        return title_record(entry,source)
     for entry in entries:
         url=entry['url']
         if not article_origin(source,url):
@@ -371,6 +397,11 @@ def verify_entries(entries, source, config, rules, report=None):
         url=entry['url']
         hostname=urlsplit(url).hostname
         if report['checked']>=budget or hostname in blocked_hosts:
+            # Out of fetch budget or the host already refused this run: the official
+            # title and link are still usable, so publish the record at title level.
+            record=fallback(entry)
+            if record:
+                reviewed.append(record)
             continue
         report['checked']+=1
         if index:
@@ -385,12 +416,16 @@ def verify_entries(entries, source, config, rules, report=None):
                 content=response.headers.get_content_type()
                 if content not in (('application/pdf',) if pdf else ('text/html','application/xhtml+xml')):
                     report['unsupported_hold']+=1
-                    reviewed.append(entry)
+                    record=fallback(entry)
+                    if record:
+                        reviewed.append(record)
                     continue
                 raw=response.read(limit+1)
                 if len(raw)>limit or response.url!=url:
                     report['origin_hold']+=1
-                    reviewed.append(entry)
+                    record=fallback(entry)
+                    if record:
+                        reviewed.append(record)
                     continue
                 encoding=response.headers.get_content_charset() or 'utf-8'
             if pdf:
@@ -399,6 +434,9 @@ def verify_entries(entries, source, config, rules, report=None):
                 result=inspect_html(entry,source,url,raw.decode(encoding,errors='replace'))
             if result is entry:
                 report['pdf_hold' if pdf else 'body_hold']+=1
+                record=fallback(entry)
+                if record:
+                    reviewed.append(record)
             elif not official and not review_exempt(source) and restricted_content(result['evidence'],rules):
                 report['china_hold']+=1
             else:
@@ -410,7 +448,13 @@ def verify_entries(entries, source, config, rules, report=None):
                 report['first_http_status']=exc.code
             if exc.code in (401,403,429,503):
                 blocked_hosts.add(hostname)
+            record=fallback(entry)
+            if record:
+                reviewed.append(record)
         except (OSError,ValueError,LookupError):
             report['access_hold']+=1
+            record=fallback(entry)
+            if record:
+                reviewed.append(record)
     report['pending']=len(eligible)-report['checked']
     return reviewed

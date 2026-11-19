@@ -383,7 +383,8 @@ def parse_icj(data,source):
         date,precision=parse_date(plain(time.group(1)) if time else '')
         result.append({'title':title,'url':url,'published_at':date,'date_precision':precision,
                        'authors':[],'evidence':'','evidence_basis':'官方目录标题','doi':''})
-    return result
+    limit=source.get('max_entries')
+    return result[:int(limit)] if limit else result
 
 def database(root=ROOT):
     folder=Path(root)/'runtime'; folder.mkdir(parents=True,exist_ok=True)
@@ -428,6 +429,14 @@ def upsert_item(conn, entry, source, config):
     conn.execute('INSERT OR REPLACE INTO provenance VALUES(?,?,?,?)',(key,source['id'],entry['url'],now()))
     # Preserve an already selected primary source; record additional index provenance.
     if existing and existing['source_id']!=source['id']:
+        return 'unchanged'
+    title_bases=('RSS 标题','官方目录标题','官方案件目录','法院公告目录','官方新闻目录元数据')
+    if (existing and entry.get('evidence_basis') in title_bases
+            and existing['evidence_basis'] not in title_bases and existing['title']==entry['title']):
+        # A later run may only recover the title (fetch budget, blocked host); never
+        # downgrade a record whose body was already verified.
+        module,topics=classify(entry['title'],source,config)
+        conn.execute('UPDATE items SET module=?,topics=? WHERE id=?',(module,json.dumps(topics),key))
         return 'unchanged'
     if existing and existing['content_hash']==content_hash:
         # Rules may improve independently of upstream content; preserve fresh AI overrides.

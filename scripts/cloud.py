@@ -21,7 +21,7 @@ SOURCE_FILES = {
     '.': ('README.md','package.json','.gitignore'),
     '.github/workflows': ('metadata.yml',),
     'config': ('cfp-output.schema.json','citation-assets.json','enrichment.schema.json','journals.json',
-               'site.json','sources.json','visibility.json'),
+               'scheduler.json','site.json','sources.json','visibility.json'),
     'docs': ('LEXPACIS_MANUAL.md',),
     'dist': ('data.json',),
     'scripts': ('cfp.py','cloud.py','core.py','handoff.py','manage.py','network_policy.py','news.py','notice_dates.py',

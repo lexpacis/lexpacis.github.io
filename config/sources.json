@@ -374,7 +374,8 @@
     ],
     "scope": "公开新闻稿入口；访问受限时保留失败状态，不绕过限制",
     "reuse": "metadata_only",
-    "language": "en"
+    "language": "en",
+    "max_entries": 80
   },
   {
     "id": "icj-pending",

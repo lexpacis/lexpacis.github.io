@@ -198,8 +198,18 @@ class FeatureWorkflowTests(unittest.TestCase):
         missing_title={**repost,'url':repost['url'].replace('_456','_458')}
         mfa_meta='<meta name="SiteName" content="中华人民共和国外交部">'
         with patch('source_review.public_opener',side_effect=OSError) as validate:
-            self.assertFalse(verify_entries([rss_item],foreign,config,rules))
-            validate.assert_called_once()
+            # A blocked full text no longer discards the record: the official title and
+            # link stay usable, so it is published at title level after screening.
+            published=verify_entries([rss_item],foreign,config,rules)
+            self.assertEqual(len(published),1)
+            self.assertEqual(published[0]['evidence_basis'],'RSS 标题')
+            blocked={**rss_item,'title':'A third institution updates its rules on Tibet',
+                     'url':'https://www.ungeneva.org/example-blocked'}
+            held={}
+            verify_entries([blocked],foreign,config,rules,held)
+            self.assertEqual(held['china_hold'],1)
+            self.assertEqual(held['title_fallback'],0)
+            validate.assert_called()
         core.upsert_item(self.conn,rss_item,foreign,config)
         for source,entry,markup in (
             (foreign,foreign_item,f'<article>{body}</article>'),
@@ -212,7 +222,10 @@ class FeatureWorkflowTests(unittest.TestCase):
         ):
             core.upsert_item(self.conn,inspect_html(entry,source,entry['url'],markup),source,config)
         release=pipeline.build(self.conn,config,sources)
-        self.assertEqual({i['url'] for i in release['items']},{foreign_item['url'],origin['url']})
+        # A record whose body carries no usable context is still publishable at title
+        # level; the item page states that the full text was not checked.
+        self.assertEqual({i['url'] for i in release['items']},
+                         {foreign_item['url'],origin['url'],'https://www.ungeneva.org/no-context'})
         self.assertFalse(snapshot_issues(release,sources,rules))
         self.assertNotIn(other_item['url'],(self.root/'dist/feed.xml').read_text(encoding='utf-8'))
         self.assertNotIn(repost['url'],(self.root/'dist/api/items.json').read_text(encoding='utf-8'))
@@ -248,7 +261,13 @@ class FeatureWorkflowTests(unittest.TestCase):
         self.assertEqual(requests,[entries[i]['url'] for i in (0,1,0,2)])
         self.assertEqual(report['verified'],2)
         self.assertEqual(report['pending'],3)
-        self.assertTrue(all(x['evidence_basis']=='原文正文核对' for x in first+second))
+        self.assertEqual(report['title_fallback'],3)
+        # Entries outside the per-run fetch budget are published at title level instead
+        # of being dropped, and keep their own basis.
+        self.assertEqual(len(first),5)
+        self.assertEqual(len(second),5)
+        self.assertEqual(sum(1 for x in first+second if x['evidence_basis']=='原文正文核对'),4)
+        self.assertEqual(sum(1 for x in first+second if x['evidence_basis']=='RSS 标题'),6)
 
     def test_icj_pdf_requires_all_pages_and_applies_editorial_screen(self):
         from publication_policy import regional_item
