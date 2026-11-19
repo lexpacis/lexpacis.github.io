@@ -6,5 +6,10 @@
   "paused_sources": [],
   "automatic_updates_paused": false,
   "screen_china_related_materials": true,
+  "accepted_policy_revisions": [
+    "69900c8fd6fbe5758e56d4dd411ea136c4f293de4cf43d9288b4c2c9a35ff25c",
+    "08528ded03ee8bd17376b2d1321eb03be24d3dad34991cc40ed449764710513e"
+  ],
+  "accepted_policy_note": "已发布条目的旧核验版本。只允许登记比当前规则更宽的版本（放宽不改收紧）：当前规则仅把征稿启事的正文筛查收窄到标题，旧条目在新规则下仍合规。新增登记须逐条说明理由，并在下一次采集后清除。",
   "note": "需撤下资料时填写条目 ID 或信源 ID，然后重新 build 和 publish。首页、详情、RSS、ICS、JSON 将同步排除；本地数据库保留以便追溯。"
 }

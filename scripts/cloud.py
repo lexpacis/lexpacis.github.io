@@ -37,6 +37,10 @@ def restore_snapshot(conn, snapshot, config, sources):
     by_source={s['id']:s for s in sources}
     if not isinstance(snapshot,dict) or not isinstance(snapshot.get('items'),list) or len(snapshot['items'])>config['max_public_items']:
         raise ValueError('公开快照格式或大小异常')
+    accepted={SCOPE_REVISION}
+    for value in pipeline.publication_rules().get('accepted_policy_revisions',()):
+        if isinstance(value,str) and re.fullmatch(r'[0-9a-f]{64}',value):
+            accepted.add(value)
     for item in snapshot.get('items',[]):
         source=by_source.get(item.get('source_id'))
         if not source or not safe_url(item.get('url','')) or item.get('id')!=identity(item['url'],item.get('doi','')):
@@ -48,7 +52,7 @@ def restore_snapshot(conn, snapshot, config, sources):
         revision=item.get('source_revision')
         if isinstance(revision,str) and re.fullmatch(r'[0-9a-f]{64}',revision):
             conn.execute('UPDATE items SET content_hash=? WHERE id=?',(revision,item['id']))
-            if managed_scope(snapshot) and item.get('screened_policy')==SCOPE_REVISION:
+            if managed_scope(snapshot) and item.get('screened_policy') in accepted:
                 conn.execute('INSERT INTO publication_reviews VALUES(?,?,?)',(item['id'],revision,SCOPE_REVISION))
         for provenance in item.get('provenance',[]):
             if provenance.get('source_id') in by_source and safe_url(provenance.get('url','')) and provenance.get('seen_at'):

@@ -652,12 +652,12 @@
   },
   {
     "id": "itlos",
-    "name": "国际海洋法法庭 ITLOS",
+    "name": "国际海洋法法庭 ITLOS · 新闻稿",
     "organization": "International Tribunal for the Law of the Sea",
     "url": "https://www.itlos.org/en/main/press-media/press-releases/",
     "homepage": "https://www.itlos.org/",
     "kind": "html",
-    "enabled": false,
+    "enabled": true,
     "module": "cases",
     "authority": "official_institution",
     "poll_hours": 12,
@@ -665,9 +665,12 @@
       "ocean-climate",
       "disputes"
     ],
-    "scope": "待验证新闻稿解析器；当前仅收录导航",
+    "scope": "法庭新闻稿目录与英文新闻稿 PDF 原文",
     "reuse": "metadata_only",
-    "language": "en"
+    "language": "en",
+    "link_pattern": "^/fileadmin/itlos/documents/press_releases_english/PR_\\d+_[A-Za-z]{2}\\.pdf$",
+    "min_title_length": 20,
+    "article_checks": 4
   },
   {
     "id": "afsil-events",
@@ -1101,6 +1104,50 @@
       "institutions"
     ],
     "scope": "委员会官方新闻目录，覆盖仲裁、贸易法条约与工作组进展；以联合国官方页面为原文",
+    "reuse": "metadata_only",
+    "language": "en"
+  },
+  {
+    "id": "icc-news",
+    "name": "国际刑事法院 ICC · 新闻",
+    "organization": "International Criminal Court",
+    "url": "https://www.icc-cpi.int/rss.xml",
+    "homepage": "https://www.icc-cpi.int/",
+    "kind": "rss",
+    "module": "cases",
+    "authority": "official_institution",
+    "enabled": true,
+    "poll_hours": 12,
+    "link_pattern": "^/news/[^/]+$",
+    "article_checks": 4,
+    "topics": [
+      "disputes",
+      "institutions"
+    ],
+    "scope": "法院官方 RSS 条目与同域新闻页原文；招聘、实习与行政公告不入库",
+    "reuse": "metadata_only",
+    "language": "en"
+  },
+  {
+    "id": "icsid-cases",
+    "name": "ICSID · 最新案件",
+    "organization": "International Centre for Settlement of Investment Disputes",
+    "url": "https://icsid.worldbank.org/cases/recent",
+    "homepage": "https://icsid.worldbank.org/",
+    "kind": "html",
+    "adapter": "icsid_cases",
+    "module": "cases",
+    "authority": "official_institution",
+    "enabled": true,
+    "poll_hours": 24,
+    "link_pattern": "^/cases/case-database/case-detail$",
+    "max_entries": 30,
+    "article_checks": 4,
+    "topics": [
+      "disputes",
+      "economic"
+    ],
+    "scope": "中心案件数据库最新登记页与逐案详情页；仅取最近登记的案件",
     "reuse": "metadata_only",
     "language": "en"
   }

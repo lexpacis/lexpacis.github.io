@@ -3,6 +3,7 @@ from __future__ import annotations
 import contextlib
 import datetime as dt
 import email.utils
+import gzip
 import hashlib
 import html
 from html.parser import HTMLParser
@@ -16,6 +17,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
+import zlib
 
 ROOT = Path(__file__).resolve().parents[1]
 UTC = dt.timezone.utc
@@ -240,6 +242,8 @@ def parse_listing(data, source):
         return parse_news_listing(data,source)
     if source.get('adapter')=='iacthr_press':
         return parse_iacthr_press(data,source)
+    if source.get('adapter')=='icsid_cases':
+        return parse_icsid_cases(data,source)
     if source.get('adapter')=='un_depositary':
         return parse_un_depositary(data,source)
     parser=LinkParser(); parser.feed(data.decode('utf-8',errors='replace'))
@@ -300,6 +304,29 @@ def parse_iacthr_press(data,source):
         entries.append({'title':title,'url':url,'published_at':date,'date_precision':precision,
                         'authors':[],'evidence':snippet,'evidence_basis':'法院公告目录','doi':''})
     return entries
+
+def parse_icsid_cases(data,source):
+    """ICSID lists the newest registrations as dated case cards."""
+    markup=data.decode('utf-8',errors='replace')
+    result=[];seen=set()
+    limit=int(source.get('max_entries',30))
+    for block in re.split(r'<div class="listing">',markup)[1:]:
+        if len(result)>=limit:
+            break
+        meta=re.search(r'<div class="meta">\s*([^<]{4,40})\s*</div>',block)
+        link=re.search(r'<h3 class="case-title">\s*<a href="([^"]+)"[^>]*>(.*?)</a>',block,re.S)
+        if not meta or not link:
+            continue
+        url=safe_url(html.unescape(link[1]),source['url'])
+        title=plain(link[2])
+        if not url or not title or url in seen:
+            continue
+        seen.add(url)
+        date,precision=parse_date(plain(meta[1]))
+        result.append({'title':title,'url':url,'published_at':date,'date_precision':precision,
+                       'authors':[],'evidence':'','evidence_basis':'官方案件目录','doi':''})
+    return result
+
 
 def parse_news_listing(data,source):
     """Use isolated article cards for dates; otherwise retain undated title/link metadata."""
@@ -424,6 +451,14 @@ def http_fetch(source, config, state=None):
             if not safe_url(response.url): raise ValueError('不支持的重定向地址')
             data=response.read(config['max_fetch_bytes']+1)
             if len(data)>config['max_fetch_bytes']: raise ValueError('信源响应超过大小限制')
+            # Some publishers compress unconditionally, even without Accept-Encoding.
+            encoding=(response.headers.get('Content-Encoding') or '').strip().lower()
+            if encoding=='gzip' or data[:2]==b'\x1f\x8b':
+                data=gzip.decompress(data)
+            elif encoding=='deflate':
+                try: data=zlib.decompress(data)
+                except zlib.error: data=zlib.decompress(data,-zlib.MAX_WBITS)
+            if len(data)>config['max_fetch_bytes']*4: raise ValueError('信源解压后超过大小限制')
             return data, response.headers
     except urllib.error.HTTPError as error:
         if error.code==304: return None,error.headers

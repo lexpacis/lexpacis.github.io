@@ -32,6 +32,18 @@ REVIEW_COUNTS = ('candidates','checked','verified','china_hold','origin_hold','b
                  'access_hold','unsupported_hold','pdf_hold','pending','directory_count','first_http_status')
 
 
+def review_exempt(source):
+    """征稿启事是书目信息，不是新闻。
+
+    A call-for-papers page routinely lists its editors and their institutions
+    ("University of Macao", "City University of Hong Kong"). Screening the whole
+    body would reject every call that happens to have a scholar from those
+    places on its board, which says nothing about the topic of the call.
+    Titles stay screened: a call about China is still held by the title rule.
+    """
+    return source.get('module')=='cfp'
+
+
 def clean_review(value):
     if not isinstance(value,dict):
         return {}
@@ -92,6 +104,7 @@ class ArticleEvidence(HTMLParser):
             or (self.source_id in _WIX_EVENTS and tag == 'main' and fields.get('id') == 'PAGES_CONTAINER')
             or (self.source_id == 'itlos-docket' and 'fs-content-container' in (fields.get('class') or '').split())
             or (self.source_id == 'ilc-reports' and fields.get('id') == 'content')
+            or (self.source_id == 'icsid-cases' and 'case__detail' in (fields.get('class') or '').split())
             or (self.source_id == 'au-treaties' and fields.get('id') == 'block-au-main-content')
             or (self.source_id == 'un-news-global' and fields.get('id') in {
                 'block-views-block-content-fields-block-lead','block-views-block-content-fields-block-body'})
@@ -286,6 +299,9 @@ def official_pdf_issuer(source,url):
     if (source['id']=='iacthr-press' and parsed.netloc=='www.corteidh.or.cr' and not parsed.query
         and re.fullmatch(r'/docs/comunicados/cp_\d+_20\d{2}_ENG\.pdf',parsed.path)):
         return r'inter.american court of human rights|corte interamericana de derechos humanos'
+    if (source['id']=='itlos' and parsed.netloc=='www.itlos.org' and not parsed.query
+        and re.fullmatch(r'/fileadmin/itlos/documents/press_releases_english/PR_\d+_[A-Za-z]{2}\.pdf',parsed.path)):
+        return r'international tribunal for the law of the sea|tribunal international du droit de la mer'
     if (source['id']=='un-depositary' and parsed.netloc=='treaties.un.org' and not parsed.query
         and re.fullmatch(r'/doc/Publication/CN/(20\d{2})/CN\.\d+\.\1-Eng\.pdf',parsed.path)):
         return r'united nations.{0,120}depositary|depositary.{0,120}united nations'
@@ -297,24 +313,28 @@ def inspect_official_pdf(entry,source,url,raw):
     if not issuer or not raw.startswith(b'%PDF-'):
         return entry
     # Use the standard Ubuntu reader, without running document actions or scripts.
-    # Scan the entire short press release, with bounded size, page count and runtime.
-    prefix=['prlimit','--as=268435456','--fsize=2000000','--','env','LC_ALL=C']
+    # Scan the whole document, with bounded size, page count and runtime.
+    max_pages=int(source.get('max_pdf_pages',12))
+    max_bytes=int(source.get('max_pdf_bytes',2_000_000))
+    read_seconds=int(source.get('max_pdf_seconds',5))
+    prefix=['prlimit','--as=536870912',f'--fsize={max_bytes}','--','env','LC_ALL=C']
     try:
-        info=subprocess.run([*prefix,'pdfinfo','-'],input=raw,capture_output=True,check=True,timeout=4).stdout
+        info=subprocess.run([*prefix,'pdfinfo','-'],input=raw,capture_output=True,check=True,timeout=6).stdout
         pages=re.search(rb'(?m)^Pages:\s+(\d+)\s*$',info)
-        if not pages or not 1<=int(pages[1])<=12:
+        if not pages or not 1<=int(pages[1])<=max_pages:
             return entry
         with tempfile.TemporaryFile() as output:
             subprocess.run([*prefix,'pdftotext','-enc','UTF-8','-','-'],input=raw,
-                           stdout=output,stderr=subprocess.DEVNULL,check=True,timeout=5)
+                           stdout=output,stderr=subprocess.DEVNULL,check=True,timeout=read_seconds)
             output.seek(0)
-            text=output.read(2_000_000).decode('utf-8')
+            text=output.read(4_000_000).decode('utf-8')
     except (OSError,subprocess.SubprocessError,UnicodeError):
         return entry
     leafs=text.split('\f')
     if leafs[-1].strip()=='':
         leafs.pop()
-    if len(leafs)!=int(pages[1]) or any(len(page.strip())<100 for page in leafs):
+    short=sum(1 for page in leafs if len(page.strip())<100)
+    if len(leafs)!=int(pages[1]) or short:
         return entry
     body=' '.join(text.split())
     if not re.search(issuer,body,re.I):
@@ -357,7 +377,7 @@ def verify_entries(entries, source, config, rules, report=None):
             report['cursor']=identity(url)
         pdf=official_pdf_issuer(source,url) is not None
         accept='application/pdf' if pdf else 'text/html'
-        limit=3_000_000 if pdf else 1_500_000
+        limit=int(source.get('max_pdf_fetch_bytes',3_000_000)) if pdf else 1_500_000
         try:
             opener=public_opener({hostname})
             request=urllib.request.Request(url,headers={'User-Agent':config['user_agent'],'Accept':accept})
@@ -379,7 +399,7 @@ def verify_entries(entries, source, config, rules, report=None):
                 result=inspect_html(entry,source,url,raw.decode(encoding,errors='replace'))
             if result is entry:
                 report['pdf_hold' if pdf else 'body_hold']+=1
-            elif not official and restricted_content(result['evidence'],rules):
+            elif not official and not review_exempt(source) and restricted_content(result['evidence'],rules):
                 report['china_hold']+=1
             else:
                 report['verified']+=1
