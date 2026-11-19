@@ -1081,5 +1081,27 @@
     "scope": "总会或各地分会在国际法协会发布的会议与学术活动原页",
     "reuse": "metadata_only",
     "language": "en"
+  },
+  {
+    "id": "uncitral-news",
+    "name": "联合国国际贸易法委员会 UNCITRAL · 新闻",
+    "organization": "United Nations Commission on International Trade Law",
+    "url": "https://uncitral.un.org/en/news",
+    "homepage": "https://uncitral.un.org/en/news",
+    "kind": "html",
+    "link_pattern": "^/en/news/[a-z0-9-]+$",
+    "min_title_length": 20,
+    "module": "official",
+    "authority": "official_institution",
+    "enabled": true,
+    "poll_hours": 24,
+    "article_checks": 5,
+    "topics": [
+      "economic",
+      "institutions"
+    ],
+    "scope": "委员会官方新闻目录，覆盖仲裁、贸易法条约与工作组进展；以联合国官方页面为原文",
+    "reuse": "metadata_only",
+    "language": "en"
   }
 ]
