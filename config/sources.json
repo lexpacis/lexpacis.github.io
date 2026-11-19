@@ -1160,7 +1160,7 @@
     "kind": "rss",
     "module": "cases",
     "authority": "official_institution",
-    "enabled": true,
+    "enabled": false,
     "poll_hours": 24,
     "article_checks": 2,
     "max_pdf_pages": 80,
@@ -1171,8 +1171,9 @@
       "human-rights",
       "disputes"
     ],
-    "scope": "HUDOC 英文判决订阅与判决 PDF 全文；仅取个案（001-）文书",
+    "scope": "HUDOC 判决订阅与判决 PDF 全文；仅取个案（001-）文书。该订阅同一地址在不同时间返回 20 条或 0 条，稳定性未达自动采集要求，暂不启用；判决 PDF 核验能力已就绪。",
     "reuse": "metadata_only",
-    "language": "en"
+    "language": "en",
+    "status": "unstable"
   }
 ]
