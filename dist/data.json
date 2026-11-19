@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-19T11:44:18+00:00",
+  "generated_at": "2026-11-19T11:48:02+00:00",
   "site": {
     "name": "法域前沿",
     "english_name": "Lexpacis",
@@ -1635,7 +1635,7 @@
         {
           "source_id": "cambridge-cfp-ijcp",
           "url": "https://www.cambridge.org/core/journals/international-journal-of-cultural-property/announcements/call-for-papers/call-for-papers-consequences-of-decentering-the-state-in-international-law-a-comparison-in-the-field-of-cultural-heritage",
-          "seen_at": "2026-11-18T21:21:44+00:00"
+          "seen_at": "2026-11-19T11:48:01+00:00"
         }
       ],
       "title_zh": "",
@@ -1682,7 +1682,7 @@
         {
           "source_id": "cambridge-cfp-ijcp",
           "url": "https://www.cambridge.org/core/journals/international-journal-of-cultural-property/announcements/call-for-papers/call-for-papers-natural-heritage-as-cultural-property-legal-and-social-dimensions-to-the-collection-display-and-sale-of-natural-history-specimens",
-          "seen_at": "2026-11-18T21:21:44+00:00"
+          "seen_at": "2026-11-19T11:48:01+00:00"
         }
       ],
       "title_zh": "",
@@ -1728,7 +1728,7 @@
         {
           "source_id": "cambridge-cfp-ijcp",
           "url": "https://www.cambridge.org/core/journals/international-journal-of-cultural-property/announcements/call-for-papers/call-for-special-issue-proposal-ijcp-volume-34-2027",
-          "seen_at": "2026-11-18T21:21:44+00:00"
+          "seen_at": "2026-11-19T11:48:01+00:00"
         }
       ],
       "title_zh": "",
@@ -2475,16 +2475,16 @@
     {
       "id": "e491583d83248a819b59",
       "source_id": "cambridge-cfp-tel",
-      "title": "Transnational Environmental Law",
+      "title": "The Future of Transnational Environmental Law",
       "url": "https://www.cambridge.org/core/journals/transnational-environmental-law/announcements/call-for-papers/the-future-of-transnational-environmental-law",
       "doi": "",
       "module": "cfp",
       "published_at": null,
       "date_precision": "unknown",
       "discovered_at": "2026-11-18T20:42:44+00:00",
-      "updated_at": "2026-11-18T20:42:44+00:00",
+      "updated_at": "2026-11-19T11:47:48+00:00",
       "evidence_basis": "原文正文核对",
-      "source_revision": "eab9ed3f8399df31ce69be6132b72185284fb917cdcde08e6127471aef3f9580",
+      "source_revision": "6ceaf4e3b86d436845f676a560f474ef6cb4415e163f6723daf1fb30ab592618",
       "topics": [
         "ocean-climate"
       ],
@@ -2504,7 +2504,7 @@
         {
           "source_id": "cambridge-cfp-tel",
           "url": "https://www.cambridge.org/core/journals/transnational-environmental-law/announcements/call-for-papers/the-future-of-transnational-environmental-law",
-          "seen_at": "2026-11-18T20:42:44+00:00"
+          "seen_at": "2026-11-19T11:47:48+00:00"
         }
       ],
       "title_zh": "",
@@ -15660,8 +15660,8 @@
       "review": {
         "candidates": 1,
         "checked": 1,
-        "verified": 0,
-        "china_hold": 1,
+        "verified": 1,
+        "china_hold": 0,
         "origin_hold": 0,
         "body_hold": 0,
         "access_hold": 0,
@@ -15672,8 +15672,8 @@
         "first_http_status": 0
       },
       "status": "ok",
-      "attempted_at": "2026-11-18T20:42:35+00:00",
-      "success_at": "2026-11-18T20:42:35+00:00",
+      "attempted_at": "2026-11-19T11:47:39+00:00",
+      "success_at": "2026-11-19T11:47:39+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 0,
@@ -15694,8 +15694,8 @@
       "review": {
         "candidates": 2,
         "checked": 2,
-        "verified": 1,
-        "china_hold": 1,
+        "verified": 2,
+        "china_hold": 0,
         "origin_hold": 0,
         "body_hold": 0,
         "access_hold": 0,
@@ -15707,8 +15707,8 @@
         "cursor": "fae3cec9df2f65e75009"
       },
       "status": "ok",
-      "attempted_at": "2026-11-18T20:42:43+00:00",
-      "success_at": "2026-11-18T20:42:43+00:00",
+      "attempted_at": "2026-11-19T11:47:43+00:00",
+      "success_at": "2026-11-19T11:47:43+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 0,
@@ -15741,8 +15741,8 @@
         "first_http_status": 0
       },
       "status": "ok",
-      "attempted_at": "2026-11-18T20:42:44+00:00",
-      "success_at": "2026-11-18T20:42:44+00:00",
+      "attempted_at": "2026-11-19T11:47:48+00:00",
+      "success_at": "2026-11-19T11:47:48+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 1,
@@ -16586,8 +16586,8 @@
       "review": {
         "candidates": 3,
         "checked": 3,
-        "verified": 1,
-        "china_hold": 2,
+        "verified": 3,
+        "china_hold": 0,
         "origin_hold": 0,
         "body_hold": 0,
         "access_hold": 0,
@@ -16599,8 +16599,8 @@
         "cursor": "45408681e88ffbe08f9a"
       },
       "status": "ok",
-      "attempted_at": "2026-11-18T21:21:39+00:00",
-      "success_at": "2026-11-18T21:21:39+00:00",
+      "attempted_at": "2026-11-19T11:47:56+00:00",
+      "success_at": "2026-11-19T11:47:56+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 0,
@@ -16634,8 +16634,8 @@
         "cursor": "b261fb247bd20fbb2c26"
       },
       "status": "ok",
-      "attempted_at": "2026-11-18T21:21:44+00:00",
-      "success_at": "2026-11-18T21:21:44+00:00",
+      "attempted_at": "2026-11-19T11:48:01+00:00",
+      "success_at": "2026-11-19T11:48:01+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 3,
@@ -17030,14 +17030,17 @@
       "poll_hours": 24,
       "scope": "HUDOC 英文判决订阅与判决 PDF 全文；仅取个案（001-）文书",
       "language": "en",
+      "review": {
+        "failure": "parse_failed"
+      },
       "feed_url": "https://hudoc.echr.coe.int/app/transform/rss?library=echreng&query=contentsitename:ECHR%20AND%20doctype=JUD&sort=kpdate%20Descending&start=0&length=20&rankingModelId=11111111-0000-0000-0000-000000000000",
-      "status": "unverified",
-      "attempted_at": null,
+      "status": "error",
+      "attempted_at": "2026-11-19T11:48:01+00:00",
       "success_at": null,
-      "error": null,
-      "consecutive_failures": 0,
+      "error": "信源暂未成功读取或解析。",
+      "consecutive_failures": 1,
       "item_count": 0,
-      "next_attempt_at": null
+      "next_attempt_at": "2026-11-19T12:03:01+00:00"
     }
   ],
   "cfp": {
@@ -17941,8 +17944,8 @@
       {
         "id": "cfp-item-e491583d83248a819b59",
         "parent_item_id": "e491583d83248a819b59",
-        "title": "Transnational Environmental Law",
-        "original_title": "Transnational Environmental Law",
+        "title": "The Future of Transnational Environmental Law",
+        "original_title": "The Future of Transnational Environmental Law",
         "kind": "journal_special",
         "journal_id": "tel",
         "organization": "Cambridge University Press",
@@ -17954,7 +17957,7 @@
         "deadline_label": "投稿截止",
         "deadline_timezone": null,
         "event_date": null,
-        "checked_at": "2026-11-18T20:42:44+00:00",
+        "checked_at": "2026-11-19T11:47:48+00:00",
         "verification": "primary_notice",
         "topics": [
           "ocean-climate"
@@ -18082,23 +18085,31 @@
         "topics": []
       }
     ],
-    "updated_at": "2026-11-19T10:59:25+00:00",
+    "updated_at": "2026-11-19T11:48:01+00:00",
     "coverage_note": "常设投稿目录与正式征稿分别展示。程序逐条核对已接通信源的正式公告，无法确认的日期不会填入截止日。"
   },
   "operations": {
-    "last_run": null,
-    "scheduler_enabled": false,
+    "last_run": {
+      "id": 1,
+      "started_at": "2026-11-19T11:47:35+00:00",
+      "finished_at": "2026-11-19T11:48:01+00:00",
+      "successes": 5,
+      "failures": 1,
+      "added": 6,
+      "changed": 1
+    },
+    "scheduler_enabled": true,
     "scheduled_run_verified": false,
     "last_effective_run": {
       "id": 1,
-      "started_at": "2026-11-19T10:59:05+00:00",
-      "finished_at": "2026-11-19T10:59:25+00:00",
-      "successes": 6,
+      "started_at": "2026-11-19T11:47:35+00:00",
+      "finished_at": "2026-11-19T11:48:01+00:00",
+      "successes": 5,
       "failures": 1,
-      "added": 26,
-      "changed": 0
+      "added": 6,
+      "changed": 1
     },
-    "scheduler_note": "云端定时流程已准备；尚未连接账户或验证实际定时运行。",
+    "scheduler_note": "最近一次云端运行：2026-11-19T11:48:01+00:00；触发方式：push。信源成功时间单独显示。",
     "total_archived": 371,
     "visible_in_export": 371
   }
