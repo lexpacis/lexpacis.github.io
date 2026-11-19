@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-19T14:50:26+00:00",
+  "generated_at": "2026-11-19T14:54:38+00:00",
   "site": {
     "name": "法域前沿",
     "english_name": "Lexpacis",
@@ -536,6 +536,74 @@
       "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
     },
     {
+      "id": "70af1d75cdafef31973a",
+      "source_id": "opiniojuris",
+      "title": "This is Not South Africa’s Definition: A New Report on Apartheid in the Draft Crimes Against Humanity Treaty",
+      "url": "https://opiniojuris.org/2026/11/19/this-is-not-south-africas-definition-a-new-report-on-apartheid-in-the-draft-crimes-against-humanity-treaty/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-11-19T13:00:00+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "RSS 标题",
+      "source_revision": "6b1ad0d4f4ad70c7d55ea1cf8dd021b89681e06f5937344892b318390933a196",
+      "topics": [
+        "institutions"
+      ],
+      "authors": [
+        "Lisa Davis"
+      ],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "opiniojuris",
+          "url": "https://opiniojuris.org/2026/11/19/this-is-not-south-africas-definition-a-new-report-on-apartheid-in-the-draft-crimes-against-humanity-treaty/",
+          "seen_at": "2026-11-19T14:54:38+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "e692f354292772784e5d",
+      "source_id": "opiniojuris",
+      "title": "What the London Convention and Protocol’s New Assessment Frameworks Mean for Marine Geoengineering Governance",
+      "url": "https://opiniojuris.org/2026/11/19/what-the-london-convention-and-protocols-new-assessment-frameworks-mean-for-marine-geoengineering-governance/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-11-19T13:00:00+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "RSS 标题",
+      "source_revision": "06c63187d2f7251ba7f2c60c0318b331120d4a960677fb4cdf13558456a589f6",
+      "topics": [],
+      "authors": [
+        "Stephanie Prufer"
+      ],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "opiniojuris",
+          "url": "https://opiniojuris.org/2026/11/19/what-the-london-convention-and-protocols-new-assessment-frameworks-mean-for-marine-geoengineering-governance/",
+          "seen_at": "2026-11-19T14:54:38+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
       "id": "2ed37bad934f838dcfae",
       "source_id": "cambridge-cfp-irrc",
       "title": "Protection of Civilians and International Humanitarian Law in the Age of Artificial Intelligence",
@@ -835,6 +903,39 @@
           "source_id": "uncitral-news",
           "url": "https://uncitral.un.org/en/news/uncitral-advances-dispute-settlement-and-digital-trade-work-its-59th-session",
           "seen_at": "2026-11-19T09:30:42+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "1321976d517781dc03e2",
+      "source_id": "opiniojuris",
+      "title": "Who Decides Who Pays for the AU Mission in Somalia? December’s Test for Resolution 2719",
+      "url": "https://opiniojuris.org/2026/11/19/who-decides-who-pays-for-the-au-mission-in-somalia-decembers-test-for-resolution-2719/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-11-19T09:00:00+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "RSS 标题",
+      "source_revision": "db6364b57380764507688d69cc436f4c7bb2eba9ce35672fe63edcd484940bdf",
+      "topics": [],
+      "authors": [
+        "Lincoln Booth"
+      ],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "opiniojuris",
+          "url": "https://opiniojuris.org/2026/11/19/who-decides-who-pays-for-the-au-mission-in-somalia-decembers-test-for-resolution-2719/",
+          "seen_at": "2026-11-19T14:54:38+00:00"
         }
       ],
       "title_zh": "",
@@ -1302,6 +1403,40 @@
           "source_id": "icc-news",
           "url": "https://www.icc-cpi.int/news/statement-acting-prosecutor-mame-mandiaye-niang-un-security-council-situation-libya-pursuant",
           "seen_at": "2026-11-19T10:59:20+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "cb86d19814aeec47b9a8",
+      "source_id": "icj",
+      "title": "Application of the Convention on the Prevention and Punishment of the Crime of Genocide (The Gambia v. Myanmar: 11 States intervening) - The Court delivers its Judgment on the merits",
+      "url": "https://www.icj-cij.org/sites/default/files/case-related/178/178-20261119-pre-01-00-en.pdf",
+      "doi": "",
+      "module": "cases",
+      "published_at": "2026-11-19",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "6a3c22a41fb9b109857b887f49e38a029391aa7bff9d4031dfcf266d26d7e935",
+      "topics": [
+        "disputes",
+        "rights"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻稿索引",
+      "provenance": [
+        {
+          "source_id": "icj",
+          "url": "https://www.icj-cij.org/sites/default/files/case-related/178/178-20261119-pre-01-00-en.pdf",
+          "seen_at": "2026-11-19T14:54:38+00:00"
         }
       ],
       "title_zh": "",
@@ -3571,6 +3706,41 @@
       "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
     },
     {
+      "id": "087b885b0d3423079203",
+      "source_id": "opiniojuris",
+      "title": "How Much Weight for ILO Supervisory Bodies? The ICJ’s One-Size-Fits-All Approach",
+      "url": "https://opiniojuris.org/2026/11/18/how-much-weight-for-ilo-supervisory-bodies-the-icjs-one-size-fits-all-approach/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-11-18T13:00:00+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "RSS 标题",
+      "source_revision": "ef742242638e592d7bf79ba7000f803e82dffad23463ec15b1b3fe4226d52cc9",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [
+        "Leonardo David Lima Valdés"
+      ],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "opiniojuris",
+          "url": "https://opiniojuris.org/2026/11/18/how-much-weight-for-ilo-supervisory-bodies-the-icjs-one-size-fits-all-approach/",
+          "seen_at": "2026-11-19T14:54:38+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
       "id": "cc902f9ce66de4569d8c",
       "source_id": "un-news-global",
       "title": "Dozens more children killed in Yemen amid escalating hostilities",
@@ -3592,6 +3762,42 @@
           "source_id": "un-news-global",
           "url": "https://news.un.org/en/story/2026/11/1168830",
           "seen_at": "2026-11-18T21:21:44+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "98b8ce8cbcba2a62b3cd",
+      "source_id": "opiniojuris",
+      "title": "Human Rights by Renvoi? Not So Fast, Says ITLOS",
+      "url": "https://opiniojuris.org/2026/11/18/human-rights-by-renvoi-not-so-fast-says-itlos/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-11-18T09:00:00+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "RSS 标题",
+      "source_revision": "cd4cd15457dd12e149a0b463b09b59dd9b3de0c72c29c159f07f547d1fd8f72b",
+      "topics": [
+        "disputes",
+        "rights"
+      ],
+      "authors": [
+        "Agathe Niveleau"
+      ],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "opiniojuris",
+          "url": "https://opiniojuris.org/2026/11/18/human-rights-by-renvoi-not-so-fast-says-itlos/",
+          "seen_at": "2026-11-19T14:54:38+00:00"
         }
       ],
       "title_zh": "",
@@ -3759,6 +3965,101 @@
           "source_id": "opcw-news",
           "url": "https://www.opcw.org/media-centre/news/2026/11/finland-provides-eur-50000-voluntary-funding-enhance-opcws-work",
           "seen_at": "2026-11-18T21:21:45+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "03773263f62df46e8be3",
+      "source_id": "un-geneva-news",
+      "title": "Patients running out of options as antibiotics stop working against common infections",
+      "url": "https://www.ungeneva.org/en/news-media/news/2026/11/124978/patients-running-out-options-antibiotics-stop-working-against-common",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-11-18",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:37+00:00",
+      "updated_at": "2026-11-19T14:54:37+00:00",
+      "evidence_basis": "官方新闻目录元数据",
+      "source_revision": "73d8ae438d9b614abeed23b5469243af131e6a4b690bba55efc867cd73355ffd",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方机构新闻报道",
+      "provenance": [
+        {
+          "source_id": "un-geneva-news",
+          "url": "https://www.ungeneva.org/en/news-media/news/2026/11/124978/patients-running-out-options-antibiotics-stop-working-against-common",
+          "seen_at": "2026-11-19T14:54:37+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "44ab8600e26a784de767",
+      "source_id": "un-geneva-news",
+      "title": "Dozens more children killed in Yemen amid escalating hostilities",
+      "url": "https://www.ungeneva.org/en/news-media/news/2026/11/124974/dozens-more-children-killed-yemen-amid-escalating-hostilities",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-11-18",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:37+00:00",
+      "updated_at": "2026-11-19T14:54:37+00:00",
+      "evidence_basis": "官方新闻目录元数据",
+      "source_revision": "674c8fb7d358048b8ca8fb0cf7298e58c1c0ff003dd61ee794258c40aa6d3729",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方机构新闻报道",
+      "provenance": [
+        {
+          "source_id": "un-geneva-news",
+          "url": "https://www.ungeneva.org/en/news-media/news/2026/11/124974/dozens-more-children-killed-yemen-amid-escalating-hostilities",
+          "seen_at": "2026-11-19T14:54:37+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "428223d8143c0bcc4507",
+      "source_id": "un-geneva-news",
+      "title": "COP31 deadlock persists as countries launch new ‘climate reality check’",
+      "url": "https://www.ungeneva.org/en/news-media/news/2026/11/124979/cop31-deadlock-persists-countries-launch-new-climate-reality-check",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-11-18",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:37+00:00",
+      "updated_at": "2026-11-19T14:54:37+00:00",
+      "evidence_basis": "官方新闻目录元数据",
+      "source_revision": "38c1218dad2f6d64e0ac34adaa36543f82b9dda2ef57e4a00fb60012ba71fc06",
+      "topics": [
+        "ocean-climate"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方机构新闻报道",
+      "provenance": [
+        {
+          "source_id": "un-geneva-news",
+          "url": "https://www.ungeneva.org/en/news-media/news/2026/11/124979/cop31-deadlock-persists-countries-launch-new-climate-reality-check",
+          "seen_at": "2026-11-19T14:54:37+00:00"
         }
       ],
       "title_zh": "",
@@ -3947,6 +4248,72 @@
           "source_id": "un-news-global",
           "url": "https://news.un.org/en/story/2026/11/1168821",
           "seen_at": "2026-11-18T21:21:44+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "f65e0d177b77924e92a2",
+      "source_id": "opiniojuris",
+      "title": "Beyond the Binary of War and Peace: Why the U.S., Israel, and Iran Must Return to Legal Intermediacy",
+      "url": "https://opiniojuris.org/2026/11/17/beyond-the-binary-of-war-and-peace-why-the-u-s-israel-and-iran-must-return-to-legal-intermediacy/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-11-17T13:00:00+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "RSS 标题",
+      "source_revision": "2111af5750817c9c3be4631a2d367e792afb17d82b36fdf418547df41e2ba016",
+      "topics": [],
+      "authors": [
+        "Hadi Dadmehr"
+      ],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "opiniojuris",
+          "url": "https://opiniojuris.org/2026/11/17/beyond-the-binary-of-war-and-peace-why-the-u-s-israel-and-iran-must-return-to-legal-intermediacy/",
+          "seen_at": "2026-11-19T14:54:38+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "83513af32fa151335e78",
+      "source_id": "opiniojuris",
+      "title": "Beyond Only Intent",
+      "url": "https://opiniojuris.org/2026/11/17/beyond-only-intent/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-11-17T09:00:00+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "RSS 标题",
+      "source_revision": "c8ddb7c77f42858fde1c87b18a4b68cb141f47b8fe1734696f8a273240b6d894",
+      "topics": [],
+      "authors": [
+        "Gregory Stanton"
+      ],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "opiniojuris",
+          "url": "https://opiniojuris.org/2026/11/17/beyond-only-intent/",
+          "seen_at": "2026-11-19T14:54:38+00:00"
         }
       ],
       "title_zh": "",
@@ -4207,6 +4574,130 @@
       "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
     },
     {
+      "id": "d4672d202f92511e39dc",
+      "source_id": "un-geneva-news",
+      "title": "Haiti: ‘Atrocious abuses’ continue as UN warns anti-gang operations must priortise civilian protection",
+      "url": "https://www.ungeneva.org/en/news-media/news/2026/11/124935/haiti-atrocious-abuses-continue-un-warns-anti-gang-operations-must",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-11-17",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:37+00:00",
+      "updated_at": "2026-11-19T14:54:37+00:00",
+      "evidence_basis": "官方新闻目录元数据",
+      "source_revision": "d1ae91df217d4f9d0708136cc3fc24c36ba3011f5eee7034f16f3d2e19f88212",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方机构新闻报道",
+      "provenance": [
+        {
+          "source_id": "un-geneva-news",
+          "url": "https://www.ungeneva.org/en/news-media/news/2026/11/124935/haiti-atrocious-abuses-continue-un-warns-anti-gang-operations-must",
+          "seen_at": "2026-11-19T14:54:37+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "ab73fdd83d80bc032487",
+      "source_id": "un-geneva-news",
+      "title": "‘Hunger should not be a concern’: WFP steps in for families in Kenya who fled Ethiopia violence",
+      "url": "https://www.ungeneva.org/en/news-media/news/2026/11/124932/hunger-should-not-be-concern-wfp-steps-families-kenya-who-fled",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-11-17",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:37+00:00",
+      "updated_at": "2026-11-19T14:54:37+00:00",
+      "evidence_basis": "官方新闻目录元数据",
+      "source_revision": "e3b1042046b48ae907558208747ded5b5a38b57c9d895735f5669f16720f1fe5",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方机构新闻报道",
+      "provenance": [
+        {
+          "source_id": "un-geneva-news",
+          "url": "https://www.ungeneva.org/en/news-media/news/2026/11/124932/hunger-should-not-be-concern-wfp-steps-families-kenya-who-fled",
+          "seen_at": "2026-11-19T14:54:37+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "da68ec34f54ceba4eb5d",
+      "source_id": "un-geneva-news",
+      "title": "Ukraine: Civilian casualties in 2026 already far exceed previous years’ tolls",
+      "url": "https://www.ungeneva.org/en/news-media/news/2026/11/124961/ukraine-civilian-casualties-2026-already-far-exceed-previous-years",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-11-17",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:37+00:00",
+      "updated_at": "2026-11-19T14:54:37+00:00",
+      "evidence_basis": "官方新闻目录元数据",
+      "source_revision": "288d2d162e0cd652f9129b955fb5f49844f5584687dd5a6ff5b89cc1313cdf31",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方机构新闻报道",
+      "provenance": [
+        {
+          "source_id": "un-geneva-news",
+          "url": "https://www.ungeneva.org/en/news-media/news/2026/11/124961/ukraine-civilian-casualties-2026-already-far-exceed-previous-years",
+          "seen_at": "2026-11-19T14:54:37+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "510f2eeb3ab3e3d6edea",
+      "source_id": "un-geneva-news",
+      "title": "Winter rains deepen Gaza crisis amid restricted access and aid cuts",
+      "url": "https://www.ungeneva.org/en/news-media/news/2026/11/124933/winter-rains-deepen-gaza-crisis-amid-restricted-access-and-aid-cuts",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-11-17",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:37+00:00",
+      "updated_at": "2026-11-19T14:54:37+00:00",
+      "evidence_basis": "官方新闻目录元数据",
+      "source_revision": "3680a3c6f2c044958eaa2a78d42eac38b51f16f846aa5ec4538bd052ce5a06a6",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方机构新闻报道",
+      "provenance": [
+        {
+          "source_id": "un-geneva-news",
+          "url": "https://www.ungeneva.org/en/news-media/news/2026/11/124933/winter-rains-deepen-gaza-crisis-amid-restricted-access-and-aid-cuts",
+          "seen_at": "2026-11-19T14:54:37+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
       "id": "1c72f5ab33e10acd2a60",
       "source_id": "un-news-global",
       "title": "‘Peace begins in our hearts’: Children close Muscat forum with a message to the world",
@@ -4455,6 +4946,108 @@
           "source_id": "un-news-global",
           "url": "https://news.un.org/en/story/2026/11/1168810",
           "seen_at": "2026-11-19T10:59:17+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "f3c8ca31a3c6e0fcf341",
+      "source_id": "opiniojuris",
+      "title": "Regret Is Not a Defence: The Assembly of States Parties and the Sanctioning of the International Criminal Court",
+      "url": "https://opiniojuris.org/2026/11/16/regret-is-not-a-defence-the-assembly-of-states-parties-and-the-sanctioning-of-the-international-criminal-court/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-11-16T13:00:00+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "RSS 标题",
+      "source_revision": "21dcb98e93db5bfa6c5eeff70398d2e4e790eef01614f74ea014198290f4e1ad",
+      "topics": [
+        "economic",
+        "rights"
+      ],
+      "authors": [
+        "Ezequiel Jimenez Martinez"
+      ],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "opiniojuris",
+          "url": "https://opiniojuris.org/2026/11/16/regret-is-not-a-defence-the-assembly-of-states-parties-and-the-sanctioning-of-the-international-criminal-court/",
+          "seen_at": "2026-11-19T14:54:38+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "2a569c88dddc509692cc",
+      "source_id": "opiniojuris",
+      "title": "International Law for a Fragile World: Political Risk – Authoritarianism, Information Warfare, and Democratic Fragility (Part II)",
+      "url": "https://opiniojuris.org/2026/11/16/international-law-for-a-fragile-world-political-risk-authoritarianism-information-warfare-and-democratic-fragility-part-ii/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-11-16T09:01:00+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "RSS 标题",
+      "source_revision": "5bbc1a0309eb5ccdccd6f1dd31c76c85fafc1800b148e25ceffb4b36ee37a4ce",
+      "topics": [],
+      "authors": [
+        "Sergey Sayapin"
+      ],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "opiniojuris",
+          "url": "https://opiniojuris.org/2026/11/16/international-law-for-a-fragile-world-political-risk-authoritarianism-information-warfare-and-democratic-fragility-part-ii/",
+          "seen_at": "2026-11-19T14:54:38+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "3d49334e97cf54572037",
+      "source_id": "opiniojuris",
+      "title": "International Law for a Fragile World: Political Risk – Authoritarianism, Information Warfare, and Democratic Fragility (Part I)",
+      "url": "https://opiniojuris.org/2026/11/16/international-law-for-a-fragile-world-political-risk-authoritarianism-information-warfare-and-democratic-fragility-part-i/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-11-16T09:00:00+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "RSS 标题",
+      "source_revision": "f6378d184818c7008521cdd378921ef449a093a5f0d37fe33c8c0cf93b40cc9f",
+      "topics": [],
+      "authors": [
+        "Sergey Sayapin"
+      ],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "opiniojuris",
+          "url": "https://opiniojuris.org/2026/11/16/international-law-for-a-fragile-world-political-risk-authoritarianism-information-warfare-and-democratic-fragility-part-i/",
+          "seen_at": "2026-11-19T14:54:38+00:00"
         }
       ],
       "title_zh": "",
@@ -4770,6 +5363,72 @@
       "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
     },
     {
+      "id": "dcb0025127b9aa379668",
+      "source_id": "opiniojuris",
+      "title": "Events and Announcements: 15 November 2026",
+      "url": "https://opiniojuris.org/2026/11/15/events-and-announcements-15-november-2026/",
+      "doi": "",
+      "module": "events",
+      "published_at": "2026-11-15T08:00:01+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "RSS 标题",
+      "source_revision": "569d6183502f9d5b1343f079ba25d178cf6fcb817e49de632764c4d85acec014",
+      "topics": [],
+      "authors": [
+        "Emilia Klebanowski"
+      ],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "opiniojuris",
+          "url": "https://opiniojuris.org/2026/11/15/events-and-announcements-15-november-2026/",
+          "seen_at": "2026-11-19T14:54:38+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "3806e7d581dac89f7650",
+      "source_id": "opiniojuris",
+      "title": "6th Annual Symposium on Pop Culture and International Law: Closing Remarks",
+      "url": "https://opiniojuris.org/2026/11/13/6th-annual-symposium-on-pop-culture-and-international-law-closing-remarks/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-11-13T15:00:00+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "RSS 标题",
+      "source_revision": "b88b9abe63c712669ba2431194abc3099e4fcf0624066a171e0175329e0d8721",
+      "topics": [],
+      "authors": [
+        "Alessia Corti"
+      ],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "opiniojuris",
+          "url": "https://opiniojuris.org/2026/11/13/6th-annual-symposium-on-pop-culture-and-international-law-closing-remarks/",
+          "seen_at": "2026-11-19T14:54:38+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
       "id": "221ed1f1a9a0b8facf4f",
       "source_id": "afchpr-cases",
       "title": "Summaries of Decisions delivered by the African Court during its 83rd Ordinary Session – 13 november 2026",
@@ -4796,6 +5455,39 @@
           "source_id": "afchpr-cases",
           "url": "https://www.african-court.org/afchpr/summaries-of-decisions-delivered-by-the-african-court-during-its-83rd-ordinary-session-13-novembre-2026/",
           "seen_at": "2026-11-18T21:22:12+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "08a4880f0c857aca12ed",
+      "source_id": "opiniojuris",
+      "title": "6th Annual Symposium on Pop Culture and International Law: Made Monstrous, Made Available – Monstress and the Law of Extractable Life",
+      "url": "https://opiniojuris.org/2026/11/13/made-monstrous-made-available-monstress-and-the-law-of-extractable-life/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-11-13T13:00:00+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "RSS 标题",
+      "source_revision": "b48e4bfeb8aac375adb7b83c5c62675dad825bea30ba4d9203ba088082d98e12",
+      "topics": [],
+      "authors": [
+        "Nivedita S"
+      ],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "opiniojuris",
+          "url": "https://opiniojuris.org/2026/11/13/made-monstrous-made-available-monstress-and-the-law-of-extractable-life/",
+          "seen_at": "2026-11-19T14:54:38+00:00"
         }
       ],
       "title_zh": "",
@@ -5135,6 +5827,39 @@
           "source_id": "icc-news",
           "url": "https://www.icc-cpi.int/news/icc-terminates-proceedings-against-sylvestre-mudacumura",
           "seen_at": "2026-11-19T10:59:20+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "0728fa1bac0bd8dc1957",
+      "source_id": "opiniojuris",
+      "title": "6th Annual Symposium on Pop Culture and International Law: The Buster Call on Ohara – One Piece and the International Law of Destroying a People’s Past",
+      "url": "https://opiniojuris.org/2026/11/12/the-buster-call-on-ohara-one-piece-and-the-international-law-of-destroying-a-peoples-past/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-11-12T13:00:00+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "RSS 标题",
+      "source_revision": "0b7360af76824108a16f2f6c865670e5c0ece74e811b0fd73d12a03b4a9e896d",
+      "topics": [],
+      "authors": [
+        "Estéfany Rocha Monteiro"
+      ],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "opiniojuris",
+          "url": "https://opiniojuris.org/2026/11/12/the-buster-call-on-ohara-one-piece-and-the-international-law-of-destroying-a-peoples-past/",
+          "seen_at": "2026-11-19T14:54:38+00:00"
         }
       ],
       "title_zh": "",
@@ -5552,6 +6277,39 @@
           "source_id": "un-depositary",
           "url": "https://treaties.un.org/doc/Publication/CN/2026/CN.494.2026-Eng.pdf",
           "seen_at": "2026-11-19T10:59:18+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "e859cdd314896e8b44ce",
+      "source_id": "icj",
+      "title": "The International Court of Justice awarded the 2026 Carnegie Wateler Peace Prize for its achievements in peaceful dispute settlement",
+      "url": "https://www.icj-cij.org/sites/default/files/press-releases/0/000-20261109-pre-01-00-en.pdf",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-11-10",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "90195d08cae48b8d116a550b576497ec2099e80b0e7c40d85c3102f3c893a658",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻稿索引",
+      "provenance": [
+        {
+          "source_id": "icj",
+          "url": "https://www.icj-cij.org/sites/default/files/press-releases/0/000-20261109-pre-01-00-en.pdf",
+          "seen_at": "2026-11-19T14:54:38+00:00"
         }
       ],
       "title_zh": "",
@@ -6227,6 +6985,40 @@
       "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
     },
     {
+      "id": "079390103b685cb6810d",
+      "source_id": "icj",
+      "title": "United Nations General Assembly and Security Council elect five Members of the Court",
+      "url": "https://www.icj-cij.org/sites/default/files/press-releases/0/000-20261104-pre-01-00-en.pdf",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-11-04",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "7f40bdbb28a3b89818cf98f0f113d7161d01755bff8397718fbe25bcbd6c8493",
+      "topics": [
+        "disputes",
+        "institutions"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻稿索引",
+      "provenance": [
+        {
+          "source_id": "icj",
+          "url": "https://www.icj-cij.org/sites/default/files/press-releases/0/000-20261104-pre-01-00-en.pdf",
+          "seen_at": "2026-11-19T14:54:38+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
       "id": "3eeebbc99e8fbc84c650",
       "source_id": "afchpr-cases",
       "title": "82nd Ordinary Session",
@@ -6398,6 +7190,40 @@
           "source_id": "crossref-irrc",
           "url": "https://doi.org/10.1017/s1816383126101738",
           "seen_at": "2026-11-18T21:20:46+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "f8aff8e461fe09f3af77",
+      "source_id": "icj",
+      "title": "Application of the Convention on the Prevention and Punishment of the Crime of Genocide (The Gambia v. Myanmar: 11 States intervening) - The Court to deliver its Judgment on Thursday 19 November 2026 at 10 a.m.",
+      "url": "https://www.icj-cij.org/sites/default/files/case-related/178/178-20261103-pre-01-00-en.pdf",
+      "doi": "",
+      "module": "cases",
+      "published_at": "2026-11-03",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "399c5745326a1a23179bae72a4813b4b878f548af85316701c049cf285ed8d3a",
+      "topics": [
+        "disputes",
+        "rights"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻稿索引",
+      "provenance": [
+        {
+          "source_id": "icj",
+          "url": "https://www.icj-cij.org/sites/default/files/case-related/178/178-20261103-pre-01-00-en.pdf",
+          "seen_at": "2026-11-19T14:54:38+00:00"
         }
       ],
       "title_zh": "",
@@ -7009,6 +7835,73 @@
           "source_id": "icsid-cases",
           "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/19/30",
           "seen_at": "2026-11-19T10:59:25+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "5ed70fb3432912d8f391",
+      "source_id": "icj",
+      "title": "The President of the International Court of Justice addresses the General Assembly of the United Nations",
+      "url": "https://www.icj-cij.org/sites/default/files/press-releases/0/000-20261029-pre-01-00-en.pdf",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-10-29",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "03e6f60bb411a536c08720e79370218744fa2f3d40ece279f9630c54e44f096e",
+      "topics": [
+        "disputes",
+        "institutions"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻稿索引",
+      "provenance": [
+        {
+          "source_id": "icj",
+          "url": "https://www.icj-cij.org/sites/default/files/press-releases/0/000-20261029-pre-01-00-en.pdf",
+          "seen_at": "2026-11-19T14:54:38+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "77372f72865c5f302c90",
+      "source_id": "icj",
+      "title": "Amendments to Articles 50 and 56 of the Rules of Court and Practice Directions III, IXbis, IXter and XII",
+      "url": "https://www.icj-cij.org/sites/default/files/press-releases/0/000-20261027-pre-01-00-en.pdf",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-10-27",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "9215403fdbea2957a029c9b5635a6d881ddece320b7bdb1f325097c26f846698",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻稿索引",
+      "provenance": [
+        {
+          "source_id": "icj",
+          "url": "https://www.icj-cij.org/sites/default/files/press-releases/0/000-20261027-pre-01-00-en.pdf",
+          "seen_at": "2026-11-19T14:54:38+00:00"
         }
       ],
       "title_zh": "",
@@ -10179,6 +11072,40 @@
       "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
     },
     {
+      "id": "82053a1bea1ecf8d9470",
+      "source_id": "icj",
+      "title": "Application of the Convention on the Prevention and Punishment of the Crime of Genocide in the Gaza Strip (South Africa v. Israel) - Colombia withdraws its Declaration of intervention in the proceedings",
+      "url": "https://www.icj-cij.org/sites/default/files/case-related/192/192-20260922-pre-01-00-en.pdf",
+      "doi": "",
+      "module": "cases",
+      "published_at": "2026-09-22",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "c8392295ab706e0568fd8bd9876dd0895b87f600f06fefcfc3ede4d2acfdf4a3",
+      "topics": [
+        "disputes",
+        "rights"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻稿索引",
+      "provenance": [
+        {
+          "source_id": "icj",
+          "url": "https://www.icj-cij.org/sites/default/files/case-related/192/192-20260922-pre-01-00-en.pdf",
+          "seen_at": "2026-11-19T14:54:38+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
       "id": "5cd8ce9c95fe7d2028de",
       "source_id": "crossref-ejil",
       "title": "Colonial Echoes in the Abyss: Sponsorships of Convenience in the Deep Seabed Mining Regime",
@@ -10592,6 +11519,39 @@
       "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
     },
     {
+      "id": "b4098f00eab4b17efa33",
+      "source_id": "icj",
+      "title": "Alleged Breaches of Certain International Obligations in respect of the Occupied Palestinian Territory (Nicaragua v. Germany) - Preliminary objections raised by Germany - Conclusion of the public hearings held from Monday 7 to Thursday 10 September 2026",
+      "url": "https://www.icj-cij.org/sites/default/files/case-related/193/193-20260910-pre-01-00-en.pdf",
+      "doi": "",
+      "module": "cases",
+      "published_at": "2026-09-10",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "0d2bd01ac83b640e6425e082513dd590e8e365a101172345e331b3393c17e123",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻稿索引",
+      "provenance": [
+        {
+          "source_id": "icj",
+          "url": "https://www.icj-cij.org/sites/default/files/case-related/193/193-20260910-pre-01-00-en.pdf",
+          "seen_at": "2026-11-19T14:54:38+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
       "id": "1816a7a799680ca527f2",
       "source_id": "crossref-jiel",
       "title": "Conceptual difficulties in the economic governance of AI bioprospecting for marine genetic resources",
@@ -10858,6 +11818,39 @@
           "source_id": "crossref-wtr",
           "url": "https://doi.org/10.1017/s1474745626101529",
           "seen_at": "2026-11-18T21:20:45+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "8c0f955197dd13a6b60e",
+      "source_id": "icj",
+      "title": "Vanuatu files an application with the Court concerning a dispute with France",
+      "url": "https://www.icj-cij.org/sites/default/files/press-releases/0/000-20260901-pre-01-00-en.pdf",
+      "doi": "",
+      "module": "cases",
+      "published_at": "2026-09-01",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "5f7d266fbe87211c81285c0afe9af59ecaaa86f8464a9ae64ef0e5254398e236",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻稿索引",
+      "provenance": [
+        {
+          "source_id": "icj",
+          "url": "https://www.icj-cij.org/sites/default/files/press-releases/0/000-20260901-pre-01-00-en.pdf",
+          "seen_at": "2026-11-19T14:54:38+00:00"
         }
       ],
       "title_zh": "",
@@ -11550,6 +12543,39 @@
       "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
     },
     {
+      "id": "e251facba82779d32dd9",
+      "source_id": "icj",
+      "title": "Alleged Breaches of Certain International Obligations in respect of the Occupied Palestinian Territory (Nicaragua v. Germany) - Preliminary objections raised by Germany - Public hearings to be held from Monday 7 to Thursday 10 September 2026",
+      "url": "https://www.icj-cij.org/sites/default/files/case-related/193/193-20260731-pre-01-00-en.pdf",
+      "doi": "",
+      "module": "cases",
+      "published_at": "2026-07-31",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "f118f491140b084cb56b7fbee53a6742c3de642fc05222907c6b512b64bea957",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻稿索引",
+      "provenance": [
+        {
+          "source_id": "icj",
+          "url": "https://www.icj-cij.org/sites/default/files/case-related/193/193-20260731-pre-01-00-en.pdf",
+          "seen_at": "2026-11-19T14:54:38+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
       "id": "6eb42859fb100abdd256",
       "source_id": "crossref-ljil",
       "title": "Processing state’s regulatory responsibility for seafood legality: An age-long vacuum in international law?",
@@ -11769,6 +12795,72 @@
           "source_id": "crossref-jiel",
           "url": "https://doi.org/10.1093/jiel/jgag025",
           "seen_at": "2026-11-18T21:20:45+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "9c8c18b294f5956fc440",
+      "source_id": "icj",
+      "title": "Alleged Smuggling of Migrants (Lithuania v. Belarus) - The Russian Federation files a Declaration of intervention in the proceedings under Article 63 of the Statute of the Court",
+      "url": "https://www.icj-cij.org/sites/default/files/case-related/200/200-20260721-pre-02-00-en.pdf",
+      "doi": "",
+      "module": "cases",
+      "published_at": "2026-07-21",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "b84b9ef76e52fb774e85bb05678eb8291d6561eea502e03337ff7ce08614a589",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻稿索引",
+      "provenance": [
+        {
+          "source_id": "icj",
+          "url": "https://www.icj-cij.org/sites/default/files/case-related/200/200-20260721-pre-02-00-en.pdf",
+          "seen_at": "2026-11-19T14:54:38+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "4bdd692b78b024403b33",
+      "source_id": "icj",
+      "title": "Alleged Smuggling of Migrants (Lithuania v. Belarus) - Observations furnished by the European Union under Article 43, paragraph 2, and Article 69, paragraph 2, of the Rules of Court",
+      "url": "https://www.icj-cij.org/sites/default/files/case-related/200/200-20260721-pre-01-00-en.pdf",
+      "doi": "",
+      "module": "cases",
+      "published_at": "2026-07-21",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "3a97b6359eab1fd7f25455f3ebad77d7efcf104cb98ca2bca16467cb51e4f056",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻稿索引",
+      "provenance": [
+        {
+          "source_id": "icj",
+          "url": "https://www.icj-cij.org/sites/default/files/case-related/200/200-20260721-pre-01-00-en.pdf",
+          "seen_at": "2026-11-19T14:54:38+00:00"
         }
       ],
       "title_zh": "",
@@ -12291,6 +13383,72 @@
       "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
     },
     {
+      "id": "e89b4e49ff1cf3bf426a",
+      "source_id": "icj",
+      "title": "Alleged Smuggling of Migrants (Lithuania v. Belarus) - Poland files a declaration of intervention in the proceedings under Article 63 of the Statute of the Court",
+      "url": "https://www.icj-cij.org/sites/default/files/case-related/200/200-20260630-pre-01-00-en.pdf",
+      "doi": "",
+      "module": "cases",
+      "published_at": "2026-06-30",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "e578ccd67d8b3d9b36b2ba301772c6f012f8183624a00fa53675b31280ee2ec1",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻稿索引",
+      "provenance": [
+        {
+          "source_id": "icj",
+          "url": "https://www.icj-cij.org/sites/default/files/case-related/200/200-20260630-pre-01-00-en.pdf",
+          "seen_at": "2026-11-19T14:54:38+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "ed985822a0cfcc7eac6e",
+      "source_id": "icj",
+      "title": "The Democratic Republic of the Congo institutes proceedings against Rwanda",
+      "url": "https://www.icj-cij.org/sites/default/files/case-related/202/202-20260626-pre-01-00-en.pdf",
+      "doi": "",
+      "module": "cases",
+      "published_at": "2026-06-26",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "4c615dbd6766ca7d23e316dca1239a7019a92a86d9ba56f840180358acd8c4ff",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻稿索引",
+      "provenance": [
+        {
+          "source_id": "icj",
+          "url": "https://www.icj-cij.org/sites/default/files/case-related/202/202-20260626-pre-01-00-en.pdf",
+          "seen_at": "2026-11-19T14:54:38+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
       "id": "534648fe762442091204",
       "source_id": "china-mfa-statements",
       "title": "外交部发言人就韩国外交部官员完整公开重申中韩建交联合公报涉台表述答记者问",
@@ -12314,6 +13472,39 @@
           "source_id": "china-mfa-statements",
           "url": "https://www.mfa.gov.cn/fyrbt_673021/dhdw_673027/202606/t20260618_11948788.shtml",
           "seen_at": "2026-11-19T08:54:56+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "0c22c7b9dc068b797457",
+      "source_id": "icj",
+      "title": "Visit of the Emperor of Japan to the International Court of Justice and the Permanent Court of Arbitration",
+      "url": "https://www.icj-cij.org/sites/default/files/press-releases/0/000-20260618-pre-01-00-en.pdf",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-06-18",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "e0362241e8d89731f7202e94d16fbecc88653ab0b0bc676852180ce229e777ba",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻稿索引",
+      "provenance": [
+        {
+          "source_id": "icj",
+          "url": "https://www.icj-cij.org/sites/default/files/press-releases/0/000-20260618-pre-01-00-en.pdf",
+          "seen_at": "2026-11-19T14:54:38+00:00"
         }
       ],
       "title_zh": "",
@@ -12634,6 +13825,39 @@
       "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
     },
     {
+      "id": "af5e17380d662b1878d4",
+      "source_id": "icj",
+      "title": "Right to Strike under ILO Convention No. 87 - The Court gives its Advisory Opinion and responds to the question posed by the International Labour Organization",
+      "url": "https://www.icj-cij.org/sites/default/files/case-related/191/191-20260521-pre-01-00-en.pdf",
+      "doi": "",
+      "module": "cases",
+      "published_at": "2026-05-21",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "fd2bb5b9909c0ef5f0cd064526de34f62ac28cea2777f6e87cf0de2e9f81b30c",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻稿索引",
+      "provenance": [
+        {
+          "source_id": "icj",
+          "url": "https://www.icj-cij.org/sites/default/files/case-related/191/191-20260521-pre-01-00-en.pdf",
+          "seen_at": "2026-11-19T14:54:38+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
       "id": "05ad510850d86b0fef7b",
       "source_id": "crossref-wtr",
       "title": "The Impact of Information Provided by Political Elites on Individual Trade Policy Preferences: A Result of Political Knowledge or Interest?",
@@ -12781,6 +14005,72 @@
         "date_text": "2026-09-30",
         "label": "投稿截止"
       },
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "c9bf05482b31ab8a20cd",
+      "source_id": "icj",
+      "title": "Right to Strike under ILO Convention No. 87 (Request for Advisory Opinion) - The Court to deliver its Advisory Opinion on Thursday 21 May at 3 p.m.",
+      "url": "https://www.icj-cij.org/sites/default/files/case-related/191/191-20260512-pre-01-00-en.pdf",
+      "doi": "",
+      "module": "cases",
+      "published_at": "2026-05-12",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "c4e919ede389ae6e8edc0327f7d38d7d441821ac42f443789c4b6b6ecb56ba99",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻稿索引",
+      "provenance": [
+        {
+          "source_id": "icj",
+          "url": "https://www.icj-cij.org/sites/default/files/case-related/191/191-20260512-pre-01-00-en.pdf",
+          "seen_at": "2026-11-19T14:54:38+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "074bfe4a7542dc6b2761",
+      "source_id": "icj",
+      "title": "Arbitral Award of 3 October 1899 (Guyana v. Venezuela) - Conclusion of the public hearings on the merits held from Monday 4 to Monday 11 May 2026",
+      "url": "https://www.icj-cij.org/sites/default/files/case-related/171/171-20260511-pre-01-00-en.pdf",
+      "doi": "",
+      "module": "cases",
+      "published_at": "2026-05-11",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "b82151426fa85fa934c883f248892923c725572e2d23bc2efb2325733bace0d7",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻稿索引",
+      "provenance": [
+        {
+          "source_id": "icj",
+          "url": "https://www.icj-cij.org/sites/default/files/case-related/171/171-20260511-pre-01-00-en.pdf",
+          "seen_at": "2026-11-19T14:54:38+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
       "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
     },
     {
@@ -13243,6 +14533,39 @@
       "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
     },
     {
+      "id": "e58387ba3f8533a5a103",
+      "source_id": "icj",
+      "title": "Solemn commemorative sitting held at the Peace Palace to mark the eightieth anniversary of the International Court of Justice",
+      "url": "https://www.icj-cij.org/sites/default/files/press-releases/0/000-20260417-pre-01-00-en.pdf",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-04-17",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "babcb88a7b08f5dba3faf6534db3ded0dc94260c56c0afa8517e53e3c7c4b5c0",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻稿索引",
+      "provenance": [
+        {
+          "source_id": "icj",
+          "url": "https://www.icj-cij.org/sites/default/files/press-releases/0/000-20260417-pre-01-00-en.pdf",
+          "seen_at": "2026-11-19T14:54:38+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
       "id": "7d87d5ee8288eafb71fe",
       "source_id": "cambridge-books",
       "title": "The Classical Doctrine of Civil War in International Law",
@@ -13270,6 +14593,73 @@
           "source_id": "cambridge-books",
           "url": "https://www.cambridge.org/core/books/classical-doctrine-of-civil-war-in-international-law/5BF10BDB7B99396B5CE7C197C7C33AA3",
           "seen_at": "2026-11-18T21:21:27+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "72862990701a4b20280a",
+      "source_id": "icj",
+      "title": "Eightieth anniversary of the International Court of Justice - The Court will hold a solemn sitting on 17 April 2026 at the Peace Palace in the presence of His Majesty the King of the Netherlands and the Secretary-General of the United Nations",
+      "url": "https://www.icj-cij.org/sites/default/files/press-releases/0/000-20260410-pre-02-00-en.pdf",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-04-10",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "63d1392b1e3383f2f59f55145e11153bdfd5718abfdfd23d332dc050becc1fc7",
+      "topics": [
+        "disputes",
+        "institutions"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻稿索引",
+      "provenance": [
+        {
+          "source_id": "icj",
+          "url": "https://www.icj-cij.org/sites/default/files/press-releases/0/000-20260410-pre-02-00-en.pdf",
+          "seen_at": "2026-11-19T14:54:38+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "73017e1c257a8bd5cb38",
+      "source_id": "icj",
+      "title": "Visit to the International Court of Justice by the President of the Republic of Estonia, HE Mr Alar Karis, and First Lady Ms Sirje Karis",
+      "url": "https://www.icj-cij.org/sites/default/files/press-releases/0/000-20260410-pre-01-00-en.pdf",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-04-10",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "2803ddbc59b9a7d60d26c9a05f3252b6d1b73dcd2c9c16290793209ac0db3159",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻稿索引",
+      "provenance": [
+        {
+          "source_id": "icj",
+          "url": "https://www.icj-cij.org/sites/default/files/press-releases/0/000-20260410-pre-01-00-en.pdf",
+          "seen_at": "2026-11-19T14:54:38+00:00"
         }
       ],
       "title_zh": "",
@@ -13682,6 +15072,174 @@
       "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
     },
     {
+      "id": "13b3ecd032406d142717",
+      "source_id": "icj",
+      "title": "Sovereignty over the Sapodilla Cayes/Cayos Zapotillos (Belize v. Honduras) - The Court grants Guatemala permission to intervene in the proceedings as a non-party",
+      "url": "https://www.icj-cij.org/sites/default/files/case-related/185/185-20260319-pre-01-00-en.pdf",
+      "doi": "",
+      "module": "cases",
+      "published_at": "2026-03-19",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "18d635d0de955ec2088b385d3cf9d0242d8c7596caa23bb4e8919881bf124cce",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻稿索引",
+      "provenance": [
+        {
+          "source_id": "icj",
+          "url": "https://www.icj-cij.org/sites/default/files/case-related/185/185-20260319-pre-01-00-en.pdf",
+          "seen_at": "2026-11-19T14:54:38+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "e13c3f5c7eac46d35358",
+      "source_id": "icj",
+      "title": "Application of the Convention on the Prevention and Punishment of the Crime of Genocide in the Gaza Strip (South Africa v. Israel) - Declarations of intervention in the proceedings filed on 12 March 2026 by Namibia, the United States of America, Hungary and Fiji under Article 63 of the Statute of the Court",
+      "url": "https://www.icj-cij.org/sites/default/files/case-related/192/192-20260313-pre-01-00-en.pdf",
+      "doi": "",
+      "module": "cases",
+      "published_at": "2026-03-13",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "cd852eb3d96827e33b39c3378705f5e68230aeef07e9a27c7a30b6d271305eee",
+      "topics": [
+        "disputes",
+        "rights"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻稿索引",
+      "provenance": [
+        {
+          "source_id": "icj",
+          "url": "https://www.icj-cij.org/sites/default/files/case-related/192/192-20260313-pre-01-00-en.pdf",
+          "seen_at": "2026-11-19T14:54:38+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "be94b6375871ae0c1f78",
+      "source_id": "icj",
+      "title": "Application of the Convention on the Prevention and Punishment of the Crime of Genocide in the Gaza Strip (South Africa v. Israel) - Declarations of intervention in the proceedings filed on 11 March 2026 by the Netherlands and by Iceland under Article 63 of the Statute of the Court",
+      "url": "https://www.icj-cij.org/sites/default/files/case-related/192/192-20260312-pre-01-00-en.pdf",
+      "doi": "",
+      "module": "cases",
+      "published_at": "2026-03-12",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "63de3c1a37ddb8c3be1c33f5a3dfc580e9f3bf0b09e398c4414267877430f129",
+      "topics": [
+        "disputes",
+        "rights"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻稿索引",
+      "provenance": [
+        {
+          "source_id": "icj",
+          "url": "https://www.icj-cij.org/sites/default/files/case-related/192/192-20260312-pre-01-00-en.pdf",
+          "seen_at": "2026-11-19T14:54:38+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "2da651a0fe419956bca7",
+      "source_id": "icj",
+      "title": "Sovereignty over the Sapodilla Cayes/Cayos Zapotillos (Belize v. Honduras) - Guatemala’s Application for permission to intervene in the case - The Court to deliver its Judgment on Thursday 19 March 2026 at 3 p.m.",
+      "url": "https://www.icj-cij.org/sites/default/files/case-related/185/185-20260305-pre-01-00-en.pdf",
+      "doi": "",
+      "module": "cases",
+      "published_at": "2026-03-05",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "b93925db2b852f9bc71ad2cdb22bcc060889416236564999707553950b81209a",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻稿索引",
+      "provenance": [
+        {
+          "source_id": "icj",
+          "url": "https://www.icj-cij.org/sites/default/files/case-related/185/185-20260305-pre-01-00-en.pdf",
+          "seen_at": "2026-11-19T14:54:38+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "809178b9cccde97552d8",
+      "source_id": "icj",
+      "title": "Application of the Convention on the Prevention and Punishment of the Crime of Genocide in the Gaza Strip (South Africa v. Israel) - Paraguay files a declaration of intervention in the proceedings under Article 63 of the Statute of the Court",
+      "url": "https://www.icj-cij.org/sites/default/files/case-related/192/192-20260304-pre-01-00-en.pdf",
+      "doi": "",
+      "module": "cases",
+      "published_at": "2026-03-04",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "3148f02a49b787f05bd7495ce98f53da09b0df284cd72ef207fd0755186f1600",
+      "topics": [
+        "disputes",
+        "rights"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻稿索引",
+      "provenance": [
+        {
+          "source_id": "icj",
+          "url": "https://www.icj-cij.org/sites/default/files/case-related/192/192-20260304-pre-01-00-en.pdf",
+          "seen_at": "2026-11-19T14:54:38+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
       "id": "35c5bf93313c80315298",
       "source_id": "esil",
       "title": "Survey by Leiden University | Call for Participation",
@@ -13705,6 +15263,39 @@
           "source_id": "esil",
           "url": "https://esil-sedi.eu/unileidensurvey/",
           "seen_at": "2026-11-19T08:57:16+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "5fa77dd0708b53f989dd",
+      "source_id": "icj",
+      "title": "Iceland files a declaration recognizing the compulsory jurisdiction of the Court",
+      "url": "https://www.icj-cij.org/sites/default/files/press-releases/0/000-20260302-pre-01-00-en.pdf",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-03-02",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "3fdfc28c116ef7b6ba487a13b9464339887e50954360b1812a3053ca52557e52",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻稿索引",
+      "provenance": [
+        {
+          "source_id": "icj",
+          "url": "https://www.icj-cij.org/sites/default/files/press-releases/0/000-20260302-pre-01-00-en.pdf",
+          "seen_at": "2026-11-19T14:54:38+00:00"
         }
       ],
       "title_zh": "",
@@ -13846,6 +15437,40 @@
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag012",
           "seen_at": "2026-11-18T20:03:46+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "dbe011bc564b6000abd8",
+      "source_id": "icj",
+      "title": "Application of the Convention on the Prevention and Punishment of the Crime of Genocide (The Gambia v. Myanmar: 11 States intervening) - Conclusion of the public hearings on the merits held from Monday 12 to Thursday 29 January 2026",
+      "url": "https://www.icj-cij.org/sites/default/files/case-related/178/178-20260129-pre-01-00-en.pdf",
+      "doi": "",
+      "module": "cases",
+      "published_at": "2026-01-29",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "08dcdbba4eff36492c43baeeaf9f3917b03e40a9650d4bb11edf0caf230aa649",
+      "topics": [
+        "disputes",
+        "rights"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻稿索引",
+      "provenance": [
+        {
+          "source_id": "icj",
+          "url": "https://www.icj-cij.org/sites/default/files/case-related/178/178-20260129-pre-01-00-en.pdf",
+          "seen_at": "2026-11-19T14:54:38+00:00"
         }
       ],
       "title_zh": "",
@@ -14030,6 +15655,74 @@
           "source_id": "ilc-reports",
           "url": "https://legal.un.org/ilc/reports/2026/",
           "seen_at": "2026-11-18T21:21:08+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "20682cb482f695f82b78",
+      "source_id": "icj",
+      "title": "Application of the Convention on the Prevention and Punishment of the Crime of Genocide in the Gaza Strip (South Africa v. Israel) - Belgium files a declaration of intervention in the proceedings under Article 63 of the Statute of the Court",
+      "url": "https://www.icj-cij.org/sites/default/files/case-related/192/192-20251223-pre-01-00-en.pdf",
+      "doi": "",
+      "module": "cases",
+      "published_at": "2025-12-23",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "6e7ec627c1c6f537a1c8267526f9a3555dba78b6b689d8e540aaac2cd0730e05",
+      "topics": [
+        "disputes",
+        "rights"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻稿索引",
+      "provenance": [
+        {
+          "source_id": "icj",
+          "url": "https://www.icj-cij.org/sites/default/files/case-related/192/192-20251223-pre-01-00-en.pdf",
+          "seen_at": "2026-11-19T14:54:38+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "146764145d88540dc008696380de174bdddf2aa19612e21be906257c5fedb295"
+    },
+    {
+      "id": "9e5d5ae2a60e5a51fe87",
+      "source_id": "icj",
+      "title": "Application of the Convention on the Prevention and Punishment of the Crime of Genocide (The Gambia v. Myanmar: 11 States intervening) - Public hearings on the merits of the case to be held from Monday 12 to Thursday 29 January 2026",
+      "url": "https://www.icj-cij.org/sites/default/files/case-related/178/178-20251219-pre-01-00-en.pdf",
+      "doi": "",
+      "module": "cases",
+      "published_at": "2025-12-19",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T14:54:38+00:00",
+      "updated_at": "2026-11-19T14:54:38+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "d913b4a81b3d0517f4cf4b3e21cb79ae9b43cac3c93891d4a3601df642acbf9d",
+      "topics": [
+        "disputes",
+        "rights"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻稿索引",
+      "provenance": [
+        {
+          "source_id": "icj",
+          "url": "https://www.icj-cij.org/sites/default/files/case-related/178/178-20251219-pre-01-00-en.pdf",
+          "seen_at": "2026-11-19T14:54:38+00:00"
         }
       ],
       "title_zh": "",
@@ -15415,17 +17108,18 @@
         "access_hold": 4,
         "unsupported_hold": 0,
         "pdf_hold": 0,
+        "title_fallback": 7,
         "pending": 3,
         "directory_count": 7,
         "first_http_status": 0,
-        "cursor": "510f2eeb3ab3e3d6edea"
+        "cursor": "da68ec34f54ceba4eb5d"
       },
-      "status": "unverified",
-      "attempted_at": "2026-11-19T08:55:09+00:00",
-      "success_at": null,
+      "status": "ok",
+      "attempted_at": "2026-11-19T14:54:37+00:00",
+      "success_at": "2026-11-19T14:54:37+00:00",
       "error": null,
       "consecutive_failures": 0,
-      "item_count": 0,
+      "item_count": 7,
       "next_attempt_at": null
     },
     {
@@ -15558,17 +17252,18 @@
         "access_hold": 1,
         "unsupported_hold": 0,
         "pdf_hold": 0,
+        "title_fallback": 14,
         "pending": 13,
         "directory_count": 15,
         "first_http_status": 403
       },
       "feed_url": "https://feeds2.feedburner.com/opiniojurisfeed",
-      "status": "unverified",
-      "attempted_at": "2026-11-19T08:56:41+00:00",
-      "success_at": null,
+      "status": "ok",
+      "attempted_at": "2026-11-19T14:54:38+00:00",
+      "success_at": "2026-11-19T14:54:38+00:00",
       "error": null,
       "consecutive_failures": 0,
-      "item_count": 0,
+      "item_count": 14,
       "next_attempt_at": null
     },
     {
@@ -15979,16 +17674,17 @@
         "access_hold": 1,
         "unsupported_hold": 0,
         "pdf_hold": 0,
+        "title_fallback": 30,
         "pending": 29,
-        "directory_count": 395,
+        "directory_count": 80,
         "first_http_status": 403
       },
-      "status": "unverified",
-      "attempted_at": "2026-11-19T08:57:31+00:00",
-      "success_at": null,
+      "status": "ok",
+      "attempted_at": "2026-11-19T14:54:38+00:00",
+      "success_at": "2026-11-19T14:54:38+00:00",
       "error": null,
       "consecutive_failures": 0,
-      "item_count": 0,
+      "item_count": 30,
       "next_attempt_at": null
     },
     {
@@ -18289,32 +19985,32 @@
         "topics": []
       }
     ],
-    "updated_at": "2026-11-19T14:50:26+00:00",
+    "updated_at": "2026-11-19T14:54:38+00:00",
     "coverage_note": "常设投稿目录与正式征稿分别展示。程序逐条核对已接通信源的正式公告，无法确认的日期不会填入截止日。"
   },
   "operations": {
     "last_run": {
       "id": 1,
-      "started_at": "2026-11-19T14:50:26+00:00",
-      "finished_at": "2026-11-19T14:50:26+00:00",
-      "successes": 0,
+      "started_at": "2026-11-19T14:54:33+00:00",
+      "finished_at": "2026-11-19T14:54:38+00:00",
+      "successes": 3,
       "failures": 0,
-      "added": 0,
+      "added": 52,
       "changed": 0
     },
     "scheduler_enabled": true,
     "scheduled_run_verified": true,
     "last_effective_run": {
       "id": 1,
-      "started_at": "2026-11-19T13:12:45+00:00",
-      "finished_at": "2026-11-19T13:12:46+00:00",
-      "successes": 0,
-      "failures": 1,
-      "added": 0,
+      "started_at": "2026-11-19T14:54:33+00:00",
+      "finished_at": "2026-11-19T14:54:38+00:00",
+      "successes": 3,
+      "failures": 0,
+      "added": 52,
       "changed": 0
     },
-    "scheduler_note": "最近一次云端运行：2026-11-19T14:50:26+00:00；触发方式：push。信源成功时间单独显示。",
-    "total_archived": 374,
-    "visible_in_export": 374
+    "scheduler_note": "最近一次云端运行：2026-11-19T14:54:38+00:00；触发方式：push。信源成功时间单独显示。",
+    "total_archived": 425,
+    "visible_in_export": 425
   }
 }
