@@ -33,7 +33,7 @@ jobs:
       - name: Ensure the Ubuntu PDF reader is available
         run: |
           if ! command -v pdftotext >/dev/null || ! command -v pdfinfo >/dev/null; then
-            sudo apt-get -q update
+            sudo apt-get -q -o Acquire::Retries=5 -o Acquire::http::Timeout=30 update
             sudo apt-get -q install --no-install-recommends -y poppler-utils
           fi
           command -v prlimit
