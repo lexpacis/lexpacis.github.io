@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-20T06:46:21+00:00",
+  "generated_at": "2026-11-20T07:01:05+00:00",
   "site": {
     "name": "法域前沿",
     "english_name": "Lexpacis",
@@ -31095,18 +31095,18 @@
         "topics": []
       }
     ],
-    "updated_at": "2026-11-20T06:46:21+00:00",
+    "updated_at": "2026-11-20T07:01:04+00:00",
     "coverage_note": "常设投稿目录与正式征稿分别展示。程序逐条核对已接通信源的正式公告，无法确认的日期不会填入截止日。"
   },
   "operations": {
     "last_run": {
       "id": 1,
-      "started_at": "2026-11-20T06:44:43+00:00",
-      "finished_at": "2026-11-20T06:46:21+00:00",
-      "successes": 18,
-      "failures": 2,
-      "added": 47,
-      "changed": 21
+      "started_at": "2026-11-20T07:01:04+00:00",
+      "finished_at": "2026-11-20T07:01:04+00:00",
+      "successes": 0,
+      "failures": 0,
+      "added": 0,
+      "changed": 0
     },
     "scheduler_enabled": true,
     "scheduled_run_verified": true,
@@ -31119,7 +31119,7 @@
       "added": 47,
       "changed": 21
     },
-    "scheduler_note": "最近一次云端运行：2026-11-20T06:46:21+00:00；触发方式：push。信源成功时间单独显示。",
+    "scheduler_note": "最近一次云端运行：2026-11-20T07:01:04+00:00；触发方式：push。信源成功时间单独显示。",
     "total_archived": 729,
     "visible_in_export": 729
   }
