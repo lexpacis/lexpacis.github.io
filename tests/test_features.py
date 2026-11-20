@@ -365,6 +365,21 @@ class FeatureWorkflowTests(unittest.TestCase):
         self.assertEqual(len(public['journals']),41)
         self.assertEqual(sum(j['language'] in ('zh','bilingual') for j in public['journals']),14)
         self.assertTrue(all(j.get('submissions_url') for j in public['journals']))
+    def test_event_listing_date_is_read_as_the_event_date(self):
+        import datetime as dt
+        from core import parse_listing
+        source={'id':'fixture-events','url':'https://example.org/events','link_pattern':r'^/event/[a-z0-9-]+$',
+                'kind':'html','notice_kind':'event','min_title_length':10}
+        future=(dt.date.today()+dt.timedelta(days=400)).isoformat()
+        markup=(f'<a href="/event/workshop">Annual international law workshop</a><span>{future}</span>').encode()
+        entry=parse_listing(markup,source)[0]
+        self.assertIsNone(entry['published_at'])
+        self.assertEqual(entry['bibliography']['notice_dates']['event']['date'],future)
+        past=(dt.date.today()-dt.timedelta(days=400)).isoformat()
+        markup=(f'<a href="/event/workshop">Annual international law workshop</a><span>{past}</span>').encode()
+        entry=parse_listing(markup,source)[0]
+        self.assertIsNone(entry['published_at'])
+        self.assertEqual(entry['bibliography'],{})
     def test_chinese_rendering_publishes_beside_the_original(self):
         from publication_policy import snapshot_issues
         _,sources=pipeline.configuration();rules=pipeline.publication_rules()

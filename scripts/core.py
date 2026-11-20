@@ -303,8 +303,16 @@ def parse_listing(data, source):
         if re.search(r'privacy|cookies|read more|next page',title,re.I): continue
         seen.add(url)
         date,precision=listing_date(link['context'])
+        bibliography={}
+        if source.get('notice_kind')=='event':
+            # An event listing prints the date of the event beside the title, not
+            # the date it was posted. A future day is kept as the event date; any
+            # other date is dropped rather than passed off as a publication date.
+            if date and precision=='day' and date>dt.datetime.now(UTC).date().isoformat():
+                bibliography={'notice_dates':{'event':{'date':date,'date_text':date,'label':'活动日期'},'deadline':None}}
+            date,precision=None,'unknown'
         result.append({'title':title,'url':url,'published_at':date,'date_precision':precision,
-                       'authors':[],'evidence':'','evidence_basis':'官方目录标题','doi':''})
+                       'authors':[],'evidence':'','evidence_basis':'官方目录标题','doi':'','bibliography':bibliography})
     if source.get('id')=='au-treaties':
         result.reverse()
     return result
