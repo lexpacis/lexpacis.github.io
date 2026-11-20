@@ -41,8 +41,12 @@ def audit():
     except (ValueError,KeyError,OSError):issues.append('无法验证引注样式包')
     dist=ROOT/'dist'
     if not (dist/'index.html').exists():issues.append('尚未构建网站')
-    issues.extend(snapshot_issues(read_json(dist/'data.json'),read_json(ROOT/'config/sources.json',[]),
-                                 read_json(ROOT/'config/visibility.json',{})))
+    data=read_json(dist/'data.json',None)
+    if not isinstance(data,dict):
+        issues.append('发布目录缺少可校验的 data.json')
+    else:
+        issues.extend(snapshot_issues(data,read_json(ROOT/'config/sources.json',[]),
+                                      read_json(ROOT/'config/visibility.json',{})))
     for path in dist.rglob('*'):
         if path.is_symlink():
             issues.append('发布目录存在符号链接')

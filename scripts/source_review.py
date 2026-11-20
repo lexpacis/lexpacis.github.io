@@ -49,6 +49,40 @@ def title_record(entry, source):
     return {**entry, 'evidence': entry.get('evidence') or '', 'evidence_basis': keep}
 
 
+_META_DATES = ('citation_publication_date','dc.date','dcterms.created','citation_date')
+# Labels that may travel with a date taken from something other than the record
+# itself. The public item shows the label next to the date, so a reader always
+# knows what the date refers to.
+DATE_NOTES = ('案件页最新文书日期','条约通过日期')
+
+
+def page_date(parse,markup,source_id):
+    """A date the source page states itself, never one inferred from context.
+
+    Court dockets publish no publication metadata; what exists is the date of
+    the latest document on the docket. That date is used and labelled, instead
+    of leaving the record undated or passing it off as a publication date.
+    """
+    for name in _META_DATES:
+        value=parse.meta.get(name,'')
+        if value:
+            parsed,precision=parse_date(value)
+            if parsed:return parsed,precision,''
+    match=re.search(r'"datePublished"\s*:\s*"([^"]{4,40})"',markup)
+    if match:
+        parsed,precision=parse_date(match[1])
+        if parsed:return parsed,precision,''
+    if source_id in ('icj-pending','itlos-docket'):
+        # Both dockets name each document as "<Order|Judgment> ... of <date>", and
+        # the ICJ also prints the date in its own heading, split over several lines.
+        values=re.findall(r'(?:Order|Judgment|Advisory Opinion|Decision|Sentence)\b[^.<]{0,80}?\bof\s+'
+                          r'(\d{1,2}\s+[A-Z][a-z]+\s+20\d{2})',markup)
+        if source_id=='icj-pending':
+            values+=re.findall(r'<h6[^>]*class="date"[^>]*>([^<]{5,90})</h6>',markup,re.I)
+        dates=[parsed for value in values if (parsed:=parse_date(' '.join(value.split()))[0])]
+        if dates:return max(dates),'day','案件页最新文书日期'
+    return None,None,''
+
 def review_exempt(source):
     """征稿启事是书目信息，不是新闻。
 
@@ -198,6 +232,14 @@ def inspect_html(entry, source, url, markup):
     basis = '原文正文核对'
     bibliography = dict(entry.get('bibliography',{}))
     authors=entry.get('authors',[])
+    if not date:
+        try:
+            found,found_precision,note=page_date(parse,markup,source_id)
+        except (TypeError,ValueError):
+            found=None
+        if found:
+            date,precision=found,found_precision
+            if note:bibliography['date_note']=note
     if source_id in _WIX_EVENTS:
         page_title=parse.meta.get('og:title','').split(' | ')[0] or entry['title']
     if source_id=='jsil-events':
@@ -212,6 +254,11 @@ def inspect_html(entry, source, url, markup):
         if not adopted or not page_title:
             return entry
         bibliography.update(type='treaty',adopted=adopted,publisher='African Union')
+        if not date:
+            # A treaty page states its adoption date; that is the date the record
+            # is about, so it is shown under that name.
+            date,precision=adopted,'day'
+            bibliography['date_note']='条约通过日期'
     if source.get('notice_kind')=='journal':
         page_title=entry['title']
     if source_id=='ilc-reports':

@@ -16,11 +16,14 @@ from publication_policy import regional_scope, restricted_content, strict_scope
 KINDS={'journal_special','journal_notice','conference'}
 
 def approved_targets():
+    """Journal submission pages are the only standing targets.
+
+    Calls are read from the bounded monitor state, never from a hand-kept seed
+    file: a second source of truth silently drifts out of date.
+    """
     journals=read_json(ROOT/'config/journals.json',[])
-    seeds=read_json(ROOT/'config/cfp-seeds.json',[])
     targets=[{'id':'journal:'+j['id'],'url':j['submissions_url'],'name':j['name'],'journal_id':j['id'],'kind':'journal'} for j in journals]
-    targets += [{'id':'call:'+s['id'],'url':s['url'],'name':s['original_title'],'journal_id':s.get('journal_id'),'kind':'call'} for s in seeds]
-    return journals,seeds,targets
+    return journals,targets
 
 def refresh(config,force=False,limit=60):
     rules = read_json(ROOT/'config/visibility.json',{})
@@ -29,7 +32,7 @@ def refresh(config,force=False,limit=60):
     if strict_scope(rules):
         print('[cfp] 公开版只提供期刊投稿入口，未发起公告监测。')
         return {'checked_this_run':0,'errors':0}
-    journals,seeds,targets=approved_targets()
+    journals,targets=approved_targets()
     if regional_scope(rules):
         targets=[target for target in targets if target['kind']=='journal']
     targets=[target for target in targets if urllib.parse.urlsplit(target['url']).scheme=='https']
@@ -121,7 +124,8 @@ def refresh(config,force=False,limit=60):
     log('cfp_refreshed',**report);print(json.dumps(report));return report
 
 def public_data(conn,main_items):
-    journals,seeds,targets=approved_targets()
+    journals,targets=approved_targets()
+    seeds=[]
     rules=read_json(ROOT/'config/visibility.json',{})
     state=read_json(ROOT/'runtime/cfp/state.json',{'pages':{}})
     journal_output=[]
@@ -197,7 +201,7 @@ def apply_updates(path):
     response=read_json(path)
     if not isinstance(response,dict) or set(response)!={'model','calls'} or not isinstance(response['calls'],list) or len(response['calls'])>12:
         raise ValueError('CFP 输出需包含 model、calls，最多 12 条')
-    journals,seeds,targets=approved_targets()
+    journals,targets=approved_targets()
     state=read_json(ROOT/'runtime/cfp/state.json',{'pages':{}})
     journal_ids={j['id'] for j in journals}
     accepted={c['id']:c for c in read_json(ROOT/'runtime/cfp/accepted-calls.json',[])}

@@ -41,10 +41,17 @@ def restore_snapshot(conn, snapshot, config, sources):
     for value in pipeline.publication_rules().get('accepted_policy_revisions',()):
         if isinstance(value,str) and re.fullmatch(r'[0-9a-f]{64}',value):
             accepted.add(value)
+    retired=0
     for item in snapshot.get('items',[]):
         source=by_source.get(item.get('source_id'))
-        if not source or not safe_url(item.get('url','')) or item.get('id')!=identity(item['url'],item.get('doi','')):
-            raise ValueError('公开快照含未登记来源、不安全链接或不匹配的 ID')
+        if not source:
+            # A source can be retired or renamed between releases. Its archived
+            # records leave the public index with it; otherwise one config edit
+            # would stop the whole pipeline instead of dropping that source.
+            retired+=1
+            continue
+        if not safe_url(item.get('url','')) or item.get('id')!=identity(item['url'],item.get('doi','')):
+            raise ValueError('公开快照含不安全链接或不匹配的 ID')
         entry={k:item.get(k) for k in ('title','url','doi','authors','published_at','date_precision','bibliography','evidence_basis')}
         entry['evidence']=''
         upsert_item(conn,entry,source,config)
@@ -58,6 +65,10 @@ def restore_snapshot(conn, snapshot, config, sources):
             if provenance.get('source_id') in by_source and safe_url(provenance.get('url','')) and provenance.get('seen_at'):
                 conn.execute('INSERT OR REPLACE INTO provenance VALUES(?,?,?,?)',
                              (item['id'],provenance['source_id'],provenance['url'],provenance['seen_at']))
+    if retired:
+        if retired==len(snapshot['items']):
+            raise ValueError('公开快照中的条目全部指向已停用的来源，请先核对 sources.json')
+        print(f'[restore] 已跳过 {retired} 条已停用来源的条目；如非有意退役，请核对 sources.json',flush=True)
     for source in snapshot.get('sources',[]):
         if source.get('id') not in by_source:continue
         failures=source.get('consecutive_failures',0)
@@ -107,7 +118,7 @@ def retain_translations(conn,snapshot,config,sources):
 
 def restore_monitors(snapshot):
     from cfp import approved_targets
-    journals,seeds,targets=approved_targets();approved={t['id']:t for t in targets}
+    journals,targets=approved_targets();approved={t['id']:t for t in targets}
     pages={}
     public=snapshot.get('cfp',{})
     for row in public.get('journals',[]):
@@ -151,7 +162,7 @@ def run(offline=False):
                 from cfp import refresh
                 stats=pipeline.collect(conn,config,sources)
                 if not strict: refresh(config,limit=40)
-            if not managed_scope(rules): retain_translations(conn,snapshot,config,sources)
+            if not strict_scope(rules): retain_translations(conn,snapshot,config,sources)
             previous=snapshot.get('operations',{})
             last=previous.get('last_effective_run') or previous.get('last_run')
             if not last or not (last.get('successes') or last.get('failures')):last=None

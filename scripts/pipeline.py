@@ -17,7 +17,7 @@ import webbrowser
 from core import ROOT, UTC, atomic_write, database, fingerprint, http_fetch, identity, log, now, parse_crossref, parse_date, parse_feed, parse_listing, plain, read_json, run_lock, safe_url, upsert_item, write_json
 from publication_policy import (SCOPE_REVISION, eligible_metadata, managed_scope, original_publisher,
                                 regional_item, regional_scope, restricted_content, source_paused, strict_scope)
-from source_review import clean_review, verify_entries
+from source_review import DATE_NOTES, clean_review, verify_entries
 from notice_dates import item_notices
 
 def configuration():
@@ -314,12 +314,14 @@ def public_data(conn,config,sources):
     rows=conn.execute('''SELECT items.*, publication_reviews.policy_revision AS reviewed_policy
         FROM items LEFT JOIN publication_reviews ON publication_reviews.item_id=items.id AND
         publication_reviews.content_hash=items.content_hash
-        ORDER BY COALESCE(published_at,discovered_at) DESC''').fetchall()
+        ORDER BY (published_at IS NULL), COALESCE(published_at,discovered_at) DESC''').fetchall()
     for row in rows:
         if not visible(row,sources,rules,row['reviewed_policy']==SCOPE_REVISION): continue
         item={k:row[k] for k in ('id','source_id','title','url','doi','module','published_at','date_precision','discovered_at','updated_at','evidence_basis')}
         item['source_revision']=row['content_hash']
         item.update(topics=json.loads(row['topics']),authors=json.loads(row['authors']),bibliography=json.loads(row['bibliography']))
+        note=item['bibliography'].get('date_note') if isinstance(item['bibliography'],dict) else ''
+        if note in DATE_NOTES: item['date_note']=note
         item['material_type']={'wto':'官方新闻','icj':'官方新闻稿索引','icj-pending':'国际法院待审案件页',
                                'itlos-docket':'海洋法法庭案件页','ilc-reports':'国际法委员会年度报告目录',
                                'afchpr-cases':'非洲人权和民族权法院案件公告','echr-press':'欧洲人权法院新闻稿',
@@ -340,11 +342,16 @@ def public_data(conn,config,sources):
         item.update(title_zh='',summary_zh='',ai=None,event=None,deadline=None)
         if regional:
             item['event'],item['deadline']=item_notices(item)
-        if enrichment and not managed_scope(rules):
+        if enrichment:
             enriched=json.loads(enrichment['payload'])
-            if restricted_content(enriched,rules): continue
-            item.update({key:enriched.get(key) for key in ('title_zh','summary_zh','module','topics','event','deadline')})
-            item['ai']={'model':enrichment['model'],'processed_at':enrichment['created_at'],'basis':row['evidence_basis']}
+            # The Chinese rendering travels with the record in both publication
+            # scopes; the item-level screen below covers it like the source text.
+            item.update({key:enriched.get(key) for key in ('title_zh','summary_zh')
+                         if isinstance(enriched.get(key),str)})
+            if not managed_scope(rules):
+                if restricted_content(enriched,rules): continue
+                item.update({key:enriched.get(key) for key in ('module','topics','event','deadline')})
+                item['ai']={'model':enrichment['model'],'processed_at':enrichment['created_at'],'basis':row['evidence_basis']}
         if item['module'] not in rules.get('paused_modules',[]) and (original or not restricted_content(item,rules)):
             if managed_scope(rules): item['screened_policy']=SCOPE_REVISION
             items.append(item)

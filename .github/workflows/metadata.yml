@@ -46,6 +46,11 @@ jobs:
       - name: Collect and build without any model
         run: python3 scripts/cloud.py run
       - name: Preserve only public metadata for the next run
+        # The snapshot commit can fail on its own (protected branch, token scope,
+        # a concurrent push). The build is already validated at this point, so a
+        # failed commit must not block the deploy: the next run simply restores
+        # the previous snapshot and collects again.
+        continue-on-error: true
         run: python3 scripts/cloud.py commit
         env:
           GITHUB_TOKEN: ${{ github.token }}

@@ -6,6 +6,8 @@ import html
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
+from core import plain
+
 
 APPROVED_JOURNALS = {
     'crossref-ejil': '0938-5428',
@@ -139,6 +141,10 @@ def regional_item(item, source, rules, reviewed):
         if source.get('notice_kind')!='journal' or not source.get('journal_id') or not item_notices(item)[1]:
             return False
     fields=[item['title'],item['url'],item.get('doi'),item['authors'],item['bibliography']]
+    # A Chinese rendering is published next to the original title, so it is
+    # screened exactly like the source text: a translation cannot introduce
+    # wording that the original-language rule would have held back.
+    fields.extend(value for value in (item.get('title_zh'),item.get('summary_zh')) if value)
     # Call-for-papers pages are bibliographic notices: their body lists editors
     # and their institutions, which says nothing about the topic of the call.
     # Titles, links and structured fields stay screened (see source_review).
@@ -203,7 +209,7 @@ def regional_snapshot_issues(data, sources, rules):
         source=registries.get(item['source_id'])
         if (not source or item.get('screened_policy')!=SCOPE_REVISION or not regional_item(item,source,rules,True)
             or item['id'] in rules.get('hidden_items',()) or 'evidence' in item
-            or any(item.get(key) for key in ('title_zh','summary_zh','ai'))
+            or item.get('ai') or not translation_ok(item)
             or (item.get('event'),item.get('deadline'))!=item_notices(item)):
             return ['公开快照含未通过来源核验的条目']
         items[item['id']]=item
@@ -223,6 +229,21 @@ def regional_snapshot_issues(data, sources, rules):
         elif call.get('deadline') or call.get('kind')!='discovery':
             return ['公开快照含未经核验的征稿公告']
     return []
+
+
+def translation_ok(item):
+    """A Chinese rendering is a rendering: plain text, bounded, never a rewrite.
+
+    The translated title and summary are published beside the original record,
+    so they carry the same limits as the enrichment handoff and no markup.
+    """
+    for key,limit in (('title_zh',240),('summary_zh',600)):
+        value=item.get(key)
+        if value is None:
+            continue
+        if not isinstance(value,str) or len(value)>limit or plain(value)!=value.strip():
+            return False
+    return True
 
 
 def source_paused(source, rules):

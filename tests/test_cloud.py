@@ -109,5 +109,20 @@ class CloudTests(unittest.TestCase):
         try:
             with self.assertRaises(ValueError):cloud.restore_snapshot(conn,self.snapshot,self.config,self.sources)
         finally:conn.close()
+    def test_retired_source_drops_its_records_without_stopping_the_run(self):
+        other={**self.snapshot['items'][0],'id':core.identity('https://esil-sedi.eu/second-fixture'),
+               'url':'https://esil-sedi.eu/second-fixture','title_zh':''}
+        self.snapshot['items'].append(other)
+        self.snapshot['items'][0]['source_id']='retired-source'
+        conn=core.database(self.root)
+        try:
+            cloud.restore_snapshot(conn,self.snapshot,self.config,self.sources)
+            self.assertEqual(conn.execute('SELECT COUNT(*) FROM items').fetchone()[0],1)
+        finally:conn.close()
+    def test_audit_reports_a_missing_release_instead_of_crashing(self):
+        empty=self.root/'empty-root';empty.mkdir()
+        with patch.object(security_audit,'ROOT',empty):
+            report=security_audit.audit()
+        self.assertIn('发布目录缺少可校验的 data.json',report['issues'])
 
 if __name__=='__main__':unittest.main()

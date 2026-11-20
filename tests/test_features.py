@@ -365,5 +365,64 @@ class FeatureWorkflowTests(unittest.TestCase):
         self.assertEqual(len(public['journals']),41)
         self.assertEqual(sum(j['language'] in ('zh','bilingual') for j in public['journals']),14)
         self.assertTrue(all(j.get('submissions_url') for j in public['journals']))
+    def test_chinese_rendering_publishes_beside_the_original(self):
+        from publication_policy import snapshot_issues
+        _,sources=pipeline.configuration();rules=pipeline.publication_rules()
+        source=next(s for s in sources if s['id']=='wto')
+        url='https://www.wto.org/english/news_e/news26_e/report_e.htm'
+        core.upsert_item(self.conn,{'title':'Panel report on technical barriers to trade','url':url,
+                                    'evidence':'','evidence_basis':'官方目录标题','authors':[]},source,self.config)
+        key=core.identity(url)
+        revision=self.conn.execute('SELECT content_hash FROM items WHERE id=?',(key,)).fetchone()[0]
+        payload={'id':key,'content_hash':revision,'title_zh':'技术性贸易壁垒专家组报告','summary_zh':'',
+                 'topics':['economic'],'module':'official','evidence_quotes':[],'event':None,'deadline':None}
+        self.conn.execute('INSERT OR REPLACE INTO enrichments VALUES(?,?,?,?,?)',
+                          (key,revision,json.dumps(payload,ensure_ascii=False),'fixture',core.now()))
+        self.conn.commit()
+        release=pipeline.build(self.conn,self.config,sources)
+        self.assertEqual([i['title_zh'] for i in release['items']],['技术性贸易壁垒专家组报告'])
+        page=(self.root/'dist/items'/(key+'.html')).read_text(encoding='utf-8')
+        self.assertIn('技术性贸易壁垒专家组报告',page)
+        self.assertIn('Panel report on technical barriers to trade',page)
+        self.assertFalse(snapshot_issues(release,sources,rules))
+        # A translation is screened like the source text: it cannot carry wording
+        # that the original-language rule would have held back.
+        payload['title_zh']='关于中国稀土出口管制的专家组报告'
+        self.conn.execute('UPDATE enrichments SET payload=? WHERE item_id=?',(json.dumps(payload,ensure_ascii=False),key))
+        self.conn.commit()
+        self.assertEqual(pipeline.build(self.conn,self.config,sources)['items'],[])
+    def test_dated_records_sort_before_undated_ones(self):
+        _,sources=pipeline.configuration()
+        source=next(s for s in sources if s['id']=='wto')
+        for title,url,published,precision in (
+            ('Undated notice','https://www.wto.org/english/news_e/news26_e/undated_e.htm',None,'unknown'),
+            ('Dated report','https://www.wto.org/english/news_e/news20_e/dated_e.htm','2020-01-02','day')):
+            core.upsert_item(self.conn,{'title':title,'url':url,'published_at':published,
+                                        'date_precision':precision,'evidence':'','evidence_basis':'官方目录标题',
+                                        'authors':[]},source,self.config)
+        self.conn.commit()
+        rows=pipeline.public_data(self.conn,self.config,sources)['items']
+        self.assertEqual([row['title'] for row in rows],['Dated report','Undated notice'])
+    def test_case_page_date_is_taken_from_the_docket_and_labelled(self):
+        from source_review import inspect_html
+        _,sources=pipeline.configuration()
+        body='The case concerns a dispute between two states over the interpretation of a treaty. '*3
+        icj=next(s for s in sources if s['id']=='icj-pending')
+        icj_url='https://www.icj-cij.org/case/999'
+        icj_markup=('<div id="block-icj-content"><h1>Application of a convention</h1><article>'+body+'</article>'
+                    '<h6 class="date">\n  12 \n  November \n  2024\n</h6>'
+                    '<h6 class="date">17 December 2025</h6></div>')
+        entry={'url':icj_url,'title':'Application of a convention','evidence':'','evidence_basis':'官方案件目录'}
+        result=inspect_html(entry,icj,icj_url,icj_markup)
+        self.assertEqual(result['published_at'],'2025-12-17')
+        self.assertEqual(result['bibliography']['date_note'],'案件页最新文书日期')
+        itlos=next(s for s in sources if s['id']=='itlos-docket')
+        itlos_url='https://www.itlos.org/en/main/cases/list-of-cases/case-concerning-a-dispute/'
+        itlos_markup=('<div class="fs-content-container"><h1>Case concerning a dispute</h1><article>'+body+'</article>'
+                      '<p>Order 2026/6 of 24 June 2026</p><p>Order 2026/8 of 4 August 2026</p>'
+                      '<p>A hearing will open on 2 July 2026</p></div>')
+        result=inspect_html({**entry,'url':itlos_url},itlos,itlos_url,itlos_markup)
+        self.assertEqual(result['published_at'],'2026-08-04')
+        self.assertEqual(result['bibliography']['date_note'],'案件页最新文书日期')
 
 if __name__=='__main__':unittest.main()

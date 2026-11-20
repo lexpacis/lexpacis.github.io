@@ -634,24 +634,6 @@
     "language": "en"
   },
   {
-    "id": "ilc",
-    "name": "联合国国际法委员会 ILC",
-    "organization": "United Nations",
-    "url": "https://legal.un.org/ilc/",
-    "homepage": "https://legal.un.org/ilc/",
-    "kind": "html",
-    "enabled": false,
-    "module": "official",
-    "authority": "official_institution",
-    "poll_hours": 24,
-    "topics": [
-      "institutions"
-    ],
-    "scope": "待开发专用文号与报告解析器；当前仅收录导航",
-    "reuse": "metadata_only",
-    "language": "en"
-  },
-  {
     "id": "itlos",
     "name": "国际海洋法法庭 ITLOS · 新闻稿",
     "organization": "International Tribunal for the Law of the Sea",
