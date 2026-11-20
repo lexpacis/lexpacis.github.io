@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-20T07:01:05+00:00",
+  "generated_at": "2026-11-20T08:35:13+00:00",
   "site": {
     "name": "法域前沿",
     "english_name": "Lexpacis",
@@ -719,6 +719,39 @@
       "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
     },
     {
+      "id": "dbd3d55f508025dd30a8",
+      "source_id": "ejiltalk",
+      "title": "Gambia v. Myanmar: The Bottom Line",
+      "url": "https://www.ejiltalk.org/gambia-v-myanmar-the-bottom-line/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-11-19T12:38:20+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-20T08:35:13+00:00",
+      "updated_at": "2026-11-20T08:35:13+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "f4dfa5855a223868e9b51f9f985e2f8bcea6a6d7b7793f908ef9e1de841622ee",
+      "topics": [],
+      "authors": [
+        "Marko Milanovic"
+      ],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "ejiltalk",
+          "url": "https://www.ejiltalk.org/gambia-v-myanmar-the-bottom-line/",
+          "seen_at": "2026-11-20T08:35:13+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
+    },
+    {
       "id": "5feb07f9b0f36418adf8",
       "source_id": "un-news-global",
       "title": "World’s top court finds Myanmar guilty of genocide against Rohingya",
@@ -774,7 +807,7 @@
         {
           "source_id": "ejiltalk",
           "url": "https://www.ejiltalk.org/the-channel-interpol-has-chosen-not-to-watch/",
-          "seen_at": "2026-11-19T10:59:12+00:00"
+          "seen_at": "2026-11-20T08:35:13+00:00"
         }
       ],
       "title_zh": "",
@@ -2166,7 +2199,7 @@
         {
           "source_id": "ejiltalk",
           "url": "https://www.ejiltalk.org/electing-the-fourth-icc-prosecutor-preliminary-observations-on-the-process/",
-          "seen_at": "2026-11-19T10:59:12+00:00"
+          "seen_at": "2026-11-20T08:35:13+00:00"
         }
       ],
       "title_zh": "",
@@ -3032,7 +3065,7 @@
         {
           "source_id": "ejiltalk",
           "url": "https://www.ejiltalk.org/pre-trial-chamber-ii-of-the-icc-closes-or-attempts-to-close-the-afghanistan-investigation/",
-          "seen_at": "2026-11-19T10:59:12+00:00"
+          "seen_at": "2026-11-20T08:35:13+00:00"
         }
       ],
       "title_zh": "",
@@ -3467,7 +3500,7 @@
         {
           "source_id": "ejiltalk",
           "url": "https://www.ejiltalk.org/two-weeks-in-review-2-13-november-2026/",
-          "seen_at": "2026-11-19T10:59:12+00:00"
+          "seen_at": "2026-11-20T08:35:13+00:00"
         }
       ],
       "title_zh": "",
@@ -3500,7 +3533,7 @@
         {
           "source_id": "ejiltalk",
           "url": "https://www.ejiltalk.org/announcements-cfp-polar-law-symposium-cfs-international-water-law-cfp-anzsil-annual-conference-cfa-vox-legis-cfp-informal-international-law-and-foreign-relations-law/",
-          "seen_at": "2026-11-18T20:03:04+00:00"
+          "seen_at": "2026-11-20T08:35:13+00:00"
         }
       ],
       "title_zh": "",
@@ -3877,7 +3910,7 @@
         {
           "source_id": "ejiltalk",
           "url": "https://www.ejiltalk.org/splitting-the-iccs-afghanistan-investigation-judicial-oversight-or-overreach/",
-          "seen_at": "2026-11-18T20:03:04+00:00"
+          "seen_at": "2026-11-20T08:35:13+00:00"
         }
       ],
       "title_zh": "",
@@ -4429,7 +4462,7 @@
         {
           "source_id": "ejiltalk",
           "url": "https://www.ejiltalk.org/fair-share-obligations-in-climate-change-litigation-towards-a-global-carbon-approach/",
-          "seen_at": "2026-11-18T20:03:04+00:00"
+          "seen_at": "2026-11-20T08:35:13+00:00"
         }
       ],
       "title_zh": "",
@@ -4619,7 +4652,7 @@
         {
           "source_id": "ejiltalk",
           "url": "https://www.ejiltalk.org/generating-the-new-world-a-critical-perspective-on-ejils-policy-on-gen-ai-use/",
-          "seen_at": "2026-11-19T10:59:12+00:00"
+          "seen_at": "2026-11-20T08:35:13+00:00"
         }
       ],
       "title_zh": "",
@@ -28313,17 +28346,29 @@
       "scope": "RSS 最新条目，订阅解析失败时读取同站官方首页，原文逐条核验",
       "language": "en",
       "review": {
-        "cursor": "689699f5b1547fd831d9",
-        "failure": "parse_failed"
+        "candidates": 10,
+        "checked": 6,
+        "verified": 6,
+        "china_hold": 1,
+        "origin_hold": 0,
+        "body_hold": 0,
+        "access_hold": 0,
+        "unsupported_hold": 0,
+        "pdf_hold": 0,
+        "title_fallback": 3,
+        "pending": 3,
+        "directory_count": 10,
+        "first_http_status": 0,
+        "cursor": "086c55a646ebff56cfd6"
       },
       "feed_url": "https://www.ejiltalk.org/feed/",
-      "status": "error",
-      "attempted_at": "2026-11-20T06:45:02+00:00",
-      "success_at": "2026-11-19T10:59:12+00:00",
-      "error": "信源暂未成功读取或解析。",
-      "consecutive_failures": 2,
-      "item_count": 9,
-      "next_attempt_at": "2026-11-20T07:15:02+00:00"
+      "status": "ok",
+      "attempted_at": "2026-11-20T08:35:13+00:00",
+      "success_at": "2026-11-20T08:35:13+00:00",
+      "error": null,
+      "consecutive_failures": 0,
+      "item_count": 10,
+      "next_attempt_at": null
     },
     {
       "id": "opiniojuris",
@@ -31095,32 +31140,32 @@
         "topics": []
       }
     ],
-    "updated_at": "2026-11-20T07:01:04+00:00",
+    "updated_at": "2026-11-20T08:35:13+00:00",
     "coverage_note": "常设投稿目录与正式征稿分别展示。程序逐条核对已接通信源的正式公告，无法确认的日期不会填入截止日。"
   },
   "operations": {
     "last_run": {
       "id": 1,
-      "started_at": "2026-11-20T07:01:04+00:00",
-      "finished_at": "2026-11-20T07:01:04+00:00",
-      "successes": 0,
+      "started_at": "2026-11-20T08:35:06+00:00",
+      "finished_at": "2026-11-20T08:35:13+00:00",
+      "successes": 1,
       "failures": 0,
-      "added": 0,
+      "added": 2,
       "changed": 0
     },
     "scheduler_enabled": true,
     "scheduled_run_verified": true,
     "last_effective_run": {
       "id": 1,
-      "started_at": "2026-11-20T06:44:43+00:00",
-      "finished_at": "2026-11-20T06:46:21+00:00",
-      "successes": 18,
-      "failures": 2,
-      "added": 47,
-      "changed": 21
+      "started_at": "2026-11-20T08:35:06+00:00",
+      "finished_at": "2026-11-20T08:35:13+00:00",
+      "successes": 1,
+      "failures": 0,
+      "added": 2,
+      "changed": 0
     },
-    "scheduler_note": "最近一次云端运行：2026-11-20T07:01:04+00:00；触发方式：push。信源成功时间单独显示。",
-    "total_archived": 729,
-    "visible_in_export": 729
+    "scheduler_note": "最近一次云端运行：2026-11-20T08:35:13+00:00；触发方式：schedule。信源成功时间单独显示。",
+    "total_archived": 730,
+    "visible_in_export": 730
   }
 }
