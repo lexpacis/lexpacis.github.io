@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-22T17:54:20+00:00",
+  "generated_at": "2026-11-23T09:11:07+00:00",
   "site": {
     "name": "法域前沿",
     "english_name": "Lexpacis",
@@ -339,7 +339,135 @@
         {
           "source_id": "itlos",
           "url": "https://www.itlos.org/fileadmin/itlos/documents/press_releases_english/PR_404_en.pdf",
-          "seen_at": "2026-11-22T08:02:43+00:00"
+          "seen_at": "2026-11-23T09:10:31+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
+    },
+    {
+      "id": "607d3072076b0db72dee",
+      "source_id": "voelkerrechtsblog",
+      "title": "Special Tribunal for Ukraine",
+      "url": "https://voelkerrechtsblog.org/symposium/special-tribunal-for-ukraine/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-11-23",
+      "date_precision": "day",
+      "discovered_at": "2026-11-23T09:09:41+00:00",
+      "updated_at": "2026-11-23T09:09:41+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "12ae3672bf8b41e9e25872827f3d7c40dc366728c4cd8f8aa520c7a5710a8e5d",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "voelkerrechtsblog",
+          "url": "https://voelkerrechtsblog.org/symposium/special-tribunal-for-ukraine/",
+          "seen_at": "2026-11-23T09:09:41+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
+    },
+    {
+      "id": "8d370f8f833b38a41909",
+      "source_id": "pca",
+      "title": "Séminaire consacré à « La langue et la tradition juridique françaises dans les procédures administrées par la Cour permanente d’arbitrage",
+      "url": "https://pca-cpa.org/en/news/seminaire-consacre-a-la-langue-et-la-tradition-juridique-francaises-dans-les-procedures-administrees-par-la-cour-permanente-darbitrage/",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-11-23",
+      "date_precision": "day",
+      "discovered_at": "2026-11-23T09:10:24+00:00",
+      "updated_at": "2026-11-23T09:10:24+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "26c08dc42bbba86bb3453516f2a91129b8b784e978264fee7a1d1279da63a139",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "机构公告索引",
+      "provenance": [
+        {
+          "source_id": "pca",
+          "url": "https://pca-cpa.org/en/news/seminaire-consacre-a-la-langue-et-la-tradition-juridique-francaises-dans-les-procedures-administrees-par-la-cour-permanente-darbitrage/",
+          "seen_at": "2026-11-23T09:10:24+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
+    },
+    {
+      "id": "d01408cbe2d5973a89a0",
+      "source_id": "un-news-global",
+      "title": "‘I had a better life in Iran’: Afghan women forced home struggle to rebuild",
+      "url": "https://news.un.org/en/story/2026/11/1168852",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-11-22T15:00:00+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-23T09:10:57+00:00",
+      "updated_at": "2026-11-23T09:10:57+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "8f0e22e37a8bbc6dcb76c8b2343ac0eca1d29d806f470b49cd84a04654cf2e35",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方机构新闻报道",
+      "provenance": [
+        {
+          "source_id": "un-news-global",
+          "url": "https://news.un.org/en/story/2026/11/1168852",
+          "seen_at": "2026-11-23T09:10:57+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
+    },
+    {
+      "id": "db6e313965d0720ed45b",
+      "source_id": "un-news-global",
+      "title": "COP31 ends without climate pact as UN chief warns there is ‘no ambiguity in the science’",
+      "url": "https://news.un.org/en/story/2026/11/1168855",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-11-22T12:00:00+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-23T09:10:57+00:00",
+      "updated_at": "2026-11-23T09:10:57+00:00",
+      "evidence_basis": "RSS 标题",
+      "source_revision": "c16542b04cebd5d7be439b01546f8c8360d9d21d8c1efda39f00584790bb1d34",
+      "topics": [
+        "ocean-climate"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方机构新闻报道",
+      "provenance": [
+        {
+          "source_id": "un-news-global",
+          "url": "https://news.un.org/en/story/2026/11/1168855",
+          "seen_at": "2026-11-23T09:10:57+00:00"
         }
       ],
       "title_zh": "",
@@ -403,7 +531,7 @@
         {
           "source_id": "un-news-global",
           "url": "https://news.un.org/en/story/2026/11/1168851",
-          "seen_at": "2026-11-22T08:03:08+00:00"
+          "seen_at": "2026-11-23T09:10:57+00:00"
         }
       ],
       "title_zh": "",
@@ -484,7 +612,7 @@
         {
           "source_id": "un-news-global",
           "url": "https://news.un.org/en/story/2026/11/1168834",
-          "seen_at": "2026-11-22T08:03:08+00:00"
+          "seen_at": "2026-11-23T09:10:57+00:00"
         }
       ],
       "title_zh": "",
@@ -552,7 +680,7 @@
         {
           "source_id": "opiniojuris",
           "url": "https://opiniojuris.org/2026/11/21/the-relationship-between-ihl-and-genocide-in-the-gambia-v-myanmar-case/",
-          "seen_at": "2026-11-22T17:51:50+00:00"
+          "seen_at": "2026-11-23T09:09:25+00:00"
         }
       ],
       "title_zh": "",
@@ -585,7 +713,7 @@
         {
           "source_id": "un-news-global",
           "url": "https://news.un.org/en/story/2026/11/1168853",
-          "seen_at": "2026-11-22T08:03:08+00:00"
+          "seen_at": "2026-11-23T09:10:57+00:00"
         }
       ],
       "title_zh": "",
@@ -629,6 +757,68 @@
       "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
     },
     {
+      "id": "27dd172849bcd7a1ae65",
+      "source_id": "un-news-global",
+      "title": "West Bank: Record settler attacks mar olive harvest as UN urges Israel to protect farmers",
+      "url": "https://news.un.org/en/story/2026/11/1168849",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-11-20T17:41:50+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-21T08:22:19+00:00",
+      "updated_at": "2026-11-23T09:10:57+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "3d014459673158bd7918b56b6c538929da9828d1ebc18227bb2241c2211fd75d",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方机构新闻报道",
+      "provenance": [
+        {
+          "source_id": "un-news-global",
+          "url": "https://news.un.org/en/story/2026/11/1168849",
+          "seen_at": "2026-11-23T09:10:57+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
+    },
+    {
+      "id": "115e098c87895987a09d",
+      "source_id": "un-news-global",
+      "title": "Shattered playgrounds and freezing classrooms: Inside Ukraine’s deadliest year for children",
+      "url": "https://news.un.org/en/story/2026/11/1168847",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-11-20T14:50:17+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-21T08:22:19+00:00",
+      "updated_at": "2026-11-23T09:10:57+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "e0ebd883cae66218e81c2e7ca55c747f868016f85580ad55b9ef5a13662cc2ae",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方机构新闻报道",
+      "provenance": [
+        {
+          "source_id": "un-news-global",
+          "url": "https://news.un.org/en/story/2026/11/1168847",
+          "seen_at": "2026-11-23T09:10:57+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
+    },
+    {
       "id": "96a53e0abcce3f9f7792",
       "source_id": "esil",
       "title": "Brill | Nijhoff | Complimentary access to Human Rights Documents Online",
@@ -653,7 +843,102 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/brill-nijhoff-human-rights-documents-online/",
-          "seen_at": "2026-11-22T08:01:52+00:00"
+          "seen_at": "2026-11-23T09:09:50+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
+    },
+    {
+      "id": "f4f8a6f54e4d9b1ef313",
+      "source_id": "un-news-global",
+      "title": "WFP plans to assist 91 million in 2027 as hunger crisis deepens",
+      "url": "https://news.un.org/en/story/2026/11/1168846",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-11-20T14:17:32+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-21T08:22:19+00:00",
+      "updated_at": "2026-11-23T09:10:57+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "f0b9d27e3ef5ec8096173b0de76bb04ab22413789492f257ec5364c45b29d58e",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方机构新闻报道",
+      "provenance": [
+        {
+          "source_id": "un-news-global",
+          "url": "https://news.un.org/en/story/2026/11/1168846",
+          "seen_at": "2026-11-23T09:10:57+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
+    },
+    {
+      "id": "9ba6fa7643be8164d5ee",
+      "source_id": "un-news-global",
+      "title": "COP31: Countries demand stronger climate deal amid deadlock in Antalya",
+      "url": "https://news.un.org/en/story/2026/11/1168845",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-11-20T14:06:50+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-21T08:22:19+00:00",
+      "updated_at": "2026-11-23T09:10:57+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "509d4b5602815d2bbada0b10fdfa3488e92f1eaadb49ed85dbf290473b77c56c",
+      "topics": [
+        "ocean-climate"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方机构新闻报道",
+      "provenance": [
+        {
+          "source_id": "un-news-global",
+          "url": "https://news.un.org/en/story/2026/11/1168845",
+          "seen_at": "2026-11-23T09:10:57+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
+    },
+    {
+      "id": "2cc055250327a2ca019a",
+      "source_id": "un-news-global",
+      "title": "Afghanistan restrictions prevent pregnant women from seeking medical help",
+      "url": "https://news.un.org/en/story/2026/11/1168844",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-11-20T13:27:40+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-21T08:22:19+00:00",
+      "updated_at": "2026-11-23T09:10:57+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "abecd533209d56b8fcc3ac5c104afcdce0cfbf1abc8b3a5d82ee374b022f8892",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方机构新闻报道",
+      "provenance": [
+        {
+          "source_id": "un-news-global",
+          "url": "https://news.un.org/en/story/2026/11/1168844",
+          "seen_at": "2026-11-23T09:10:57+00:00"
         }
       ],
       "title_zh": "",
@@ -686,7 +971,7 @@
         {
           "source_id": "opiniojuris",
           "url": "https://opiniojuris.org/2026/11/20/reparation-without-recognition-denmark-the-spiral-case-and-the-limits-of-a-compensation-scheme/",
-          "seen_at": "2026-11-22T17:51:50+00:00"
+          "seen_at": "2026-11-23T09:09:25+00:00"
         }
       ],
       "title_zh": "",
@@ -697,18 +982,18 @@
       "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
     },
     {
-      "id": "27dd172849bcd7a1ae65",
+      "id": "233cb28091510a95818e",
       "source_id": "un-news-global",
-      "title": "West Bank: Record settler attacks mar olive harvest as UN urges Israel to protect farmers",
-      "url": "https://news.un.org/en/story/2026/11/1168849",
+      "title": "Bridgetown AI summit to tackle safety as risks outpace capacity to respond",
+      "url": "https://news.un.org/en/story/2026/11/1168854",
       "doi": "",
       "module": "news",
       "published_at": "2026-11-20T12:00:00+00:00",
       "date_precision": "instant",
-      "discovered_at": "2026-11-21T08:22:19+00:00",
-      "updated_at": "2026-11-21T08:22:19+00:00",
+      "discovered_at": "2026-11-23T09:10:57+00:00",
+      "updated_at": "2026-11-23T09:10:57+00:00",
       "evidence_basis": "RSS 标题",
-      "source_revision": "b971bce146ed6f23766a703650ee4792e1b8ca1b0d3b46e58d6d053352fec5fd",
+      "source_revision": "ffc114f70f0a573ac2431db706a7da6568503e3d01f6c3bdd9eb11fc41e1f80c",
       "topics": [],
       "authors": [],
       "bibliography": {},
@@ -716,134 +1001,8 @@
       "provenance": [
         {
           "source_id": "un-news-global",
-          "url": "https://news.un.org/en/story/2026/11/1168849",
-          "seen_at": "2026-11-22T08:03:08+00:00"
-        }
-      ],
-      "title_zh": "",
-      "summary_zh": "",
-      "ai": null,
-      "event": null,
-      "deadline": null,
-      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
-    },
-    {
-      "id": "115e098c87895987a09d",
-      "source_id": "un-news-global",
-      "title": "Shattered playgrounds and freezing classrooms: Inside Ukraine’s deadliest year for children",
-      "url": "https://news.un.org/en/story/2026/11/1168847",
-      "doi": "",
-      "module": "news",
-      "published_at": "2026-11-20T12:00:00+00:00",
-      "date_precision": "instant",
-      "discovered_at": "2026-11-21T08:22:19+00:00",
-      "updated_at": "2026-11-21T08:22:19+00:00",
-      "evidence_basis": "RSS 标题",
-      "source_revision": "d7a9a25f228bff38e3acf42687148c232ec3db70b10f6f62a3111d5f4f173a7e",
-      "topics": [],
-      "authors": [],
-      "bibliography": {},
-      "material_type": "官方机构新闻报道",
-      "provenance": [
-        {
-          "source_id": "un-news-global",
-          "url": "https://news.un.org/en/story/2026/11/1168847",
-          "seen_at": "2026-11-22T08:03:08+00:00"
-        }
-      ],
-      "title_zh": "",
-      "summary_zh": "",
-      "ai": null,
-      "event": null,
-      "deadline": null,
-      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
-    },
-    {
-      "id": "f4f8a6f54e4d9b1ef313",
-      "source_id": "un-news-global",
-      "title": "WFP plans to assist 91 million in 2027 as hunger crisis deepens",
-      "url": "https://news.un.org/en/story/2026/11/1168846",
-      "doi": "",
-      "module": "news",
-      "published_at": "2026-11-20T12:00:00+00:00",
-      "date_precision": "instant",
-      "discovered_at": "2026-11-21T08:22:19+00:00",
-      "updated_at": "2026-11-21T08:22:19+00:00",
-      "evidence_basis": "RSS 标题",
-      "source_revision": "e1f2f2c30304f46fd50017dc950fb5778d9347e94554269cf2e315e0a255d731",
-      "topics": [],
-      "authors": [],
-      "bibliography": {},
-      "material_type": "官方机构新闻报道",
-      "provenance": [
-        {
-          "source_id": "un-news-global",
-          "url": "https://news.un.org/en/story/2026/11/1168846",
-          "seen_at": "2026-11-22T08:03:08+00:00"
-        }
-      ],
-      "title_zh": "",
-      "summary_zh": "",
-      "ai": null,
-      "event": null,
-      "deadline": null,
-      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
-    },
-    {
-      "id": "2cc055250327a2ca019a",
-      "source_id": "un-news-global",
-      "title": "Afghanistan restrictions prevent pregnant women from seeking medical help",
-      "url": "https://news.un.org/en/story/2026/11/1168844",
-      "doi": "",
-      "module": "news",
-      "published_at": "2026-11-20T12:00:00+00:00",
-      "date_precision": "instant",
-      "discovered_at": "2026-11-21T08:22:19+00:00",
-      "updated_at": "2026-11-21T08:22:19+00:00",
-      "evidence_basis": "RSS 标题",
-      "source_revision": "e0d3ae5aaaaad7bfa065459875a501be9fbdbea26f3a0bc6b154cc8f31a0196c",
-      "topics": [],
-      "authors": [],
-      "bibliography": {},
-      "material_type": "官方机构新闻报道",
-      "provenance": [
-        {
-          "source_id": "un-news-global",
-          "url": "https://news.un.org/en/story/2026/11/1168844",
-          "seen_at": "2026-11-22T08:03:08+00:00"
-        }
-      ],
-      "title_zh": "",
-      "summary_zh": "",
-      "ai": null,
-      "event": null,
-      "deadline": null,
-      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
-    },
-    {
-      "id": "9ba6fa7643be8164d5ee",
-      "source_id": "un-news-global",
-      "title": "COP31: Countries demand stronger climate deal amid deadlock in Antalya",
-      "url": "https://news.un.org/en/story/2026/11/1168845",
-      "doi": "",
-      "module": "news",
-      "published_at": "2026-11-20T12:00:00+00:00",
-      "date_precision": "instant",
-      "discovered_at": "2026-11-21T08:22:19+00:00",
-      "updated_at": "2026-11-22T08:03:08+00:00",
-      "evidence_basis": "RSS 标题",
-      "source_revision": "b9afc33a5ee64e69c23b6d64051f7a83f9bc1a44d94eced44febfe24a5477e18",
-      "topics": [
-        "ocean-climate"
-      ],
-      "authors": [],
-      "bibliography": {},
-      "material_type": "官方机构新闻报道",
-      "provenance": [
-        {
-          "source_id": "un-news-global",
-          "url": "https://news.un.org/en/story/2026/11/1168845",
-          "seen_at": "2026-11-22T08:03:08+00:00"
+          "url": "https://news.un.org/en/story/2026/11/1168854",
+          "seen_at": "2026-11-23T09:10:57+00:00"
         }
       ],
       "title_zh": "",
@@ -878,7 +1037,7 @@
         {
           "source_id": "opiniojuris",
           "url": "https://opiniojuris.org/2026/11/20/the-execution-of-two-bangladeshi-nationals-in-saudi-arabia-the-limits-of-human-rights-and-consular-protection/",
-          "seen_at": "2026-11-22T17:51:50+00:00"
+          "seen_at": "2026-11-23T09:09:25+00:00"
         }
       ],
       "title_zh": "",
@@ -977,7 +1136,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/jobs/wissenschaftlicher-mitarbeiterin-w-m-d-im-offentlichen-recht-am-standort-dusseldorf-der-bsp-65/",
-          "seen_at": "2026-11-22T17:52:10+00:00"
+          "seen_at": "2026-11-23T09:09:41+00:00"
         }
       ],
       "title_zh": "",
@@ -1159,7 +1318,7 @@
         {
           "source_id": "un-depositary",
           "url": "https://treaties.un.org/doc/Publication/CN/2026/CN.506.2026-Eng.pdf",
-          "seen_at": "2026-11-22T08:03:12+00:00"
+          "seen_at": "2026-11-23T09:10:58+00:00"
         }
       ],
       "title_zh": "",
@@ -1196,7 +1355,7 @@
         {
           "source_id": "un-depositary",
           "url": "https://treaties.un.org/doc/Publication/CN/2026/CN.505.2026-Eng.pdf",
-          "seen_at": "2026-11-22T08:03:12+00:00"
+          "seen_at": "2026-11-23T09:10:58+00:00"
         }
       ],
       "title_zh": "",
@@ -1233,7 +1392,7 @@
         {
           "source_id": "un-depositary",
           "url": "https://treaties.un.org/doc/Publication/CN/2026/CN.504.2026-Eng.pdf",
-          "seen_at": "2026-11-22T08:03:12+00:00"
+          "seen_at": "2026-11-23T09:10:58+00:00"
         }
       ],
       "title_zh": "",
@@ -1270,7 +1429,7 @@
         {
           "source_id": "un-depositary",
           "url": "https://treaties.un.org/doc/Publication/CN/2026/CN.503.2026-Eng.pdf",
-          "seen_at": "2026-11-22T08:03:12+00:00"
+          "seen_at": "2026-11-23T09:10:58+00:00"
         }
       ],
       "title_zh": "",
@@ -1307,7 +1466,7 @@
         {
           "source_id": "un-depositary",
           "url": "https://treaties.un.org/doc/Publication/CN/2026/CN.502.2026-Eng.pdf",
-          "seen_at": "2026-11-22T08:03:12+00:00"
+          "seen_at": "2026-11-23T09:10:58+00:00"
         }
       ],
       "title_zh": "",
@@ -1351,6 +1510,99 @@
       "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
     },
     {
+      "id": "22b425c69e4f08769101",
+      "source_id": "un-news-global",
+      "title": "Battle to control GPS and radio signals raises civilian safety concerns",
+      "url": "https://news.un.org/en/story/2026/11/1168843",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-11-19T21:29:46+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-21T08:22:19+00:00",
+      "updated_at": "2026-11-23T09:10:57+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "eba56cd2f8791467071ab7bbbcffa12e1ea381919f6d029e86539d1707849e62",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方机构新闻报道",
+      "provenance": [
+        {
+          "source_id": "un-news-global",
+          "url": "https://news.un.org/en/story/2026/11/1168843",
+          "seen_at": "2026-11-23T09:10:57+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
+    },
+    {
+      "id": "61c2c1650bca9c8b03d8",
+      "source_id": "un-news-global",
+      "title": "Peacekeeping: With 500 paternity and child support claims unresolved, UN scales up accountability",
+      "url": "https://news.un.org/en/story/2026/11/1168842",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-11-19T20:46:52+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-21T08:22:19+00:00",
+      "updated_at": "2026-11-23T09:10:57+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "ca9e9045e1a478531fc08b692036901ee23c93054cee2cd55085d6eec77a5db1",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方机构新闻报道",
+      "provenance": [
+        {
+          "source_id": "un-news-global",
+          "url": "https://news.un.org/en/story/2026/11/1168842",
+          "seen_at": "2026-11-23T09:10:57+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
+    },
+    {
+      "id": "75a211b6b08b0bb1da95",
+      "source_id": "un-news-global",
+      "title": "‘Losing the battle’: AI hands predators new ways to target children",
+      "url": "https://news.un.org/en/story/2026/11/1168841",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-11-19T19:31:21+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-21T08:22:19+00:00",
+      "updated_at": "2026-11-23T09:10:57+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "613af330c6dd71632f76f024d5a20aded338305fe380552674ef236fcd471854",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方机构新闻报道",
+      "provenance": [
+        {
+          "source_id": "un-news-global",
+          "url": "https://news.un.org/en/story/2026/11/1168841",
+          "seen_at": "2026-11-23T09:10:57+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
+    },
+    {
       "id": "914f4122eeb67857da60",
       "source_id": "un-news-global",
       "title": "COP31: Ambition goes missing as fossil fuel language drops from draft deal",
@@ -1371,7 +1623,7 @@
         {
           "source_id": "un-news-global",
           "url": "https://news.un.org/en/story/2026/11/1168839",
-          "seen_at": "2026-11-22T08:03:08+00:00"
+          "seen_at": "2026-11-23T09:10:57+00:00"
         }
       ],
       "title_zh": "",
@@ -1402,7 +1654,7 @@
         {
           "source_id": "un-news-global",
           "url": "https://news.un.org/en/story/2026/11/1168837",
-          "seen_at": "2026-11-22T08:03:08+00:00"
+          "seen_at": "2026-11-23T09:10:57+00:00"
         }
       ],
       "title_zh": "",
@@ -1439,7 +1691,7 @@
         {
           "source_id": "icc-news",
           "url": "https://www.icc-cpi.int/news/norway-reaffirms-its-commitment-victims-eur-900000-unrestricted-contribution-trust-fund",
-          "seen_at": "2026-11-22T08:03:20+00:00"
+          "seen_at": "2026-11-23T09:11:03+00:00"
         }
       ],
       "title_zh": "",
@@ -1472,7 +1724,7 @@
         {
           "source_id": "un-news-global",
           "url": "https://news.un.org/en/story/2026/11/1168836",
-          "seen_at": "2026-11-22T08:03:08+00:00"
+          "seen_at": "2026-11-23T09:10:57+00:00"
         }
       ],
       "title_zh": "",
@@ -1507,7 +1759,7 @@
         {
           "source_id": "opiniojuris",
           "url": "https://opiniojuris.org/2026/11/19/this-is-not-south-africas-definition-a-new-report-on-apartheid-in-the-draft-crimes-against-humanity-treaty/",
-          "seen_at": "2026-11-22T17:51:50+00:00"
+          "seen_at": "2026-11-23T09:09:25+00:00"
         }
       ],
       "title_zh": "",
@@ -1540,7 +1792,7 @@
         {
           "source_id": "opiniojuris",
           "url": "https://opiniojuris.org/2026/11/19/what-the-london-convention-and-protocols-new-assessment-frameworks-mean-for-marine-geoengineering-governance/",
-          "seen_at": "2026-11-22T17:51:50+00:00"
+          "seen_at": "2026-11-23T09:09:25+00:00"
         }
       ],
       "title_zh": "",
@@ -1584,99 +1836,6 @@
       "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
     },
     {
-      "id": "22b425c69e4f08769101",
-      "source_id": "un-news-global",
-      "title": "Battle to control GPS and radio signals raises civilian safety concerns",
-      "url": "https://news.un.org/en/story/2026/11/1168843",
-      "doi": "",
-      "module": "news",
-      "published_at": "2026-11-19T12:00:00+00:00",
-      "date_precision": "instant",
-      "discovered_at": "2026-11-21T08:22:19+00:00",
-      "updated_at": "2026-11-21T08:22:19+00:00",
-      "evidence_basis": "RSS 标题",
-      "source_revision": "e8bf49310d9504a1e6c8b9eecc2aa9c6784131eec7ba8a3d985e93c18010d80f",
-      "topics": [],
-      "authors": [],
-      "bibliography": {},
-      "material_type": "官方机构新闻报道",
-      "provenance": [
-        {
-          "source_id": "un-news-global",
-          "url": "https://news.un.org/en/story/2026/11/1168843",
-          "seen_at": "2026-11-22T08:03:08+00:00"
-        }
-      ],
-      "title_zh": "",
-      "summary_zh": "",
-      "ai": null,
-      "event": null,
-      "deadline": null,
-      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
-    },
-    {
-      "id": "61c2c1650bca9c8b03d8",
-      "source_id": "un-news-global",
-      "title": "Peacekeeping: With 500 paternity and child support claims unresolved, UN scales up accountability",
-      "url": "https://news.un.org/en/story/2026/11/1168842",
-      "doi": "",
-      "module": "news",
-      "published_at": "2026-11-19T12:00:00+00:00",
-      "date_precision": "instant",
-      "discovered_at": "2026-11-21T08:22:19+00:00",
-      "updated_at": "2026-11-21T08:22:19+00:00",
-      "evidence_basis": "RSS 标题",
-      "source_revision": "625387e906367755c6be31c41d57073717e995f45742500f27c4de60e64f04da",
-      "topics": [],
-      "authors": [],
-      "bibliography": {},
-      "material_type": "官方机构新闻报道",
-      "provenance": [
-        {
-          "source_id": "un-news-global",
-          "url": "https://news.un.org/en/story/2026/11/1168842",
-          "seen_at": "2026-11-22T08:03:08+00:00"
-        }
-      ],
-      "title_zh": "",
-      "summary_zh": "",
-      "ai": null,
-      "event": null,
-      "deadline": null,
-      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
-    },
-    {
-      "id": "75a211b6b08b0bb1da95",
-      "source_id": "un-news-global",
-      "title": "‘Losing the battle’: AI hands predators new ways to target children",
-      "url": "https://news.un.org/en/story/2026/11/1168841",
-      "doi": "",
-      "module": "news",
-      "published_at": "2026-11-19T12:00:00+00:00",
-      "date_precision": "instant",
-      "discovered_at": "2026-11-21T08:22:19+00:00",
-      "updated_at": "2026-11-21T08:22:19+00:00",
-      "evidence_basis": "RSS 标题",
-      "source_revision": "c85f7715c0ae90d0771640c7dc0ca3fb5b5f1de607ecf8dc345e8326d822d817",
-      "topics": [],
-      "authors": [],
-      "bibliography": {},
-      "material_type": "官方机构新闻报道",
-      "provenance": [
-        {
-          "source_id": "un-news-global",
-          "url": "https://news.un.org/en/story/2026/11/1168841",
-          "seen_at": "2026-11-22T08:03:08+00:00"
-        }
-      ],
-      "title_zh": "",
-      "summary_zh": "",
-      "ai": null,
-      "event": null,
-      "deadline": null,
-      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
-    },
-    {
       "id": "1321976d517781dc03e2",
       "source_id": "opiniojuris",
       "title": "Who Decides Who Pays for the AU Mission in Somalia? December’s Test for Resolution 2719",
@@ -1699,7 +1858,7 @@
         {
           "source_id": "opiniojuris",
           "url": "https://opiniojuris.org/2026/11/19/who-decides-who-pays-for-the-au-mission-in-somalia-decembers-test-for-resolution-2719/",
-          "seen_at": "2026-11-22T17:51:50+00:00"
+          "seen_at": "2026-11-23T09:09:25+00:00"
         }
       ],
       "title_zh": "",
@@ -1768,7 +1927,7 @@
         {
           "source_id": "icc-news",
           "url": "https://www.icc-cpi.int/news/statement-acting-prosecutor-mame-mandiaye-niang-un-security-council-situation-libya-pursuant",
-          "seen_at": "2026-11-22T08:03:20+00:00"
+          "seen_at": "2026-11-23T09:11:03+00:00"
         }
       ],
       "title_zh": "",
@@ -1801,7 +1960,7 @@
         {
           "source_id": "wto",
           "url": "https://www.wto.org/english/news_e/news26_e/stud_19nov26_558_e.htm",
-          "seen_at": "2026-11-22T17:52:19+00:00"
+          "seen_at": "2026-11-23T09:10:19+00:00"
         }
       ],
       "title_zh": "",
@@ -1868,7 +2027,7 @@
         {
           "source_id": "wto",
           "url": "https://www.wto.org/english/news_e/news26_e/trip_19nov26_557_e.htm",
-          "seen_at": "2026-11-22T17:52:19+00:00"
+          "seen_at": "2026-11-23T09:10:19+00:00"
         }
       ],
       "title_zh": "",
@@ -1936,7 +2095,7 @@
         {
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/case-related/178/178-20261119-pre-01-00-en.pdf",
-          "seen_at": "2026-11-22T08:02:34+00:00"
+          "seen_at": "2026-11-23T09:10:25+00:00"
         }
       ],
       "title_zh": "",
@@ -1969,7 +2128,7 @@
         {
           "source_id": "un-geneva-news",
           "url": "https://www.ungeneva.org/en/news-media/news/2026/11/124981/worlds-top-court-finds-myanmar-guilty-genocide-against-rohingya",
-          "seen_at": "2026-11-22T17:51:18+00:00"
+          "seen_at": "2026-11-23T09:09:11+00:00"
         }
       ],
       "title_zh": "",
@@ -2143,7 +2302,7 @@
         {
           "source_id": "un-geneva-news",
           "url": "https://www.ungeneva.org/en/news-media/news/2026/11/124985/losing-battle-ai-hands-predators-new-ways-target-children",
-          "seen_at": "2026-11-22T17:51:18+00:00"
+          "seen_at": "2026-11-23T09:09:11+00:00"
         }
       ],
       "title_zh": "",
@@ -2174,7 +2333,7 @@
         {
           "source_id": "un-geneva-news",
           "url": "https://www.ungeneva.org/en/news-media/news/2026/11/124982/cop31-ambition-goes-missing-fossil-fuel-language-drops-draft-deal",
-          "seen_at": "2026-11-22T17:51:18+00:00"
+          "seen_at": "2026-11-23T09:09:11+00:00"
         }
       ],
       "title_zh": "",
@@ -2205,7 +2364,7 @@
         {
           "source_id": "un-geneva-news",
           "url": "https://www.ungeneva.org/en/news-media/news/2026/11/124983/no-government-approval-needed-form-or-join-group-un-rights-committee",
-          "seen_at": "2026-11-22T17:51:18+00:00"
+          "seen_at": "2026-11-23T09:09:11+00:00"
         }
       ],
       "title_zh": "",
@@ -2236,7 +2395,7 @@
         {
           "source_id": "un-geneva-news",
           "url": "https://www.ungeneva.org/en/news-media/news/2026/11/124987/peacekeeping-500-paternity-and-child-support-claims-unresolved-un",
-          "seen_at": "2026-11-22T17:51:18+00:00"
+          "seen_at": "2026-11-23T09:09:11+00:00"
         }
       ],
       "title_zh": "",
@@ -2267,7 +2426,7 @@
         {
           "source_id": "un-geneva-news",
           "url": "https://www.ungeneva.org/en/news-media/news/2026/11/124986/battle-control-gps-and-radio-signals-raises-civilian-safety-concerns",
-          "seen_at": "2026-11-22T17:51:18+00:00"
+          "seen_at": "2026-11-23T09:09:11+00:00"
         }
       ],
       "title_zh": "",
@@ -2304,7 +2463,7 @@
         {
           "source_id": "icj-pending",
           "url": "https://www.icj-cij.org/case/178",
-          "seen_at": "2026-11-22T08:02:37+00:00"
+          "seen_at": "2026-11-23T09:10:27+00:00"
         }
       ],
       "title_zh": "",
@@ -2396,6 +2555,41 @@
       "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
     },
     {
+      "id": "58e1237761c2bd98538a",
+      "source_id": "un-geneva-meetings",
+      "title": "Experts of the Committee against Torture Commend Norway’s Ban on Conversion Therapy, Raise Questions on the Identification of Torture Survivors in the Asylum Process and the Use of Mechanical Restraints in Psychiatric Institutions",
+      "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/examen-de-la-norvege-au-comite-contre-la-torture-les-experts-du",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-11-19",
+      "date_precision": "day",
+      "discovered_at": "2026-11-23T09:09:24+00:00",
+      "updated_at": "2026-11-23T09:09:24+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "dff58b2f89e535ad55fbc312e8d7e6571e33ac62cc3692b9bd3653c6f22338b1",
+      "topics": [
+        "institutions"
+      ],
+      "authors": [
+        "ungeneva.org"
+      ],
+      "bibliography": {},
+      "material_type": "官方机构新闻报道",
+      "provenance": [
+        {
+          "source_id": "un-geneva-meetings",
+          "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/examen-de-la-norvege-au-comite-contre-la-torture-les-experts-du",
+          "seen_at": "2026-11-23T09:09:24+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
+    },
+    {
       "id": "3c9dad30fad3362404c6",
       "source_id": "un-news-global",
       "title": "Patients running out of options as antibiotics stop working against common infections",
@@ -2416,7 +2610,7 @@
         {
           "source_id": "un-news-global",
           "url": "https://news.un.org/en/story/2026/11/1168832",
-          "seen_at": "2026-11-22T08:03:08+00:00"
+          "seen_at": "2026-11-23T09:10:57+00:00"
         }
       ],
       "title_zh": "",
@@ -2453,7 +2647,7 @@
         {
           "source_id": "icc-news",
           "url": "https://www.icc-cpi.int/news/thirty-second-report-prosecutor-international-criminal-court-united-nations-security-council-0",
-          "seen_at": "2026-11-22T08:03:20+00:00"
+          "seen_at": "2026-11-23T09:11:03+00:00"
         }
       ],
       "title_zh": "",
@@ -2488,7 +2682,7 @@
         {
           "source_id": "opiniojuris",
           "url": "https://opiniojuris.org/2026/11/18/how-much-weight-for-ilo-supervisory-bodies-the-icjs-one-size-fits-all-approach/",
-          "seen_at": "2026-11-22T17:51:50+00:00"
+          "seen_at": "2026-11-23T09:09:25+00:00"
         }
       ],
       "title_zh": "",
@@ -2519,7 +2713,7 @@
         {
           "source_id": "un-news-global",
           "url": "https://news.un.org/en/story/2026/11/1168830",
-          "seen_at": "2026-11-22T08:03:08+00:00"
+          "seen_at": "2026-11-23T09:10:57+00:00"
         }
       ],
       "title_zh": "",
@@ -2552,7 +2746,7 @@
         {
           "source_id": "un-news-global",
           "url": "https://news.un.org/en/story/2026/11/1168833",
-          "seen_at": "2026-11-22T08:03:08+00:00"
+          "seen_at": "2026-11-23T09:10:57+00:00"
         }
       ],
       "title_zh": "",
@@ -2588,7 +2782,7 @@
         {
           "source_id": "opiniojuris",
           "url": "https://opiniojuris.org/2026/11/18/human-rights-by-renvoi-not-so-fast-says-itlos/",
-          "seen_at": "2026-11-22T17:51:50+00:00"
+          "seen_at": "2026-11-23T09:09:25+00:00"
         }
       ],
       "title_zh": "",
@@ -2689,7 +2883,7 @@
         {
           "source_id": "wto",
           "url": "https://www.wto.org/english/tratop_e/tpr_e/tpr_per_18nov26_e.htm",
-          "seen_at": "2026-11-22T17:52:19+00:00"
+          "seen_at": "2026-11-23T09:10:19+00:00"
         }
       ],
       "title_zh": "",
@@ -2756,7 +2950,7 @@
         {
           "source_id": "pca",
           "url": "https://pca-cpa.org/en/news/pca-press-release-pca-case-no-2026-35-conciliation-between-the-kingdom-of-cambodia-and-the-kingdom-of-thailand-5/",
-          "seen_at": "2026-11-22T08:02:33+00:00"
+          "seen_at": "2026-11-23T09:10:24+00:00"
         }
       ],
       "title_zh": "",
@@ -2787,7 +2981,7 @@
         {
           "source_id": "un-geneva-news",
           "url": "https://www.ungeneva.org/en/news-media/news/2026/11/124978/patients-running-out-options-antibiotics-stop-working-against-common",
-          "seen_at": "2026-11-22T17:51:18+00:00"
+          "seen_at": "2026-11-23T09:09:11+00:00"
         }
       ],
       "title_zh": "",
@@ -2887,7 +3081,7 @@
         {
           "source_id": "un-geneva-meetings",
           "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/examen-de-la-republique-de-moldova-au-comite-contre-la-torture",
-          "seen_at": "2026-11-22T17:51:31+00:00"
+          "seen_at": "2026-11-23T09:09:24+00:00"
         }
       ],
       "title_zh": "",
@@ -2951,7 +3145,7 @@
         {
           "source_id": "un-news-global",
           "url": "https://news.un.org/en/story/2026/11/1168828",
-          "seen_at": "2026-11-22T08:03:08+00:00"
+          "seen_at": "2026-11-23T09:10:57+00:00"
         }
       ],
       "title_zh": "",
@@ -2982,7 +3176,7 @@
         {
           "source_id": "un-news-global",
           "url": "https://news.un.org/en/story/2026/11/1168827",
-          "seen_at": "2026-11-22T08:03:08+00:00"
+          "seen_at": "2026-11-23T09:10:57+00:00"
         }
       ],
       "title_zh": "",
@@ -3015,7 +3209,7 @@
         {
           "source_id": "un-news-global",
           "url": "https://news.un.org/en/story/2026/11/1168824",
-          "seen_at": "2026-11-22T08:03:08+00:00"
+          "seen_at": "2026-11-23T09:10:57+00:00"
         }
       ],
       "title_zh": "",
@@ -3046,7 +3240,7 @@
         {
           "source_id": "un-news-global",
           "url": "https://news.un.org/en/story/2026/11/1168823",
-          "seen_at": "2026-11-22T08:03:08+00:00"
+          "seen_at": "2026-11-23T09:10:57+00:00"
         }
       ],
       "title_zh": "",
@@ -3077,7 +3271,7 @@
         {
           "source_id": "un-news-global",
           "url": "https://news.un.org/en/story/2026/11/1168822",
-          "seen_at": "2026-11-22T08:03:08+00:00"
+          "seen_at": "2026-11-23T09:10:57+00:00"
         }
       ],
       "title_zh": "",
@@ -3108,7 +3302,7 @@
         {
           "source_id": "un-news-global",
           "url": "https://news.un.org/en/story/2026/11/1168821",
-          "seen_at": "2026-11-22T08:03:08+00:00"
+          "seen_at": "2026-11-23T09:10:57+00:00"
         }
       ],
       "title_zh": "",
@@ -3141,7 +3335,7 @@
         {
           "source_id": "opiniojuris",
           "url": "https://opiniojuris.org/2026/11/17/beyond-the-binary-of-war-and-peace-why-the-u-s-israel-and-iran-must-return-to-legal-intermediacy/",
-          "seen_at": "2026-11-22T17:51:50+00:00"
+          "seen_at": "2026-11-23T09:09:25+00:00"
         }
       ],
       "title_zh": "",
@@ -3174,7 +3368,7 @@
         {
           "source_id": "opiniojuris",
           "url": "https://opiniojuris.org/2026/11/17/beyond-only-intent/",
-          "seen_at": "2026-11-22T17:51:50+00:00"
+          "seen_at": "2026-11-23T09:09:25+00:00"
         }
       ],
       "title_zh": "",
@@ -3242,7 +3436,7 @@
         {
           "source_id": "wto",
           "url": "https://www.wto.org/english/news_e/news26_e/tmwto_17nov26_552_e.htm",
-          "seen_at": "2026-11-22T17:52:19+00:00"
+          "seen_at": "2026-11-23T09:10:19+00:00"
         }
       ],
       "title_zh": "",
@@ -3647,7 +3841,7 @@
         {
           "source_id": "un-news-global",
           "url": "https://news.un.org/en/story/2026/11/1168820",
-          "seen_at": "2026-11-22T08:03:08+00:00"
+          "seen_at": "2026-11-23T09:10:57+00:00"
         }
       ],
       "title_zh": "",
@@ -3678,7 +3872,7 @@
         {
           "source_id": "un-news-global",
           "url": "https://news.un.org/en/story/2026/11/1168819",
-          "seen_at": "2026-11-22T08:03:08+00:00"
+          "seen_at": "2026-11-23T09:10:57+00:00"
         }
       ],
       "title_zh": "",
@@ -3709,7 +3903,7 @@
         {
           "source_id": "un-news-global",
           "url": "https://news.un.org/en/story/2026/11/1168818",
-          "seen_at": "2026-11-22T08:03:08+00:00"
+          "seen_at": "2026-11-23T09:10:57+00:00"
         }
       ],
       "title_zh": "",
@@ -3742,7 +3936,7 @@
         {
           "source_id": "un-news-global",
           "url": "https://news.un.org/en/story/2026/11/1168817",
-          "seen_at": "2026-11-22T08:03:08+00:00"
+          "seen_at": "2026-11-23T09:10:57+00:00"
         }
       ],
       "title_zh": "",
@@ -3810,7 +4004,7 @@
         {
           "source_id": "icc-news",
           "url": "https://www.icc-cpi.int/news/icc-president-and-acting-prosecutor-visit-south-africa-30th-anniversary-constitution",
-          "seen_at": "2026-11-22T08:03:20+00:00"
+          "seen_at": "2026-11-23T09:11:03+00:00"
         }
       ],
       "title_zh": "",
@@ -3910,7 +4104,7 @@
         {
           "source_id": "opiniojuris",
           "url": "https://opiniojuris.org/2026/11/16/regret-is-not-a-defence-the-assembly-of-states-parties-and-the-sanctioning-of-the-international-criminal-court/",
-          "seen_at": "2026-11-22T17:51:50+00:00"
+          "seen_at": "2026-11-23T09:09:25+00:00"
         }
       ],
       "title_zh": "",
@@ -3974,7 +4168,7 @@
         {
           "source_id": "opiniojuris",
           "url": "https://opiniojuris.org/2026/11/16/international-law-for-a-fragile-world-political-risk-authoritarianism-information-warfare-and-democratic-fragility-part-ii/",
-          "seen_at": "2026-11-22T17:51:50+00:00"
+          "seen_at": "2026-11-23T09:09:25+00:00"
         }
       ],
       "title_zh": "",
@@ -4007,7 +4201,7 @@
         {
           "source_id": "opiniojuris",
           "url": "https://opiniojuris.org/2026/11/16/international-law-for-a-fragile-world-political-risk-authoritarianism-information-warfare-and-democratic-fragility-part-i/",
-          "seen_at": "2026-11-22T17:51:50+00:00"
+          "seen_at": "2026-11-23T09:09:25+00:00"
         }
       ],
       "title_zh": "",
@@ -4077,7 +4271,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/esilrrr3dec/",
-          "seen_at": "2026-11-22T08:01:52+00:00"
+          "seen_at": "2026-11-23T09:09:50+00:00"
         }
       ],
       "title_zh": "",
@@ -4316,7 +4510,7 @@
         {
           "source_id": "un-geneva-meetings",
           "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/le-comite-contre-la-torture-ouvre-les-travaux-de-sa-85e-session",
-          "seen_at": "2026-11-22T17:51:31+00:00"
+          "seen_at": "2026-11-23T09:09:24+00:00"
         }
       ],
       "title_zh": "",
@@ -4543,7 +4737,7 @@
         {
           "source_id": "opiniojuris",
           "url": "https://opiniojuris.org/2026/11/15/events-and-announcements-15-november-2026/",
-          "seen_at": "2026-11-22T17:51:50+00:00"
+          "seen_at": "2026-11-23T09:09:25+00:00"
         }
       ],
       "title_zh": "",
@@ -4685,6 +4879,39 @@
           "source_id": "un-news-global",
           "url": "https://news.un.org/en/story/2026/11/1168802",
           "seen_at": "2026-11-20T06:46:12+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
+    },
+    {
+      "id": "3806e7d581dac89f7650",
+      "source_id": "opiniojuris",
+      "title": "6th Annual Symposium on Pop Culture and International Law: Closing Remarks",
+      "url": "https://opiniojuris.org/2026/11/13/6th-annual-symposium-on-pop-culture-and-international-law-closing-remarks/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-11-13T15:00:00+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-23T09:09:25+00:00",
+      "updated_at": "2026-11-23T09:09:25+00:00",
+      "evidence_basis": "RSS 标题",
+      "source_revision": "b88b9abe63c712669ba2431194abc3099e4fcf0624066a171e0175329e0d8721",
+      "topics": [],
+      "authors": [
+        "Alessia Corti"
+      ],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "opiniojuris",
+          "url": "https://opiniojuris.org/2026/11/13/6th-annual-symposium-on-pop-culture-and-international-law-closing-remarks/",
+          "seen_at": "2026-11-23T09:09:25+00:00"
         }
       ],
       "title_zh": "",
@@ -4887,7 +5114,7 @@
         {
           "source_id": "wto",
           "url": "https://www.wto.org/english/news_e/pres26_e/pr998_551_e.htm",
-          "seen_at": "2026-11-22T17:52:19+00:00"
+          "seen_at": "2026-11-23T09:10:19+00:00"
         }
       ],
       "title_zh": "",
@@ -5084,7 +5311,7 @@
         {
           "source_id": "un-geneva-meetings",
           "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/le-comite-des-droits-economiques-sociaux-et-culturels-acheve-sa",
-          "seen_at": "2026-11-22T17:51:31+00:00"
+          "seen_at": "2026-11-23T09:09:24+00:00"
         }
       ],
       "title_zh": "",
@@ -5158,7 +5385,7 @@
         {
           "source_id": "icc-news",
           "url": "https://www.icc-cpi.int/news/icc-terminates-proceedings-against-sylvestre-mudacumura",
-          "seen_at": "2026-11-22T08:03:20+00:00"
+          "seen_at": "2026-11-23T09:11:03+00:00"
         }
       ],
       "title_zh": "",
@@ -5224,7 +5451,7 @@
         {
           "source_id": "wto",
           "url": "https://www.wto.org/english/news_e/news26_e/trip_12nov26_553_e.htm",
-          "seen_at": "2026-11-22T17:52:19+00:00"
+          "seen_at": "2026-11-23T09:10:19+00:00"
         }
       ],
       "title_zh": "",
@@ -5325,7 +5552,7 @@
         {
           "source_id": "pca",
           "url": "https://pca-cpa.org/en/news/pca-press-release-pca-case-no-2019-28-dispute-concerning-the-detention-of-ukrainian-naval-vessels-and-servicemen-ukraine-v-the-russian-federation-5/",
-          "seen_at": "2026-11-22T08:02:33+00:00"
+          "seen_at": "2026-11-23T09:10:24+00:00"
         }
       ],
       "title_zh": "",
@@ -5439,7 +5666,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/esil-newsletter-autumn-2026/",
-          "seen_at": "2026-11-22T08:01:52+00:00"
+          "seen_at": "2026-11-23T09:09:50+00:00"
         }
       ],
       "title_zh": "",
@@ -5472,7 +5699,7 @@
         {
           "source_id": "wto",
           "url": "https://www.wto.org/english/news_e/news26_e/safe_zaf_11nov26_546_e.htm",
-          "seen_at": "2026-11-22T17:52:19+00:00"
+          "seen_at": "2026-11-23T09:10:19+00:00"
         }
       ],
       "title_zh": "",
@@ -5509,7 +5736,7 @@
         {
           "source_id": "icc-news",
           "url": "https://www.icc-cpi.int/news/icc-president-concludes-official-visit-canada",
-          "seen_at": "2026-11-22T08:03:20+00:00"
+          "seen_at": "2026-11-23T09:11:03+00:00"
         }
       ],
       "title_zh": "",
@@ -5743,7 +5970,7 @@
         {
           "source_id": "un-geneva-press",
           "url": "https://www.ungeneva.org/en/news-media/press-release/2026/11/seventh-review-conference-high-contracting-parties-convention",
-          "seen_at": "2026-11-22T17:51:24+00:00"
+          "seen_at": "2026-11-23T09:09:17+00:00"
         }
       ],
       "title_zh": "",
@@ -5776,7 +6003,7 @@
         {
           "source_id": "pca",
           "url": "https://pca-cpa.org/en/news/pca-press-release-permanent-court-of-arbitration-enters-into-host-country-agreement-with-the-republic-of-poland/",
-          "seen_at": "2026-11-22T08:02:33+00:00"
+          "seen_at": "2026-11-23T09:10:24+00:00"
         }
       ],
       "title_zh": "",
@@ -5894,7 +6121,7 @@
         {
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/press-releases/0/000-20261109-pre-01-00-en.pdf",
-          "seen_at": "2026-11-22T08:02:34+00:00"
+          "seen_at": "2026-11-23T09:10:25+00:00"
         }
       ],
       "title_zh": "",
@@ -5927,7 +6154,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/esil-conversations-s2e3/",
-          "seen_at": "2026-11-22T08:01:52+00:00"
+          "seen_at": "2026-11-23T09:09:50+00:00"
         }
       ],
       "title_zh": "",
@@ -6029,7 +6256,7 @@
         {
           "source_id": "itlos",
           "url": "https://www.itlos.org/fileadmin/itlos/documents/press_releases_english/PR_403_en.pdf",
-          "seen_at": "2026-11-22T08:02:43+00:00"
+          "seen_at": "2026-11-23T09:10:31+00:00"
         }
       ],
       "title_zh": "",
@@ -6063,7 +6290,7 @@
         {
           "source_id": "itlos",
           "url": "https://www.itlos.org/fileadmin/itlos/documents/press_releases_english/PR_402_EN.pdf",
-          "seen_at": "2026-11-22T08:02:43+00:00"
+          "seen_at": "2026-11-23T09:10:31+00:00"
         }
       ],
       "title_zh": "",
@@ -6097,7 +6324,7 @@
         {
           "source_id": "icsid-cases",
           "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/26/42",
-          "seen_at": "2026-11-22T08:03:24+00:00"
+          "seen_at": "2026-11-23T09:11:06+00:00"
         }
       ],
       "title_zh": "",
@@ -6178,7 +6405,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/symposium/state-responsibility-in-crisis/",
-          "seen_at": "2026-11-22T17:52:10+00:00"
+          "seen_at": "2026-11-23T09:09:41+00:00"
         }
       ],
       "title_zh": "",
@@ -6198,9 +6425,9 @@
       "published_at": "2026-11-07T07:40:19+00:00",
       "date_precision": "instant",
       "discovered_at": "2026-11-19T22:11:47+00:00",
-      "updated_at": "2026-11-19T22:11:47+00:00",
+      "updated_at": "2026-11-23T09:09:50+00:00",
       "evidence_basis": "原文正文核对",
-      "source_revision": "35a0a3be7280bffb80d250f9700d2ca46f0bde5f4500369539802bdfd0cecd85",
+      "source_revision": "efa8dd710fe997ca54c86749fcff6a4d20e8b2dcdccb10f3e0efa75deb4f7997",
       "topics": [
         "disputes"
       ],
@@ -6213,7 +6440,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/esil-haguejusticeweek/",
-          "seen_at": "2026-11-22T08:01:52+00:00"
+          "seen_at": "2026-11-23T09:09:50+00:00"
         }
       ],
       "title_zh": "",
@@ -6248,7 +6475,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/https-esil-sedi-eu-ig-ihrl-mbs-nov26/",
-          "seen_at": "2026-11-22T08:01:52+00:00"
+          "seen_at": "2026-11-23T09:09:50+00:00"
         }
       ],
       "title_zh": "",
@@ -6416,7 +6643,7 @@
         {
           "source_id": "un-geneva-meetings",
           "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/le-comite-des-droits-economiques-sociaux-et-culturels-et-le",
-          "seen_at": "2026-11-22T17:51:31+00:00"
+          "seen_at": "2026-11-23T09:09:24+00:00"
         }
       ],
       "title_zh": "",
@@ -6452,7 +6679,7 @@
         {
           "source_id": "un-geneva-meetings",
           "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/examen-de-lautriche-au-comite-des-droits-economiques-sociaux-et",
-          "seen_at": "2026-11-22T17:51:31+00:00"
+          "seen_at": "2026-11-23T09:09:24+00:00"
         }
       ],
       "title_zh": "",
@@ -6538,7 +6765,7 @@
         {
           "source_id": "icj-pending",
           "url": "https://www.icj-cij.org/case/182",
-          "seen_at": "2026-11-22T08:02:37+00:00"
+          "seen_at": "2026-11-23T09:10:27+00:00"
         }
       ],
       "title_zh": "",
@@ -6610,7 +6837,7 @@
         {
           "source_id": "icc-news",
           "url": "https://www.icc-cpi.int/news/liechtenstein-renews-its-support-trust-fund-victims-through-voluntary-contribution",
-          "seen_at": "2026-11-22T08:03:20+00:00"
+          "seen_at": "2026-11-23T09:11:03+00:00"
         }
       ],
       "title_zh": "",
@@ -6842,7 +7069,7 @@
         {
           "source_id": "un-geneva-meetings",
           "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/examen-du-mexique-au-comite-des-droits-economiques-sociaux-et",
-          "seen_at": "2026-11-22T17:51:31+00:00"
+          "seen_at": "2026-11-23T09:09:24+00:00"
         }
       ],
       "title_zh": "",
@@ -6878,7 +7105,7 @@
         {
           "source_id": "un-geneva-meetings",
           "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/human-rights-committee-adopts-reports-follow-concluding",
-          "seen_at": "2026-11-22T17:51:31+00:00"
+          "seen_at": "2026-11-23T09:09:24+00:00"
         }
       ],
       "title_zh": "",
@@ -6915,7 +7142,7 @@
         {
           "source_id": "icc-news",
           "url": "https://www.icc-cpi.int/news/president-assembly-states-parties-rome-statute-convened-event-international-criminal-justice",
-          "seen_at": "2026-11-22T08:03:20+00:00"
+          "seen_at": "2026-11-23T09:11:03+00:00"
         }
       ],
       "title_zh": "",
@@ -6997,7 +7224,7 @@
         {
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/press-releases/0/000-20261104-pre-01-00-en.pdf",
-          "seen_at": "2026-11-22T08:02:34+00:00"
+          "seen_at": "2026-11-23T09:10:25+00:00"
         }
       ],
       "title_zh": "",
@@ -7044,42 +7271,6 @@
           "source_id": "crossref-asianjil",
           "url": "https://doi.org/10.1017/s2044251326101283",
           "seen_at": "2026-11-22T17:52:23+00:00"
-        }
-      ],
-      "title_zh": "",
-      "summary_zh": "",
-      "ai": null,
-      "event": null,
-      "deadline": null,
-      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
-    },
-    {
-      "id": "a6e6a1056ee566ad7d86",
-      "source_id": "un-geneva-meetings",
-      "title": "In Dialogue with Pakistan, Experts of the Committee on Economic, Social and Cultural Rights Welcome Law Raising the Age of Marriage to 18, Ask about Bonded Labour and Rebuilding Efforts after the 2022 and 2025 Floods",
-      "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/dialogue-pakistan-experts-committee-economic-social-and-cultural",
-      "doi": "",
-      "module": "news",
-      "published_at": "2026-11-04",
-      "date_precision": "day",
-      "discovered_at": "2026-11-22T08:01:11+00:00",
-      "updated_at": "2026-11-22T08:01:11+00:00",
-      "evidence_basis": "RSS 标题",
-      "source_revision": "7e7c40e2b8525aa3acb3357f5bed3a302d6dbd88a9bf3cc1f6cacadd8c642b48",
-      "topics": [
-        "institutions",
-        "economic"
-      ],
-      "authors": [
-        "ungeneva.org"
-      ],
-      "bibliography": {},
-      "material_type": "官方机构新闻报道",
-      "provenance": [
-        {
-          "source_id": "un-geneva-meetings",
-          "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/dialogue-pakistan-experts-committee-economic-social-and-cultural",
-          "seen_at": "2026-11-22T17:51:31+00:00"
         }
       ],
       "title_zh": "",
@@ -7148,7 +7339,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/ig-rule-of-law-webinar-series-december/",
-          "seen_at": "2026-11-22T08:01:52+00:00"
+          "seen_at": "2026-11-23T09:09:50+00:00"
         }
       ],
       "title_zh": "",
@@ -7327,7 +7518,7 @@
         {
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/case-related/178/178-20261103-pre-01-00-en.pdf",
-          "seen_at": "2026-11-22T08:02:34+00:00"
+          "seen_at": "2026-11-23T09:10:25+00:00"
         }
       ],
       "title_zh": "",
@@ -7457,7 +7648,7 @@
         {
           "source_id": "un-geneva-meetings",
           "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/committee-economic-social-and-cultural-rights-commends-eswatinis",
-          "seen_at": "2026-11-22T17:51:31+00:00"
+          "seen_at": "2026-11-23T09:09:24+00:00"
         }
       ],
       "title_zh": "",
@@ -7607,7 +7798,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/calls-for-papers/edited-volume-on-battlefield-forensics/",
-          "seen_at": "2026-11-22T17:52:10+00:00"
+          "seen_at": "2026-11-23T09:09:41+00:00"
         }
       ],
       "title_zh": "",
@@ -7718,7 +7909,7 @@
         {
           "source_id": "cambridge-cfp-ijcp",
           "url": "https://www.cambridge.org/core/journals/international-journal-of-cultural-property/announcements/call-for-papers/call-for-papers-consequences-of-decentering-the-state-in-international-law-a-comparison-in-the-field-of-cultural-heritage",
-          "seen_at": "2026-11-22T08:03:07+00:00"
+          "seen_at": "2026-11-23T09:10:56+00:00"
         }
       ],
       "title_zh": "",
@@ -7765,7 +7956,7 @@
         {
           "source_id": "cambridge-cfp-ijcp",
           "url": "https://www.cambridge.org/core/journals/international-journal-of-cultural-property/announcements/call-for-papers/call-for-papers-natural-heritage-as-cultural-property-legal-and-social-dimensions-to-the-collection-display-and-sale-of-natural-history-specimens",
-          "seen_at": "2026-11-22T08:03:07+00:00"
+          "seen_at": "2026-11-23T09:10:56+00:00"
         }
       ],
       "title_zh": "",
@@ -7846,7 +8037,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/symposium/open-ended-symposium-on-genai-and-the-future-of-international-legal-scholarship/",
-          "seen_at": "2026-11-22T17:52:10+00:00"
+          "seen_at": "2026-11-23T09:09:41+00:00"
         }
       ],
       "title_zh": "",
@@ -7879,7 +8070,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/calls-for-papers/call-for-blogs-centre-for-research-in-environmental-law/",
-          "seen_at": "2026-11-22T17:52:10+00:00"
+          "seen_at": "2026-11-23T09:09:41+00:00"
         }
       ],
       "title_zh": "",
@@ -7912,7 +8103,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/events/online-certificate-course-on-trademark-law/",
-          "seen_at": "2026-11-22T17:52:10+00:00"
+          "seen_at": "2026-11-23T09:09:41+00:00"
         }
       ],
       "title_zh": "",
@@ -7943,7 +8134,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/calls-for-papers/nluo-student-law-journal-volume-ix/",
-          "seen_at": "2026-11-22T17:52:10+00:00"
+          "seen_at": "2026-11-23T09:09:41+00:00"
         }
       ],
       "title_zh": "",
@@ -7974,7 +8165,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/events/digital-dual-use-interdisziplinare-konferenz/",
-          "seen_at": "2026-11-22T17:52:10+00:00"
+          "seen_at": "2026-11-23T09:09:41+00:00"
         }
       ],
       "title_zh": "",
@@ -8005,7 +8196,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/jobs/ko-abteilungsleitung-fur-die-abteilung-monitoring-stelle-un-behindertenrechtskonvention-100/",
-          "seen_at": "2026-11-22T17:52:10+00:00"
+          "seen_at": "2026-11-23T09:09:41+00:00"
         }
       ],
       "title_zh": "",
@@ -8036,7 +8227,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/symposium/reflections-on-digital-empires/",
-          "seen_at": "2026-11-22T17:52:10+00:00"
+          "seen_at": "2026-11-23T09:09:41+00:00"
         }
       ],
       "title_zh": "",
@@ -8069,7 +8260,7 @@
         {
           "source_id": "un-geneva-press",
           "url": "https://www.ungeneva.org/en/news-media/press-release/2026/10/un-geneva-unveils-sustainable-new-uniforms-tour-guides-through",
-          "seen_at": "2026-11-22T17:51:24+00:00"
+          "seen_at": "2026-11-23T09:09:17+00:00"
         }
       ],
       "title_zh": "",
@@ -8149,7 +8340,7 @@
         {
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/press-releases/0/000-20261029-pre-01-00-en.pdf",
-          "seen_at": "2026-11-22T08:02:34+00:00"
+          "seen_at": "2026-11-23T09:10:25+00:00"
         }
       ],
       "title_zh": "",
@@ -8183,7 +8374,7 @@
         {
           "source_id": "icsid-cases",
           "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/19/30",
-          "seen_at": "2026-11-22T08:03:24+00:00"
+          "seen_at": "2026-11-23T09:11:06+00:00"
         }
       ],
       "title_zh": "",
@@ -8216,7 +8407,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/igps-online-event-11nov26/",
-          "seen_at": "2026-11-22T08:01:52+00:00"
+          "seen_at": "2026-11-23T09:09:50+00:00"
         }
       ],
       "title_zh": "",
@@ -8249,7 +8440,7 @@
         {
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/press-releases/0/000-20261027-pre-01-00-en.pdf",
-          "seen_at": "2026-11-22T08:02:34+00:00"
+          "seen_at": "2026-11-23T09:10:25+00:00"
         }
       ],
       "title_zh": "",
@@ -8669,7 +8860,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/faointlawday/",
-          "seen_at": "2026-11-22T08:01:52+00:00"
+          "seen_at": "2026-11-23T09:09:50+00:00"
         }
       ],
       "title_zh": "",
@@ -8702,7 +8893,7 @@
         {
           "source_id": "pca",
           "url": "https://pca-cpa.org/en/news/memorandum-of-understanding-between-the-slovak-mfa-and-the-slovak-bar-association-in-connection-with-pca-host-country-agreement/",
-          "seen_at": "2026-11-22T08:02:33+00:00"
+          "seen_at": "2026-11-23T09:10:24+00:00"
         }
       ],
       "title_zh": "",
@@ -8862,7 +9053,7 @@
         {
           "source_id": "icsid-cases",
           "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB(AF)/19/3",
-          "seen_at": "2026-11-22T08:03:24+00:00"
+          "seen_at": "2026-11-23T09:11:06+00:00"
         }
       ],
       "title_zh": "",
@@ -9102,7 +9293,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/calls-for-papers/13th-annual-junior-scholars-conference/",
-          "seen_at": "2026-11-22T17:52:10+00:00"
+          "seen_at": "2026-11-23T09:09:41+00:00"
         }
       ],
       "title_zh": "",
@@ -9218,7 +9409,7 @@
         {
           "source_id": "pca",
           "url": "https://pca-cpa.org/en/news/pca-press-release-pca-case-no-2026-35-conciliation-between-the-kingdom-of-cambodia-and-the-kingdom-of-thailand-4/",
-          "seen_at": "2026-11-22T08:02:33+00:00"
+          "seen_at": "2026-11-23T09:10:24+00:00"
         }
       ],
       "title_zh": "",
@@ -9252,7 +9443,7 @@
         {
           "source_id": "icsid-cases",
           "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/22/28",
-          "seen_at": "2026-11-22T08:03:24+00:00"
+          "seen_at": "2026-11-23T09:11:06+00:00"
         }
       ],
       "title_zh": "",
@@ -9332,7 +9523,7 @@
         {
           "source_id": "icsid-cases",
           "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/26/41",
-          "seen_at": "2026-11-22T08:03:24+00:00"
+          "seen_at": "2026-11-23T09:11:06+00:00"
         }
       ],
       "title_zh": "",
@@ -9401,7 +9592,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/esil-rrr-the-international-criminal-court-under-pressure-us-sanctions-and-the-future-of-international-criminal-justice/",
-          "seen_at": "2026-11-22T08:01:52+00:00"
+          "seen_at": "2026-11-23T09:09:50+00:00"
         }
       ],
       "title_zh": "",
@@ -9434,7 +9625,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/2026-nobel-peace-prizee-navi-pillay/",
-          "seen_at": "2026-11-22T08:01:52+00:00"
+          "seen_at": "2026-11-23T09:09:50+00:00"
         }
       ],
       "title_zh": "",
@@ -9578,7 +9769,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/2027-esil-annual-conference/",
-          "seen_at": "2026-11-22T08:01:52+00:00"
+          "seen_at": "2026-11-23T09:09:50+00:00"
         }
       ],
       "title_zh": "",
@@ -9769,7 +9960,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/events/community-interests-in-international-law-theory-adjudication-and-human-rights/",
-          "seen_at": "2026-11-22T17:52:10+00:00"
+          "seen_at": "2026-11-23T09:09:41+00:00"
         }
       ],
       "title_zh": "",
@@ -9800,7 +9991,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/calls-for-papers/lex-terra-webzine/",
-          "seen_at": "2026-11-22T17:52:10+00:00"
+          "seen_at": "2026-11-23T09:09:41+00:00"
         }
       ],
       "title_zh": "",
@@ -9831,7 +10022,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/jobs/studienplatze-im-doktorandenprogramm-im-bereich-der-rechtswissenschaft/",
-          "seen_at": "2026-11-22T17:52:10+00:00"
+          "seen_at": "2026-11-23T09:09:41+00:00"
         }
       ],
       "title_zh": "",
@@ -9865,7 +10056,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/calls-for-papers/community-interests-in-international-law-theory-adjudication-and-human-rights/",
-          "seen_at": "2026-11-22T17:52:10+00:00"
+          "seen_at": "2026-11-23T09:09:41+00:00"
         }
       ],
       "title_zh": "",
@@ -9896,7 +10087,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/calls-for-papers/call-for-papers-trends-in-intellectual-property-research-volume-4-issue-4-2026/",
-          "seen_at": "2026-11-22T17:52:10+00:00"
+          "seen_at": "2026-11-23T09:09:41+00:00"
         }
       ],
       "title_zh": "",
@@ -10206,7 +10397,7 @@
         {
           "source_id": "china-mfa-statements",
           "url": "https://www.mfa.gov.cn/fyrbt_673021/dhdw_673027/202610/t20261010_12038194.shtml",
-          "seen_at": "2026-11-22T08:00:51+00:00"
+          "seen_at": "2026-11-23T09:09:07+00:00"
         }
       ],
       "title_zh": "",
@@ -10287,7 +10478,7 @@
         {
           "source_id": "pca",
           "url": "https://pca-cpa.org/en/news/pca-press-release-pca-case-no-2026-35-conciliation-between-the-kingdom-of-cambodia-and-the-kingdom-of-thailand-3/",
-          "seen_at": "2026-11-22T08:02:33+00:00"
+          "seen_at": "2026-11-23T09:10:24+00:00"
         }
       ],
       "title_zh": "",
@@ -10419,7 +10610,7 @@
         {
           "source_id": "uncitral-news",
           "url": "https://uncitral.un.org/en/news/united-arab-emirates-accedes-singapore-convention-mediation",
-          "seen_at": "2026-11-22T08:03:17+00:00"
+          "seen_at": "2026-11-23T09:11:01+00:00"
         }
       ],
       "title_zh": "",
@@ -10642,7 +10833,7 @@
         {
           "source_id": "un-geneva-press",
           "url": "https://www.ungeneva.org/en/news-media/press-release/2026/10/le-conseil-des-droits-de-lhomme-clos-les-travaux-de-sa-soixante",
-          "seen_at": "2026-11-22T17:51:24+00:00"
+          "seen_at": "2026-11-23T09:09:17+00:00"
         }
       ],
       "title_zh": "",
@@ -11116,7 +11307,7 @@
         {
           "source_id": "pca",
           "url": "https://pca-cpa.org/en/news/pca-press-release-final-award-in-pca-case-no-2015-21-jsc-cb-privatbank-v-the-russian-federation/",
-          "seen_at": "2026-11-22T08:02:33+00:00"
+          "seen_at": "2026-11-23T09:10:24+00:00"
         }
       ],
       "title_zh": "",
@@ -11149,7 +11340,7 @@
         {
           "source_id": "pca",
           "url": "https://pca-cpa.org/en/news/pca-press-release-final-award-in-pca-case-no-2015-07-aeroport-belbek-llc-and-mr-igor-valerievich-kolomoisky-v-the-russian-federation/",
-          "seen_at": "2026-11-22T08:02:33+00:00"
+          "seen_at": "2026-11-23T09:10:24+00:00"
         }
       ],
       "title_zh": "",
@@ -11216,7 +11407,7 @@
         {
           "source_id": "icsid-cases",
           "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/26/39",
-          "seen_at": "2026-11-22T08:03:24+00:00"
+          "seen_at": "2026-11-23T09:11:06+00:00"
         }
       ],
       "title_zh": "",
@@ -11250,7 +11441,7 @@
         {
           "source_id": "icsid-cases",
           "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/26/40",
-          "seen_at": "2026-11-22T08:03:24+00:00"
+          "seen_at": "2026-11-23T09:11:06+00:00"
         }
       ],
       "title_zh": "",
@@ -11283,7 +11474,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/igict-online-discussion-22oct26/",
-          "seen_at": "2026-11-22T08:01:52+00:00"
+          "seen_at": "2026-11-23T09:09:50+00:00"
         }
       ],
       "title_zh": "",
@@ -11316,7 +11507,7 @@
         {
           "source_id": "pca",
           "url": "https://pca-cpa.org/en/news/pca-press-release-visit-of-h-e-the-minister-of-foreign-affairs-of-the-republic-of-bulgaria/",
-          "seen_at": "2026-11-22T08:02:33+00:00"
+          "seen_at": "2026-11-23T09:10:24+00:00"
         }
       ],
       "title_zh": "",
@@ -11358,7 +11549,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/univalsev30oct/",
-          "seen_at": "2026-11-22T08:01:52+00:00"
+          "seen_at": "2026-11-23T09:09:50+00:00"
         }
       ],
       "title_zh": "",
@@ -11397,7 +11588,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/nus-event-8-oct/",
-          "seen_at": "2026-11-22T08:01:52+00:00"
+          "seen_at": "2026-11-23T09:09:50+00:00"
         }
       ],
       "title_zh": "",
@@ -11430,7 +11621,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/esil-tcweb-30oct26/",
-          "seen_at": "2026-11-22T08:01:52+00:00"
+          "seen_at": "2026-11-23T09:09:50+00:00"
         }
       ],
       "title_zh": "",
@@ -11509,7 +11700,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/esil-conversations-s2e2/",
-          "seen_at": "2026-11-22T08:01:52+00:00"
+          "seen_at": "2026-11-23T09:09:50+00:00"
         }
       ],
       "title_zh": "",
@@ -11578,7 +11769,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/join-or-renew-your-esil-membership-for-2027/",
-          "seen_at": "2026-11-22T08:01:52+00:00"
+          "seen_at": "2026-11-23T09:09:50+00:00"
         }
       ],
       "title_zh": "",
@@ -12496,7 +12687,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/calls-for-papers/cnlu-law-journal-cnlulj/",
-          "seen_at": "2026-11-22T17:52:10+00:00"
+          "seen_at": "2026-11-23T09:09:41+00:00"
         }
       ],
       "title_zh": "",
@@ -12799,7 +12990,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/igict-online-discussion-db-30sep26/",
-          "seen_at": "2026-11-22T08:01:52+00:00"
+          "seen_at": "2026-11-23T09:09:50+00:00"
         }
       ],
       "title_zh": "",
@@ -12962,7 +13153,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/atmospheric-water/",
-          "seen_at": "2026-11-22T08:01:52+00:00"
+          "seen_at": "2026-11-23T09:09:50+00:00"
         }
       ],
       "title_zh": "",
@@ -13067,16 +13258,16 @@
     {
       "id": "7adb601585de3c888e5a",
       "source_id": "icsid-cases",
-      "title": "Case Details Maksim Vladimirovich Poletaev and Solfy RUS LLC v. Republic of Uzbekistan (ICSID Case No. ARB(AF)/26/5)",
+      "title": "Maksim Vladimirovich Poletaev and Solfy RUS LLC v. Republic of Uzbekistan (ICSID Case No. ARB(AF)/26/5)",
       "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB(AF)/26/5",
       "doi": "",
       "module": "cases",
       "published_at": "2026-09-23",
       "date_precision": "day",
       "discovered_at": "2026-11-20T18:39:38+00:00",
-      "updated_at": "2026-11-22T08:03:24+00:00",
-      "evidence_basis": "原文正文核对",
-      "source_revision": "75f09596a7ddef8bd45cbdb5d494cc6164849b82d87e40ed5bbc9da70eef1bdd",
+      "updated_at": "2026-11-23T09:11:06+00:00",
+      "evidence_basis": "官方案件目录",
+      "source_revision": "b1955a93619084f490edc25ade266010600c28c124d364eae802f3fb46a1cb28",
       "topics": [
         "disputes",
         "economic"
@@ -13088,7 +13279,7 @@
         {
           "source_id": "icsid-cases",
           "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB(AF)/26/5",
-          "seen_at": "2026-11-22T08:03:24+00:00"
+          "seen_at": "2026-11-23T09:11:06+00:00"
         }
       ],
       "title_zh": "",
@@ -13121,7 +13312,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/esil-ecr-mentor2627/",
-          "seen_at": "2026-11-22T08:01:52+00:00"
+          "seen_at": "2026-11-23T09:09:50+00:00"
         }
       ],
       "title_zh": "",
@@ -13249,7 +13440,7 @@
         {
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/case-related/192/192-20260922-pre-01-00-en.pdf",
-          "seen_at": "2026-11-22T08:02:34+00:00"
+          "seen_at": "2026-11-23T09:10:25+00:00"
         }
       ],
       "title_zh": "",
@@ -13285,7 +13476,7 @@
         {
           "source_id": "icj-pending",
           "url": "https://www.icj-cij.org/case/193",
-          "seen_at": "2026-11-22T08:02:37+00:00"
+          "seen_at": "2026-11-23T09:10:27+00:00"
         }
       ],
       "title_zh": "",
@@ -13322,7 +13513,7 @@
         {
           "source_id": "icj-pending",
           "url": "https://www.icj-cij.org/case/192",
-          "seen_at": "2026-11-22T08:02:37+00:00"
+          "seen_at": "2026-11-23T09:10:27+00:00"
         }
       ],
       "title_zh": "",
@@ -13353,7 +13544,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/symposium/the-rooms-we-wanted/",
-          "seen_at": "2026-11-22T17:52:10+00:00"
+          "seen_at": "2026-11-23T09:09:41+00:00"
         }
       ],
       "title_zh": "",
@@ -13588,16 +13779,16 @@
     {
       "id": "ec856a07c6d9de5c3635",
       "source_id": "icsid-cases",
-      "title": "Case Details Veolia Propreté SAS v. Italian Republic (ICSID Case No. ARB/18/20)",
+      "title": "Veolia Propreté SAS v. Italian Republic (ICSID Case No. ARB/18/20)",
       "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/18/20",
       "doi": "",
       "module": "cases",
       "published_at": "2026-09-16",
       "date_precision": "day",
       "discovered_at": "2026-11-20T18:39:38+00:00",
-      "updated_at": "2026-11-22T08:03:24+00:00",
-      "evidence_basis": "原文正文核对",
-      "source_revision": "bcb317f05deff5a6c9fd49ebd0c3ea385c5b4aa9b55000550d590acc5b2eed42",
+      "updated_at": "2026-11-23T09:11:06+00:00",
+      "evidence_basis": "官方案件目录",
+      "source_revision": "99beccc760cefd125d7393ae04186efaad43d4c4865956a089137d5bc942f488",
       "topics": [
         "disputes",
         "economic"
@@ -13609,7 +13800,7 @@
         {
           "source_id": "icsid-cases",
           "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/18/20",
-          "seen_at": "2026-11-22T08:03:24+00:00"
+          "seen_at": "2026-11-23T09:11:06+00:00"
         }
       ],
       "title_zh": "",
@@ -13669,16 +13860,16 @@
     {
       "id": "de9fe5feeb17dd89fcf7",
       "source_id": "icsid-cases",
-      "title": "Case Details Petersen Energía S.A.U. and Petersen Energía Inversora S.A.U. v. Argentine Republic (ICSID Case No. ARB/26/38)",
+      "title": "Petersen Energía S.A.U. and Petersen Energía Inversora S.A.U. v. Argentine Republic (ICSID Case No. ARB/26/38)",
       "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/26/38",
       "doi": "",
       "module": "cases",
       "published_at": "2026-09-15",
       "date_precision": "day",
       "discovered_at": "2026-11-20T18:39:38+00:00",
-      "updated_at": "2026-11-22T08:03:24+00:00",
-      "evidence_basis": "原文正文核对",
-      "source_revision": "3fdb20c213efb0ea50add1938478e7ce04e78599c6e52defc66ea5d7d5566358",
+      "updated_at": "2026-11-23T09:11:06+00:00",
+      "evidence_basis": "官方案件目录",
+      "source_revision": "468e48cd6d174666b7b7af141e5aeb13ae4fc0ac7b47d576f6a054c3fdbca9f2",
       "topics": [
         "disputes",
         "economic"
@@ -13690,7 +13881,7 @@
         {
           "source_id": "icsid-cases",
           "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/26/38",
-          "seen_at": "2026-11-22T08:03:24+00:00"
+          "seen_at": "2026-11-23T09:11:06+00:00"
         }
       ],
       "title_zh": "",
@@ -13844,7 +14035,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/symposium/teaching-international-law-vol-1/",
-          "seen_at": "2026-11-22T17:52:10+00:00"
+          "seen_at": "2026-11-23T09:09:41+00:00"
         }
       ],
       "title_zh": "",
@@ -14022,7 +14213,7 @@
         {
           "source_id": "uncitral-news",
           "url": "https://uncitral.un.org/en/news/10th-intersessional-meeting-uncitral-working-group-iii",
-          "seen_at": "2026-11-22T08:03:17+00:00"
+          "seen_at": "2026-11-23T09:11:01+00:00"
         }
       ],
       "title_zh": "",
@@ -14055,7 +14246,7 @@
         {
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/case-related/193/193-20260910-pre-01-00-en.pdf",
-          "seen_at": "2026-11-22T08:02:34+00:00"
+          "seen_at": "2026-11-23T09:10:25+00:00"
         }
       ],
       "title_zh": "",
@@ -14244,16 +14435,16 @@
     {
       "id": "005de506de53a917fc2c",
       "source_id": "icsid-cases",
-      "title": "Mikalai Vinitski v. Republic of Armenia (ICSID Case No. ARB/26/37)",
+      "title": "Case Details Mikalai Vinitski v. Republic of Armenia (ICSID Case No. ARB/26/37)",
       "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/26/37",
       "doi": "",
       "module": "cases",
       "published_at": "2026-09-04",
       "date_precision": "day",
       "discovered_at": "2026-11-20T18:39:38+00:00",
-      "updated_at": "2026-11-20T18:39:38+00:00",
-      "evidence_basis": "官方案件目录",
-      "source_revision": "8db03a276161ae9e3618aff6f499a9e0f325307d80cbb6a5d77f875ab49761ef",
+      "updated_at": "2026-11-23T09:11:06+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "8a617ab005a4f6265a8bb70d0aa5842df86f4da50eb8048c29ef6d52ff9ec5ae",
       "topics": [
         "disputes",
         "economic"
@@ -14265,7 +14456,43 @@
         {
           "source_id": "icsid-cases",
           "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/26/37",
-          "seen_at": "2026-11-22T08:03:24+00:00"
+          "seen_at": "2026-11-23T09:11:06+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
+    },
+    {
+      "id": "6c81889ed2cbd530b874",
+      "source_id": "icj-pending",
+      "title": "Appeal relating to the Jurisdiction of the ICAO Council under Article 84 of the Convention on International Civil Aviation (Islamic Republic of Iran v. Canada, Sweden, Ukraine and United Kingdom)",
+      "url": "https://www.icj-cij.org/case/198",
+      "doi": "",
+      "module": "cases",
+      "published_at": "2026-09-03",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T22:12:00+00:00",
+      "updated_at": "2026-11-23T09:10:27+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "e7e538b87704ad27b2864954d7de39f95fb7d06e2bbefe2fc58ebd5e23911d1b",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {
+        "date_note": "案件页最新文书日期"
+      },
+      "date_note": "案件页最新文书日期",
+      "material_type": "国际法院待审案件页",
+      "provenance": [
+        {
+          "source_id": "icj-pending",
+          "url": "https://www.icj-cij.org/case/198",
+          "seen_at": "2026-11-23T09:10:27+00:00"
         }
       ],
       "title_zh": "",
@@ -14299,7 +14526,42 @@
         {
           "source_id": "uncitral-news",
           "url": "https://uncitral.un.org/en/news/uzbekistan-accedes-singapore-convention-mediation",
-          "seen_at": "2026-11-22T08:03:17+00:00"
+          "seen_at": "2026-11-23T09:11:01+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
+    },
+    {
+      "id": "d352a4ea0d47e285cbb6",
+      "source_id": "un-geneva-press",
+      "title": "Human Rights Council to Hold its Sixty-Third Regular Session from 7 September to 7 October 2026",
+      "url": "https://www.ungeneva.org/en/news-media/press-release/2026/09/human-rights-council-hold-its-sixty-third-regular-session-7",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-09-02",
+      "date_precision": "day",
+      "discovered_at": "2026-11-23T09:09:17+00:00",
+      "updated_at": "2026-11-23T09:09:17+00:00",
+      "evidence_basis": "RSS 标题",
+      "source_revision": "21dea27895f7d90dfe215f556e119d6422c3609bfcd3073a14c1bd36157c1c67",
+      "topics": [
+        "rights"
+      ],
+      "authors": [
+        "ungeneva.org"
+      ],
+      "bibliography": {},
+      "material_type": "官方机构新闻报道",
+      "provenance": [
+        {
+          "source_id": "un-geneva-press",
+          "url": "https://www.ungeneva.org/en/news-media/press-release/2026/09/human-rights-council-hold-its-sixty-third-regular-session-7",
+          "seen_at": "2026-11-23T09:09:17+00:00"
         }
       ],
       "title_zh": "",
@@ -14332,7 +14594,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/esil-newsletter-summer-2026/",
-          "seen_at": "2026-11-22T08:01:52+00:00"
+          "seen_at": "2026-11-23T09:09:50+00:00"
         }
       ],
       "title_zh": "",
@@ -14513,7 +14775,7 @@
         {
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/press-releases/0/000-20260901-pre-01-00-en.pdf",
-          "seen_at": "2026-11-22T08:02:34+00:00"
+          "seen_at": "2026-11-23T09:10:25+00:00"
         }
       ],
       "title_zh": "",
@@ -14688,7 +14950,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/brill-nijhoff-publications/",
-          "seen_at": "2026-11-22T08:01:52+00:00"
+          "seen_at": "2026-11-23T09:09:50+00:00"
         }
       ],
       "title_zh": "",
@@ -14795,41 +15057,7 @@
         {
           "source_id": "un-geneva-press",
           "url": "https://www.ungeneva.org/en/news-media/press-release/2026/08/renewed-call-united-nations-secretary-general-and-president",
-          "seen_at": "2026-11-22T17:51:24+00:00"
-        }
-      ],
-      "title_zh": "",
-      "summary_zh": "",
-      "ai": null,
-      "event": null,
-      "deadline": null,
-      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
-    },
-    {
-      "id": "46420cb24dcd24967a6d",
-      "source_id": "icsid-cases",
-      "title": "Siamgas and Petrochemicals Public Company Limited v. Malaysia (ICSID Case No. ARB(AF)/26/4)",
-      "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB(AF)/26/4",
-      "doi": "",
-      "module": "cases",
-      "published_at": "2026-08-24",
-      "date_precision": "day",
-      "discovered_at": "2026-11-20T18:39:38+00:00",
-      "updated_at": "2026-11-20T18:39:38+00:00",
-      "evidence_basis": "官方案件目录",
-      "source_revision": "d7f5b81c575f31dea225356e4bc1ba574ba20b027d99e754c5b602feebfc978a",
-      "topics": [
-        "disputes",
-        "economic"
-      ],
-      "authors": [],
-      "bibliography": {},
-      "material_type": "学术平台文章",
-      "provenance": [
-        {
-          "source_id": "icsid-cases",
-          "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB(AF)/26/4",
-          "seen_at": "2026-11-22T08:03:24+00:00"
+          "seen_at": "2026-11-23T09:09:17+00:00"
         }
       ],
       "title_zh": "",
@@ -14842,16 +15070,16 @@
     {
       "id": "080d262765e110c8b8fe",
       "source_id": "icsid-cases",
-      "title": "Mondi Investments Limited v. Republic of Poland (ICSID Case No. ARB(AF)/24/1)",
+      "title": "Case Details Mondi Investments Limited v. Republic of Poland (ICSID Case No. ARB(AF)/24/1)",
       "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB(AF)/24/1",
       "doi": "",
       "module": "cases",
       "published_at": "2026-08-19",
       "date_precision": "day",
       "discovered_at": "2026-11-20T18:39:38+00:00",
-      "updated_at": "2026-11-20T18:39:38+00:00",
-      "evidence_basis": "官方案件目录",
-      "source_revision": "b7fda35166e3f734385a7f4a9c4975f6f0dae687a73c9fccc10bd449c5bcbfc9",
+      "updated_at": "2026-11-23T09:11:06+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "95343e341e8cb220811a38e888fd9e0ff798c39734ba2b39ddf7b140ab4d735a",
       "topics": [
         "disputes",
         "economic"
@@ -14863,7 +15091,7 @@
         {
           "source_id": "icsid-cases",
           "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB(AF)/24/1",
-          "seen_at": "2026-11-22T08:03:24+00:00"
+          "seen_at": "2026-11-23T09:11:06+00:00"
         }
       ],
       "title_zh": "",
@@ -14897,7 +15125,7 @@
         {
           "source_id": "uncitral-news",
           "url": "https://uncitral.un.org/en/news/mauritius-ratifies-singapore-convention-mediation",
-          "seen_at": "2026-11-22T08:03:17+00:00"
+          "seen_at": "2026-11-23T09:11:01+00:00"
         }
       ],
       "title_zh": "",
@@ -14931,7 +15159,7 @@
         {
           "source_id": "icsid-cases",
           "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB(AF)/26/3",
-          "seen_at": "2026-11-22T08:03:24+00:00"
+          "seen_at": "2026-11-23T09:11:06+00:00"
         }
       ],
       "title_zh": "",
@@ -14967,7 +15195,7 @@
         {
           "source_id": "icj-pending",
           "url": "https://www.icj-cij.org/case/189",
-          "seen_at": "2026-11-22T08:02:37+00:00"
+          "seen_at": "2026-11-23T09:10:27+00:00"
         }
       ],
       "title_zh": "",
@@ -15001,7 +15229,7 @@
         {
           "source_id": "icsid-cases",
           "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/22/15",
-          "seen_at": "2026-11-22T08:03:24+00:00"
+          "seen_at": "2026-11-23T09:11:06+00:00"
         }
       ],
       "title_zh": "",
@@ -15268,7 +15496,7 @@
         {
           "source_id": "icsid-cases",
           "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/26/36",
-          "seen_at": "2026-11-22T08:03:24+00:00"
+          "seen_at": "2026-11-23T09:11:06+00:00"
         }
       ],
       "title_zh": "",
@@ -15447,7 +15675,7 @@
         {
           "source_id": "icj-pending",
           "url": "https://www.icj-cij.org/case/202",
-          "seen_at": "2026-11-22T08:02:37+00:00"
+          "seen_at": "2026-11-23T09:10:27+00:00"
         }
       ],
       "title_zh": "",
@@ -15832,7 +16060,7 @@
         {
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/case-related/193/193-20260731-pre-01-00-en.pdf",
-          "seen_at": "2026-11-22T08:02:34+00:00"
+          "seen_at": "2026-11-23T09:10:25+00:00"
         }
       ],
       "title_zh": "",
@@ -15958,7 +16186,7 @@
         {
           "source_id": "icsid-cases",
           "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/20/13",
-          "seen_at": "2026-11-22T08:03:24+00:00"
+          "seen_at": "2026-11-23T09:11:06+00:00"
         }
       ],
       "title_zh": "",
@@ -15991,7 +16219,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/calls-for-papers/journal-of-international-law-of-peace-and-armed-conflict-jilpac/",
-          "seen_at": "2026-11-22T17:52:10+00:00"
+          "seen_at": "2026-11-23T09:09:41+00:00"
         }
       ],
       "title_zh": "",
@@ -16022,7 +16250,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/calls-for-papers/board-of-peace-might-makes-right-again-inquiries-in-the-current-shaping-of-global-governance/",
-          "seen_at": "2026-11-22T17:52:10+00:00"
+          "seen_at": "2026-11-23T09:09:41+00:00"
         }
       ],
       "title_zh": "",
@@ -16152,7 +16380,7 @@
         {
           "source_id": "icsid-cases",
           "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/26/35",
-          "seen_at": "2026-11-22T08:03:24+00:00"
+          "seen_at": "2026-11-23T09:11:06+00:00"
         }
       ],
       "title_zh": "",
@@ -16282,7 +16510,7 @@
         {
           "source_id": "icsid-cases",
           "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/15/49",
-          "seen_at": "2026-11-22T08:03:24+00:00"
+          "seen_at": "2026-11-23T09:11:06+00:00"
         }
       ],
       "title_zh": "",
@@ -16316,7 +16544,7 @@
         {
           "source_id": "icsid-cases",
           "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/26/34",
-          "seen_at": "2026-11-22T08:03:24+00:00"
+          "seen_at": "2026-11-23T09:11:06+00:00"
         }
       ],
       "title_zh": "",
@@ -16349,7 +16577,7 @@
         {
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/case-related/200/200-20260721-pre-02-00-en.pdf",
-          "seen_at": "2026-11-22T08:02:34+00:00"
+          "seen_at": "2026-11-23T09:10:25+00:00"
         }
       ],
       "title_zh": "",
@@ -16382,7 +16610,43 @@
         {
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/case-related/200/200-20260721-pre-01-00-en.pdf",
-          "seen_at": "2026-11-22T08:02:34+00:00"
+          "seen_at": "2026-11-23T09:10:25+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
+    },
+    {
+      "id": "fd3ce2cc0605cfe2a7ac",
+      "source_id": "icj-pending",
+      "title": "Alleged Smuggling of Migrants (Lithuania v. Belarus)",
+      "url": "https://www.icj-cij.org/case/200",
+      "doi": "",
+      "module": "cases",
+      "published_at": "2026-07-21",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T22:12:00+00:00",
+      "updated_at": "2026-11-23T09:10:27+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "83c1c25ded4c6e33641fdd06169c051825d9b4f5600ab0077ad36d4924f53b32",
+      "topics": [
+        "disputes"
+      ],
+      "authors": [],
+      "bibliography": {
+        "date_note": "案件页最新文书日期"
+      },
+      "date_note": "案件页最新文书日期",
+      "material_type": "国际法院待审案件页",
+      "provenance": [
+        {
+          "source_id": "icj-pending",
+          "url": "https://www.icj-cij.org/case/200",
+          "seen_at": "2026-11-23T09:10:27+00:00"
         }
       ],
       "title_zh": "",
@@ -16757,7 +17021,7 @@
         {
           "source_id": "icsid-cases",
           "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/26/33",
-          "seen_at": "2026-11-22T08:03:24+00:00"
+          "seen_at": "2026-11-23T09:11:06+00:00"
         }
       ],
       "title_zh": "",
@@ -16790,7 +17054,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/leuphanajobopportunities/",
-          "seen_at": "2026-11-22T08:01:52+00:00"
+          "seen_at": "2026-11-23T09:09:50+00:00"
         }
       ],
       "title_zh": "",
@@ -16825,7 +17089,7 @@
         {
           "source_id": "uncitral-news",
           "url": "https://uncitral.un.org/en/news/uncitral-advances-dispute-settlement-and-digital-trade-work-its-59th-session",
-          "seen_at": "2026-11-22T08:03:17+00:00"
+          "seen_at": "2026-11-23T09:11:01+00:00"
         }
       ],
       "title_zh": "",
@@ -16859,7 +17123,7 @@
         {
           "source_id": "icsid-cases",
           "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/26/32",
-          "seen_at": "2026-11-22T08:03:24+00:00"
+          "seen_at": "2026-11-23T09:11:06+00:00"
         }
       ],
       "title_zh": "",
@@ -16894,7 +17158,7 @@
         {
           "source_id": "un-geneva-press",
           "url": "https://www.ungeneva.org/en/news-media/press-release/2026/07/human-rights-council-concludes-sixty-second-regular-session-after",
-          "seen_at": "2026-11-22T17:51:24+00:00"
+          "seen_at": "2026-11-23T09:09:17+00:00"
         }
       ],
       "title_zh": "",
@@ -16929,7 +17193,7 @@
         {
           "source_id": "uncitral-news",
           "url": "https://uncitral.un.org/en/news/uncitral-adopts-key-texts-facilitate-use-arbitral-awards-and-notices-arbitration-electronic",
-          "seen_at": "2026-11-22T08:03:17+00:00"
+          "seen_at": "2026-11-23T09:11:01+00:00"
         }
       ],
       "title_zh": "",
@@ -16960,7 +17224,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/calls-for-papers/die-friedens-warte-i/",
-          "seen_at": "2026-11-22T17:52:10+00:00"
+          "seen_at": "2026-11-23T09:09:41+00:00"
         }
       ],
       "title_zh": "",
@@ -17028,7 +17292,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/symposium/arms-exports-unbound-the-german-federal-constitutional-courts-gaza-case-in-perspective/",
-          "seen_at": "2026-11-22T17:52:10+00:00"
+          "seen_at": "2026-11-23T09:09:41+00:00"
         }
       ],
       "title_zh": "",
@@ -17063,7 +17327,7 @@
         {
           "source_id": "uncitral-news",
           "url": "https://uncitral.un.org/en/news/significant-investor-state-dispute-settlement-reforms-agreed-uncitral",
-          "seen_at": "2026-11-22T08:03:17+00:00"
+          "seen_at": "2026-11-23T09:11:01+00:00"
         }
       ],
       "title_zh": "",
@@ -17289,7 +17553,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/esil-newsletter-spring-2026/",
-          "seen_at": "2026-11-22T08:01:52+00:00"
+          "seen_at": "2026-11-23T09:09:50+00:00"
         }
       ],
       "title_zh": "",
@@ -17322,7 +17586,7 @@
         {
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/case-related/200/200-20260630-pre-01-00-en.pdf",
-          "seen_at": "2026-11-22T08:02:34+00:00"
+          "seen_at": "2026-11-23T09:10:25+00:00"
         }
       ],
       "title_zh": "",
@@ -17355,7 +17619,7 @@
         {
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/case-related/202/202-20260626-pre-01-00-en.pdf",
-          "seen_at": "2026-11-22T08:02:34+00:00"
+          "seen_at": "2026-11-23T09:10:25+00:00"
         }
       ],
       "title_zh": "",
@@ -17389,7 +17653,7 @@
         {
           "source_id": "icsid-cases",
           "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/26/31",
-          "seen_at": "2026-11-22T08:03:24+00:00"
+          "seen_at": "2026-11-23T09:11:06+00:00"
         }
       ],
       "title_zh": "",
@@ -17423,7 +17687,7 @@
         {
           "source_id": "icsid-cases",
           "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/26/29",
-          "seen_at": "2026-11-22T08:03:24+00:00"
+          "seen_at": "2026-11-23T09:11:06+00:00"
         }
       ],
       "title_zh": "",
@@ -17457,7 +17721,7 @@
         {
           "source_id": "icsid-cases",
           "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/26/30",
-          "seen_at": "2026-11-22T08:03:24+00:00"
+          "seen_at": "2026-11-23T09:11:06+00:00"
         }
       ],
       "title_zh": "",
@@ -17491,7 +17755,7 @@
         {
           "source_id": "icsid-cases",
           "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/26/28",
-          "seen_at": "2026-11-22T08:03:24+00:00"
+          "seen_at": "2026-11-23T09:11:06+00:00"
         }
       ],
       "title_zh": "",
@@ -17524,7 +17788,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/symposium/international-criminal-law-in-turmoil-charting-new-paths-as-they-unfold/",
-          "seen_at": "2026-11-22T17:52:10+00:00"
+          "seen_at": "2026-11-23T09:09:41+00:00"
         }
       ],
       "title_zh": "",
@@ -17557,7 +17821,7 @@
         {
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/press-releases/0/000-20260618-pre-01-00-en.pdf",
-          "seen_at": "2026-11-22T08:02:34+00:00"
+          "seen_at": "2026-11-23T09:10:25+00:00"
         }
       ],
       "title_zh": "",
@@ -17687,7 +17951,7 @@
         {
           "source_id": "un-geneva-press",
           "url": "https://www.ungeneva.org/en/news-media/press-release/2026/06/senior-oversight-leaders-discuss-role-and-evolution-independent",
-          "seen_at": "2026-11-22T17:51:24+00:00"
+          "seen_at": "2026-11-23T09:09:17+00:00"
         }
       ],
       "title_zh": "",
@@ -17813,7 +18077,7 @@
         {
           "source_id": "icsid-cases",
           "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/26/27",
-          "seen_at": "2026-11-22T08:03:24+00:00"
+          "seen_at": "2026-11-23T09:11:06+00:00"
         }
       ],
       "title_zh": "",
@@ -17848,7 +18112,7 @@
         {
           "source_id": "un-geneva-press",
           "url": "https://www.ungeneva.org/en/news-media/press-release/2026/06/le-conseil-des-droits-de-lhomme-tiendra-sa-soixante-deuxieme",
-          "seen_at": "2026-11-22T17:51:24+00:00"
+          "seen_at": "2026-11-23T09:09:17+00:00"
         }
       ],
       "title_zh": "",
@@ -17882,7 +18146,7 @@
         {
           "source_id": "icsid-cases",
           "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/26/26",
-          "seen_at": "2026-11-22T08:03:24+00:00"
+          "seen_at": "2026-11-23T09:11:06+00:00"
         }
       ],
       "title_zh": "",
@@ -17916,7 +18180,7 @@
         {
           "source_id": "uncitral-news",
           "url": "https://uncitral.un.org/en/news/uncitral-working-group-iii-workshop-implementation-isds-reform-african-states",
-          "seen_at": "2026-11-22T08:03:17+00:00"
+          "seen_at": "2026-11-23T09:11:01+00:00"
         }
       ],
       "title_zh": "",
@@ -17958,7 +18222,7 @@
         {
           "source_id": "cambridge-cfp-ijcp",
           "url": "https://www.cambridge.org/core/journals/international-journal-of-cultural-property/announcements/call-for-papers/call-for-special-issue-proposal-ijcp-volume-34-2027",
-          "seen_at": "2026-11-22T08:03:07+00:00"
+          "seen_at": "2026-11-23T09:10:56+00:00"
         }
       ],
       "title_zh": "",
@@ -17996,7 +18260,7 @@
         {
           "source_id": "icsid-cases",
           "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/26/25",
-          "seen_at": "2026-11-22T08:03:24+00:00"
+          "seen_at": "2026-11-23T09:11:06+00:00"
         }
       ],
       "title_zh": "",
@@ -18076,7 +18340,7 @@
         {
           "source_id": "icsid-cases",
           "url": "https://icsid.worldbank.org/cases/case-database/case-detail?CaseNo=ARB/26/24",
-          "seen_at": "2026-11-22T08:03:24+00:00"
+          "seen_at": "2026-11-23T09:11:06+00:00"
         }
       ],
       "title_zh": "",
@@ -18254,7 +18518,7 @@
         {
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/case-related/191/191-20260521-pre-01-00-en.pdf",
-          "seen_at": "2026-11-22T08:02:34+00:00"
+          "seen_at": "2026-11-23T09:10:25+00:00"
         }
       ],
       "title_zh": "",
@@ -18395,7 +18659,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/esilrf-2027/",
-          "seen_at": "2026-11-22T08:01:52+00:00"
+          "seen_at": "2026-11-23T09:09:50+00:00"
         }
       ],
       "title_zh": "",
@@ -18437,7 +18701,7 @@
         {
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/case-related/191/191-20260512-pre-01-00-en.pdf",
-          "seen_at": "2026-11-22T08:02:34+00:00"
+          "seen_at": "2026-11-23T09:10:25+00:00"
         }
       ],
       "title_zh": "",
@@ -18470,7 +18734,7 @@
         {
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/case-related/171/171-20260511-pre-01-00-en.pdf",
-          "seen_at": "2026-11-22T08:02:34+00:00"
+          "seen_at": "2026-11-23T09:10:25+00:00"
         }
       ],
       "title_zh": "",
@@ -18506,7 +18770,7 @@
         {
           "source_id": "icj-pending",
           "url": "https://www.icj-cij.org/case/171",
-          "seen_at": "2026-11-22T08:02:37+00:00"
+          "seen_at": "2026-11-23T09:10:27+00:00"
         }
       ],
       "title_zh": "",
@@ -18918,7 +19182,7 @@
         {
           "source_id": "uncitral-news",
           "url": "https://uncitral.un.org/en/news/azerbaijan-signs-singapore-convention-mediation",
-          "seen_at": "2026-11-22T08:03:17+00:00"
+          "seen_at": "2026-11-23T09:11:01+00:00"
         }
       ],
       "title_zh": "",
@@ -18951,40 +19215,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/esil-newsletter-winter-2026-2/",
-          "seen_at": "2026-11-22T08:01:52+00:00"
-        }
-      ],
-      "title_zh": "",
-      "summary_zh": "",
-      "ai": null,
-      "event": null,
-      "deadline": null,
-      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
-    },
-    {
-      "id": "64808df27c7b2ede7a53",
-      "source_id": "china-mfa-statements",
-      "title": "外交部发言人就台湾当局宣称赖清德“暂缓”窜访斯威士兰答记者问",
-      "url": "https://www.mfa.gov.cn/fyrbt_673021/dhdw_673027/202604/t20260422_11897114.shtml",
-      "doi": "",
-      "module": "news",
-      "published_at": "2026-04-22",
-      "date_precision": "day",
-      "discovered_at": "2026-11-22T08:00:51+00:00",
-      "updated_at": "2026-11-22T08:00:51+00:00",
-      "evidence_basis": "官方原发页面核对",
-      "source_revision": "87a11a1c799c2f32fa30a179a03d4e4829df5a44f67ad632b1ecd40a774decd4",
-      "topics": [],
-      "authors": [],
-      "bibliography": {
-        "original_issuer": "中华人民共和国外交部"
-      },
-      "material_type": "中国政府原发信息",
-      "provenance": [
-        {
-          "source_id": "china-mfa-statements",
-          "url": "https://www.mfa.gov.cn/fyrbt_673021/dhdw_673027/202604/t20260422_11897114.shtml",
-          "seen_at": "2026-11-22T08:00:51+00:00"
+          "seen_at": "2026-11-23T09:09:50+00:00"
         }
       ],
       "title_zh": "",
@@ -19065,7 +19296,7 @@
         {
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/press-releases/0/000-20260417-pre-01-00-en.pdf",
-          "seen_at": "2026-11-22T08:02:34+00:00"
+          "seen_at": "2026-11-23T09:10:25+00:00"
         }
       ],
       "title_zh": "",
@@ -19098,7 +19329,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/symposium/from-incarceration-to-erasure-palestinian-prisoners-in-the-architecture-of-genocide-apartheid-and-torture/",
-          "seen_at": "2026-11-22T17:52:10+00:00"
+          "seen_at": "2026-11-23T09:09:41+00:00"
         }
       ],
       "title_zh": "",
@@ -19134,7 +19365,7 @@
         {
           "source_id": "icj-pending",
           "url": "https://www.icj-cij.org/case/185",
-          "seen_at": "2026-11-22T08:02:37+00:00"
+          "seen_at": "2026-11-23T09:10:27+00:00"
         }
       ],
       "title_zh": "",
@@ -19202,7 +19433,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/symposium/pathology-of-plenty-natural-resources-in-international-law/",
-          "seen_at": "2026-11-22T17:52:10+00:00"
+          "seen_at": "2026-11-23T09:09:41+00:00"
         }
       ],
       "title_zh": "",
@@ -19236,7 +19467,7 @@
         {
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/press-releases/0/000-20260410-pre-02-00-en.pdf",
-          "seen_at": "2026-11-22T08:02:34+00:00"
+          "seen_at": "2026-11-23T09:10:25+00:00"
         }
       ],
       "title_zh": "",
@@ -19269,7 +19500,7 @@
         {
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/press-releases/0/000-20260410-pre-01-00-en.pdf",
-          "seen_at": "2026-11-22T08:02:34+00:00"
+          "seen_at": "2026-11-23T09:10:25+00:00"
         }
       ],
       "title_zh": "",
@@ -19783,7 +20014,7 @@
         {
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/case-related/185/185-20260319-pre-01-00-en.pdf",
-          "seen_at": "2026-11-22T08:02:34+00:00"
+          "seen_at": "2026-11-23T09:10:25+00:00"
         }
       ],
       "title_zh": "",
@@ -19850,7 +20081,7 @@
         {
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/case-related/192/192-20260313-pre-01-00-en.pdf",
-          "seen_at": "2026-11-22T08:02:34+00:00"
+          "seen_at": "2026-11-23T09:10:25+00:00"
         }
       ],
       "title_zh": "",
@@ -19884,7 +20115,7 @@
         {
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/case-related/192/192-20260312-pre-01-00-en.pdf",
-          "seen_at": "2026-11-22T08:02:34+00:00"
+          "seen_at": "2026-11-23T09:10:25+00:00"
         }
       ],
       "title_zh": "",
@@ -19948,7 +20179,7 @@
         {
           "source_id": "un-geneva-press",
           "url": "https://www.ungeneva.org/en/news-media/press-release/2026/03/celebrating-20-year-legacy-international-convention-protection-all",
-          "seen_at": "2026-11-22T17:51:24+00:00"
+          "seen_at": "2026-11-23T09:09:17+00:00"
         }
       ],
       "title_zh": "",
@@ -19981,7 +20212,7 @@
         {
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/case-related/185/185-20260305-pre-01-00-en.pdf",
-          "seen_at": "2026-11-22T08:02:34+00:00"
+          "seen_at": "2026-11-23T09:10:25+00:00"
         }
       ],
       "title_zh": "",
@@ -20015,7 +20246,7 @@
         {
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/case-related/192/192-20260304-pre-01-00-en.pdf",
-          "seen_at": "2026-11-22T08:02:34+00:00"
+          "seen_at": "2026-11-23T09:10:25+00:00"
         }
       ],
       "title_zh": "",
@@ -20096,7 +20327,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/unileidensurvey/",
-          "seen_at": "2026-11-22T08:01:52+00:00"
+          "seen_at": "2026-11-23T09:09:50+00:00"
         }
       ],
       "title_zh": "",
@@ -20129,7 +20360,7 @@
         {
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/press-releases/0/000-20260302-pre-01-00-en.pdf",
-          "seen_at": "2026-11-22T08:02:34+00:00"
+          "seen_at": "2026-11-23T09:10:25+00:00"
         }
       ],
       "title_zh": "",
@@ -20160,73 +20391,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/symposium/women-in-international-law-vol-5/",
-          "seen_at": "2026-11-22T17:52:10+00:00"
-        }
-      ],
-      "title_zh": "",
-      "summary_zh": "",
-      "ai": null,
-      "event": null,
-      "deadline": null,
-      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
-    },
-    {
-      "id": "145fef9b38ff8fe44afe",
-      "source_id": "china-mfa-statements",
-      "title": "外交部发言人就伊朗最高领袖哈梅内伊遇害答记者问",
-      "url": "https://www.mfa.gov.cn/fyrbt_673021/dhdw_673027/202603/t20260301_11866721.shtml",
-      "doi": "",
-      "module": "news",
-      "published_at": "2026-03-01",
-      "date_precision": "day",
-      "discovered_at": "2026-11-22T08:00:51+00:00",
-      "updated_at": "2026-11-22T08:00:51+00:00",
-      "evidence_basis": "官方原发页面核对",
-      "source_revision": "accededb03fb8bb1f95f3cf03c4dda2aa316beb65437d13296f065e335377b10",
-      "topics": [],
-      "authors": [],
-      "bibliography": {
-        "original_issuer": "中华人民共和国外交部"
-      },
-      "material_type": "中国政府原发信息",
-      "provenance": [
-        {
-          "source_id": "china-mfa-statements",
-          "url": "https://www.mfa.gov.cn/fyrbt_673021/dhdw_673027/202603/t20260301_11866721.shtml",
-          "seen_at": "2026-11-22T08:00:51+00:00"
-        }
-      ],
-      "title_zh": "",
-      "summary_zh": "",
-      "ai": null,
-      "event": null,
-      "deadline": null,
-      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
-    },
-    {
-      "id": "127c88809a13fd0f63b9",
-      "source_id": "china-mfa-statements",
-      "title": "外交部发言人就美国和以色列军事打击伊朗答记者问",
-      "url": "https://www.mfa.gov.cn/fyrbt_673021/dhdw_673027/202602/t20260228_11866533.shtml",
-      "doi": "",
-      "module": "news",
-      "published_at": "2026-02-28",
-      "date_precision": "day",
-      "discovered_at": "2026-11-22T08:00:51+00:00",
-      "updated_at": "2026-11-22T08:00:51+00:00",
-      "evidence_basis": "官方原发页面核对",
-      "source_revision": "2679f25adc8bea0b65f565e498f12f39a303f5bdc13d6924861d4633e4472578",
-      "topics": [],
-      "authors": [],
-      "bibliography": {
-        "original_issuer": "中华人民共和国外交部"
-      },
-      "material_type": "中国政府原发信息",
-      "provenance": [
-        {
-          "source_id": "china-mfa-statements",
-          "url": "https://www.mfa.gov.cn/fyrbt_673021/dhdw_673027/202602/t20260228_11866533.shtml",
-          "seen_at": "2026-11-22T08:00:51+00:00"
+          "seen_at": "2026-11-23T09:09:41+00:00"
         }
       ],
       "title_zh": "",
@@ -20262,7 +20427,7 @@
         {
           "source_id": "icj-pending",
           "url": "https://www.icj-cij.org/case/164",
-          "seen_at": "2026-11-22T08:02:37+00:00"
+          "seen_at": "2026-11-23T09:10:27+00:00"
         }
       ],
       "title_zh": "",
@@ -20298,7 +20463,7 @@
         {
           "source_id": "icj-pending",
           "url": "https://www.icj-cij.org/case/194",
-          "seen_at": "2026-11-22T08:02:37+00:00"
+          "seen_at": "2026-11-23T09:10:27+00:00"
         }
       ],
       "title_zh": "",
@@ -20334,7 +20499,7 @@
         {
           "source_id": "icj-pending",
           "url": "https://www.icj-cij.org/case/195",
-          "seen_at": "2026-11-22T08:02:37+00:00"
+          "seen_at": "2026-11-23T09:10:27+00:00"
         }
       ],
       "title_zh": "",
@@ -20459,7 +20624,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/symposium/joint-book-review-symposium-on-international-organizations/",
-          "seen_at": "2026-11-22T17:52:10+00:00"
+          "seen_at": "2026-11-23T09:09:41+00:00"
         }
       ],
       "title_zh": "",
@@ -20494,7 +20659,73 @@
         {
           "source_id": "un-geneva-press",
           "url": "https://www.ungeneva.org/en/news-media/press-release/2026/02/le-conseil-des-droits-de-lhomme-tiendra-sa-soixante-et-unieme",
-          "seen_at": "2026-11-22T17:51:24+00:00"
+          "seen_at": "2026-11-23T09:09:17+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
+    },
+    {
+      "id": "3aadce5a7ac41c0f0ec0",
+      "source_id": "china-mfa-statements",
+      "title": "外交部发言人就对加拿大、英国实施免签政策答记者问",
+      "url": "https://www.mfa.gov.cn/fyrbt_673021/dhdw_673027/202602/t20260215_11860462.shtml",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-02-15",
+      "date_precision": "day",
+      "discovered_at": "2026-11-23T09:09:07+00:00",
+      "updated_at": "2026-11-23T09:09:07+00:00",
+      "evidence_basis": "官方原发页面核对",
+      "source_revision": "d368f02c3a6375d6a50ae20eb2ec859467c51de5c702fb90339d17fdae92b547",
+      "topics": [],
+      "authors": [],
+      "bibliography": {
+        "original_issuer": "中华人民共和国外交部"
+      },
+      "material_type": "中国政府原发信息",
+      "provenance": [
+        {
+          "source_id": "china-mfa-statements",
+          "url": "https://www.mfa.gov.cn/fyrbt_673021/dhdw_673027/202602/t20260215_11860462.shtml",
+          "seen_at": "2026-11-23T09:09:07+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
+    },
+    {
+      "id": "157b84abf163d6ffa2fe",
+      "source_id": "china-mfa-statements",
+      "title": "外交部发言人就孟加拉国大选结果答记者问",
+      "url": "https://www.mfa.gov.cn/fyrbt_673021/dhdw_673027/202602/t20260213_11858875.shtml",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-02-13",
+      "date_precision": "day",
+      "discovered_at": "2026-11-23T09:09:07+00:00",
+      "updated_at": "2026-11-23T09:09:07+00:00",
+      "evidence_basis": "官方原发页面核对",
+      "source_revision": "3457258fc118f2932f305d7b930b2738b978a92822f4604543b4e29cc594e5c9",
+      "topics": [],
+      "authors": [],
+      "bibliography": {
+        "original_issuer": "中华人民共和国外交部"
+      },
+      "material_type": "中国政府原发信息",
+      "provenance": [
+        {
+          "source_id": "china-mfa-statements",
+          "url": "https://www.mfa.gov.cn/fyrbt_673021/dhdw_673027/202602/t20260213_11858875.shtml",
+          "seen_at": "2026-11-23T09:09:07+00:00"
         }
       ],
       "title_zh": "",
@@ -20526,6 +20757,39 @@
           "source_id": "asil-insights",
           "url": "https://asil.org/insights/volume-30-issue-1/",
           "seen_at": "2026-11-22T17:53:16+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
+    },
+    {
+      "id": "8ff6d5649c4f7fac5163",
+      "source_id": "china-mfa-statements",
+      "title": "外交部发言人就巴基斯坦首都伊斯兰堡发生严重爆炸事件答记者问",
+      "url": "https://www.mfa.gov.cn/fyrbt_673021/dhdw_673027/202602/t20260208_11853606.shtml",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-02-08",
+      "date_precision": "day",
+      "discovered_at": "2026-11-23T09:09:07+00:00",
+      "updated_at": "2026-11-23T09:09:07+00:00",
+      "evidence_basis": "官方原发页面核对",
+      "source_revision": "d23e12cf10cdea5ac07c3940826dfeb26e42c32fd69ba2558fd004d57b648066",
+      "topics": [],
+      "authors": [],
+      "bibliography": {
+        "original_issuer": "中华人民共和国外交部"
+      },
+      "material_type": "中国政府原发信息",
+      "provenance": [
+        {
+          "source_id": "china-mfa-statements",
+          "url": "https://www.mfa.gov.cn/fyrbt_673021/dhdw_673027/202602/t20260208_11853606.shtml",
+          "seen_at": "2026-11-23T09:09:07+00:00"
         }
       ],
       "title_zh": "",
@@ -20700,7 +20964,7 @@
         {
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/case-related/178/178-20260129-pre-01-00-en.pdf",
-          "seen_at": "2026-11-22T08:02:34+00:00"
+          "seen_at": "2026-11-23T09:10:25+00:00"
         }
       ],
       "title_zh": "",
@@ -20733,7 +20997,7 @@
         {
           "source_id": "esil",
           "url": "https://esil-sedi.eu/esil-supported-new-technologies-and-international-legal-accountability/",
-          "seen_at": "2026-11-22T08:01:52+00:00"
+          "seen_at": "2026-11-23T09:09:50+00:00"
         }
       ],
       "title_zh": "",
@@ -21298,7 +21562,7 @@
         {
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/case-related/192/192-20251223-pre-01-00-en.pdf",
-          "seen_at": "2026-11-22T08:02:34+00:00"
+          "seen_at": "2026-11-23T09:10:25+00:00"
         }
       ],
       "title_zh": "",
@@ -21332,7 +21596,7 @@
         {
           "source_id": "icj",
           "url": "https://www.icj-cij.org/sites/default/files/case-related/178/178-20251219-pre-01-00-en.pdf",
-          "seen_at": "2026-11-22T08:02:34+00:00"
+          "seen_at": "2026-11-23T09:10:25+00:00"
         }
       ],
       "title_zh": "",
@@ -21368,7 +21632,7 @@
         {
           "source_id": "icj-pending",
           "url": "https://www.icj-cij.org/case/180",
-          "seen_at": "2026-11-22T08:02:37+00:00"
+          "seen_at": "2026-11-23T09:10:27+00:00"
         }
       ],
       "title_zh": "",
@@ -21404,7 +21668,7 @@
         {
           "source_id": "icj-pending",
           "url": "https://www.icj-cij.org/case/181",
-          "seen_at": "2026-11-22T08:02:37+00:00"
+          "seen_at": "2026-11-23T09:10:27+00:00"
         }
       ],
       "title_zh": "",
@@ -21514,7 +21778,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/symposium/post-hegemonic-international-law/",
-          "seen_at": "2026-11-22T17:52:10+00:00"
+          "seen_at": "2026-11-23T09:09:41+00:00"
         }
       ],
       "title_zh": "",
@@ -21600,7 +21864,7 @@
         {
           "source_id": "icj-pending",
           "url": "https://www.icj-cij.org/case/201",
-          "seen_at": "2026-11-22T08:02:37+00:00"
+          "seen_at": "2026-11-23T09:10:27+00:00"
         }
       ],
       "title_zh": "",
@@ -22485,7 +22749,7 @@
         {
           "source_id": "icj-pending",
           "url": "https://www.icj-cij.org/case/184",
-          "seen_at": "2026-11-22T08:02:37+00:00"
+          "seen_at": "2026-11-23T09:10:27+00:00"
         }
       ],
       "title_zh": "",
@@ -22687,7 +22951,7 @@
         {
           "source_id": "icj-pending",
           "url": "https://www.icj-cij.org/case/190",
-          "seen_at": "2026-11-22T08:02:37+00:00"
+          "seen_at": "2026-11-23T09:10:27+00:00"
         }
       ],
       "title_zh": "",
@@ -22920,7 +23184,7 @@
         {
           "source_id": "icj-pending",
           "url": "https://www.icj-cij.org/case/183",
-          "seen_at": "2026-11-22T08:02:37+00:00"
+          "seen_at": "2026-11-23T09:10:27+00:00"
         }
       ],
       "title_zh": "",
@@ -22956,7 +23220,7 @@
         {
           "source_id": "icj-pending",
           "url": "https://www.icj-cij.org/case/188",
-          "seen_at": "2026-11-22T08:02:37+00:00"
+          "seen_at": "2026-11-23T09:10:27+00:00"
         }
       ],
       "title_zh": "",
@@ -23699,7 +23963,7 @@
         {
           "source_id": "icj-pending",
           "url": "https://www.icj-cij.org/case/175",
-          "seen_at": "2026-11-22T08:02:37+00:00"
+          "seen_at": "2026-11-23T09:10:27+00:00"
         }
       ],
       "title_zh": "",
@@ -23962,7 +24226,7 @@
         {
           "source_id": "icj-pending",
           "url": "https://www.icj-cij.org/case/177",
-          "seen_at": "2026-11-22T08:02:37+00:00"
+          "seen_at": "2026-11-23T09:10:27+00:00"
         }
       ],
       "title_zh": "",
@@ -24109,7 +24373,7 @@
         {
           "source_id": "icj-pending",
           "url": "https://www.icj-cij.org/case/176",
-          "seen_at": "2026-11-22T08:02:37+00:00"
+          "seen_at": "2026-11-23T09:10:27+00:00"
         }
       ],
       "title_zh": "",
@@ -24342,7 +24606,7 @@
         {
           "source_id": "icj-pending",
           "url": "https://www.icj-cij.org/case/92",
-          "seen_at": "2026-11-22T08:02:37+00:00"
+          "seen_at": "2026-11-23T09:10:27+00:00"
         }
       ],
       "title_zh": "",
@@ -25889,6 +26153,37 @@
       "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
     },
     {
+      "id": "a57c13027d20ea6341a1",
+      "source_id": "asil-events",
+      "title": "2027 ILA-ASIL Asia-Pacific Research Forum",
+      "url": "https://asil.org/event/ec0bfd00/",
+      "doi": "",
+      "module": "events",
+      "published_at": null,
+      "date_precision": "unknown",
+      "discovered_at": "2026-11-23T09:10:00+00:00",
+      "updated_at": "2026-11-23T09:10:00+00:00",
+      "evidence_basis": "官方目录标题",
+      "source_revision": "2cb66a63787f63d1ada8ed52e9f9473ebd1d125f5913d6f7391079ff0f516420",
+      "topics": [],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "asil-events",
+          "url": "https://asil.org/event/ec0bfd00/",
+          "seen_at": "2026-11-23T09:10:00+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
+    },
+    {
       "id": "727e4958c2a0e8bdbf88",
       "source_id": "opcw-news",
       "title": "Germany provides EUR 1.4 million in voluntary funding to enhance OPCW’s work",
@@ -25945,7 +26240,7 @@
         {
           "source_id": "itlos",
           "url": "https://www.itlos.org/fileadmin/itlos/documents/press_releases_english/PR_401_En.pdf",
-          "seen_at": "2026-11-22T08:02:43+00:00"
+          "seen_at": "2026-11-23T09:10:31+00:00"
         }
       ],
       "title_zh": "",
@@ -27846,72 +28141,6 @@
       "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
     },
     {
-      "id": "6c81889ed2cbd530b874",
-      "source_id": "icj-pending",
-      "title": "Appeal relating to the Jurisdiction of the ICAO Council under Article 84 of the Convention on International Civil Aviation (Islamic Republic of Iran v. Canada, Sweden, Ukraine and United Kingdom)",
-      "url": "https://www.icj-cij.org/case/198",
-      "doi": "",
-      "module": "cases",
-      "published_at": null,
-      "date_precision": "unknown",
-      "discovered_at": "2026-11-19T22:12:00+00:00",
-      "updated_at": "2026-11-19T22:12:00+00:00",
-      "evidence_basis": "原文正文核对",
-      "source_revision": "1103f61bb7c3dd57e5c78532af57077df6c5cca5aa535853d1209934ade6beb2",
-      "topics": [
-        "disputes"
-      ],
-      "authors": [],
-      "bibliography": {},
-      "material_type": "国际法院待审案件页",
-      "provenance": [
-        {
-          "source_id": "icj-pending",
-          "url": "https://www.icj-cij.org/case/198",
-          "seen_at": "2026-11-22T08:02:37+00:00"
-        }
-      ],
-      "title_zh": "",
-      "summary_zh": "",
-      "ai": null,
-      "event": null,
-      "deadline": null,
-      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
-    },
-    {
-      "id": "fd3ce2cc0605cfe2a7ac",
-      "source_id": "icj-pending",
-      "title": "Alleged Smuggling of Migrants (Lithuania v. Belarus)",
-      "url": "https://www.icj-cij.org/case/200",
-      "doi": "",
-      "module": "cases",
-      "published_at": null,
-      "date_precision": "unknown",
-      "discovered_at": "2026-11-19T22:12:00+00:00",
-      "updated_at": "2026-11-19T22:12:00+00:00",
-      "evidence_basis": "原文正文核对",
-      "source_revision": "83bffda470f76f2f411d9dbc65a38c27d2d3cc17539507657387d7d649564cc4",
-      "topics": [
-        "disputes"
-      ],
-      "authors": [],
-      "bibliography": {},
-      "material_type": "国际法院待审案件页",
-      "provenance": [
-        {
-          "source_id": "icj-pending",
-          "url": "https://www.icj-cij.org/case/200",
-          "seen_at": "2026-11-22T08:02:37+00:00"
-        }
-      ],
-      "title_zh": "",
-      "summary_zh": "",
-      "ai": null,
-      "event": null,
-      "deadline": null,
-      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
-    },
-    {
       "id": "b9c25864b69f659e912c",
       "source_id": "esil-conferences",
       "title": "Click here to learn more about our past Conferences",
@@ -28210,7 +28439,7 @@
         {
           "source_id": "mpil-events",
           "url": "https://www.mpil.de/en/pub/news/conferences-workshops/international-law-and-peace-in.cfm",
-          "seen_at": "2026-11-22T08:02:06+00:00"
+          "seen_at": "2026-11-23T09:10:03+00:00"
         }
       ],
       "title_zh": "",
@@ -28243,7 +28472,7 @@
         {
           "source_id": "mpil-events",
           "url": "https://www.mpil.de/en/pub/news/conferences-workshops/human-rights-under-challenge.cfm",
-          "seen_at": "2026-11-22T08:02:06+00:00"
+          "seen_at": "2026-11-23T09:10:03+00:00"
         }
       ],
       "title_zh": "",
@@ -28285,7 +28514,7 @@
         {
           "source_id": "cambridge-cfp-ljil",
           "url": "https://www.cambridge.org/core/journals/leiden-journal-of-international-law/announcements/call-for-papers/international-law-and-society",
-          "seen_at": "2026-11-22T08:02:12+00:00"
+          "seen_at": "2026-11-23T09:10:07+00:00"
         }
       ],
       "title_zh": "",
@@ -28323,7 +28552,7 @@
         {
           "source_id": "itlos",
           "url": "https://www.itlos.org/fileadmin/itlos/documents/press_releases_english/PR_405_en.pdf",
-          "seen_at": "2026-11-22T08:02:43+00:00"
+          "seen_at": "2026-11-23T09:10:31+00:00"
         }
       ],
       "title_zh": "",
@@ -28354,7 +28583,7 @@
         {
           "source_id": "asil-events",
           "url": "https://asil.org/event/e465ae46/",
-          "seen_at": "2026-11-22T08:02:01+00:00"
+          "seen_at": "2026-11-23T09:10:00+00:00"
         }
       ],
       "title_zh": "",
@@ -28396,7 +28625,7 @@
         {
           "source_id": "asil-events",
           "url": "https://asil.org/event/4191ef5f/",
-          "seen_at": "2026-11-22T08:02:01+00:00"
+          "seen_at": "2026-11-23T09:10:00+00:00"
         }
       ],
       "title_zh": "",
@@ -28440,7 +28669,7 @@
         {
           "source_id": "asil-events",
           "url": "https://asil.org/event/1264a061/",
-          "seen_at": "2026-11-22T08:02:01+00:00"
+          "seen_at": "2026-11-23T09:10:00+00:00"
         }
       ],
       "title_zh": "",
@@ -28484,7 +28713,7 @@
         {
           "source_id": "asil-events",
           "url": "https://asil.org/event/asil-holiday-open-house-4/",
-          "seen_at": "2026-11-22T08:02:01+00:00"
+          "seen_at": "2026-11-23T09:10:00+00:00"
         }
       ],
       "title_zh": "",
@@ -28519,7 +28748,7 @@
         {
           "source_id": "ila-events",
           "url": "https://www.ila-hq.org/en/events/international-law-weekend-2026",
-          "seen_at": "2026-11-22T08:03:14+00:00"
+          "seen_at": "2026-11-23T09:11:00+00:00"
         }
       ],
       "title_zh": "",
@@ -28550,7 +28779,7 @@
         {
           "source_id": "ila-events",
           "url": "https://www.ila-hq.org/en/events/careers-in-international-law-from-strategy-to-success-with-prof-anna-spain-bradley",
-          "seen_at": "2026-11-22T08:03:14+00:00"
+          "seen_at": "2026-11-23T09:11:00+00:00"
         }
       ],
       "title_zh": "",
@@ -28590,7 +28819,7 @@
         {
           "source_id": "ila-events",
           "url": "https://www.ila-hq.org/en/events/official-presentation-of-the-kazakhstan-branch-of-the-international-law-association",
-          "seen_at": "2026-11-22T08:03:14+00:00"
+          "seen_at": "2026-11-23T09:11:00+00:00"
         }
       ],
       "title_zh": "",
@@ -28627,7 +28856,7 @@
         {
           "source_id": "ila-events",
           "url": "https://www.ila-hq.org/en/events/conference-evidence-matters-before-regional-human-rights-courts-the-african-court-in-critical-and-comparative-perspective",
-          "seen_at": "2026-11-22T08:03:14+00:00"
+          "seen_at": "2026-11-23T09:11:00+00:00"
         }
       ],
       "title_zh": "",
@@ -28658,7 +28887,7 @@
         {
           "source_id": "ila-events",
           "url": "https://www.ila-hq.org/en/events/joint-webinar-prime-minister-carneys-davos-speech-implications-for-international-law",
-          "seen_at": "2026-11-22T08:03:14+00:00"
+          "seen_at": "2026-11-23T09:11:00+00:00"
         }
       ],
       "title_zh": "",
@@ -28689,7 +28918,7 @@
         {
           "source_id": "ila-events",
           "url": "https://www.ila-hq.org/en/events/webinaire-conjoint-le-discours-de-davos-du-premier-ministre-carney-quelles-consequences-pour-le-droit-international",
-          "seen_at": "2026-11-22T08:03:14+00:00"
+          "seen_at": "2026-11-23T09:11:00+00:00"
         }
       ],
       "title_zh": "",
@@ -29579,7 +29808,7 @@
         {
           "source_id": "cambridge-cfp-tel",
           "url": "https://www.cambridge.org/core/journals/transnational-environmental-law/announcements/call-for-papers/the-future-of-transnational-environmental-law",
-          "seen_at": "2026-11-22T08:02:26+00:00"
+          "seen_at": "2026-11-23T09:10:18+00:00"
         }
       ],
       "title_zh": "",
@@ -29625,7 +29854,7 @@
         {
           "source_id": "anzsil-events",
           "url": "https://anzsil.org/event-6824605",
-          "seen_at": "2026-11-22T08:02:09+00:00"
+          "seen_at": "2026-11-23T09:10:04+00:00"
         }
       ],
       "title_zh": "",
@@ -29671,7 +29900,7 @@
         {
           "source_id": "anzsil-events",
           "url": "https://anzsil.org/event-6691480",
-          "seen_at": "2026-11-22T08:02:09+00:00"
+          "seen_at": "2026-11-23T09:10:04+00:00"
         }
       ],
       "title_zh": "",
@@ -29715,7 +29944,7 @@
         {
           "source_id": "anzsil-events",
           "url": "https://anzsil.org/event-6887920",
-          "seen_at": "2026-11-22T08:02:09+00:00"
+          "seen_at": "2026-11-23T09:10:04+00:00"
         }
       ],
       "title_zh": "",
@@ -29759,7 +29988,7 @@
         {
           "source_id": "anzsil-events",
           "url": "https://anzsil.org/event-6911454",
-          "seen_at": "2026-11-22T08:02:09+00:00"
+          "seen_at": "2026-11-23T09:10:04+00:00"
         }
       ],
       "title_zh": "",
@@ -29808,7 +30037,7 @@
         {
           "source_id": "anzsil-events",
           "url": "https://anzsil.org/event-6908964",
-          "seen_at": "2026-11-22T08:02:09+00:00"
+          "seen_at": "2026-11-23T09:10:04+00:00"
         }
       ],
       "title_zh": "",
@@ -29857,7 +30086,7 @@
         {
           "source_id": "anzsil-events",
           "url": "https://anzsil.org/event-6909014",
-          "seen_at": "2026-11-22T08:02:09+00:00"
+          "seen_at": "2026-11-23T09:10:04+00:00"
         }
       ],
       "title_zh": "",
@@ -29902,7 +30131,7 @@
         {
           "source_id": "mpil-events",
           "url": "https://www.mpil.de/en/pub/news/conferences-workshops/fifth-european-law-group-confe.cfm",
-          "seen_at": "2026-11-22T08:02:06+00:00"
+          "seen_at": "2026-11-23T09:10:03+00:00"
         }
       ],
       "title_zh": "",
@@ -29954,7 +30183,7 @@
         {
           "source_id": "mpil-events",
           "url": "https://www.mpil.de/en/pub/news/conferences-workshops/refracting-lotus-jurisdiction.cfm",
-          "seen_at": "2026-11-22T08:02:06+00:00"
+          "seen_at": "2026-11-23T09:10:03+00:00"
         }
       ],
       "title_zh": "",
@@ -30005,7 +30234,7 @@
         {
           "source_id": "mpil-events",
           "url": "https://www.mpil.de/en/pub/news/conferences-workshops/human-rights-rising-under-dis.cfm",
-          "seen_at": "2026-11-22T08:02:06+00:00"
+          "seen_at": "2026-11-23T09:10:03+00:00"
         }
       ],
       "title_zh": "",
@@ -30040,7 +30269,7 @@
         {
           "source_id": "mpil-events",
           "url": "https://www.mpil.de/en/pub/news/conferences-workshops/international-law-and-emotions.cfm",
-          "seen_at": "2026-11-22T08:02:06+00:00"
+          "seen_at": "2026-11-23T09:10:03+00:00"
         }
       ],
       "title_zh": "",
@@ -30205,7 +30434,7 @@
         {
           "source_id": "asil-events",
           "url": "https://asil.org/event/regulating-todays-non-international-armed-conflicts-from-law-to-practice-launch-of-the-book-the-international-law-of-non-international-armed-conflict/",
-          "seen_at": "2026-11-22T08:02:01+00:00"
+          "seen_at": "2026-11-23T09:10:00+00:00"
         }
       ],
       "title_zh": "",
@@ -30245,7 +30474,7 @@
         {
           "source_id": "asil-events",
           "url": "https://asil.org/event/international-ip-in-motion-breaking-deadlocks-in-traditional-knowledge-and-copyright-reform/",
-          "seen_at": "2026-11-22T08:02:01+00:00"
+          "seen_at": "2026-11-23T09:10:00+00:00"
         }
       ],
       "title_zh": "",
@@ -30289,7 +30518,7 @@
         {
           "source_id": "asil-events",
           "url": "https://asil.org/event/ad82140c/",
-          "seen_at": "2026-11-22T08:02:01+00:00"
+          "seen_at": "2026-11-23T09:10:00+00:00"
         }
       ],
       "title_zh": "",
@@ -30433,11 +30662,11 @@
         "pending": 26,
         "directory_count": 35,
         "first_http_status": 0,
-        "cursor": "127c88809a13fd0f63b9"
+        "cursor": "8ff6d5649c4f7fac5163"
       },
       "status": "ok",
-      "attempted_at": "2026-11-22T08:00:51+00:00",
-      "success_at": "2026-11-22T08:00:51+00:00",
+      "attempted_at": "2026-11-23T09:09:07+00:00",
+      "success_at": "2026-11-23T09:09:07+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 4,
@@ -30489,11 +30718,11 @@
         "pending": 3,
         "directory_count": 7,
         "first_http_status": 0,
-        "cursor": "03773263f62df46e8be3"
+        "cursor": "00eb3fe811ed7919deb2"
       },
       "status": "ok",
-      "attempted_at": "2026-11-22T17:51:18+00:00",
-      "success_at": "2026-11-22T17:51:18+00:00",
+      "attempted_at": "2026-11-23T09:09:11+00:00",
+      "success_at": "2026-11-23T09:09:11+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 13,
@@ -30514,8 +30743,8 @@
       "review": {
         "candidates": 10,
         "checked": 4,
-        "verified": 3,
-        "china_hold": 1,
+        "verified": 4,
+        "china_hold": 0,
         "origin_hold": 0,
         "body_hold": 0,
         "access_hold": 0,
@@ -30525,15 +30754,15 @@
         "pending": 6,
         "directory_count": 10,
         "first_http_status": 0,
-        "cursor": "d352a4ea0d47e285cbb6"
+        "cursor": "2f3839dc4ad4e0fa2578"
       },
       "feed_url": "https://www.ungeneva.org/news-media/press-releases-list/rss.xml",
       "status": "ok",
-      "attempted_at": "2026-11-22T17:51:24+00:00",
-      "success_at": "2026-11-22T17:51:24+00:00",
+      "attempted_at": "2026-11-23T09:09:17+00:00",
+      "success_at": "2026-11-23T09:09:17+00:00",
       "error": null,
       "consecutive_failures": 0,
-      "item_count": 9,
+      "item_count": 10,
       "next_attempt_at": null
     },
     {
@@ -30551,8 +30780,8 @@
       "review": {
         "candidates": 10,
         "checked": 4,
-        "verified": 4,
-        "china_hold": 0,
+        "verified": 3,
+        "china_hold": 1,
         "origin_hold": 0,
         "body_hold": 0,
         "access_hold": 0,
@@ -30562,12 +30791,12 @@
         "pending": 6,
         "directory_count": 10,
         "first_http_status": 0,
-        "cursor": "bd9bda36139d654a3626"
+        "cursor": "a6e6a1056ee566ad7d86"
       },
       "feed_url": "https://www.ungeneva.org/news-media/meeting-summaries-list/rss.xml",
       "status": "ok",
-      "attempted_at": "2026-11-22T17:51:31+00:00",
-      "success_at": "2026-11-22T17:51:31+00:00",
+      "attempted_at": "2026-11-23T09:09:24+00:00",
+      "success_at": "2026-11-23T09:09:24+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 10,
@@ -30586,29 +30815,17 @@
       "scope": "RSS 最新条目，订阅解析失败时读取同站官方首页，原文逐条核验",
       "language": "en",
       "review": {
-        "candidates": 10,
-        "checked": 6,
-        "verified": 6,
-        "china_hold": 1,
-        "origin_hold": 0,
-        "body_hold": 0,
-        "access_hold": 0,
-        "unsupported_hold": 0,
-        "pdf_hold": 0,
-        "title_fallback": 3,
-        "pending": 3,
-        "directory_count": 10,
-        "first_http_status": 0,
-        "cursor": "1241a1a2e793d760fd7e"
+        "cursor": "1241a1a2e793d760fd7e",
+        "failure": "parse_failed"
       },
       "feed_url": "https://www.ejiltalk.org/feed/",
-      "status": "ok",
-      "attempted_at": "2026-11-22T17:51:41+00:00",
+      "status": "error",
+      "attempted_at": "2026-11-23T09:09:24+00:00",
       "success_at": "2026-11-22T17:51:41+00:00",
-      "error": null,
-      "consecutive_failures": 0,
+      "error": "信源暂未成功读取或解析。",
+      "consecutive_failures": 1,
       "item_count": 13,
-      "next_attempt_at": null
+      "next_attempt_at": "2026-11-23T09:24:24+00:00"
     },
     {
       "id": "opiniojuris",
@@ -30624,27 +30841,27 @@
       "language": "en",
       "review": {
         "candidates": 15,
-        "checked": 4,
-        "verified": 3,
-        "china_hold": 1,
+        "checked": 1,
+        "verified": 0,
+        "china_hold": 0,
         "origin_hold": 0,
         "body_hold": 0,
-        "access_hold": 0,
+        "access_hold": 1,
         "unsupported_hold": 0,
         "pdf_hold": 0,
-        "title_fallback": 11,
-        "pending": 11,
+        "title_fallback": 15,
+        "pending": 14,
         "directory_count": 15,
-        "first_http_status": 0,
+        "first_http_status": 403,
         "cursor": "4b160cc1640b3a578dfd"
       },
       "feed_url": "https://feeds2.feedburner.com/opiniojurisfeed",
       "status": "ok",
-      "attempted_at": "2026-11-22T17:51:50+00:00",
-      "success_at": "2026-11-22T17:51:50+00:00",
+      "attempted_at": "2026-11-23T09:09:25+00:00",
+      "success_at": "2026-11-23T09:09:25+00:00",
       "error": null,
       "consecutive_failures": 0,
-      "item_count": 16,
+      "item_count": 17,
       "next_attempt_at": null
     },
     {
@@ -30673,15 +30890,15 @@
         "pending": 22,
         "directory_count": 99,
         "first_http_status": 0,
-        "cursor": "100cf9ce3922b022283f"
+        "cursor": "9fa59cb4476b85b376fc"
       },
       "feed_url": "https://voelkerrechtsblog.org/feed/",
       "status": "ok",
-      "attempted_at": "2026-11-22T17:52:10+00:00",
-      "success_at": "2026-11-22T17:52:10+00:00",
+      "attempted_at": "2026-11-23T09:09:41+00:00",
+      "success_at": "2026-11-23T09:09:41+00:00",
       "error": null,
       "consecutive_failures": 0,
-      "item_count": 32,
+      "item_count": 33,
       "next_attempt_at": null
     },
     {
@@ -30710,12 +30927,12 @@
         "pending": 21,
         "directory_count": 30,
         "first_http_status": 0,
-        "cursor": "8cc44dbb71858d0c3faf"
+        "cursor": "75311da979b757624203"
       },
       "feed_url": "https://esil-sedi.eu/feed/",
       "status": "ok",
-      "attempted_at": "2026-11-22T08:01:52+00:00",
-      "success_at": "2026-11-22T08:01:52+00:00",
+      "attempted_at": "2026-11-23T09:09:50+00:00",
+      "success_at": "2026-11-23T09:09:50+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 30,
@@ -30772,8 +30989,8 @@
       "review": {
         "candidates": 8,
         "checked": 6,
-        "verified": 5,
-        "china_hold": 1,
+        "verified": 6,
+        "china_hold": 0,
         "origin_hold": 0,
         "body_hold": 0,
         "access_hold": 0,
@@ -30783,14 +31000,14 @@
         "pending": 2,
         "directory_count": 8,
         "first_http_status": 0,
-        "cursor": "c9d5d7417b20a0da59ba"
+        "cursor": "cfc141d17e65fb959429"
       },
       "status": "ok",
-      "attempted_at": "2026-11-22T08:02:01+00:00",
-      "success_at": "2026-11-22T08:02:01+00:00",
+      "attempted_at": "2026-11-23T09:10:00+00:00",
+      "success_at": "2026-11-23T09:10:00+00:00",
       "error": null,
       "consecutive_failures": 0,
-      "item_count": 10,
+      "item_count": 11,
       "next_attempt_at": null
     },
     {
@@ -30819,11 +31036,11 @@
         "pending": 2,
         "directory_count": 7,
         "first_http_status": 0,
-        "cursor": "2c9201b67819fded80ee"
+        "cursor": "6922032072f87bc57ac5"
       },
       "status": "ok",
-      "attempted_at": "2026-11-22T08:02:06+00:00",
-      "success_at": "2026-11-22T08:02:06+00:00",
+      "attempted_at": "2026-11-23T09:10:03+00:00",
+      "success_at": "2026-11-23T09:10:03+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 6,
@@ -30858,8 +31075,8 @@
         "cursor": "50bbeb58a2b5e6791152"
       },
       "status": "ok",
-      "attempted_at": "2026-11-22T08:02:09+00:00",
-      "success_at": "2026-11-22T08:02:09+00:00",
+      "attempted_at": "2026-11-23T09:10:04+00:00",
+      "success_at": "2026-11-23T09:10:04+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 6,
@@ -30893,8 +31110,8 @@
         "first_http_status": 0
       },
       "status": "ok",
-      "attempted_at": "2026-11-22T08:02:12+00:00",
-      "success_at": "2026-11-22T08:02:12+00:00",
+      "attempted_at": "2026-11-23T09:10:07+00:00",
+      "success_at": "2026-11-23T09:10:07+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 1,
@@ -30915,22 +31132,22 @@
       "review": {
         "candidates": 2,
         "checked": 2,
-        "verified": 2,
+        "verified": 1,
         "china_hold": 0,
         "origin_hold": 0,
         "body_hold": 0,
-        "access_hold": 0,
+        "access_hold": 1,
         "unsupported_hold": 0,
         "pdf_hold": 0,
-        "title_fallback": 0,
+        "title_fallback": 1,
         "pending": 0,
         "directory_count": 2,
         "first_http_status": 0,
         "cursor": "fae3cec9df2f65e75009"
       },
       "status": "ok",
-      "attempted_at": "2026-11-22T08:02:18+00:00",
-      "success_at": "2026-11-22T08:02:18+00:00",
+      "attempted_at": "2026-11-23T09:10:16+00:00",
+      "success_at": "2026-11-23T09:10:16+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 0,
@@ -30951,21 +31168,21 @@
       "review": {
         "candidates": 1,
         "checked": 1,
-        "verified": 0,
+        "verified": 1,
         "china_hold": 0,
         "origin_hold": 0,
         "body_hold": 0,
-        "access_hold": 1,
+        "access_hold": 0,
         "unsupported_hold": 0,
         "pdf_hold": 0,
-        "title_fallback": 1,
+        "title_fallback": 0,
         "pending": 0,
         "directory_count": 1,
         "first_http_status": 0
       },
       "status": "ok",
-      "attempted_at": "2026-11-22T08:02:26+00:00",
-      "success_at": "2026-11-22T08:02:26+00:00",
+      "attempted_at": "2026-11-23T09:10:18+00:00",
+      "success_at": "2026-11-23T09:10:18+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 1,
@@ -31001,8 +31218,8 @@
       },
       "feed_url": "https://www.wto.org/library/rss/latest_news_e.xml",
       "status": "ok",
-      "attempted_at": "2026-11-22T17:52:19+00:00",
-      "success_at": "2026-11-22T17:52:19+00:00",
+      "attempted_at": "2026-11-23T09:10:19+00:00",
+      "success_at": "2026-11-23T09:10:19+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 11,
@@ -31023,25 +31240,25 @@
       "review": {
         "candidates": 10,
         "checked": 8,
-        "verified": 8,
+        "verified": 7,
         "china_hold": 0,
         "origin_hold": 0,
-        "body_hold": 0,
+        "body_hold": 1,
         "access_hold": 0,
         "unsupported_hold": 0,
         "pdf_hold": 0,
-        "title_fallback": 2,
+        "title_fallback": 3,
         "pending": 2,
         "directory_count": 10,
         "first_http_status": 0,
-        "cursor": "53cb4b7e3f07009f49ec"
+        "cursor": "6f10456a74fcbe982dd8"
       },
       "status": "ok",
-      "attempted_at": "2026-11-22T08:02:33+00:00",
-      "success_at": "2026-11-22T08:02:33+00:00",
+      "attempted_at": "2026-11-23T09:10:24+00:00",
+      "success_at": "2026-11-23T09:10:24+00:00",
       "error": null,
       "consecutive_failures": 0,
-      "item_count": 10,
+      "item_count": 11,
       "next_attempt_at": null
     },
     {
@@ -31072,8 +31289,8 @@
         "first_http_status": 403
       },
       "status": "ok",
-      "attempted_at": "2026-11-22T08:02:34+00:00",
-      "success_at": "2026-11-22T08:02:34+00:00",
+      "attempted_at": "2026-11-23T09:10:25+00:00",
+      "success_at": "2026-11-23T09:10:25+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 30,
@@ -31105,11 +31322,11 @@
         "pending": 16,
         "directory_count": 24,
         "first_http_status": 0,
-        "cursor": "c4b19dec1caf530aaa50"
+        "cursor": "2ea146e2d6ffcb94f5eb"
       },
       "status": "ok",
-      "attempted_at": "2026-11-22T08:02:37+00:00",
-      "success_at": "2026-11-22T08:02:37+00:00",
+      "attempted_at": "2026-11-23T09:10:27+00:00",
+      "success_at": "2026-11-23T09:10:27+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 24,
@@ -31421,11 +31638,11 @@
         "pending": 1,
         "directory_count": 5,
         "first_http_status": 0,
-        "cursor": "cb7471a6225a0092ec07"
+        "cursor": "75faa49a08d68b5f9d4a"
       },
       "status": "ok",
-      "attempted_at": "2026-11-22T08:02:43+00:00",
-      "success_at": "2026-11-22T08:02:43+00:00",
+      "attempted_at": "2026-11-23T09:10:31+00:00",
+      "success_at": "2026-11-23T09:10:31+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 5,
@@ -31802,28 +32019,16 @@
       "scope": "出版商原发的期刊征稿公告，核对明确投稿日期",
       "language": "en",
       "review": {
-        "candidates": 3,
-        "checked": 3,
-        "verified": 3,
-        "china_hold": 0,
-        "origin_hold": 0,
-        "body_hold": 0,
-        "access_hold": 0,
-        "unsupported_hold": 0,
-        "pdf_hold": 0,
-        "title_fallback": 0,
-        "pending": 0,
-        "directory_count": 3,
-        "first_http_status": 0,
-        "cursor": "45408681e88ffbe08f9a"
+        "cursor": "45408681e88ffbe08f9a",
+        "failure": "network_error"
       },
-      "status": "ok",
-      "attempted_at": "2026-11-22T08:02:48+00:00",
+      "status": "error",
+      "attempted_at": "2026-11-23T09:10:51+00:00",
       "success_at": "2026-11-22T08:02:48+00:00",
-      "error": null,
-      "consecutive_failures": 0,
+      "error": "信源暂未成功读取或解析。",
+      "consecutive_failures": 1,
       "item_count": 2,
-      "next_attempt_at": null
+      "next_attempt_at": "2026-11-23T09:25:51+00:00"
     },
     {
       "id": "cambridge-cfp-ijcp",
@@ -31840,22 +32045,22 @@
       "review": {
         "candidates": 3,
         "checked": 3,
-        "verified": 2,
+        "verified": 3,
         "china_hold": 0,
         "origin_hold": 0,
         "body_hold": 0,
-        "access_hold": 1,
+        "access_hold": 0,
         "unsupported_hold": 0,
         "pdf_hold": 0,
-        "title_fallback": 1,
+        "title_fallback": 0,
         "pending": 0,
         "directory_count": 3,
         "first_http_status": 0,
         "cursor": "b261fb247bd20fbb2c26"
       },
       "status": "ok",
-      "attempted_at": "2026-11-22T08:03:07+00:00",
-      "success_at": "2026-11-22T08:03:07+00:00",
+      "attempted_at": "2026-11-23T09:10:56+00:00",
+      "success_at": "2026-11-23T09:10:56+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 3,
@@ -31876,8 +32081,8 @@
       "review": {
         "candidates": 30,
         "checked": 10,
-        "verified": 8,
-        "china_hold": 2,
+        "verified": 10,
+        "china_hold": 0,
         "origin_hold": 0,
         "body_hold": 0,
         "access_hold": 0,
@@ -31887,15 +32092,15 @@
         "pending": 20,
         "directory_count": 30,
         "first_http_status": 0,
-        "cursor": "233cb28091510a95818e"
+        "cursor": "75a211b6b08b0bb1da95"
       },
       "feed_url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
       "status": "ok",
-      "attempted_at": "2026-11-22T08:03:08+00:00",
-      "success_at": "2026-11-22T08:03:08+00:00",
+      "attempted_at": "2026-11-23T09:10:57+00:00",
+      "success_at": "2026-11-23T09:10:57+00:00",
       "error": null,
       "consecutive_failures": 0,
-      "item_count": 39,
+      "item_count": 42,
       "next_attempt_at": null
     },
     {
@@ -32024,12 +32229,12 @@
         "failure": "http_403"
       },
       "status": "error",
-      "attempted_at": "2026-11-22T08:03:08+00:00",
+      "attempted_at": "2026-11-23T09:10:57+00:00",
       "success_at": null,
       "error": "信源暂未成功读取或解析。",
-      "consecutive_failures": 9,
+      "consecutive_failures": 10,
       "item_count": 0,
-      "next_attempt_at": "2026-11-23T00:03:08+00:00"
+      "next_attempt_at": "2026-11-24T01:10:57+00:00"
     },
     {
       "id": "un-depositary",
@@ -32060,8 +32265,8 @@
         "cursor": "90f872f035064f095cb7"
       },
       "status": "ok",
-      "attempted_at": "2026-11-22T08:03:12+00:00",
-      "success_at": "2026-11-22T08:03:12+00:00",
+      "attempted_at": "2026-11-23T09:10:58+00:00",
+      "success_at": "2026-11-23T09:10:58+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 10,
@@ -32132,8 +32337,8 @@
         "cursor": "61f9c0200138787d3a6e"
       },
       "status": "ok",
-      "attempted_at": "2026-11-22T08:03:14+00:00",
-      "success_at": "2026-11-22T08:03:14+00:00",
+      "attempted_at": "2026-11-23T09:11:00+00:00",
+      "success_at": "2026-11-23T09:11:00+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 6,
@@ -32165,11 +32370,11 @@
         "pending": 4,
         "directory_count": 10,
         "first_http_status": 0,
-        "cursor": "f131d7e412c5fe2a23ef"
+        "cursor": "3b5ffebd1a242a6d7694"
       },
       "status": "ok",
-      "attempted_at": "2026-11-22T08:03:17+00:00",
-      "success_at": "2026-11-22T08:03:17+00:00",
+      "attempted_at": "2026-11-23T09:11:01+00:00",
+      "success_at": "2026-11-23T09:11:01+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 9,
@@ -32201,12 +32406,12 @@
         "pending": 4,
         "directory_count": 8,
         "first_http_status": 0,
-        "cursor": "501d602c9c59e0e33d14"
+        "cursor": "b67a48b9898d084ec5b8"
       },
       "feed_url": "https://www.icc-cpi.int/rss.xml",
       "status": "ok",
-      "attempted_at": "2026-11-22T08:03:20+00:00",
-      "success_at": "2026-11-22T08:03:20+00:00",
+      "attempted_at": "2026-11-23T09:11:03+00:00",
+      "success_at": "2026-11-23T09:11:03+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 8,
@@ -32227,8 +32432,8 @@
       "review": {
         "candidates": 30,
         "checked": 4,
-        "verified": 4,
-        "china_hold": 0,
+        "verified": 3,
+        "china_hold": 1,
         "origin_hold": 0,
         "body_hold": 0,
         "access_hold": 0,
@@ -32238,14 +32443,14 @@
         "pending": 26,
         "directory_count": 30,
         "first_http_status": 0,
-        "cursor": "de9fe5feeb17dd89fcf7"
+        "cursor": "080d262765e110c8b8fe"
       },
       "status": "ok",
-      "attempted_at": "2026-11-22T08:03:24+00:00",
-      "success_at": "2026-11-22T08:03:24+00:00",
+      "attempted_at": "2026-11-23T09:11:06+00:00",
+      "success_at": "2026-11-23T09:11:06+00:00",
       "error": null,
       "consecutive_failures": 0,
-      "item_count": 30,
+      "item_count": 29,
       "next_attempt_at": null
     },
     {
@@ -33381,32 +33586,32 @@
         "topics": []
       }
     ],
-    "updated_at": "2026-11-22T17:54:20+00:00",
+    "updated_at": "2026-11-23T09:11:06+00:00",
     "coverage_note": "常设投稿目录与正式征稿分别展示。程序逐条核对已接通信源的正式公告，无法确认的日期不会填入截止日。"
   },
   "operations": {
     "last_run": {
       "id": 1,
-      "started_at": "2026-11-22T17:51:13+00:00",
-      "finished_at": "2026-11-22T17:54:05+00:00",
-      "successes": 36,
-      "failures": 0,
-      "added": 47,
-      "changed": 47
+      "started_at": "2026-11-23T09:09:04+00:00",
+      "finished_at": "2026-11-23T09:11:06+00:00",
+      "successes": 25,
+      "failures": 3,
+      "added": 43,
+      "changed": 21
     },
     "scheduler_enabled": true,
     "scheduled_run_verified": true,
     "last_effective_run": {
       "id": 1,
-      "started_at": "2026-11-22T17:51:13+00:00",
-      "finished_at": "2026-11-22T17:54:05+00:00",
-      "successes": 36,
-      "failures": 0,
-      "added": 47,
-      "changed": 47
+      "started_at": "2026-11-23T09:09:04+00:00",
+      "finished_at": "2026-11-23T09:11:06+00:00",
+      "successes": 25,
+      "failures": 3,
+      "added": 43,
+      "changed": 21
     },
-    "scheduler_note": "最近一次云端运行：2026-11-22T17:54:20+00:00；触发方式：schedule。信源成功时间单独显示。",
-    "total_archived": 789,
-    "visible_in_export": 789
+    "scheduler_note": "最近一次云端运行：2026-11-23T09:11:06+00:00；触发方式：schedule。信源成功时间单独显示。",
+    "total_archived": 796,
+    "visible_in_export": 796
   }
 }
