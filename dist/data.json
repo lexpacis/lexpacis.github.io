@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-27T09:47:21+00:00",
+  "generated_at": "2026-11-27T19:30:23+00:00",
   "site": {
     "name": "法域前沿",
     "english_name": "Lexpacis",
@@ -350,6 +350,138 @@
       "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
     },
     {
+      "id": "9e0d6fd78c135c9cd0db",
+      "source_id": "opiniojuris",
+      "title": "The Lock and the Lever: The Indus Waters Award and the Test of Fundamental Change of Circumstances",
+      "url": "https://opiniojuris.org/2026/11/27/the-lock-and-the-lever-the-indus-waters-award-and-the-test-of-fundamental-change-of-circumstances/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-11-27T15:00:00+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-27T19:29:50+00:00",
+      "updated_at": "2026-11-27T19:29:50+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "befabe353510917d5590e574e004a6e7e7e91ab9032a0db8fb60a15d5ee1d9d1",
+      "topics": [],
+      "authors": [
+        "Mritunjai Kapila"
+      ],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "opiniojuris",
+          "url": "https://opiniojuris.org/2026/11/27/the-lock-and-the-lever-the-indus-waters-award-and-the-test-of-fundamental-change-of-circumstances/",
+          "seen_at": "2026-11-27T19:29:50+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
+    },
+    {
+      "id": "62a839260312d3fc9a98",
+      "source_id": "ejiltalk",
+      "title": "An Abridged Tale of Tuvalu: State Continuity, De-Recognition, and Digital Sovereignty as Responses to Sea-Level Rise",
+      "url": "https://www.ejiltalk.org/an-abridged-tale-of-tuvalu-state-continuity-de-recognition-and-digital-sovereignty-as-responses-to-sea-level-rise/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-11-27T14:00:52+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-27T19:29:42+00:00",
+      "updated_at": "2026-11-27T19:29:42+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "1621ac19ae78d1d8a5036c496c0a0b035cae472f3d8c86daedf73bde42248470",
+      "topics": [],
+      "authors": [
+        "Rohit Gupta"
+      ],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "ejiltalk",
+          "url": "https://www.ejiltalk.org/an-abridged-tale-of-tuvalu-state-continuity-de-recognition-and-digital-sovereignty-as-responses-to-sea-level-rise/",
+          "seen_at": "2026-11-27T19:29:42+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
+    },
+    {
+      "id": "f668681a3ebf11a3eb7b",
+      "source_id": "opiniojuris",
+      "title": "Common Interests and Compensation: What Next?",
+      "url": "https://opiniojuris.org/2026/11/27/common-interests-and-compensation-what-next/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-11-27T13:00:00+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-27T19:29:50+00:00",
+      "updated_at": "2026-11-27T19:29:50+00:00",
+      "evidence_basis": "RSS 标题",
+      "source_revision": "8104a13d47007b2d4c5efcab28925f1e72746393ba4290391cbb9a9e77310e84",
+      "topics": [],
+      "authors": [
+        "Niko Pavlopoulos"
+      ],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "opiniojuris",
+          "url": "https://opiniojuris.org/2026/11/27/common-interests-and-compensation-what-next/",
+          "seen_at": "2026-11-27T19:29:50+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
+    },
+    {
+      "id": "7f5913cb9ce389e6958f",
+      "source_id": "opiniojuris",
+      "title": "Governing Under Siege: A Guide to the 25th Session of the Assembly of States Parties to the Rome Statute",
+      "url": "https://opiniojuris.org/2026/11/27/governing-under-siege-a-guide-to-the-25th-session-of-the-assembly-of-states-parties-to-the-rome-statute/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-11-27T09:53:37+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-27T19:29:50+00:00",
+      "updated_at": "2026-11-27T19:29:50+00:00",
+      "evidence_basis": "RSS 标题",
+      "source_revision": "01d67bcba875477a9d625976306d7104b0eb436574d1e0a44110d022f3a0175b",
+      "topics": [],
+      "authors": [
+        "Ezequiel Jimenez Martinez"
+      ],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "opiniojuris",
+          "url": "https://opiniojuris.org/2026/11/27/governing-under-siege-a-guide-to-the-25th-session-of-the-assembly-of-states-parties-to-the-rome-statute/",
+          "seen_at": "2026-11-27T19:29:50+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
+    },
+    {
       "id": "7f098a3c0d53d03c80af",
       "source_id": "icc-news",
       "title": "Spain stands alongside victims of international crimes through a voluntary contribution to the Trust Fund for Victims",
@@ -408,7 +540,7 @@
         {
           "source_id": "ejiltalk",
           "url": "https://www.ejiltalk.org/my-patria-is-the-book-ten-good-reads-2026/",
-          "seen_at": "2026-11-27T09:43:17+00:00"
+          "seen_at": "2026-11-27T19:29:42+00:00"
         }
       ],
       "title_zh": "",
@@ -470,7 +602,40 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/jobs/wissenschaftlicher-mitarbeiterin-w-m-d-in-der-arbeitsgruppe-offentliches-recht-volkerrecht-europarecht-und-rechtstheorie-50/",
-          "seen_at": "2026-11-27T09:43:40+00:00"
+          "seen_at": "2026-11-27T19:30:21+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
+    },
+    {
+      "id": "d54cae083efdb0178e59",
+      "source_id": "opiniojuris",
+      "title": "Making the Necessary Possible: A Model Ecocide Law for Latin America",
+      "url": "https://opiniojuris.org/2026/11/27/making-the-necessary-possible-a-model-ecocide-law-for-latin-america/",
+      "doi": "",
+      "module": "commentary",
+      "published_at": "2026-11-26T23:00:00+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-27T19:29:50+00:00",
+      "updated_at": "2026-11-27T19:29:50+00:00",
+      "evidence_basis": "RSS 标题",
+      "source_revision": "2cf64fbfe1c34c9bf08d3e3397fd6804d5c1360ff456a120c2bce83d102514ad",
+      "topics": [],
+      "authors": [
+        "Rodrigo Lledó"
+      ],
+      "bibliography": {},
+      "material_type": "学术平台文章",
+      "provenance": [
+        {
+          "source_id": "opiniojuris",
+          "url": "https://opiniojuris.org/2026/11/27/making-the-necessary-possible-a-model-ecocide-law-for-latin-america/",
+          "seen_at": "2026-11-27T19:29:50+00:00"
         }
       ],
       "title_zh": "",
@@ -718,7 +883,7 @@
         {
           "source_id": "ejiltalk",
           "url": "https://www.ejiltalk.org/awful-but-lawful-the-relevance-of-ihl-compliance-to-genocide-allegations-in-the-gambia-v-myanmar/",
-          "seen_at": "2026-11-27T09:43:17+00:00"
+          "seen_at": "2026-11-27T19:29:42+00:00"
         }
       ],
       "title_zh": "",
@@ -817,7 +982,7 @@
         {
           "source_id": "un-geneva-news",
           "url": "https://www.ungeneva.org/en/news-media/news/2026/11/125109/dr-congo-peacekepers-step-civilian-protection-amid-fighting-ituri",
-          "seen_at": "2026-11-27T09:42:58+00:00"
+          "seen_at": "2026-11-27T19:29:24+00:00"
         }
       ],
       "title_zh": "",
@@ -851,7 +1016,7 @@
         {
           "source_id": "un-geneva-news",
           "url": "https://www.ungeneva.org/en/news-media/news/2026/11/125108/maritime-trade-stagnates-amid-geopolitical-uncertainty",
-          "seen_at": "2026-11-27T09:42:58+00:00"
+          "seen_at": "2026-11-27T19:29:24+00:00"
         }
       ],
       "title_zh": "",
@@ -882,7 +1047,7 @@
         {
           "source_id": "un-geneva-news",
           "url": "https://www.ungeneva.org/en/news-media/news/2026/11/125113/come-right-now-how-crisis-centre-samarkand-helps-women-escape",
-          "seen_at": "2026-11-27T09:42:58+00:00"
+          "seen_at": "2026-11-27T19:29:24+00:00"
         }
       ],
       "title_zh": "",
@@ -1169,7 +1334,7 @@
         {
           "source_id": "ejiltalk",
           "url": "https://www.ejiltalk.org/in-this-issue-28/",
-          "seen_at": "2026-11-27T09:43:17+00:00"
+          "seen_at": "2026-11-27T19:29:42+00:00"
         }
       ],
       "title_zh": "",
@@ -1268,7 +1433,7 @@
         {
           "source_id": "opiniojuris",
           "url": "https://opiniojuris.org/2026/11/25/the-gambia-v-myanmar-and-the-duty-to-prevent-genocide/",
-          "seen_at": "2026-11-27T09:43:25+00:00"
+          "seen_at": "2026-11-27T19:29:50+00:00"
         }
       ],
       "title_zh": "",
@@ -1303,7 +1468,7 @@
         {
           "source_id": "opiniojuris",
           "url": "https://opiniojuris.org/2026/11/25/hosting-global-justice-the-responsibilities-of-the-netherlands-as-host-state-of-the-international-court-of-justice-and-the-international-criminal-court/",
-          "seen_at": "2026-11-27T09:43:25+00:00"
+          "seen_at": "2026-11-27T19:29:50+00:00"
         }
       ],
       "title_zh": "",
@@ -1336,7 +1501,7 @@
         {
           "source_id": "ejiltalk",
           "url": "https://www.ejiltalk.org/the-un-declaration-on-sea-level-rise-affirming-status-encouraging-co-operation/",
-          "seen_at": "2026-11-27T09:43:17+00:00"
+          "seen_at": "2026-11-27T19:29:42+00:00"
         }
       ],
       "title_zh": "",
@@ -1483,6 +1648,39 @@
       "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
     },
     {
+      "id": "175ed3d26105d74535da",
+      "source_id": "wto",
+      "title": "Services domestic regulation disciplines enter into force for Kazakhstan",
+      "url": "https://www.wto.org/english/news_e/news26_e/jssdr_25nov26_566_e.htm",
+      "doi": "",
+      "module": "official",
+      "published_at": "2026-11-25T00:00:00+00:00",
+      "date_precision": "instant",
+      "discovered_at": "2026-11-27T19:30:23+00:00",
+      "updated_at": "2026-11-27T19:30:23+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "c4edc0f53a923ea2d3d6a8ee397ad373137cf9d7f468450beee82d6a314f97ea",
+      "topics": [
+        "economic"
+      ],
+      "authors": [],
+      "bibliography": {},
+      "material_type": "官方新闻",
+      "provenance": [
+        {
+          "source_id": "wto",
+          "url": "https://www.wto.org/english/news_e/news26_e/jssdr_25nov26_566_e.htm",
+          "seen_at": "2026-11-27T19:30:23+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
+    },
+    {
       "id": "3cde0443f611a78c7f86",
       "source_id": "pca",
       "title": "PCA Press Release – PCA Case No. 2019-28: Dispute concerning the Detention of Ukrainian Naval Vessels and Servicemen (Ukraine v. The Russian Federation)",
@@ -1569,7 +1767,7 @@
         {
           "source_id": "un-geneva-news",
           "url": "https://www.ungeneva.org/en/news-media/news/2026/11/125102/turk-warns-widening-risk-atrocity-crimes-against-palestinians",
-          "seen_at": "2026-11-27T09:42:58+00:00"
+          "seen_at": "2026-11-27T19:29:24+00:00"
         }
       ],
       "title_zh": "",
@@ -1600,7 +1798,7 @@
         {
           "source_id": "un-geneva-news",
           "url": "https://www.ungeneva.org/en/news-media/news/2026/11/125071/yemen-war-emergency-aid-chief-calls-access-war-hit-communities",
-          "seen_at": "2026-11-27T09:42:58+00:00"
+          "seen_at": "2026-11-27T19:29:24+00:00"
         }
       ],
       "title_zh": "",
@@ -1631,7 +1829,7 @@
         {
           "source_id": "un-geneva-news",
           "url": "https://www.ungeneva.org/en/news-media/news/2026/11/125075/somalia-famine-risk-decreases-baidoa-millions-still-going-hungry",
-          "seen_at": "2026-11-27T09:42:58+00:00"
+          "seen_at": "2026-11-27T19:29:24+00:00"
         }
       ],
       "title_zh": "",
@@ -1662,7 +1860,7 @@
         {
           "source_id": "un-geneva-news",
           "url": "https://www.ungeneva.org/en/news-media/news/2026/11/125084/gisele-pelicots-son-not-being-violent-bare-minimum",
-          "seen_at": "2026-11-27T09:42:58+00:00"
+          "seen_at": "2026-11-27T19:29:24+00:00"
         }
       ],
       "title_zh": "",
@@ -2189,7 +2387,7 @@
         {
           "source_id": "opiniojuris",
           "url": "https://opiniojuris.org/2026/11/24/not-proven-is-not-peace-the-said-judgment-and-classifying-conflict-beyond-reasonable-doubt/",
-          "seen_at": "2026-11-27T09:43:25+00:00"
+          "seen_at": "2026-11-27T19:29:50+00:00"
         }
       ],
       "title_zh": "",
@@ -2255,7 +2453,7 @@
         {
           "source_id": "opiniojuris",
           "url": "https://opiniojuris.org/2026/11/24/maduros-universal-jurisdiction-case-and-the-torture-led-immunity-loophole/",
-          "seen_at": "2026-11-27T09:43:25+00:00"
+          "seen_at": "2026-11-27T19:29:50+00:00"
         }
       ],
       "title_zh": "",
@@ -2291,7 +2489,7 @@
         {
           "source_id": "ejiltalk",
           "url": "https://www.ejiltalk.org/ejil-the-podcast-episode-48-holding-a-state-responsible-for-genocide-gambia-v-myanmar-before-the-icj/",
-          "seen_at": "2026-11-27T09:43:17+00:00"
+          "seen_at": "2026-11-27T19:29:42+00:00"
         }
       ],
       "title_zh": "",
@@ -3162,7 +3360,7 @@
         {
           "source_id": "ejiltalk",
           "url": "https://www.ejiltalk.org/can-the-general-assembly-appoint-an-acting-secretary-general-in-the-event-of-a-prolonged-security-council-deadlock/",
-          "seen_at": "2026-11-27T09:43:17+00:00"
+          "seen_at": "2026-11-27T19:29:42+00:00"
         }
       ],
       "title_zh": "",
@@ -3363,7 +3561,7 @@
         {
           "source_id": "wto",
           "url": "https://www.wto.org/english/news_e/news26_e/tmg20_23nov26_559_e.htm",
-          "seen_at": "2026-11-27T09:44:42+00:00"
+          "seen_at": "2026-11-27T19:30:23+00:00"
         }
       ],
       "title_zh": "",
@@ -3396,7 +3594,7 @@
         {
           "source_id": "wto",
           "url": "https://www.wto.org/english/news_e/news26_e/safe_eec_23nov26_561_e.htm",
-          "seen_at": "2026-11-27T09:44:42+00:00"
+          "seen_at": "2026-11-27T19:30:23+00:00"
         }
       ],
       "title_zh": "",
@@ -3463,7 +3661,7 @@
         {
           "source_id": "wto",
           "url": "https://www.wto.org/english/news_e/news26_e/fsec_23nov26_562_e.htm",
-          "seen_at": "2026-11-27T09:44:42+00:00"
+          "seen_at": "2026-11-27T19:30:23+00:00"
         }
       ],
       "title_zh": "",
@@ -3753,7 +3951,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/symposium/special-tribunal-for-ukraine/",
-          "seen_at": "2026-11-27T09:43:40+00:00"
+          "seen_at": "2026-11-27T19:30:21+00:00"
         }
       ],
       "title_zh": "",
@@ -4194,7 +4392,7 @@
         {
           "source_id": "opiniojuris",
           "url": "https://opiniojuris.org/2026/11/21/the-relationship-between-ihl-and-genocide-in-the-gambia-v-myanmar-case/",
-          "seen_at": "2026-11-27T09:43:25+00:00"
+          "seen_at": "2026-11-27T19:29:50+00:00"
         }
       ],
       "title_zh": "",
@@ -4516,7 +4714,7 @@
         {
           "source_id": "opiniojuris",
           "url": "https://opiniojuris.org/2026/11/20/reparation-without-recognition-denmark-the-spiral-case-and-the-limits-of-a-compensation-scheme/",
-          "seen_at": "2026-11-27T09:43:25+00:00"
+          "seen_at": "2026-11-27T19:29:50+00:00"
         }
       ],
       "title_zh": "",
@@ -4551,7 +4749,7 @@
         {
           "source_id": "opiniojuris",
           "url": "https://opiniojuris.org/2026/11/20/the-execution-of-two-bangladeshi-nationals-in-saudi-arabia-the-limits-of-human-rights-and-consular-protection/",
-          "seen_at": "2026-11-27T09:43:25+00:00"
+          "seen_at": "2026-11-27T19:29:50+00:00"
         }
       ],
       "title_zh": "",
@@ -4618,7 +4816,7 @@
         {
           "source_id": "wto",
           "url": "https://www.wto.org/english/news_e/news26_e/val_20nov26_564_e.htm",
-          "seen_at": "2026-11-27T09:44:42+00:00"
+          "seen_at": "2026-11-27T19:30:23+00:00"
         }
       ],
       "title_zh": "",
@@ -4683,7 +4881,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/jobs/wissenschaftlicher-mitarbeiterin-w-m-d-im-offentlichen-recht-am-standort-dusseldorf-der-bsp-65/",
-          "seen_at": "2026-11-27T09:43:40+00:00"
+          "seen_at": "2026-11-27T19:30:21+00:00"
         }
       ],
       "title_zh": "",
@@ -5466,7 +5664,7 @@
         {
           "source_id": "opiniojuris",
           "url": "https://opiniojuris.org/2026/11/19/this-is-not-south-africas-definition-a-new-report-on-apartheid-in-the-draft-crimes-against-humanity-treaty/",
-          "seen_at": "2026-11-27T09:43:25+00:00"
+          "seen_at": "2026-11-27T19:29:50+00:00"
         }
       ],
       "title_zh": "",
@@ -5499,7 +5697,7 @@
         {
           "source_id": "opiniojuris",
           "url": "https://opiniojuris.org/2026/11/19/what-the-london-convention-and-protocols-new-assessment-frameworks-mean-for-marine-geoengineering-governance/",
-          "seen_at": "2026-11-27T09:43:25+00:00"
+          "seen_at": "2026-11-27T19:29:50+00:00"
         }
       ],
       "title_zh": "",
@@ -5565,7 +5763,7 @@
         {
           "source_id": "opiniojuris",
           "url": "https://opiniojuris.org/2026/11/19/who-decides-who-pays-for-the-au-mission-in-somalia-decembers-test-for-resolution-2719/",
-          "seen_at": "2026-11-27T09:43:25+00:00"
+          "seen_at": "2026-11-27T19:29:50+00:00"
         }
       ],
       "title_zh": "",
@@ -5667,7 +5865,7 @@
         {
           "source_id": "wto",
           "url": "https://www.wto.org/english/news_e/news26_e/stud_19nov26_558_e.htm",
-          "seen_at": "2026-11-27T09:44:42+00:00"
+          "seen_at": "2026-11-27T19:30:23+00:00"
         }
       ],
       "title_zh": "",
@@ -5734,7 +5932,7 @@
         {
           "source_id": "wto",
           "url": "https://www.wto.org/english/news_e/news26_e/trip_19nov26_557_e.htm",
-          "seen_at": "2026-11-27T09:44:42+00:00"
+          "seen_at": "2026-11-27T19:30:23+00:00"
         }
       ],
       "title_zh": "",
@@ -6253,7 +6451,7 @@
         {
           "source_id": "un-geneva-meetings",
           "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/examen-de-la-norvege-au-comite-contre-la-torture-les-experts-du",
-          "seen_at": "2026-11-27T09:43:09+00:00"
+          "seen_at": "2026-11-27T19:29:35+00:00"
         }
       ],
       "title_zh": "",
@@ -6389,7 +6587,7 @@
         {
           "source_id": "opiniojuris",
           "url": "https://opiniojuris.org/2026/11/18/how-much-weight-for-ilo-supervisory-bodies-the-icjs-one-size-fits-all-approach/",
-          "seen_at": "2026-11-27T09:43:25+00:00"
+          "seen_at": "2026-11-27T19:29:50+00:00"
         }
       ],
       "title_zh": "",
@@ -6821,7 +7019,7 @@
         {
           "source_id": "un-geneva-meetings",
           "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/examen-de-la-republique-de-moldova-au-comite-contre-la-torture",
-          "seen_at": "2026-11-27T09:43:09+00:00"
+          "seen_at": "2026-11-27T19:29:35+00:00"
         }
       ],
       "title_zh": "",
@@ -8319,7 +8517,7 @@
         {
           "source_id": "un-geneva-meetings",
           "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/le-comite-contre-la-torture-ouvre-les-travaux-de-sa-85e-session",
-          "seen_at": "2026-11-27T09:43:09+00:00"
+          "seen_at": "2026-11-27T19:29:35+00:00"
         }
       ],
       "title_zh": "",
@@ -9054,7 +9252,7 @@
         {
           "source_id": "un-geneva-meetings",
           "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/le-comite-des-droits-economiques-sociaux-et-culturels-acheve-sa",
-          "seen_at": "2026-11-27T09:43:09+00:00"
+          "seen_at": "2026-11-27T19:29:35+00:00"
         }
       ],
       "title_zh": "",
@@ -9898,7 +10096,7 @@
         {
           "source_id": "un-geneva-press",
           "url": "https://www.ungeneva.org/en/news-media/press-release/2026/11/seventh-review-conference-high-contracting-parties-convention",
-          "seen_at": "2026-11-27T09:43:04+00:00"
+          "seen_at": "2026-11-27T19:29:29+00:00"
         }
       ],
       "title_zh": "",
@@ -10148,7 +10346,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/symposium/state-responsibility-in-crisis/",
-          "seen_at": "2026-11-27T09:43:40+00:00"
+          "seen_at": "2026-11-27T19:30:21+00:00"
         }
       ],
       "title_zh": "",
@@ -10506,7 +10704,7 @@
         {
           "source_id": "un-geneva-meetings",
           "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/le-comite-des-droits-economiques-sociaux-et-culturels-et-le",
-          "seen_at": "2026-11-27T09:43:09+00:00"
+          "seen_at": "2026-11-27T19:29:35+00:00"
         }
       ],
       "title_zh": "",
@@ -10542,7 +10740,7 @@
         {
           "source_id": "un-geneva-meetings",
           "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/examen-de-lautriche-au-comite-des-droits-economiques-sociaux-et",
-          "seen_at": "2026-11-27T09:43:09+00:00"
+          "seen_at": "2026-11-27T19:29:35+00:00"
         }
       ],
       "title_zh": "",
@@ -10829,9 +11027,9 @@
       "published_at": "2026-11-05",
       "date_precision": "day",
       "discovered_at": "2026-11-19T08:56:38+00:00",
-      "updated_at": "2026-11-26T09:33:13+00:00",
+      "updated_at": "2026-11-27T19:29:35+00:00",
       "evidence_basis": "原文正文核对",
-      "source_revision": "f39ac443923df46f380c5cc42999d5ab264d70b6b4758b518e38828ac4ca22ad",
+      "source_revision": "77c50bc6c6ab63ba8207c00dd4b858213d4bdedd11cbf2a8a1be0768714ba9b5",
       "topics": [
         "institutions",
         "economic",
@@ -10846,7 +11044,7 @@
         {
           "source_id": "un-geneva-meetings",
           "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/examen-du-mexique-au-comite-des-droits-economiques-sociaux-et",
-          "seen_at": "2026-11-27T09:43:09+00:00"
+          "seen_at": "2026-11-27T19:29:35+00:00"
         }
       ],
       "title_zh": "",
@@ -10866,9 +11064,9 @@
       "published_at": "2026-11-05",
       "date_precision": "day",
       "discovered_at": "2026-11-19T08:56:38+00:00",
-      "updated_at": "2026-11-26T09:33:13+00:00",
+      "updated_at": "2026-11-27T19:29:35+00:00",
       "evidence_basis": "原文正文核对",
-      "source_revision": "aeb0e84f187483e329a19b559680528263ae54a6c1e1b06d16008b73d84835fb",
+      "source_revision": "ac3819ac1b7090d3b0b0de8091a0823af4791738a0d9e6c594ac394d395e9530",
       "topics": [
         "institutions",
         "rights"
@@ -10882,7 +11080,7 @@
         {
           "source_id": "un-geneva-meetings",
           "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/human-rights-committee-adopts-reports-follow-concluding",
-          "seen_at": "2026-11-27T09:43:09+00:00"
+          "seen_at": "2026-11-27T19:29:35+00:00"
         }
       ],
       "title_zh": "",
@@ -11000,42 +11198,6 @@
           "source_id": "crossref-asianjil",
           "url": "https://doi.org/10.1017/s2044251326101283",
           "seen_at": "2026-11-27T09:44:50+00:00"
-        }
-      ],
-      "title_zh": "",
-      "summary_zh": "",
-      "ai": null,
-      "event": null,
-      "deadline": null,
-      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
-    },
-    {
-      "id": "a6e6a1056ee566ad7d86",
-      "source_id": "un-geneva-meetings",
-      "title": "In Dialogue with Pakistan, Experts of the Committee on Economic, Social and Cultural Rights Welcome Law Raising the Age of Marriage to 18, Ask about Bonded Labour and Rebuilding Efforts after the 2022 and 2025 Floods",
-      "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/dialogue-pakistan-experts-committee-economic-social-and-cultural",
-      "doi": "",
-      "module": "news",
-      "published_at": "2026-11-04",
-      "date_precision": "day",
-      "discovered_at": "2026-11-26T19:39:30+00:00",
-      "updated_at": "2026-11-26T19:39:30+00:00",
-      "evidence_basis": "RSS 标题",
-      "source_revision": "7e7c40e2b8525aa3acb3357f5bed3a302d6dbd88a9bf3cc1f6cacadd8c642b48",
-      "topics": [
-        "institutions",
-        "economic"
-      ],
-      "authors": [
-        "ungeneva.org"
-      ],
-      "bibliography": {},
-      "material_type": "官方机构新闻报道",
-      "provenance": [
-        {
-          "source_id": "un-geneva-meetings",
-          "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/dialogue-pakistan-experts-committee-economic-social-and-cultural",
-          "seen_at": "2026-11-27T09:43:09+00:00"
         }
       ],
       "title_zh": "",
@@ -11364,7 +11526,7 @@
         {
           "source_id": "un-geneva-meetings",
           "url": "https://www.ungeneva.org/en/news-media/meeting-summary/2026/11/committee-economic-social-and-cultural-rights-commends-eswatinis",
-          "seen_at": "2026-11-27T09:43:09+00:00"
+          "seen_at": "2026-11-27T19:29:35+00:00"
         }
       ],
       "title_zh": "",
@@ -11611,7 +11773,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/calls-for-papers/edited-volume-on-battlefield-forensics/",
-          "seen_at": "2026-11-27T09:43:40+00:00"
+          "seen_at": "2026-11-27T19:30:21+00:00"
         }
       ],
       "title_zh": "",
@@ -11804,7 +11966,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/symposium/open-ended-symposium-on-genai-and-the-future-of-international-legal-scholarship/",
-          "seen_at": "2026-11-27T09:43:40+00:00"
+          "seen_at": "2026-11-27T19:30:21+00:00"
         }
       ],
       "title_zh": "",
@@ -11837,7 +11999,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/calls-for-papers/call-for-blogs-centre-for-research-in-environmental-law/",
-          "seen_at": "2026-11-27T09:43:40+00:00"
+          "seen_at": "2026-11-27T19:30:21+00:00"
         }
       ],
       "title_zh": "",
@@ -11870,7 +12032,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/events/online-certificate-course-on-trademark-law/",
-          "seen_at": "2026-11-27T09:43:40+00:00"
+          "seen_at": "2026-11-27T19:30:21+00:00"
         }
       ],
       "title_zh": "",
@@ -11901,7 +12063,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/calls-for-papers/nluo-student-law-journal-volume-ix/",
-          "seen_at": "2026-11-27T09:43:40+00:00"
+          "seen_at": "2026-11-27T19:30:21+00:00"
         }
       ],
       "title_zh": "",
@@ -11932,7 +12094,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/events/digital-dual-use-interdisziplinare-konferenz/",
-          "seen_at": "2026-11-27T09:43:40+00:00"
+          "seen_at": "2026-11-27T19:30:21+00:00"
         }
       ],
       "title_zh": "",
@@ -11963,7 +12125,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/jobs/ko-abteilungsleitung-fur-die-abteilung-monitoring-stelle-un-behindertenrechtskonvention-100/",
-          "seen_at": "2026-11-27T09:43:40+00:00"
+          "seen_at": "2026-11-27T19:30:21+00:00"
         }
       ],
       "title_zh": "",
@@ -11994,7 +12156,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/symposium/reflections-on-digital-empires/",
-          "seen_at": "2026-11-27T09:43:40+00:00"
+          "seen_at": "2026-11-27T19:30:21+00:00"
         }
       ],
       "title_zh": "",
@@ -12095,7 +12257,7 @@
         {
           "source_id": "un-geneva-press",
           "url": "https://www.ungeneva.org/en/news-media/press-release/2026/10/un-geneva-unveils-sustainable-new-uniforms-tour-guides-through",
-          "seen_at": "2026-11-27T09:43:04+00:00"
+          "seen_at": "2026-11-27T19:29:29+00:00"
         }
       ],
       "title_zh": "",
@@ -12968,7 +13130,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/calls-for-papers/13th-annual-junior-scholars-conference/",
-          "seen_at": "2026-11-27T09:43:40+00:00"
+          "seen_at": "2026-11-27T19:30:21+00:00"
         }
       ],
       "title_zh": "",
@@ -13635,7 +13797,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/events/community-interests-in-international-law-theory-adjudication-and-human-rights/",
-          "seen_at": "2026-11-27T09:43:40+00:00"
+          "seen_at": "2026-11-27T19:30:21+00:00"
         }
       ],
       "title_zh": "",
@@ -13666,7 +13828,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/calls-for-papers/lex-terra-webzine/",
-          "seen_at": "2026-11-27T09:43:40+00:00"
+          "seen_at": "2026-11-27T19:30:21+00:00"
         }
       ],
       "title_zh": "",
@@ -13697,7 +13859,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/jobs/studienplatze-im-doktorandenprogramm-im-bereich-der-rechtswissenschaft/",
-          "seen_at": "2026-11-27T09:43:40+00:00"
+          "seen_at": "2026-11-27T19:30:21+00:00"
         }
       ],
       "title_zh": "",
@@ -13731,7 +13893,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/calls-for-papers/community-interests-in-international-law-theory-adjudication-and-human-rights/",
-          "seen_at": "2026-11-27T09:43:40+00:00"
+          "seen_at": "2026-11-27T19:30:21+00:00"
         }
       ],
       "title_zh": "",
@@ -13762,7 +13924,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/calls-for-papers/call-for-papers-trends-in-intellectual-property-research-volume-4-issue-4-2026/",
-          "seen_at": "2026-11-27T09:43:40+00:00"
+          "seen_at": "2026-11-27T19:30:21+00:00"
         }
       ],
       "title_zh": "",
@@ -14887,7 +15049,7 @@
         {
           "source_id": "un-geneva-press",
           "url": "https://www.ungeneva.org/en/news-media/press-release/2026/10/le-conseil-des-droits-de-lhomme-clos-les-travaux-de-sa-soixante",
-          "seen_at": "2026-11-27T09:43:04+00:00"
+          "seen_at": "2026-11-27T19:29:29+00:00"
         }
       ],
       "title_zh": "",
@@ -16300,7 +16462,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/calls-for-papers/cnlu-law-journal-cnlulj/",
-          "seen_at": "2026-11-27T09:43:40+00:00"
+          "seen_at": "2026-11-27T19:30:21+00:00"
         }
       ],
       "title_zh": "",
@@ -17157,7 +17319,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/symposium/the-rooms-we-wanted/",
-          "seen_at": "2026-11-27T09:43:40+00:00"
+          "seen_at": "2026-11-27T19:30:21+00:00"
         }
       ],
       "title_zh": "",
@@ -17648,7 +17810,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/symposium/teaching-international-law-vol-1/",
-          "seen_at": "2026-11-27T09:43:40+00:00"
+          "seen_at": "2026-11-27T19:30:21+00:00"
         }
       ],
       "title_zh": "",
@@ -18134,6 +18296,41 @@
       "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
     },
     {
+      "id": "d352a4ea0d47e285cbb6",
+      "source_id": "un-geneva-press",
+      "title": "Human Rights Council to Hold its Sixty-Third Regular Session from 7 September to 7 October 2026",
+      "url": "https://www.ungeneva.org/en/news-media/press-release/2026/09/human-rights-council-hold-its-sixty-third-regular-session-7",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-09-02",
+      "date_precision": "day",
+      "discovered_at": "2026-11-27T19:29:29+00:00",
+      "updated_at": "2026-11-27T19:29:29+00:00",
+      "evidence_basis": "RSS 标题",
+      "source_revision": "21dea27895f7d90dfe215f556e119d6422c3609bfcd3073a14c1bd36157c1c67",
+      "topics": [
+        "rights"
+      ],
+      "authors": [
+        "ungeneva.org"
+      ],
+      "bibliography": {},
+      "material_type": "官方机构新闻报道",
+      "provenance": [
+        {
+          "source_id": "un-geneva-press",
+          "url": "https://www.ungeneva.org/en/news-media/press-release/2026/09/human-rights-council-hold-its-sixty-third-regular-session-7",
+          "seen_at": "2026-11-27T19:29:29+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
+    },
+    {
       "id": "d3a0963e292754969d54",
       "source_id": "esil",
       "title": "ESIL Newsletter – Summer 2026",
@@ -18553,9 +18750,9 @@
       "published_at": "2026-08-25",
       "date_precision": "day",
       "discovered_at": "2026-11-19T08:56:04+00:00",
-      "updated_at": "2026-11-19T08:56:04+00:00",
+      "updated_at": "2026-11-27T19:29:29+00:00",
       "evidence_basis": "原文正文核对",
-      "source_revision": "6b8b9e4404e28c50d59f52e815310168fbfdb3cacae3c41a94db937e50941e45",
+      "source_revision": "c428a5e829511504e8dc60ac2f731b17f68fe4d5f37223a75d0ec6f9888dff75",
       "topics": [
         "institutions"
       ],
@@ -18568,7 +18765,7 @@
         {
           "source_id": "un-geneva-press",
           "url": "https://www.ungeneva.org/en/news-media/press-release/2026/08/renewed-call-united-nations-secretary-general-and-president",
-          "seen_at": "2026-11-27T09:43:04+00:00"
+          "seen_at": "2026-11-27T19:29:29+00:00"
         }
       ],
       "title_zh": "",
@@ -19665,7 +19862,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/calls-for-papers/journal-of-international-law-of-peace-and-armed-conflict-jilpac/",
-          "seen_at": "2026-11-27T09:43:40+00:00"
+          "seen_at": "2026-11-27T19:30:21+00:00"
         }
       ],
       "title_zh": "",
@@ -19696,7 +19893,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/calls-for-papers/board-of-peace-might-makes-right-again-inquiries-in-the-current-shaping-of-global-governance/",
-          "seen_at": "2026-11-27T09:43:40+00:00"
+          "seen_at": "2026-11-27T19:30:21+00:00"
         }
       ],
       "title_zh": "",
@@ -20659,9 +20856,9 @@
       "published_at": "2026-07-08",
       "date_precision": "day",
       "discovered_at": "2026-11-19T08:56:04+00:00",
-      "updated_at": "2026-11-19T08:56:04+00:00",
+      "updated_at": "2026-11-27T19:29:29+00:00",
       "evidence_basis": "原文正文核对",
-      "source_revision": "4897e6da1d7caadc7f49d54197cae00577def60157531dfd18eb93aef5a280b2",
+      "source_revision": "9964036656ad2bc027378a8259e85371c07f265e627f4219bc0e17e3ef02482c",
       "topics": [
         "rights"
       ],
@@ -20674,7 +20871,7 @@
         {
           "source_id": "un-geneva-press",
           "url": "https://www.ungeneva.org/en/news-media/press-release/2026/07/human-rights-council-concludes-sixty-second-regular-session-after",
-          "seen_at": "2026-11-27T09:43:04+00:00"
+          "seen_at": "2026-11-27T19:29:29+00:00"
         }
       ],
       "title_zh": "",
@@ -20740,7 +20937,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/calls-for-papers/die-friedens-warte-i/",
-          "seen_at": "2026-11-27T09:43:40+00:00"
+          "seen_at": "2026-11-27T19:30:21+00:00"
         }
       ],
       "title_zh": "",
@@ -20808,7 +21005,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/symposium/arms-exports-unbound-the-german-federal-constitutional-courts-gaza-case-in-perspective/",
-          "seen_at": "2026-11-27T09:43:40+00:00"
+          "seen_at": "2026-11-27T19:30:21+00:00"
         }
       ],
       "title_zh": "",
@@ -21821,7 +22018,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/symposium/international-criminal-law-in-turmoil-charting-new-paths-as-they-unfold/",
-          "seen_at": "2026-11-27T09:43:40+00:00"
+          "seen_at": "2026-11-27T19:30:21+00:00"
         }
       ],
       "title_zh": "",
@@ -21960,41 +22157,6 @@
       "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
     },
     {
-      "id": "2f3839dc4ad4e0fa2578",
-      "source_id": "un-geneva-press",
-      "title": "Senior Oversight Leaders Discuss the Role and Evolution of Independent Oversight in the United Nations System",
-      "url": "https://www.ungeneva.org/en/news-media/press-release/2026/06/senior-oversight-leaders-discuss-role-and-evolution-independent",
-      "doi": "",
-      "module": "news",
-      "published_at": "2026-06-17",
-      "date_precision": "day",
-      "discovered_at": "2026-11-19T08:56:04+00:00",
-      "updated_at": "2026-11-19T08:56:04+00:00",
-      "evidence_basis": "原文正文核对",
-      "source_revision": "d1d8f3587f6a8d2d5a7fc7acf21f66dfd748867053820b1fe8428208b89a932b",
-      "topics": [
-        "institutions"
-      ],
-      "authors": [
-        "ungeneva.org"
-      ],
-      "bibliography": {},
-      "material_type": "官方机构新闻报道",
-      "provenance": [
-        {
-          "source_id": "un-geneva-press",
-          "url": "https://www.ungeneva.org/en/news-media/press-release/2026/06/senior-oversight-leaders-discuss-role-and-evolution-independent",
-          "seen_at": "2026-11-27T09:43:04+00:00"
-        }
-      ],
-      "title_zh": "",
-      "summary_zh": "",
-      "ai": null,
-      "event": null,
-      "deadline": null,
-      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
-    },
-    {
       "id": "46f4e6fcd8cf3d9b3ebd",
       "source_id": "crossref-ejil",
       "title": "Lys Kulamadayil. The Pathology of Plenty: Natural Resources in International Law",
@@ -22031,6 +22193,41 @@
           "source_id": "crossref-ejil",
           "url": "https://doi.org/10.1093/ejil/chag026",
           "seen_at": "2026-11-27T09:44:48+00:00"
+        }
+      ],
+      "title_zh": "",
+      "summary_zh": "",
+      "ai": null,
+      "event": null,
+      "deadline": null,
+      "screened_policy": "1675d03254d83f9b3dee645e0cd908631e67638764a1ee92bf8824ba7be1d51d"
+    },
+    {
+      "id": "2f3839dc4ad4e0fa2578",
+      "source_id": "un-geneva-press",
+      "title": "Senior Oversight Leaders Discuss the Role and Evolution of Independent Oversight in the United Nations System",
+      "url": "https://www.ungeneva.org/en/news-media/press-release/2026/06/senior-oversight-leaders-discuss-role-and-evolution-independent",
+      "doi": "",
+      "module": "news",
+      "published_at": "2026-06-17",
+      "date_precision": "day",
+      "discovered_at": "2026-11-19T08:56:04+00:00",
+      "updated_at": "2026-11-27T19:29:29+00:00",
+      "evidence_basis": "原文正文核对",
+      "source_revision": "51c28f12b2d4960335e7de9dd3c170e9388dae8466463cf2d4b7b47b25e53dee",
+      "topics": [
+        "institutions"
+      ],
+      "authors": [
+        "ungeneva.org"
+      ],
+      "bibliography": {},
+      "material_type": "官方机构新闻报道",
+      "provenance": [
+        {
+          "source_id": "un-geneva-press",
+          "url": "https://www.ungeneva.org/en/news-media/press-release/2026/06/senior-oversight-leaders-discuss-role-and-evolution-independent",
+          "seen_at": "2026-11-27T19:29:29+00:00"
         }
       ],
       "title_zh": "",
@@ -22145,7 +22342,7 @@
         {
           "source_id": "un-geneva-press",
           "url": "https://www.ungeneva.org/en/news-media/press-release/2026/06/le-conseil-des-droits-de-lhomme-tiendra-sa-soixante-deuxieme",
-          "seen_at": "2026-11-27T09:43:04+00:00"
+          "seen_at": "2026-11-27T19:29:29+00:00"
         }
       ],
       "title_zh": "",
@@ -23533,7 +23730,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/symposium/from-incarceration-to-erasure-palestinian-prisoners-in-the-architecture-of-genocide-apartheid-and-torture/",
-          "seen_at": "2026-11-27T09:43:40+00:00"
+          "seen_at": "2026-11-27T19:30:21+00:00"
         }
       ],
       "title_zh": "",
@@ -23637,7 +23834,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/symposium/pathology-of-plenty-natural-resources-in-international-law/",
-          "seen_at": "2026-11-27T09:43:40+00:00"
+          "seen_at": "2026-11-27T19:30:21+00:00"
         }
       ],
       "title_zh": "",
@@ -24383,7 +24580,7 @@
         {
           "source_id": "un-geneva-press",
           "url": "https://www.ungeneva.org/en/news-media/press-release/2026/03/celebrating-20-year-legacy-international-convention-protection-all",
-          "seen_at": "2026-11-27T09:43:04+00:00"
+          "seen_at": "2026-11-27T19:29:29+00:00"
         }
       ],
       "title_zh": "",
@@ -24595,7 +24792,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/symposium/women-in-international-law-vol-5/",
-          "seen_at": "2026-11-27T09:43:40+00:00"
+          "seen_at": "2026-11-27T19:30:21+00:00"
         }
       ],
       "title_zh": "",
@@ -24792,7 +24989,7 @@
         {
           "source_id": "voelkerrechtsblog",
           "url": "https://voelkerrechtsblog.org/symposium/joint-book-review-symposium-on-international-organizations/",
-          "seen_at": "2026-11-27T09:43:40+00:00"
+          "seen_at": "2026-11-27T19:30:21+00:00"
         }
       ],
       "title_zh": "",
@@ -24827,7 +25024,7 @@
         {
           "source_id": "un-geneva-press",
           "url": "https://www.ungeneva.org/en/news-media/press-release/2026/02/le-conseil-des-droits-de-lhomme-tiendra-sa-soixante-et-unieme",
-          "seen_at": "2026-11-27T09:43:04+00:00"
+          "seen_at": "2026-11-27T19:29:29+00:00"
         }
       ],
       "title_zh": "",
@@ -34950,11 +35147,11 @@
         "pending": 3,
         "directory_count": 7,
         "first_http_status": 0,
-        "cursor": "74fc035f46c1faf5cd17"
+        "cursor": "7153fb124886e850cf92"
       },
       "status": "ok",
-      "attempted_at": "2026-11-27T09:42:58+00:00",
-      "success_at": "2026-11-27T09:42:58+00:00",
+      "attempted_at": "2026-11-27T19:29:24+00:00",
+      "success_at": "2026-11-27T19:29:24+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 41,
@@ -34975,8 +35172,8 @@
       "review": {
         "candidates": 10,
         "checked": 4,
-        "verified": 3,
-        "china_hold": 1,
+        "verified": 4,
+        "china_hold": 0,
         "origin_hold": 0,
         "body_hold": 0,
         "access_hold": 0,
@@ -34986,15 +35183,15 @@
         "pending": 6,
         "directory_count": 10,
         "first_http_status": 0,
-        "cursor": "d352a4ea0d47e285cbb6"
+        "cursor": "2f3839dc4ad4e0fa2578"
       },
       "feed_url": "https://www.ungeneva.org/news-media/press-releases-list/rss.xml",
       "status": "ok",
-      "attempted_at": "2026-11-27T09:43:04+00:00",
-      "success_at": "2026-11-27T09:43:04+00:00",
+      "attempted_at": "2026-11-27T19:29:29+00:00",
+      "success_at": "2026-11-27T19:29:29+00:00",
       "error": null,
       "consecutive_failures": 0,
-      "item_count": 9,
+      "item_count": 10,
       "next_attempt_at": null
     },
     {
@@ -35012,8 +35209,8 @@
       "review": {
         "candidates": 10,
         "checked": 4,
-        "verified": 4,
-        "china_hold": 0,
+        "verified": 3,
+        "china_hold": 1,
         "origin_hold": 0,
         "body_hold": 0,
         "access_hold": 0,
@@ -35023,15 +35220,15 @@
         "pending": 6,
         "directory_count": 10,
         "first_http_status": 0,
-        "cursor": "bd9bda36139d654a3626"
+        "cursor": "a6e6a1056ee566ad7d86"
       },
       "feed_url": "https://www.ungeneva.org/news-media/meeting-summaries-list/rss.xml",
       "status": "ok",
-      "attempted_at": "2026-11-27T09:43:09+00:00",
-      "success_at": "2026-11-27T09:43:09+00:00",
+      "attempted_at": "2026-11-27T19:29:35+00:00",
+      "success_at": "2026-11-27T19:29:35+00:00",
       "error": null,
       "consecutive_failures": 0,
-      "item_count": 11,
+      "item_count": 10,
       "next_attempt_at": null
     },
     {
@@ -35060,15 +35257,15 @@
         "pending": 1,
         "directory_count": 10,
         "first_http_status": 0,
-        "cursor": "18b4d986a14958d05dad"
+        "cursor": "ea186116fb884501ebfc"
       },
       "feed_url": "https://www.ejiltalk.org/feed/",
       "status": "ok",
-      "attempted_at": "2026-11-27T09:43:17+00:00",
-      "success_at": "2026-11-27T09:43:17+00:00",
+      "attempted_at": "2026-11-27T19:29:42+00:00",
+      "success_at": "2026-11-27T19:29:42+00:00",
       "error": null,
       "consecutive_failures": 0,
-      "item_count": 19,
+      "item_count": 20,
       "next_attempt_at": null
     },
     {
@@ -35097,15 +35294,15 @@
         "pending": 11,
         "directory_count": 15,
         "first_http_status": 0,
-        "cursor": "e40997d864bc005d67d5"
+        "cursor": "91feba5d443af92c03a0"
       },
       "feed_url": "https://feeds2.feedburner.com/opiniojurisfeed",
       "status": "ok",
-      "attempted_at": "2026-11-27T09:43:25+00:00",
-      "success_at": "2026-11-27T09:43:25+00:00",
+      "attempted_at": "2026-11-27T19:29:50+00:00",
+      "success_at": "2026-11-27T19:29:50+00:00",
       "error": null,
       "consecutive_failures": 0,
-      "item_count": 21,
+      "item_count": 25,
       "next_attempt_at": null
     },
     {
@@ -35134,12 +35331,12 @@
         "pending": 22,
         "directory_count": 99,
         "first_http_status": 0,
-        "cursor": "cf63b2ce4cf1586918ca"
+        "cursor": "1ff893cf024b1d232d57"
       },
       "feed_url": "https://voelkerrechtsblog.org/feed/",
       "status": "ok",
-      "attempted_at": "2026-11-27T09:43:40+00:00",
-      "success_at": "2026-11-27T09:43:40+00:00",
+      "attempted_at": "2026-11-27T19:30:21+00:00",
+      "success_at": "2026-11-27T19:30:21+00:00",
       "error": null,
       "consecutive_failures": 0,
       "item_count": 34,
@@ -35458,15 +35655,15 @@
         "pending": 1,
         "directory_count": 10,
         "first_http_status": 0,
-        "cursor": "f286b942fff8d35ddc6d"
+        "cursor": "89b4298235f3d81b9a71"
       },
       "feed_url": "https://www.wto.org/library/rss/latest_news_e.xml",
       "status": "ok",
-      "attempted_at": "2026-11-27T09:44:42+00:00",
-      "success_at": "2026-11-27T09:44:42+00:00",
+      "attempted_at": "2026-11-27T19:30:23+00:00",
+      "success_at": "2026-11-27T19:30:23+00:00",
       "error": null,
       "consecutive_failures": 0,
-      "item_count": 15,
+      "item_count": 16,
       "next_attempt_at": null
     },
     {
@@ -37883,32 +38080,32 @@
         "topics": []
       }
     ],
-    "updated_at": "2026-11-27T09:47:20+00:00",
+    "updated_at": "2026-11-27T19:30:23+00:00",
     "coverage_note": "常设投稿目录与正式征稿分别展示。程序逐条核对已接通信源的正式公告，无法确认的日期不会填入截止日。"
   },
   "operations": {
     "last_run": {
       "id": 1,
-      "started_at": "2026-11-27T09:42:51+00:00",
-      "finished_at": "2026-11-27T09:47:06+00:00",
-      "successes": 56,
-      "failures": 1,
-      "added": 99,
-      "changed": 65
+      "started_at": "2026-11-27T19:29:20+00:00",
+      "finished_at": "2026-11-27T19:30:23+00:00",
+      "successes": 7,
+      "failures": 0,
+      "added": 13,
+      "changed": 6
     },
     "scheduler_enabled": true,
     "scheduled_run_verified": true,
     "last_effective_run": {
       "id": 1,
-      "started_at": "2026-11-27T09:42:51+00:00",
-      "finished_at": "2026-11-27T09:47:06+00:00",
-      "successes": 56,
-      "failures": 1,
-      "added": 99,
-      "changed": 65
+      "started_at": "2026-11-27T19:29:20+00:00",
+      "finished_at": "2026-11-27T19:30:23+00:00",
+      "successes": 7,
+      "failures": 0,
+      "added": 13,
+      "changed": 6
     },
-    "scheduler_note": "最近一次云端运行：2026-11-27T09:47:20+00:00；触发方式：schedule。信源成功时间单独显示。",
-    "total_archived": 916,
-    "visible_in_export": 916
+    "scheduler_note": "最近一次云端运行：2026-11-27T19:30:23+00:00；触发方式：schedule。信源成功时间单独显示。",
+    "total_archived": 922,
+    "visible_in_export": 922
   }
 }
